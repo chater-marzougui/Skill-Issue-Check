@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/chater-marzougui/Skill-Issue-Check">
-    <img src="./logo.png" alt="Logo" width="256" height="256">
+    <img src="./assets/logo.png" alt="Logo" width="256" height="256">
   </a>
     <h1 width="35px">Skill Issue Check
     </h1>
@@ -158,13 +158,13 @@ Modify the CSS variables in the `:root` selector in `home.css`:
 
 ```
 SkillIssueCheck/
-├── index.html          
-├── home.css            
-├── home.js             
-├── courses/            
-│   ├── course-list.json     
-│   ├── python-basics.json   
-│   └── javascript-intro.json  
+├── index.html                 
+├── assets/     
+│   ├── home.css            
+│   ├── home.js      
+│   ├── courses/            
+│       ├── economie-digitale.json
+├── LICENSE
 └── README.md
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

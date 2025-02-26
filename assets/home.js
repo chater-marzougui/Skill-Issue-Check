@@ -468,7 +468,7 @@ function loadCourseJSON(filename) {
     dropArea.innerHTML = '<p>Chargement du cours en cours...</p>';
     
     // Fetch the JSON file directly from the courses folder
-    fetch(`courses/${filename}`)
+    fetch(`assets/courses/${filename}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to load course file: ${response.statusText}`);
@@ -498,7 +498,7 @@ function loadCourseJSON(filename) {
 }
 
 function loadCoursesFromJSON() {
-    fetch('courses/course-list.json')
+    fetch('assets/courses/course-list.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Could not load course list');
