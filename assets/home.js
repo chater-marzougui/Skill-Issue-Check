@@ -459,6 +459,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Call the function to handle the visitor count
     handleVisitorCount();
+    function pollVisitorCount() {
+        setInterval(() => {
+            handleVisitorCount();
+        }, 3000);
+    }
+
+    pollVisitorCount();
 });
 
 function loadCourseJSON(filename) {

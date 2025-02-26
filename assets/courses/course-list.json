@@ -9,6 +9,11 @@
         "id": "2",
         "filename": "iot.json",
         "name": "IOT"
+      },
+      {
+        "id": "3",
+        "filename": "LTE.json",
+        "name": "Reseaux LTE"
       }
     ]
   }
