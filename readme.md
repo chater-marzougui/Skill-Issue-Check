@@ -1,8 +1,47 @@
-# CourseQuiz
+<a name="readme-top"></a>
 
-A lightweight, frontend-only quiz application that lets instructors create and students take structured quizzes organized by courses and sessions.
+<div align="center">
 
-![CourseQuiz Screenshot](https://via.placeholder.com/800x450?text=CourseQuiz+Screenshot)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/chater-marzougui-342125299/)
+</div>
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/chater-marzougui/Skill-Issue-Check">
+    <img src="./logo.png" alt="Logo" width="256" height="256">
+  </a>
+    <h1 width="35px">Skill Issue Check
+    </h1>
+  <p align="center">
+    A lightweight, frontend-only quiz application that lets instructors create and students take structured quizzes organized by courses and sessions.
+    <br />
+    <br />
+    <a href="https://github.com/chater-marzougui/Skill-Issue-Check/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/chater-marzougui/Skill-Issue-Check/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#installation">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#customization">Customization</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
 ## Features
 
@@ -11,6 +50,7 @@ A lightweight, frontend-only quiz application that lets instructors create and s
 - **Session Structure**: Courses are divided into learning sessions with targeted quizzes
 - **Results & Feedback**: Get immediate feedback with explanations for incorrect answers
 - **JSON Import/Export**: Easy sharing and backup of quiz content
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
@@ -34,6 +74,7 @@ cd courseQuiz
 python -m http.server 8000
 # Then visit http://localhost:8000 in your browser
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
@@ -88,6 +129,7 @@ Place your JSON files in the `courses` folder.
 3. Paste the prompt and add your course content
 4. Copy the generated JSON
 5. Paste it into the application
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Customization
 
@@ -110,6 +152,7 @@ Modify the CSS variables in the `:root` selector in `home.css`:
     --neutral: #95a5a6; /* Disabled elements */
 }
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Structure
 
@@ -124,6 +167,7 @@ SkillIssueCheck/
 │   └── javascript-intro.json  
 └── README.md
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
@@ -133,11 +177,30 @@ SkillIssueCheck/
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Created by Chater Marzougui
-- Uses [Google Gemini](https://gemini.google.com/) for AI-generated content
+## Contact
+
+- Chater Marzougui - [@Chater-marzougui](linkedin-url) - chater.mrezgui2002@gmail.com <br/>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/chater-marzougui/Skill-Issue-Check.svg?style=for-the-badge
+[contributors-url]: https://github.com/chater-marzougui/Skill-Issue-Check/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/chater-marzougui/Skill-Issue-Check.svg?style=for-the-badge
+[forks-url]: https://github.com/chater-marzougui/Skill-Issue-Check/network/members
+[stars-shield]: https://img.shields.io/github/stars/chater-marzougui/Skill-Issue-Check.svg?style=for-the-badge
+[stars-url]: https://github.com/chater-marzougui/Skill-Issue-Check/stargazers
+[issues-shield]: https://img.shields.io/github/issues/chater-marzougui/Skill-Issue-Check.svg?style=for-the-badge
+[issues-url]: https://github.com/chater-marzougui/Skill-Issue-Check/issues
+[license-shield]: https://img.shields.io/github/license/chater-marzougui/Skill-Issue-Check.svg?style=for-the-badge
+[license-url]: https://github.com/chater-marzougui/Skill-Issue-Check/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/chater-marzougui-342125299
