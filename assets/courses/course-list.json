@@ -4,6 +4,11 @@
         "id": "1",
         "filename": "economie_digitale.json",
         "name": "Economie Digitale"
+      },
+      {
+        "id": "2",
+        "filename": "iot.json",
+        "name": "IOT"
       }
     ]
   }
