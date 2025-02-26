@@ -1,0 +1,793 @@
+{
+    "seance 1": [
+        {
+            "question": "Quel secteur représentait près de 30 % des transactions mondiales de financement en capital-risque pour les startups en 2022 ?",
+            "options": [
+                "La Fintech",
+                "Les sciences de la vie et la santé",
+                "L’IA et du Big Data",
+                "Les énergies renouvelables"
+            ],
+            "answer": 2,
+            "explanation": "En 2022, le secteur de l’IA et du Big Data représentait près de 30 % des transactions mondiales de financement en capital-risque pour les startups."
+        },
+        {
+            "question": "Quelle entreprise a été classée comme la société technologique la plus précieuse au monde en 2022, avec une valeur de marque d'environ 950 milliards de USD ?",
+            "options": [
+                "Google",
+                "Apple",
+                "Microsoft",
+                "Amazon"
+            ],
+            "answer": 1,
+            "explanation": "Apple a été classée comme la société technologique la plus précieuse au monde en 2022, avec une valeur de marque d'environ 950 milliards de USD."
+        },
+        {
+            "question": "Quel est le principal défi de la réglementation dans le contexte de l'innovation de l'économie digitale ?",
+            "options": [
+                "Le manque de financement pour les startups",
+                "La lenteur des avancées technologiques",
+                "Le fait que les innovations avancent plus vite que les lois",
+                "La résistance au changement de la part des grandes entreprises"
+            ],
+            "answer": 2,
+            "explanation": "Les innovations avancent plus vite que les lois, ce qui pose un défi de taille pour la réglementation."
+        },
+        {
+            "question": "Quel est l'impact environnemental de l'économie digitale mentionné dans le texte ?",
+            "options": [
+                "La réduction de la consommation d'énergie",
+                "L'augmentation de l'utilisation de matériaux recyclables",
+                "La diminution de l'empreinte carbone",
+                "La consommation énergétique élevée des clouds et des data centers"
+            ],
+            "answer": 3,
+            "explanation": "Les clouds et les data centers sont énergivores, ce qui soulève des préoccupations quant à leur impact environnemental."
+        },
+        {
+            "question": "Quel type de données est généré en grande quantité par les interactions en ligne, l'IoT et les médias sociaux ?",
+            "options": [
+                "Données structurées uniquement",
+                "Données semi-structurées uniquement",
+                "Données non structurées uniquement",
+                "Données de tous types (structurées, semi-structurées et non structurées)"
+            ],
+            "answer": 3,
+            "explanation": "Les interactions en ligne, l'IoT et les médias sociaux génèrent des données de tous types, y compris structurées, semi-structurées et non structurées."
+        },
+        {
+            "question": "Quel est l'avantage de l'Edge Computing dans le traitement des données IoT ?",
+            "options": [
+                "Augmenter la latence",
+                "Réduire la latence",
+                "Centraliser le stockage des données",
+                "Complexifier l'analyse des données"
+            ],
+            "answer": 1,
+            "explanation": "L'Edge Computing permet de traiter les données à proximité des appareils, ce qui réduit la latence."
+        },
+        {
+            "question": "Quel est l'objectif principal du RGPD (Europe) et du CCPA (Californie) ?",
+            "options": [
+                "Réguler la cybersécurité des entreprises",
+                "Protéger les données personnelles des individus",
+                "Encourager l'innovation technologique",
+                "Faciliter le partage de données entre entreprises"
+            ],
+            "answer": 1,
+            "explanation": "Le RGPD (Europe) et le CCPA (Californie) ont pour objectif principal de réguler la protection des données personnelles."
+        },
+        {
+            "question": "Quel est l'impact de l'IA sur l'économie digitale en termes d'automatisation des processus ?",
+            "options": [
+                "Réduction de l'efficacité",
+                "Augmentation des coûts",
+                "Automatisation des tâches répétitives et analytiques",
+                "Diminution de la productivité"
+            ],
+            "answer": 2,
+            "explanation": "L'IA permet d'automatiser les tâches répétitives et analytiques, ce qui réduit les coûts et augmente l'efficacité."
+        },
+        {
+            "question": "Quel est l'avantage de l'utilisation de la blockchain dans la gestion des transactions et des données ?",
+            "options": [
+                "Centralisation des données",
+                "Manque de transparence",
+                "Sécurité et transparence accrues",
+                "Complexité accrue des transactions"
+            ],
+            "answer": 2,
+            "explanation": "La blockchain offre des solutions sécurisées, transparentes et immuables pour gérer les transactions et les données."
+        },
+        {
+            "question": "Quel est l'impact de la cybersécurité sur l'économie digitale en termes de protection des données ?",
+            "options": [
+                "Diminution de la confidentialité",
+                "Vulnérabilité accrue des données",
+                "Garantie de la confidentialité, de l'intégrité et de la disponibilité des données",
+                "Complexité accrue de la gestion des données"
+            ],
+            "answer": 2,
+            "explanation": "La cybersécurité garantit la confidentialité, l'intégrité et la disponibilité des données, qui sont l'actif clé de l'économie digitale."
+        },
+        {
+            "question": "En 2023, combien d'appareils IoT étaient connectés à travers le monde ?",
+            "options": [
+                "5 milliards",
+                "10 milliards",
+                "15 milliards",
+                "20 milliards"
+            ],
+            "answer": 2,
+            "explanation": "En 2023, environ 15 milliards d'appareils IoT étaient connectés à travers le monde."
+        },
+        {
+            "question": "Quel est l'avantage de la blockchain en termes de réduction des coûts dans les transactions ?",
+            "options": [
+                "Augmentation des frais de transaction",
+                "Suppression des intermédiaires",
+                "Complexification des processus",
+                "Centralisation des transactions"
+            ],
+            "answer": 1,
+            "explanation": "La blockchain réduit les frais de transaction en supprimant les intermédiaires."
+        },
+        {
+            "question": "Quel est l'impact économique global de l'IoT sur le PIB mondial d'ici 2030 (source : McKinsey) ?",
+            "options": [
+                "Entre 1 000 et 3 000 milliards de dollars",
+                "Entre 3 000 et 5 000 milliards de dollars",
+                "Entre 5 500 et 12 600 milliards de dollars",
+                "Plus de 15 000 milliards de dollars"
+            ],
+            "answer": 2,
+            "explanation": "L'IoT devrait ajouter entre 5 500 et 12 600 milliards de dollars au PIB mondial d'ici 2030, selon McKinsey."
+        },
+        {
+            "question": "Quel est le principal avantage de la blockchain en termes de confiance et de transparence dans les transactions ?",
+            "options": [
+                "Centralisation des données",
+                "Suppression des intermédiaires",
+                "Complexification des processus",
+                "Manque de transparence"
+            ],
+            "answer": 1,
+            "explanation": "La blockchain élimine les intermédiaires, ce qui renforce la confiance et la transparence dans les transactions."
+        },
+        {
+            "question": "Quel est l'impact de l'IA sur l'amélioration de la productivité dans l'économie digitale ?",
+            "options": [
+                "Réduction de la précision",
+                "Complexification des processus",
+                "Amélioration de la prise de décision grâce à l'analyse prédictive",
+                "Diminution de l'efficacité"
+            ],
+            "answer": 2,
+            "explanation": "L'IA améliore la prise de décision grâce à des systèmes d'analyse prédictive, ce qui optimise les processus et réduit les erreurs."
+        }
+    ],
+    "seance 2": [
+            {
+                "question": "Qu'est-ce qu'un effet de réseau direct ?",
+                "options": [
+                    "Un effet où la valeur d'un produit diminue avec plus d'utilisateurs.",
+                    "Un effet où la valeur d'un produit augmente pour un utilisateur avec plus d'utilisateurs.",
+                    "Un effet où seuls les nouveaux utilisateurs bénéficient de la plateforme.",
+                    "Un effet où la valeur de la plateforme dépend uniquement des vendeurs."
+                ],
+                "answer": 1,
+                "explanation": "Un effet de réseau direct se produit lorsque la valeur d'un produit ou service augmente pour un utilisateur donné à mesure que le nombre d'utilisateurs augmente."
+            },
+            {
+                "question": "Comment la loi de Metcalfe modélise-t-elle les effets de réseau directs ?",
+                "options": [
+                    "V(n) = k * n",
+                    "V(n) = k * n^2",
+                    "V(n) = k / n",
+                    "V(n) = n^2 / k"
+                ],
+                "answer": 1,
+                "explanation": "La loi de Metcalfe stipule que la valeur totale du réseau (V) est proportionnelle au carré du nombre d'utilisateurs (n), soit V(n) = k * n^2."
+            },
+            {
+                "question": "Qu'est-ce qu'un effet de réseau indirect ?",
+                "options": [
+                    "Un effet où les utilisateurs bénéficient directement de l'augmentation des utilisateurs du même côté.",
+                    "Un effet où l'augmentation des utilisateurs d'un côté bénéficie aux utilisateurs de l'autre côté.",
+                    "Un effet où la valeur du réseau diminue avec l'ajout de nouveaux utilisateurs.",
+                    "Un effet qui n'affecte que les plateformes de commerce électronique."
+                ],
+                "answer": 1,
+                "explanation": "Les effets de réseau indirects se manifestent lorsqu’une augmentation du nombre d’utilisateurs d'un côté de la plateforme entraîne des bénéfices pour les utilisateurs de l'autre côté."
+            },
+            {
+                "question": "Comment modéliser mathématiquement un effet de réseau indirect ?",
+                "options": [
+                    "V(n) = k * n^2",
+                    "V(nu, np) = α * nu * np",
+                    "V(n) = α * n + β",
+                    "V(n) = α / n"
+                ],
+                "answer": 1,
+                "explanation": "Une fonction de valeur pour un réseau indirect peut être représentée par V(nu, np) = α * nu * np, où nu est le nombre d'utilisateurs et np le nombre de prestataires."
+            },
+            {
+                "question": "Que sont les modèles bilatéraux (two-sided markets) ?",
+                "options": [
+                    "Des modèles où un seul groupe d'utilisateurs interagit.",
+                    "Des modèles où deux groupes distincts d’utilisateurs bénéficient de l’interaction entre eux.",
+                    "Des modèles qui n'existent que dans les marchés traditionnels.",
+                    "Des modèles où les utilisateurs n'interagissent pas directement."
+                ],
+                "answer": 1,
+                "explanation": "Les modèles bilatéraux connectent deux groupes distincts d’utilisateurs qui bénéficient directement de l’interaction entre eux."
+            },
+            {
+                "question": "Comment la valeur d'une plateforme bilatérale peut-elle être modélisée ?",
+                "options": [
+                    "V(n) = k * n^2",
+                    "V(nh, nv) = α * nh^β + γ * nv^δ",
+                    "V(n) = α * n + β",
+                    "V(n) = α / n"
+                ],
+                "answer": 1,
+                "explanation": "La valeur d'une plateforme bilatérale peut être modélisée comme une fonction du nombre d’utilisateurs des deux côtés : V(nh, nv) = α * nh^β + γ * nv^δ."
+            },
+            {
+                "question": "Comment les plateformes utilisent-elles les données et l'IA ?",
+                "options": [
+                    "Pour limiter les interactions entre utilisateurs.",
+                    "Pour personnaliser les expériences et prédire les comportements.",
+                    "Pour augmenter les prix des services.",
+                    "Pour réduire la transparence des transactions."
+                ],
+                "answer": 1,
+                "explanation": "Les plateformes collectent d'immenses quantités de données pour personnaliser les expériences, prédire les comportements, et optimiser les interactions."
+            },
+            {
+                "question": "Qu'est-ce qu'une plateforme multi-facettes (super app) ?",
+                "options": [
+                    "Une plateforme spécialisée dans un seul service.",
+                    "Une plateforme intégrant plusieurs services comme le paiement, le shopping et la livraison.",
+                    "Une plateforme limitée aux transactions locales.",
+                    "Une plateforme sans interaction utilisateur."
+                ],
+                "answer": 1,
+                "explanation": "Les plateformes multi-facettes sont des écosystèmes complets intégrant plusieurs services."
+            },
+            {
+                "question": "Quel est un exemple de plateforme multi-facettes ?",
+                "options": [
+                    "Amazon",
+                    "WeChat",
+                    "Netflix",
+                    "Uber"
+                ],
+                "answer": 1,
+                "explanation": "WeChat en Chine est un exemple de plateforme multi-facettes combinant messagerie, e-commerce et services financiers."
+            },
+            {
+                "question": "Comment les plateformes décentralisées (Web3) réduisent-elles la dépendance aux intermédiaires ?",
+                "options": [
+                    "En centralisant toutes les données.",
+                    "En utilisant la technologie blockchain.",
+                    "En augmentant les coûts de transaction.",
+                    "En limitant l'accès aux utilisateurs."
+                ],
+                "answer": 1,
+                "explanation": "Avec la montée de la blockchain, les plateformes décentralisées émergent, réduisant la dépendance aux intermédiaires."
+            },
+            {
+                "question": "Quel est un exemple de plateforme décentralisée ?",
+                "options": [
+                    "Facebook",
+                    "Ethereum",
+                    "Microsoft",
+                    "Apple"
+                ],
+                "answer": 1,
+                "explanation": "Ethereum ou OpenSea pour les NFT sont des exemples de plateformes décentralisées."
+            },
+            {
+                "question": "Comment les plateformes agissent-elles comme catalyseurs d'innovation ?",
+                "options": [
+                    "En limitant l'accès aux API.",
+                    "En proposant des API ouvertes et des outils de développement.",
+                    "En augmentant les barrières à l'entrée.",
+                    "En gardant toutes les innovations en interne."
+                ],
+                "answer": 1,
+                "explanation": "Les plateformes deviennent des moteurs d'innovation en proposant des API ouvertes, des outils de développement et des marketplaces."
+            },
+            {
+                "question": "Quel est un exemple de plateforme agissant comme catalyseur d'innovation ?",
+                "options": [
+                    "Netflix",
+                    "Salesforce AppExchange",
+                    "McDonalds",
+                    "La Poste"
+                ],
+                "answer": 1,
+                "explanation": "Salesforce et sa plateforme AppExchange permettent de développer des applications professionnelles."
+            },
+            {
+                "question": "Quels sont les avantages stratégiques de l'effet de réseau direct pour WhatsApp ?",
+                "options": [
+                    "Diminution de la rétention des utilisateurs.",
+                    "Augmentation de la dépendance et croissance organique.",
+                    "Nécessité de publicité massive.",
+                    "Saturation rapide du marché."
+                ],
+                "answer": 1,
+                "explanation": "Les avantages incluent la rétention d’utilisateurs, l'effet boule de neige et la croissance organique."
+            },
+            {
+                "question": "Comment l'effet de réseau direct de WhatsApp est-il modélisé mathématiquement ?",
+                "options": [
+                    "V(n) = n",
+                    "V(n) = n(n-1)/2",
+                    "V(n) = n^3",
+                    "V(n) = 2n"
+                ],
+                "answer": 1,
+                "explanation": "Le nombre total de connexions possibles est modélisé par V(n) = n(n-1)/2, montrant une croissance quadratique."
+            }
+    ],
+    "seance 3": [
+        {
+            "question": "Quel est le modèle de revenu d'eBay ?",
+            "options": [
+                "Publicité",
+                "Frais de transaction",
+                "Freemium",
+                "Abonnement"
+            ],
+            "answer": 1,
+            "explanation": "eBay utilise un modèle de frais de transaction, prélevant une commission sur chaque vente."
+        },
+        {
+            "question": "Comment le revenu d'une plateforme basée sur les frais de transaction est-il calculé ?",
+            "options": [
+                "R(t) = N(t) + P(t) + c",
+                "R(t) = N(t) × P(t) × c",
+                "R(t) = N(t) / P(t) × c",
+                "R(t) = N(t) × P(t) / c"
+            ],
+            "answer": 1,
+            "explanation": "Le revenu est calculé en multipliant le nombre de transactions, le prix moyen et le taux de commission."
+        },
+        {
+            "question": "Qu'est-ce qu'un modèle de revenu publicitaire ?",
+            "options": [
+                "Facturer les utilisateurs pour chaque transaction.",
+                "Offrir des services gratuits et monétiser l'audience avec des publicités.",
+                "Facturer un abonnement pour un accès premium.",
+                "Vendre des produits directement aux consommateurs."
+            ],
+            "answer": 1,
+            "explanation": "Ce modèle offre des services gratuits et utilise la publicité ciblée pour générer des revenus."
+        },
+        {
+            "question": "Quel pourcentage des revenus de Google provient de la publicité en 2023 ?",
+            "options": [
+                "50%",
+                "65%",
+                "80%",
+                "95%"
+            ],
+            "answer": 2,
+            "explanation": "Plus de 80% des revenus de Google proviennent de la publicité."
+        },
+        {
+            "question": "Qu'est-ce qu'un modèle de revenu freemium ?",
+            "options": [
+                "Tout facturer dès le départ.",
+                "Offrir un service de base gratuit et facturer des fonctionnalités premium.",
+                "Utiliser uniquement la publicité.",
+                "Vendre des produits physiques."
+            ],
+            "answer": 1,
+            "explanation": "Le freemium offre un service de base gratuit et facture pour des fonctionnalités supplémentaires."
+        },
+        {
+            "question": "Quel est un exemple de plateforme utilisant le modèle freemium ?",
+            "options": [
+                "eBay",
+                "Google",
+                "Spotify",
+                "Amazon"
+            ],
+            "answer": 2,
+            "explanation": "Spotify utilise le modèle freemium avec une version gratuite financée par la publicité et une version premium sans publicité."
+        },
+        {
+            "question": "Quels sont les avantages des frais de transaction ?",
+            "options": [
+                "Accès gratuit pour tous les utilisateurs.",
+                "Alignement des intérêts et revenus liés à l'activité.",
+                "Revenus basés sur la publicité ciblée.",
+                "Conversion facile des utilisateurs gratuits en payants."
+            ],
+            "answer": 1,
+            "explanation": "Les frais de transaction alignent les intérêts de la plateforme et des utilisateurs et lient les revenus à l'activité économique."
+        },
+        {
+            "question": "Quels sont les avantages du modèle publicitaire ?",
+            "options": [
+                "Accès gratuit et potentiel de croissance via le ciblage.",
+                "Revenus directs de chaque transaction.",
+                "Conversion des utilisateurs gratuits en clients payants.",
+                "Fidélisation accrue des utilisateurs premium."
+            ],
+            "answer": 0,
+            "explanation": "Le modèle publicitaire permet un accès gratuit et offre un fort potentiel de croissance grâce au ciblage algorithmique."
+        },
+        {
+            "question": "Quels sont les avantages du modèle freemium ?",
+            "options": [
+                "Revenus élevés par transaction.",
+                "Accès gratuit et ciblage publicitaire.",
+                "Facilité d'adoption et conversion des utilisateurs gratuits.",
+                "Monopole du marché."
+            ],
+            "answer": 2,
+            "explanation": "Le modèle freemium est facile à adopter et permet de convertir les utilisateurs gratuits en clients payants."
+        },
+        {
+            "question": "Comment les effets de réseau peuvent-ils influencer le modèle de revenu ?",
+            "options": [
+                "En diminuant le nombre de transactions.",
+                "En augmentant le nombre d'utilisateurs et de transactions.",
+                "En limitant l'accès aux nouveaux utilisateurs.",
+                "En réduisant les taux de commission."
+            ],
+            "answer": 1,
+            "explanation": "Les effets de réseau peuvent augmenter le nombre d'utilisateurs et de transactions, influençant positivement le revenu."
+        },
+        {
+            "question": "Quelle est la formule de base du revenu avec une commission en pourcentage ?",
+            "options": [
+                "R(t) = N(t) × P(t) × c",
+                "R(t) = N(t) × P(t) × c/100",
+                "R(t) = N(t) + P(t) + c",
+                "R(t) = N(t) × (P(t) + c)"
+            ],
+            "answer": 1,
+            "explanation": "La formule est R(t) = N(t) × P(t) × c/100, où c est le taux de commission en pourcentage."
+        },
+        {
+            "question": "Comment modéliser la croissance exponentielle du nombre de transactions ?",
+            "options": [
+                "N(t) = N0 × t",
+                "N(t) = N0 × e^(αt)",
+                "N(t) = N0 + αt",
+                "N(t) = N0 / e^(αt)"
+            ],
+            "answer": 1,
+            "explanation": "La croissance exponentielle est modélisée par N(t) = N0 × e^(αt), où α est le taux de croissance."
+        },
+        {
+            "question": "Comment les plateformes peuvent-elles adapter leur modèle économique ?",
+            "options": [
+                "En restant avec un seul modèle statique.",
+                "En combinant plusieurs approches pour maximiser les revenus.",
+                "En réduisant les services offerts.",
+                "En augmentant les prix de manière aléatoire."
+            ],
+            "answer": 1,
+            "explanation": "Les plateformes adaptent leur modèle économique en combinant plusieurs approches pour maximiser les revenus."
+        },
+        {
+            "question": "Quel est l'impact de la publicité en ligne sur Google ?",
+            "options": [
+                "Réduction des revenus.",
+                "Principal moteur de richesse.",
+                "Augmentation des coûts pour les utilisateurs.",
+                "Diminution de la base d'utilisateurs."
+            ],
+            "answer": 1,
+            "explanation": "La publicité en ligne est le principal moteur de richesse pour Google."
+        },
+        {
+            "question": "Comment Spotify bénéficie-t-il de son modèle freemium ?",
+            "options": [
+                "En ayant tous les utilisateurs payants.",
+                "En convertissant environ 45% des utilisateurs en abonnés payants.",
+                "En se concentrant uniquement sur la publicité.",
+                "En vendant des appareils audio."
+            ],
+            "answer": 1,
+            "explanation": "Environ 45% des utilisateurs actifs de Spotify sont des abonnés payants grâce au modèle freemium."
+        },
+        {
+            "question": "Quels sont les principaux acteurs de l'écosystème d'eBay ?",
+            "options": [
+                "Acheteurs et vendeurs uniquement.",
+                "Acheteurs, vendeurs, prestataires logistiques et de paiement.",
+                "Régulateurs et publicitaires seulement.",
+                "Utilisateurs gratuits et payants."
+            ],
+            "answer": 1,
+            "explanation": "Les principaux acteurs incluent les acheteurs, vendeurs, prestataires logistiques, fournisseurs de paiement et régulateurs."
+        }
+    ],
+    "seance 4": [
+        {
+            "question": "Quel modèle de tarification est utilisé pour maximiser le profit en tenant compte des contraintes du marché, des coûts de production et des comportements des consommateurs ?",
+            "options": [
+                "Modèle de minimisation des coûts",
+                "Modèle de maximisation de l'élasticité-prix de la demande",
+                "Modèle de maximisation du profit",
+                "Tarification basée sur la programmation linéaire"
+            ],
+            "answer": 2,
+            "explanation": "Le modèle de maximisation du profit vise à trouver le prix optimal qui maximise le profit d'une entreprise, en considérant les revenus totaux et les coûts totaux."
+        },
+        {
+            "question": "Quelle méthode de tarification est adaptée lorsque la relation entre les variables, comme l'élasticité-prix de la demande, est non linéaire ?",
+            "options": [
+                "Programmation linéaire",
+                "Programmation non linéaire",
+                "Tarification dynamique basée sur les données",
+                "Modèle de Cournot"
+            ],
+            "answer": 1,
+            "explanation": "La programmation non linéaire est utilisée lorsque les relations entre les variables ne sont pas linéaires, permettant de modéliser des scénarios de tarification dynamique et des courbes de demande complexes."
+        },
+        {
+            "question": "Qu'est-ce que l'élasticité-prix de la demande ?",
+            "options": [
+                "La variation de la demande en fonction du revenu",
+                "La sensibilité des consommateurs au prix",
+                "La relation entre l'offre et la demande",
+                "Le coût de production par unité"
+            ],
+            "answer": 1,
+            "explanation": "L'élasticité-prix de la demande mesure comment la quantité demandée d'un bien ou service réagit aux variations de son prix."
+        },
+        {
+            "question": "Dans le contexte de la tarification dynamique, quels facteurs sont pris en compte pour ajuster les prix en temps réel ?",
+            "options": [
+                "Les coûts de production uniquement",
+                "La demande, la saisonnalité et le comportement des clients",
+                "Les prix des concurrents uniquement",
+                "Les avis des clients uniquement"
+            ],
+            "answer": 1,
+            "explanation": "La tarification dynamique ajuste les prix en fonction de divers facteurs en temps réel, tels que la demande, la saisonnalité et le comportement des clients, pour optimiser les revenus."
+        },
+        {
+            "question": "Quel est l'objectif de la tarification basée sur la programmation linéaire ?",
+            "options": [
+                "Maximiser le profit ou minimiser les coûts sous contraintes linéaires",
+                "Trouver le prix optimal en tenant compte de l'élasticité-prix",
+                "Ajuster dynamiquement les prix en fonction de la demande",
+                "Minimiser les coûts de production sans contraintes"
+            ],
+            "answer": 0,
+            "explanation": "La programmation linéaire est utilisée pour maximiser le profit ou minimiser les coûts lorsque les relations entre les variables sont linéaires, sous diverses contraintes."
+        },
+        {
+            "question": "Comment la tarification différenciée de troisième degré segmente-t-elle la clientèle ?",
+            "options": [
+                "En proposant des formules de tarification différentes selon la quantité achetée",
+                "En pratiquant des prix différents pour chaque client individuel",
+                "En segmentant la clientèle en sous-marchés avec des prix différenciés",
+                "En offrant les mêmes prix à tous les clients mais avec des services différents"
+            ],
+            "answer": 2,
+            "explanation": "La tarification différenciée de troisième degré segmente la clientèle en sous-marchés, en pratiquant des prix différenciés pour chaque groupe de clients en fonction de leur élasticité-prix."
+        },
+        {
+            "question": "Quel est l'avantage principal de l'utilisation de la programmation non linéaire dans la tarification ?",
+            "options": [
+                "Simplifier les calculs de tarification",
+                "Modéliser des relations complexes et non linéaires entre les variables",
+                "Réduire les coûts de production",
+                "Maximiser le profit sans tenir compte de la demande"
+            ],
+            "answer": 1,
+            "explanation": "La programmation non linéaire permet de modéliser des relations complexes et non linéaires, comme l'élasticité-prix de la demande, pour une tarification plus précise."
+        },
+        {
+            "question": "Quels types de modèles de machine learning sont utilisés dans la tarification dynamique basée sur les données ?",
+            "options": [
+                "Modèles de minimisation des coûts uniquement",
+                "Régression linéaire, forêts aléatoires, séries temporelles et réseaux de neurones",
+                "Modèles de maximisation du profit uniquement",
+                "Algorithmes de tarification statique"
+            ],
+            "answer": 1,
+            "explanation": "La tarification dynamique basée sur les données utilise divers modèles de machine learning, tels que la régression linéaire, les forêts aléatoires, les séries temporelles et les réseaux de neurones, pour prédire la demande et ajuster les prix."
+        },
+        {
+            "question": "Comment la stratégie de gratuité initiale avec monétisation progressive (freemium) attire-t-elle les utilisateurs ?",
+            "options": [
+                "En offrant des services premium dès le début",
+                "En attirant une large base d'utilisateurs avec des services gratuits, puis en introduisant des services payants",
+                "En appliquant des prix élevés dès le lancement",
+                "En limitant l'accès aux services de base"
+            ],
+            "answer": 1,
+            "explanation": "La stratégie freemium attire une large base d'utilisateurs en offrant des services gratuits, puis introduit des services premium ou de la publicité pour générer des revenus."
+        },
+        {
+            "question": "Quel est l'objectif de la minimisation du coût avec contraintes de production ?",
+            "options": [
+                "Maximiser le profit",
+                "Minimiser les coûts de production tout en répondant à une demande donnée",
+                "Trouver le prix optimal",
+                "Ajuster dynamiquement les prix"
+            ],
+            "answer": 1,
+            "explanation": "La minimisation du coût avec contraintes de production vise à réduire les coûts de production tout en assurant que la demande est satisfaite."
+        },
+        {
+            "question": "Comment les effets de réseau influencent-ils la tarification des plateformes numériques ?",
+            "options": [
+                "En ignorant la taille du réseau",
+                "En adaptant les prix en fonction de la croissance du réseau et de la valeur pour les utilisateurs",
+                "En maintenant des prix fixes",
+                "En augmentant les prix pour tous les utilisateurs"
+            ],
+            "answer": 1,
+            "explanation": "Les effets de réseau influencent la tarification en adaptant les prix pour attirer les premiers utilisateurs et en maximisant les revenus à mesure que le réseau croît."
+        },
+        {
+            "question": "Qu'est-ce que la tarification dynamique basée sur les données ?",
+            "options": [
+                "Une méthode de tarification fixe",
+                "Une stratégie qui ajuste les prix en temps réel en fonction des données et des conditions du marché",
+                "Une technique pour minimiser les coûts de production",
+                "Une approche pour maximiser le profit sans tenir compte de la demande"
+            ],
+            "answer": 1,
+            "explanation": "La tarification dynamique basée sur les données utilise des données en temps réel et des modèles de machine learning pour ajuster les prix en fonction des conditions du marché."
+        },
+        {
+            "question": "Quel est l'impact de l'élasticité-prix de la demande sur la tarification ?",
+            "options": [
+                "Elle n'a aucun impact",
+                "Elle aide à déterminer comment les variations de prix affectent la demande",
+                "Elle détermine uniquement les coûts de production",
+                "Elle fixe les prix indépendamment de la demande"
+            ],
+            "answer": 1,
+            "explanation": "L'élasticité-prix de la demande est cruciale car elle indique comment la demande réagit aux changements de prix, permettant aux entreprises de fixer des prix optimaux."
+        }
+    ],
+    "seance 5": [
+        {
+            "question": "Quelle est la principale différence entre l'intégration verticale et l'intégration horizontale dans le contexte des plateformes numériques ?",
+            "options": [
+                "L'intégration verticale concerne l'expansion vers de nouveaux services, tandis que l'intégration horizontale concerne le contrôle du canal de distribution.",
+                "L'intégration verticale implique le contrôle du canal de distribution, tandis que l'intégration horizontale implique l'expansion vers de nouveaux services.",
+                "L'intégration verticale est axée sur la réduction des coûts, tandis que l'intégration horizontale est axée sur l'augmentation des revenus.",
+                "Il n'y a pas de différence significative entre les deux."
+            ],
+            "answer": 1,
+            "explanation": "L'intégration verticale implique le contrôle du canal de distribution (comme Apple contrôlant l'App Store), tandis que l'intégration horizontale implique l'expansion vers de nouveaux services (comme Microsoft intégrant Teams dans Office 365)."
+        },
+        {
+            "question": "Quelle a été la principale stratégie de Microsoft pour concurrencer Slack sur le marché des outils de collaboration ?",
+            "options": [
+                "Offrir un prix inférieur pour un service similaire.",
+                "Intégrer son outil de collaboration dans une suite logicielle largement utilisée.",
+                "Acquérir Slack pour éliminer la concurrence.",
+                "Se concentrer sur un marché de niche spécifique."
+            ],
+            "answer": 1,
+            "explanation": "Microsoft a intégré Teams gratuitement dans Office 365, ce qui a permis de toucher une large base d'utilisateurs existants."
+        },
+        {
+            "question": "Quelle a été la conséquence de la stratégie de Microsoft sur la part de marché de Slack ?",
+            "options": [
+                "Slack a gagné une part de marché significative.",
+                "Slack a maintenu sa position dominante sur le marché.",
+                "Slack a perdu une part de marché importante, en particulier auprès des grandes entreprises.",
+                "Il n'y a eu aucun impact significatif sur la part de marché de Slack."
+            ],
+            "answer": 2,
+            "explanation": "Slack a perdu une part de marché importante, en particulier auprès des grandes entreprises, en raison de l'intégration de Teams dans Office 365."
+        },
+        {
+            "question": "Quelle est la principale plainte de Spotify contre Apple concernant Apple Music ?",
+            "options": [
+                "Apple impose des frais d'abonnement plus élevés pour Apple Music.",
+                "Apple favorise Apple Music dans son écosystème et impose des commissions sur l'App Store.",
+                "Spotify ne peut pas être installé sur les appareils Apple.",
+                "Apple refuse de diffuser Spotify sur l'App Store."
+            ],
+            "answer": 1,
+            "explanation": "Spotify a déposé plainte contre Apple pour abus de position dominante, car Apple favorise Apple Music dans son écosystème et impose des commissions sur l'App Store."
+        },
+        {
+            "question": "Comment Apple favorise-t-il Apple Music par rapport à Spotify sur ses appareils ?",
+            "options": [
+                "En bloquant l'accès à Spotify sur l'App Store.",
+                "En intégrant Apple Music avec Siri et en imposant des commissions sur les abonnements Spotify via l'App Store.",
+                "En offrant des abonnements Apple Music gratuits à tous les utilisateurs d'iPhone.",
+                "En supprimant Spotify des appareils Apple via des mises à jour logicielles."
+            ],
+            "answer": 1,
+            "explanation": "Apple favorise Apple Music en l'intégrant avec Siri et en imposant des commissions sur les abonnements Spotify via l'App Store, ce qui rend Spotify plus cher pour les utilisateurs iOS."
+        },
+        {
+            "question": "Quel est l'objectif principal du Digital Markets Act (DMA) de l'Union Européenne ?",
+            "options": [
+                "Protéger les données personnelles des utilisateurs.",
+                "Limiter les pratiques anticoncurrentielles des grandes plateformes numériques.",
+                "Encourager l'innovation dans le secteur technologique.",
+                "Faciliter le commerce électronique transfrontalier."
+            ],
+            "answer": 1,
+            "explanation": "Le DMA vise à limiter les pratiques anticoncurrentielles des grandes plateformes numériques, en ciblant les 'gatekeepers' comme Google, Apple, Amazon, Microsoft et Meta."
+        },
+        {
+            "question": "Comment les régulations de l'UE, telles que le DMA, affectent-elles les modèles économiques des plateformes comme Amazon ?",
+            "options": [
+                "En augmentant les impôts pour les petites entreprises.",
+                "En interdisant la vente de produits de marque propre.",
+                "En imposant des restrictions sur le 'self-preferencing' et en augmentant la transparence.",
+                "En obligeant toutes les plateformes à devenir open source."
+            ],
+            "answer": 2,
+            "explanation": "Les régulations de l'UE, comme le DMA, affectent les modèles économiques des plateformes en imposant des restrictions sur le 'self-preferencing', en augmentant la transparence et en assurant une concurrence plus équitable."
+        },
+        {
+            "question": "Quel est l'impact des régulations sur la fiscalité d'Amazon en Europe ?",
+            "options": [
+                "Amazon est exempté de toutes les taxes en Europe.",
+                "Amazon doit payer des taxes plus élevées et a répercuté ces coûts sur les vendeurs tiers.",
+                "Les taxes d'Amazon ont été réduites pour encourager l'investissement.",
+                "Il n'y a pas eu de changement dans la fiscalité d'Amazon."
+            ],
+            "answer": 1,
+            "explanation": "Amazon est fortement impacté par les nouvelles taxes sur les plateformes numériques en Europe et a répercuté ces coûts sur les vendeurs tiers."
+        },
+        {
+            "question": "Comment les régulations affectent-elles les conditions de travail chez Amazon ?",
+            "options": [
+                "En permettant une surveillance accrue des employés.",
+                "En imposant des quotas de travail plus élevés.",
+                "En introduisant des lois pour limiter la surveillance excessive et imposer des pauses obligatoires.",
+                "Il n'y a pas eu de changement dans les conditions de travail."
+            ],
+            "answer": 2,
+            "explanation": "Les régulations ont introduit de nouvelles lois imposant des pauses obligatoires et limitant la surveillance excessive des employés dans les entrepôts d'Amazon."
+        },
+        {
+            "question": "Quel est l'effet de l'interopérabilité imposée par le DMA sur les plateformes de messagerie ?",
+            "options": [
+                "Elle oblige les plateformes à fusionner en une seule application.",
+                "Elle permet aux utilisateurs de différentes plateformes de communiquer entre elles.",
+                "Elle interdit l'utilisation de plateformes de messagerie en Europe.",
+                "Elle n'a aucun impact sur les plateformes de messagerie."
+            ],
+            "answer": 1,
+            "explanation": "L'interopérabilité imposée par le DMA oblige les plateformes comme WhatsApp et Messenger à permettre la communication avec des applications tierces."
+        },
+        {
+            "question": "Comment les effets de verrouillage (lock-in effects) sont-ils utilisés par les plateformes pour maintenir leur domination ?",
+            "options": [
+                "En facilitant la migration des utilisateurs vers d'autres plateformes.",
+                "En créant des barrières à la sortie et en rendant le changement coûteux ou difficile pour les utilisateurs.",
+                "En offrant des services gratuits et ouverts à tous les utilisateurs.",
+                "En encourageant l'utilisation de standards ouverts et interopérables."
+            ],
+            "answer": 1,
+            "explanation": "Les effets de verrouillage sont utilisés pour créer des barrières à la sortie, rendant le changement coûteux ou difficile pour les utilisateurs, et maintenant ainsi la domination de la plateforme."
+        },
+        {
+            "question": "Quelle est la part de marché approximative de Microsoft Teams dans le marché des outils de collaboration en 2024 ?",
+            "options": [
+                "25%",
+                "50%",
+                "75%",
+                "90%"
+            ],
+            "answer": 1,
+            "explanation": "Microsoft Teams domine le marché avec une part de marché d'environ 50%, grâce à son intégration native avec Office 365."
+        }
+    ]
+}

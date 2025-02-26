@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Display</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="SupCom Logo" class="logo" id="logo">
+        <h1 id="title">Skill Issues Check</h1>
+        <div id="visitor-counter">Visitors: <span id="count">Loading...</span></div>
+    </header>
+    
+    <div id="main-content" class="main-content">
+        <aside class="sidebar">
+            <h2>Cours disponibles</h2>
+            <div class="course-list" id="course-list">
+                <!-- Courses will be loaded dynamically -->
+                <div class="loading-indicator">Chargement des cours...</div>
+            </div>
+        </aside>
+
+        <div class="container">
+            <div id="drop-area" class="drop-area">
+                <p>Glissez-déposez votre fichier JSON ici ou</p>
+                <input type="file" id="file-input" accept=".json, .txt" style="display: none;">
+                <label for="file-input" class="btn" style="display: inline-block; margin-top: 10px;">Sélectionner un fichier</label>
+            </div>
+            
+            <div class="gemini-prompt-container" id="gemini-prompt-container">
+                <h3>Générer des questions avec Gemini</h3>
+                <p>Suivez ces étapes pour créer des questions à partir de vos documents :</p>
+                <ol>
+                    <li>Copiez le prompt ci-dessous</li>
+                    <li>Rendez-vous sur <a href="https://gemini.google.com/chat" target="_blank">Gemini Chat</a></li>
+                    <li>Collez le prompt, puis ajoutez votre texte ou document</li>
+                    <li>Copiez le JSON généré et importez-le dans cette application</li>
+                </ol>
+                <button id="copy-prompt" class="btn">Copier le prompt Gemini</button>
+                <span id="copy-confirmation" class="hide">Copié!</span>
+                
+                <div class="prompt-preview">
+                    <p><strong>Prompt:</strong> "Based on the given document generate 15 qcm questions with explanations in this format..."</p>
+                </div>
+
+                <h3>Puis collez votre JSON ici</h3>
+                <textarea id="json-paste" rows="6" placeholder="Collez votre texte JSON ici..."></textarea>
+                <button id="load-pasted" class="btn">Charger le JSON collé</button>
+            </div>
+
+            <div id="seance-selection" class="quiz-container hide">
+                <h2>Sélectionner une séance</h2>
+                <div id="seance-cards-container" class="seance-cards-container">
+                    <!-- Seance cards will be added dynamically -->
+                </div>
+                <div class="button-group">
+                    <button id="start-quiz" class="btn" disabled>Commencer le quiz</button>
+                </div>
+            </div>
+            
+            <div id="quiz-container" class="quiz-container hide">
+                <div class="seance-info">
+                    <div class="seance-title" id="seance-title">Séance 1</div>
+                    <div class="progress-info">
+                        <span id="current-question">1</span>/<span id="total-questions">7</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="question-container">
+                    <div class="question" id="question-text">Question text goes here</div>
+                    <div class="options" id="options-container">
+                        <!-- Options will be added dynamically -->
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button id="prev-btn" class="btn" disabled>Précédent</button>
+                    <button id="next-btn" class="btn" disabled>Suivant</button>
+                    <button id="submit-btn" class="btn hide">Soumettre</button>
+                </div>
+            </div>
+            
+            <div id="result-container" class="result-container hide">
+                <h2>Résultats</h2>
+                <div class="score" id="score-text">Vous avez obtenu 0/7 points</div>
+
+                <div id="wrong-answers-container" class="wrong-answers-container"></div>
+                <button id="restart-btn" class="btn">Recommencer</button>
+                <button id="change-seance-btn" class="btn">Changer de séance</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Application par Chater Marzougui</p>
+    </footer>
+    
+    <script src="home.js"></script>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+
+        // Get the image and title elements
+        const logo = document.getElementById('logo');
+        const title = document.getElementById('title');
+
+        // Add click event listeners to reload the page
+        logo.addEventListener('click', reloadPage);
+        title.addEventListener('click', reloadPage);
+    </script>
+</body>
+</html>
