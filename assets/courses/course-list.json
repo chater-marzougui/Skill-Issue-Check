@@ -14,6 +14,11 @@
         "id": "3",
         "filename": "LTE.json",
         "name": "Reseaux LTE"
+      },
+      {
+        "id": "4",
+        "filename": "crypto.json",
+        "name": "Crypto"
       }
     ]
   }
