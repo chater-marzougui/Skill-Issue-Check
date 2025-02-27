@@ -19,6 +19,11 @@
         "id": "4",
         "filename": "crypto.json",
         "name": "Crypto"
+      },
+      {
+        "id": "5",
+        "filename": "fondement_ai.json",
+        "name": "Fondement AI"
       }
     ]
   }
