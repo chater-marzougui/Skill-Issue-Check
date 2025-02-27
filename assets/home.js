@@ -168,7 +168,19 @@ function startQuiz() {
 }
 
 document.getElementById('copy-prompt').addEventListener('click', () => {
-    const promptText = `Based on the given document generate 15 qcm questions in this format:
+    const promptText = `Analyze the provided document in detail and extract the key concepts, definitions, and critical points necessary for a deep understanding of the course. Then, generate 30 multiple-choice questions (QCM) in French, following the format below:
+
+Questions should be clear, precise, and relevant to the document's content.
+The answer choices (options) should include one correct answer and three plausible distractors.
+The correct answer should be indicated with its index in the list (starting from 0).
+Provide a brief yet informative explanation for each answer to reinforce understanding.
+Ensure the questions cover various levels of cognition, including factual recall, comprehension, and application.
+Structure the questions to promote critical thinking and not just rote memorization.
+Use the following JSON format:
+
+json
+Copier
+Modifier
 {
     "seance 1": [
         {
@@ -194,7 +206,12 @@ document.getElementById('copy-prompt').addEventListener('click', () => {
             "explanation": "Au troisième trimestre 2021, 127 nouvelles licornes ont émergé."
         }
     ]
-}`;
+}
+Make sure that:
+
+The questions cover different sections of the document comprehensively.
+The explanations reinforce key learnings and not just repeat the correct answer.
+The difficulty level varies, including both basic and challenging questions.`;
 
     navigator.clipboard.writeText(promptText)
         .then(() => {
