@@ -641,7 +641,7 @@
         "Filtrer le bruit",
         "Stocker les données"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "L'ADC convertit un signal analogique (continu) provenant du capteur en un signal numérique (discret) pour le traitement par un microcontrôleur."
     },
     {
