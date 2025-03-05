@@ -833,5 +833,150 @@
       "answer": 1,
       "explanation": "La sécurité est cruciale pour protéger les données sensibles et prévenir les intrusions dans les appareils IoT."
     }
-  ]
+  ],
+  "Chap 5": [
+        {
+            "question": "Qu'est-ce que le 'computation offloading' dans le contexte de l'IoT ?",
+            "options": [
+                "La délocalisation de la production de dispositifs IoT.",
+                "La décision de l'endroit où effectuer le traitement des données (appareil, périphérie, cloud).",
+                "L'externalisation de la maintenance des systèmes IoT.",
+                "L'utilisation exclusive de serveurs cloud pour le traitement IoT."
+            ],
+            "answer": 1,
+            "explanation": "Le 'computation offloading' fait référence à la stratégie de répartition des tâches de calcul entre les différents niveaux d'une architecture IoT, en fonction des contraintes et des besoins."
+        },
+        {
+            "question": "Parmi les architectures suivantes, laquelle offre généralement la plus grande flexibilité ?",
+            "options": [
+                "ASIC",
+                "FPGA",
+                "MCU",
+                "GPU"
+            ],
+            "answer": 1,
+            "explanation": "Les FPGA (Field-Programmable Gate Arrays) sont reconfigurables, ce qui leur confère une grande flexibilité par rapport aux ASIC (Application-Specific Integrated Circuits) qui sont conçus pour une fonction spécifique. Les MCU et GPU sont moins flexible car ils sont programmable logiciellement."
+        },
+        {
+            "question": "Quel est le rôle principal d'un DSP dans un dispositif IoT ?",
+            "options": [
+                "Gérer la connectivité réseau.",
+                "Traiter les signaux analogiques et numériques.",
+                "Exécuter le système d'exploitation principal.",
+                "Gérer l'affichage graphique."
+            ],
+            "answer": 1,
+            "explanation": "Les DSP (Digital Signal Processors) sont optimisés pour le traitement rapide et efficace des signaux, comme l'audio, la vidéo, ou les données de capteurs."
+        },
+        {
+            "question": "Quel avantage principal les FPSoC offrent-ils par rapport aux MCU traditionnels ?",
+            "options": [
+                "Une consommation d'énergie plus faible.",
+                "Une capacité de traitement parallèle configurable.",
+                "Un coût de fabrication inférieur.",
+                "Une plus grande facilité de programmation."
+            ],
+            "answer": 1,
+            "explanation": "Les FPSoC (Field-Programmable System-on-Chip) combinent la flexibilité d'un FPGA avec la puissance d'un processeur, permettant une accélération matérielle personnalisée et un traitement parallèle."
+        },
+        {
+            "question": "Qu'est-ce que l'environnement d'exécution de confiance (TEE) tel qu'ARM TrustZone vise à protéger ?",
+            "options": [
+                "Les données stockées sur un serveur cloud.",
+                "L'intégrité du code et des données sensibles sur l'appareil.",
+                "La connexion réseau entre l'appareil et le cloud.",
+                "L'alimentation électrique de l'appareil."
+            ],
+            "answer": 1,
+            "explanation": "Un TEE crée un environnement isolé et sécurisé au sein d'un processeur, protégeant les données et le code critiques contre les attaques logicielles."
+        },
+        {
+            "question": "Quelle est la principale différence entre un dispositif IoT 'bas de gamme' et un dispositif 'haut de gamme' ?",
+            "options": [
+                "Le type de capteurs utilisés.",
+                "La capacité de traitement et les ressources disponibles.",
+                "Le protocole de communication sans fil utilisé.",
+                "La marque du fabricant."
+            ],
+            "answer": 1,
+            "explanation": "Les dispositifs bas de gamme ont des ressources limitées (mémoire, puissance de calcul), tandis que les dispositifs haut de gamme offrent des performances et des fonctionnalités plus avancées."
+        },
+        {
+            "question": "Quel est l'avantage d'utiliser un cœur IP dans la conception d'un SoC ?",
+            "options": [
+                "Il réduit la consommation d'énergie du SoC.",
+                "Il permet de réutiliser des blocs fonctionnels pré-conçus et vérifiés.",
+                "Il améliore la sécurité du SoC contre les attaques physiques.",
+                "Il facilite la mise à jour du logiciel du SoC."
+            ],
+            "answer": 1,
+            "explanation": "Les cœurs IP (Intellectual Property) sont des blocs de conception réutilisables, ce qui accélère le processus de conception et réduit les risques d'erreurs."
+        },
+        {
+            "question": "Dans le contexte des FPGA Xilinx, que signifie 'CLB' ?",
+            "options": [
+                "Circuit de Liaison Binaire",
+                "Bloc Logique Configurable",
+                "Cellule de Ligne de Bus",
+                "Circuit de Limitation de Bande"
+            ],
+            "answer": 1,
+            "explanation": "Les CLB (Configurable Logic Blocks) sont les éléments de base des FPGA Xilinx, contenant des tables de correspondance (LUT), des registres, et des multiplexeurs pour implémenter des fonctions logiques."
+        },
+        {
+            "question": "Quel est le rôle principal de STM32CubeMX ?",
+            "options": [
+                "Compiler le code C++ pour les microcontrôleurs STM32",
+                "Déboguer les applications STM32 en temps réel",
+                "Configurer les périphériques et générer le code d'initialisation des microcontrôleurs STM32",
+                "Simuler le fonctionnement de circuits électronique à base de STM32."
+            ],
+            "answer": 2,
+            "explanation": "STM32CubeMX est un outil graphique qui facilite la configuration des broches, de l'horloge, des périphériques et du middleware des microcontrôleurs STM32, et génère le code d'initialisation correspondant."
+        },
+        {
+            "question": "Quel est le principal avantage d'utiliser un SoC (System on Chip) au lieu de plusieurs puces séparées?",
+            "options": [
+                "Il est plus facile de programmer.",
+                "Il permet une réduction de la taille, de la consommation électrique et du coût.",
+                "Il permet une meilleur qualité.",
+                "Il est plus facile à faire évoluer."
+            ],
+            "answer": 1,
+            "explanation": "Un SoC intégrant plusieurs fonctions (CPU, GPU, mémoire, périphériques) sur une seule puce permet de réduire la taille, le coût de fabrication et de dimunuer la consommation d'énergie."
+        },
+        {
+            "question": "Quelle est la caractéristique distinctive du processeur Renesas RZ/A2M par rapport à un MCU traditionnel ?",
+            "options": [
+                "Il intègre un module Wi-Fi.",
+                "Il utilise un cœur ARM Cortex-M.",
+                "Il est doté d'un accélérateur de traitement d'image (DRP).",
+                "Il fonctionne avec une tension d'alimentation plus faible."
+            ],
+            "answer": 2,
+            "explanation": "Le RZ/A2M intègre un DRP (Dynamically Reconfigurable Processor) qui permet d'accélérer les algorithmes de traitement d'image de manière flexible, en reconfigurant dynamiquement le matériel."
+        },
+        {
+            "question": "En terme de sécurité embarqué, à quoi fait référence le terme 'Secure Boot'?",
+            "options": [
+                "A un programme qui démarre rapidement le système.",
+                "A un composant qui permet d'avoir un mot de passe à la mise sous tension.",
+                "A un système qui vérifie l'intégrité du firmware à travers des clés cryptographiques.",
+                "A un composant qui permet de démarrer le système à partir d'un média externe (clef usb, carte SD,...)"
+            ],
+            "answer": 2,
+            "explanation": "Le 'Secure Boot' permet de démarrer le système d'une manière sûre, en vérifiant que le boot loader et les images systèmes n'ont pas été altérées."
+        },
+        {
+          "question": "Dans le contexte de la présentation, quel est l'avantage principal de l'outil Vitis de Xilinx par rapport à Vivado?",
+          "options": [
+              "Vitis est spécifique au dévelopement sur des microcontrôleur ARM.",
+              "Vitis cible les architectures ARM et X86, Vivado ne supporte pas l'accélération matérielle.",
+              "Vitis est une plateforme unifié qui permet le développement logiciel, l'implémentation et l'optimisation d'accélérateurs matériels,",
+              "Vitis ne supporte pas l'écriture de code HDL."
+          ],
+          "answer": 2,
+          "explanation": "Vitis est une plate-forme de développement logiciel unifiée qui permet aux développeurs de créer des applications embarquées et des accélérateurs matériels pour les FPGA, les SoC et les ACAP de Xilinx. Il est utilisé pour des applications telles que l'accélération des centres de données, l'IA embarquée et les systèmes embarqués."
+      }
+    ]
 }
