@@ -1,0 +1,493 @@
+{
+    "Cloud Hackathon": [
+    {
+      "question": "What is an AWS Availability Zone?",
+      "options": [
+        "A single data center within a region",
+        "A physical location where AWS clusters data centers",
+        "A geographically distinct location with multiple data centers",
+        "A logical grouping of AWS services"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the primary benefit of deploying resources across multiple Availability Zones within a region?",
+      "options": [
+        "Reduced latency",
+        "Lower cost",
+        "Increased fault tolerance and high availability",
+        "Easier management"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "How are Availability Zones typically represented in AWS naming conventions?",
+      "options": [
+        "Using numbers (e.g., Zone 1, Zone 2)",
+        "Using letters appended to the region code (e.g., us-east-1a, us-east-1b)",
+        "Using geographical coordinates",
+        "Using random alphanumeric strings"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "True or False: All AWS regions have the same number of Availability Zones.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "When designing for disaster recovery within AWS, deploying your application and data across multiple Availability Zones is a strategy primarily addressing:",
+      "options": [
+        "Regional failure",
+        "Data center failure within a region",
+        "Application code errors",
+        "Network connectivity issues from the internet"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What does EC2 stand for?",
+      "options": [
+        "Elastic Cloud Computing",
+        "Essential Cloud Connectivity",
+        "Enterprise Compute Capability",
+        "Elastic Compute Cloud"
+      ],
+      "answer": 3,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is an Amazon Machine Image (AMI)?",
+      "options": [
+        "A blueprint for launching an EC2 instance",
+        "A type of EC2 instance storage",
+        "A network interface for EC2 instances",
+        "A security configuration for EC2 instances"
+      ],
+      "answer": 0,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which type of EC2 instance purchasing option offers the lowest cost but is suitable only for fault-tolerant workloads?",
+      "options": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Savings Plans"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which component acts as a virtual firewall for your EC2 instance to control inbound and outbound traffic?",
+      "options": [
+        "Network ACL",
+        "Route Table",
+        "Security Group",
+        "Internet Gateway"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the primary function of a Key Pair when launching an EC2 instance?",
+      "options": [
+        "To encrypt the root volume",
+        "To authenticate SSH access to the instance",
+        "To assign a public IP address",
+        "To define the instance type"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which service allows you to automatically scale your EC2 instances based on demand?",
+      "options": [
+        "Elastic Load Balancer",
+        "AWS Lambda",
+        "Auto Scaling",
+        "AWS CloudFormation"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is Amazon S3?",
+      "options": [
+        "A relational database service",
+        "A serverless compute service",
+        "An object storage service",
+        "A content delivery network"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "In S3, what is the fundamental container for objects?",
+      "options": [
+        "Folder",
+        "Directory",
+        "Volume",
+        "Bucket"
+      ],
+      "answer": 3,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the maximum size of a single object that can be stored in S3?",
+      "options": [
+        "5 GB",
+        "1 TB",
+        "5 TB",
+        "Unlimited"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which S3 feature helps protect against accidental overwrites or deletions by keeping multiple versions of an object?",
+      "options": [
+        "Encryption",
+        "Lifecycle Policies",
+        "Versioning",
+        "Access Control Lists (ACLs)"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which S3 storage class is designed for data that is accessed less frequently but requires rapid access when needed, offering lower cost than Standard storage?",
+      "options": [
+        "S3 Standard",
+        "S3 Standard-Infrequent Access (IA)",
+        "S3 Glacier",
+        "S3 Deep Archive"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is AWS Bedrock?",
+      "options": [
+        "A managed database service",
+        "A service for building, training, and deploying machine learning models",
+        "A service that provides access to foundation models (FMs) via an API",
+        "A file storage service"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What type of AI models does AWS Bedrock primarily focus on providing access to?",
+      "options": [
+        "Small, specialized models",
+        "Pre-trained foundation models (FMs)",
+        "Only models developed by AWS",
+        "Models requiring manual installation"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "True or False: AWS Bedrock allows you to use foundation models from multiple leading AI companies.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Interacting with foundation models in Bedrock typically involves using:",
+      "options": [
+        "SQL queries",
+        "RESTful APIs",
+        "SSH commands",
+        "File uploads"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is Kubernetes?",
+      "options": [
+        "A serverless compute service",
+        "A container orchestration platform",
+        "A virtual machine hypervisor",
+        "A database management system"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the name of AWS's managed Kubernetes service?",
+      "options": [
+        "ECS",
+        "EKS",
+        "Fargate",
+        "Kubernetes Service"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "In Kubernetes, what is the smallest deployable unit of computing that you can create and manage?",
+      "options": [
+        "Node",
+        "Cluster",
+        "Pod",
+        "Service"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What Kubernetes object is responsible for maintaining a specified number of replica Pods and replacing failed ones?",
+      "options": [
+        "Service",
+        "Ingress",
+        "Deployment",
+        "Namespace"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which Kubernetes object provides a stable IP address and DNS name for a set of Pods?",
+      "options": [
+        "Ingress",
+        "Deployment",
+        "Service",
+        "ConfigMap"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "When deploying a multi-tier application across Availability Zones for high availability, which AWS service is typically used to distribute incoming traffic across instances in different zones?",
+      "options": [
+        "Amazon CloudFront",
+        "Amazon Route 53",
+        "Elastic Load Balancer (ELB)",
+        "AWS Direct Connect"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Within a single AWS region, are Availability Zones directly connected to each other over the public internet or AWS's private network?",
+      "options": [
+        "Public internet",
+        "AWS's high-bandwidth, low-latency private network"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "When designing a highly available database solution like Amazon RDS, replicating data to a standby instance in a different Availability Zone primarily protects against what type of failure?",
+      "options": [
+        "Application software failure",
+        "Region-wide outage",
+        "Outage of a single Availability Zone",
+        "User configuration error"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What EC2 feature allows you to control the underlying hardware instance on which your EC2 instances are launched, suitable for licensing or compliance requirements?",
+      "options": [
+        "Dedicated Hosts",
+        "Placement Groups",
+        "Reserved Instances",
+        "Spot Instances"
+      ],
+      "answer": 0,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the main difference between a Security Group and a Network ACL (NACL) in AWS networking?",
+      "options": [
+        "Security Groups operate at the subnet level, NACLs at the instance level.",
+        "Security Groups are stateful, NACLs are stateless.",
+        "Security Groups only allow inbound rules, NACLs only allow outbound rules.",
+        "Security Groups apply to VPCs, NACLs apply to subnets."
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "You need to provide block-level storage for an EC2 instance. Which AWS service would you use?",
+      "options": [
+        "Amazon S3",
+        "Amazon EFS",
+        "Amazon EBS",
+        "Amazon FSx"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which S3 feature allows you to automatically transition objects to different storage classes or expire them after a defined period?",
+      "options": [
+        "Versioning",
+        "Replication",
+        "Lifecycle Policies",
+        "Tags"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "You need to encrypt data stored in S3 at rest using keys you manage within AWS Key Management Service (KMS). Which S3 encryption option would you configure?",
+      "options": [
+        "SSE-S3",
+        "SSE-KMS",
+        "SSE-C",
+        "Client-Side Encryption"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the primary purpose of 'Prompt Engineering' in the context of using Foundation Models via services like AWS Bedrock?",
+      "options": [
+        "Designing the UI for AI applications",
+        "Crafting input text (prompts) to guide the model's output",
+        "Training the foundation model from scratch",
+        "Optimizing the network connection to the AI service"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which Bedrock feature allows you to connect a foundation model to internal company data sources (like knowledge bases) or perform actions (like booking flights) using APIs?",
+      "options": [
+        "Prompt Engineering",
+        "Agents for Amazon Bedrock",
+        "Model Customization",
+        "Knowledge Bases for Amazon Bedrock"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "In EKS, what is the primary purpose of an 'IAM role for a Service Account' (IRSA)?",
+      "options": [
+        "To grant permissions to the EKS control plane nodes",
+        "To allow Pods to assume an IAM role and access AWS services",
+        "To control access to the Kubernetes API server",
+        "To encrypt data stored by the Pod"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which EKS component is responsible for managing the Kubernetes control plane, including the API server, scheduler, and etcd?",
+      "options": [
+        "Worker Nodes",
+        "Fargate Pods",
+        "EKS Managed Node Group",
+        "EKS Control Plane"
+      ],
+      "answer": 3,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "When building a highly available and fault-tolerant application on EC2, placing instances into a Cluster Placement Group primarily aims to:",
+      "options": [
+        "Ensure instances are on separate hardware to reduce correlated failures",
+        "Ensure instances are on the same low-latency network for tightly coupled applications",
+        "Reduce costs by grouping instances",
+        "Automate instance backups"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the consistency model for S3 reads of objects after they have been *overwritten* or *deleted*?",
+      "options": [
+        "Read-after-write consistency",
+        "Eventual consistency",
+        "Strong consistency",
+        "Immediate consistency"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "How does the AWS VPC CNI plugin for Kubernetes (used in EKS) typically assign IP addresses to Pods?",
+      "options": [
+        "IP addresses are assigned from a separate cluster IP range",
+        "Each Pod is assigned a unique IP address directly from the VPC subnet",
+        "Pods share the IP address of the Node",
+        "IP addresses are dynamically assigned by the Kubernetes control plane without using VPC IPs"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "What is the primary use case for S3 Transfer Acceleration?",
+      "options": [
+        "Reducing the cost of S3 storage",
+        "Speeding up large data transfers to and from S3 buckets over long distances",
+        "Encrypting data during transfer",
+        "Automating data backups to S3"
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "You have an application running on EC2 that requires very low latency communication between instances. Which Placement Group strategy would be most suitable?",
+      "options": [
+        "Cluster",
+        "Spread",
+        "Partition",
+        "Availability Zone"
+      ],
+      "answer": 0,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "Which S3 storage class should you consider for archiving data that you rarely need to access, but need to retrieve within minutes?",
+      "options": [
+        "S3 Standard-IA",
+        "S3 One Zone-IA",
+        "S3 Glacier Instant Retrieval",
+        "S3 Glacier Deep Archive"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "When setting up cross-region replication for an S3 bucket, which of the following is NOT a requirement?",
+      "options": [
+        "Both source and destination buckets must have versioning enabled.",
+        "The source and destination buckets must be in different AWS accounts.",
+        "AWS must have permission to replicate objects.",
+        "Replication must be configured on the source bucket."
+      ],
+      "answer": 1,
+      "explanation": "No explanation for this question."
+    },
+    {
+      "question": "You are deploying a stateful application on EKS and need persistent storage that can be accessed by multiple Pods concurrently across different nodes. Which AWS service integrated with EKS would you typically use?",
+      "options": [
+        "Amazon EBS",
+        "Amazon S3",
+        "Amazon EFS",
+        "Amazon RDS"
+      ],
+      "answer": 2,
+      "explanation": "No explanation for this question."
+    }
+  ]
+}

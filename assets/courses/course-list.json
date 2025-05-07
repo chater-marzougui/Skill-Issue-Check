@@ -2,28 +2,8 @@
     "courses": [
       {
         "id": "1",
-        "filename": "economie_digitale.json",
-        "name": "Economie Digitale"
-      },
-      {
-        "id": "2",
-        "filename": "iot.json",
-        "name": "IOT"
-      },
-      {
-        "id": "3",
-        "filename": "LTE.json",
-        "name": "Reseaux LTE"
-      },
-      {
-        "id": "4",
-        "filename": "crypto.json",
-        "name": "Crypto"
-      },
-      {
-        "id": "5",
-        "filename": "fondement_ai.json",
-        "name": "Fondement AI"
+        "filename": "Cloud.json",
+        "name": "Cloud Hackathon from INDP2C"
       }
     ]
   }
