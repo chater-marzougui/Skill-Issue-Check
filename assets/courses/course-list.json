@@ -4,6 +4,12 @@
         "id": "1",
         "filename": "Cloud.json",
         "name": "Cloud Hackathon from INDP2C"
+      },
+      {
+        "id": "2",
+        "filename": "Big_data.json",
+        "name": "Big Data"
       }
+
     ]
   }

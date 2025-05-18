@@ -1,0 +1,224 @@
+{
+  "seance 1": [
+    {
+      "question": "Quelle est la motivation principale derrière l'émergence du Big Data selon le document ?",
+      "options": [
+        "La nécessité de réduire les coûts de stockage des données.",
+        "L'augmentation massive des traces numériques laissées par les utilisateurs.",
+        "Le besoin d'améliorer la sécurité des informations en ligne.",
+        "La volonté de créer des systèmes d'exploitation plus performants."
+      ],
+      "answer": 1,
+      "explanation": "Le document indique clairement que la présence accrue des individus dans le monde virtuel et les quantités phénoménales de traces laissées sont la raison pour laquelle le Big Data est pertinent pour les entreprises."
+    },
+    {
+      "question": "Quel est le rôle principal du Big Data pour les entreprises mentionné dans le document ?",
+      "options": [
+        "Automatiser toutes les décisions stratégiques.",
+        "Fournir un outil d'aide à la décision basé sur l'analyse des données.",
+        "Remplacer les systèmes de gestion de base de données traditionnels.",
+        "Minimiser l'interaction directe avec les clients."
+      ],
+      "answer": 1,
+      "explanation": "Le document spécifie que le Big Data est un outil d'aide à la décision en entreprise, permettant de mieux connaître prospects et clients et de bâtir des modèles solides."
+    },
+    {
+      "question": "Quel framework a standardisé les outils de stockage et de traitement de données massives initialement développés par Google ?",
+      "options": [
+        "Apache Spark",
+        "Hadoop",
+        "Google Cloud Platform",
+        "Microsoft Azure"
+      ],
+      "answer": 1,
+      "explanation": "Le document attribue à la fondation Apache la standardisation des outils de Google pour le Big Data à travers le framework 'Hadoop'."
+    },
+    {
+      "question": "Sur quels principes de Google le projet Hadoop est-il basé ?",
+      "options": [
+        "Google Docs et Google Sheets",
+        "Android et Chrome OS",
+        "MapReduce et Google File System (GFS)",
+        "Gmail et Google Calendar"
+      ],
+      "answer": 2,
+      "explanation": "Le document stipule explicitement qu'Hadoop est basé sur le principe MapReduce et Google File System, deux produits de Google Corp."
+    },
+    {
+      "question": "Quelle est la fonction principale de GFS (Google File System) ?",
+      "options": [
+        "Un système de gestion de base de données relationnelle.",
+        "Un environnement de développement intégré pour Java.",
+        "Un système de fichier distribué optimisé pour le stockage de données ultra volumineuses.",
+        "Un outil de virtualisation de serveurs."
+      ],
+      "answer": 2,
+      "explanation": "Le document définit GFS comme un système de fichier distribué spécifiquement optimisé pour le stockage de données ultra volumineuses."
+    },
+    {
+      "question": "Comment un fichier est-il stocké dans GFS selon le document ?",
+      "options": [
+        "En une seule entité sur un serveur centralisé.",
+        "Découpé en morceaux répartis sur des serveurs appelés Chunks Servers.",
+        "Compressé et stocké dans une base de données NoSQL.",
+        "Répliqué intégralement sur tous les serveurs du cluster."
+      ],
+      "answer": 1,
+      "explanation": "Le document explique que chaque fichier dans GFS est découpé en morceaux (chunks) qui sont ensuite répartis sur des serveurs appelés Chunks Servers."
+    },
+    {
+      "question": "Quel composant de GFS connaît la localisation de tous les morceaux de fichiers ?",
+      "options": [
+        "Le Client GFS",
+        "Le Chunks Server",
+        "Le Master Server",
+        "Le système d'exploitation Linux"
+      ],
+      "answer": 2,
+      "explanation": "Selon le document, le Master Server dans GFS a pour rôle de connaître à chaque instant la localisation des morceaux (chunks) de fichiers."
+    },
+    {
+      "question": "Quel est le modèle de programmation qui utilise le traitement parallèle pour accélérer le traitement de données à grande échelle, selon le document ?",
+      "options": [
+        "Orienté Objet",
+        "Fonctionnel",
+        "Impératif",
+        "MapReduce"
+      ],
+      "answer": 3,
+      "explanation": "Le document présente MapReduce comme un modèle de programmation conçu pour le traitement parallèle de données à grande échelle."
+    },
+    {
+      "question": "Quelle est la première tâche effectuée dans le modèle MapReduce ?",
+      "options": [
+        "La tâche de réduction",
+        "L'agrégation des valeurs",
+        "La tâche de cartographie",
+        "Le stockage des données"
+      ],
+      "answer": 2,
+      "explanation": "La première tâche décrite pour le modèle MapReduce est la 'tâche de cartographie', qui transforme les données en paires clé/valeur."
+    },
+    {
+      "question": "À quoi correspond la 'tâche de réduction' dans MapReduce ?",
+      "options": [
+        "Au découpage initial des données en morceaux.",
+        "À la transformation des données en paires clé/valeur.",
+        "À l'agrégation des valeurs avec la même clé et au traitement des données pour un résultat final.",
+        "À la répartition des tâches sur les différents serveurs."
+      ],
+      "answer": 2,
+      "explanation": "La 'tâche de réduction' prend les sorties de la tâche de cartographie, agrège les valeurs par clé et traite les données pour obtenir le résultat final."
+    },
+    {
+      "question": "En quelle année le projet Hadoop a-t-il commencé ?",
+      "options": [
+        "2006",
+        "2004",
+        "2008",
+        "2013"
+      ],
+      "answer": 1,
+      "explanation": "Le document précise que l'histoire de Hadoop a commencé en 2004 avec le développement du système Nutch par Doug Cutting et Mike Cafarella."
+    },
+    {
+      "question": "Quel système de recherche distribué a servi de base au développement initial d'Hadoop ?",
+      "options": [
+        "Google Search",
+        "Yahoo! Search",
+        "Nutch",
+        "Apache Lucene"
+      ],
+      "answer": 2,
+      "explanation": "Hadoop a commencé par être développé à partir de Nutch, un système de recherche distribué."
+    },
+    {
+      "question": "Sous l'égide de quelle fondation Apache Hadoop est-il devenu un projet open source ?",
+      "options": [
+        "Apache Software Foundation",
+        "Linux Foundation",
+        "Eclipse Foundation",
+        "Mozilla Foundation"
+      ],
+      "answer": 0,
+      "explanation": "Le document indique clairement que Hadoop est devenu un projet open source sous l'égide de l'Apache Software Foundation."
+    },
+    {
+      "question": "Quel composant majeur a été introduit avec Hadoop 2.0 pour une gestion des ressources plus flexible ?",
+      "options": [
+        "HDFS",
+        "MapReduce",
+        "YARN",
+        "Hive"
+      ],
+      "answer": 2,
+      "explanation": "Hadoop 2.0 a introduit YARN (Yet Another Resource Negotiator) pour améliorer la gestion des ressources."
+    },
+    {
+      "question": "Selon le document, quelle est l'une des principales caractéristiques d'Hadoop du point de vue du développeur ?",
+      "options": [
+        "Complexité du modèle de programmation.",
+        "Déploiement lourd et coûteux.",
+        "Modèle simple pour développer des tâches Map-Reduce.",
+        "Gestion manuelle de la tolérance aux pannes."
+      ],
+      "answer": 2,
+      "explanation": "Le document mentionne que Hadoop offre un modèle simple pour les développeurs pour créer des tâches Map-Reduce."
+    },
+    {
+      "question": "Quel critère des solutions Big Data Hadoop assure-t-il en exploitant le parallélisme sur des clusters ?",
+      "options": [
+        "La sécurité.",
+        "La gouvernance des données.",
+        "La performance.",
+        "L'interopérabilité."
+      ],
+      "answer": 2,
+      "explanation": "Le document liste la 'Performance' comme un critère assuré par Hadoop, notamment grâce à l'exploitation du parallélisme."
+    },
+    {
+      "question": "Quelle est la taille par défaut d'un bloc de données dans HDFS Hadoop V2 ?",
+      "options": [
+        "64 Mo",
+        "128 Mo ou 256 Mo",
+        "512 Mo",
+        "1 Go"
+      ],
+      "answer": 1,
+      "explanation": "Le document indique que la taille par défaut d'un bloc dans HDFS V2 est de 128 Mo ou 256 Mo."
+    },
+    {
+      "question": "Pourquoi HDFS utilise-t-il des blocs de grande taille ?",
+      "options": [
+        "Pour augmenter le coût du stockage.",
+        "Pour réduire le temps d'accès à un fichier.",
+        "Pour simplifier la réplication des données.",
+        "Pour améliorer la sécurité des données."
+      ],
+      "answer": 1,
+      "explanation": "L'intérêt principal des blocs de grande taille dans HDFS est de réduire le temps d'accès aux fichiers."
+    },
+    {
+      "question": "Quel est le rôle du NameNode dans HDFS ?",
+      "options": [
+        "Stocker les données réelles des fichiers.",
+        "Gérer les métadonnées du système de fichiers (structure, localisation des blocs).",
+        "Exécuter les tâches MapReduce.",
+        "Gérer la réplication des blocs."
+      ],
+      "answer": 1,
+      "explanation": "Le NameNode est la machine maîtresse dans HDFS qui gère les métadonnées du système de fichiers, incluant la localisation des blocs."
+    },
+    {
+      "question": "Comment HDFS assure-t-il la tolérance aux pannes ?",
+      "options": [
+        "En stockant toutes les données sur un seul serveur principal.",
+        "En ne permettant pas la suppression de fichiers.",
+        "En répliquant les blocs de données sur plusieurs nœuds.",
+        "En utilisant un système de fichiers journalisé."
+      ],
+      "answer": 2,
+      "explanation": "HDFS assure la tolérance aux pannes en répliquant les blocs de données sur différents nœuds du cluster."
+    }
+  ]
+}
