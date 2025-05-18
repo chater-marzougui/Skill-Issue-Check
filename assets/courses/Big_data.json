@@ -1,7 +1,7 @@
 {
   "seance 1": [
     {
-      "question": "Quelle est la motivation principale derrière l'émergence du Big Data selon le document ?",
+      "question": "Quelle est la motivation principale derrière l'émergence du Big Data?",
       "options": [
         "La nécessité de réduire les coûts de stockage des données.",
         "L'augmentation massive des traces numériques laissées par les utilisateurs.",
@@ -9,10 +9,10 @@
         "La volonté de créer des systèmes d'exploitation plus performants."
       ],
       "answer": 1,
-      "explanation": "Le document indique clairement que la présence accrue des individus dans le monde virtuel et les quantités phénoménales de traces laissées sont la raison pour laquelle le Big Data est pertinent pour les entreprises."
+      "explanation": "La présence accrue des individus dans le monde virtuel et les quantités phénoménales de traces laissées sont la raison pour laquelle le Big Data est pertinent pour les entreprises."
     },
     {
-      "question": "Quel est le rôle principal du Big Data pour les entreprises mentionné dans le document ?",
+      "question": "Quel est le rôle principal du Big Data pour les entreprises?",
       "options": [
         "Automatiser toutes les décisions stratégiques.",
         "Fournir un outil d'aide à la décision basé sur l'analyse des données.",
@@ -20,7 +20,7 @@
         "Minimiser l'interaction directe avec les clients."
       ],
       "answer": 1,
-      "explanation": "Le document spécifie que le Big Data est un outil d'aide à la décision en entreprise, permettant de mieux connaître prospects et clients et de bâtir des modèles solides."
+      "explanation": "Le Big Data est un outil d'aide à la décision en entreprise, permettant de mieux connaître prospects et clients et de bâtir des modèles solides."
     },
     {
       "question": "Quel framework a standardisé les outils de stockage et de traitement de données massives initialement développés par Google ?",
@@ -31,7 +31,7 @@
         "Microsoft Azure"
       ],
       "answer": 1,
-      "explanation": "Le document attribue à la fondation Apache la standardisation des outils de Google pour le Big Data à travers le framework 'Hadoop'."
+      "explanation": "La fondation Apache est attribuée à la standardisation des outils de Google pour le Big Data à travers le framework 'Hadoop'."
     },
     {
       "question": "Sur quels principes de Google le projet Hadoop est-il basé ?",
@@ -42,7 +42,7 @@
         "Gmail et Google Calendar"
       ],
       "answer": 2,
-      "explanation": "Le document stipule explicitement qu'Hadoop est basé sur le principe MapReduce et Google File System, deux produits de Google Corp."
+      "explanation": "Hadoop est basé sur le principe MapReduce et Google File System, deux produits de Google Corp."
     },
     {
       "question": "Quelle est la fonction principale de GFS (Google File System) ?",
@@ -53,10 +53,10 @@
         "Un outil de virtualisation de serveurs."
       ],
       "answer": 2,
-      "explanation": "Le document définit GFS comme un système de fichier distribué spécifiquement optimisé pour le stockage de données ultra volumineuses."
+      "explanation": "GFS est un système de fichier distribué spécifiquement optimisé pour le stockage de données ultra volumineuses."
     },
     {
-      "question": "Comment un fichier est-il stocké dans GFS selon le document ?",
+      "question": "Comment un fichier est-il stocké dans GFS?",
       "options": [
         "En une seule entité sur un serveur centralisé.",
         "Découpé en morceaux répartis sur des serveurs appelés Chunks Servers.",
@@ -64,7 +64,7 @@
         "Répliqué intégralement sur tous les serveurs du cluster."
       ],
       "answer": 1,
-      "explanation": "Le document explique que chaque fichier dans GFS est découpé en morceaux (chunks) qui sont ensuite répartis sur des serveurs appelés Chunks Servers."
+      "explanation": "Chaque fichier dans GFS est découpé en morceaux (chunks) qui sont ensuite répartis sur des serveurs appelés Chunks Servers."
     },
     {
       "question": "Quel composant de GFS connaît la localisation de tous les morceaux de fichiers ?",
@@ -75,10 +75,10 @@
         "Le système d'exploitation Linux"
       ],
       "answer": 2,
-      "explanation": "Selon le document, le Master Server dans GFS a pour rôle de connaître à chaque instant la localisation des morceaux (chunks) de fichiers."
+      "explanation": "le Master Server dans GFS a pour rôle de connaître à chaque instant la localisation des morceaux (chunks) de fichiers."
     },
     {
-      "question": "Quel est le modèle de programmation qui utilise le traitement parallèle pour accélérer le traitement de données à grande échelle, selon le document ?",
+      "question": "Quel est le modèle de programmation qui utilise le traitement parallèle pour accélérer le traitement de données à grande échelle?",
       "options": [
         "Orienté Objet",
         "Fonctionnel",
@@ -86,7 +86,7 @@
         "MapReduce"
       ],
       "answer": 3,
-      "explanation": "Le document présente MapReduce comme un modèle de programmation conçu pour le traitement parallèle de données à grande échelle."
+      "explanation": "MapReduce est un modèle de programmation conçu pour le traitement parallèle de données à grande échelle."
     },
     {
       "question": "Quelle est la première tâche effectuée dans le modèle MapReduce ?",
@@ -119,7 +119,7 @@
         "2013"
       ],
       "answer": 1,
-      "explanation": "Le document précise que l'histoire de Hadoop a commencé en 2004 avec le développement du système Nutch par Doug Cutting et Mike Cafarella."
+      "explanation": "L'histoire de Hadoop a commencé en 2004 avec le développement du système Nutch par Doug Cutting et Mike Cafarella."
     },
     {
       "question": "Quel système de recherche distribué a servi de base au développement initial d'Hadoop ?",
@@ -141,7 +141,7 @@
         "Mozilla Foundation"
       ],
       "answer": 0,
-      "explanation": "Le document indique clairement que Hadoop est devenu un projet open source sous l'égide de l'Apache Software Foundation."
+      "explanation": "Hadoop est devenu un projet open source sous l'égide de l'Apache Software Foundation."
     },
     {
       "question": "Quel composant majeur a été introduit avec Hadoop 2.0 pour une gestion des ressources plus flexible ?",
@@ -155,7 +155,7 @@
       "explanation": "Hadoop 2.0 a introduit YARN (Yet Another Resource Negotiator) pour améliorer la gestion des ressources."
     },
     {
-      "question": "Selon le document, quelle est l'une des principales caractéristiques d'Hadoop du point de vue du développeur ?",
+      "question": "quelle est l'une des principales caractéristiques d'Hadoop du point de vue du développeur ?",
       "options": [
         "Complexité du modèle de programmation.",
         "Déploiement lourd et coûteux.",
@@ -163,7 +163,7 @@
         "Gestion manuelle de la tolérance aux pannes."
       ],
       "answer": 2,
-      "explanation": "Le document mentionne que Hadoop offre un modèle simple pour les développeurs pour créer des tâches Map-Reduce."
+      "explanation": "Hadoop offre un modèle simple pour les développeurs pour créer des tâches Map-Reduce."
     },
     {
       "question": "Quel critère des solutions Big Data Hadoop assure-t-il en exploitant le parallélisme sur des clusters ?",
@@ -174,7 +174,7 @@
         "L'interopérabilité."
       ],
       "answer": 2,
-      "explanation": "Le document liste la 'Performance' comme un critère assuré par Hadoop, notamment grâce à l'exploitation du parallélisme."
+      "explanation": "La 'Performance' est un critère assuré par Hadoop, notamment grâce à l'exploitation du parallélisme."
     },
     {
       "question": "Quelle est la taille par défaut d'un bloc de données dans HDFS Hadoop V2 ?",
@@ -185,7 +185,7 @@
         "1 Go"
       ],
       "answer": 1,
-      "explanation": "Le document indique que la taille par défaut d'un bloc dans HDFS V2 est de 128 Mo ou 256 Mo."
+      "explanation": "La taille par défaut d'un bloc dans HDFS V2 est de 128 Mo ou 256 Mo."
     },
     {
       "question": "Pourquoi HDFS utilise-t-il des blocs de grande taille ?",

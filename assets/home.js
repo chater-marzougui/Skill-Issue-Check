@@ -177,36 +177,41 @@ Ensure the questions cover various levels of cognition, including factual recall
 Structure the questions to promote critical thinking and not just rote memorization.
 Use the following JSON format:
 {
-    "seance 1": [
-        {
-            "question": "Quel était le montant approximatif du financement mondial en capital-risque des startups au troisième trimestre 2021 ?",
-            "options": [
-                "77 milliards USD",
-                "158 milliards USD",
-                "100 milliards USD",
-                "200 milliards USD"
-            ],
-            "answer": 1,
-            "explanation": "Le financement mondial en capital-risque des startups au troisième trimestre 2021 s'élevait à environ 158 milliards USD."
-        },
-        {
-            "question": "Combien de nouvelles licornes ont émergé au troisième trimestre 2021 ?",
-            "options": [
-                "37",
-                "127",
-                "77",
-                "200"
-            ],
-            "answer": 1,
-            "explanation": "Au troisième trimestre 2021, 127 nouvelles licornes ont émergé."
-        }
-    ]
+    "seance 1": [
+        {
+            "question": "Quel était le montant approximatif du financement mondial en capital-risque des startups au troisième trimestre 2021 ?",
+            "options": [
+                "77 milliards USD",
+                "158 milliards USD",
+                "100 milliards USD",
+                "200 milliards USD"
+            ],
+            "answer": 1,
+            "explanation": "Le financement mondial en capital-risque des startups au troisième trimestre 2021 s'élevait à environ 158 milliards USD."
+        },
+        {
+            "question": "Combien de nouvelles licornes ont émergé au troisième trimestre 2021 ?",
+            "options": [
+                "37",
+                "77",
+                "200"
+                "127",
+            ],
+            "answer": 3,
+            "explanation": "Au troisième trimestre 2021, 127 nouvelles licornes ont émergé."
+        }
+    ]
 }
 Make sure that:
-
+The answers are zero-indexed.
 The questions cover different sections of the document comprehensively.
 The explanations reinforce key learnings and not just repeat the correct answer.
-The difficulty level varies, including both basic and challenging questions.`;
+The difficulty level varies, including both basic and challenging questions.
+And be sure to put the answers indexes at different places (Don't repeat the position of correct answer).
+Don't put words like "The document says" or "The text states" in the questions nor in the explanation.
+The reply should be in JSON format only, without any additional text or comments.
+The reply should be in the same language as the document.
+`;
 
     navigator.clipboard.writeText(promptText)
         .then(() => {
