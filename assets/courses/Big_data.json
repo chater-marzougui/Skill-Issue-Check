@@ -1,5 +1,5 @@
 {
-  "seance 1": [
+  "Chapter 2 part 1": [
     {
       "question": "Quelle est la motivation principale derrière l'émergence du Big Data?",
       "options": [
@@ -219,6 +219,118 @@
       ],
       "answer": 2,
       "explanation": "HDFS assure la tolérance aux pannes en répliquant les blocs de données sur différents nœuds du cluster."
+    }
+  ],
+  "Chapter 2 part 2": [
+    {
+      "question": "Quel est le rôle du Secondary NameNode dans HDFS ?",
+      "options": [
+        "Gérer les données réelles des fichiers.",
+        "Agir comme un backup du NameNode en cas de défaillance.",
+        "Stocker les métadonnées et gérer la réplication.",
+        "Aider à la gestion des DataNodes."
+      ],
+      "answer": 1,
+      "explanation": "Le Secondary NameNode aide à réduire la charge du NameNode principal en prenant périodiquement des instantanés de l'état du système de fichiers."
+    },
+    {
+      "question": "Dans l'architecture HDFS, quel composant est considéré comme le maître et gère les métadonnées du système de fichiers ?",
+      "options": [
+        "DataNode",
+        "NameNode",
+        "Secondary NameNode",
+        "Client HDFS"
+      ],
+      "answer": 1,
+      "explanation": "Le NameNode est le composant maître dans un cluster HDFS, responsable de la gestion du namespace du système de fichiers et des métadonnées, y compris l'emplacement des blocs de données."
+    },
+    {
+      "question": "Quel est le rôle principal d'un DataNode dans HDFS ?",
+      "options": [
+        "Gérer le namespace du système de fichiers",
+        "Stocker les métadonnées des fichiers",
+        "Stocker les blocs de données réels et servir les requêtes de lecture/écriture",
+        "Coordonner les opérations entre le NameNode et les autres DataNodes"
+      ],
+      "answer": 2,
+      "explanation": "Les DataNodes sont les nœuds esclaves qui stockent les blocs de données des fichiers HDFS et gèrent les opérations de lecture et d'écriture à la demande du client ou du NameNode."
+    },
+    {
+      "question": "Quelle est la taille de bloc par défaut typique dans HDFS ?",
+      "options": [
+        "64 Mo",
+        "128 Mo",
+        "256 Mo",
+        "512 Mo"
+      ],
+      "answer": 1,
+      "explanation": "HDFS divise les fichiers en gros blocs pour le stockage distribué. La taille de bloc par défaut couramment utilisée est de 128 Mo ou 256 Mo."
+    },
+    {
+      "question": "Pourquoi la réplication des données est-elle essentielle dans HDFS ?",
+      "options": [
+        "Pour réduire l'utilisation de l'espace disque",
+        "Pour améliorer les performances d'écriture",
+        "Pour assurer la tolérance aux pannes et la disponibilité des données",
+        "Pour simplifier l'architecture du système"
+      ],
+      "answer": 2,
+      "explanation": "La réplication des données (par défaut, un facteur de réplication de 3) dans HDFS garantit que les données restent accessibles même si certains DataNodes échouent, offrant ainsi une tolérance aux pannes et une haute disponibilité."
+    },
+    {
+      "question": "Lors d'une opération de lecture dans HDFS, avec quel composant le client interagit-il en premier pour obtenir les emplacements des blocs de données ?",
+      "options": [
+        "Un DataNode aléatoire",
+        "Le Secondary NameNode",
+        "Le NameNode",
+        "Directement avec le système de fichiers local"
+      ],
+      "answer": 2,
+      "explanation": "Lors d'une lecture, le client HDFS contacte le NameNode pour obtenir les métadonnées du fichier, y compris la liste ordonnée des blocs et les DataNodes sur lesquels ils sont stockés."
+    },
+    {
+      "question": "Quel principe suit HDFS concernant l'accès aux fichiers ?",
+      "options": [
+        "Écriture multiple, Lecture multiple",
+        "Écriture une fois, Lecture une fois",
+        "Écriture multiple, Lecture une fois",
+        "Écriture une fois, Lecture multiple"
+      ],
+      "answer": 3,
+      "explanation": "HDFS est optimisé pour les charges de travail par lots et suit le modèle 'Écriture une fois, Lecture multiple', ce qui le rend efficace pour l'analyse de grands ensembles de données."
+    },
+    {
+      "question": "Que se passe-t-il si un DataNode échoue dans un cluster HDFS ?",
+      "options": [
+        "Le NameNode s'arrête immédiatement",
+        "Les données sur ce DataNode deviennent définitivement inaccessibles",
+        "Le NameNode détecte l'échec et initialise la réplication des blocs affectés sur d'autres DataNodes",
+        "Le client bascule automatiquement vers le Secondary NameNode"
+      ],
+      "answer": 2,
+      "explanation": "En cas de défaillance d'un DataNode, le NameNode s'en aperçoit via l'absence de 'heartbeats' et déclenche la duplication des blocs sous-répliqués pour maintenir le facteur de réplication défini."
+    },
+    {
+      "question": "Quel est l'objectif principal de l'architecture maître-esclave de HDFS ?",
+      "options": [
+        "Simplifier les opérations de maintenance",
+        "Permettre le traitement parallèle des données",
+        "Centraliser la gestion des métadonnées et distribuer le stockage des données",
+        "Minimiser les coûts matériels"
+      ],
+      "answer": 2,
+      "explanation": "L'architecture maître-esclave de HDFS, avec le NameNode gérant les métadonnées et les DataNodes stockant les données, permet une gestion centralisée tout en distribuant efficacement le stockage et le traitement des grands ensembles de données."
+    },
+    {
+      "question": "Lors de l'écriture d'un fichier dans HDFS, dans quel ordre les données sont-elles généralement écrites vers les DataNodes dans le pipeline de réplication ?",
+      "options": [
+        "Parallèlement à tous les DataNodes de la réplication",
+        "Séquentiellement du client vers le premier DataNode, puis transmises le long du pipeline",
+        "Directement du NameNode vers tous les DataNodes",
+        "Dans un ordre aléatoire déterminé par chaque DataNode"
+      ],
+      "answer": 1,
+      "explanation": "Lors de l'écriture, le client envoie les données au premier DataNode d'un pipeline. Ce DataNode écrit les données localement et les transmet simultanément au DataNode suivant dans le pipeline, et ainsi de suite."
     }
   ]
 }

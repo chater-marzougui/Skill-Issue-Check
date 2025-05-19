@@ -17,8 +17,10 @@
   <a href="https://github.com/chater-marzougui/Skill-Issue-Check">
     <img src="./assets/logo.png" alt="Logo" width="256" height="256">
   </a>
+  <a href="https://chater-marzougui.github.io/Skill-Issue-Check">
     <h1 width="35px">Skill Issue Check
     </h1>
+  </a>
   <p align="center">
     A lightweight, frontend-only quiz application that lets instructors create and students take structured quizzes organized by courses and sessions.
     <br />
