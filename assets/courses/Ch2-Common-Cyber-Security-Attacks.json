@@ -1,0 +1,687 @@
+{
+  "session 1 (p.1-10)": [
+    {
+      "question": "Which of the following is NOT a characteristic of passive sniffing?",
+      "options": [
+        "The attacker captures all packets in the network.",
+        "The attacker's network interface is set in promiscuous mode.",
+        "The attacker generates packets to flood the network.",
+        "It typically works on hubs."
+      ],
+      "answer": 2,
+      "explanation": "Passive sniffing involves capturing existing network traffic without generating new packets. Flooding the network is a characteristic of active sniffing, not passive sniffing."
+    },
+    {
+      "question": "What is the primary goal of an attacker performing MAC address table overflow (flooding) on a switch?",
+      "options": [
+        "To crash the switch.",
+        "To make the switch function like a hub, broadcasting all packets.",
+        "To gain access to the switch's configuration.",
+        "To prevent legitimate users from accessing the network."
+      ],
+      "answer": 1,
+      "explanation": "The goal of a MAC address table overflow attack is to fill the switch's CAM table with bogus MAC addresses, causing it to broadcast packets to all ports, effectively making it function like a hub."
+    },
+    {
+      "question": "What protocol is exploited in ARP poisoning attacks?",
+      "options": [
+        "TCP",
+        "IP",
+        "ARP",
+        "DNS"
+      ],
+      "answer": 2,
+      "explanation": "ARP (Address Resolution Protocol) is the protocol that is exploited in ARP poisoning attacks to map IP addresses to incorrect MAC addresses."
+    },
+    {
+      "question": "Which of the following is a potential consequence of a successful ARP poisoning attack?",
+      "options": [
+        "Data encryption",
+        "Denial of Service (DoS)",
+        "Improved network performance",
+        "Firewall bypass"
+      ],
+      "answer": 1,
+      "explanation": "ARP poisoning can lead to a Denial of Service (DoS) by redirecting traffic to the wrong destination or to a Man-in-the-Middle (MITM) attack, where the attacker intercepts and potentially modifies communications."
+    },
+    {
+      "question": "In a spoofing attack, what does the attacker typically do?",
+      "options": [
+        "Encrypts all network traffic.",
+        "Presents false source information to impersonate another entity.",
+        "Physically damages network hardware.",
+        "Installs malware on victim's machines."
+      ],
+      "answer": 1,
+      "explanation": "Spoofing attacks involve an attacker pretending to be someone or something else by providing false source information, such as a fake IP or MAC address, to deceive the target."
+    },
+    {
+      "question": "What is a limitation of MAC address spoofing?",
+      "options": [
+        "It requires physical access to the network.",
+        "The switch will eventually correct the MAC address entry.",
+        "It can only be used against specific operating systems.",
+        "It's ineffective against encrypted traffic."
+      ],
+      "answer": 1,
+      "explanation": "A limitation of MAC address spoofing is that when the target host sends traffic, the switch will update its MAC address table, correcting the spoofed entry and realigning the MAC address to the original port."
+    },
+    {
+      "question": "Why is it difficult to prevent IP address spoofing by default?",
+      "options": [
+        "IP packets inherently authenticate the source address.",
+        "It requires specialized hardware.",
+        "IP packets do not carry authentication of the source address.",
+        "Firewalls are ineffective against IP spoofing."
+      ],
+      "answer": 2,
+      "explanation": "IP address spoofing is difficult to prevent by default because IP packets do not inherently authenticate the source address, making it easy for an attacker to forge the source IP address."
+    },
+    {
+      "question": "What is a common defense mechanism against IP address spoofing?",
+      "options": [
+        "Disabling the TCP/IP protocol.",
+        "Implementing IP Source Guard (IPSG).",
+        "Using only static IP addresses.",
+        "Enforcing the use of weak passwords."
+      ],
+      "answer": 1,
+      "explanation": "IP Source Guard (IPSG) is a defense mechanism that prevents a device from transmitting IP datagrams with a source IP address different from the one assigned via DHCP, thus mitigating IP address spoofing attacks."
+    }
+  ],
+  "session 1 (p.11-20)": [
+    {
+      "question": "Why is it difficult for an attacker to establish a TCP connection with a server using a spoofed IP address?",
+      "options": [
+        "The attacker needs to guess the server's MAC address.",
+        "SYN|ACK and subsequent datagrams are sent to the spoofed address.",
+        "TCP does not allow connections from unknown IP addresses.",
+        "Modern firewalls block spoofed IP addresses automatically."
+      ],
+      "answer": 1,
+      "explanation": "When an attacker uses a spoofed IP address, the server sends the SYN|ACK and subsequent datagrams to the spoofed address, making it difficult for the attacker to complete the three-way handshake and establish a TCP connection."
+    },
+    {
+      "question": "What is the principal defense against session hijacking?",
+      "options": [
+        "Using strong passwords.",
+        "Encryption and HMAC on datagrams.",
+        "Implementing firewalls.",
+        "Regularly changing IP addresses."
+      ],
+      "answer": 1,
+      "explanation": "Encryption and HMAC (Hash-based Message Authentication Code) on datagrams provide the most effective defense against session hijacking by ensuring that the attacker cannot insert meaningful traffic without the correct keys."
+    },
+    {
+      "question": "In a session hijacking attack, what does the attacker typically do to prevent Alice's segments from reaching Bob?",
+      "options": [
+        "Sends unsolicited ARP replies to Alice and Bob with non-existent MAC addresses.",
+        "Floods the network with SYN packets.",
+        "Disconnects Alice from the network.",
+        "Changes Alice's IP address."
+      ],
+      "answer": 0,
+      "explanation": "To prevent Alice's segments from reaching Bob, the attacker sends unsolicited ARP replies to Alice and Bob with non-existent MAC addresses. This overwrites their IP-to-MAC ARP tables, redirecting Alice's traffic away from Bob."
+    },
+    {
+      "question": "What is the primary goal of a VLAN hopping attack?",
+      "options": [
+        "To gain access to the server's database.",
+        "To enable traffic from one VLAN to be seen by another VLAN without a router.",
+        "To overload the network with traffic.",
+        "To bypass firewall rules."
+      ],
+      "answer": 1,
+      "explanation": "The primary goal of a VLAN hopping attack is to enable traffic from one VLAN to be seen by another VLAN without the aid of a router, thus breaching network segmentation."
+    },
+    {
+      "question": "How does an attacker configure their host in a VLAN switch spoofing attack?",
+      "options": [
+        "By using specialized hardware to capture network traffic.",
+        "By spoofing 802.1Q signaling and Cisco-proprietary Dynamic Trunking Protocol (DTP) signaling.",
+        "By guessing the administrator's password.",
+        "By physically connecting to the network backbone."
+      ],
+      "answer": 1,
+      "explanation": "In a VLAN switch spoofing attack, the attacker configures the host to spoof 802.1Q signaling and Cisco-proprietary Dynamic Trunking Protocol (DTP) signaling to trunk with the connecting switch."
+    },
+    {
+      "question": "A VLAN double-tagging attack is effective only when the attacker's port resides in the same VLAN as what?",
+      "options": [
+        "The management VLAN.",
+        "The native VLAN of the trunk port.",
+        "The VLAN with the highest ID.",
+        "The VLAN used for guest access."
+      ],
+      "answer": 1,
+      "explanation": "A VLAN double-tagging attack only works when the attacker is connected to a port residing in the same VLAN as the native VLAN of the trunk port because of how switches perform 802.1Q de-encapsulation."
+    },
+    {
+      "question": "Which of the following is a mitigation technique for VLAN attacks?",
+      "options": [
+        "Using shorter passwords.",
+        "Disabling auto trunking on trunk links.",
+        "Enabling auto trunking on all ports.",
+        "Connecting all devices to the same VLAN."
+      ],
+      "answer": 1,
+      "explanation": "Disabling auto trunking on trunk links, so that trunks must be manually enabled, is a VLAN attack mitigation technique that prevents unauthorized devices from establishing trunk links."
+    },
+    {
+      "question": "What does BPDU Guard do when it receives a BPDU on a port where it is enabled?",
+      "options": [
+        "It forwards the BPDU to all other ports.",
+        "It immediately puts the switch port in an errdisabled state.",
+        "It ignores the BPDU.",
+        "It sends an alert to the network administrator."
+      ],
+      "answer": 1,
+      "explanation": "When BPDU Guard is enabled on a port, it immediately puts the switch port in an errdisabled (error-disabled) state upon receiving any BPDU, effectively shutting down the port to prevent STP attacks."
+    },
+    {
+      "question": "How does an attacker typically execute a STP attack to capture network traffic?",
+      "options": [
+        "By flooding the network with ICMP packets.",
+        "By spoofing the root bridge and changing the topology of the network.",
+        "By disabling spanning tree protocol.",
+        "By physically disconnecting network cables."
+      ],
+      "answer": 1,
+      "explanation": "An attacker manipulates the Spanning Tree Protocol (STP) by spoofing the root bridge and changing the topology of a network, so that they can capture all traffic. This involves broadcasting STP bridge protocol data units (BPDUs)."
+    }
+  ],
+  "session 1 (p.21-30)": [
+    {
+      "question": "What type of protocol is the Cisco Discovery Protocol (CDP)?",
+      "options": [
+        "Application Layer Protocol",
+        "Network Layer Protocol",
+        "Transport Layer Protocol",
+        "Layer 2 link discovery protocol"
+      ],
+      "answer": 3,
+      "explanation": "CDP is a Cisco Layer 2 link discovery protocol used for discovering information about neighboring Cisco devices."
+    },
+    {
+      "question": "What is a potential risk associated with leaving CDP enabled on all ports?",
+      "options": [
+        "Increased network performance",
+        "Reduced network latency",
+        "Discovery of network infrastructure vulnerabilities by threat actors",
+        "Improved network security"
+      ],
+      "answer": 2,
+      "explanation": "Leaving CDP enabled exposes network infrastructure details, which a threat actor can use to identify vulnerabilities."
+    },
+    {
+      "question": "What type of attack involves an attacker configuring a fake DHCP server?",
+      "options": [
+        "DHCP starvation attack",
+        "DHCP spoofing attack",
+        "Replay attack",
+        "DoS attack"
+      ],
+      "answer": 1,
+      "explanation": "In a DHCP spoofing attack, the attacker sets up a rogue DHCP server to distribute false IP configuration information."
+    },
+    {
+      "question": "What is the primary goal of a DHCP starvation attack?",
+      "options": [
+        "To gain unauthorized access to a network",
+        "To obtain valid IP addresses for malicious purposes",
+        "To exhaust all available IP addresses, causing a denial-of-service",
+        "To redirect network traffic to a malicious server"
+      ],
+      "answer": 2,
+      "explanation": "A DHCP starvation attack aims to deplete the DHCP server's IP address pool, preventing legitimate clients from obtaining an IP address and causing a DoS."
+    },
+    {
+      "question": "What is the core principle behind defending against DHCP server spoofing?",
+      "options": [
+        "Encrypting all DHCP traffic",
+        "Disabling DHCP on all untrusted ports",
+        "Differentiating between reliable and untrusted ports",
+        "Using static IP addresses only"
+      ],
+      "answer": 2,
+      "explanation": "The defense focuses on identifying ports connected to legitimate DHCP servers (reliable) versus those connected to clients (untrusted)."
+    },
+    {
+      "question": "In the context of replay attacks, what is the purpose of a nonce?",
+      "options": [
+        "To encrypt the entire communication",
+        "To provide authentication",
+        "To prevent replay and guarantee freshness",
+        "To store the user's password"
+      ],
+      "answer": 2,
+      "explanation": "A nonce (number used once) is a random, unpredictable number used to prevent replay attacks by ensuring the freshness of a message."
+    },
+    {
+      "question": "What is a key characteristic of a DoS attack based on connection flooding?",
+      "options": [
+        "Sending crafted messages exploiting a vulnerability",
+        "Overwhelming the target with superfluous requests",
+        "Saturating communication links with datagrams",
+        "Exploiting vulnerabilities on the client-side"
+      ],
+      "answer": 1,
+      "explanation": "A connection flooding DoS attack involves overwhelming the target system with a large volume of connection requests to exhaust its resources."
+    },
+    {
+      "question": "Which type of DoS attack focuses on saturating the communication link?",
+      "options": [
+        "Implementation vulnerability attack",
+        "Connection flooding attack",
+        "Bandwidth flooding attack",
+        "DHCP starvation attack"
+      ],
+      "answer": 2,
+      "explanation": "Bandwidth flooding aims to saturate the communication link between users and the target system with a high volume of data, causing congestion and denial of service."
+    }
+  ],
+  "session 1 (p.31-40)": [
+    {
+      "question": "In a Land attack, what is the source and destination address of the spoofed SYN packet?",
+      "options": [
+        "Source is the attacker, destination is the victim",
+        "Source and destination are both the attacker",
+        "Source is the victim, destination is the attacker",
+        "Source and destination are both the victim"
+      ],
+      "answer": 3,
+      "explanation": "A Land attack involves sending a spoofed SYN packet where both the source and destination addresses are set to the victim's IP address, causing the victim's machine to loop and eventually crash."
+    },
+    {
+      "question": "What is the purpose of spoofing the source IP address in a SYN flooding attack?",
+      "options": [
+        "To ensure the attacker can receive the SYN-ACK packets.",
+        "To allow the attacker to establish a legitimate connection.",
+        "To overwhelm the victim with excessive traffic.",
+        "To avoid filtering reactions from the victim or network devices."
+      ],
+      "answer": 3,
+      "explanation": "The attacker spoofs the source IP address, often using an invalid host, to avoid being easily filtered out and to prevent the victim from closing the connection by sending an RST packet. This allows the attack to continue uninterrupted."
+    },
+    {
+      "question": "In the cookie-based prevention of SYN flooding, what information is used by Host B (the server) to generate the 'cookie'?",
+      "options": [
+        "Source IP address, destination IP address, and a publicly known key.",
+        "Source IP address, destination IP address, port numbers, coarse time, and a secret number.",
+        "Only source IP address and port number of the client.",
+        "Destination IP address, port numbers, and a timestamp."
+      ],
+      "answer": 1,
+      "explanation": "The server (Host B) generates the cookie using a hash function over the source and destination IP addresses and port numbers, a coarse time (slowly incrementing timestamp), and a secret number, allowing it to verify the client's ACK later without storing connection state."
+    },
+    {
+      "question": "What is the primary disadvantage of using SYN cookies as a defense mechanism?",
+      "options": [
+        "They are computationally expensive to generate and verify.",
+        "They reduce traffic, making them more effective against bandwidth attacks.",
+        "They are not compatible with standard TCP.",
+        "They require significant server-side state management."
+      ],
+      "answer": 0,
+      "explanation": "While SYN cookies prevent the server from maintaining state for half-open connections, generating and verifying the encrypted responses (cookies) can be computationally expensive. Also, SYN cookies do not reduce the traffic volume of the attack itself, so they are not effective against bandwidth exhaustion."
+    },
+    {
+      "question": "In a UDP flooding attack, why does the attacker sweep through all the known ports?",
+      "options": [
+        "To establish legitimate connections with the server.",
+        "To find open ports and exploit vulnerabilities.",
+        "To trigger ICMP port unreachable messages on closed ports, generating significant traffic.",
+        "To bypass firewall rules and gain unauthorized access."
+      ],
+      "answer": 2,
+      "explanation": "The attacker sends UDP packets to various ports, specifically targeting closed ports. When a closed port is hit, the server responds with an ICMP port unreachable message. This flood of messages consumes bandwidth and can lead to a DoS condition."
+    },
+    {
+      "question": "In a Smurf DoS attack, what IP address is used as the destination address in the initial ICMP Echo Request?",
+      "options": [
+        "The victim's IP address.",
+        "The attacker's IP address.",
+        "The broadcast address of the target network.",
+        "A random IP address."
+      ],
+      "answer": 2,
+      "explanation": "The Smurf attack involves sending an ICMP Echo Request (ping) to the broadcast address of a network. This causes all hosts on that network to respond to the victim with an ICMP Echo Reply, potentially overwhelming the victim with traffic."
+    },
+    {
+      "question": "What is a botnet in the context of a Distributed Denial-of-Service (DDoS) attack?",
+      "options": [
+        "A single compromised system used to launch attacks.",
+        "A network of compromised systems controlled by an attacker to generate attacks.",
+        "A security tool used to defend against DoS attacks.",
+        "A collection of honeypots used to lure attackers."
+      ],
+      "answer": 1,
+      "explanation": "A botnet is a large collection of compromised computers (bots or zombies) that are controlled by an attacker. These bots are used to generate attacks, such as DDoS attacks, against a target victim."
+    },
+    {
+      "question": "Which of the following is NOT a type of DNS attack mentioned?",
+      "options": [
+        "DNS open resolver attacks",
+        "DNS stealth attacks",
+        "DNS tunneling attacks",
+        "DNS spoofing attacks"
+      ],
+      "answer": 3,
+      "explanation": "DNS spoofing can certainly happen, but it is not specifically mentioned in this document as a type of DNS attack."
+    },
+    {
+      "question": "What is the primary purpose of DNS amplification and reflection attacks?",
+      "options": [
+        "To redirect users from legitimate sites to malicious sites.",
+        "To consume the resources of the DNS open resolvers.",
+        "To increase the volume of attacks and hide the true source of an attack.",
+        "To send spoofed record resource (RR) information to a DNS resolver."
+      ],
+      "answer": 2,
+      "explanation": "DNS amplification and reflection attacks leverage open DNS resolvers to amplify the volume of traffic directed at a target. The attacker spoofs the source IP address of the target, causing the resolver to send its response to the victim, thus hiding the true source of the attack and increasing its impact."
+    },
+    {
+      "question": "What is a DNS cache poisoning attack?",
+      "options": [
+        "A DoS attack that consumes the resources of the DNS open resolvers.",
+        "An attack where threat actors send spoofed, falsified record resource (RR) information to a DNS resolver.",
+        "An attack that exploits vulnerabilities in DNS tunneling.",
+        "An attack that allows unauthorized access to DNS servers."
+      ],
+      "answer": 1,
+      "explanation": "DNS cache poisoning attacks involve injecting falsified or spoofed DNS records into a DNS resolver's cache. This can lead users to be redirected from legitimate websites to malicious ones, as the resolver will provide the incorrect information from its poisoned cache."
+    }
+  ],
+  "session 1 (p.41-50)": [
+    {
+      "question": "In a DNS amplification and reflection attack, what IP address does the attacker typically spoof in the request?",
+      "options": [
+        "The attacker's IP address",
+        "The victim's IP address",
+        "The DNS server's IP address",
+        "A random IP address"
+      ],
+      "answer": 1,
+      "explanation": "In a DNS amplification and reflection attack, the attacker spoofs the victim's IP address so that the DNS servers send the responses to the victim."
+    },
+    {
+      "question": "What is the primary goal of a DNS cache poisoning attack?",
+      "options": [
+        "To flood a DNS server with requests",
+        "To redirect all traffic to a specific website",
+        "To insert a false record into the local DNS server caches that points to the attacker's node",
+        "To steal sensitive information from the DNS server"
+      ],
+      "answer": 2,
+      "explanation": "The primary goal of a DNS cache poisoning attack is to inject bogus records into a local DNS server's cache, causing it to resolve domain names to the attacker's chosen IP address."
+    },
+    {
+      "question": "Which DNS stealth technique involves rapidly changing both the hostname to IP address mappings and the authoritative name server?",
+      "options": [
+        "Fast Flux",
+        "Domain Generation Algorithms",
+        "DNS Tunneling",
+        "Double IP Flux"
+      ],
+      "answer": 3,
+      "explanation": "Double IP Flux involves quickly changing both the hostname-to-IP address mappings and the authoritative name server, making it more difficult to trace the attack source."
+    },
+    {
+      "question": "What is the purpose of Fast Flux agents in a Single-Flux network?",
+      "options": [
+        "To directly host the C&C server",
+        "To act as a firewall for the C&C server",
+        "To act as a reverse proxy server to the C&C server and hide it's IP address",
+        "To encrypt traffic between the client and the recursive DNS server"
+      ],
+      "answer": 2,
+      "explanation": "Fast-flux agents in a Single-Flux network act as reverse proxy servers, forwarding client requests to the C&C server and relaying the C&C server's responses back to the client, thereby hiding the C&C server's true location."
+    },
+    {
+      "question": "In a Double-Flux network, which DNS record is configured by the attacker to point to a fast-flux agent's IP address?",
+      "options": [
+        "A record",
+        "MX record",
+        "NS record",
+        "CNAME record"
+      ],
+      "answer": 2,
+      "explanation": "In a Double-Flux network, the attacker configures the DNS NS (Name Server) record on the .COM server's DNS zone file to point to the IP address of a fast-flux agent."
+    },
+    {
+      "question": "What is the main strategy used by attackers in DNS domain shadowing?",
+      "options": [
+        "Directly infecting the main domain",
+        "Creating multiple sub-domains that point to malicious servers",
+        "Changing the IP address of the main domain",
+        "Encrypting all DNS traffic"
+      ],
+      "answer": 1,
+      "explanation": "In DNS domain shadowing, the attacker compromises domain account credentials and then creates multiple sub-domains pointing to malicious servers, allowing them to spread malware."
+    },
+    {
+      "question": "What is the objective of DNS tunneling?",
+      "options": [
+        "To encrypt DNS queries and responses",
+        "To bypass security solutions by embedding non-DNS traffic within DNS traffic",
+        "To speed up DNS resolution",
+        "To prevent DNS cache poisoning attacks"
+      ],
+      "answer": 1,
+      "explanation": "DNS tunneling aims to circumvent security measures by embedding non-DNS traffic within DNS queries and responses, enabling covert communication and data exfiltration."
+    },
+    {
+      "question": "Which characteristic of DNS queries can be used as a countermeasure against DNS tunneling?",
+      "options": [
+        "The use of standard DNS ports",
+        "The frequency of queries",
+        "The length of the queries and the suspicious nature of the domain name",
+        "The geographic location of the DNS server"
+      ],
+      "answer": 2,
+      "explanation": "Countermeasures against DNS tunneling involve inspecting DNS traffic and paying attention to queries that are unusually long or have suspicious domain names, as these are indicative of embedded data."
+    }
+  ],
+  "session 1 (p.51-60)": [
+    {
+      "question": "What is the primary objective of a port scan?",
+      "options": [
+        "To determine the operating system of a target machine.",
+        "To overwhelm a target server with connection requests.",
+        "To identify which ports on a target machine are open, closed, or filtered.",
+        "To encrypt communication channels between two computers."
+      ],
+      "answer": 2,
+      "explanation": "The main goal of a port scan is to discover which ports on a target machine are open, closed, or filtered, which helps attackers identify potential vulnerabilities."
+    },
+    {
+      "question": "Which of the following best describes what happens when a 'connect scan' finds an open port?",
+      "options": [
+        "The client receives a SYN/ACK, then sends a RST to terminate the connection.",
+        "The client receives an RST/ACK indicating the port is closed.",
+        "The server sends a FIN packet to close the connection.",
+        "The server ignores the connection request."
+      ],
+      "answer": 0,
+      "explanation": "In a connect scan, when a port is open, the client completes a full TCP handshake (SYN, SYN/ACK, ACK). To avoid establishing a full connection, the scanner sends an RST packet to terminate the connection after receiving the SYN/ACK."
+    },
+    {
+      "question": "In a SYN scan, what action does the scanner take upon receiving a SYN/ACK from the target?",
+      "options": [
+        "Sends a FIN packet to close the connection.",
+        "Sends an ACK to complete the three-way handshake.",
+        "Sends an RST packet to terminate the connection.",
+        "Sends another SYN packet to the same port."
+      ],
+      "answer": 2,
+      "explanation": "Upon receiving a SYN/ACK in a SYN scan, which indicates an open port, the scanner sends an RST packet to reset the connection. This avoids a full TCP connection while still determining the port's status."
+    },
+    {
+      "question": "What is indicated when a packet is dropped during a NULL scan?",
+      "options": [
+        "The target port is closed.",
+        "The target port is filtered.",
+        "The target port is open.",
+        "The target port is actively in use."
+      ],
+      "answer": 2,
+      "explanation": "In a NULL scan, the absence of a response (packet drop) typically indicates that the target port is open. A closed port usually responds with an RST packet."
+    },
+    {
+      "question": "Which of the following is a goal of footprinting?",
+      "options": [
+        "To encrypt all network traffic.",
+        "To create a profile of an organization's security posture.",
+        "To install a backdoor on a target system.",
+        "To launch a denial-of-service attack."
+      ],
+      "answer": 1,
+      "explanation": "Footprinting aims to gather information about an organization's security posture, including domain names, IP addresses, services, and security measures. This information is used to plan attacks."
+    },
+    {
+      "question": "What is the primary principle behind OS fingerprinting?",
+      "options": [
+        "Exploiting known vulnerabilities in operating systems.",
+        "Analyzing the unique way an OS IP stack responds to specially crafted TCP packets.",
+        "Brute-forcing user account passwords.",
+        "Flooding the target network with ICMP packets."
+      ],
+      "answer": 1,
+      "explanation": "OS fingerprinting relies on the fact that different operating systems have unique ways of responding to specific TCP packets. By analyzing these responses, the OS can be identified."
+    },
+    {
+      "question": "What distinguishes active stack fingerprinting from passive stack fingerprinting?",
+      "options": [
+        "Active fingerprinting only captures and analyzes traffic.",
+        "Passive fingerprinting sends queries to the target and analyzes the response.",
+        "Active fingerprinting sends queries to the target and analyzes the response.",
+        "Passive fingerprinting is more easily detected by intrusion detection systems."
+      ],
+      "answer": 2,
+      "explanation": "Active stack fingerprinting involves sending queries to the target system and analyzing the response, while passive stack fingerprinting only monitors network traffic without sending any packets to the target."
+    },
+    {
+      "question": "Which of the following jamming attack types conserves the most energy?",
+      "options": [
+        "Constant jammer",
+        "Deceptive jammer",
+        "Reactive jammer",
+        "Random jammer"
+      ],
+      "answer": 3,
+      "explanation": "A random jammer conserves energy by alternating between sleeping and jamming states, making it more energy-efficient than jammers that constantly emit signals."
+    },
+    {
+      "question": "Which of the following jamming attack types is most difficult to detect?",
+      "options": [
+        "Constant jammer",
+        "Deceptive jammer",
+        "Reactive jammer",
+        "Random jammer"
+      ],
+      "answer": 2,
+      "explanation": "A reactive jammer is harder to detect because it only transmits a signal when it senses channel activity, making it less predictable than other types of jammers."
+    },
+    {
+      "question": "What is the fundamental goal of a wireless jamming attack?",
+      "options": [
+        "To encrypt the wireless communication channel.",
+        "To flood the wireless network with data packets.",
+        "To generate strong noise to interfere with and reduce the capacity of the wireless channel.",
+        "To gain unauthorized access to the wireless network."
+      ],
+      "answer": 2,
+      "explanation": "The primary objective of a wireless jamming attack is to disrupt wireless communication by generating strong noise to interfere with the wireless channel, thereby reducing its capacity and potentially causing service unavailability."
+    }
+  ],
+  "session 1 (p.61-70)": [
+    {
+      "question": "What is the primary weakness exploited in DDoS attacks targeting 2G cellular networks?",
+      "options": [
+        "Vulnerabilities in data service protocols",
+        "Use of packet switching technology",
+        "Authentication vulnerabilities in used protocols",
+        "Weakly secured User Equipments"
+      ],
+      "answer": 2,
+      "explanation": "DDoS attacks in 2G networks exploit authentication vulnerabilities present in the protocols used."
+    },
+    {
+      "question": "Which of the following DDoS attacks is most associated with 2.5G networks?",
+      "options": [
+        "False BTS attack",
+        "TCP SYN Flood attack",
+        "Telephonic servers' abuse",
+        "Deauthentication attack"
+      ],
+      "answer": 1,
+      "explanation": "The TCP SYN Flood attack is a well-known DDoS attack that is frequently associated with 2.5G networks due to their increased reliance on internet protocols."
+    },
+    {
+      "question": "In 3G/4G networks, attackers exploit weakly secured User Equipments (UEs) as zombies to generate what kind of disruptive activity?",
+      "options": [
+        "Establishing half-open TCP connections",
+        "Sending spoofed deauthentication messages",
+        "Generating incomplete calls simultaneously",
+        "Consuming radio channels by sending spam"
+      ],
+      "answer": 2,
+      "explanation": "Attackers compromise UEs to initiate numerous incomplete calls concurrently, overwhelming the network's capacity."
+    },
+    {
+      "question": "Why is the deauthentication message in 802.11 networks vulnerable to attacks?",
+      "options": [
+        "It requires complex encryption protocols.",
+        "It is not authenticated, allowing for spoofing.",
+        "It relies on the MAC address, which is easily spoofed.",
+        "It consumes significant bandwidth."
+      ],
+      "answer": 1,
+      "explanation": "The deauthentication message lacks authentication, enabling attackers to spoof the message and disconnect clients from the access point, leading to a DoS attack."
+    },
+    {
+      "question": "Which of the following best describes social engineering?",
+      "options": [
+        "Exploiting vulnerabilities in network protocols.",
+        "Manipulating individuals into performing actions or divulging information.",
+        "Breaking into weakly secured user equipments.",
+        "Intercepting data packets on a network."
+      ],
+      "answer": 1,
+      "explanation": "Social engineering is an access attack that attempts to manipulate individuals to take actions or provide confidential data."
+    },
+    {
+      "question": "What is 'pretexting' in the context of social engineering attacks?",
+      "options": [
+        "Leaving a malware-infected flash drive in a public location.",
+        "Sending fraudulent emails disguised as legitimate sources.",
+        "Pretending to need personal data to confirm the recipient's identity.",
+        "Following an authorized person into a secure area."
+      ],
+      "answer": 2,
+      "explanation": "Pretexting involves a threat actor feigning a need for personal or financial data to verify the recipient's identity."
+    },
+    {
+      "question": "Which of the following is the MOST effective way to prevent phishing attacks?",
+      "options": [
+        "Reacting impulsively to attractive offers.",
+        "Opening emails from suspicious sources.",
+        "NEVER giving out passwords or financial information online.",
+        "Disabling email spam filters."
+      ],
+      "answer": 2,
+      "explanation": "The most critical step in preventing phishing attacks is to never provide passwords or financial information online in response to unsolicited requests."
+    },
+    {
+      "question": "What is the primary purpose of the Social Engineering Toolkit (SET)?",
+      "options": [
+        "To create social engineering attacks for testing network security.",
+        "To develop viruses for use in DDoS attacks.",
+        "To intercept and analyze network traffic.",
+        "To crack passwords and gain unauthorized access to systems."
+      ],
+      "answer": 0,
+      "explanation": "The Social Engineering Toolkit (SET) is designed to assist white hat hackers and security professionals in creating social engineering attacks to evaluate and improve the security of their networks."
+    }
+  ]
+}

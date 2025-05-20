@@ -332,5 +332,205 @@
       "answer": 1,
       "explanation": "Lors de l'écriture, le client envoie les données au premier DataNode d'un pipeline. Ce DataNode écrit les données localement et les transmet simultanément au DataNode suivant dans le pipeline, et ainsi de suite."
     }
+  ],
+  "Chapter 2 part 3": [
+  {
+   "question": "Quelle est la première étape du processus MapReduce selon la description analogique de la préparation de sandwichs ?",
+   "options": [
+    "Map",
+    "Shuffle/Group",
+    "Split",
+    "Reduce"
+   ],
+   "answer": 2,
+   "explanation": "La première étape décrite est le 'Split', qui consiste à distribuer les ingrédients bruts parmi les travailleurs."
+  },
+  {
+   "question": "Dans l'analogie de la préparation de sandwichs pour MapReduce, que représente l'étape 'Map' ?",
+   "options": [
+    "La distribution des ingrédients",
+    "Le traitement individuel de chaque ingrédient",
+    "Le regroupement des ingrédients traités",
+    "L'assemblage final du sandwich"
+   ],
+   "answer": 1,
+   "explanation": "L'étape 'Map' correspond au traitement individuel de chaque ingrédient par chaque travailleur, comme trancher les légumes."
+  },
+  {
+   "question": "Que sont les 'mapper intermediates' dans le contexte de l'analogie MapReduce ?",
+   "options": [
+    "Les ingrédients bruts",
+    "Les ingrédients après l'étape 'Map' (traités)",
+    "Les sandwichs finis",
+    "Les outils de préparation"
+   ],
+   "answer": 1,
+   "explanation": "Les 'mapper intermediates' sont les ingrédients qui ont été traités lors de l'étape 'Map'."
+  },
+  {
+   "question": "Quel est le rôle de l'étape 'Shuffle/Group' dans le processus MapReduce décrit ?",
+   "options": [
+    "Distribuer les tâches aux travailleurs",
+    "Traiter les données individuellement",
+    "Regrouper les résultats intermédiaires par clé",
+    "Combiner les résultats finaux"
+   ],
+   "answer": 2,
+   "explanation": "L'étape 'Shuffle/Group' consiste à regrouper les résultats intermédiaires ('mapper intermediates') avant l'étape de réduction."
+  },
+  {
+   "question": "Selon le document, quelle est la fonction principale du JobTracker dans Hadoop ?",
+   "options": [
+    "Exécuter les tâches Map et Reduce directement",
+    "Gérer et planifier l'exécution des jobs sur les TaskTrackers",
+    "Stocker les données brutes",
+    "Surveiller l'utilisation du disque"
+   ],
+   "answer": 1,
+   "explanation": "Le JobTracker est responsable de la gestion globale et de la planification des 'jobs' (ensembles de tâches MapReduce) sur les TaskTrackers disponibles."
+  },
+  {
+   "question": "Comment un TaskTracker communique-t-il son état et sa disponibilité au JobTracker ?",
+   "options": [
+    "En envoyant un message unique au début et à la fin de chaque tâche",
+    "En mettant à jour une base de données centrale",
+    "En envoyant régulièrement des messages 'heartbeats'",
+    "Le JobTracker interroge directement les TaskTrackers quand il a besoin d'informations"
+   ],
+   "answer": 2,
+   "explanation": "Les TaskTrackers envoient régulièrement des messages 'heartbeats' au JobTracker pour indiquer qu'ils sont toujours fonctionnels et pour signaler le nombre de 'slots' disponibles."
+  },
+  {
+   "question": "Que contient un message 'heartbeat' envoyé par un TaskTracker au JobTracker, en plus d'indiquer qu'il est fonctionnel ?",
+   "options": [
+    "Le résultat final de la tâche en cours",
+    "Le code source de la tâche exécutée",
+    "Le nombre de 'slots' d'exécution disponibles",
+    "L'adresse IP du TaskTracker"
+   ],
+   "answer": 2,
+   "explanation": "En plus de signaler son bon fonctionnement, le message 'heartbeat' indique au JobTracker le nombre de 'slots' d'exécution disponibles sur le TaskTracker."
+  },
+  {
+   "question": "Quand un TaskTracker envoie-t-il un message au JobTracker pour l'informer du résultat d'une sous-tâche ?",
+   "options": [
+    "Au début de l'exécution de la sous-tâche",
+    "Uniquement si la sous-tâche échoue",
+    "Une fois que la sous-tâche est terminée",
+    "Régulièrement pendant l'exécution de la sous-tâche"
+   ],
+   "answer": 2,
+   "explanation": "Lorsqu'une sous-tâche est terminée, le TaskTracker envoie un message au JobTracker pour l'informer de son achèvement et de son succès ou échec, en incluant le résultat."
+  },
+  {
+   "question": "Qu'est-ce qu'un 'slot' d'exécution sur un TaskTracker ?",
+   "options": [
+    "Un espace de stockage pour les données intermédiaires",
+    "Une unité d'exécution pour une tâche (Map, Reduce, Shuffle)",
+    "Une connexion réseau avec le JobTracker",
+    "Un fichier de configuration pour le TaskTracker"
+   ],
+   "answer": 1,
+   "explanation": "Un 'slot' d'exécution sur un TaskTracker est une unité de capacité qui correspond à une tâche exécutable (Map, Reduce, Shuffle)."
+  },
+  {
+   "question": "Quel est l'objectif principal de la décomposition d'un problème en étapes comme Split, Map, Shuffle/Group et Reduce dans le contexte de MapReduce ?",
+   "options": [
+    "Réduire la quantité totale de données à traiter",
+    "Permettre le traitement distribué et parallèle de grands ensembles de données",
+    "Simplifier la logique de l'application",
+    "Minimiser l'utilisation de la mémoire"
+   ],
+   "answer": 1,
+   "explanation": "L'idée fondamentale de MapReduce est de diviser un problème trop grand pour un seul ordinateur en étapes qui peuvent être exécutées en parallèle sur un cluster, permettant ainsi le traitement distribué de vastes quantités de données."
+  },
+  {
+   "question": "Lorsqu'un TaskTracker reçoit une nouvelle tâche du JobTracker, que démarre-t-il ?",
+   "options": [
+    "Une nouvelle instance du JobTracker",
+    "Une nouvelle instance de Java avec le fichier .jar fourni",
+    "Un nouveau processus TaskTracker",
+    "Une connexion SSH sécurisée"
+   ],
+   "answer": 1,
+   "explanation": "Le TaskTracker démarre une nouvelle instance de Java, utilisant le fichier .jar contenant le code de la tâche fourni par le JobTracker, pour exécuter l'opération demandée (Map, Reduce, ou Shuffle)."
+  },
+  {
+   "question": "Quel type de message est envoyé par le TaskTracker au JobTracker pour signaler si une sous-tâche s'est bien déroulée ?",
+   "options": [
+    "Un message 'heartbeat' spécial",
+    "Un message d'erreur si elle a échoué",
+    "Un message de achèvement incluant le statut (succès/échec)",
+    "Aucune communication spécifique n'est envoyée pour le statut final"
+   ],
+   "answer": 2,
+   "explanation": "Une fois la sous-tâche terminée, le TaskTracker envoie un message spécifique au JobTracker pour l'informer de son succès ou de son échec."
+  },
+  {
+   "question": "Dans le contexte de Hadoop, quel composant est responsable de l'ordonnancement des tâches et de la gestion des ressources du cluster ?",
+   "options": [
+    "TaskTracker",
+    "NameNode",
+    "JobTracker",
+    "DataNode"
+   ],
+   "answer": 2,
+   "explanation": "Le JobTracker est l'élément central pour la gestion des jobs MapReduce, incluant l'ordonnancement des tâches sur les TaskTrackers disponibles."
+  },
+  {
+   "question": "Quel est le rôle principal d'un TaskTracker dans le framework MapReduce de Hadoop ?",
+   "options": [
+    "Stocker des blocs de données",
+    "Exécuter les tâches Map et Reduce assignées par le JobTracker",
+    "Gérer les métadonnées du système de fichiers",
+    "Coordonner la communication entre les JobTrackers"
+   ],
+   "answer": 1,
+   "explanation": "Un TaskTracker est un agent sur chaque nœud de travail qui exécute les tâches spécifiques (Map ou Reduce) qui lui sont confiées par le JobTracker."
+  },
+  {
+   "question": "Si un TaskTracker ne renvoie pas de message 'heartbeat' au JobTracker pendant une certaine période, comment le JobTracker interprète-t-il généralement cette situation ?",
+   "options": [
+    "Le TaskTracker est surchargé et très occupé",
+    "Le TaskTracker a terminé toutes ses tâches",
+    "Le TaskTracker est probablement tombé en panne",
+    "Le réseau rencontre des problèmes de latence temporaires"
+   ],
+   "answer": 2,
+   "explanation": "Le JobTracker utilise les 'heartbeats' comme un mécanisme pour détecter les TaskTrackers défaillants. L'absence de 'heartbeat' signale généralement un problème avec le TaskTracker."
+  },
+  {
+   "question": "Quelle étape de MapReduce est explicitement mentionnée comme redémarrant une nouvelle instance de Java avec le fichier .jar fourni par le JobTracker sur le TaskTracker ?",
+   "options": [
+    "Split",
+    "Map",
+    "Shuffle/Group",
+    "Les étapes Map, Reduce et Shuffle/Group démarrent une nouvelle instance"
+   ],
+   "answer": 3,
+   "explanation": "Le document indique que lorsqu'il reçoit une nouvelle tâche à effectuer (MAP, REDUCE, SHUFFLE), le TaskTracker démarre une nouvelle instance de Java avec le fichier .jar."
+  },
+  {
+   "question": "Que se passe-t-il une fois qu'une sous-tâche est démarrée par le TaskTracker ?",
+   "options": [
+    "Le TaskTracker arrête d'envoyer des messages 'heartbeat'",
+    "Le TaskTracker commence à envoyer régulièrement des messages 'heartbeat' au JobTracker",
+    "Le JobTracker envoie immédiatement une autre tâche au même TaskTracker",
+    "Le TaskTracker attend la confirmation du JobTracker avant de commencer le traitement"
+   ],
+   "answer": 1,
+   "explanation": "Une fois la tâche démarrée, le TaskTracker envoie régulièrement au JobTracker ses messages heartbeats pour indiquer qu'il est toujours opérationnel."
+  },
+  {
+   "question": "Quel information, en plus du statut de fonctionnement, est incluse dans les messages 'heartbeat' envoyés par le TaskTracker ?",
+   "options": [
+    "Le nombre de tâches terminées depuis le dernier heartbeat",
+    "La quantité de données traitées par les tâches en cours",
+    "Le nombre de 'slots' disponibles sur le TaskTracker",
+    "L'identifiant unique de la tâche en cours d'exécution"
+   ],
+   "answer": 2,
+   "explanation": "En dehors d'informer le JobTracker qu'il est toujours fonctionnel, ces messages indiquent également le nombre de slots disponibles sur le TaskTracker concerné."
+  }
   ]
 }
