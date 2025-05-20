@@ -46,6 +46,7 @@ const progressFill = document.getElementById('progress-fill');
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const prevBtn = document.getElementById('prev-btn');
+const skipBtn = document.getElementById('skip-btn');
 const nextBtn = document.getElementById('next-btn');
 const submitBtn = document.getElementById('submit-btn');
 const scoreText = document.getElementById('score-text');
@@ -57,6 +58,10 @@ const geminiPromptContainer = document.getElementById('gemini-prompt-container')
 fileInput.addEventListener('change', handleFileUpload);
 startQuizBtn.addEventListener('click', startQuiz);
 prevBtn.addEventListener('click', showPrevQuestion);
+skipBtn.addEventListener('click', () => {
+    userAnswers[currentQuestionIndex] = -1; // Mark as skipped
+    showNextQuestion();
+});
 nextBtn.addEventListener('click', showNextQuestion);
 submitBtn.addEventListener('click', submitQuiz);
 restartBtn.addEventListener('click', restartQuiz);
