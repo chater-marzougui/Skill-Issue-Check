@@ -130,8 +130,9 @@ Here's the document to analyze:
     print("Failed to get a valid response after multiple attempts")
     return {"error": "Failed to get a valid response from Gemini"}
 
-def process_pdf_with_gemini(pdf_path, output_path):
+def process_pdf_with_gemini(pdf_path, base_folder, courses_path):
     """Process PDF with Gemini and save results to a JSON file."""
+    # Generate a default output filename based on the input PDF
     chunks = split_pdf_into_chunks(pdf_path)
     if not chunks:
         print("No chunks were created. Exiting.")
@@ -162,18 +163,62 @@ def process_pdf_with_gemini(pdf_path, output_path):
         if i < len(chunks) - 1:
             time.sleep(2)
     
+    output_path = os.path.splitext(pdf_path.replace(' ', '_').lower())[0] + '.json'
+    course_name = os.path.basename(pdf_path).replace('.pdf', '')
     # Save the combined results
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(base_folder+output_path, 'w', encoding='utf-8') as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
+        
+    manage_courses(base_folder+courses_path, new_course_name=course_name, new_course_filename=output_path)
     
     print(f"\nComplete! Saved results to {output_path}")
     print(f"Generated a total of {sum(len(q) for q in all_questions.values())} questions")
+    
+def manage_courses(courses_file_path, new_course_name=None, new_course_filename=None):
+    # Load existing courses file
+    try:
+        if os.path.exists(courses_file_path):
+            with open(courses_file_path, 'r', encoding='utf-8') as f:
+                courses_data = json.load(f)
+        else:
+            # Create new courses data structure if file doesn't exist
+            courses_data = {"courses": []}
+            print(f"No courses file found at {courses_file_path}. Creating new courses file.")
+    except Exception as e:
+        print(f"Error loading courses file: {e}")
+        courses_data = {"courses": []}
+    
+    # Add new course if name and filename are provided
+    if new_course_name and new_course_filename:
+        # Find the highest existing ID to generate a new one
+        existing_ids = [int(course["id"]) for course in courses_data.get("courses", [])]
+        new_id = str(max(existing_ids, default=0) + 1)
+        
+        # Create new course entry
+        new_course = {
+            "id": new_id,
+            "filename": new_course_filename,
+            "name": new_course_name
+        }
+        
+        # Add to courses list
+        courses_data.setdefault("courses", []).append(new_course)
+        print(f"Added new course: {new_course_name} (ID: {new_id})")
+        
+        # Save updated courses file
+        try:
+            with open(courses_file_path, 'w', encoding='utf-8') as f:
+                json.dump(courses_data, f, indent=2, ensure_ascii=False)
+            print(f"Courses file updated successfully at {courses_file_path}")
+        except Exception as e:
+            print(f"Error saving courses file: {e}")
+    
+    return courses_data
 
 if __name__ == "__main__":
     # Get input from user
-    pdf_path = './Chapter 4-Next Generation Firewalls and Applications Identification.pdf'
-    
-    # Generate a default output filename based on the input PDF
-    default_output = pdf_path[:-4] + "_questions.json"
+    base_folder = './assets/courses/'
+    courses_path = 'course-list.json'
+    pdf_path = 'Chapter 4-Next Generation Firewalls and Applications Identification.pdf'
     # Process the PDF
-    process_pdf_with_gemini(pdf_path, default_output)
+    process_pdf_with_gemini(pdf_path, base_folder, courses_path)
