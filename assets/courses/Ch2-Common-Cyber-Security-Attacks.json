@@ -1,5 +1,5 @@
 {
-  "session 1 (p.1-10)": [
+  "Chap 2 Cyber Attacks (p.1-20)": [
     {
       "question": "Which of the following is NOT a characteristic of passive sniffing?",
       "options": [
@@ -87,9 +87,7 @@
       ],
       "answer": 1,
       "explanation": "IP Source Guard (IPSG) is a defense mechanism that prevents a device from transmitting IP datagrams with a source IP address different from the one assigned via DHCP, thus mitigating IP address spoofing attacks."
-    }
-  ],
-  "session 1 (p.11-20)": [
+    },
     {
       "question": "Why is it difficult for an attacker to establish a TCP connection with a server using a spoofed IP address?",
       "options": [
@@ -190,7 +188,7 @@
       "explanation": "An attacker manipulates the Spanning Tree Protocol (STP) by spoofing the root bridge and changing the topology of a network, so that they can capture all traffic. This involves broadcasting STP bridge protocol data units (BPDUs)."
     }
   ],
-  "session 1 (p.21-30)": [
+  "Chap 2 Cyber Attacks (p.21-40)": [
     {
       "question": "What type of protocol is the Cisco Discovery Protocol (CDP)?",
       "options": [
@@ -278,9 +276,7 @@
       ],
       "answer": 2,
       "explanation": "Bandwidth flooding aims to saturate the communication link between users and the target system with a high volume of data, causing congestion and denial of service."
-    }
-  ],
-  "session 1 (p.31-40)": [
+    },
     {
       "question": "In a Land attack, what is the source and destination address of the spoofed SYN packet?",
       "options": [
@@ -392,7 +388,7 @@
       "explanation": "DNS cache poisoning attacks involve injecting falsified or spoofed DNS records into a DNS resolver's cache. This can lead users to be redirected from legitimate websites to malicious ones, as the resolver will provide the incorrect information from its poisoned cache."
     }
   ],
-  "session 1 (p.41-50)": [
+  "Chap 2 Cyber Attacks (p.41-60)": [
     {
       "question": "In a DNS amplification and reflection attack, what IP address does the attacker typically spoof in the request?",
       "options": [
@@ -480,9 +476,7 @@
       ],
       "answer": 2,
       "explanation": "Countermeasures against DNS tunneling involve inspecting DNS traffic and paying attention to queries that are unusually long or have suspicious domain names, as these are indicative of embedded data."
-    }
-  ],
-  "session 1 (p.51-60)": [
+    },
     {
       "question": "What is the primary objective of a port scan?",
       "options": [
@@ -594,7 +588,7 @@
       "explanation": "The primary objective of a wireless jamming attack is to disrupt wireless communication by generating strong noise to interfere with the wireless channel, thereby reducing its capacity and potentially causing service unavailability."
     }
   ],
-  "session 1 (p.61-70)": [
+  "Chap 2 Cyber Attacks (p.61-70)": [
     {
       "question": "What is the primary weakness exploited in DDoS attacks targeting 2G cellular networks?",
       "options": [

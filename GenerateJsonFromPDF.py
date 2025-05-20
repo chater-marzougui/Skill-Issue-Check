@@ -171,7 +171,7 @@ def process_pdf_with_gemini(pdf_path, output_path):
 
 if __name__ == "__main__":
     # Get input from user
-    pdf_path = './Ch2 - Common Cyber Security Attacks.pdf'
+    pdf_path = './Chapter 4-Next Generation Firewalls and Applications Identification.pdf'
     
     # Generate a default output filename based on the input PDF
     default_output = pdf_path[:-4] + "_questions.json"

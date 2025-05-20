@@ -17,6 +17,16 @@
       },
       {
         "id": "4",
+        "filename": "Ch3_Firewalls_and_traffic_filtering.json",
+        "name": "Firewalls and Traffic Filtering"
+      },
+      {
+        "id": "5",
+        "filename": "Chapter_4-Next_Generation_Firewalls_and_Applications_Identification.json",
+        "name": "Next Generation Firewalls and Applications Identification"
+      },
+      {
+        "id": "6",
         "filename": "Reseaux-5G.json",
         "name": "Reseaux 5G"
       }

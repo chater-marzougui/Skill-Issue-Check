@@ -1,0 +1,294 @@
+{
+  "session 1 (p.1-10)": [
+    {
+      "question": "What is a key difference between traditional firewalls and Next Generation Firewalls (NGFWs)?",
+      "options": [
+        "Traditional firewalls track domains and port numbers, while NGFWs perform deep-packet inspection.",
+        "Traditional firewalls support VPN, while NGFWs do not.",
+        "NGFWs require multiple separate devices, while traditional firewalls are integrated.",
+        "NGFWs are slower and less capable of enterprise deployment compared to traditional firewalls."
+      ],
+      "answer": 0,
+      "explanation": "NGFWs differ significantly from traditional firewalls by performing deep-packet inspection, which involves monitoring the content of messages, unlike traditional firewalls that primarily track domains and port numbers."
+    },
+    {
+      "question": "Which of the following is a benefit of using a Next Generation Firewall?",
+      "options": [
+        "Reduced hardware costs due to fewer integrated features.",
+        "Simplified management by integrating multiple security features into a single appliance.",
+        "Decreased need for high-performance devices.",
+        "Exclusive reliance on port numbers for traffic classification."
+      ],
+      "answer": 1,
+      "explanation": "NGFWs offer the benefit of integrating multiple security features, such as network firewalling and malware detection, into a single appliance, which simplifies management."
+    },
+    {
+      "question": "In the context of Next Generation Firewalls, what is 'App-ID' primarily designed to do?",
+      "options": [
+        "To classify traffic solely based on port numbers.",
+        "To provide more granular control over data by examining the application associated with the traffic.",
+        "To exclusively block all DNS traffic on port 53.",
+        "To bypass security protocols for faster data transfer."
+      ],
+      "answer": 1,
+      "explanation": "App-ID is designed to examine the application associated with the traffic, allowing for more granular control over data compared to traditional firewalls that rely on port numbers."
+    },
+    {
+      "question": "What does the 'data analysis engine' do in a Next Generation Firewall architecture?",
+      "options": [
+        "It only decrypts inbound traffic if the device functions as a VPN boundary node.",
+        "It is responsible for re-encrypting all incoming traffic to maintain security.",
+        "It is responsible for keeping track of packet flows and coordinating the work of antivirus, IDS, and IPS engines.",
+        "It only handles bandwidth shaping to optimize performance."
+      ],
+      "answer": 2,
+      "explanation": "The data analysis engine in an NGFW keeps track of packet flows and coordinates the work of antivirus, IDS, and IPS engines, playing a central role in threat detection and prevention."
+    },
+    {
+      "question": "According to the document, what might be a drawback of using a Next Generation Firewall?",
+      "options": [
+        "They cannot perform deep-packet inspection.",
+        "They are not capable of enterprise deployment.",
+        "Licensing for the multiple security features can be selective.",
+        "They do not support VPN connections."
+      ],
+      "answer": 2,
+      "explanation": "While NGFWs offer many benefits, licensing for their multiple security features can be selective, potentially adding complexity and cost."
+    },
+    {
+      "question": "How do Next Generation Firewalls handle encrypted traffic compared to traditional firewalls?",
+      "options": [
+        "NGFWs always bypass encrypted traffic for faster processing.",
+        "NGFWs can decrypt inbound traffic for inspection if functioning as a VPN boundary node.",
+        "Traditional Firewalls are more capable of decrypting.",
+        "NGFWs don't handle encrypted traffic differently than traditional ones."
+      ],
+      "answer": 1,
+      "explanation": "NGFWs, particularly when acting as a VPN boundary node, can decrypt inbound traffic before initial inspection, allowing for deeper analysis of the content."
+    },
+    {
+      "question": "Which engine is responsible for preventing intrusions in the Next Generation Firewall architecture?",
+      "options": [
+        "Antivirus Engine",
+        "IDS Engine",
+        "IPS Engine",
+        "Heuristic scan engine"
+      ],
+      "answer": 2,
+      "explanation": "The IPS (Intrusion Prevention System) engine is specifically designed to prevent intrusions by actively blocking or mitigating threats."
+    },
+    {
+      "question": "What happens if an application is using TCP and the firewall needs to identify the application?",
+      "options": [
+        "The firewall can identify the application using only the first packet.",
+        "The firewall might have to examine multiple packet transfers to identify the application.",
+        "The firewall immediately blocks the application.",
+        "The firewall relies solely on the port number to identify the application."
+      ],
+      "answer": 1,
+      "explanation": "For applications using TCP, NGFWs might need to examine multiple packet transfers, such as after the three-way TCP handshake, to fully identify the application using App-ID."
+    }
+  ],
+  "session 1 (p.11-20)": [
+    {
+      "question": "Which fields are used in the first UDP packet for App-ID?",
+      "options": [
+        "Src address and Dst address, Application data, Application name",
+        "Src port and Dst port, Src address and Dst address, Application name",
+        "Src port and Dst port, Application name, Application data",
+        "Src address and Dst address, Src port and Dst port, Application data"
+      ],
+      "answer": 3,
+      "explanation": "The first UDP packet for App-ID includes the source address and destination address, source port and destination port, and application data."
+    },
+    {
+      "question": "During application shifts, what capability does a next-generation firewall possess?",
+      "options": [
+        "It can block all traffic to ensure security.",
+        "It can detect application shifts within an established session.",
+        "It can only identify the initial application used.",
+        "It redirects traffic to a different port."
+      ],
+      "answer": 1,
+      "explanation": "Next-generation firewalls are designed to detect application shifts within an established session, allowing for more granular control and security."
+    },
+    {
+      "question": "Where can you configure application dependencies in a firewall?",
+      "options": [
+        "Objects > Applications",
+        "Network > Zones",
+        "Policies > Security",
+        "Device > Setup"
+      ],
+      "answer": 0,
+      "explanation": "Application dependencies are configured under Objects > Applications, allowing you to specify which applications are required for others to function properly."
+    },
+    {
+      "question": "What happens if you block 'unknown-tcp' and 'unknown-udp' in a security rule?",
+      "options": [
+        "It improves network performance.",
+        "It prevents the firewall from using App-ID.",
+        "It could block more traffic than intended.",
+        "It guarantees complete network security."
+      ],
+      "answer": 2,
+      "explanation": "Blocking 'unknown-tcp' and 'unknown-udp' could result in blocking more traffic than originally intended, as it might affect legitimate applications that are not yet identified."
+    },
+    {
+      "question": "What are examples of attributes that applications can be grouped on within an Application Filter?",
+      "options": [
+        "Vendor, Version, Protocol",
+        "Category, Subcategory, Technology",
+        "Bandwidth, Latency, Jitter",
+        "Source IP, Destination IP, Port"
+      ],
+      "answer": 1,
+      "explanation": "Application filters can group applications based on attributes like Category, Subcategory, and Technology, allowing for broader control beyond specific application names."
+    },
+    {
+      "question": "What type of encryption does SSL/TLS use?",
+      "options": [
+        "Symmetric encryption only",
+        "Hashing algorithm only",
+        "Asymmetric and symmetric encryption",
+        "Asymmetric encryption only"
+      ],
+      "answer": 2,
+      "explanation": "SSL/TLS utilizes both asymmetric encryption for initial key exchange and symmetric encryption for faster data transfer during the ongoing session."
+    },
+    {
+      "question": "Which decryption type is typically used for outbound traffic in a firewall/IPS?",
+      "options": [
+        "SSL Forward Proxy (Outbound)",
+        "SSL Inbound Inspection",
+        "SSH Proxy",
+        "No Proxy"
+      ],
+      "answer": 0,
+      "explanation": "SSL Forward Proxy (Outbound) is used for decrypting traffic going from the internal network to external servers to inspect for malicious content."
+    },
+    {
+      "question": "What information is unencrypted at the hardware level?",
+      "options": [
+        "Application data",
+        "MAC Addresses",
+        "Ports",
+        "TLS/SSL data"
+      ],
+      "answer": 1,
+      "explanation": "MAC addresses remain unencrypted at the hardware level, as they are essential for network communication within the local network segment."
+    }
+  ],
+  "session 1 (p.21-30)": [
+    {
+      "question": "What is the primary function of a Public Key Infrastructure (PKI)?",
+      "options": [
+        "To encrypt all network traffic.",
+        "To securely identify public keys.",
+        "To prevent denial-of-service attacks.",
+        "To manage firewall configurations."
+      ],
+      "answer": 1,
+      "explanation": "A PKI's main role is to ensure the secure identification of public keys, primarily through the use of digital certificates."
+    },
+    {
+      "question": "Which of the following is NOT typically a component of a PKI?",
+      "options": [
+        "Root CA",
+        "Intermediate CA",
+        "Device Certificate store",
+        "Intrusion Prevention System"
+      ],
+      "answer": 3,
+      "explanation": "While an Intrusion Prevention System (IPS) is a security component, it's not directly part of the core PKI architecture, which focuses on certificate management via CAs and certificate stores."
+    },
+    {
+      "question": "What is the purpose of a digital signature on a digital certificate?",
+      "options": [
+        "To encrypt the data within the certificate.",
+        "To verify the certificate's valid date range.",
+        "To authenticate the issuer of the certificate.",
+        "To store the device's FQDN/IP address."
+      ],
+      "answer": 2,
+      "explanation": "The issuer's digital signature on a certificate confirms that the certificate was indeed issued by that CA and hasn't been tampered with."
+    },
+    {
+      "question": "In SSL Forward Proxy decryption, what is the first step when a client initiates an SSL connection?",
+      "options": [
+        "The firewall signs a copy of the server certificate.",
+        "The server sends its certificate to the firewall.",
+        "The client verifies the IPS/firewall's CA certificate.",
+        "The internal user requests an external server."
+      ],
+      "answer": 2,
+      "explanation": "The client begins by ensuring the IPS/firewall's Certificate Authority (CA) certificate is valid, establishing trust before proceeding with the SSL connection."
+    },
+    {
+      "question": "What is the purpose of a 'forward untrust certificate' in SSL Forward Proxy?",
+      "options": [
+        "To establish trust with all server certificates.",
+        "To indicate that a server certificate should not be trusted.",
+        "To encrypt the communication with trusted servers.",
+        "To bypass SSL inspection for specific applications."
+      ],
+      "answer": 1,
+      "explanation": "A 'forward untrust certificate' is used by the firewall to explicitly mark a server certificate as untrusted, influencing how the firewall handles the SSL connection."
+    },
+    {
+      "question": "In SSL Inbound Inspection, what is unique regarding the certificate used?",
+      "options": [
+        "The client generates a unique certificate.",
+        "The administrator imports the same certificate and private key as the server.",
+        "The server dynamically generates a new certificate for each connection.",
+        "A forward trust certificate is used to validate the server."
+      ],
+      "answer": 1,
+      "explanation": "For SSL Inbound Inspection to function correctly, the administrator imports an identical certificate and its corresponding private key that's already deployed on the internal server."
+    },
+    {
+      "question": "Which of the following application types is likely to encounter issues with SSL Forward Proxy?",
+      "options": [
+        "Web browsers using standard cryptographic settings.",
+        "Applications that utilize client-side certificates.",
+        "Applications using only TLS 1.3.",
+        "Servers that use common cryptographic settings."
+      ],
+      "answer": 1,
+      "explanation": "Applications that rely on client-side certificates often face challenges with SSL Forward Proxy because the proxy's interception can interfere with the certificate exchange process."
+    },
+    {
+      "question": "What is the primary benefit of decryption port mirroring?",
+      "options": [
+        "Encrypting traffic between the firewall and the server.",
+        "Providing a dedicated interface for encrypted traffic.",
+        "Exporting decrypted traffic for analysis by DLP and network forensics tools.",
+        "Bypassing the firewall for specific applications."
+      ],
+      "answer": 2,
+      "explanation": "Decryption port mirroring provides decrypted traffic to tools like DLP (Data Loss Prevention) and for network forensics, enhancing security visibility and incident response."
+    },
+    {
+      "question": "What is the main role of the 'security chain' in a decryption broker setup?",
+      "options": [
+        "To re-encrypt traffic before it reaches the destination.",
+        "To manage certificate authorities.",
+        "To analyze allowed traffic and add additional enforcement measures.",
+        "To establish the initial SSL connection."
+      ],
+      "answer": 2,
+      "explanation": "The security chain supplements the decryption broker by further examining decrypted traffic and applying additional security policies, like intrusion prevention."
+    },
+    {
+      "question": "What is the primary function of a Hardware Security Module (HSM)?",
+      "options": [
+        "To encrypt all network traffic.",
+        "To safeguard security keys.",
+        "To perform deep packet inspection.",
+        "To manage firewall rules."
+      ],
+      "answer": 1,
+      "explanation": "HSMs are specifically designed to protect cryptographic keys, which are essential for secure communication and data protection within a network."
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "session 1 (p.1-15)": [
+    {
+      "question": "What is the primary function of a firewall in network security?",
+      "options": [
+        "To encrypt all network traffic.",
+        "To interconnect networks with different levels of trust/security and control traffic based on a security policy.",
+        "To provide faster internet connectivity.",
+        "To replace the need for antivirus software."
+      ],
+      "answer": 1,
+      "explanation": "A firewall's main role is to act as a control point, connecting networks with differing security levels and enforcing a security policy by allowing only authorized traffic to pass."
+    },
+    {
+      "question": "Which of the following is NOT a limitation of firewalls?",
+      "options": [
+        "They cannot protect against internal threats.",
+        "They cannot prevent attacks that bypass the firewall.",
+        "They cannot protect against wireless communications between local systems.",
+        "They can guarantee 100% security against all threats."
+      ],
+      "answer": 3,
+      "explanation": "Firewalls cannot guarantee 100% security, but they can protect wireless communications between local systems, while other options are real limitations of a firewall."
+    },
+    {
+      "question": "Which type of firewall examines each IP packet without considering the context of previous packets?",
+      "options": [
+        "Stateful inspection firewall",
+        "Application proxy firewall",
+        "Packet filtering firewall",
+        "Circuit-level proxy firewall"
+      ],
+      "answer": 2,
+      "explanation": "Packet filtering firewalls operate by analyzing each packet individually, without retaining any information about past packets or connection states."
+    },
+    {
+      "question": "Which of the following is a characteristic used by firewalls to control access?",
+      "options": [
+        "The color of the network cables.",
+        "The brand of the network switches.",
+        "Source and destination addresses, port numbers, and traffic direction.",
+        "The number of computers on the network."
+      ],
+      "answer": 2,
+      "explanation": "Firewalls use various characteristics, including source and destination IP addresses, port numbers, and the direction of traffic (inbound or outbound), to make decisions about whether to allow or deny network traffic."
+    },
+    {
+      "question": "What is the default action 'Discard' equivalent to in the context of packet filtering rules?",
+      "options": [
+        "Allow",
+        "Reject",
+        "Drop silently",
+        "Generate alerts"
+      ],
+      "answer": 2,
+      "explanation": "The default action 'Discard' means the firewall will silently drop the packet, effectively denying it without notifying the sender."
+    },
+    {
+      "question": "In the context of packet filtering rules, what does a 'selector' define?",
+      "options": [
+        "The action to be taken on a packet.",
+        "If there is a rule to apply to the packet.",
+        "The source IP address of the packet.",
+        "The destination port of the packet."
+      ],
+      "answer": 1,
+      "explanation": "A selector, in packet filtering rules, is a condition that determines whether a specific rule should be applied to a given packet. It checks if the packet's characteristics match the rule's criteria."
+    },
+    {
+      "question": "Which of the following actions can a firewall take based on packet filtering rules?",
+      "options": [
+        "Erase the packet content.",
+        "Allow, discard silently, or reject a packet.",
+        "Change the destination IP address of the packet.",
+        "Compress the packet to reduce its size."
+      ],
+      "answer": 1,
+      "explanation": "Based on packet filtering rules, a firewall can take actions such as allowing the packet through, silently discarding it (dropping), or rejecting it and sending an error message back to the sender."
+    },
+    {
+      "question": "What is the primary disadvantage of stateless packet filtering?",
+      "options": [
+        "It's too expensive to implement.",
+        "It requires very powerful hardware.",
+        "It does not save state information, which can lead to security vulnerabilities.",
+        "It cannot filter based on IP addresses."
+      ],
+      "answer": 2,
+      "explanation": "The main drawback of stateless packet filtering is its lack of state awareness. Since it doesn't track connections, it can be vulnerable to attacks that exploit the lack of context, also Ports > 1024 should be left open if dynamic protocols are in use."
+    }
+  ],
+  "session 1 (p.16-30)": [
+    {
+      "question": "What is a primary characteristic of a stateless packet filter?",
+      "options": [
+        "It maintains a connection state table.",
+        "It inspects the content of packets.",
+        "It does not detect bogus packets out of context.",
+        "It always requires user authentication."
+      ],
+      "answer": 2,
+      "explanation": "Stateless packet filters operate without awareness of the connection context, making them unable to identify and block packets that are inconsistent with established sessions."
+    },
+    {
+      "question": "What is the key difference between stateful and stateless packet filtering?",
+      "options": [
+        "Stateful filtering is faster than stateless filtering.",
+        "Stateful filtering keeps track of client-server sessions.",
+        "Stateless filtering checks against a security policy.",
+        "Stateless filtering uses application-level gateways."
+      ],
+      "answer": 1,
+      "explanation": "Stateful packet filtering maintains a connection state table to track client-server sessions, which is the defining characteristic that differentiates it from stateless filtering."
+    },
+    {
+      "question": "In stateful packet filtering, which flow direction typically requires explicit rule definition in the security policy?",
+      "options": [
+        "Server to Client (s2c)",
+        "Client to Server (c2s)",
+        "Both c2s and s2c",
+        "Neither c2s nor s2c"
+      ],
+      "answer": 1,
+      "explanation": "When defining security policy rules for stateful firewalls, you primarily consider the Client to Server (c2s) flow. The return Server to Client (s2c) traffic is often automatically allowed, if the c2s flow is allowed by the rule."
+    },
+    {
+      "question": "Which of the following is an advantage of packet filtering?",
+      "options": [
+        "Advanced user authentication schemes",
+        "Protection against application-specific vulnerabilities",
+        "Simplicity of implementation",
+        "Deep packet inspection capabilities"
+      ],
+      "answer": 2,
+      "explanation": "Packet filtering is known for its simple implementation, resulting in it being a very fast and transparent type of firewall."
+    },
+    {
+      "question": "What is a potential issue with packet filtering related to the number of rules applied?",
+      "options": [
+        "Increased security",
+        "Reduced complexity",
+        "Degradation of performance",
+        "Improved logging capability"
+      ],
+      "answer": 2,
+      "explanation": "Applying a large number of rules in packet filtering can lead to performance degradation, as each packet needs to be checked against all rules."
+    },
+    {
+      "question": "What is a countermeasure against IP address spoofing attacks on packet filtering firewalls?",
+      "options": [
+        "Reassembling fragmented packets",
+        "Discarding packets using source routing",
+        "Discarding packets with inside source addresses arriving on an external interface",
+        "Allowing all TCP connections"
+      ],
+      "answer": 2,
+      "explanation": "To counter IP address spoofing, firewalls can discard packets arriving on an external interface that contain an inside source address, as this is indicative of a spoofing attempt."
+    },
+    {
+      "question": "Which type of firewall runs proxy programs to filter packets?",
+      "options": [
+        "Stateless packet filter",
+        "Stateful packet filter",
+        "Application-level gateway",
+        "Circuit-level gateway"
+      ],
+      "answer": 2,
+      "explanation": "Firewall proxy gateways, which include application-level and circuit-level gateways, function by running proxy programs to filter incoming and outgoing traffic."
+    },
+    {
+      "question": "What is a key function of an application-level gateway (proxy) firewall?",
+      "options": [
+        "Operating at the TCP level",
+        "Hiding the internal IP addresses of clients.",
+        "Forwarding packets without inspection",
+        "Only filtering based on IP addresses"
+      ],
+      "answer": 1,
+      "explanation": "Application proxy firewalls hide the internal IP addresses of clients, so attackers will only see the proxy firewall’s IP address."
+    },
+    {
+      "question": "What is the purpose of HTTP tunneling, and why is it a problem for firewalls?",
+      "options": [
+        "To encrypt all traffic for enhanced security",
+        "To encapsulate data packets of a denied protocol within HTTP packets, bypassing security measures",
+        "To speed up HTTP traffic",
+        "To block all HTTP traffic"
+      ],
+      "answer": 1,
+      "explanation": "HTTP tunneling encapsulates data packets of other, potentially denied protocols within HTTP packets, effectively bypassing the firewall's intended restrictions. This poses a security challenge as it masks the true nature of the traffic."
+    },
+    {
+      "question": "What is a feature of Application-level gateways that allows for more granular control than packet filters?",
+      "options": [
+        "Ability to allow/deny access to specific features of supported protocols",
+        "Examine packets only based on source and destination addresses.",
+        "Limited logging capability",
+        "Cannot protect against attacks that employ application-specific vulnerabilities"
+      ],
+      "answer": 0,
+      "explanation": "Application-level gateways perform deep packet inspection and can therefore enforce policies that allow or deny access to specific features of the supported protocols."
+    }
+  ],
+  "session 1 (p.31-42)": [
+    {
+      "question": "What is the primary function of an Application Proxy Firewall's relay operation concerning protocols?",
+      "options": [
+        "To allow any protocol through port 80 for faster transmission.",
+        "To permit only HTTP traffic through port 80, enforcing protocol adherence.",
+        "To block all traffic on port 80 to prevent Trojan Horse attacks.",
+        "To encrypt all non-HTTP traffic on any port."
+      ],
+      "answer": 1,
+      "explanation": "Application Proxy Firewalls enforce protocol adherence by ensuring that if port 80 is used, the traffic must be HTTP. This helps prevent malicious traffic disguised as HTTP."
+    },
+    {
+      "question": "Which of the following is NOT an advantage of using a reverse proxy?",
+      "options": [
+        "Load balancing across multiple servers.",
+        "Caching commonly requested content for faster web acceleration.",
+        "Direct communication between clients and origin servers.",
+        "Protecting the identities of backend servers through anonymity."
+      ],
+      "answer": 2,
+      "explanation": "A key function of a reverse proxy is to prevent clients from directly communicating with origin servers, enhancing security and control."
+    },
+    {
+      "question": "A circuit-level gateway differs from an application proxy firewall primarily because it:",
+      "options": [
+        "Examines the content of the traffic for malicious code.",
+        "Sets up two TCP connections and relays traffic without deep content inspection after the connection is established.",
+        "Only allows HTTP traffic through port 80.",
+        "Encrypts all incoming and outgoing traffic."
+      ],
+      "answer": 1,
+      "explanation": "Circuit-level gateways establish two TCP connections and relay traffic. After initial setup, they typically relay traffic without inspecting the content, focusing on connection authorization."
+    },
+    {
+      "question": "According to the text, which of the following is a key characteristic of a bastion host?",
+      "options": [
+        "It allows direct disk access to install monitoring software.",
+        "It should be exposed to hostile elements without any restrictions.",
+        "It runs all services for standard applications to maintain flexibility.",
+        "It runs as a non-privileged user in a private and secure directory."
+      ],
+      "answer": 3,
+      "explanation": "Bastion hosts run as non-privileged users in secure directories to minimize the impact of potential compromise and enhance overall security."
+    },
+    {
+      "question": "In a screened host firewall architecture with a single-homed bastion, what is a significant deficiency?",
+      "options": [
+        "It offers no flexibility in defining security policies.",
+        "Compromising the packet-filtering router allows direct communication between internal and external hosts.",
+        "Public servers are not allowed direct Internet access.",
+        "It requires only one system to be compromised to breach network security."
+      ],
+      "answer": 1,
+      "explanation": "A single-homed bastion host setup is vulnerable because a compromised packet-filtering router enables direct communication between internal and external hosts, bypassing the intended security."
+    },
+    {
+      "question": "What is the primary advantage of a screened-subnet firewall system (DMZ) compared to single-homed or dual-homed bastion configurations?",
+      "options": [
+        "It allows direct routing between the internal network and the Internet.",
+        "It removes the need for internal firewalls.",
+        "It creates three levels of defense to protect the internal network.",
+        "It increases the visibility of the internal network to the Internet."
+      ],
+      "answer": 2,
+      "explanation": "Screened-subnet firewalls create an isolated sub-network (DMZ), providing three layers of defense. This makes it the most secure configuration of the described firewall systems."
+    },
+    {
+      "question": "What is the main purpose of a DMZ (DeMilitarized Zone) in a network architecture?",
+      "options": [
+        "To prevent all external access to internal servers.",
+        "To provide isolation and extra security to servers offering services to the public.",
+        "To eliminate the need for firewalls.",
+        "To increase the speed of internal network traffic."
+      ],
+      "answer": 1,
+      "explanation": "A DMZ provides a segment of a network or a network between the protected network and the unprotected external network which provides some isolation and extra security to servers that provide services for protocols like HTTP/SHTTP, FTP, DNS, and SMTP to the general public."
+    },
+    {
+      "question": "What is the primary role of a personal firewall on a personal computer?",
+      "options": [
+        "To provide anonymity for all outgoing traffic.",
+        "To encrypt all network traffic.",
+        "To deny unauthorized remote access to the computer.",
+        "To speed up internet browsing."
+      ],
+      "answer": 2,
+      "explanation": "The main role of a personal firewall is to prevent unauthorized remote access to a personal computer or workstation, securing it from external threats."
+    }
+  ]
+}
