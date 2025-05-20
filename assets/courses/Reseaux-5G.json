@@ -1,0 +1,323 @@
+{
+  "seance 1": [
+    {
+      "question": "Quel est le débit de crête descendant visé par la Release 15 pour les réseaux 5G ?",
+      "options": [
+        "5 Gbps",
+        "10 Gbps",
+        "20 Gbps",
+        "50 Gbps"
+      ],
+      "answer": 2,
+      "explanation": "La Release 15 vise un débit de crête descendant de 20 Gbps, dans le cadre de l’eMBB."
+    },
+    {
+      "question": "Quel est le nombre maximal de dispositifs par km² prévu pour la mMTC dans la Release 15 ?",
+      "options": [
+        "1 million",
+        "100 000",
+        "500 000",
+        "10 millions"
+      ],
+      "answer": 0,
+      "explanation": "La 5G prévoit une densité pouvant atteindre 1 million de dispositifs connectés par km² pour les communications massive machine-type (mMTC)."
+    },
+    {
+      "question": "Dans la Release 15, combien de porteuses peuvent être agrégées au maximum ?",
+      "options": [
+        "8",
+        "10",
+        "4",
+        "16"
+      ],
+      "answer": 3,
+      "explanation": "La Release 15 autorise l'agrégation jusqu’à 16 porteuses NR, permettant une large bande passante combinée."
+    },
+    {
+      "question": "Quelle entité du cœur 5G est chargée de gérer les règles de politique QoS ?",
+      "options": [
+        "AMF",
+        "PCF",
+        "SMF",
+        "NEF"
+      ],
+      "answer": 1,
+      "explanation": "Le PCF (Policy Control Function) définit et applique les politiques de qualité de service dans le cœur 5G."
+    },
+    {
+      "question": "Quel est le rôle principal de l’AMF dans le cœur 5G ?",
+      "options": [
+        "Routage des données utilisateurs",
+        "Gestion de la mobilité et authentification",
+        "Allocation d’adresses IP",
+        "Exposition des fonctions réseau"
+      ],
+      "answer": 1,
+      "explanation": "L’AMF gère les fonctions de mobilité, d’accès et d’authentification dans la 5G Core."
+    },
+    {
+      "question": "Quelle technologie est introduite pour réduire la latence et augmenter la fiabilité dans les communications critiques ?",
+      "options": [
+        "eMBB",
+        "mMTC",
+        "URLLC",
+        "MIMO"
+      ],
+      "answer": 2,
+      "explanation": "L’URLLC (Ultra-Reliable Low-Latency Communication) permet des communications à faible latence et haute fiabilité."
+    },
+    {
+      "question": "Quel mécanisme introduit une architecture orientée microservices en 5G ?",
+      "options": [
+        "CUPS",
+        "SBA",
+        "NFV",
+        "MEC"
+      ],
+      "answer": 1,
+      "explanation": "La SBA (Service-Based Architecture) repose sur une architecture en microservices avec des interfaces HTTP/JSON."
+    },
+    {
+      "question": "Quelle entité permet à des applications tierces d’accéder aux capacités du réseau 5G via API ?",
+      "options": [
+        "NEF",
+        "NRF",
+        "UDM",
+        "SMF"
+      ],
+      "answer": 0,
+      "explanation": "Le NEF (Network Exposure Function) expose les capacités du réseau via des API sécurisées pour les applications externes."
+    },
+    {
+      "question": "Qu’est-ce que le NSSF dans le cœur 5G ?",
+      "options": [
+        "Fonction de gestion des sessions",
+        "Fonction de gestion de la mobilité",
+        "Fonction de sélection de tranches réseau",
+        "Fonction de chiffrement"
+      ],
+      "answer": 2,
+      "explanation": "Le NSSF (Network Slice Selection Function) attribue les tranches réseau aux utilisateurs selon leurs besoins."
+    },
+    {
+      "question": "Quel est l'avantage principal du découpage CU/DU dans l'architecture RAN ?",
+      "options": [
+        "Augmentation du spectre disponible",
+        "Amélioration de la qualité sonore",
+        "Virtualisation et flexibilité du déploiement",
+        "Réduction de la portée du signal"
+      ],
+      "answer": 2,
+      "explanation": "La séparation CU/DU permet de virtualiser les fonctions et d’adapter les déploiements au besoin."
+    },
+    {
+      "question": "Quelle nouvelle identité abonnée est chiffrée pour assurer la confidentialité ?",
+      "options": [
+        "SUPI",
+        "GUAMI",
+        "SUCI",
+        "5G-GUTI"
+      ],
+      "answer": 2,
+      "explanation": "Le SUCI est une version chiffrée du SUPI pour préserver la confidentialité des utilisateurs."
+    },
+    {
+      "question": "Quelle interface est utilisée entre les fonctions réseau dans la SBA ?",
+      "options": [
+        "S1",
+        "X2",
+        "HTTP/JSON",
+        "NG"
+      ],
+      "answer": 2,
+      "explanation": "Les fonctions réseau SBA utilisent des interfaces HTTP/JSON pour communiquer selon un modèle RESTful."
+    },
+    {
+      "question": "Quel est l’objectif principal de la fonction NWDAF ?",
+      "options": [
+        "Exposer les services aux tiers",
+        "Gérer l’authentification des UEs",
+        "Analyser les données réseau pour l’optimisation",
+        "Contrôler la politique de QoS"
+      ],
+      "answer": 2,
+      "explanation": "La NWDAF collecte et analyse des données réseau pour détecter les anomalies et améliorer les performances."
+    },
+    {
+      "question": "Le mini-slot en 5G permet de :",
+      "options": [
+        "Réduire la portée radio",
+        "Augmenter la consommation",
+        "Réduire la latence de transmission",
+        "Augmenter le nombre d'antennes"
+      ],
+      "answer": 2,
+      "explanation": "Le mini-slot permet des transmissions ultra rapides, utiles pour les applications à faible latence comme l’URLLC."
+    },
+    {
+      "question": "Quel est le but du concept de Bandwidth Part (BWP) ?",
+      "options": [
+        "Améliorer la synchronisation",
+        "Réduire la consommation énergétique de l’UE",
+        "Augmenter le nombre de porteuses",
+        "Étendre la portée du signal"
+      ],
+      "answer": 1,
+      "explanation": "Les BWPs permettent à l’UE de n’activer que des sous-parties de bande passante, réduisant ainsi la consommation d’énergie."
+    },
+    {
+      "question": "La fonction SMF dans la 5G gère :",
+      "options": [
+        "La gestion de la mobilité",
+        "La gestion des sessions et des adresses IP",
+        "L’exposition des services",
+        "Le chiffrement des données"
+      ],
+      "answer": 1,
+      "explanation": "Le SMF est responsable de la gestion des sessions PDU, des adresses IP et de l’application des politiques QoS."
+    },
+    {
+      "question": "Quelle modulation n’est **pas** supportée en 5G NR Rel-15 ?",
+      "options": [
+        "CP-OFDM",
+        "DFT-s-OFDM",
+        "NOMA",
+        "256-QAM"
+      ],
+      "answer": 2,
+      "explanation": "La modulation NOMA n’est pas supportée dans la Release 15, contrairement aux autres techniques listées."
+    },
+    {
+      "question": "La durée d’une trame 5G NR est de :",
+      "options": [
+        "1 ms",
+        "10 ms",
+        "100 µs",
+        "0,5 ms"
+      ],
+      "answer": 1,
+      "explanation": "Une trame complète en 5G NR a une durée de 10 ms, similaire à LTE."
+    },
+    {
+      "question": "Quel type de bearer est utilisé en 5G pour les messages RRC initiaux ?",
+      "options": [
+        "SRB0",
+        "SRB1",
+        "SRB2",
+        "SRB3"
+      ],
+      "answer": 0,
+      "explanation": "SRB0 est utilisé pour les messages RRC initiaux via le canal CCCH."
+    },
+    {
+      "question": "Combien de BWPs peuvent être configurés simultanément pour un UE ?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Jusqu’à 4 Bandwidth Parts peuvent être configurés dans un UE, avec un seul actif par direction à la fois."
+    },
+    {
+      "question": "Quel est le rôle principal de la fonction UPF ?",
+      "options": [
+        "Gestion de la mobilité",
+        "Routage et traitement des paquets utilisateur",
+        "Authentification de l’UE",
+        "Détection d’anomalies réseau"
+      ],
+      "answer": 1,
+      "explanation": "La fonction UPF est responsable du plan utilisateur : routage, forwarding, QoS, etc."
+    },
+    {
+      "question": "Quel est l’équivalent du RRC INACTIVE en UMTS ?",
+      "options": [
+        "CELL_FACH",
+        "CELL_PCH",
+        "URA_PCH",
+        "IDLE"
+      ],
+      "answer": 1,
+      "explanation": "Le mode RRC INACTIVE en 5G est similaire au mode CELL_PCH en UMTS, permettant la réduction de signalisation."
+    },
+    {
+      "question": "Dans quel cas utilise-t-on la fonction de secondary authentication ?",
+      "options": [
+        "Pour accéder aux services VoLTE",
+        "Pour la synchronisation des cellules",
+        "Pour l'accès à des services privés externes",
+        "Pour transmettre les paquets SRB"
+      ],
+      "answer": 2,
+      "explanation": "La secondary authentication est utilisée pour authentifier l’accès à des réseaux privés ou services tiers."
+    },
+    {
+      "question": "Quelle entité fournit les vecteurs d'authentification en 5G ?",
+      "options": [
+        "PCF",
+        "AUSF",
+        "NEF",
+        "SMF"
+      ],
+      "answer": 1,
+      "explanation": "L’AUSF traite l’authentification et fournit les vecteurs à partir des données UDM."
+    },
+    {
+      "question": "Quelle fonction du cœur 5G est absente dans le cœur LTE ?",
+      "options": [
+        "PCRF",
+        "UPF",
+        "HSS",
+        "NRF"
+      ],
+      "answer": 3,
+      "explanation": "Le NRF est une nouveauté de la 5G qui permet l’enregistrement et la découverte des fonctions réseau."
+    },
+    {
+      "question": "Quel service NEF permet de recevoir des notifications en cas de perte de connectivité ?",
+      "options": [
+        "Nnef_EventExposure",
+        "Nnef_TrafficInfluence",
+        "Nnef_BDTPNegotiation",
+        "Nnef_Trigger"
+      ],
+      "answer": 0,
+      "explanation": "Le service Nnef_EventExposure permet de suivre les événements réseau comme la perte de connectivité."
+    },
+    {
+      "question": "Dans quel état RRC l’UE stocke-t-il son contexte AS et effectue-t-il des mises à jour périodiques ?",
+      "options": [
+        "RRC_IDLE",
+        "RRC_CONNECTED",
+        "RRC_SUSPENDED",
+        "RRC_INACTIVE"
+      ],
+      "answer": 3,
+      "explanation": "En RRC_INACTIVE, l’UE garde son contexte actif, mais réduit la signalisation grâce à une gestion optimisée."
+    },
+    {
+      "question": "Le SDAP (Service Data Adaptation Protocol) sert à :",
+      "options": [
+        "Chiffrer les données",
+        "Contrôler l’accès radio",
+        "Associer les QoS flows aux bearers",
+        "Gérer la mobilité inter-cellule"
+      ],
+      "answer": 2,
+      "explanation": "La couche SDAP en 5G NR permet l'association des flux QoS aux canaux radio (bearers)."
+    },
+    {
+      "question": "Quel paramètre dans le header permet d’identifier un flux QoS en 5G ?",
+      "options": [
+        "QCI",
+        "TAC",
+        "QFI",
+        "IMSI"
+      ],
+      "answer": 2,
+      "explanation": "Le QFI (QoS Flow Identifier) permet d’identifier et de classifier les paquets selon leur profil QoS en 5G."
+    }
+  ]
+}
