@@ -1,5 +1,5 @@
 {
-  "session 1 (p.1-15)": [
+  "Firewalls and Traffic (p.1-15)": [
     {
       "question": "What is the primary function of a firewall in network security?",
       "options": [
@@ -89,7 +89,7 @@
       "explanation": "The main drawback of stateless packet filtering is its lack of state awareness. Since it doesn't track connections, it can be vulnerable to attacks that exploit the lack of context, also Ports > 1024 should be left open if dynamic protocols are in use."
     }
   ],
-  "session 1 (p.16-30)": [
+  "Firewalls and Traffic (p.16-30)": [
     {
       "question": "What is a primary characteristic of a stateless packet filter?",
       "options": [
@@ -201,7 +201,7 @@
       "explanation": "Application-level gateways perform deep packet inspection and can therefore enforce policies that allow or deny access to specific features of the supported protocols."
     }
   ],
-  "session 1 (p.31-42)": [
+  "Firewalls and Traffic (p.31-42)": [
     {
       "question": "What is the primary function of an Application Proxy Firewall's relay operation concerning protocols?",
       "options": [

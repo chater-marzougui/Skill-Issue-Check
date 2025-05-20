@@ -1,5 +1,5 @@
 {
-  "session 1 (p.1-10)": [
+  "Next Gen Firewalls (p.1-10)": [
     {
       "question": "What is a key difference between traditional firewalls and Next Generation Firewalls (NGFWs)?",
       "options": [
@@ -89,7 +89,7 @@
       "explanation": "For applications using TCP, NGFWs might need to examine multiple packet transfers, such as after the three-way TCP handshake, to fully identify the application using App-ID."
     }
   ],
-  "session 1 (p.11-20)": [
+  "Next Gen Firewalls (p.11-20)": [
     {
       "question": "Which fields are used in the first UDP packet for App-ID?",
       "options": [
@@ -179,7 +179,7 @@
       "explanation": "MAC addresses remain unencrypted at the hardware level, as they are essential for network communication within the local network segment."
     }
   ],
-  "session 1 (p.21-30)": [
+  "Next Gen Firewalls (p.21-30)": [
     {
       "question": "What is the primary function of a Public Key Infrastructure (PKI)?",
       "options": [
