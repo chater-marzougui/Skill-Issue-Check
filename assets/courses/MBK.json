@@ -12,7 +12,8 @@
       "answer": [
         0,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "HTTP est... (choisir 3 réponses)",
@@ -26,7 +27,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Le protocole HTTP/2.0... (choisir 2 réponses)",
@@ -40,7 +42,8 @@
       "answer": [
         0,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "HTML 5 est... (choisir 2 réponses)",
@@ -54,7 +57,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Une URI... (choisir 3 réponses)",
@@ -69,7 +73,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "CSS 3 est... (choisir 2 réponses)",
@@ -83,7 +88,8 @@
       "answer": [
         0,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "JavaScript est... (choisir 3 réponses)",
@@ -98,7 +104,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "TypeScript est... (choisir 2 réponses)",
@@ -112,7 +119,8 @@
       "answer": [
         1,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": " est... (choisir 3 réponses)",
@@ -126,7 +134,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "JSON est... (choisir 2 réponses)",
@@ -140,7 +149,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "La balise permettant d'activer le Responsive Web Design est:",
@@ -153,7 +163,8 @@
       ],
       "answer": [
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "La règle de style « #hi (...) concerne...",
@@ -182,7 +193,8 @@
       "answer": [
         0,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans une SPA,... (choisir 3 réponses)",
@@ -197,7 +209,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans le patron de conception MVP... (choisir 2 réponses)",
@@ -211,7 +224,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour un service REST: (choisir 3 réponses)",
@@ -226,7 +240,8 @@
         0,
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Les services REST sont: (choisir 2 réponses)",
@@ -240,7 +255,8 @@
       "answer": [
         1,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Le protocole MQTT...: (choisir 3 réponses)",
@@ -255,7 +271,8 @@
         0,
         1,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans le protocole MQTT, un Topic ... (choisir 3 réponses)",
@@ -270,7 +287,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Le protocole MQTT-SN... (choisir 2 réponses)",
@@ -284,7 +302,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "L'architecture WOA... (choisir 3 réponses)",
@@ -299,7 +318,8 @@
         0,
         2,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "AJAX... (choisir 2 réponses)",
@@ -313,7 +333,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "EJB-MDB... (choisir 2 réponses)",
@@ -344,7 +365,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "JAX-RS...",
@@ -357,7 +379,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Lequel de ces codes HTTP correspond au statut de succès - OK»:",
@@ -370,7 +393,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Lequel de ces codes HTTP correspond au statut d'accès interdit. Forbidden»:",
@@ -383,7 +407,8 @@
       ],
       "answer": [
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Lequel de ces codes HTTP correspond au statut d'accès non autorisé « Unauthorized » :",
@@ -396,7 +421,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour un service REST, quel code http doit-on retourner en réponse à une requête POST sur une URI de collection?",
@@ -409,7 +435,8 @@
       ],
       "answer": [
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Quel code HTTP est retourné à la suite d'un handshake WebSocket:",
@@ -422,7 +449,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Quel est la meilleure requête pour changer un mot de passe via une REST API:",
@@ -450,7 +478,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Laquelle de ces méthodes HTTP doit être utilisé pour modifier partiellement une ressource?",
@@ -463,7 +492,8 @@
       ],
       "answer": [
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Laquelle de ces annotations JAX-RS permet de définir un service REST",
@@ -476,7 +506,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Quel nom porte l'API JavaScript permettant de manipuler le contenu d'un document HTML 5",
@@ -489,7 +520,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Quelle API JavaScript permet d'effectuer des communications asynchrones avec le serveur ?",
@@ -502,7 +534,8 @@
       ],
       "answer": [
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour un service REST, la méthode HTTP OPTIONS sert à :",
@@ -515,7 +548,8 @@
       ],
       "answer": [
         0
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour un service REST, la méthode HTTP HEAD sert à :",
@@ -528,7 +562,8 @@
       ],
       "answer": [
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour les services REST, le code à la demande... (choisir 3 réponses)",
@@ -543,7 +578,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour les services REST, lo mash-up... (choisir 2 réponses)",
@@ -557,7 +593,8 @@
       "answer": [
         0,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour les services REST, le HATEOAS ...(choisir 2 réponses)",
@@ -571,7 +608,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Laquelle de ces annotations JAX-RS doit annoter la classe d'activation des services REST afin de définir la racine des ressources:",
@@ -584,7 +622,8 @@
       ],
       "answer": [
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Le protocole OAuth 2.0...",
@@ -597,7 +636,8 @@
       ],
       "answer": [
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "L'authentification par mot de passe... (choisir 3 réponses)",
@@ -611,7 +651,8 @@
       "answer": [
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Lors du hachage d'un mot de passe... (choisir 2 réponses)",
@@ -642,7 +683,8 @@
         0,
         3,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pendant une authentification par biométrie... (choisir 3 réponses)",
@@ -657,7 +699,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "TLS est... (choisir 2 réponses)",
@@ -671,7 +714,8 @@
       "answer": [
         1,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "est un protocole réputé sécurisé en 2021",
@@ -684,7 +728,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "est considérée comme suite cryptographique sécurisée en 2021 (choisir 2 réponses)",
@@ -698,7 +743,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans la suite cryptographique TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, l'acronyme ECDHE désigne...",
@@ -711,7 +757,8 @@
       ],
       "answer": [
         0
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans la suite cryptographique TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,l'acronyme RSA désigne...",
@@ -724,7 +771,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans la suite cryptographique TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, la chaîne de caractère AES 256 GCM désigne ...",
@@ -737,7 +785,8 @@
       ],
       "answer": [
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans la suite cryptographique la TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, la chaine de caractères SHA398 désigne ...",
@@ -766,7 +815,8 @@
       "answer": [
         0,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Lorsqu'on configure le protocole TLS, pour activer la politique HSTS, Il faut configurer le serveur pour:",
@@ -779,7 +829,8 @@
       ],
       "answer": [
         0
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "JWT est... (choisir 2 réponses)",
@@ -793,7 +844,8 @@
       "answer": [
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Un jeton JWT permet de: (choisir 3 réponses)",
@@ -808,7 +860,8 @@
         1,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "La signature d'un jeton JWT doit être généré par :",
@@ -821,7 +874,8 @@
       ],
       "answer": [
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Un jeton JWT est... (choisir 2 réponses)",
@@ -835,7 +889,8 @@
       "answer": [
         1,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Un Jeton JWT doit être envoyé...",
@@ -848,7 +903,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Un jeton JWT permet d'assurer: (choisir 2 réponses)",
@@ -862,7 +918,8 @@
       "answer": [
         0,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Un jeton JWT s'utilise",
@@ -875,7 +932,8 @@
       ],
       "answer": [
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Un jeton JWT... (choisir 2 réponses)",
@@ -889,7 +947,8 @@
       "answer": [
         0,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Pour sécuriser un service REST, il faut et il suffit...",
@@ -902,7 +961,8 @@
       ],
       "answer": [
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Lorsque le protocole TLS est utilisé en association avec une WebSocket,... (choisir 2 réponses)",
@@ -931,7 +991,8 @@
       ],
       "answer": [
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans JAX-RS, Quelle annotation permet de spécifier le type de données que fournit une réponse?",
@@ -944,7 +1005,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans la Java API for WebSockets >, ... (choisir 2 réponses)",
@@ -958,7 +1020,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans la Java API for WebSockets », les annotations permettant de gérer le cycle de vie de la WebSocket sont:",
@@ -971,7 +1034,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Parmi les suites cryptographiques supportées par le protocole TLS 1.3, quelles sont celles effectivement supportées par le serveur d'application WildFly 23.0.2.Final? (choisir 2 réponses)",
@@ -985,7 +1049,8 @@
       "answer": [
         0,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Quel est le nom du gestionnaire de sécurité du serveur d'application WildFly 23.0.2.Final?",
@@ -1015,7 +1080,8 @@
         0,
         2,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Quel est le nom du serveur web du serveur d'application WildFly 23.0.2.Final?",
@@ -1028,7 +1094,8 @@
       ],
       "answer": [
         1
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans JavaScript, pour sélectionner une balise HTML5 ayant un attribut << id >> avec la valeur << k», on peut utiliser : (choisir deux réponses)",
@@ -1042,7 +1109,8 @@
       "answer": [
         1,
         3
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans JavaScript, pour sélectionner les balises HTML5 ayant une classe CSS3 «k»>, on peut utiliser: (choisir deux réponses)",
@@ -1056,7 +1124,8 @@
       "answer": [
         1,
         4
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Dans JavaScript, pour sélectionner les balises ancres (i.e. anchors), on peut utiliser (choisir deux réponses)",
@@ -1070,7 +1139,8 @@
       "answer": [
         1,
         2
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "Soit l'extrait de code HTML 5 suivant:\n<fieldset name=\"monsterSelection\"> \n<legend>Choose your monster:</legend> \n<input type=\"radio\" id=\"kraken\" name=\"monster\" /> \n<label for=\"kraken\">Kraken</label><br/> \n<input type=\"radio\" id=\"sasquatch\" name=\"monster\"/>\n<label for \"sasquatch\">Sasquatch</label> <br/>\n<input type=\"radio\" id=\"mothman\" name=\"monster\"/>\n<label for=\"mothman\">Mothman</label> \n</fieldset>\n\nDans JavaScript, comment peut-on savoir quelle option a été choisie par l'utilisateur ?",
@@ -1083,7 +1153,8 @@
       ],
       "answer": [
         0
-      ]
+      ],
+      "explanation": "I don't know ask MBK or google"
     },
     {
       "question": "En considérant le code JavaScript suivant:\nlet tag = document.querySelector(\"aside > p\");\nQuel élément HTML 5 est sélectionné ?",
