@@ -1,34 +1,39 @@
 {
-    "courses": [
-      {
-        "id": "1",
-        "filename": "Cloud.json",
-        "name": "Cloud Hackathon from INDP2C"
-      },
-      {
-        "id": "2",
-        "filename": "Big_data.json",
-        "name": "Big Data"
-      },
-      {
-        "id": "3",
-        "filename": "Ch2-Common-Cyber-Security-Attacks.json",
-        "name": "Common Cyber Security Attacks"
-      },
-      {
-        "id": "4",
-        "filename": "Ch3_Firewalls_and_traffic_filtering.json",
-        "name": "Firewalls and Traffic Filtering"
-      },
-      {
-        "id": "5",
-        "filename": "Chapter_4-Next_Generation_Firewalls_and_Applications_Identification.json",
-        "name": "Next Generation Firewalls and Applications Identification"
-      },
-      {
-        "id": "6",
-        "filename": "Reseaux-5G.json",
-        "name": "Reseaux 5G"
-      }
-    ]
-  }
+  "courses": [
+    {
+      "id": "1",
+      "filename": "Cloud.json",
+      "name": "Cloud Hackathon from INDP2C"
+    },
+    {
+      "id": "2",
+      "filename": "Big_data.json",
+      "name": "Big Data"
+    },
+    {
+      "id": "3",
+      "filename": "Ch2-Common-Cyber-Security-Attacks.json",
+      "name": "Common Cyber Security Attacks"
+    },
+    {
+      "id": "4",
+      "filename": "Ch3_Firewalls_and_traffic_filtering.json",
+      "name": "Firewalls and Traffic Filtering"
+    },
+    {
+      "id": "5",
+      "filename": "Chapter_4-Next_Generation_Firewalls_and_Applications_Identification.json",
+      "name": "Next Generation Firewalls and Applications Identification"
+    },
+    {
+      "id": "6",
+      "filename": "Reseaux-5G.json",
+      "name": "Reseaux 5G"
+    },
+    {
+      "id": "7",
+      "filename": "MBK.json",
+      "name": "MBK"
+    }
+  ]
+}

@@ -1,29 +1,3 @@
-const defaultQuizData = {
-    "seance1": [
-        {
-            "question": "Quel était le montant approximatif du financement mondial en capital-risque des startups au troisième trimestre 2021 ?",
-            "options": [
-                "77 milliards USD",
-                "158 milliards USD",
-                "100 milliards USD",
-                "200 milliards USD"
-            ],
-            "answer": 1
-        },
-        {
-            "question": "Combien de nouvelles licornes ont émergé au troisième trimestre 2021 ?",
-            "options": [
-                "37",
-                "127",
-                "77",
-                "200"
-            ],
-            "answer": 1
-        }
-    ]
-};
-
-// Global variables
 let quizData = {};
 let currentSeance = '';
 let currentQuestions = [];
@@ -304,9 +278,16 @@ function loadQuestion() {
         optionElement.textContent = option;
         optionElement.dataset.index = index;
         
-        // Highlight selected option if user has previously answered
-        if (userAnswers[currentQuestionIndex] === index) {
-            optionElement.classList.add('selected');
+        // Highlight selected options if user has previously answered
+        if (userAnswers[currentQuestionIndex]) {
+            // Check if answer is array or single number
+            if (Array.isArray(userAnswers[currentQuestionIndex])) {
+                if (userAnswers[currentQuestionIndex].includes(index)) {
+                    optionElement.classList.add('selected');
+                }
+            } else if (userAnswers[currentQuestionIndex] === index) {
+                optionElement.classList.add('selected');
+            }
         }
         
         optionElement.addEventListener('click', selectOption);
@@ -315,34 +296,72 @@ function loadQuestion() {
     
     // Update navigation buttons
     prevBtn.disabled = currentQuestionIndex === 0;
-    nextBtn.disabled = userAnswers[currentQuestionIndex] === null;
+    
+    // Enable next button if user has answered (either as array or single number)
+    nextBtn.disabled = !userAnswers[currentQuestionIndex] || 
+                      (Array.isArray(userAnswers[currentQuestionIndex]) && 
+                       userAnswers[currentQuestionIndex].length === 0);
     
     // Show submit button on last question
     if (currentQuestionIndex === currentQuestions.length - 1) {
         nextBtn.classList.add('hide');
         submitBtn.classList.remove('hide');
-        submitBtn.disabled = userAnswers[currentQuestionIndex] === null;
+        submitBtn.disabled = !userAnswers[currentQuestionIndex] || 
+                            (Array.isArray(userAnswers[currentQuestionIndex]) && 
+                             userAnswers[currentQuestionIndex].length === 0);
     } else {
         nextBtn.classList.remove('hide');
         submitBtn.classList.add('hide');
     }
+    
+    // Add visual indicator if question requires multiple answers
+    const isMultiAnswer = Array.isArray(question.answer);
+    const multiSelectIndicator = document.getElementById('multi-select-indicator');
+    
+    if (isMultiAnswer) {
+        multiSelectIndicator.textContent = `(Sélectionnez ${question.answer.length} réponses)`;
+        multiSelectIndicator.classList.remove('hide');
+    } else {
+        multiSelectIndicator.classList.add('hide');
+    }
 }
 
 function selectOption(e) {
-    // Remove selected class from all options
-    const options = optionsContainer.querySelectorAll('.option');
-    options.forEach(option => option.classList.remove('selected'));
-    
-    // Add selected class to clicked option
-    e.target.classList.add('selected');
-    
-    // Save the answer
+    const currentQuestion = currentQuestions[currentQuestionIndex];
     const selectedIndex = parseInt(e.target.dataset.index);
-    userAnswers[currentQuestionIndex] = selectedIndex;
+    const isMultiAnswer = Array.isArray(currentQuestion.answer);
     
-    // Enable next/submit button
-    nextBtn.disabled = false;
-    submitBtn.disabled = false;
+    if (isMultiAnswer) {
+        // For multiple answer questions
+        if (!Array.isArray(userAnswers[currentQuestionIndex])) {
+            userAnswers[currentQuestionIndex] = [];
+        }
+        
+        if (e.target.classList.contains('selected')) {
+            // If already selected, unselect it
+            e.target.classList.remove('selected');
+            userAnswers[currentQuestionIndex] = userAnswers[currentQuestionIndex].filter(idx => idx !== selectedIndex);
+        } else {
+            // If not selected, select it
+            e.target.classList.add('selected');
+            userAnswers[currentQuestionIndex].push(selectedIndex);
+        }
+    } else {
+        // For single answer questions (original behavior)
+        const options = optionsContainer.querySelectorAll('.option');
+        options.forEach(option => option.classList.remove('selected'));
+        e.target.classList.add('selected');
+        userAnswers[currentQuestionIndex] = selectedIndex;
+    }
+    
+    // Enable next/submit button if something is selected
+    const hasAnswer = isMultiAnswer ? 
+                    (Array.isArray(userAnswers[currentQuestionIndex]) && 
+                     userAnswers[currentQuestionIndex].length > 0) : 
+                    userAnswers[currentQuestionIndex] !== null;
+    
+    nextBtn.disabled = !hasAnswer;
+    submitBtn.disabled = !hasAnswer;
 }
 
 function showPrevQuestion() {
@@ -366,14 +385,40 @@ function submitQuiz() {
     
     userAnswers.forEach((answer, index) => {
         const question = currentQuestions[index];
-        if (answer === question.answer) {
+        const isMultiAnswer = Array.isArray(question.answer);
+        
+        let isCorrect = false;
+        
+        if (isMultiAnswer) {
+            // For multiple answers, check if arrays match exactly
+            if (Array.isArray(answer) && 
+                answer.length === question.answer.length && 
+                question.answer.every(val => answer.includes(val))) {
+                isCorrect = true;
+            }
+        } else {
+            // Original single answer check
+            if (answer === question.answer) {
+                isCorrect = true;
+            }
+        }
+        
+        if (isCorrect) {
             score++;
         } else {
             // Store wrong answers for display
+            const userAnswerDisplay = isMultiAnswer && Array.isArray(answer) ? 
+                                     answer.map(idx => question.options[idx]).join(", ") : 
+                                     answer !== -1 ? question.options[answer] : "Aucune réponse";
+                                     
+            const correctAnswerDisplay = isMultiAnswer ? 
+                                       question.answer.map(idx => question.options[idx]).join(",    ") : 
+                                       question.options[question.answer];
+            
             wrongAnswers.push({
                 question: question.question,
-                userAnswer: question.options[answer],
-                correctAnswer: question.options[question.answer],
+                userAnswer: userAnswerDisplay,
+                correctAnswer: correctAnswerDisplay,
                 explanation: question.explanation || "Aucune explication disponible."
             });
         }
@@ -403,6 +448,7 @@ function submitQuiz() {
                     <p><strong>Explication:</strong> ${item.explanation}</p>
                 </div>
             `;
+            console.log(item.correctAnswer);
             
             wrongAnswersContainer.appendChild(container);
         });
