@@ -1,0 +1,1380 @@
+{
+  "page 1 (p.1)": [
+    {
+      "question": "Une API est... (choisir 2 réponses)",
+      "options": [
+        "l'acronyme d'Advanced Programming Instructions",
+        "l'acronyme d'Application Programming Interface",
+        "une passerelle entre composants matérielles pour assurer l'interopérabilité entre objets connectés",
+        "une passerelle entre services télécom pour assurer l'orchestration de ces derniers.",
+        "une passerelle de communication entre logicielles et/ou composants logiciels permettant un accès uniforme et indépendant des implémentations respectives de ces derniers."
+      ],
+      "answer": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": "HTTP est (choisir 3 réponses)",
+      "options": [
+        "le protocole régissant l'envoi des courriels",
+        "le protocole permettant le transfert des ressources web entre clients et serveurs",
+        "l'acronyme d'Hypermedia Transfer Protocol",
+        "l'acronyme d'Hypertext Transfer Protocol",
+        "un protocole de communication half-duplex"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "question": "Le protocole HTTP/2.0... (choisir 2 réponses)",
+      "options": [
+        "est protocole échangeant des données sous format binaire.",
+        "est protocole échangeant des données sous format textuelle.",
+        "qui utilise le multiplexage de plusieurs requêtes HTTP sur une même connexion TCP",
+        "qui traite chaque requête http via une connexion TCP indépendante.",
+        "utilise le protocole UDP pour le transport de données."
+      ],
+      "answer": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": "HTML 5 est (choisir 2 réponses)",
+      "options": [
+        "un langage de programmation événementielle.",
+        "un langage de balisage conçu pour représenter la structure des pages web.",
+        "un protocole de communication full-duplex.",
+        "est l'acronyme d'«HyperText Markup Language 5»",
+        "est l'acronyme d'«HyperText Messaging Layer 5»"
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Une URI (choisir 3 réponses)",
+      "options": [
+        "identifie les localisations physiques dans les réseaux des ressources web",
+        "identifie les noms logiques des ressources web",
+        "identifie les métadonnées des ressources web",
+        "est l'acronyme de « Unique Resource Identity »",
+        "est l'acronyme de « Uniform Resource Identifier »"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "question": "REST est (choisir 2 réponses)",
+      "options": [
+        "une API mais pas un service.",
+        "un service mais pas un service web.",
+        "l'acronyme de « Representational State Transfer »",
+        "l'acronyme de « Realtime Entity State Transfer »",
+        "un service web, un service et une API."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "JavaScript est ... (choisir 3 réponses)",
+      "options": [
+        "un langage de scripts pour la programmation événementielle.",
+        "un utilitaire d'orchestration pour le langage Java.",
+        "un langage orienté objet à prototype.",
+        "langage de balisage conçu pour les données.",
+        "utilisé entre-autres pour programmer l'aspect dynamique des interfaces web définies par HTML5 et CSS 3"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "question": "Un service est ... (choisir 2 réponses)",
+      "options": [
+        "une API reliant des composants logiciels distribués via un réseau.",
+        "une API reliant des composants logiciels distribués via un réseau en utilisant les technologies du World Wide Web.",
+        "définit/limité par un protocole",
+        "définit/limité par un patron architectural",
+        "définit/limité par un contrat de service"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "question": "est un type de technologies pour les services web. (choisir 3 réponses)",
+      "options": [
+        "CORBA",
+        "SOAP",
+        "REST...",
+        "MQTT",
+        "WebSocket"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "question": "JSON est (choisir 2 réponses)",
+      "options": [
+        "l'acronyme de « Java Simple Object Notation »",
+        "l'acronyme de « JavaScript Object Notation »",
+        "un type de jetons pour gérer les droits d'accès d",
+        "un format de données",
+        "un langage de description de données"
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "La balise permettant d'activer le Responsive Web Design est:",
+      "options": [
+        "La balise «link» avec un attribut «rel» ayant pour valeur  incluse dans la balise <head>",
+        "La balise «link» avec un attribut «rel» ayant pour valeur «rwd» incluse dans la balise <body>",
+        "La balise «meta» avec un attribut «name» ayant pour valeur «viewport» incluse dans la balise <head>",
+        "La balise «meta» avec un attribut «name» ayant pour valeur «viewport» incluse dans la balise <body>",
+        "La balise «meta» avec un attribut «rwd» ayant pour valeur «viewport» incluse dans la balise <head>"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Le format de données supporté par le protocole SOAP est",
+      "options": [
+        "HTML.",
+        "JSON.",
+        "XML.",
+        "Texte Brut",
+        "Protocol Buffers"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Une Single Page Application ... (choisir 2 réponses)",
+      "options": [
+        "charge sa page principale et les ressources web associées d'une manière asynchrone",
+        "charge sa page principale et les ressources web associées d'une manière synchrone",
+        "... charge les pages secondaires et les ressources web associés d'une manière synchrone",
+        "... charge les pages secondaires et les ressources web associées en suivant de simples liens hypertextes depuis la page principale",
+        "charge les pages secondaires et les ressources web associées d'une manière dynamique et asynchrone."
+      ],
+      "answer": [
+        0,
+        4
+      ]
+    }
+  ],
+  "page 2 (p.2)": [
+    {
+      "question": "La négociation de contenu selon le langage ...",
+      "options": [
+        "utilise l'entête http << Accept >>>",
+        "utilise l'entête http « Accept-Language >>>",
+        "utilise l'entête http Language >>>",
+        "utilise l'entête http « Accept-Charset >>>",
+        "utilise l'entête http « Accept-Ranges >>>"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Dans le patron de conception MVP... (choisir 2 réponses)",
+      "options": [
+        "la Vue gère la communication entre le Présentateur et le Modèle",
+        "le Présentateur gère la communication entre le Modèle et la Vue",
+        "le Modèle peut déclencher un événement de type << Data Update » et une Vue peut déclencher un événement de type << UI/UX Action >>>",
+        "le Modèle peut déclencher un événement de type << State Change >> et une Vue peut déclencher un événement de type << User Intent >>>",
+        "le Modèle peut déclencher un événement de type << Modification Trigger » et une Vue peut déclencher un événement de type << Action Trigger >>>"
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Pour un service REST: (choisir 3 réponses)",
+      "options": [
+        "L'URI identifie une ressource",
+        "La méthode « POST >>> est interdite sur une URI représentant une entité unique.",
+        "Le protocole utilisé peut-être quelconque.",
+        "Les méthodes « PUT » et « DELETE » sont fortement déconseillées pour une URI identifiant une collection.",
+        "La communication se fait avec états (Stateful)"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Les services REST sont : (choisir 2 réponses)",
+      "options": [
+        "Un ensemble de protocoles à respecter.",
+        "Un style architectural exploitant le concept de ressources.",
+        "Basés sur le protocole HTTP",
+        "Un ensemble d'API standards pour la connexion entre un serveur middleware et un back-end.",
+        "Dépendants du format de données XML qui doit être utilisé exclusivement lors des communications entre clients et serveurs."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Les WebSockets ... (choisir 3 réponses)",
+      "options": [
+        "permettent d'établir un canal de communication persistant en full-duplex.",
+        "utilisent le protocole UDP.",
+        "sont standardisées par un protocole",
+        "sont initialisés par un handshake permettant de mettre à niveau le protocole HTTP",
+        "fonctionnent selon le mécanisme de communication << requête/réponse >>>"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "question": "WildFly...: (choisir 2 réponses)",
+      "options": [
+        "est un serveur d'application.",
+        "est un serveur web",
+        "supporte la plateforme .NET",
+        "supporte la plateforme Jakarta EE",
+        "est un serveur LDAP."
+      ],
+      "answer": [
+        0,
+        3
+      ]
+    },
+    {
+      "question": "Les services web (choisir 2 réponses)",
+      "options": [
+        "s'échangent des paquets binaires qui sont décrit par des protocoles",
+        "s'échangent des données brutes qui sont ensuite traitées par des outils ETL.",
+        "s'échangent des messages qui sont décrits par des schémas.",
+        "sont orchestrés/utilisés par des API ad hocs.",
+        "sont orchestrés/utilisés par des applications."
+      ],
+      "answer": [
+        0,
+        4
+      ]
+    },
+    {
+      "question": "La négociation de contenu selon le format...",
+      "options": [
+        "utilise l'entête http << Accept >>>",
+        "utilise l'entête http << Accept-Language >>",
+        "utilise l'entête http << Language >>>",
+        "utilise l'entête http << Accept-Charset >>>",
+        "utilise l'entête http << Accept-Ranges >>>"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "L'architecture WOA (choisir 3 réponses)",
+      "options": [
+        "utilise un « load-balancer » pour répartir les charges entre plusieurs serveurs de ressources.",
+        "utilise les services SOAP et les services REST",
+        "utilise exclusivement les services REST",
+        "repose sur la spécificité de la communication sans états des services REST",
+        "permet aux clients d'accéder directement aux bases de données."
+      ],
+      "answer": [
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "question": "AJAX ... (choisir 2 réponses)",
+      "options": [
+        "est l'acronyme d' «Advanced Java API for XML».",
+        "est l'acronyme d' «Asynchronous JavaScript And XML>>>",
+        "supporte uniquement le format de données XML",
+        "permet la communication asynchrone entre clients et serveurs.",
+        "permet la communication asynchrone entre serveurs et bases de données."
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "EJB (choisir 2 réponses)",
+      "options": [
+        "est l'acronyme de << Enterprise JavaBeans >>>",
+        "est l'acronyme de « Embedded JavaScript Beans ».",
+        "est une API pour la sécurité et la stabilité des échanges entre clients et serveurs",
+        "est une API définissant un environnent d'exécution pour composants distribués.",
+        "est une API permettant la communication asynchrone entre serveurs et bases de données"
+      ],
+      "answer": [
+        0,
+        3
+      ]
+    },
+    {
+      "question": "Les appels asynchrones... (choisir 3 réponses)",
+      "options": [
+        "sont bloquants pour l'émetteur des appels.",
+        "ont besoin d'enregistrer une fonction/méthode dite de callback » qui sera appelé lors de la réception de la réponse pour la traiter.",
+        "sont non bloquants pour l'émetteur des appels.",
+        "assurent que les réponses arrivent dans le même ordre que celui des invocations des appels.",
+        "ont besoin d'un aiguilleur (dispatcher' pour gérer les réponses et les méthodes « callbacks » qui y sont associés."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "question": "JAX-RS",
+      "options": [
+        "est l'API JavaScript pour les services SOAP",
+        "est l'API Java pour les services SOAP",
+        "est l'API JavaScript pour les services REST",
+        "est l'API Java pour les services REST",
+        "est l'implémentation de RESTEasy"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "... sont des composants EJB (choisir 3 réponses)",
+      "options": [
+        "Mutable EJB",
+        "Stateless EJB",
+        "Stateful EJB",
+        "Immutable EJB",
+        "Singleton EJB"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "question": "Lequel de ces codes HTTP correspond au statut de succès << OK»: ",
+      "options": [
+        "101",
+        "200",
+        "201",
+        "401",
+        "403"
+      ],
+      "answer": [
+        1
+      ]
+    }
+  ],
+  "page 3 (p.3)": [
+    {
+      "question": "29.Lequel de ces codes HTTP correspond au statut d'accès interdit << Forbidden >> :",
+      "options": [
+        "101",
+        "200",
+        "201",
+        "401",
+        "403"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "30.Lequel de ces codes HTTP correspond au statut d'accès non autorisé << Unauthorized >> :",
+      "options": [
+        "101",
+        "200",
+        "201",
+        "401",
+        "403"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "31.Pour un service REST, quel code http doit-on retourner en réponse à une requête POST sur une URI de collection?",
+      "options": [
+        "101",
+        "200",
+        "201",
+        "401",
+        "403"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "32. Quel code HTTP est retourné à la suite d'un handshake << WebSocket >>> :",
+      "options": [
+        "100",
+        "101",
+        "102",
+        "500",
+        "503"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "33.Quel est la meilleure requête pour changer un mot de passe via une REST API :",
+      "options": [
+        "PUT/users/{userid}/{oldpwd}/{newpwd}",
+        "PATCH/users/{userid}/{oldpwd}/{newpwd}",
+        "PUT/users/{userid}/{oldpwdhash}/{newpwdhash}",
+        "PATCH/users/{userid}/{oldpwdhash}/{newpwdhash}",
+        "POST/users/{userid}/{oldpwdhash}/{newpwdhash}"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "34. Quel annotation JAX-RS permet de lier et correspondre la valeur d'un paramètre d'une méthode avec la valeur d'un champ de formulaire ?",
+      "options": [
+        "@CookieParam",
+        "@PathParam",
+        "@DefaultValue",
+        "@FormParam",
+        "@Context"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "35.Laquelle de ces méthodes HTTP doit être utilisé pour modifier partiellement une ressource ?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "PATCH"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "36.Laquelle de ces annotations JAX-RS permet de définir un service REST",
+      "options": [
+        "@PathParam",
+        "@Context",
+        "@Urilnfo",
+        "@Path",
+        "@ApplicationPath"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "37. Quel nom porte l'API JavaScript permettant de manipuler le contenu d'un document HTML 5",
+      "options": [
+        "PKCS11",
+        "i18n",
+        "browsingData",
+        "DOM",
+        "Fetch"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "38.Quelle API JavaScript permet d'effectuer des communications asynchrones avec le serveur ?",
+      "options": [
+        "PKCS11",
+        "i18n",
+        "browsingData",
+        "DOM",
+        "Fetch"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "39.Pour un service REST, la méthode HTTP OPTIONS sert à :",
+      "options": [
+        "Récupérer les méthodes http applicables à la ressource.",
+        "Afficher les sous-ressources disponibles.",
+        "Ajouter une métadonnée à une ressource.",
+        "Déterminer les prérequis (notamment le CORS) pour accéder à la ressource.",
+        "Savoir si une ressource est disponible."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "40. Pour un service REST, la méthode HTTP HEAD sert à :",
+      "options": [
+        "Récupérer les méthodes http applicables à la ressource.",
+        "Récupérer un aperçu HTML 5 (snapshot) d'une ressource.",
+        "Consulter les métadonnées d'une ressource.",
+        "Consulter le contenu d'une ressource.",
+        "Savoir si une ressource est disponible."
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "41. Pour les services REST, le code à la demande... (choisir 3 réponses)",
+      "options": [
+        "permet d'exécuter côté client un code contextuelle téléchargé depuis le serveur à la demande du client.",
+        "permet d'exécuter sur le serveur du code envoyé par le client.",
+        "est obligatoire.",
+        "est optionnelle.",
+        "allège la charge des serveurs ressources."
+      ],
+      "answer": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "question": "42. Pour les services REST, le mash-up ... (choisir 2 réponses)",
+      "options": [
+        "recoupe les informations issues de plusieurs sources hétérogènes",
+        "permet l'agrégation de plusieurs services REST par un service REST global.",
+        "est l'agrégation côté client des différents services REST",
+        "nécessite un niveau de granularité fort: micro-services.",
+        "permet l'accès direct du client aux back-ends (p.ex. bases de données, passerelles loT)"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "question": "43.Pour les services REST, le HATEOAS ...(choisir 2 réponses)",
+      "options": [
+        "est l'acronyme de «Hypertext API To Enhance the Opacity Application State».",
+        "exige que les ressources soient structurées sous la forme d'une arborescence dont les nœuds sont reliés par des liens hypertextes.",
+        "exige que les communications soient sans états.",
+        "est l'acronyme de «Hypermedia As The Engine Of Application State»",
+        "exige l'encapsulation des données."
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    }
+  ],
+  "page 4 (p.4)": [
+    {
+      "question": "Laquelle de ces annotations JAX-RS doit annoter la classe d'activation des services REST afin de définir la racine des ressources:",
+      "options": [
+        "@PathParam",
+        "@Context",
+        "@Urilnfo",
+        "@Path",
+        "@ApplicationPath"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "Dans le protocole OAuth 2.0, PKCE ... (choisir 2 réponses)",
+      "options": [
+        "est l'acronyme de << Private Key Cipher End >>>",
+        "est l'acronyme de «Proof Key for Code Exchange >>>",
+        "définit une méthode d'authentification complète.",
+        "une extension de l'attribution << authorization code >> protégeant contre les attaques CSRF et injection de code d'autorisation",
+        "une extension de l'attribution implicite protégeant contre les attaques CSRF et injection de jeton"
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "L'authentification par mot de passe... (choisir 3 réponses)",
+      "options": [
+        "nécessite uniquement un hachage coté client",
+        "nécessite un double hachage avec sel statique coté client et un sel aléatoire généré au moment de l'enregistrement coté serveur",
+        "est vulnérable aux attaques par force brute avec tables arc-en-ciel",
+        "nécessite un chiffrement du mot de passe avec un algorithme de chiffrement asymétrique avant le stockage des mots de passes dans les bases de données d'authentification.",
+        "n'est vraiment effective que si des mots de passe forts et des authentifications à deux facteurs sont utilisés."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "question": "Lors du hachage d'un mot de passe... (choisir 2 réponses)",
+      "options": [
+        "une fonction de hachage quelconque peut être utilisé.",
+        "une fonction de hachage de type SHA 256 peut être utilisée côté serveur.",
+        "une fonction de dérivation de clé de type Argon2 doit être utilisée côté serveur.",
+        "une fonction de hachage de type SHA 256 peut être utilisée côté client.",
+        "une fonction de dérivation de clé de type Argon2 doit être utilisée côté client."
+      ],
+      "answer": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": "TLS est ... (choisir 2 réponses)",
+      "options": [
+        "l'acronyme de Transfer Layer Secure",
+        "un protocole assurant la confidentialité",
+        "un protocole de la couche réseaux",
+        "un protocole assurant la non-répudiation",
+        "l'acronyme de Transport Layer Security"
+      ],
+      "answer": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": ".... est un protocole réputé sécurisé en 2023",
+      "options": [
+        "TLS 1.0",
+        "TLS 1.1",
+        "TLS 1.2",
+        "TLS 1.3",
+        "SSL 3"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": ".... est considérée comme suite cryptographique sécurisée en 2023 (choisir 3 réponses)",
+      "options": [
+        "TLS_AES_256_CBC_SHA384",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_CHACHA20_POLY1305_SHA2564",
+        "TLS_AES_256_CBC_SHA384"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "question": "En Jakarta EE pour persister une énumération, ...",
+      "options": [
+        "il faut définir une nouvelle entité JPA",
+        "il faut définir un convertisseur JAX-RS",
+        "il faut définir un convertisseur JPA",
+        "il faut définir un adaptateur Jsonb",
+        "il faut définir un adaptateur JCA"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "En Jakarta EE pour sérialiser une énumération pour un client,",
+      "options": [
+        "il faut définir une nouvelle entité JPA",
+        "il faut définir un convertisseur JAX-RS",
+        "il faut définir un convertisseur JPA",
+        "il faut définir un adaptateur Jsonb",
+        "il faut définir un adaptateur JCA"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Lorsqu'on configure le protocole TLS, la politique HSTS (choisir 2 réponses)",
+      "options": [
+        "est l'acronyme de HTTP Strict Transport Security'",
+        "permet de filtrer les trafics frauduleux",
+        "interdit l'accès en HTTPS",
+        "déclare l'utilisation exclusive d'un accès sécurisé'",
+        "est l'acronyme de HTTP Strict Transfer Strategy"
+      ],
+      "answer": [
+        0,
+        3
+      ]
+    },
+    {
+      "question": "Lorsqu'on configure le protocole TLS, pour activer la politique HSTS, il faut configurer le serveur pour :",
+      "options": [
+        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transport-Security>>> avec la valeur <<max-age=31536000; includeSubDomains»",
+        "Ajouter à chaque réponse HTTP, l'entête <<<Strict-Transfer-Strategy>>> avec la valeur <<max-age=31536000; includeSubDomains»",
+        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transfer-Strategy>>> avec la valeur <<<enabled>>>",
+        "Ajouter à chaque réponse HTTP, l'entête <<Strict-Transport-Security>>> avec la valeur <<enabled>>>",
+        "Ignorer les connexions sur le port 80"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "JWT est ... (choisir 2 réponses)",
+      "options": [
+        "l'acronyme de Java Web Token",
+        "l'acronyme de JavaScript Web Token",
+        "... l'acronyme de JSON Web Token",
+        "la concaténation de deux chaines de caractères encodés en base hexadécimale et séparés par des points.",
+        "la concaténation de trois chaînes de caractères encodés en base 64 et séparées par des points."
+      ],
+      "answer": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": "Un jeton JWT permet de: (choisir 3 réponses)",
+      "options": [
+        "Vérifier qu'il a été généré par le client à travers un mécanisme de signature",
+        "Représenter un ensembles réclamations (claims) à propos du client.",
+        "Vérifier qu'il a été généré par le serveur à travers un mécanisme de signature",
+        "Représenter un ensembles réclamations (claims) à propos du serveur.",
+        "Vérifier l'intégrité des réclamations à travers un mécanisme de signature"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "page 5 (p.5)": [
+    {
+      "question": "Dans la suite cryptographique TLS_AES_256_GCM_SHA384, la chaine de caractère AES_256_GCM désigne",
+      "options": [
+        "l'algorithme d'échange de(s) clé(s) secrète(s) partagé(s)",
+        "l'algorithme d'authentification du serveur permettant de chiffrer asymétriquement l'échange des clés",
+        "l'algorithme de chiffrement symétrique par bloc utilisé pour chiffrer le flux de données par clé secrète",
+        "l'algorithme de code d'authentification de message (MAC) utilisé pour créer un condensat (ou empreinte ou hash) afin de vérifier l'intégrité de chaque bloc composant le flux de données.",
+        "un identificateur de la suite cryptographique."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Dans la suite cryptographique TLS_AES_256_GCM_SHA384, la chaine de caractères SHA398 désigne",
+      "options": [
+        "l'algorithme d'échange de(s) clé(s) secrète(s)",
+        "l'algorithme d'authentification du serveur permettant de chiffrer asymétriquement l'échange des clés",
+        "l'algorithme de chiffrement symétrique par bloc utilisé pour chiffrer le flux de données par clé secrète",
+        "l'algorithme de code d'authentification de message (MAC) utilisé pour créer un condensat (ou) empreinte ou hash) afin de vérifier l'intégrité de chaque bloc composant le flux de données.",
+        "un identificateur de la suite cryptographique."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "La signature d'un jeton JWT doit être généré par :",
+      "options": [
+        "Une fonction de hachage quelconque",
+        "Une fonction de hachage cryptographique",
+        "Un algorithme de chiffrement asymétrique et une fonction de hachage cryptographique en signant avec la clé privée et en vérifiant la signature avec la clé publique.",
+        "Un algorithme de chiffrement asymétrique et une fonction de hachage cryptographique en signant avec la clé publique et en vérifiant la signature avec la clé privée.",
+        "Un algorithme de chiffrement symétrique, une fonction de hachage cryptographique et une fonction de recouvrement des hachées."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Un jeton JWT est ... (choisir 2 réponses)",
+      "options": [
+        "généré à l'inscription d'un utilisateur.",
+        "généré à l'authentification d'un utilisateur.",
+        "généré à la demande implicite du navigateur.",
+        "sauvegardé dans la session au serveur.",
+        "sauvegardé chez l'applicatif client."
+      ],
+      "answer": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": "Un jeton JWT doit être envoyé",
+      "options": [
+        "avec chaque requête du client après l'authentification",
+        "avec chaque requête du client voulant accéder à une ressource sécurisée",
+        "avec chaque réponse du serveur avant l'authentification",
+        "avec chaque réponse du serveur après l'authentification",
+        "avec chaque réponse du serveur à une requête voulant accéder à une ressource sécurisée"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Un jeton JWT permet d'assurer : (choisir 2 réponses)",
+      "options": [
+        "L'authentification",
+        "L'autorisation et le contrôle d'accès",
+        "La non-répudiation",
+        "L'intégrité des réclamations du jeton",
+        "L'intégrité des ressources échangées"
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Un jeton JWT s'utilise",
+      "options": [
+        "pour se protéger contre des attaques XSS",
+        "pour assurer la non-répudiation.",
+        "au cours de l'implémentation d'un mécanisme d'authentification pour assurer sa sûreté.",
+        "au cours de l'implémentation d'un mécanisme d'authentification pour assurer ultérieurement les autorisations et le contrôle d'accès.",
+        "pour assurer la confidentialité des échanges."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Un jeton JWT (choisir 2 réponses)",
+      "options": [
+        "est vérifié automatiquement par le serveur lorsqu'il est présent dans une requête du client",
+        "est vérifié automatiquement par le client lorsqu'il est présent dans une réponse du serveur",
+        "fait partie des mécanismes de protection contre les attaques de type CSRF lorsqu'il est stocké dans la session storage",
+        "protège contre les attaques de type XSS lorsqu'il est stocké dans la session storage",
+        "exige que le client soit une application mobile."
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "question": "Pour sécuriser un service REST, il faut et il suffit",
+      "options": [
+        "d'utiliser le protocole TLS",
+        "d'utiliser les jetons JWT",
+        "d'utiliser le protocole TLS et les jetons JWT",
+        "d'utiliser les services WS-Security",
+        "d'utiliser le protocole TLS, les jetons JWT et d'autres mécanismes dépendant de l'architecture WOA (Firewalls, IDS et Serveur d'Authentification et d'Autorisations mutualisé entre les différents serveurs gérant les ressources)"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "Lorsque le protocole TLS est utilisé en association avec une WebSocket, ... (choisir 2 réponses)",
+      "options": [
+        "I'URI de la WebSocket commence par «https://»",
+        "I'URI de la WebSocket commence par «ws://»",
+        "I'URI de la WebSocket commence par «wss://»",
+        "le handshake TLS se fait avant le handshake WebSocket",
+        "le handshake TLS se fait après le handshake WebSocket"
+      ],
+      "answer": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": "Dans JAX-RS, Quelle annotation permet de spécifier le type de données qu'accepte une requête ?",
+      "options": [
+        "@Type",
+        "@Produces",
+        "@Consumes",
+        "@RequestType",
+        "@ResponseType"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Dans JAX-RS, Quelle annotation permet de spécifier le type de données que fournit une réponse ?",
+      "options": [
+        "@Type",
+        "@Produces",
+        "@Consumes",
+        "@RequestType",
+        "@ResponseType"
+      ],
+      "answer": [
+        1
+      ]
+    }
+  ],
+  "page 6 (p.6)": [
+    {
+      "question": "Dans la « Java API for WebSockets », (choisir 2 réponses)",
+      "options": [
+        "...l'annotation <<< @WebsocketServer » sur une classe POJO permet de définir la partie serveur d'une WebSocket",
+        "...l'annotation <<< @ServerEndpoint >>> sur une classe POJO permet de définir la partie serveur d'une WebSocket",
+        "...l'annotation « @OnReceive » sur une méthode d'une classe définissant la partie serveur d'une WebSocket permet de définir ce que fera la WebSocket lors de réception d'un message depuis la partie cliente.",
+        "l'annotation « @OnMessage » sur une méthode d'une classe définissant la partie serveur d'une WebSocket permet de définir ce que fera la WebSocket lors de réception d'un message depuis la partie cliente.",
+        "l'annotation « @OnArrival » sur une méthode d'une classe définissant la partie serveur d'une WebSocket permet de définir ce que fera la WebSocket lors de réception d'un message depuis la partie cliente."
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Dans la « Java API for WebSockets », les annotations permettant de gérer le cycle de vie de la WebSocket sont :",
+      "options": [
+        "@OnStart, @OnEnd, @OnLoss",
+        "@OnOpen, @OnClose, @OnError",
+        "@Started, @Ended, @Loss",
+        "@Open, @Close, @Error",
+        "@Opened, @Closed, @Exception"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Quel est le nom du gestionnaire de sécurité du serveur d'application WildFly 27.0.1.Final?",
+      "options": [
+        "Zacefron",
+        "Thyratron",
+        "Synchrotron",
+        "Elytron",
+        "Positron"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Quel est le nom du serveur web du serveur d'application WildFly 27.0.1.Final?",
+      "options": [
+        "Glasgow",
+        "Undertow",
+        "Glashow",
+        "Rainbow",
+        "Grybów"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Dans l'API EJB, quelle annotation sert à définir un composant EJB accessible en local uniquement :",
+      "options": [
+        "@Local",
+        "@LocalBean",
+        "@LocalEJB",
+        "@LocalInterface",
+        "@LocalEntity"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Dans l'API JPA, quelle annotation doit orner une classe mère supportant un mapping objet-relationnel sans être elle-même une entité ?",
+      "options": [
+        "@MappingSuperclass",
+        "@MappedClass",
+        "@MappingClass",
+        "@MappedSuperclass",
+        "@SuperEntity"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Dans l'API JPA, une classe représentant une entité doit redéfinir quelles méthodes de la classe Object? (choisir 3 réponses)",
+      "options": [
+        "boolean equals(Object o)",
+        "int hashCode()",
+        "Object clone()",
+        "String toString()",
+        "Class<?> getClass()"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "DAO (choisir deux réponses)",
+      "options": [
+        "est l'acronyme de « Driver Assembly Object »",
+        "est l'acronyme de « Data Access Object »",
+        "est un patron de conception permettant d'établir un mapping objet-relationnel",
+        "est un patron de conception permettant les opérations CRUD des instances des entités JPA",
+        "est un patron de conception pour la communication avec un backend de type loT"
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Lequel de ces types d'EJB est compatible avec l'implémentation d'un DAO pour des services REST (choisir deux réponses)",
+      "options": [
+        "Stateful EJB",
+        "Message-Driven Bean",
+        "Singleton EJB",
+        "Stateless EJB",
+        "Immutable EJB"
+      ],
+      "answer": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": "Dans l'API JPA, pour définir le mapping d'une colonne à valeurs énumérées, il faut et il suffit : (choisir deux réponses)",
+      "options": [
+        "de définir un attribut de type énuméré",
+        "de définir un attribut de type Integer ou String",
+        "de définir une classe implémentant l'interface << AttributeConverter >> et annoter par l'annotation <<< Converter ».",
+        "de définir une classe implémentant l'interface << Converter >>> et annoter par l'annotation <<< AttributeConverter >>.",
+        "de définir une classe implémentant l'interface <<< AttributeConverter >> et annoter par l'annotation << ApplyConverter »."
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "question": "Dans la partie client, quel patron de conception a été utilisé pour implémenter le patron de conception << Observable >>>",
+      "options": [
+        "Delegate",
+        "Decorator",
+        "Publish/Subscribe",
+        "Singleton",
+        "Producers/Consumers"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Dans la partie client, quels patrons de conception la classe « Broker >> a-t-elle implémentés (choisir deux réponses)",
+      "options": [
+        "Delegate",
+        "Decorator",
+        "Publish/Subscribe",
+        "Singleton",
+        "Producers/Consumers"
+      ],
+      "answer": [
+        2,
+        4
+      ]
+    }
+  ],
+  "page 7 (p.7)": [
+    {
+      "question": "Dans la partie client, la classe « ComputedObservable » permet de ...",
+      "options": [
+        "modéliser une unité de calcul atomique",
+        "modéliser un observable dont la valeur est calculée automatiquement à partir de données prédéfinies",
+        "modéliser un observable dont la valeur est calculée automatiquement à partir de données aléatoires",
+        "modéliser un observable dont la valeur est calculée automatiquement à partir de valeurs d'autres observables",
+        "modéliser un observable dont la valeur est calculée automatiquement à partir de données empiriques"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Dans la partie client, la classe « ComputedObservable » ... (choisir 2 réponses)",
+      "options": [
+        "hérite de la classe « Broker »",
+        "hérite de la classe « Observable »",
+        "modélise des instances qui s'enregistrent comme observateurs de leurs dépendances",
+        "modélise des instances qui sont observables par leurs dépendances",
+        "modélise des instances qui sont observables par d'autres observateurs et s'enregistrent comme observateurs de leurs dépendances"
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "CDI est ... (choisir deux réponses)",
+      "options": [
+        "l'acronyme de « Class and Dependencies Injection »",
+        "l'acronyme de « Contexts and Dependencies Injection »",
+        "permet de construire des objets en maximisant la configurabilité, la testabilité, la réutilisabilité et la maintenabilité.",
+        "permet de gérer la collection des miettes.",
+        "permet de générer des classes dynamiquement."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Le fichier XML permettant d'activer le CDI doit porter le nom de ...",
+      "options": [
+        "cdi.xml",
+        "cdi-config.xml",
+        "cdi-beans.xml",
+        "beans.xml",
+        "beans-config.xml"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Dans une archive de type « war », le fichier permettant d'activer le CDI doit être placé sous le répertoire",
+      "options": [
+        "META-INF",
+        "WEB-INF",
+        "CDI-INF",
+        "BEANS-INF",
+        "EJB-INF"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "... est le port du protocole « WebSocket Secure » (wss://) en environnement de production.",
+      "options": [
+        "8080...",
+        "8443...",
+        "80...",
+        "43...",
+        "443..."
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "Dans un jeton « JWT », quel est la clé du « claim » déclarant l'identité du domaine le générant ?",
+      "options": [
+        "iss",
+        "aud",
+        "jti",
+        "exp",
+        "sub"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Dans un jeton « JWT », quel est la clé du « claim » déclarant l'identité d'utilisateur authentifié ?",
+      "options": [
+        "iss",
+        "aud",
+        "jti",
+        "exp",
+        "sub"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "question": "Dans un jeton « JWT », quel est la clé du « claim » déclarant l'identifiant unique du jeton ?",
+      "options": [
+        "iss",
+        "aud",
+        "jti",
+        "exp",
+        "sub"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Dans un jeton « JWT », quel est la valeur de clé d'entête « alg » lorsque l'algorithme de signature utilise la courbe twistée d'Edwards 25519 ?",
+      "options": [
+        "Ed25519",
+        "EdDSA",
+        "ECDSA",
+        "Curve25519",
+        "TwistedEdwardCurve"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Dans le fichier << jboss-web.xml, la balise << virtual- host » représente...",
+      "options": [
+        "... la machine physique sur laquelle sera exécuté l'archive « war »",
+        "La machine virtuelle sur laquelle sera exécuté l'archive « war »",
+        "une association entre un nom du domaine du serveur avec le serveur virtuel sur lequel une instance du serveur d'application est exécuté",
+        "le serveur web virtuel associé éventuellement à un sous-domaine depuis lequel les exécutables de l'archive « war » seront servis.",
+        "le nom d'un sous-domaine."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Dans le fichier << persistence.xml », comment est identifié une source de données de type JTA ?",
+      "options": [
+        "Par un URL de connection",
+        "Par son adresse IP et son port",
+        "Par son nom JNDI",
+        "Par son nom CDI",
+        "Par son nom LDAP"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "... implémente l'API JPA dans WildFly.",
+      "options": [
+        "Hibernate...",
+        "Toplink...",
+        "EclipseLink...",
+        "Persist Link...",
+        "Serializable Link..."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Dans l'API JPA, quelle annotation permet d'indiquer qu'un attribut représente la clé primaire ?",
+      "options": [
+        "@Key",
+        "@PrimaryKey",
+        "@Keyld",
+        "@Drimondd"
+      ],
+      "answer": [
+        3
+      ]
+    }
+  ],
+  "page 8 (p.8)": [
+    {
+      "question": "Dans l'API JPA, quelle annotation permet d'activer la gestion de la clé primaire par << auto_increment >>>",
+      "options": [
+        "@GeneratedValue(strategy = GenerationType.SEQUENCE)",
+        "@GeneratedValue(strategy = GenerationType.IDENTITY)",
+        "@GeneratedValue(strategy = GenerationType.AUTO)",
+        "@GeneratedKey(strategy = GenerationType.SEQUENCE)",
+        "@GeneratedKey(strategy = GenerationType.IDENTITY)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Dans la jboss-cli, pour configurer le protocole TLS, il faut définir dans l'ordre",
+      "options": [
+        "un << key store », un << key manager » et un « tls context »",
+        "un « key manager », un « key store » et un << tls context",
+        "un « key store », un « tls context >> et un << key manager >>>",
+        "un « key manager », un « tls context » et un << key store >>",
+        "un << tls context », un << key manager » et un << key store >>"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Dans la jboss-cli, pour configurer une API associé à une application Jakarta EE, il faut et il suffit de... (choisir 3 réponses)",
+      "options": [
+        "... configurer un hôte (host) avec un « pseudo » et un « default-api-module >>>",
+        "...configurer un host avec un « alias » et un « default-web-module >>>",
+        "...activer HSTS sur l'hôte après avoir préalablement configurer TLS",
+        "...activer HSTS sur l'hôte puis configurer TLS",
+        "...activer le CORS sur l'hôte"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "question": "Pour une application Jakarta EE 10, dans un DAO, les entités JPA sont gérés par",
+      "options": [
+        "Un << EntityManager >>> instancié depuis un << EntityManagerFactory » obtenu via la classe « Persistance »",
+        "Un << EntityManager » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceUnit >>>",
+        "Un << EntityManager » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceContext >>>",
+        "Un << EntityHandler » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceUnit >>>",
+        "Un << EntityHandler » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceContext >>>"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Dans le modèle de maturité de Richardson, le niveau 3 correspond à la mise en œuvre",
+      "options": [
+        "des ressources identifiées par des URI, formats et payload",
+        "des verbes du protocole HTTP utilisé adéquatement avec les ressources",
+        "du transfert de l'état du serveur vers le client (Stateless Server)",
+        "du HATEOAS (Hypermedia As The Engine Of Application State)",
+        "du couplage faible et de la séparation des responsabilités via des couches logicielles et des patrons de conception"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Pour les services REST, ... est parmi les exigences principales du contrat de service. (Choisir 3 réponses)",
+      "options": [
+        "Une interface uniforme (ressources et verbes)",
+        "L'utilisation du format JSON pour le transfert de données",
+        "Le transfert de l'état du serveur vers le client (Stateless Server)",
+        "L'utilisation du format XML pour le stockage de données",
+        "Le couplage faible et la séparation des responsabilités via des couches logicielles et des patrons de conception"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ]
+    }
+  ]
+}

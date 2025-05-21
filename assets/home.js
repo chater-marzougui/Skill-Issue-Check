@@ -530,7 +530,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function pollVisitorCount() {
         setInterval(() => {
             handleVisitorCount();
-        }, 3000);
+        }, 15000);
     }
 
     pollVisitorCount();
