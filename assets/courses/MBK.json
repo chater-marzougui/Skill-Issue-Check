@@ -1159,11 +1159,11 @@
     {
       "question": "En considérant le code JavaScript suivant:\nlet tag = document.querySelector(\"aside > p\");\nQuel élément HTML 5 est sélectionné ?",
       "options": [
-        "Le dernier élément <p> dans le document ayant pour parent direct un élément <aside>",
-        "Le premier élément <p> dans le document ayant pour parent direct un élément <aside>",
-        "Le dernier élément <p> dans le document ayant pour ancêtre un élément <aside>",
-        "Le premier élément <p> dans le document ayant pour ancêtre un élément <aside>",
-        "L'élément <p> suivant le premier élément <aside>"
+        "Le dernier élément 'p' dans le document ayant pour parent direct un élément 'aside'",
+        "Le premier élément 'p' dans le document ayant pour parent direct un élément 'aside'",
+        "Le dernier élément 'p' dans le document ayant pour ancêtre un élément 'aside'",
+        "Le premier élément 'p' dans le document ayant pour ancêtre un élément 'aside'",
+        "L'élément 'p' suivant le premier élément 'aside'"
       ],
       "answer": [
         1

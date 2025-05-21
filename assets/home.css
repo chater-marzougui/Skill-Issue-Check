@@ -465,3 +465,12 @@ footer {
     margin-top: 5px;
     font-style: italic;
 }
+
+.pass {
+    background-color: rgb(156, 156, 25);
+    color: white;
+}
+
+.pass:hover {
+    background-color: rgb(117, 117, 18);
+}

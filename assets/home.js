@@ -396,23 +396,23 @@ function submitQuiz() {
                 question.answer.every(val => answer.includes(val))) {
                 isCorrect = true;
             }
-        } else {
-            // Original single answer check
-            if (answer === question.answer) {
-                isCorrect = true;
-            }
+        } else if (answer === question.answer) {
+            isCorrect = true;
         }
         
         if (isCorrect) {
             score++;
         } else {
             // Store wrong answers for display
-            const userAnswerDisplay = isMultiAnswer && Array.isArray(answer) ? 
-                                     answer.map(idx => question.options[idx]).join(", ") : 
-                                     answer !== -1 ? question.options[answer] : "Aucune réponse";
-                                     
+            let userAnswerDisplay;
+            if (isMultiAnswer && Array.isArray(answer)) {
+                userAnswerDisplay = answer.map(idx => question.options[idx]).join("<=====>, ");
+            } else {
+                userAnswerDisplay = (answer !== -1) ? question.options[answer] : "Aucune réponse";
+            }
+
             const correctAnswerDisplay = isMultiAnswer ? 
-                                       question.answer.map(idx => question.options[idx]).join(",    ") : 
+                                       question.answer.map(idx => question.options[idx]).join("<=====>, ") : 
                                        question.options[question.answer];
             
             wrongAnswers.push({
