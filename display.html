@@ -724,11 +724,13 @@
                             questionData.options.forEach((option, optionIndex) => {
                                 const optionDiv = document.createElement('div');
                                 optionDiv.className = 'option';
+                                const isMultiAnswer = Array.isArray(questionData.answer);
                                 let isCorrect;
-                                try{
+
+                                if (isMultiAnswer) {
                                     isCorrect = questionData.answer && questionData.answer.includes(optionIndex);
-                                } catch {
-                                    isCorrect = questionData.answer && (questionData.answer === optionIndex);
+                                } else if (optionIndex === questionData.answer) {
+                                    isCorrect = true;
                                 }
                                 
                                 if (isCorrect) {
