@@ -157,11 +157,11 @@
     {
       "question": "La balise permettant d'activer le Responsive Web Design est:",
       "options": [
-        "La balise «link» avec un attribut «rel» ayant pour valeur  incluse dans la balise <head>",
-        "La balise «link» avec un attribut «rel» ayant pour valeur «rwd» incluse dans la balise <body>",
-        "La balise «meta» avec un attribut «name» ayant pour valeur «viewport» incluse dans la balise <head>",
-        "La balise «meta» avec un attribut «name» ayant pour valeur «viewport» incluse dans la balise <body>",
-        "La balise «meta» avec un attribut «rwd» ayant pour valeur «viewport» incluse dans la balise <head>"
+        "La balise «link» avec un attribut «rel» ayant pour valeur  incluse dans la balise «head»",
+        "La balise «link» avec un attribut «rel» ayant pour valeur «rwd» incluse dans la balise «body»",
+        "La balise «meta» avec un attribut «name» ayant pour valeur «viewport» incluse dans la balise «head»",
+        "La balise «meta» avec un attribut «name» ayant pour valeur «viewport» incluse dans la balise «body»",
+        "La balise «meta» avec un attribut «rwd» ayant pour valeur «viewport» incluse dans la balise «head»"
       ],
       "answer": [
         2
@@ -201,11 +201,11 @@
     {
       "question": "La négociation de contenu selon le langage ...",
       "options": [
-        "utilise l'entête http << Accept >>>",
-        "utilise l'entête http « Accept-Language >>>",
-        "utilise l'entête http Language >>>",
-        "utilise l'entête http « Accept-Charset >>>",
-        "utilise l'entête http « Accept-Ranges >>>"
+        "utilise l'entête http « Accept »",
+        "utilise l'entête http « Accept-Language »",
+        "utilise l'entête http Language »",
+        "utilise l'entête http « Accept-Charset »",
+        "utilise l'entête http « Accept-Ranges »"
       ],
       "answer": [
         1
@@ -217,9 +217,9 @@
       "options": [
         "la Vue gère la communication entre le Présentateur et le Modèle",
         "le Présentateur gère la communication entre le Modèle et la Vue",
-        "le Modèle peut déclencher un événement de type << Data Update » et une Vue peut déclencher un événement de type << UI/UX Action >>>",
-        "le Modèle peut déclencher un événement de type << State Change >> et une Vue peut déclencher un événement de type << User Intent >>>",
-        "le Modèle peut déclencher un événement de type << Modification Trigger » et une Vue peut déclencher un événement de type << Action Trigger >>>"
+        "le Modèle peut déclencher un événement de type « Data Update » et une Vue peut déclencher un événement de type « UI/UX Action »",
+        "le Modèle peut déclencher un événement de type « State Change » et une Vue peut déclencher un événement de type « User Intent »",
+        "le Modèle peut déclencher un événement de type « Modification Trigger » et une Vue peut déclencher un événement de type « Action Trigger »"
       ],
       "answer": [
         1,
@@ -231,7 +231,7 @@
       "question": "Pour un service REST: (choisir 3 réponses)",
       "options": [
         "L'URI identifie une ressource",
-        "La méthode « POST >>> est interdite sur une URI représentant une entité unique.",
+        "La méthode « POST » est interdite sur une URI représentant une entité unique.",
         "Le protocole utilisé peut-être quelconque.",
         "Les méthodes « PUT » et « DELETE » sont fortement déconseillées pour une URI identifiant une collection.",
         "La communication se fait avec états (Stateful)"
@@ -265,7 +265,7 @@
         "utilisent le protocole UDP.",
         "sont standardisées par un protocole",
         "sont initialisés par un handshake permettant de mettre à niveau le protocole HTTP",
-        "fonctionnent selon le mécanisme de communication << requête/réponse >>>"
+        "fonctionnent selon le mécanisme de communication « requête/réponse »"
       ],
       "answer": [
         0,
@@ -307,11 +307,11 @@
     {
       "question": "La négociation de contenu selon le format...",
       "options": [
-        "utilise l'entête http << Accept >>>",
-        "utilise l'entête http << Accept-Language >>",
-        "utilise l'entête http << Language >>>",
-        "utilise l'entête http << Accept-Charset >>>",
-        "utilise l'entête http << Accept-Ranges >>>"
+        "utilise l'entête http « Accept »",
+        "utilise l'entête http « Accept-Language »",
+        "utilise l'entête http « Language »",
+        "utilise l'entête http « Accept-Charset »",
+        "utilise l'entête http « Accept-Ranges »"
       ],
       "answer": [
         0
@@ -338,7 +338,7 @@
       "question": "AJAX ... (choisir 2 réponses)",
       "options": [
         "est l'acronyme d' «Advanced Java API for XML».",
-        "est l'acronyme d' «Asynchronous JavaScript And XML>>>",
+        "est l'acronyme d' «Asynchronous JavaScript And XML»",
         "supporte uniquement le format de données XML",
         "permet la communication asynchrone entre clients et serveurs.",
         "permet la communication asynchrone entre serveurs et bases de données."
@@ -352,7 +352,7 @@
     {
       "question": "EJB (choisir 2 réponses)",
       "options": [
-        "est l'acronyme de << Enterprise JavaBeans >>>",
+        "est l'acronyme de « Enterprise JavaBeans »",
         "est l'acronyme de « Embedded JavaScript Beans ».",
         "est une API pour la sécurité et la stabilité des échanges entre clients et serveurs",
         "est une API définissant un environnent d'exécution pour composants distribués.",
@@ -411,7 +411,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "Lequel de ces codes HTTP correspond au statut de succès << OK»: ",
+      "question": "Lequel de ces codes HTTP correspond au statut de succès « OK»: ",
       "options": [
         "101",
         "200",
@@ -426,7 +426,7 @@
   ],
   "page 3 (p.3)": [
     {
-      "question": "29.Lequel de ces codes HTTP correspond au statut d'accès interdit << Forbidden >> :",
+      "question": "29.Lequel de ces codes HTTP correspond au statut d'accès interdit « Forbidden » :",
       "options": [
         "101",
         "200",
@@ -440,7 +440,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "30.Lequel de ces codes HTTP correspond au statut d'accès non autorisé << Unauthorized >> :",
+      "question": "30.Lequel de ces codes HTTP correspond au statut d'accès non autorisé « Unauthorized » :",
       "options": [
         "101",
         "200",
@@ -468,7 +468,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "32. Quel code HTTP est retourné à la suite d'un handshake << WebSocket >>> :",
+      "question": "32. Quel code HTTP est retourné à la suite d'un handshake « WebSocket » :",
       "options": [
         "100",
         "101",
@@ -657,10 +657,10 @@
     {
       "question": "Dans le protocole OAuth 2.0, PKCE ... (choisir 2 réponses)",
       "options": [
-        "est l'acronyme de << Private Key Cipher End >>>",
-        "est l'acronyme de «Proof Key for Code Exchange >>>",
+        "est l'acronyme de « Private Key Cipher End »",
+        "est l'acronyme de «Proof Key for Code Exchange »",
         "définit une méthode d'authentification complète.",
-        "une extension de l'attribution << authorization code >> protégeant contre les attaques CSRF et injection de code d'autorisation",
+        "une extension de l'attribution « authorization code » protégeant contre les attaques CSRF et injection de code d'autorisation",
         "une extension de l'attribution implicite protégeant contre les attaques CSRF et injection de jeton"
       ],
       "answer": [
@@ -791,10 +791,10 @@
     {
       "question": "Lorsqu'on configure le protocole TLS, pour activer la politique HSTS, il faut configurer le serveur pour :",
       "options": [
-        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transport-Security>>> avec la valeur <<max-age=31536000; includeSubDomains»",
-        "Ajouter à chaque réponse HTTP, l'entête <<<Strict-Transfer-Strategy>>> avec la valeur <<max-age=31536000; includeSubDomains»",
-        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transfer-Strategy>>> avec la valeur <<<enabled>>>",
-        "Ajouter à chaque réponse HTTP, l'entête <<Strict-Transport-Security>>> avec la valeur <<enabled>>>",
+        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transport-Security» avec la valeur «max-age=31536000; includeSubDomains»",
+        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transfer-Strategy» avec la valeur «max-age=31536000; includeSubDomains»",
+        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transfer-Strategy» avec la valeur «enabled»",
+        "Ajouter à chaque réponse HTTP, l'entête «Strict-Transport-Security» avec la valeur «enabled»",
         "Ignorer les connexions sur le port 80"
       ],
       "answer": [
@@ -1010,8 +1010,8 @@
     {
       "question": "Dans la « Java API for WebSockets », (choisir 2 réponses)",
       "options": [
-        "l'annotation <<< @WebsocketServer » sur une classe POJO permet de définir la partie serveur d'une WebSocket",
-        "l'annotation <<< @ServerEndpoint >>> sur une classe POJO permet de définir la partie serveur d'une WebSocket",
+        "l'annotation « @WebsocketServer » sur une classe POJO permet de définir la partie serveur d'une WebSocket",
+        "l'annotation « @ServerEndpoint » sur une classe POJO permet de définir la partie serveur d'une WebSocket",
         "l'annotation « @OnReceive » sur une méthode d'une classe définissant la partie serveur d'une WebSocket permet de définir ce que fera la WebSocket lors de réception d'un message depuis la partie cliente.",
         "l'annotation « @OnMessage » sur une méthode d'une classe définissant la partie serveur d'une WebSocket permet de définir ce que fera la WebSocket lors de réception d'un message depuis la partie cliente.",
         "l'annotation « @OnArrival » sur une méthode d'une classe définissant la partie serveur d'une WebSocket permet de définir ce que fera la WebSocket lors de réception d'un message depuis la partie cliente."
@@ -1143,9 +1143,9 @@
       "options": [
         "de définir un attribut de type énuméré",
         "de définir un attribut de type Integer ou String",
-        "de définir une classe implémentant l'interface << AttributeConverter >> et annoter par l'annotation <<< Converter ».",
-        "de définir une classe implémentant l'interface << Converter >>> et annoter par l'annotation <<< AttributeConverter >>.",
-        "de définir une classe implémentant l'interface <<< AttributeConverter >> et annoter par l'annotation << ApplyConverter »."
+        "de définir une classe implémentant l'interface « AttributeConverter » et annoter par l'annotation « Converter ».",
+        "de définir une classe implémentant l'interface « Converter » et annoter par l'annotation « AttributeConverter ».",
+        "de définir une classe implémentant l'interface « AttributeConverter » et annoter par l'annotation « ApplyConverter »."
       ],
       "answer": [
         0,
@@ -1154,7 +1154,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "Dans la partie client, quel patron de conception a été utilisé pour implémenter le patron de conception << Observable >>>",
+      "question": "Dans la partie client, quel patron de conception a été utilisé pour implémenter le patron de conception « Observable »",
       "options": [
         "Delegate",
         "Decorator",
@@ -1168,7 +1168,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "Dans la partie client, quels patrons de conception la classe « Broker >> a-t-elle implémentés (choisir deux réponses)",
+      "question": "Dans la partie client, quels patrons de conception la classe « Broker » a-t-elle implémentés (choisir deux réponses)",
       "options": [
         "Delegate",
         "Decorator",
@@ -1326,7 +1326,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "Dans le fichier << jboss-web.xml, la balise << virtual- host » représente...",
+      "question": "Dans le fichier « jboss-web.xml, la balise « virtual- host » représente...",
       "options": [
         "la machine physique sur laquelle sera exécuté l'archive « war »",
         "La machine virtuelle sur laquelle sera exécuté l'archive « war »",
@@ -1340,7 +1340,7 @@
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
     {
-      "question": "Dans le fichier << persistence.xml », comment est identifié une source de données de type JTA ?",
+      "question": "Dans le fichier « persistence.xml », comment est identifié une source de données de type JTA ?",
       "options": [
         "Par un URL de connection",
         "Par son adresse IP et son port",
@@ -1383,7 +1383,7 @@
   ],
   "page 8 (p.8)": [
     {
-      "question": "Dans l'API JPA, quelle annotation permet d'activer la gestion de la clé primaire par << auto_increment >>>",
+      "question": "Dans l'API JPA, quelle annotation permet d'activer la gestion de la clé primaire par « auto_increment »",
       "options": [
         "@GeneratedValue(strategy = GenerationType.SEQUENCE)",
         "@GeneratedValue(strategy = GenerationType.IDENTITY)",
@@ -1399,11 +1399,11 @@
     {
       "question": "Dans la jboss-cli, pour configurer le protocole TLS, il faut définir dans l'ordre",
       "options": [
-        "un << key store », un << key manager » et un « tls context »",
-        "un « key manager », un « key store » et un << tls context",
-        "un « key store », un « tls context >> et un << key manager >>>",
-        "un « key manager », un « tls context » et un << key store >>",
-        "un << tls context », un << key manager » et un << key store >>"
+        "un « key store », un « key manager » et un « tls context »",
+        "un « key manager », un « key store » et un « tls context",
+        "un « key store », un « tls context » et un « key manager »",
+        "un « key manager », un « tls context » et un « key store »",
+        "un « tls context », un « key manager » et un « key store »"
       ],
       "answer": [
         0
@@ -1413,8 +1413,8 @@
     {
       "question": "Dans la jboss-cli, pour configurer une API associé à une application Jakarta EE, il faut et il suffit de... (choisir 3 réponses)",
       "options": [
-        "configurer un hôte (host) avec un « pseudo » et un « default-api-module >>>",
-        "configurer un host avec un « alias » et un « default-web-module >>>",
+        "configurer un hôte (host) avec un « pseudo » et un « default-api-module »",
+        "configurer un host avec un « alias » et un « default-web-module »",
         "activer HSTS sur l'hôte après avoir préalablement configurer TLS",
         "activer HSTS sur l'hôte puis configurer TLS",
         "activer le CORS sur l'hôte"
@@ -1429,11 +1429,11 @@
     {
       "question": "Pour une application Jakarta EE 10, dans un DAO, les entités JPA sont gérés par",
       "options": [
-        "Un << EntityManager >>> instancié depuis un << EntityManagerFactory » obtenu via la classe « Persistance »",
-        "Un << EntityManager » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceUnit >>>",
-        "Un << EntityManager » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceContext >>>",
-        "Un << EntityHandler » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceUnit >>>",
-        "Un << EntityHandler » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceContext >>>"
+        "Un « EntityManager » instancié depuis un « EntityManagerFactory » obtenu via la classe « Persistance »",
+        "Un « EntityManager » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceUnit »",
+        "Un « EntityManager » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceContext »",
+        "Un « EntityHandler » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceUnit »",
+        "Un « EntityHandler » instancié via un point d'injection CDI via un producteur annoté par « @PersistenceContext »"
       ],
       "answer": [
         2
