@@ -354,6 +354,18 @@
                 margin-top: 140px;
             }
         }
+
+        .explanation {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 4px solid #007bff;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .explanation strong {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
@@ -400,8 +412,7 @@
         .then(data => {
             courseList = data.courses;
             populateCourseSelector();
-            // Load default course (exams-kaaniche-nour.json)
-            loadCourse('exams-kaaniche-nour.json');
+            loadCourse('3_cloud_cours.json');
         })
         .catch(error => {
             console.error('Error loading course list:', error);
@@ -417,7 +428,7 @@
                 const option = document.createElement('option');
                 option.value = course.filename;
                 option.textContent = course.name;
-                if (course.filename === 'exams-kaaniche-nour.json') {
+                if (course.filename === '3_cloud_cours.json') {
                     option.selected = true;
                 }
                 select.appendChild(option);
@@ -462,23 +473,6 @@
 
             document.getElementById('quiz-container').innerHTML = '';
         }
-
-        fetch('assets/courses/exams-kaaniche-nour.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Could not load course list');
-            }
-            return response.json();
-        })
-        .then(data => {
-            displayQuiz(data);
-            setupSearch();
-        })
-        .catch(error => {
-            console.error('Error loading quiz data:', error);
-            document.getElementById('quiz-container').innerHTML = 
-                '<div style="text-align: center; color: white; padding: 20px;">Error loading quiz data</div>';
-        });
 
         function clearQuizDisplay() {
             document.getElementById('quiz-container').innerHTML = '';
@@ -760,6 +754,13 @@
                             pageElement: pageHeader,
                             pageContent: pageContent
                         });
+
+                        if (questionData.explanation) {
+                            const explanationDiv = document.createElement('div');
+                            explanationDiv.className = 'explanation';
+                            explanationDiv.innerHTML = `<strong>Explication:</strong> ${questionData.explanation}`;
+                            questionContainer.appendChild(explanationDiv);
+                        }
                         
                         pageContent.appendChild(questionContainer);
                     });
