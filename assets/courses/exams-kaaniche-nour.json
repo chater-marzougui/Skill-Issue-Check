@@ -1032,7 +1032,7 @@
         "@Opened, @Closed, @Exception"
       ],
       "answer": [
-        0
+        1
       ],
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
@@ -1178,7 +1178,7 @@
       ],
       "answer": [
         2,
-        4
+        3
       ]
     }
   ],
