@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Questions</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 25px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .page-section {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background 0.3s ease;
+        }
+        
+        .page-header:hover {
+            background: linear-gradient(135deg, #43a3f5 0%, #00e8f5 100%);
+        }
+        
+        .toggle-icon {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .page-header.collapsed .toggle-icon {
+            transform: rotate(180deg);
+        }
+        
+        .page-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .page-content.expanded {
+            max-height: 10000px;
+        }
+        
+        .question-container {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 15px 20px;
+        }
+        
+        .question-container:last-child {
+            border-bottom: none;
+        }
+        
+        .question-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            line-height: 1.4;
+        }
+        
+        .option {
+            padding: 8px 12px;
+            margin: 4px 0;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        
+        .option.correct {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border-color: #28a745;
+            color: #155724;
+        }
+        
+        .option.incorrect {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        
+        .indicator {
+            font-weight: bold;
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .correct .indicator {
+            color: #28a745;
+        }
+        
+        .incorrect .indicator {
+            color: #dc3545;
+        }
+        
+        .search-container {
+            position: fixed;
+            margin-bottom: 20px;
+            z-index: 1000;
+            top: 20px;
+            left: 10%;
+            width: 80%;
+        }
+        
+        .search-box {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        #search-input {
+            flex: 1;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        #search-input:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+        }
+        
+        .search-navigation {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 8px 12px;
+        }
+        
+        .search-navigation button {
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        
+        .search-navigation button:hover {
+            background: #43a3f5;
+        }
+        
+        .search-navigation button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        #search-counter {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        .search-match {
+            background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+            border: 2px solid #17a2b8 !important;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(23, 162, 184, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(23, 162, 184, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(23, 162, 184, 0); }
+        }
+        
+        .stats {
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stats h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4facfe;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .search-box {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            #search-input {
+                font-size: 16px; /* Prevent zoom on iOS */
+            }
+            
+            .page-header {
+                padding: 12px 15px;
+                font-size: 15px;
+            }
+            
+            .question-container {
+                padding: 12px 15px;
+            }
+            
+            .question-title {
+                font-size: 14px;
+            }
+            
+            .option {
+                font-size: 13px;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Quiz Questions</h1>
+    
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="🔍 Search questions..." />
+            <div class="search-navigation" id="search-nav" style="display: none;">
+                <button id="prev-result">↑</button>
+                <span id="search-counter">0/0</span>
+                <button id="next-result">↓</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="stats" id="stats-container"></div>
+    
+    <div id="quiz-container"></div>
+    
+    <script>
+        let quizData;
+        let searchResults = [];
+        let currentSearchIndex = -1;
+        let allQuestions = [];
+        
+        fetch('assets/courses/exams-kaaniche-nour.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Could not load course list');
+            }
+            return response.json();
+        })
+        .then(data => {
+            displayQuiz(data);
+            setupSearch();
+        })
+        .catch(error => {
+            console.error('Error loading quiz data:', error);
+            document.getElementById('quiz-container').innerHTML = 
+                '<div style="text-align: center; color: white; padding: 20px;">Error loading quiz data</div>';
+        });
+        
+        function setupSearch() {
+            const searchInput = document.getElementById('search-input');
+            const prevBtn = document.getElementById('prev-result');
+            const nextBtn = document.getElementById('next-result');
+            
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.trim().toLowerCase();
+                
+                if (query.length === 0) {
+                    clearSearch();
+                    return;
+                }
+                
+                performSearch(query);
+            });
+            
+            prevBtn.addEventListener('click', () => navigateSearch(-1));
+            nextBtn.addEventListener('click', () => navigateSearch(1));
+            
+            // Keyboard navigation
+            searchInput.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown' && searchResults.length > 0) {
+                    e.preventDefault();
+                    navigateSearch(1);
+                } else if (e.key === 'ArrowUp' && searchResults.length > 0) {
+                    e.preventDefault();
+                    navigateSearch(-1);
+                } else if (e.key === 'Enter' && searchResults.length > 0) {
+                    e.preventDefault();
+                    scrollToCurrentResult();
+                }
+            });
+        }
+        
+        function performSearch(query) {
+            clearSearch();
+            searchResults = [];
+            
+            allQuestions.forEach((questionData, index) => {
+                const questionText = questionData.question.toLowerCase();
+                const optionsText = questionData.options ? questionData.options.join(' ').toLowerCase() : '';
+                const fullText = questionText + ' ' + optionsText;
+                
+                if (fullText.includes(query)) {
+                    searchResults.push({
+                        index: index,
+                        element: questionData.element,
+                        pageElement: questionData.pageElement,
+                        pageContent: questionData.pageContent,
+                        relevance: calculateRelevance(fullText, query)
+                    });
+                }
+            });
+            
+            // Sort by relevance (higher is better)
+            searchResults.sort((a, b) => b.relevance - a.relevance);
+            
+            updateSearchUI();
+            
+            if (searchResults.length > 0) {
+                currentSearchIndex = 0;
+                highlightCurrentResult();
+                scrollToCurrentResult();
+            }
+        }
+        
+        function calculateRelevance(text, query) {
+            const queryWords = query.split(' ').filter(word => word.length > 0);
+            let score = 0;
+            
+            queryWords.forEach(word => {
+                const regex = new RegExp(word, 'gi');
+                const matches = text.match(regex);
+                if (matches) {
+                    score += matches.length;
+                    // Bonus for exact matches at word boundaries
+                    const exactMatches = text.match(new RegExp(`\\b${word}\\b`, 'gi'));
+                    if (exactMatches) {
+                        score += exactMatches.length * 2;
+                    }
+                }
+            });
+            
+            return score;
+        }
+        
+        function navigateSearch(direction) {
+            if (searchResults.length === 0) return;
+            
+            currentSearchIndex += direction;
+            
+            if (currentSearchIndex >= searchResults.length) {
+                currentSearchIndex = 0;
+            } else if (currentSearchIndex < 0) {
+                currentSearchIndex = searchResults.length - 1;
+            }
+            
+            highlightCurrentResult();
+            scrollToCurrentResult();
+            updateSearchUI();
+        }
+        
+        function highlightCurrentResult() {
+            // Remove previous highlights
+            document.querySelectorAll('.search-match').forEach(el => {
+                el.classList.remove('search-match');
+            });
+            
+            if (currentSearchIndex >= 0 && currentSearchIndex < searchResults.length) {
+                const result = searchResults[currentSearchIndex];
+                result.element.classList.add('search-match');
+                
+                // Expand the page if collapsed
+                if (!result.pageContent.classList.contains('expanded')) {
+                    result.pageElement.classList.remove('collapsed');
+                    result.pageContent.classList.add('expanded');
+                }
+            }
+        }
+        
+        function scrollToCurrentResult() {
+            if (currentSearchIndex >= 0 && currentSearchIndex < searchResults.length) {
+                const result = searchResults[currentSearchIndex];
+                result.element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        }
+        
+        function updateSearchUI() {
+            const searchNav = document.getElementById('search-nav');
+            const counter = document.getElementById('search-counter');
+            const prevBtn = document.getElementById('prev-result');
+            const nextBtn = document.getElementById('next-result');
+            
+            if (searchResults.length === 0) {
+                searchNav.style.display = 'none';
+            } else {
+                searchNav.style.display = 'flex';
+                counter.textContent = `${currentSearchIndex + 1}/${searchResults.length}`;
+                
+                prevBtn.disabled = searchResults.length <= 1;
+                nextBtn.disabled = searchResults.length <= 1;
+            }
+        }
+        
+        function clearSearch() {
+            searchResults = [];
+            currentSearchIndex = -1;
+            
+            document.querySelectorAll('.search-match').forEach(el => {
+                el.classList.remove('search-match');
+            });
+            
+            document.querySelectorAll('.highlight').forEach(el => {
+                const parent = el.parentNode;
+                parent.replaceChild(document.createTextNode(el.textContent), el);
+                parent.normalize();
+            });
+            
+            updateSearchUI();
+        }
+        
+        function displayStats(quizData) {
+            let totalQuestions = 0;
+            let totalPages = 0;
+            
+            Object.keys(quizData).forEach(pageKey => {
+                try {
+                    const questions = quizData[pageKey];
+                    if (Array.isArray(questions)) {
+                        totalPages++;
+                        totalQuestions += questions.length;
+                    }
+                } catch (error) {
+                    console.error(`Error processing page ${pageKey}:`, error);
+                }
+            });
+            
+            const statsContainer = document.getElementById('stats-container');
+            statsContainer.innerHTML = `
+                <h3>📊 Quiz Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">${totalPages}</div>
+                        <div class="stat-label">Pages</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${totalQuestions}</div>
+                        <div class="stat-label">Questions</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function displayQuiz(quizData) {
+            const container = document.getElementById('quiz-container');
+            displayStats(quizData);
+            allQuestions = []; // Reset for search
+            
+            // Process each page
+            Object.keys(quizData).forEach(pageKey => {
+                try {
+                    const questions = quizData[pageKey];
+                    if (!Array.isArray(questions)) return;
+                    
+                    // Create page section
+                    const pageSection = document.createElement('div');
+                    pageSection.className = 'page-section';
+                    
+                    // Page header (collapsible)
+                    const pageHeader = document.createElement('div');
+                    pageHeader.className = 'page-header collapsed';
+                    pageHeader.innerHTML = `
+                        <span>${pageKey} (${questions.length} questions)</span>
+                        <span class="toggle-icon">▼</span>
+                    `;
+                    
+                    // Page content
+                    const pageContent = document.createElement('div');
+                    pageContent.className = 'page-content';
+                    
+                    questions.forEach((questionData, questionIndex) => {
+                        const questionContainer = document.createElement('div');
+                        questionContainer.className = 'question-container';
+                        
+                        // Question title
+                        const questionTitle = document.createElement('div');
+                        questionTitle.className = 'question-title';
+                        questionTitle.textContent = `Q${questionIndex + 1}: ${questionData.question}`;
+                        questionContainer.appendChild(questionTitle);
+                        
+                        // Options
+                        if (questionData.options && Array.isArray(questionData.options)) {
+                            questionData.options.forEach((option, optionIndex) => {
+                                const optionDiv = document.createElement('div');
+                                optionDiv.className = 'option';
+                                
+                                const isCorrect = questionData.answer && questionData.answer.includes(optionIndex);
+                                
+                                if (isCorrect) {
+                                    optionDiv.classList.add('correct');
+                                } else {
+                                    optionDiv.classList.add('incorrect');
+                                }
+                                
+                                const indicator = document.createElement('span');
+                                indicator.className = 'indicator';
+                                indicator.textContent = isCorrect ? '✓' : '✗';
+                                
+                                const optionText = document.createElement('span');
+                                optionText.textContent = option;
+                                
+                                optionDiv.appendChild(indicator);
+                                optionDiv.appendChild(optionText);
+                                questionContainer.appendChild(optionDiv);
+                            });
+                        }
+                        
+                        // Store for search functionality
+                        allQuestions.push({
+                            question: questionData.question,
+                            options: questionData.options || [],
+                            element: questionContainer,
+                            pageElement: pageHeader,
+                            pageContent: pageContent
+                        });
+                        
+                        pageContent.appendChild(questionContainer);
+                    });
+                    
+                    // Toggle functionality
+                    pageHeader.addEventListener('click', () => {
+                        pageHeader.classList.toggle('collapsed');
+                        pageContent.classList.toggle('expanded');
+                    });
+                    
+                    pageSection.appendChild(pageHeader);
+                    pageSection.appendChild(pageContent);
+                    container.appendChild(pageSection);
+                    
+                } catch (error) {
+                    console.error(`Error processing page ${pageKey}:`, error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
