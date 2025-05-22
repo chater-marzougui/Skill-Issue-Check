@@ -450,7 +450,10 @@
                 document.getElementById('quiz-container').innerHTML = 
                     '<div style="text-align: center; color: white; padding: 20px;">Error loading course data</div>';
             });
+
+            document.getElementById('quiz-container').innerHTML = '';
         }
+
         fetch('assets/courses/exams-kaaniche-nour.json')
         .then(response => {
             if (!response.ok) {
@@ -712,8 +715,12 @@
                             questionData.options.forEach((option, optionIndex) => {
                                 const optionDiv = document.createElement('div');
                                 optionDiv.className = 'option';
-                                
-                                const isCorrect = questionData.answer && questionData.answer.includes(optionIndex);
+                                let isCorrect;
+                                try{
+                                    isCorrect = questionData.answer && questionData.answer.includes(optionIndex);
+                                } catch {
+                                    isCorrect = questionData.answer && (questionData.answer === optionIndex);
+                                }
                                 
                                 if (isCorrect) {
                                     optionDiv.classList.add('correct');
