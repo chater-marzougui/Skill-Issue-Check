@@ -1,0 +1,533 @@
+{
+  "session 1 (p.1-23)": [
+    {
+      "question": "Which of the following statements accurately describe the core characteristics of cloud computing?",
+      "options": [
+        "Infrastructure is primarily managed as hardware.",
+        "It involves the on-demand delivery of IT resources over the internet.",
+        "Pricing is typically based on a fixed, long-term contract.",
+        "It enables thinking of infrastructure as software.",
+        "Resources are provisioned based on theoretical maximum peaks."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Cloud computing delivers IT resources on demand via the internet with pay-as-you-go pricing, allowing infrastructure to be treated and used as software. The traditional model requires hardware infrastructure, space, staff, and guessing theoretical maximum peaks."
+    },
+    {
+      "question": "Which of the following are valid cloud deployment models?",
+      "options": [
+        "IaaS",
+        "Cloud",
+        "Hybrid",
+        "On-premises (Private Cloud)",
+        "SaaS"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Cloud, Hybrid, and On-premises (Private Cloud) are the three main cloud deployment models. IaaS and SaaS are cloud service models, not deployment models."
+    },
+    {
+      "question": "In the context of cloud computing advantages, which of the following scenarios illustrates 'trading capital expense for variable expense'?",
+      "options": [
+        "Investing heavily in a data center based on projected future needs.",
+        "Paying for only the compute power used on an hourly basis.",
+        "Maintaining an existing on-premises infrastructure.",
+        "Licensing software with a perpetual license.",
+        "Committing to a long-term contract for a fixed amount of resources."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Trading capital expense for variable expense means shifting from upfront investments (like data centers) to paying only for the resources consumed, which is the core of the pay-as-you-go model."
+    },
+    {
+      "question": "Which of the following contributes to 'massive economies of scale' in cloud computing?",
+      "options": [
+        "Individual customers negotiating pricing directly with hardware vendors.",
+        "The aggregated usage from a large number of customers.",
+        "Relying on older, less efficient hardware to reduce costs.",
+        "Each customer operating their own isolated data center.",
+        "Fixed pricing models that do not fluctuate with demand."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Massive economies of scale are achieved through aggregated usage from many customers, allowing providers to optimize resource utilization and reduce costs, passing savings on to customers."
+    },
+    {
+      "question": "Which of the following best describes Infrastructure as a Service (IaaS)?",
+      "options": [
+        "Provides the least control over IT resources",
+        "Provides more control over IT resources",
+        "Offers a complete software application ready to use",
+        "Focuses on delivering platforms for developers",
+        "Eliminates the need for any infrastructure management"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "IaaS gives users the most control over their IT resources, allowing them to manage servers, storage, and networking. SaaS provides the least control."
+    },
+    {
+      "question": "Which option represent the concept of increasing speed and agility in cloud computing?",
+      "options": [
+        "The ability to deploy resources in minutes instead of weeks.",
+        "A decrease of infrastructure availability",
+        "A longer hardware procurement cycle",
+        "Paying a lot of money",
+        "A decrease of infrastructure security"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Cloud computing increases speed and agility by enabling rapid deployment of resources in minutes, contrasting with the weeks or months required in traditional IT environments."
+    },
+    {
+      "question": "Which of the following tasks is reduced or eliminated by adopting cloud computing?",
+      "options": [
+        "Innovating new products and services",
+        "Running and maintaining data centers",
+        "Interacting with customers",
+        "Developing applications",
+        "Security"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Cloud computing allows organizations to stop spending money on running and maintaining data centers, shifting the focus to business innovation and customer engagement."
+    },
+    {
+      "question": "What are the defining characteristics of a 'web service'?",
+      "options": [
+        "It's only available on local networks.",
+        "It communicates using proprietary protocols.",
+        "It exposes functionality over the internet.",
+        "It uses standardized formats like XML or JSON for communication.",
+        "It is only accessible through a web browser."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Web services are software components accessible over the internet and that uses standardized formats like XML or JSON for API interactions."
+    },
+    {
+      "question": "What fundamental benefit does AWS offer in terms of resource management?",
+      "options": [
+        "It provides a limited range of pre-configured hardware solutions.",
+        "It offers on-demand access to a broad set of global cloud-based products.",
+        "It requires a long-term commitment to specific resource allocations.",
+        "It restricts access to compute, storage, network, and database resources.",
+        "It forces a complex, monolithic IT architecture."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "AWS provides on-demand access to a comprehensive suite of global cloud-based products, offering flexibility and scalability."
+    },
+    {
+      "question": "Which statements correctly relate to the advantages of cloud computing?",
+      "options": [
+        "Go global in minutes",
+        "Requires long hardware procurement cycle",
+        "Requires you to provision capacity by guessing theoretical maximum peaks",
+        "Stop guessing capacity",
+        "Requires space, staff, physical security, planning, capital expenditure"
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "With cloud computing we can go global in minutes and stop guessing the capacity."
+    },
+    {
+      "question": "Which of the following is a component of AWS's cloud computing model?",
+      "options": [
+        "Infrastructure as hardware",
+        "Requires guessing theoretical maximum peaks",
+        "Infrastructure as software",
+        "Hardware solutions",
+        "Security groups"
+      ],
+      "answer": [
+        2,
+        4
+      ],
+      "explanation": "With AWS's model, the infrastructure is treated as software. Security groups allow to secure your resources"
+    }
+  ],
+  "session 1 (p.24-46)": [
+    {
+      "question": "Which of the following are fundamental drivers of cost with AWS?",
+      "options": [
+        "Compute",
+        "Storage",
+        "Data Transfer",
+        "Number of Users",
+        "Region"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The three fundamental drivers of cost in AWS are Compute, Storage, and Data Transfer. Number of users and Region can influence costs, but they aren't primary cost drivers."
+    },
+    {
+      "question": "What are some advantages of using the AWS cloud compared to on-premises infrastructure?",
+      "options": [
+        "No upfront expense; pay for what you use.",
+        "Scale up and down.",
+        "More contracts are required.",
+        "Self-service infrastructure.",
+        "Dedicated hardware."
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "AWS Cloud offers the ability to pay only for what you use, scale resources easily, and self-service infrastructure, reducing the need for large upfront investments. On-premise deployments often require upfront expenses, rigid scaling, and dedicated hardware management. Furthermore, AWS reduces contracts."
+    },
+    {
+      "question": "Which AWS service is generally offered without charge?",
+      "options": [
+        "Amazon EC2",
+        "Amazon S3",
+        "Amazon VPC",
+        "Amazon RDS",
+        "AWS Lambda"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon VPC (Virtual Private Cloud) is a service generally offered without charge. However, other AWS services that it provisions might incur costs. The other listed services have usage-based charges."
+    },
+    {
+      "question": "Which of the following Reserved Instance (RI) options provides the largest discount?",
+      "options": [
+        "No Upfront Payments Reserved Instance (NURI)",
+        "Partial Upfront Reserved Instance (PURI)",
+        "All Upfront Reserved Instance (AURI)",
+        "On-Demand Instance",
+        "Spot Instance"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "All Upfront Reserved Instances (AURI) offer the largest discount compared to Partial Upfront (PURI) and No Upfront (NURI) Reserved Instances, as you pay the entire cost upfront."
+    },
+    {
+      "question": "How can you interact with AWS services?",
+      "options": [
+        "AWS Management Console",
+        "Command Line Interface (AWS CLI)",
+        "Software Development Kits (SDKs)",
+        "Through a third party vendor",
+        "Only through AWS support"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "AWS services can be accessed through the AWS Management Console (a GUI), the Command Line Interface (CLI), or Software Development Kits (SDKs) allowing programmatic access."
+    },
+    {
+      "question": "What is the AWS Pricing Philosophy?",
+      "options": [
+        "Pay-as-you-go pricing model",
+        "Fixed monthly fees",
+        "Yearly contracts only",
+        "Unlimited usage",
+        "Free access to all AWS Services"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "AWS follows a 'pay-as-you-go' pricing philosophy, where you only pay for the services you consume and the resources you use, eliminating large upfront expenses."
+    },
+    {
+      "question": "What should you consider when choosing an AWS service?",
+      "options": [
+        "Business goals",
+        "Technology requirements",
+        "Personal preference",
+        "Cost only",
+        "The recommendation of AWS Support"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "When choosing an AWS service, you should primarily consider your business goals and technology requirements to ensure the service aligns with your needs."
+    },
+    {
+      "question": "What does AWS do as it grows to provide cost savings to customers?",
+      "options": [
+        "Focuses on lowering the cost of doing business",
+        "Increases prices to account for demand",
+        "Requires long-term contracts",
+        "Limits access to services",
+        "Reduce infrastructure in regions"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "As AWS grows, it focuses on lowering the cost of doing business, which leads to savings from economies of scale that are passed on to customers in the form of lower prices."
+    },
+    {
+      "question": "Which of the following is true regarding data transfer costs in AWS?",
+      "options": [
+        "Inbound data transfer is generally free.",
+        "Outbound data transfer is generally charged.",
+        "Data transfer within the same AWS Region is generally free.",
+        "All data transfer is free.",
+        "Data transfer is only free with premium accounts."
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "In AWS, inbound data transfer and data transfer between services within the same AWS Region are generally free, while outbound data transfer is typically charged."
+    },
+    {
+      "question": "Which of the following is an AWS Cost Management service?",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS CloudTrail",
+        "AWS Cost Explorer",
+        "AWS Config",
+        "AWS IAM"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "AWS Cost Explorer is a part of the AWS Cost Management services suite, designed to analyze and visualize your AWS spending."
+    },
+    {
+      "question": "Which category does Amazon CloudFront belong to?",
+      "options": [
+        "Compute services",
+        "Database services",
+        "Networking and Content Delivery services",
+        "Storage services",
+        "Security, Identity, and Compliance services"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon CloudFront is a Content Delivery Network (CDN) service, and thus falls under the Networking and Content Delivery services category."
+    },
+    {
+      "question": "Which AWS service allows you to run containers?",
+      "options": [
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon ECS",
+        "Amazon RDS",
+        "Amazon S3"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Both Amazon EC2 and Amazon ECS(Elastic Container Service) allow you to run containers. EC2 provides virtual machines where you can deploy and manage containers manually, while ECS is a fully managed container orchestration service."
+    }
+  ],
+  "session 1 (p.47-70)": [
+    {
+      "question": "Which of the following factors should be considered when selecting an AWS Region for deploying resources?",
+      "options": [
+        "Proximity to customers to minimize latency.",
+        "The specific services available in that Region.",
+        "Data governance and legal requirements.",
+        "Cost variations between different Regions.",
+        "The number of data centers in the region."
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Region selection depends on latency, available services, governance needs, and cost. The number of data centers is not a direct selection criterion, but it is more related to availability and redundancy."
+    },
+    {
+      "question": "Which of the following statements accurately describe Availability Zones (AZs) within the AWS Global Infrastructure?",
+      "options": [
+        "AZs are fully isolated partitions within a Region.",
+        "AZs are interconnected via high-speed private networking.",
+        "Each Region contains one Availability Zone.",
+        "AWS recommends distributing data and resources across multiple AZs for fault tolerance.",
+        "Each Availability Zone consists of single data center."
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Availability Zones are designed for isolation and connected by high-speed links. AWS recommends using multiple AZs for resilience. Availability Zones may consist of one or more data centers, and each Region contains at least two Availability Zones."
+    },
+    {
+      "question": "What are the primary functions of AWS Points of Presence (POPs)?",
+      "options": [
+        "To provide compute resources for running applications.",
+        "To cache content closer to end-users, reducing latency.",
+        "To provide direct connections to the AWS backbone network.",
+        "To host entire application stacks for regional deployments.",
+        "To allow you to choose from multiple operating systems."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Points of Presence (POPs) primarily serve to cache content closer to end-users, minimizing latency through services like Amazon CloudFront. They do not host entire application stacks or provide direct network connections in the same way as Direct Connect."
+    },
+    {
+      "question": "Which characteristics define the fault tolerance of AWS infrastructure?",
+      "options": [
+        "The ability to continue operating properly in the presence of component failures.",
+        "Built-in redundancy of key components.",
+        "Automatic recovery from all types of failures.",
+        "Geographic separation of Regions.",
+        "Minimized downtime without human intervention."
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Fault tolerance means that the system continues to operate despite failures due to redundancy and automated recovery mechanisms. Geographic separation of Regions is not a component, but a benefit."
+    },
+    {
+      "question": "Which AWS services are considered global rather than Regional?",
+      "options": [
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Identity and Access Management (IAM)",
+        "Amazon Route 53",
+        "Amazon S3"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "IAM and Route 53 are global services, meaning they are not tied to a specific AWS Region.  EC2, Lambda and S3 are Regional."
+    },
+    {
+      "question": "Which of the following are benefits of using edge locations and regional edge caches?",
+      "options": [
+        "Reduced latency for end users.",
+        "Increased security for data at rest.",
+        "Improved performance by caching content closer to users.",
+        "Automated disaster recovery capabilities.",
+        "Lower costs for storing frequently accessed data."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Edge locations and regional edge caches are primarily used to improve performance by caching content geographically closer to users, thereby reducing latency. They don't directly impact data security or disaster recovery."
+    },
+    {
+      "question": "Which of the following services belong to the compute category?",
+      "options": [
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon S3",
+        "Amazon DynamoDB",
+        "Amazon Elastic Kubernetes Service (Amazon EKS)"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Amazon EC2, AWS Lambda and Amazon EKS provide compute resources. S3 is a storage service, and DynamoDB is a database service."
+    },
+    {
+      "question": "Which services are included in the Storage service category?",
+      "options": [
+        "Amazon EBS",
+        "Amazon EC2",
+        "Amazon S3",
+        "Amazon DynamoDB",
+        "Amazon EFS"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Amazon EBS, Amazon S3, and Amazon EFS provide different types of storage solutions. Amazon EC2 is a compute service, and Amazon DynamoDB is a database service."
+    },
+    {
+      "question": "Which of the following AWS services falls under the category of Networking and Content Delivery?",
+      "options": [
+        "Amazon CloudFront",
+        "Amazon Route 53",
+        "Amazon VPC",
+        "AWS Lambda",
+        "Amazon EC2"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Amazon CloudFront, Amazon Route 53, and Amazon VPC belong to Networking and Content Delivery. Lambda and EC2 are Compute services."
+    },
+    {
+      "question": "Which services fall under the Security, Identity, and Compliance service category?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "Amazon CloudWatch",
+        "AWS Artifact",
+        "AWS Config",
+        "Amazon Cognito"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "AWS Identity and Access Management (IAM), AWS Artifact, and Amazon Cognito deal with security, identity and compliance aspects. CloudWatch and Config are management and governance services."
+    },
+    {
+      "question": "Which of the following are characteristics of AWS data centers?",
+      "options": [
+        "Each data center has redundant power and networking.",
+        "Each data center typically houses 50,000 to 80,000 physical servers.",
+        "Data centers are interconnected using public internet connections.",
+        "Data centers are where data resides and processing occurs.",
+        "Each Availability Zone only consist of one data center"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "AWS data centers are designed with redundancy in power and networking, house a large number of servers, and are where data resides and is processed.  They use private networking between AZs not public internet. Also, Availability Zones may consist of one or more data centers, but not always one."
+    },
+    {
+      "question": "Which service category includes tools for tracking resource usage and monitoring performance?",
+      "options": [
+        "Compute",
+        "Storage",
+        "Management and Governance",
+        "Security, Identity, and Compliance",
+        "Networking and Content Delivery"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Management and Governance includes tools like CloudWatch and CloudTrail, which provide capabilities for resource tracking and performance monitoring."
+    }
+  ]
+}

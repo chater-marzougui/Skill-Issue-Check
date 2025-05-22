@@ -21,7 +21,7 @@ def split_pdf_into_chunks(pdf_path):
     try:
         pdf = PdfReader(pdf_path)
         total_pages = len(pdf.pages)
-        chunk_size = total_pages // 3 if total_pages < 100 else total_pages // 10
+        chunk_size = total_pages // 3 if total_pages < 100 else total_pages // 8
         print(f"Total pages: {total_pages}")
         print(f"Chunk size: {chunk_size}")
         
@@ -51,54 +51,56 @@ def split_pdf_into_chunks(pdf_path):
         print(f"Error reading PDF: {e}")
         return []
 
+def get_paths(pdf_path):
+    output_path = os.path.splitext(pdf_path.replace(' ', '_').lower())[0] + '.json'
+    course_name = os.path.basename(pdf_path).replace('.pdf', '')
+    return output_path, course_name
+
 def get_gemini_response(text, attempts=3, delay=5):
     """Get response from Gemini with retry logic."""
     prompt = f"""
 Analyze the provided document in detail and extract the key concepts, definitions, and critical points necessary for a deep understanding of the course. Then, generate multiple-choice questions (MCQs), following the format below:
 Questions should be clear, precise, and relevant to the document's content.
-The answer choices (options) should include one correct answer and three plausible distractors.
+The answer can have single or multiple answers.
 The correct answer should be indicated with its index in the list.
 Provide a brief yet informative explanation for each answer to reinforce understanding.
-Ensure the questions cover various levels of cognition, including factual recall, comprehension, and application.
-Structure the questions to promote critical thinking and not just rote memorization.
+Ensure the questions are hard.
 Use the following JSON format:
 {{
     "session 1": [
         {{
-            "question": "What was the approximate amount of global venture capital funding for startups in the third quarter of 2021?",
+            "question": "question 1",
             "options": [
-                "77 billion USD",
-                "158 billion USD",
-                "100 billion USD",
-                "200 billion USD"
+                "option  1",
+                "option  2",
+                "option  3",
+                "option  4",
+                "option  5"
             ],
-            "answer": 1,
-            "explanation": "Global venture capital funding for startups in the third quarter of 2021 was about 158 billion USD."
+            "answer": [1, 2],
         }},
         {{
-            "question": "How many new unicorns emerged in the third quarter of 2021?",
+            "question": "question 2",
             "options": [
-                "37",
-                "77",
-                "200",
-                "127"
+                "option  1",
+                "option  2",
+                "option  3",
+                "option  4",
+                "option  5"
             ],
-            "answer": 3,
-            "explanation": "In the third quarter of 2021, 127 new unicorns emerged."
-        }}
+            "answer": [0, 3],
+        }},
     ]
 }}
 Make sure that:
 The answers are zero-indexed.
-Use the same language as the document.
 The questions cover different sections of the document comprehensively.
 The explanations reinforce key learnings and not just repeat the correct answer.
-The difficulty level varies, including both basic and challenging questions.
 And be sure to put the answer indexes in different places (Don't repeat the position of the correct answer).
 Don't use phrases like "The document says" or "The text states" in the questions or explanations.
 The reply should be in JSON format only, without any additional text or comments.
 The reply should be in the same language as the document.
-
+Try to make 10-20 questions cover all concepts in the document.
 Here's the document to analyze:
 {text}
 """
@@ -341,8 +343,7 @@ def process_pdf_with_gemini(pdf_path, base_folder, courses_path):
         if i < len(chunks) - 1:
             time.sleep(2)
     
-    output_path = os.path.splitext(pdf_path.replace(' ', '_').lower())[0] + '.json'
-    course_name = os.path.basename(pdf_path).replace('.pdf', '')
+    output_path , course_name = get_paths(pdf_path)
     # Save the combined results
     with open(base_folder+output_path, 'w', encoding='utf-8') as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
@@ -379,8 +380,7 @@ def process_kaaniche_with_gemini(text_ls, base_folder, courses_path):
             time.sleep(1)
         i += 1
     
-    output_path = os.path.splitext(pdf_path.replace(' ', '_').lower())[0] + '.json'
-    course_name = os.path.basename(pdf_path).replace('.pdf', '')
+    output_path , course_name = get_paths(pdf_path)
     # Save the combined results
     with open(base_folder+output_path, 'w', encoding='utf-8') as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
@@ -521,8 +521,7 @@ def process_pdf_by_page_with_gemini(pdf_path, base_folder, courses_path):
         if i < len(pages) - 1:
             time.sleep(2)
     
-    output_path = os.path.splitext(pdf_path.replace(' ', '_').lower())[0] + '.json'
-    course_name = os.path.basename(pdf_path).replace('.pdf', '')
+    output_path , course_name = get_paths(pdf_path)
     # Save the combined results
     with open(base_folder+output_path, 'w', encoding='utf-8') as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
@@ -577,6 +576,10 @@ if __name__ == "__main__":
     # Get input from user
     base_folder = './assets/courses/'
     courses_path = 'course-list.json'
-    pdf_path = 'Droit du numérique Partie'
-    for i in range(1, 4):
-        process_pdf_with_gemini(f'{pdf_path} {i}.pdf', base_folder, courses_path)
+    # Automatically detect all .pdf files in the home directory
+    pdf_files = [f for f in os.listdir("./") if f.lower().endswith('.pdf')]
+    if not pdf_files:
+        print("No PDF files found")
+    else:
+        for pdf_file in pdf_files:
+            process_pdf_with_gemini(pdf_file, base_folder, courses_path)

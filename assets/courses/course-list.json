@@ -1,14 +1,29 @@
 {
   "courses": [
     {
+      "id": "9",
+      "filename": "3_cloud_cours.json",
+      "name": "3 Cloud Cours"
+    },
+    {
+      "id": "10",
+      "filename": "4_aws_modules_00_01_02_03.json",
+      "name": "4 AWS Modules 00 01 02 03"
+    },
+    {
+      "id": "11",
+      "filename": "5_cloud_modules_05_06.json",
+      "name": "5 Cloud Modules 05 06"
+    },
+    {
+      "id": "12",
+      "filename": "6_cloud_modules_07_08.json",
+      "name": "6 Cloud Modules 07 08"
+    },
+    {
       "id": "1",
       "filename": "Cloud.json",
       "name": "Cloud Hackathon from INDP2C"
-    },
-    {
-      "id": "2",
-      "filename": "Big_data.json",
-      "name": "Big Data"
     },
     {
       "id": "3",
@@ -39,21 +54,6 @@
       "id": "8",
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
-    },
-    {
-      "id": "9",
-      "filename": "droit_du_numérique_partie_1.json",
-      "name": "Droit du numérique Partie 1"
-    },
-    {
-      "id": "10",
-      "filename": "droit_du_numérique_partie_2.json",
-      "name": "Droit du numérique Partie 2"
-    },
-    {
-      "id": "11",
-      "filename": "droit_du_numérique_partie_3.json",
-      "name": "Droit du numérique Partie 3"
     }
   ]
 }

@@ -1,0 +1,548 @@
+{
+  "session 1 (p.1-24)": [
+    {
+      "question": "Which of the following statements are accurate regarding Amazon EBS?",
+      "options": [
+        "Amazon EBS offers object-level storage.",
+        "Amazon EBS volumes are automatically replicated within an Availability Zone.",
+        "Amazon EBS snapshots are stored in Amazon S3.",
+        "Amazon EBS volumes can be directly attached to multiple EC2 instances simultaneously.",
+        "Amazon EBS incurs additional costs for encrypted volumes."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "EBS offers block-level storage, not object storage. Volumes are replicated within an AZ, and snapshots are stored in S3. EBS can't be attached to multiple EC2 instances simultaneously. Encrypted EBS volumes have no additional cost."
+    },
+    {
+      "question": "Which of the following are valid use cases for Amazon EBS?",
+      "options": [
+        "Boot volumes for Amazon EC2 instances",
+        "Static website hosting",
+        "Data storage with a file system",
+        "Object storage for media files",
+        "Database hosts"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "EBS is suitable for boot volumes, data storage with a file system, and database hosts. Static website hosting and object storage are typically handled by services like Amazon S3."
+    },
+    {
+      "question": "What happens when you want to change one character in a 1 GB file using block storage, as opposed to object storage?",
+      "options": [
+        "The entire file needs to be updated and re-uploaded.",
+        "Only the block containing the character needs to be updated.",
+        "The file is automatically split into smaller objects.",
+        "No changes are possible.",
+        "The whole volume will be updated"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "With block storage, only the specific block containing the changed character needs to be updated, offering a significant efficiency advantage over object storage for such operations."
+    },
+    {
+      "question": "Which of the following is NOT a feature of Amazon EBS?",
+      "options": [
+        "Elasticity (ability to increase capacity and change types)",
+        "Automatic replication within Availability Zone",
+        "Global availability",
+        "Point-in-time snapshots",
+        "Encryption at no additional cost"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon EBS volumes are replicated within a single Availability Zone. They are not globally available across all regions."
+    },
+    {
+      "question": "Which of the following are valid storage classes in Amazon S3?",
+      "options": [
+        "Amazon S3 Elastic Compute",
+        "Amazon S3 Intelligent-Tiering",
+        "Amazon S3 Standard-Infrequent Access (Amazon S3 Standard-IA)",
+        "Amazon S3 Relational Database",
+        "Amazon S3 Deep Freeze"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Amazon S3 offers Intelligent-Tiering and Standard-IA storage classes. Amazon S3 Elastic Compute and Amazon S3 Relational Database are not valid S3 storage classes. Also, Amazon S3 Deep Freeze is incorrect, the correct one is Amazon S3 Glacier Deep Archive."
+    },
+    {
+      "question": "What is the single object size limit for Amazon S3?",
+      "options": [
+        "1 TB",
+        "5 TB",
+        "10 TB",
+        "Unlimited",
+        "1 PB"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "While Amazon S3 provides virtually unlimited storage overall, the maximum size for a single object stored in S3 is 5 TB."
+    },
+    {
+      "question": "How is data redundantly stored in Amazon S3?",
+      "options": [
+        "Data is stored in a single facility within a Region.",
+        "Data is replicated across multiple Availability Zones within a Region.",
+        "Data is stored across multiple Regions globally.",
+        "Data is backed up to Amazon EBS.",
+        "Data is redundantly stored in a single machine."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Amazon S3 stores data redundantly across multiple facilities within a single AWS Region to ensure high availability and durability. This typically involves replicating data across multiple Availability Zones."
+    },
+    {
+      "question": "Which of the following are valid methods for accessing data stored in Amazon S3?",
+      "options": [
+        "AWS Management Console",
+        "AWS Command Line Interface (CLI)",
+        "SDKs (Software Development Kits)",
+        "Amazon EBS",
+        "Amazon EC2"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Data in Amazon S3 can be accessed through the AWS Management Console, AWS CLI, and SDKs. Amazon EBS is a block storage service, and while EC2 instances can access S3, it is not a direct access method like the others."
+    },
+    {
+      "question": "Which of the following is a primary feature of Amazon EFS?",
+      "options": [
+        "Object-level storage",
+        "Block-level storage",
+        "Elastic capacity",
+        "Direct attachment to multiple EC2 instances across different Availability Zones",
+        "Limited file size"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon EFS provides elastic capacity, automatically scaling file storage needs up or down. It uses file-level storage, can be shared across multiple EC2 instances (within the same VPC), and allows petabyte-scale file systems."
+    },
+    {
+      "question": "Which of the following protocols does Amazon EFS support?",
+      "options": [
+        "Server Message Block (SMB)",
+        "Network File System (NFS)",
+        "iSCSI",
+        "HTTP",
+        "FTP"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Amazon EFS supports the Network File System (NFS) protocol, specifically versions 4.0 and 4.1 (NFSv4), making it compatible with Linux-based AMIs for Amazon EC2."
+    },
+    {
+      "question": "Which of the following use cases is well-suited for Amazon EFS?",
+      "options": [
+        "Block storage for boot volumes",
+        "Object storage for static assets",
+        "Big data analytics",
+        "Database hosting",
+        "Storing EBS snapshots"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon EFS is well-suited for use cases that require shared file storage, such as big data analytics, media processing workflows, content management, web serving, and home directories. EBS is for block storage and database hosting, while S3 is ideal for object storage and static assets."
+    },
+    {
+      "question": "Which of the following AWS Services is NOT mentioned in the document as a core AWS Service?",
+      "options": [
+        "Amazon Elastic Compute Cloud (Amazon EC2)",
+        "Amazon S3",
+        "Amazon DynamoDB",
+        "AWS Lambda",
+        "Amazon EFS"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The Document mentions Amazon EC2, Amazon S3, Amazon DynamoDB and Amazon EFS as core AWS Services, but not AWS Lambda. "
+    }
+  ],
+  "session 1 (p.25-48)": [
+    {
+      "question": "Which of the following are key characteristics of Amazon EFS?",
+      "options": [
+        "Block storage",
+        "File storage over a network",
+        "Object storage",
+        "Fully managed service",
+        "Requires manual storage administration"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Amazon EFS provides file storage over a network and is a fully managed service, eliminating storage administration tasks. It is not block or object storage."
+    },
+    {
+      "question": "In what type of scenarios is Amazon EFS particularly well-suited?",
+      "options": [
+        "Archiving infrequently accessed data",
+        "Big data and analytics",
+        "Media processing workflows",
+        "Serving static web content only",
+        "Content management"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Amazon EFS excels in scenarios like big data analytics, media processing workflows, and content management due to its scalability and network file system capabilities. It is not designed for archiving, which is better suited for services like Glacier."
+    },
+    {
+      "question": "Which access tiers are available in Amazon S3 Glacier for retrieving archived data?",
+      "options": [
+        "Standard",
+        "Express",
+        "Bulk",
+        "Expedited",
+        "Infrequent Access"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Amazon S3 Glacier offers Standard, Bulk, and Expedited retrieval options, providing different access times at varying costs. Express and Infrequent Access are not Glacier retrieval options."
+    },
+    {
+      "question": "What are some common use cases for Amazon S3 Glacier?",
+      "options": [
+        "Active database storage",
+        "Media asset archiving",
+        "Healthcare information archiving",
+        "Real-time data processing",
+        "Regulatory and compliance archiving"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Amazon S3 Glacier is ideal for long-term data archiving use cases such as media asset archiving, healthcare information archiving, and regulatory compliance archiving. It is not suitable for active database storage or real-time data processing due to retrieval times."
+    },
+    {
+      "question": "What methods can be used to interact with Amazon S3 Glacier?",
+      "options": [
+        "RESTful web services",
+        "Java or .NET SDKs",
+        "Amazon S3 with lifecycle policies",
+        "SQL queries",
+        "AWS CLI"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "You can interact with Amazon S3 Glacier using RESTful web services, Java or .NET SDKs, and Amazon S3 lifecycle policies to automate the archiving process. SQL queries are generally used for database interactions, not Glacier."
+    },
+    {
+      "question": "Which of the following does Amazon RDS manage in a managed service environment?",
+      "options": [
+        "Application optimization",
+        "OS installation and patches",
+        "Database software installation and patches",
+        "Database backups",
+        "Server maintenance"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "Amazon RDS as a managed service handles OS installation and patches, database software installation and patches, database backups, and server maintenance. Application optimization remains the responsibility of the user."
+    },
+    {
+      "question": "What are the key benefits of using Amazon RDS?",
+      "options": [
+        "Automatic scaling of application code",
+        "Simplified database administration",
+        "Built-in high availability",
+        "Reduced operational overhead",
+        "Guaranteed 100% uptime"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Amazon RDS simplifies database administration, provides built-in high availability with Multi-AZ deployments, and reduces operational overhead. While highly reliable, 100% uptime is not guaranteed, and application scaling is not directly managed by RDS."
+    },
+    {
+      "question": "Which AWS service is designed for low-cost data archiving and long-term backup?",
+      "options": [
+        "Amazon EBS",
+        "Amazon S3 Standard",
+        "Amazon S3 Glacier",
+        "Amazon EFS",
+        "Amazon RDS"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon S3 Glacier is specifically designed for low-cost data archiving and long-term backup, making it ideal for data that is infrequently accessed."
+    },
+    {
+      "question": "What security features does Amazon S3 Glacier provide?",
+      "options": [
+        "Data replication across all AWS regions",
+        "Encryption of data in transit",
+        "Encryption of data at rest",
+        "Automatic vulnerability patching",
+        "Vault Lock for compliance"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Amazon S3 Glacier offers encryption of data both in transit and at rest via SSL/TLS and provides a Vault Lock feature to enforce compliance policies. Data is replicated for durability but not across all regions, and while AWS manages infrastructure security, patching is not directly controlled by the user."
+    },
+    {
+      "question": "Which of the following statements is true regarding Amazon RDS Multi-AZ deployments?",
+      "options": [
+        "Data is asynchronously replicated to a standby instance",
+        "They enhance database performance through parallel processing",
+        "They provide high availability and failover capabilities",
+        "They automatically scale compute resources based on demand",
+        "They are only available for MySQL and PostgreSQL"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon RDS Multi-AZ deployments provide high availability by synchronously replicating data to a standby instance in a different Availability Zone, ensuring failover in case of an outage. Data is Synchronously, not asynchronously replicated."
+    },
+    {
+      "question": "What does the Vault Lock feature in Amazon S3 Glacier enforce?",
+      "options": [
+        "Automatic data deletion after a specified period.",
+        "Compliance through a policy.",
+        "Geographic data replication restrictions.",
+        "Data encryption standards.",
+        "Access control lists."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Vault Lock feature in Amazon S3 Glacier enforces compliance through a policy, ensuring that data is retained and managed according to specific regulatory or organizational requirements."
+    },
+    {
+      "question": "Where should mount targets be created for an Amazon EFS file system?",
+      "options": [
+        "In the same Availability Zone as the EC2 instances",
+        "In a VPC subnet",
+        "In the main route table",
+        "In the same AWS Region",
+        "One per Availability Zone"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "Mount targets for Amazon EFS should be created in a VPC subnet. You also need one mount target per Availability Zone. The AWS region must be the same."
+    }
+  ],
+  "session 1 (p.49-74)": [
+    {
+      "question": "Which of the following are characteristics of Amazon RDS?",
+      "options": [
+        "Offers virtually unlimited storage.",
+        "Supports only MySQL database engine.",
+        "Provides a managed service.",
+        "Offers automated redundancy and backup.",
+        "Requires manual patching and recovery."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Amazon RDS is a managed service that simplifies setup, operation, and scaling of relational databases. It also offers automated redundancy and backups, reducing administrative overhead."
+    },
+    {
+      "question": "When is Amazon RDS NOT an appropriate choice for a database solution?",
+      "options": [
+        "When complex transactions are required.",
+        "When the application needs high durability.",
+        "When massive read/write rates are required (e.g., 150,000 writes/second).",
+        "When sharding is needed due to high data size.",
+        "When the application requires a single worker node."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Amazon RDS is not suitable for applications requiring extremely high read/write rates or when sharding is necessary because of large data volumes. These scenarios often benefit from NoSQL databases like DynamoDB."
+    },
+    {
+      "question": "Which of the following database engines are supported by Amazon RDS?",
+      "options": [
+        "MongoDB",
+        "PostgreSQL",
+        "MariaDB",
+        "Cassandra",
+        "Microsoft SQL Server"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Amazon RDS supports PostgreSQL, MariaDB, and Microsoft SQL Server, among others. MongoDB and Cassandra are NoSQL databases and not directly supported within Amazon RDS."
+    },
+    {
+      "question": "Which database solution is best suited for a NoSQL database?",
+      "options": [
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon DynamoDB",
+        "Amazon Aurora",
+        "Databases on Amazon EC2"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon DynamoDB is a fast and flexible NoSQL database service for any scale."
+    },
+    {
+      "question": "Which of the following are key features of Amazon DynamoDB?",
+      "options": [
+        "Fixed Schema",
+        "Support for key-value and document store models.",
+        "Automatic replication across AWS Regions.",
+        "Limited storage capacity.",
+        "Consistent, single-digit millisecond latency at any scale."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "DynamoDB excels with key-value and document storage, automatic replication across regions, and provides consistently fast latency even at scale. It uses a dynamic schema."
+    },
+    {
+      "question": "What are the key benefits of Amazon Redshift?",
+      "options": [
+        "It is a fast, fully managed data warehouse service.",
+        "It requires manual scaling and configuration.",
+        "It uses columnar storage and parallel processing architectures.",
+        "It provides limited storage options.",
+        "It offers NoSQL capabilities."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Amazon Redshift is a fully managed data warehouse service designed for speed, scalability, and efficiency. It leverages columnar storage and parallel processing to optimize query performance."
+    },
+    {
+      "question": "Which of the following best describes Amazon Aurora?",
+      "options": [
+        "A NoSQL database designed for high throughput.",
+        "An enterprise-class relational database compatible with MySQL or PostgreSQL.",
+        "A data warehouse service for analytical workloads.",
+        "A database service requiring extensive manual administration.",
+        "A database service with limited scalability."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Amazon Aurora is a fully managed, enterprise-class relational database service that is compatible with MySQL and PostgreSQL."
+    },
+    {
+      "question": "What are some of the key benefits of using Amazon Aurora?",
+      "options": [
+        "Automated provisioning, patching, and backups.",
+        "Limited scalability compared to other RDS options.",
+        "Incompatibility with MySQL and PostgreSQL.",
+        "High performance and scalability.",
+        "High availability and durability."
+      ],
+      "answer": [
+        0,
+        3,
+        4
+      ],
+      "explanation": "Amazon Aurora automates administrative tasks, provides high performance and scalability, and ensures high availability and durability, making it a robust solution for relational database workloads."
+    },
+    {
+      "question": "A company needs to store unstructured metadata and they want to store relational database for configuration data. Which database service is the best fit?",
+      "options": [
+        "Amazon RDS for configuration data, Amazon DynamoDB for unstructured metadata.",
+        "Amazon Redshift for both configuration data and unstructured metadata.",
+        "Amazon DynamoDB for configuration data, Amazon RDS for unstructured metadata.",
+        "Amazon Aurora for both configuration data and unstructured metadata.",
+        "Amazon EC2 with a custom database for both."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Amazon RDS is suitable for relational data like configuration data, while Amazon DynamoDB is more appropriate for unstructured metadata due to its NoSQL nature."
+    },
+    {
+      "question": "An online payment processing company needs a database solution that can handle flash sales with a 30x increase in demand in a short amount of time. What considerations should be prioritized when selecting a database?",
+      "options": [
+        "The ability to handle high throughput and peak loads.",
+        "Seamless integration with IAM and AWS KMS.",
+        "The ability to scale automatically.",
+        "The type of database engine.",
+        "The amount of storage needed."
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The key considerations are handling high throughput during peak loads, seamless integration with security services like IAM and AWS KMS for transaction authentication, and the ability to scale automatically to accommodate the sudden surge in demand."
+    },
+    {
+      "question": "Which database service offers columnar storage and parallel processing architectures, making it suitable for data warehousing?",
+      "options": [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon Redshift",
+        "Amazon Aurora",
+        "Databases on Amazon EC2"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon Redshift utilizes columnar storage and parallel processing to enable fast querying and analysis of large datasets, making it a good fit for data warehousing applications."
+    },
+    {
+      "question": "What are the methods to manage, monitor and scale in cloud?",
+      "options": [
+        "Manage",
+        "Monitor",
+        "Scale",
+        "Compatibility",
+        "All of the above"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Automation and scaling includes Manage, Monitor, and Scale."
+    }
+  ]
+}

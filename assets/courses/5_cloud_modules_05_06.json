@@ -1,0 +1,550 @@
+{
+  "session 1 (p.1-30)": [
+    {
+      "question": "Which layer of the OSI model is responsible for routing and packet forwarding?",
+      "options": [
+        "Transport Layer",
+        "Data Link Layer",
+        "Network Layer",
+        "Session Layer"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The Network Layer (Layer 3) handles routing and packet forwarding using protocols like IP. Routers operate at this layer to determine the best path for data packets to reach their destination."
+    },
+    {
+      "question": "Which of the following are characteristics of an Amazon VPC?",
+      "options": [
+        "Logically isolated from other VPCs",
+        "Dedicated to a single AWS account",
+        "Spans multiple AWS Regions",
+        "Can span multiple Availability Zones",
+        "Subdivided into subnets"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "A VPC is logically isolated and dedicated to an AWS account. It belongs to a single AWS Region but can indeed span multiple Availability Zones. VPC is subdivided into subnets."
+    },
+    {
+      "question": "What is the purpose of a route table in a VPC?",
+      "options": [
+        "To filter inbound and outbound traffic at the instance level.",
+        "To define the network ACLs for a subnet.",
+        "To direct network traffic from a subnet.",
+        "To manage Elastic IP addresses.",
+        "To provide DNS resolution for instances within the VPC."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Route tables contain a set of rules (routes) that determine where network traffic from your subnet is directed. Each route specifies a destination and a target."
+    },
+    {
+      "question": "Which of the following statements are true regarding subnets in a VPC?",
+      "options": [
+        "A subnet can belong to multiple Availability Zones.",
+        "A subnet belongs to a single Availability Zone.",
+        "Subnets can be classified as public or private.",
+        "A VPC can only have one subnet.",
+        "Subnets are automatically associated with a route table."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "A subnet is confined to a single Availability Zone. Subnets are categorized as either public or private, depending on whether they have a route to an internet gateway."
+    },
+    {
+      "question": "What is the function of an Elastic Network Interface (ENI)?",
+      "options": [
+        "To provide a virtual firewall for EC2 instances.",
+        "To serve as a virtual network interface that can be attached/detached to/from an EC2 instance.",
+        "To enable communication between VPCs.",
+        "To provide VPN connectivity to the VPC.",
+        "To automatically assign public IP addresses to instances."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "An Elastic Network Interface (ENI) is a virtual network interface that you can attach to an instance, detach, and reattach to another instance. It allows you to redirect network traffic. It has attributes that follow it when reattached to a new instance."
+    },
+    {
+      "question": "What is the default behavior of a security group regarding inbound and outbound traffic?",
+      "options": [
+        "Allows all inbound and outbound traffic.",
+        "Denies all inbound and outbound traffic.",
+        "Denies all inbound traffic and allows all outbound traffic.",
+        "Allows all inbound traffic and denies all outbound traffic.",
+        "Only allows traffic on port 80 and 443."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "By default, a security group denies all inbound traffic and allows all outbound traffic. You need to explicitly add rules to allow specific inbound traffic."
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of security groups?",
+      "options": [
+        "Operate at the instance level",
+        "Are stateful",
+        "Support deny rules",
+        "Control inbound and outbound traffic",
+        "Evaluate all rules before allowing traffic"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Security groups do not support deny rules. You can only specify allow rules. All allow rules are evaluated before a decision is made to permit traffic."
+    },
+    {
+      "question": "Which AWS service translates domain names into IP addresses?",
+      "options": [
+        "Amazon CloudFront",
+        "Amazon EC2",
+        "Amazon S3",
+        "Amazon Route 53",
+        "Amazon VPC"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Amazon Route 53 is a highly available and scalable DNS web service that translates domain names (like www.example.com) into numeric IP addresses that computers use to connect to each other."
+    },
+    {
+      "question": "Which of the following Route 53 routing policies allows you to send users to different resources based on their geographic location?",
+      "options": [
+        "Simple routing",
+        "Weighted round robin routing",
+        "Latency routing",
+        "Geolocation routing",
+        "Failover routing"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Geolocation routing in Amazon Route 53 allows you to route traffic to different resources based on the geographic location of your users. This is useful for providing localized content or complying with regional regulations."
+    },
+    {
+      "question": "What is a key benefit of using Elastic IP addresses?",
+      "options": [
+        "They are automatically assigned to all EC2 instances.",
+        "They are free to use at all times.",
+        "They can be remapped to different instances quickly.",
+        "They provide enhanced security for EC2 instances.",
+        "They automatically scale with instance traffic."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Elastic IP addresses are associated with an AWS account and can be allocated and remapped anytime. This allows you to quickly remap the address to a different instance if the original instance fails, providing high availability. Note that there might be additional costs if an Elastic IP is not associated to a running instance."
+    },
+    {
+      "question": "A company needs to ensure its web application is highly available and can handle traffic from users across the globe with minimal latency. Which AWS services would be BEST suited for this scenario?",
+      "options": [
+        "Amazon S3 and Amazon EC2",
+        "Amazon Route 53 and Amazon CloudFront",
+        "Amazon VPC and Amazon EBS",
+        "Amazon IAM and AWS Organizations",
+        "Amazon CloudWatch and AWS CloudTrail"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Amazon Route 53 is used for DNS routing, directing users to the nearest available resource. Amazon CloudFront is a content delivery network (CDN) that caches content at edge locations worldwide, reducing latency for users accessing the web application."
+    },
+    {
+      "question": "In the context of VPC networking, what does the term 'CIDR block' refer to?",
+      "options": [
+        "A specific range of IP addresses for your VPC.",
+        "A type of security group rule.",
+        "The ID of an Internet Gateway.",
+        "A route table entry.",
+        "A type of Elastic Network Interface."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "CIDR (Classless Inter-Domain Routing) block is a notation that defines a range of IP addresses. When you create a VPC, you must specify a CIDR block, which represents the IP address range for your VPC."
+    }
+  ],
+  "session 1 (p.31-60)": [
+    {
+      "question": "Which of the following are benefits of using a Content Delivery Network (CDN)?",
+      "options": [
+        "Reduced latency for end-users",
+        "Increased origin server load",
+        "Improved application performance",
+        "Simplified application deployment",
+        "Enhanced security against DDoS attacks"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "CDNs reduce latency by serving content from geographically closer edge locations and improve overall application performance. While a CDN can help mitigate some DDoS attacks, enhanced security is not its primary purpose. CDNs offload work from the origin server."
+    },
+    {
+      "question": "What are the main components of the Amazon CloudFront infrastructure?",
+      "options": [
+        "Origin Servers",
+        "Edge Locations",
+        "Regional Edge Caches",
+        "Availability Zones",
+        "Virtual Private Clouds"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Amazon CloudFront primarily relies on Edge Locations for serving content quickly to customers and Regional Edge Caches for content that is less frequently accessed but still needs caching. Origin servers are outside of CloudFront's infrastructure. Availability zones and VPCs are related to EC2 and general AWS architecture, but not specific to CloudFront infrastructure."
+    },
+    {
+      "question": "Which of the following pricing components are associated with Amazon CloudFront?",
+      "options": [
+        "Data transfer out",
+        "Number of HTTP(S) requests",
+        "Storage volume",
+        "Invalidation requests exceeding the free tier",
+        "Number of EC2 instances"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "CloudFront pricing includes charges for data transfer out, HTTP(S) requests, and invalidation requests beyond the free tier. Storage volume costs do not directly reflect CloudFront's caching mechanisms, and the number of EC2 instances are not directly related to CloudFront pricing."
+    },
+    {
+      "question": "Which of the following AWS services are categorized as compute services?",
+      "options": [
+        "Amazon S3",
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon RDS",
+        "Amazon ECS"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Amazon EC2 (virtual machines), AWS Lambda (serverless functions), and Amazon ECS (container service) are categorized as compute services, providing different models for executing code. Amazon S3 is a storage service, and Amazon RDS is a database service."
+    },
+    {
+      "question": "Which characteristics are associated with AWS Lambda?",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Function-based",
+        "Serverless computing",
+        "Instance-based",
+        "Platform as a Service (PaaS)"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "AWS Lambda is characterized as a serverless, function-based compute service. It allows developers to run code without managing servers. It contrasts with IaaS and PaaS models."
+    },
+    {
+      "question": "What are some considerations when choosing the optimal AWS compute service?",
+      "options": [
+        "Application design",
+        "Available instance types",
+        "Usage patterns",
+        "Desired configuration control",
+        "Network bandwidth"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Application design, usage patterns, and desired configuration control are crucial in selecting the right compute service. Instance types are a part of the selection process but not the entire reasoning for it. Network bandwidth is a factor but less of a direct factor than the ones listed."
+    },
+    {
+      "question": "What is the purpose of an Amazon Machine Image (AMI)?",
+      "options": [
+        "To define network security rules for an EC2 instance",
+        "To create an EC2 instance",
+        "To provide a template for creating EC2 instances",
+        "To store data for an EC2 instance",
+        "To manage user permissions for an EC2 instance"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "An AMI is a template containing the operating system, software, and configurations required to launch an EC2 instance (virtual machine). It is the base from which instances are created."
+    },
+    {
+      "question": "What factors are determined by the EC2 instance type you choose?",
+      "options": [
+        "Operating system",
+        "Memory (RAM)",
+        "Processing power (CPU)",
+        "Network performance",
+        "Storage type"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "The instance type determines memory, CPU, network performance, and storage capabilities. The operating system is specified by the AMI, not the instance type."
+    },
+    {
+      "question": "What can a user data script be used for when launching an EC2 instance?",
+      "options": [
+        "To configure the instance's firewall rules",
+        "To customize the runtime environment of the instance",
+        "To specify the instance's IAM role",
+        "To encrypt the instance's storage volume",
+        "To determine the instance's Availability Zone"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "User data scripts are used to customize the runtime environment of the instance when it first starts, such as installing software or updating the system. Other options are configured using other instance settings."
+    },
+    {
+      "question": "What are the potential benefits of tagging EC2 instances?",
+      "options": [
+        "Filtering",
+        "Automation",
+        "Cost allocation",
+        "Increased storage capacity",
+        "Access control"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Tagging enables filtering resources, automating tasks, allocating costs by tag, and implementing access control policies. It does not directly increase storage capacity."
+    },
+    {
+      "question": "What does an EC2 security group control?",
+      "options": [
+        "Access to the physical hardware of the instance",
+        "Traffic to and from the instance",
+        "The operating system running on the instance",
+        "The size of the instance's storage volume",
+        "User authentication to the instance"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A security group acts as a virtual firewall, controlling inbound and outbound traffic to the EC2 instance at the network level. The OS is determined by the AMI, the size of the storage by volume configuration, and authentication by the key pair."
+    },
+    {
+      "question": "What is the purpose of a key pair when launching an EC2 instance?",
+      "options": [
+        "To encrypt the instance's storage volume",
+        "To enable secure connections to the instance",
+        "To define the instance's IAM role",
+        "To specify the instance's security group rules",
+        "To determine the instance's public IP address"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A key pair (public and private key) enables secure connections to the EC2 instance, allowing you to log in and manage the instance. The other options refer to separate configurations."
+    },
+    {
+      "question": "Which of the following are valid states in the Amazon EC2 instance lifecycle?",
+      "options": [
+        "Pending",
+        "Launching",
+        "Running",
+        "Rebooting",
+        "Deactivated"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "The states of EC2 instance includes pending, running, and rebooting, representing different stages of the instance's lifecycle. 'Launching' isn't a formal state and 'Deactivated' is not an actual state."
+    }
+  ],
+  "session 1 (p.61-91)": [
+    {
+      "question": "Which of the following statements are correct regarding Elastic IP addresses?",
+      "options": [
+        "Rebooting an instance will change the associated Elastic IP address.",
+        "Elastic IP addresses can be associated with instances in any AWS region.",
+        "An Elastic IP address remains allocated to your account until you choose to release it.",
+        "Elastic IP addresses are automatically released when the associated instance is stopped.",
+        "There is no cost associated with Elastic IP addresses."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Elastic IP addresses remain associated with your AWS account until explicitly released. They are tied to a specific region and not released on instance stops. While you can request one for free, leaving it unassociated with an instance for a long time results in a fee."
+    },
+    {
+      "question": "What type of data retention and frequency does basic monitoring in Amazon CloudWatch provide for EC2 instances?",
+      "options": [
+        "5 minutes frequency and maintains 15 days of historical data",
+        "1-minute frequency and maintains 3 months of historical data",
+        "1-minute frequency and maintains 15 months of historical data",
+        "5 minutes frequency and maintains 15 months of historical data",
+        "10 minutes frequency and maintains 12 months of historical data"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Basic monitoring in CloudWatch delivers metric data every 5 minutes and retains 15 months of historical data. Detailed monitoring offers 1-minute frequency, but at an additional cost."
+    },
+    {
+      "question": "Which of the following is NOT a benefit of using containers?",
+      "options": [
+        "Repeatable environments",
+        "Self-contained environments",
+        "Faster to launch and stop or terminate than virtual machines",
+        "Software runs the same in different environments",
+        "Containers provide complete isolation from the host operating system"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "While containers offer isolation, they do not provide complete isolation like virtual machines. Containers share the host OS kernel, making them less isolated compared to VMs."
+    },
+    {
+      "question": "Which AWS service enables you to run Kubernetes on AWS?",
+      "options": [
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "Amazon Elastic Container Registry (Amazon ECR)",
+        "AWS Lambda",
+        "Amazon EC2"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Amazon EKS (Elastic Kubernetes Service) is the AWS managed service that allows you to run Kubernetes, an open-source container orchestration platform, on the AWS cloud. Amazon ECS is AWS's own container orchestration service, while ECR is a container registry."
+    },
+    {
+      "question": "Which of the following are valid Amazon EC2 pricing models?",
+      "options": [
+        "On-Demand Instances",
+        "Spot Instances",
+        "Reserved Instances",
+        "Dedicated Instances",
+        "Scheduled Instances"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The valid EC2 pricing models are On-Demand, Spot, Reserved, Dedicated Instances, and Dedicated Hosts. Scheduled Instances is not a recognized EC2 pricing model. Scheduled Reserved Instances are a type of Reserved Instances."
+    },
+    {
+      "question": "What is the key difference between Amazon EC2 and Amazon RDS regarding database management?",
+      "options": [
+        "Amazon EC2 provides a managed database service, while Amazon RDS offers complete control over database configurations.",
+        "Amazon RDS provides a managed database service, while Amazon EC2 offers complete control over database configurations.",
+        "Both Amazon EC2 and Amazon RDS provide managed database services.",
+        "Neither Amazon EC2 nor Amazon RDS provide managed database services.",
+        "Amazon EC2 is suitable for NoSQL databases, while Amazon RDS is suitable for SQL databases."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Amazon RDS is a managed database service, handling tasks like provisioning, patching, and backups. Amazon EC2 allows you to install and manage your own database, providing complete control but requiring more administrative overhead."
+    },
+    {
+      "question": "When should you consider using Spot Instances?",
+      "options": [
+        "For critical applications that cannot tolerate interruptions.",
+        "For applications with flexible start and end times.",
+        "For applications requiring reserved capacity.",
+        "For applications with steady-state workloads.",
+        "For applications requiring dedicated hardware."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Spot Instances are suitable for applications with flexible start and end times because they can be interrupted with a 2-minute notification if the Spot price exceeds your bid. Critical applications needing guaranteed uptime should use On-Demand or Reserved Instances."
+    },
+    {
+      "question": "What is the maximum execution time for a AWS Lambda function?",
+      "options": [
+        "5 minutes",
+        "10 minutes",
+        "15 minutes",
+        "30 minutes",
+        "60 minutes"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The maximum execution time (timeout) for an AWS Lambda function is 15 minutes. This limits the types of workloads that can be effectively run using Lambda."
+    },
+    {
+      "question": "Which of the following best describes the function of Amazon Elastic Container Registry (Amazon ECR)?",
+      "options": [
+        "Orchestrates the running of Docker containers.",
+        "Enables you to run Kubernetes on AWS.",
+        "Provides a fully managed Docker container registry.",
+        "A highly scalable, fast, container management service",
+        "Enables you to build, test, and deploy applications quickly."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Amazon ECR (Elastic Container Registry) is a fully managed Docker container registry that allows developers to store, manage, and deploy Docker container images. ECS orchestrates the containers, and EKS allows you to run Kubernetes."
+    },
+    {
+      "question": "What are some of the benefits of AWS Lambda?",
+      "options": [
+        "Complete control over the underlying operating system.",
+        "Automatic scaling and built-in fault tolerance.",
+        "Pay-per-use pricing model.",
+        "Ability to run long-running processes without timeout limits.",
+        "Direct access to the underlying hardware."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "AWS Lambda offers automatic scaling, built-in fault tolerance, and a pay-per-use pricing model. It's serverless, so you don't manage the OS or hardware. Lambda functions have execution time limits."
+    },
+    {
+      "question": "What is a key benefit of using Dedicated Hosts over other EC2 instance types?",
+      "options": [
+        "Lower cost compared to On-Demand Instances",
+        "Automatic scaling based on demand",
+        "Ability to use existing server-bound software licenses",
+        "Guaranteed instance availability at all times",
+        "Simplified management of underlying hardware"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dedicated Hosts allow you to use your existing server-bound software licenses, as the EC2 instance capacity is fully dedicated to your use. This can lead to cost savings compared to purchasing new licenses."
+    },
+    {
+      "question": "Which of the following is a valid use case for On-Demand Instances?",
+      "options": [
+        "Running applications with flexible start and end times",
+        "Development and testing of applications",
+        "Long-term, predictable workloads",
+        "Applications requiring reserved capacity",
+        "Applications only feasible at very low compute prices"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "On-Demand Instances are well-suited for development and testing because they offer flexibility without long-term commitments. Spot Instances are better for applications with flexible start/end times or low price requirements, while Reserved Instances are preferable for long-term, predictable workloads."
+    }
+  ]
+}
