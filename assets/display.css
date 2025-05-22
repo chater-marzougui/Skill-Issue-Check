@@ -88,6 +88,16 @@ header h1:hover {
     border-radius: 4px;
 }
 
+.btn {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
 
 .btn-answers {
   display: inline-block;
@@ -234,8 +244,7 @@ h1 {
     z-index: 1000;
     top: 100px;
     left: 10px;
-    width: 80%;
-    max-width: 300px;
+    width: fit-content;
 }
 
 .search-box {
@@ -247,10 +256,12 @@ h1 {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: fit-content;
 }
 
 #search-input {
     flex: 1;
+    display: block;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     padding: 12px 15px;

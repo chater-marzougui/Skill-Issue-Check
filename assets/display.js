@@ -3,6 +3,7 @@ let searchResults = [];
 let currentSearchIndex = -1;
 let allQuestions = [];
 let courseList = [];
+let isSearchClosed = false;
 
 fetch('assets/courses/course-list.json')
 .then(response => {
@@ -86,6 +87,7 @@ function setupSearch() {
     const searchInput = document.getElementById('search-input');
     const prevBtn = document.getElementById('prev-result');
     const nextBtn = document.getElementById('next-result');
+    const closeBtn = document.getElementById('close-search');
     
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim().toLowerCase();
@@ -112,6 +114,20 @@ function setupSearch() {
         } else if (e.key === 'Enter' && searchResults.length > 0) {
             e.preventDefault();
             scrollToCurrentResult();
+        }
+    });
+
+    closeBtn.addEventListener('click', () => {
+        isSearchClosed = !isSearchClosed;
+        if (isSearchClosed) {
+            searchInput.value = '';
+            clearSearch();
+            document.getElementById('search-input').style.display = 'none';
+            closeBtn.textContent = '🔍';
+        } else {
+            searchInput.focus();
+            document.getElementById('search-input').style.display = 'block';
+            closeBtn.textContent = '❌';
         }
     });
 }
@@ -436,3 +452,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     pollVisitorCount();
 });
+
+
+function reloadPage() {
+    location.reload();
+}
+
+// Get the image and title elements
+const logo = document.getElementById('logo');
+const title = document.getElementById('title');
+
+// Add click event listeners to reload the page
+logo.addEventListener('click', reloadPage);
+title.addEventListener('click', reloadPage);

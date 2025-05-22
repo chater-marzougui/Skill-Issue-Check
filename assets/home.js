@@ -620,6 +620,18 @@ function renderCourseList(courses) {
     });
 }
 
+function reloadPage() {
+    location.reload();
+}
+
+// Get the image and title elements
+const logo = document.getElementById('logo');
+const title = document.getElementById('title');
+
+// Add click event listeners to reload the page
+logo.addEventListener('click', reloadPage);
+title.addEventListener('click', reloadPage);
+
 window.addEventListener('load', function() {
     loadCoursesFromJSON();
 });
