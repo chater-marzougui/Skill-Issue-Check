@@ -755,7 +755,7 @@
         "il faut définir un adaptateur JCA"
       ],
       "answer": [
-        0
+        2
       ],
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },
@@ -1207,8 +1207,8 @@
         "modélise des instances qui sont observables par d'autres observateurs et s'enregistrent comme observateurs de leurs dépendances"
       ],
       "answer": [
-        1,
-        2
+        2,
+        4
       ],
       "explanation": "Ask MBK, ChatGPT, Google, Deepseek... You won't get it."
     },

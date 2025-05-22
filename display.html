@@ -295,6 +295,56 @@
                 padding: 6px 10px;
             }
         }
+
+        .course-selector {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-top: 120px; /* Account for fixed search container */
+        }
+
+        .selector-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .selector-box label {
+            font-weight: 600;
+            color: #2c3e50;
+            white-space: nowrap;
+        }
+
+        #course-select {
+            flex: 1;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            background: white;
+        }
+
+        #course-select:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .selector-box {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+            
+            .course-selector {
+                margin-top: 140px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -310,6 +360,15 @@
             </div>
         </div>
     </div>
+
+    <div class="course-selector">
+        <div class="selector-box">
+            <label for="course-select">📚 Select Course:</label>
+            <select id="course-select">
+                <option value="">Loading courses...</option>
+            </select>
+        </div>
+    </div>
     
     <div class="stats" id="stats-container"></div>
     
@@ -320,7 +379,78 @@
         let searchResults = [];
         let currentSearchIndex = -1;
         let allQuestions = [];
+        let courseList = [];
         
+        fetch('assets/courses/course-list.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Could not load course list');
+            }
+            return response.json();
+        })
+        .then(data => {
+            courseList = data.courses;
+            populateCourseSelector();
+            // Load default course (exams-kaaniche-nour.json)
+            loadCourse('exams-kaaniche-nour.json');
+        })
+        .catch(error => {
+            console.error('Error loading course list:', error);
+            document.getElementById('course-select').innerHTML = 
+                '<option value="">Error loading courses</option>';
+        });
+
+        function populateCourseSelector() {
+            const select = document.getElementById('course-select');
+            select.innerHTML = '<option value="">Select a course...</option>';
+            
+            courseList.forEach(course => {
+                const option = document.createElement('option');
+                option.value = course.filename;
+                option.textContent = course.name;
+                if (course.filename === 'exams-kaaniche-nour.json') {
+                    option.selected = true;
+                }
+                select.appendChild(option);
+            });
+            
+            // Add change event listener
+            select.addEventListener('change', (e) => {
+                const selectedFile = e.target.value;
+                if (selectedFile) {
+                    loadCourse(selectedFile);
+                } else {
+                    clearQuizDisplay();
+                }
+            });
+        }
+
+        function loadCourse(filename) {
+            // Clear previous data
+            clearQuizDisplay();
+            clearSearch();
+            
+            // Show loading state
+            document.getElementById('quiz-container').innerHTML = 
+                '<div style="text-align: center; color: white; padding: 20px;">Loading course...</div>';
+            
+            fetch(`assets/courses/${filename}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Could not load course: ${filename}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                displayQuiz(data);
+                setupSearch();
+            })
+            .catch(error => {
+                console.error('Error loading quiz data:', error);
+                document.getElementById('quiz-container').innerHTML = 
+                    '<div style="text-align: center; color: white; padding: 20px;">Error loading course data</div>';
+            });
+        }
         fetch('assets/courses/exams-kaaniche-nour.json')
         .then(response => {
             if (!response.ok) {
@@ -337,6 +467,12 @@
             document.getElementById('quiz-container').innerHTML = 
                 '<div style="text-align: center; color: white; padding: 20px;">Error loading quiz data</div>';
         });
+
+        function clearQuizDisplay() {
+            document.getElementById('quiz-container').innerHTML = '';
+            document.getElementById('stats-container').innerHTML = '';
+            allQuestions = [];
+        }
         
         function setupSearch() {
             const searchInput = document.getElementById('search-input');
