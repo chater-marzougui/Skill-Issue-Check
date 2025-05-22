@@ -494,3 +494,33 @@ footer {
 .pass:hover {
     background-color: rgb(117, 117, 18);
 }
+
+.btn-answers {
+  display: inline-block;
+  background-color: #4A90E2;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-answers:hover,
+.btn-answers:focus {
+  background-color: #357ABD;
+  box-shadow: 0 6px 18px rgba(53, 122, 189, 0.5);
+}
+
+.btn-answers:active {
+  background-color: #2C5AA0;
+  box-shadow: 0 2px 6px rgba(44, 90, 160, 0.7);
+  transform: translateY(1px);
+}
+
+.btn-answers:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.6);
+}
