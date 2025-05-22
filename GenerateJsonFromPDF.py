@@ -10,23 +10,26 @@ load_dotenv()
 
 # Configuration
 API_KEY = os.getenv("API_KEY")
-CHUNK_SIZE = 10  # Number of pages per chunk
 model_name = "gemini-2.0-flash"
 
 # Initialize Gemini
 genai.configure(api_key=API_KEY)
 
-def split_pdf_into_chunks(pdf_path, chunk_size=CHUNK_SIZE):
+def split_pdf_into_chunks(pdf_path):
     """Split a PDF into chunks of specified size."""
     print(f"Opening PDF: {pdf_path}")
     try:
         pdf = PdfReader(pdf_path)
         total_pages = len(pdf.pages)
+        chunk_size = total_pages // 3 if total_pages < 100 else total_pages // 10
         print(f"Total pages: {total_pages}")
+        print(f"Chunk size: {chunk_size}")
         
         chunks = []
         for i in range(0, total_pages, chunk_size):
             end_page = min(i + chunk_size, total_pages)
+            if total_pages - end_page < chunk_size:
+                end_page = total_pages 
             chunk_text = ""
             
             print(f"Processing pages {i+1} to {end_page}")
@@ -39,6 +42,9 @@ def split_pdf_into_chunks(pdf_path, chunk_size=CHUNK_SIZE):
                 "end_page": end_page,
                 "text": chunk_text
             })
+            
+            if end_page == total_pages:
+                break
             
         return chunks
     except Exception as e:
@@ -571,6 +577,6 @@ if __name__ == "__main__":
     # Get input from user
     base_folder = './assets/courses/'
     courses_path = 'course-list.json'
-    pdf_path = 'Exams-KAANICHE.pdf'
-    # Process the PDF
-    process_pdf_by_page_with_gemini(pdf_path=pdf_path, base_folder=base_folder, courses_path=courses_path)
+    pdf_path = 'Droit du numérique Partie'
+    for i in range(1, 4):
+        process_pdf_with_gemini(f'{pdf_path} {i}.pdf', base_folder, courses_path)

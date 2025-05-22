@@ -39,6 +39,21 @@
       "id": "8",
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
+    },
+    {
+      "id": "9",
+      "filename": "droit_du_numérique_partie_1.json",
+      "name": "Droit du numérique Partie 1"
+    },
+    {
+      "id": "10",
+      "filename": "droit_du_numérique_partie_2.json",
+      "name": "Droit du numérique Partie 2"
+    },
+    {
+      "id": "11",
+      "filename": "droit_du_numérique_partie_3.json",
+      "name": "Droit du numérique Partie 3"
     }
   ]
 }
