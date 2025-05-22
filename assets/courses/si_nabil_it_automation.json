@@ -1,0 +1,659 @@
+{
+  "Pages (1-10)": [
+    {
+      "question": "Which of the following are benefits of IT automation?",
+      "options": [
+        "Increased errors",
+        "Streamlined workflows",
+        "Reduced errors",
+        "Slower software delivery",
+        "Accelerated software delivery"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "IT automation helps by streamlining workflows, reducing the probability of manual errors, and speeding up the software delivery process."
+    },
+    {
+      "question": "Before automation, what tasks were required to prepare servers?",
+      "options": [
+        "Setup servers",
+        "Configure networking",
+        "Install software",
+        "Write business reports",
+        "Prepare DB"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Prior to IT automation, preparing servers involved tasks like manually setting up servers, configuring the network, installing software, and preparing databases."
+    },
+    {
+      "question": "What is Infrastructure as Code (IaC)?",
+      "options": [
+        "A method of managing physical servers only",
+        "Provisioning infrastructure resources like servers, networks, storage, and security groups through code",
+        "Managing software configurations after deployment",
+        "A technique for manual server configuration",
+        "Automating application development"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "IaC involves provisioning and managing infrastructure components using code, ensuring consistency and repeatability."
+    },
+    {
+      "question": "Which of the following is NOT a key benefit of Infrastructure as Code?",
+      "options": [
+        "Agility",
+        "Efficiency",
+        "Traceability",
+        "Increased manual effort",
+        "Standardization"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "IaC provides benefits such as improved agility, efficiency, and traceability. It reduces manual effort, rather than increasing it."
+    },
+    {
+      "question": "What is Configuration Management (CM)?",
+      "options": [
+        "Managing configurations of existing systems like OS and applications",
+        "Building physical data centers",
+        "Managing software development lifecycle only",
+        "Manually configuring server settings",
+        "Running the software on an OS"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Configuration Management involves managing and maintaining the configurations of systems, including operating systems and applications."
+    },
+    {
+      "question": "What is CI/CD?",
+      "options": [
+        "Continuous Installation / Continuous Delivery",
+        "Continuous Integration / Continuous Deployment",
+        "Streamlining the build and delivery phases of the software lifecycle",
+        "A method for managing only physical servers",
+        "A technique for debugging code"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "CI/CD stands for Continuous Integration and Continuous Deployment. It is a set of practices that automate and streamline the software build and release process."
+    },
+    {
+      "question": "In the context of obtaining desired outcomes with IT automation, what are the two primary ways to drive the automation tool?",
+      "options": [
+        "Using command-line interface (CLI) or API",
+        "Feeding the tool a properly written manifest or pipeline description",
+        "Manually installing each application on every server",
+        "Using only GUI-based tools",
+        "Using a declarative way only"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "IT automation can be driven through low-level approaches like CLI or API, or through high-level methods involving manifest or pipeline descriptions."
+    },
+    {
+      "question": "Which of the following are benefits of Configuration Management?",
+      "options": [
+        "Centralized management",
+        "Decentralized management",
+        "Standardization",
+        "Ad-hoc configuration",
+        "No configuration"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Configuration Management offers benefits such as centralized management for simplified changes and standardization for consistency."
+    },
+    {
+      "question": "What are the example of IT automation tools mentioned in the document?",
+      "options": [
+        "Excel",
+        "Ansible",
+        "Terraform",
+        "Chef",
+        "Word"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "The document mentions tools like Ansible, Terraform, Chef, and others as examples of IT automation tools."
+    },
+    {
+      "question": "What is a declarative approach in the context of infrastructure management?",
+      "options": [
+        "Defining the desired state of the infrastructure",
+        "Specifying the exact steps to achieve the desired state",
+        "Managing infrastructure manually",
+        "Using command-line tools exclusively",
+        "Using only cloud resources"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "In a declarative approach, you define the desired end-state of the infrastructure, and the automation tool figures out how to achieve it."
+    },
+    {
+      "question": "What is a procedural approach in the context of infrastructure management?",
+      "options": [
+        "Defining the desired state of the infrastructure",
+        "Specifying the exact steps to achieve the desired state",
+        "Managing infrastructure manually",
+        "Using command-line tools exclusively",
+        "Using only cloud resources"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In a procedural approach, you define step-by-step instructions to achieve the end-state."
+    },
+    {
+      "question": "According to the 'Tool selection' table, which tool has native support for both CI/CD and Infrastructure as Code(IaC)?",
+      "options": [
+        "Puppet",
+        "Terraform",
+        "Jenkins",
+        "GitLab CI/CD",
+        "Ansible"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Based on the 'Tool selection' table, Ansible has native support for both CI/CD and Infrastructure as Code."
+    },
+    {
+      "question": "Which of the following tool has native support for Configuration Management?",
+      "options": [
+        "Puppet",
+        "Terraform",
+        "Jenkins",
+        "GitLab CI/CD",
+        "AWS CloudFormation"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Based on the 'Tool selection' table, Puppet has native support for Configuration Management."
+    }
+  ],
+  "Pages (11-20)": [
+    {
+      "question": "What is the primary function of Terraform?",
+      "options": [
+        "Code compilation",
+        "Infrastructure as Code (IaC)",
+        "Operating system management",
+        "Software testing",
+        "Virtual machine creation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Terraform's core function is to manage and provision infrastructure using code, automating the process of building, changing, and versioning infrastructure safely and efficiently."
+    },
+    {
+      "question": "Which of the following is a core component of Terraform?",
+      "options": [
+        "TF-Config",
+        "State",
+        "Providers",
+        "Docker",
+        "Ansible"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "TF-Config represents the Terraform configuration files, State tracks the current infrastructure, and Providers allow Terraform to interact with different cloud services or infrastructure platforms."
+    },
+    {
+      "question": "What is the role of the 'terraform.tfstate' file?",
+      "options": [
+        "Stores sensitive information like passwords.",
+        "Keeps track of the current state of managed infrastructure resources.",
+        "Defines the desired state of the infrastructure.",
+        "Specifies the cloud provider to use.",
+        "Contains the main configuration file."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The 'terraform.tfstate' file is crucial for Terraform because it maintains a record of the current state of your infrastructure, allowing Terraform to understand what needs to be created, updated, or destroyed."
+    },
+    {
+      "question": "Where are variables defined in Terraform?",
+      "options": [
+        "outputs.tf",
+        "variables.tf",
+        "state file",
+        "main.tf",
+        "plan.tf"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Variables in Terraform can be declared in either `variables.tf` or directly within `main.tf`. `variables.tf` is often preferred for better organization."
+    },
+    {
+      "question": "What does the 'provider' block in a Terraform configuration file specify?",
+      "options": [
+        "The resources to be created.",
+        "The desired state of the infrastructure.",
+        "The cloud provider or service to be used.",
+        "The modules to be used.",
+        "The variables for Terraform module."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The 'provider' block is essential as it tells Terraform which cloud service (like AWS, Azure, or Google Cloud) or other infrastructure platform will be used to provision resources."
+    },
+    {
+      "question": "What does the term 'plan' refer to in the Terraform workflow?",
+      "options": [
+        "A recipe for building the infrastructure.",
+        "A storage container for infrastructure metadata",
+        "A summary of proposed changes to the infrastructure.",
+        "A cloud platform where instances are created.",
+        "A programming language to manage the infrastructure."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The plan is a critical step in the Terraform workflow that outlines exactly what Terraform will do before making any changes to the infrastructure, allowing for review and confirmation."
+    },
+    {
+      "question": "What is the purpose of an 'outputs.tf' file in Terraform?",
+      "options": [
+        "To define input variables for Terraform configurations.",
+        "To specify the data sources for Terraform configurations.",
+        "To define the output values that Terraform will display after applying the configuration.",
+        "To store the current state of the infrastructure.",
+        "To define the main configurations of infrastructure."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The 'outputs.tf' file allows users to extract and display important information about the infrastructure after it has been created or modified, like IP addresses or resource IDs."
+    },
+    {
+      "question": "Which of the following blocks can be defined inside main.tf file?",
+      "options": [
+        "Resource Blocks",
+        "Data Blocks",
+        "Module Blocks",
+        "Provider Block",
+        "All of the above"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "The `main.tf` file serves as the primary configuration file where various blocks such as Resource, Data, Module and Provider blocks can be defined"
+    },
+    {
+      "question": "What is the purpose of a 'Data block' in Terraform?",
+      "options": [
+        "To store sensitive data.",
+        "To define a reusable module.",
+        "To define an information to use within the configuration.",
+        "To define the resources to be created.",
+        "To define output values."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Data blocks provide read-only access to information required for resource configuration."
+    },
+    {
+      "question": "What is the purpose of Module blocks?",
+      "options": [
+        "To define the providers.",
+        "To create Terraform configurations.",
+        "To define the resources.",
+        "To define a reusable module that encapsulates a set of resources.",
+        "To define output values."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Module blocks define a reusable module that encapsulates a set of resources, and Modules can be used to organize Terraform configurations"
+    }
+  ],
+  "Pages (21-30)": [
+    {
+      "question": "What does the `terraform init` command primarily do?",
+      "options": [
+        "Initializes the Terraform project by downloading necessary provider plugins and setting up the backend.",
+        "Creates the infrastructure defined in the Terraform configuration files.",
+        "Displays the execution plan of the infrastructure changes.",
+        "Applies the changes to the infrastructure.",
+        "Destroys the infrastructure defined in the Terraform configuration files."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "`terraform init` is crucial for setting up a working Terraform environment, including downloading providers and initializing the backend, enabling subsequent commands to function correctly."
+    },
+    {
+      "question": "What file does Terraform create to record provider selections, ensuring consistent behavior across executions?",
+      "options": [
+        "terraform.tfstate",
+        ".terraform.lock.hcl",
+        "main.tf",
+        "variables.tf",
+        "outputs.tf"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Terraform creates a lock file named `.terraform.lock.hcl` to record the exact provider versions used, guaranteeing that subsequent `terraform init` commands will use the same versions by default, ensuring consistency."
+    },
+    {
+      "question": "What command allows you to see the changes Terraform plans to make to your infrastructure?",
+      "options": [
+        "terraform apply",
+        "terraform destroy",
+        "terraform init",
+        "terraform plan",
+        "terraform show"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "`terraform plan` generates an execution plan, showing exactly what changes will be applied to the infrastructure without actually applying them. This is useful for reviewing changes before applying them."
+    },
+    {
+      "question": "What does the `+` symbol indicate in the `terraform plan` output?",
+      "options": [
+        "A resource that will be deleted.",
+        "A resource that will be created.",
+        "A resource that will be modified in place.",
+        "A resource that will be replaced.",
+        "No change to the resource."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In the `terraform plan` output, the `+` symbol indicates that a resource will be created.  Other symbols represent different actions like deletion or modification."
+    },
+    {
+      "question": "If you change modules or backend configuration, what command do you need to run?",
+      "options": [
+        "terraform apply",
+        "terraform destroy",
+        "terraform init",
+        "terraform refresh",
+        "terraform output"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "When modules or backend configurations are changed, `terraform init` must be re-run to reinitialize the working directory with the new configurations."
+    },
+    {
+      "question": "What is a key characteristic of Ansible?",
+      "options": [
+        "It requires an agent to be installed on target machines.",
+        "It uses SSH to access remote machines.",
+        "It only supports Windows-based systems.",
+        "It primarily focuses on monitoring network traffic.",
+        "It requires recompilation after each change."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Ansible is agentless and uses SSH to connect and execute tasks on remote machines, making it easier to deploy and manage configurations."
+    },
+    {
+      "question": "What is an Ansible Inventory?",
+      "options": [
+        "A playbook for configuring network settings.",
+        "A list of variables used in playbooks.",
+        "A file containing a list of managed nodes and their connection details.",
+        "A module for managing user accounts.",
+        "A handler for restarting services."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The Ansible Inventory is a file that lists the managed nodes (hosts) along with information like IP addresses and connection details that Ansible uses to connect to these nodes."
+    },
+    {
+      "question": "What is the purpose of Ansible playbooks?",
+      "options": [
+        "To define individual tasks to be executed on a single node.",
+        "To store user credentials for secure access.",
+        "To define a series of tasks and configurations to be applied to managed nodes.",
+        "To manage and monitor network traffic.",
+        "To perform real-time data analytics."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Ansible playbooks are YAML files that define the desired state of managed nodes through a series of tasks.  They facilitate automation by applying specific configurations and executing commands."
+    },
+    {
+      "question": "Which of the following are examples of Ansible modules?",
+      "options": [
+        "Inventory",
+        "Playbook",
+        "Apt",
+        "Copy",
+        "Service"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "explanation": "`Apt`, `Copy`, and `Service` are all examples of Ansible modules.  Modules are small programs that perform specific tasks, such as managing packages or files."
+    },
+    {
+      "question": "In Ansible, what is the purpose of Handlers?",
+      "options": [
+        "To manage user authentication.",
+        "To define tasks triggered by other tasks, often for restarting services.",
+        "To encrypt sensitive data in playbooks.",
+        "To define variables used in playbooks.",
+        "To manage software packages."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Handlers in Ansible are tasks triggered by other tasks, typically to restart services or perform other actions in response to changes. They ensure that services are restarted only when necessary, optimizing automation processes."
+    },
+    {
+      "question": "Which command is used to execute an Ansible playbook?",
+      "options": [
+        "ansible -m playbook",
+        "ansible-playbook",
+        "ansible -a playbook",
+        "ansible-galaxy install",
+        "ansible-vault create"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The command `ansible-playbook <playbook.yml>` is used to execute a specified Ansible playbook, triggering the series of tasks defined within the playbook."
+    },
+    {
+      "question": "Which command helps you to check syntax errors in a playbook before running it?",
+      "options": [
+        "ansible-playbook --check",
+        "ansible --syntax-check",
+        "ansible-playbook --syntax-check",
+        "ansible-lint",
+        "ansible-test"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The `ansible-playbook --syntax-check <playbook.yml>` command checks a playbook for syntax errors, preventing runtime failures."
+    }
+  ],
+  "Pages (31-40)": [
+    {
+      "question": "Which of the following is the correct definition of Continuous Integration (CI)?",
+      "options": [
+        "A series of steps to deliver a new version of software.",
+        "Developers regularly merge their code changes into a shared repository.",
+        "Automated deployment pipelines deploy code changes to production environments.",
+        "The process of detecting bugs early in the development cycle.",
+        "Automated build and test processes are triggered for every code commit."
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "Continuous Integration involves developers merging code changes regularly into a shared repository and triggering automated build and test processes for each commit."
+    },
+    {
+      "question": "What is the primary goal of Continuous Deployment (CD)?",
+      "options": [
+        "To streamline the development process.",
+        "To merge code changes.",
+        "To automate the deployment of code changes to production environments after passing CI tests.",
+        "To detect and fix bugs early.",
+        "To create new branches."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Continuous Deployment focuses on automating the deployment of code changes to production environments after they have passed through the Continuous Integration (CI) phase."
+    },
+    {
+      "question": "Which of the following are benefits of using Continuous Integration and Continuous Deployment?",
+      "options": [
+        "Faster time to market.",
+        "Increased development costs.",
+        "Reduced risk through early bug detection.",
+        "Slower release cycles.",
+        "Decreased collaboration between developers."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "CI/CD leads to a faster time to market by streamlining development and deployment. It also reduces risk by allowing early detection and fixing of bugs."
+    },
+    {
+      "question": "In a CI/CD workflow, when are automated build and test processes triggered?",
+      "options": [
+        "Only during production deployment.",
+        "For every code commit.",
+        "At the end of the development cycle.",
+        "Only during a code review.",
+        "When the application is running on production."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Automated build and test processes are a core component of CI and are triggered for every code commit to ensure code quality and integration."
+    },
+    {
+      "question": "What is the correct order of steps within Continuous Deployment after Continuous Integration?",
+      "options": [
+        "Build, Test, Deploy",
+        "Review, Merge, Test",
+        "Deploy, Build, Test",
+        "Test, Build, Deploy",
+        "Merge, Build, Test, Deploy"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Following Continuous Integration, where code is built and tested, Continuous Deployment automates the final step of deploying the code to production environments."
+    },
+    {
+      "question": "Which of the following actions are part of a Continuous Integration (CI) process?",
+      "options": [
+        "Creating a new branch",
+        "Merging code changes",
+        "Deploying to production",
+        "Automated testing",
+        "Deploying a review app"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Merging code changes regularly and automated testing are core components of the CI process."
+    },
+    {
+      "question": "What is the outcome of the automated deployment pipelines?",
+      "options": [
+        "Merging code changes to the main branch.",
+        "Detecting bugs in production.",
+        "Deploying code changes to production environments.",
+        "Automating code reviews.",
+        "Reducing development costs"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Automated deployment pipelines are designed to automatically deploy validated code changes to the production environments, as long as the code changes passed the CI tests."
+    },
+    {
+      "question": "Which of the following represents the best description of CI/CD?",
+      "options": [
+        "A software development practice where developers individually test code.",
+        "A set of principles and practices aimed at delivering code changes more frequently and reliably.",
+        "A process where code is deployed manually only after a certain period.",
+        "A method to reduce the frequency of integration and deployment.",
+        "A series of steps to manually configure production environments."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "CI/CD promotes more frequent and reliable code deliveries through automation and established workflows."
+    },
+    {
+      "question": "Which of the following actions happen after pushing code changes in the CI/CD Gitlab workflow?",
+      "options": [
+        "Manual testing",
+        "Automated building",
+        "Review and approval",
+        "Manual deployment",
+        "Creating new branches"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "After the code is pushed, it undergoes automated building and testing. Then it enters a review and approval phase before being merged."
+    },
+    {
+      "question": "Consider a scenario where a critical bug is found in the production environment. How does CI/CD help in this situation?",
+      "options": [
+        "It automatically fixes the bug without any human intervention.",
+        "It provides a streamlined process for quickly deploying a fix to production.",
+        "It prevents bugs from ever reaching the production environment.",
+        "It automatically rolls back to a previous version.",
+        "It ignores the bug until the next major release."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "While CI/CD doesn't magically eliminate bugs, it provides a structured and rapid pathway to deploy fixes to production, minimizing the impact of such issues."
+    }
+  ]
+}

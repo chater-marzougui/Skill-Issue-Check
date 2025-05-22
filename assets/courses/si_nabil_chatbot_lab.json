@@ -1,0 +1,136 @@
+{
+  "Full pdf": [
+    {
+      "question": "What is the main objective of Chatbot Lab 1, as described in the document?",
+      "options": [
+        "To develop a smart chatbot using proprietary APIs of Cloud providers.",
+        "To only use local resources to develop a chatbot.",
+        "To focus on image recognition using cloud APIs.",
+        "To create a simple calculator application."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The document clearly states that the objective is to develop a smart chatbot using proprietary APIs of Cloud providers."
+    },
+    {
+      "question": "Which of the following are mentioned as IaaS (Infrastructure as a Service) components used in developing the chatbot?",
+      "options": [
+        "S3",
+        "Compute Engine",
+        "LLM for text generation",
+        "Vector Database",
+        "LLM for embeddings"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "S3 and Compute Engine are explicitly listed as IaaS components when developing the chatbot."
+    },
+    {
+      "question": "According to the text, which of the following are examples of SaaS (Software as a Service) components?",
+      "options": [
+        "S3",
+        "Compute Engine",
+        "LLM for text generation",
+        "LLM for embeddings",
+        "Vector Database"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "The text mentions LLM for text generation and LLM for embeddings as SaaS components."
+    },
+    {
+      "question": "Which of the following cloud services are used to create embeddings of Chunks?",
+      "options": [
+        "OpenAI",
+        "Amazon Bedrock",
+        "Vertex AI",
+        "Pinecone",
+        "Redis"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The diagram on Cloud services for collecting contextual content show that OpenAI, Amazon Bedrock, and Vertex AI are services used to create embeddings."
+    },
+    {
+      "question": "According to the slides, what is the purpose of using a Vector Database?",
+      "options": [
+        "To store and retrieve text data.",
+        "To store and retrieve image data.",
+        "To store and retrieve vector embeddings.",
+        "To provide computational resources.",
+        "To store raw documents."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Vector databases are specifically designed to store and efficiently retrieve vector embeddings, which are numerical representations of data."
+    },
+    {
+      "question": "What is the role of 'Vectorisation' in the context of collecting contextual content for a chatbot?",
+      "options": [
+        "Storing the documents in their original format.",
+        "Converting documents into vector embeddings.",
+        "Generating text responses for the chatbot.",
+        "Managing user authentication.",
+        "Retrieving similar documents."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "'Vectorisation' is the process of converting documents into vector embeddings, which can then be stored and compared in the vector database."
+    },
+    {
+      "question": "Which of the following elements appear in the chatbot text generation flow?",
+      "options": [
+        "User request",
+        "LLM generated response",
+        "Similarity search",
+        "Prompt: Query +Context",
+        "Vectorisation"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "All of the options appear in the chatbot text generation diagram, starting with a user request, followed by similarity search, prompt construction, LLM response, and finally, the response to the user."
+    },
+    {
+      "question": "What is DBaaS?",
+      "options": [
+        "Database as a Service",
+        "Data Base as a Server",
+        "Data Backbone as a System",
+        "Data Base as a System",
+        "Document Base as a Service"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "DBaaS stands for Database as a Service"
+    },
+    {
+      "question": "According to the slides, What is the final step (number 6) of the text generation process?",
+      "options": [
+        "Prompt: Query +Context-",
+        "Semilarity search",
+        "Get embedding for question",
+        "LLM generated response",
+        "Generated response"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The diagrams indicates that step number 6 in the text generation process is the LLM generated response."
+    }
+  ]
+}

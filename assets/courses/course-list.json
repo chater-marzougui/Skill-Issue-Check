@@ -21,6 +21,26 @@
       "name": "6 Cloud Modules 07 08"
     },
     {
+      "id": "14",
+      "filename": "si_nabil_chatbot_lab.json",
+      "name": "Si Nabil Chatbot Lab"
+    },
+    {
+      "id": "16",
+      "filename": "si_nabil_introduction_to_cloud.json",
+      "name": "Si Nabil Introduction To Cloud"
+    },
+    {
+      "id": "17",
+      "filename": "si_nabil_it_automation.json",
+      "name": "Si Nabil IT Automation"
+    },
+    {
+      "id": "18",
+      "filename": "si_nabil_function_as_a_service.json",
+      "name": "Si Nabil Function as a Service"
+    },
+    {
       "id": "1",
       "filename": "Cloud.json",
       "name": "Cloud Hackathon from INDP2C"

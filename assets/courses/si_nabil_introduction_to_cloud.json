@@ -1,0 +1,662 @@
+{
+  "Pages (1-15)": [
+    {
+      "question": "According to the provided content, which of the following topics are covered in the session?",
+      "options": [
+        "Basic Concepts & Motivations",
+        "Definition of Cloud Computing",
+        "Quantum Computing",
+        "Criteria for selecting a cloud infrastructure",
+        "Advanced Networking Concepts"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "The content list explicitly mentions Basic Concepts & Motivations, Definition of Cloud Computing, and Criteria for selecting a cloud infrastructure as topics covered in the session."
+    },
+    {
+      "question": "In the context of cloud computing, what is a primary motivation for businesses?",
+      "options": [
+        "Maximize infrastructure complexity",
+        "Minimize Total Cost of Ownership (TCO)",
+        "Increase Capital Expenditure (CAPEX)",
+        "Increase Operational Expenditure (OPEX)",
+        "Ignore business evolution"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A key motivation for businesses adopting cloud computing is to minimize the Total Cost of Ownership (TCO), which is the sum of Capital Expenditure (CAPEX) and Operational Expenditure (OPEX)."
+    },
+    {
+      "question": "Which of the following are examples of Capital Expenses (CAPEX)?",
+      "options": [
+        "Acquiring fixed assets",
+        "Paying for electricity",
+        "License fees",
+        "Starting a new business",
+        "Maintenance and repairs"
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "Capital Expenses (CAPEX) include acquiring fixed assets and starting a new business. These are considered investments that create future benefits for the company. Other options are OPEX."
+    },
+    {
+      "question": "Which of the following items can be classified as Operational Expenses (OPEX)?",
+      "options": [
+        "Purchasing computer hardware",
+        "License fees",
+        "Building new infrastructure",
+        "Maintenance and repairs",
+        "Travel Expenses"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "Operational Expenses (OPEX) are ongoing costs such as license fees, maintenance and repairs, and travel expenses. These are incurred during the normal operation of a business."
+    },
+    {
+      "question": "According to the historical timeline presented, in which period did Cloud Computing (IaaS, PaaS, SaaS) emerge?",
+      "options": [
+        "1997/1998",
+        "2007",
+        "2016/2017",
+        "2022",
+        "1990/1991"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The timeline indicates that Cloud Computing (IaaS, PaaS, SaaS) emerged around 2007."
+    },
+    {
+      "question": "According to the provided content, what are the factors the AWS customer can choose when allocating a cloud resource?",
+      "options": [
+        "The hypervisor type.",
+        "The region.",
+        "The availability zone.",
+        "The network speed.",
+        "The storage technology."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "The content explicitly mentions that when allocating a cloud resource on AWS, the customer can choose the region and the availability zone within that region."
+    },
+    {
+      "question": "What is the relationship between Regions and Availability Zones in cloud infrastructure?",
+      "options": [
+        "Regions are separate datacenters inside an Availability Zone.",
+        "Availability Zones are distributed globally.",
+        "Availability Zones are separate datacenters inside a Region.",
+        "Regions are connected with low-latency network links.",
+        "Availability Zones do not have independent infrastructure."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Availability Zones are separate datacenters located within a Region. Each Availability Zone has its independent infrastructure."
+    },
+    {
+      "question": "Why are Regions distributed globally?",
+      "options": [
+        "To reduce the cost of hardware.",
+        "To enable developers to place applications and data in a particular country or region.",
+        "To limit compliance with data privacy laws.",
+        "To reduce operational expenses (OPEX).",
+        "To increase the number of datacenters."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Regions are distributed globally to allow developers to place applications and/or data in a specific country or region, potentially to be closer to customers or to comply with local regulations."
+    },
+    {
+      "question": "What benefits do Availability Zones provide within a region?",
+      "options": [
+        "Increased network latency",
+        "Independent infrastructure for power and cooling",
+        "A single point of failure",
+        "Shared infrastructure with other regions",
+        "Limited data redundancy"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Availability Zones provide independent infrastructure for power and cooling within a region. This ensures high availability and fault tolerance because if one Availability Zone fails, the others can continue to operate."
+    },
+    {
+      "question": "In the context of Total Cost of Ownership (TCO), which of the following statements are correct?",
+      "options": [
+        "TCO is only influenced by CAPEX.",
+        "TCO is the sum of CAPEX and OPEX.",
+        "TCO aims to be maximized in cloud adoption.",
+        "Minimizing TCO is not a factor in cloud computing.",
+        "TCO = OPEX - CAPEX"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Total Cost of Ownership (TCO) is calculated as the sum of Capital Expenditure (CAPEX) and Operational Expenditure (OPEX). A major goal of cloud adoption is to minimize TCO."
+    }
+  ],
+  "Pages (16-30)": [
+    {
+      "question": "According to the Gartner definition, what is a key characteristic of cloud computing?",
+      "options": [
+        "It uses only proprietary technologies.",
+        "It provides massively scalable IT-related capabilities as a service.",
+        "It requires on-premises data centers.",
+        "It's limited to a specific geographic region.",
+        "It is free."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Gartner defines cloud computing as a 'style of computing' providing massively scalable IT-related capabilities 'as a service' utilizing internet technologies."
+    },
+    {
+      "question": "According to ITU-Y3500, what does cloud computing enable in terms of network access?",
+      "options": [
+        "Limited network access to resources.",
+        "Network access to a scalable and elastic pool of shareable resources.",
+        "Restricted access based on user roles.",
+        "No network access is required.",
+        "Only physical access to resources."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ITU-Y3500 defines cloud computing as enabling network access to a scalable and elastic pool of shareable physical or virtual resources, with self-service provisioning."
+    },
+    {
+      "question": "According to IBM, how does a Cloud Services Provider (CSP) typically charge for cloud resources?",
+      "options": [
+        "Based on the number of users only.",
+        "Exclusively through a one-time payment.",
+        "Through a monthly subscription fee or based on actual usage.",
+        "By the server sizes.",
+        "Through the number of API calls."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "IBM defines cloud computing as on-demand access to resources, with CSPs typically charging a monthly subscription fee or billing based on usage."
+    },
+    {
+      "question": "What are the main components of the NIST cloud model?",
+      "options": [
+        "Five essential characteristics, three service models, and four deployment models.",
+        "Two essential characteristics, one service model, and two deployment models.",
+        "Four essential characteristics, two service models, and three deployment models.",
+        "Six essential characteristics, four service models, and five deployment models.",
+        "Seven essential characteristics, five service models, and six deployment models."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "According to the NIST definition, the cloud model is composed of five essential characteristics, three service models, and four deployment models."
+    },
+    {
+      "question": "Which of the following is an essential characteristic of cloud computing according to the NIST definition?",
+      "options": [
+        "On-demand self-service.",
+        "Limited network access.",
+        "Fixed resource allocation.",
+        "Manual metering capability.",
+        "No resource pooling."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "One of the five essential characteristics is 'On-demand self-service', where consumers can unilaterally provision computing capabilities."
+    },
+    {
+      "question": "What is the 'Resource Pooling' characteristic in cloud computing, according to NIST?",
+      "options": [
+        "Each consumer has dedicated resources.",
+        "The provider's computing resources are pooled to serve multiple consumers.",
+        "Resources are allocated based on a fixed schedule.",
+        "Resources are limited to specific geographic locations.",
+        "Resources are allocated to consumers based on a contract."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "'Resource Pooling' signifies that the provider's computing resources are pooled to serve multiple consumers using a multi-tenant model."
+    },
+    {
+      "question": "What does 'Rapid Elasticity' refer to in the context of cloud computing characteristics?",
+      "options": [
+        "Resources are allocated manually.",
+        "Capabilities can be elastically provisioned and released.",
+        "Resources are fixed and cannot be adjusted.",
+        "Resources are provisioned after a long delay.",
+        "The usage is measured by hand."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "'Rapid Elasticity' refers to the ability of cloud capabilities to be elastically provisioned and released, scaling up or down based on demand."
+    },
+    {
+      "question": "Which of the following is a cloud service model?",
+      "options": [
+        "Desktop as a Service (DaaS)",
+        "Software as a Service (SaaS)",
+        "Business Process as a Service (BPaaS)",
+        "Data Center as a Service (DCaaS)",
+        "Security as a Service (SECaaS)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Software as a Service (SaaS), Platform as a Service (PaaS), and Infrastructure as a Service (IaaS) are fundamental cloud computing service models."
+    },
+    {
+      "question": "In the context of Cloud Service Models, which layer is managed by the user in an IaaS model?",
+      "options": [
+        "Application",
+        "Operating System",
+        "Virtualization",
+        "Networking",
+        "Data"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "In IaaS, the user manages the application, data, runtime, middleware, and operating system. The provider manages virtualization, servers, storage, and networking."
+    },
+    {
+      "question": "In Function as a Service (FaaS), what is a key characteristic?",
+      "options": [
+        "Requires manual server provisioning.",
+        "Is always running, regardless of demand.",
+        "Is serverless.",
+        "Scales down the IaaS infrastructure.",
+        "Is stateful."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "FaaS is characterized as serverless, meaning developers don't need to manage servers. It only runs when needed, starting and stopping functions on demand."
+    },
+    {
+      "question": "What does it mean that FaaS (Function as a Service) is stateless?",
+      "options": [
+        "The function runs without a state.",
+        "The function manages the state itself.",
+        "The function uses external resources to manage the state.",
+        "The function manages a limited state.",
+        "The function doesn't store states."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Stateless functions in FaaS use external resources to manage the application's state, allowing for the state to be shared and scaled independently of the function."
+    },
+    {
+      "question": "Which of the following statements accurately reflects the nature of cloud computing in relation to existing technologies?",
+      "options": [
+        "Cloud computing is based on a set of newly invented technologies.",
+        "Cloud computing is a combination of pre-existing technologies matured at different rates.",
+        "Cloud computing is completely unrelated to any previous technologies.",
+        "Cloud computing is a single unified technology.",
+        "Cloud computing is based on a unique hardware."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Cloud computing leverages a variety of pre-existing technologies like virtualization, broadband internet, and advanced processors, which have matured over time."
+    },
+    {
+      "question": "From a non-technical perspective, what is cloud computing described as?",
+      "options": [
+        "A magic tool.",
+        "A way of life.",
+        "A way to deploy your enterprise architecture more productively and cost-effectively.",
+        "A solution for all IT problems.",
+        "A replacement of traditional IT."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "From a non-technical perspective, cloud computing is presented as a tool to improve enterprise architecture deployment, focusing on increased productivity and cost-effectiveness."
+    },
+    {
+      "question": "Which of the following are the main features of Cloud Computing from a technical perspective?",
+      "options": [
+        "Fixed pricing model.",
+        "Virtualization and dynamic scalability on demand.",
+        "Limited scalability.",
+        "Manual provisioning of resources.",
+        "No Web browser consumption."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "CC (Cloud Computing) relies on virtualization and offers dynamic scalability on-demand to handle varying workloads."
+    },
+    {
+      "question": "Which of the following can be considered cloud deployment models?",
+      "options": [
+        "Private Cloud.",
+        "Public Cloud.",
+        "Hybrid Cloud.",
+        "Community Cloud.",
+        "AWS Outpost Cloud"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The main cloud deployment models are Private Cloud, Public Cloud and Hybrid Cloud."
+    }
+  ],
+  "Pages (31-45)": [
+    {
+      "question": "According to the Gartner Magic Quadrant for IaaS, what distinguishes 'Leaders' from other categories?",
+      "options": [
+        "They execute comparatively well today but lack a future-oriented roadmap.",
+        "They focus solely on a small segment of the market.",
+        "They execute comparatively well today and are well-positioned for tomorrow.",
+        "They understand market trends but struggle with consistent execution.",
+        "They do not dominate any market segment."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Leaders in the Gartner Magic Quadrant are defined by their ability to execute effectively in the present and their strategic positioning for the future."
+    },
+    {
+      "question": "What are the core attributes of OpenStack and CloudStack?",
+      "options": [
+        "Primarily designed for PaaS.",
+        "Proprietary cloud-computing platforms.",
+        "Free and open-source cloud-computing software platforms.",
+        "Focused on desktop applications.",
+        "Provide services for managing a Cloud environment on the fly."
+      ],
+      "answer": [
+        2,
+        4
+      ],
+      "explanation": "OpenStack and CloudStack are free and open-source cloud-computing software platforms that can provide services for managing a Cloud environment on the fly, initially designed for IaaS but now offering higher-level services."
+    },
+    {
+      "question": "What services are offered by Exoscale?",
+      "options": [
+        "Only standard VMs.",
+        "Only DBaaS.",
+        "Compute Instances, Object Storage, DNS, Database-as-a-Service (DBaaS), Managed Kubernetes (SKS), and GPU Servers.",
+        "Only Managed Kubernetes.",
+        "Only GPU Servers."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Exoscale offers a comprehensive portfolio of cloud services, including Compute Instances, Object Storage, DNS, DBaaS, Managed Kubernetes, and GPU Servers."
+    },
+    {
+      "question": "According to the document, what are the three primary types of criteria used for cloud selection?",
+      "options": [
+        "Security criteria, performance criteria, compliance criteria.",
+        "Prerequisites criteria (constraints), application requirements (characteristics) criteria, and cost criteria.",
+        "Technical support criteria, geographical location criteria, reputation criteria.",
+        "Scalability criteria, reliability criteria, availability criteria.",
+        "Innovative technologies, environmental impact, cost criteria."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The three main types of cloud selection criteria are prerequisites (constraints), application requirements (characteristics), and cost."
+    },
+    {
+      "question": "In the context of AWS Reserved Instances, what benefits are offered?",
+      "options": [
+        "A fixed instance price for the lifetime of the instance.",
+        "Significant discounts (up to 72%) compared to On-Demand pricing.",
+        "Immediate access to any instance type.",
+        "A capacity reservation when used in a specific Availability Zone.",
+        "Automatic scaling of resources as needed."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "AWS Reserved Instances offer significant discounts on hourly charges and provide a capacity reservation in a specific Availability Zone."
+    },
+    {
+      "question": "What is a key characteristic of GCE's Sustained Use Discounts (SUD)?",
+      "options": [
+        "SUDs are only applicable to specific instance types.",
+        "SUDs offer a maximum discount percentage of either 20% or 30% depending on resource and machine types.",
+        "SUDs accumulate the longer the instances are created on the first day of the month and reset at the end of each month",
+        "SUDs are automatically applied without requiring any commitment.",
+        "SUDs require a upfront payment."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "GCE's Sustained Use Discounts offer a maximum discount percentage of either 20% or 30% depending on the resource and machine types. To take advantage of the full discount, create your VM instances on the first day of the month. Discounts reset at the beginning of each month."
+    },
+    {
+      "question": "Regarding the context of IoT applications, why is the centralized cloud vision becoming unsustainable?",
+      "options": [
+        "Centralized models are the most efficient for managing IoT data.",
+        "The centralised model is doomed to fail.",
+        "Data production is exploding, overwhelming centralized IoT platforms.",
+        "Edge computing is not a viable alternative.",
+        "The edge is already smarter than the cloud."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The rapid increase in data production from IoT devices is overwhelming cloud-based centralized platforms, making them ill-equipped to handle the massive quantities of data."
+    },
+    {
+      "question": "What is the key architectural shift being proposed to address the limitations of centralized IoT cloud platforms?",
+      "options": [
+        "Replacing cloud infrastructure with edge devices.",
+        "Adopting a new model, combining edge and cloud (Cloud Continuum).",
+        "Focusing solely on centralized data processing.",
+        "Limiting the number of connected IoT devices.",
+        "Relying entirely on proprietary cloud solutions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "To overcome the limitations of centralized IoT platforms, a new model is emerging that combines edge computing and cloud resources, often referred to as Cloud Continuum."
+    },
+    {
+      "question": "Which of the following are mentioned as centralized cloud platforms for IoT applications?",
+      "options": [
+        "OpenStack IoT Core",
+        "AWS IoT Core.",
+        "Azure IoT hub.",
+        "Cloud IoT Core (Google).",
+        "Exoscale IoT Core"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "The document mentions AWS IoT Core, Azure IoT hub, and Cloud IoT Core (Google) as examples of centralized cloud platforms for IoT applications."
+    },
+    {
+      "question": "Which of the following statements is correct regarding AWS spot instances?",
+      "options": [
+        "Instances run indefinitely, regardless of market price.",
+        "Mention your Spot Price and if the market rate is less than your Bid, you get your instance",
+        "AWS Spot Instances do not automatically terminate if your Spot Price is more than the current market rate.",
+        "Offer a fixed price that is guaranteed.",
+        "Provide guaranteed capacity at all times."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "You bid for unused EC2 capacity. If the market rate is less than your Bid, you get your instance. Instance automatically terminates if your Spot Price becomes less than the current market rate"
+    }
+  ],
+  "Pages (46-60)": [
+    {
+      "question": "What is the primary purpose of Edge computing?",
+      "options": [
+        "Optimizing applications by moving portions from central nodes to the edge",
+        "Processing data in a centralized data-processing warehouse",
+        "Replacing the cloud entirely",
+        "Increasing latency in data processing",
+        "Limiting computational power"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Edge computing aims to optimize applications by performing computations closer to the data source, reducing the load on central servers and the cloud."
+    },
+    {
+      "question": "Which of the following is a key objective behind Edge computing?",
+      "options": [
+        "To increase traffic between IoT devices and the cloud",
+        "To enhance security",
+        "To keep decision-making further away from IoT devices",
+        "To solely rely on cloud processing",
+        "To create a centralized data warehouse"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "One of the main objectives of Edge computing is to improve security by processing data closer to the source and reducing the risk of data breaches during transmission to the cloud."
+    },
+    {
+      "question": "What are some of the challenges or considerations when implementing Edge computing?",
+      "options": [
+        "Balancing data processing at the edge with central cloud processing",
+        "Moving all algorithms to the edge",
+        "Relying solely on lightweight analytical processes",
+        "Keeping data away from the edge",
+        "Ignoring sophisticated cloud algorithms"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "A key challenge in Edge computing is striking a balance between keeping data and processing at the edge versus bringing it into a central cloud for more complex analysis. The document also highlights a trade-off between sophisticated algorithms in the cloud and lightweight analytical processes at the edge."
+    },
+    {
+      "question": "According to the Edge-To-Cloud concept presented, what are the main actions associated with devices, the edge, and the public cloud, respectively?",
+      "options": [
+        "Devices: Learn, Edge: Decide, Cloud: Act",
+        "Devices: Act, Edge: Decide, Cloud: Learn",
+        "Devices: Decide, Edge: Act, Cloud: Learn",
+        "Devices: Learn, Edge: Act, Cloud: Decide",
+        "Devices: Act, Edge: Learn, Cloud: Decide"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Edge-To-Cloud concept illustrates that devices primarily 'Act,' the edge is responsible for 'Deciding,' and the cloud's main function is to 'Learn' from the processed data. This signifies data acquisition, local processing, and comprehensive analysis respectively."
+    },
+    {
+      "question": "What benefits can 5G networks offer in relation to Edge computing?",
+      "options": [
+        "Reduced bandwidth",
+        "Increased latency",
+        "Latency and bandwidth benefits",
+        "Excluding mobile edge computing",
+        "Slower communication"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Modern 5G networks provide enhanced latency and bandwidth capabilities, which are crucial for efficient data transfer and real-time processing in Edge computing scenarios."
+    },
+    {
+      "question": "Which of the following are potential use cases for AWS Wavelength?",
+      "options": [
+        "Real time gaming",
+        "Data warehousing",
+        "Connected cars",
+        "AR/VR",
+        "ML assisted healthcare"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "explanation": "The document specifically mentions connected cars, AR/VR, ML-assisted healthcare, and real-time gaming as use cases for AWS Wavelength. These applications benefit from the low latency and high bandwidth offered by this infrastructure."
+    },
+    {
+      "question": "Which of the following are components represented in the 'From Cloud to Edge-To-Cloud' diagram?",
+      "options": [
+        "IoT sensors",
+        "The telecommunications network",
+        "Edge devices",
+        "Cloud",
+        "Ethernet cables"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "The diagram explicitly shows IoT sensors, edge devices, and a cloud component, illustrating the data flow and processing hierarchy in an edge-to-cloud architecture."
+    },
+    {
+      "question": "What is the main advantage of processing data near the edge of the network, as described in the context of edge computing?",
+      "options": [
+        "Reduced data transmission costs",
+        "Faster data processing speeds",
+        "Better security",
+        "Centralized data management",
+        "Decreased computation"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Edge computing allows faster data processing speeds, better security and reduced data transmission costs by processing data closer to the source, rather than sending it to a centralized data warehouse."
+    },
+    {
+      "question": "Which of the following are considered edge computing?",
+      "options": [
+        "Centralized data-processing warehouse.",
+        "Service delivery, Computing offload, IoT management, Storage & caching",
+        "A cluster of machines on the cloud.",
+        "All processes handled in a single server",
+        "All processes handled in the IoT sensor itself"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Edge computing involves various services such as delivery, computing offload, IoT management, storage, and caching."
+    },
+    {
+      "question": "What are some of the AWS services mentioned in the document?",
+      "options": [
+        "Azure",
+        "AWS Lambda",
+        "AWS Wavelength",
+        "Google Cloud",
+        "Heroku"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The document specifically mentions AWS Wavelength as an AWS Infrastructure offering optimized for mobile edge computing applications."
+    }
+  ]
+}

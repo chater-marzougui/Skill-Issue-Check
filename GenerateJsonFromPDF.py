@@ -22,6 +22,9 @@ def split_pdf_into_chunks(pdf_path):
         pdf = PdfReader(pdf_path)
         total_pages = len(pdf.pages)
         chunk_size = total_pages // 3 if total_pages < 100 else total_pages // 8
+        chunk_size = max(chunk_size, 1)
+        chunk_size = total_pages if total_pages < 15 else chunk_size
+
         print(f"Total pages: {total_pages}")
         print(f"Chunk size: {chunk_size}")
         
@@ -157,83 +160,6 @@ def split_pdf_pages(pdf_path):
         print(f"Error splitting PDF: {e}")
         return []
 
-
-def get_gemini_response_kaaniche(text, attempts=3, delay=5):
-    """Get response from Gemini with retry logic."""
-    prompt = f"""
-transform the given text and fix typos into a json in this format.
-Use the following JSON format:
-{{
-    "session 1": [
-        {{
-            "question": "question 1",
-            "options": [
-                "option  1",
-                "option  2",
-                "option  3",
-                "option  4",
-                "option  5"
-            ],
-            "answer": [1, 2],
-        }},
-        {{
-            "question": "question 2",
-            "options": [
-                "option  1",
-                "option  2",
-                "option  3",
-                "option  4",
-                "option  5"
-            ],
-            "answer": [0, 3],
-        }},
-    ]
-}}
-Make sure that:
-The answers are zero-indexed.
-Use the same language as the text provided.
-The reply should be in JSON format only, without any additional text or comments.
-The reply should be in the same language as the document.
-Here's the text to analyze:
-{text}
-"""
-    
-    model = genai.GenerativeModel(model_name=model_name)
-    
-    for attempt in range(attempts):
-        try:
-            response = model.generate_content(prompt)
-            # Extract the JSON part from the response
-            response_text = response.text
-            
-            # Find the first { and the last } to extract the JSON object
-            json_start = response_text.find('{')
-            json_end = response_text.rfind('}') + 1
-            
-            if json_start >= 0 and json_end > json_start:
-                json_str = response_text[json_start:json_end]
-                # Parse to validate it's proper JSON
-                try:
-                    json_data = json.loads(json_str)
-                    return json_data
-                except json.JSONDecodeError as e:
-                    print(f"Invalid JSON response (attempt {attempt+1}/{attempts}):\n{json_str}\nError: {e}")
-            else:
-                print(f"No valid JSON found in response (attempt {attempt+1}/{attempts}):\n{response_text}")
-                
-        except Exception as e:
-            print(f"Error calling Gemini API (attempt {attempt+1}/{attempts}): {e}")
-        
-        if attempt < attempts - 1:
-            print(f"Retrying in {delay} seconds...")
-            time.sleep(delay)
-            # Increase delay for next retry
-            delay *= 2
-    
-    print("Failed to get a valid response after multiple attempts")
-    return {"error": "Failed to get a valid response from Gemini"}
-
-
 def get_gemini_response_pdf(text, attempts=3, delay=5):
     """Get response from Gemini with retry logic."""
     prompt = f"""
@@ -353,52 +279,17 @@ def process_pdf_with_gemini(pdf_path, base_folder, courses_path):
     print(f"\nComplete! Saved results to {output_path}")
     print(f"Generated a total of {sum(len(q) for q in all_questions.values())} questions")
     
-def process_kaaniche_with_gemini(text_ls, base_folder, courses_path):
-    """Process PDF with Gemini and save results to a JSON file."""
-    # Generate a default output filename based on the input PDF
-    all_questions = {}
-    i = 0
-    for text in text_ls:
-        print(f"\nProcessing chunk {i+1}/{len(text_ls)}")
-        
-        # Get response from Gemini
-        print(f"Sending text to Gemini (length: {len(text)} characters)")
-        response = get_gemini_response_kaaniche(text)
-        
-        if "error" in response:
-            print(f"Error in chunk {i+1}: {response['error']}")
-            continue
-            
-        # Merge the response with the combined results
-        for section, questions in response.items():
-            section_key = f"{section} (p.{i}-{i+1})"
-            all_questions[section_key] = questions
-            print(f"Added {len(questions)} questions for {section_key}")
-        
-        # Brief pause between API calls
-        if i < len(text_ls) - 1:
-            time.sleep(1)
-        i += 1
-    
-    output_path , course_name = get_paths(pdf_path)
-    # Save the combined results
-    with open(base_folder+output_path, 'w', encoding='utf-8') as f:
-        json.dump(all_questions, f, ensure_ascii=False, indent=2)
-        
-    manage_courses(base_folder+courses_path, new_course_name=course_name, new_course_filename=output_path)
-    
-    print(f"\nComplete! Saved results to {output_path}")
-    print(f"Generated a total of {sum(len(q) for q in all_questions.values())} questions")
-   
-def get_gemini_response_from_page(page, page_number=None, attempts=3, delay=5):
+
+def get_gemini_response_from_page(pages, page_number=None, end_pages_number=None, attempts=3, delay=5):
     """Get response from Gemini with a PDF page as direct input and retry logic."""
     
-    session_name = f"page {page_number}" if page_number else "session 1"
+    session_name = f"Session ({page_number}-{end_pages_number})" if end_pages_number else f"page ({page_number})"
     
     # Convert single page to PDF bytes
-    # Create a new PDF with just this page
+    # Create a new PDF
     output_pdf = PdfWriter()
-    output_pdf.add_page(page)
+    for page in pages:
+        output_pdf.add_page(page)
     
     # Save to bytes buffer
     pdf_buffer = io.BytesIO()
@@ -407,10 +298,16 @@ def get_gemini_response_from_page(page, page_number=None, attempts=3, delay=5):
     pdf_buffer.close()
         
     prompt = f"""
-transform the given PDF page content and fix typos into a json in this format.
+Analyze the provided document in detail and extract the key concepts, definitions, and critical points necessary for a deep understanding of the course. Then, generate multiple-choice questions (MCQs), following the format below:
+Questions should be clear, precise, and relevant to the document's content.
+The answer can have single or multiple answers.
+The correct answer should be indicated with its index in the list.
+Provide a brief yet informative explanation for each answer to reinforce understanding.
+Ensure the questions are hard.
+You will be provided with a PDF file for a single session.
 Use the following JSON format:
 {{
-    "{session_name}": [
+    {session_name}: [
         {{
             "question": "question 1",
             "options": [
@@ -437,11 +334,14 @@ Use the following JSON format:
 }}
 Make sure that:
 The answers are zero-indexed.
-Use the same language as the content provided.
+The questions cover different sections of the document comprehensively.
+The explanations reinforce key learnings and not just repeat the correct answer.
+And be sure to put the answer indexes in different places (Don't repeat the position of the correct answer).
+Don't use phrases like "The document says" or "The text states" in the questions or explanations.
 The reply should be in JSON format only, without any additional text or comments.
 The reply should be in the same language as the document.
-If no multiple choice questions are found, return an empty array for the session.
-The answers are already provided with blue circles.
+Try to make 10-30 questions cover all concepts in the document.
+Here's the document to analyze:
 """
     
     model = genai.GenerativeModel(model_name=model_name)
@@ -497,15 +397,19 @@ def process_pdf_by_page_with_gemini(pdf_path, base_folder, courses_path):
         print("No pages were created. Exiting.")
         return
     
-    print(f"Created {len(pages)} pages")
+    total_pages = len(pages)
+    print(f"Created {total_pages} pages")
+    chunk_size = total_pages // 3 if total_pages < 100 else total_pages // 8
+    chunk_size = min(chunk_size, 15)
+    chunk_size = total_pages if total_pages < 15 else chunk_size
     
     all_questions = {}
     
-    for i, page in enumerate(pages):
-        print(f"\nProcessing page {i+1}/{len(pages)}")
-        
+    for i in range(0, total_pages, chunk_size):
+        print(f"\nProcessing pages {i+1} to {min(i+chunk_size, total_pages)}")
+        to_process_pages = pages[i:i+chunk_size]
         # Get response from Gemini
-        response = get_gemini_response_from_page(page, page_number=i+1)
+        response = get_gemini_response_from_page(to_process_pages, page_number=i+1, end_pages_number=i+chunk_size)
         
         if "error" in response:
             print(f"Error in page {i+1}: {response['error']}")
@@ -582,4 +486,4 @@ if __name__ == "__main__":
         print("No PDF files found")
     else:
         for pdf_file in pdf_files:
-            process_pdf_with_gemini(pdf_file, base_folder, courses_path)
+            process_pdf_by_page_with_gemini(pdf_file, base_folder, courses_path)

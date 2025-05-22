@@ -1,0 +1,959 @@
+{
+  "Session 1 (p.1)": [
+    {
+      "question": "Which of the following are benefits of serverless computing for developers?",
+      "options": [
+        "Increased control over server infrastructure",
+        "Automatic scalability",
+        "No compute cost when idle",
+        "Manual server management",
+        "Zero server ops"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Serverless computing abstracts away server management, offering automatic scalability, no cost for idle resources, and reducing the need for server operations."
+    },
+    {
+      "question": "According to the presentation, under what circumstances is serverless a sub-optimal choice?",
+      "options": [
+        "Event-driven architectures",
+        "Stateful applications",
+        "Short-running tasks",
+        "Microservices",
+        "Number crunching"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "Serverless architectures are less suited for long-running, stateful applications and computationally intensive tasks like number crunching."
+    },
+    {
+      "question": "Which of the following statements about serverless computing are accurate?",
+      "options": [
+        "It eliminates the need for servers entirely.",
+        "It requires developers to manage the underlying servers.",
+        "Servers are abstracted away from the application development process.",
+        "It allows developers to build and run applications without managing servers.",
+        "It is only suitable for stateless applications."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Serverless doesn't mean there are no servers; it means that server management is abstracted away, allowing developers to focus on application logic. It allows developers to build and run applications without managing servers."
+    },
+    {
+      "question": "In the context of FaaS, what does it mean for a function to be stateless?",
+      "options": [
+        "The function does not require any external resources.",
+        "The function is executed in isolation and does not interact with other functions.",
+        "The function does not maintain any internal state between invocations.",
+        "The function cannot access databases or other data stores.",
+        "The function does not use environment variables."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A stateless function does not retain any data between invocations, meaning that each execution is independent and relies on external resources to manage state if needed."
+    },
+    {
+      "question": "According to the presentation, what aspects related to stack implementation decreases in concern (and control) when moving from bare metal to functions?",
+      "options": [
+        "Hardware resources",
+        "Operating system",
+        "Virtualization",
+        "Containers",
+        "Business logic"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "As you move from bare metal to functions, you offload concerns about the underlying hardware, operating system, virtualization, and container management, allowing increased focus on business logic."
+    },
+    {
+      "question": "According to the presentation, what is the time to provision for serverless?",
+      "options": [
+        "Weeks-months",
+        "Minutes",
+        "Seconds-Minutes",
+        "Milliseconds",
+        "Hours"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The presentation states that the time to provision for serverless computing is in milliseconds. This is significantly faster than on-premise, VMs, or containers."
+    },
+    {
+      "question": "What is the charging granularity for serverless computing according to the presentation?",
+      "options": [
+        "CapEx",
+        "Hours",
+        "Minutes",
+        "Blocks of milliseconds",
+        "Monthly subscription"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The presentation clearly indicates that the charging granularity for serverless is in blocks of milliseconds. This means you only pay for the compute time you actually use."
+    },
+    {
+      "question": "According to the presentation, in the context of FaaS programming model, the developer defines a _______ in the function configuration to indicate which method to run?",
+      "options": [
+        "Runtime",
+        "Trigger",
+        "Handler",
+        "API Endpoint",
+        "Event"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The developer defines a handler function within the FaaS configuration to specify the entry point of the code that the runtime should execute when the function is triggered."
+    },
+    {
+      "question": "According to the presentation, what are passed to the handler by the runtime?",
+      "options": [
+        "Data and Configuration",
+        "Event and Context",
+        "Code and Dependencies",
+        "Request and Response",
+        "Input and Output"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The runtime passes two key objects to the handler function: 'Event', which contains the data for processing, and 'Context', which provides information about the invocation, function, and execution environment."
+    },
+    {
+      "question": "According to the presentation, how can you adjust function's behaviour without updating code?",
+      "options": [
+        "By modifying the function's handler",
+        "By using environment variables",
+        "By changing the execution environment",
+        "By updating dependencies",
+        "By recompiling the code"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Environment variables allow configuration adjustments without modifying the code. This is particularly helpful for managing different environments (dev, test, prod) or configuring external dependencies."
+    },
+    {
+      "question": "Which of the following are examples of services that can be configured to trigger a Lambda function, based on the information presented?",
+      "options": [
+        "API Gateway",
+        "AWS IoT",
+        "AWS EC2",
+        "Alexa Skill Kit",
+        "AWS SQS"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "The presentation explicitly mentions that API Gateway, AWS IoT, Alexa Skill Kit and AWS SQS as examples of AWS services can trigger Lambda functions. They are resources or configurations that invoke Lambda function."
+    }
+  ],
+  "Session (16-30): (p.16)": [
+    {
+      "question": "Which of the following are examples of partner event sources that can trigger Lambda functions, as powered by Amazon EventBridge?",
+      "options": [
+        "Atlassian - Opsgenie",
+        "Datadog",
+        "BUIDLhub",
+        "Epsagon",
+        "All of the above"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Atlassian - Opsgenie, Datadog, BUIDLhub and Epsagon are all mentioned as partner event sources that can trigger Lambda functions. Therefore, 'All of the above' is the correct answer."
+    },
+    {
+      "question": "What is the primary role of the Lambda runtime environment?",
+      "options": [
+        "To manage the scaling of Lambda functions automatically",
+        "To provide a language-specific environment for executing the function code",
+        "To define the infrastructure where the function will run",
+        "To handle the deployment of the function code",
+        "To monitor function performance"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Lambda runtime environment provides a language-specific environment that runs in an execution environment, allowing the function code to be executed."
+    },
+    {
+      "question": "When using container images with Lambda, what is a key aspect of including the runtime?",
+      "options": [
+        "The runtime is automatically provided by Lambda.",
+        "You need to include the runtime when building the image.",
+        "The runtime is specified separately in the Lambda configuration.",
+        "The runtime is not required for container images.",
+        "The container images do not support runtimes."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "For container images, you must include the runtime when building the image, ensuring the function has the necessary environment to execute."
+    },
+    {
+      "question": "What happens to the Lambda execution environment after the function runs?",
+      "options": [
+        "It is immediately terminated.",
+        "It is frozen and maintained for a period, anticipating another function invocation.",
+        "It is reset to its initial state.",
+        "It is archived for auditing purposes.",
+        "It gets transferred to another function."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "After the function runs, the Lambda service freezes the execution environment and maintains it for some time in anticipation of another function invocation, potentially reducing cold starts."
+    },
+    {
+      "question": "Which phases are included in the lifecycle of a Lambda execution environment?",
+      "options": [
+        "Init",
+        "Invoke",
+        "Shutdown",
+        "Update",
+        "Extension"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The lifecycle of a Lambda execution environment includes three distinct phases: Init, Invoke, and Shutdown."
+    },
+    {
+      "question": "What are the sub-phases of the Init phase in Lambda's execution environment?",
+      "options": [
+        "Extension Init",
+        "Runtime Init",
+        "Function Init",
+        "Resource Init",
+        "Security Init"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The Init phase is split into three sub-phases: Extension Init, Runtime Init, and Function Init.  These occur either during the first invocation or in advance if provisioned concurrency is enabled."
+    },
+    {
+      "question": "Under what condition is the Shutdown phase triggered in a Lambda execution environment?",
+      "options": [
+        "When the Lambda function is manually terminated.",
+        "When the Lambda function does not receive any invocations for a period.",
+        "After each function invocation.",
+        "When the maximum execution time is reached.",
+        "When there is an error in the function code."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Shutdown phase is triggered if the Lambda function does not receive any invocations for a period of time."
+    },
+    {
+      "question": "What is the main purpose of extensions in AWS Lambda?",
+      "options": [
+        "To enhance the security of Lambda functions.",
+        "To smoothly integrate existing tools with Lambda functions.",
+        "To increase the memory available to Lambda functions.",
+        "To reduce the cost of running Lambda functions.",
+        "To manage the deployment of Lambda functions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Extensions are designed to help smoothly integrate existing tools with Lambda functions, addressing the need to enhance and monitor functions without altering the core code."
+    },
+    {
+      "question": "What are some use-cases for Lambda extensions?",
+      "options": [
+        "Capturing diagnostic information before, during, and after function invocation.",
+        "Fetching configuration settings or secrets before function invocation.",
+        "Increasing the memory allocated to a Lambda function.",
+        "Modifying the function's execution role.",
+        "Implementing custom logging mechanisms."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "Common use-cases for extensions include capturing diagnostic information and fetching configuration settings or secrets before the function invocation."
+    },
+    {
+      "question": "How do external extensions run in relation to the Lambda function?",
+      "options": [
+        "As part of the Lambda function code.",
+        "As a separate process in the execution environment.",
+        "Within the same container as the Lambda function.",
+        "Only before the Lambda function starts.",
+        "Only after the Lambda function finishes."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "An external extension runs as an independent process in the execution environment and continues to run after the function invocation is fully processed."
+    },
+    {
+      "question": "What is a Lambda Layer?",
+      "options": [
+        "A security feature that isolates Lambda functions.",
+        "A .zip file archive that contains additional code or other content.",
+        "A caching mechanism for Lambda functions.",
+        "A load balancer for distributing traffic to Lambda functions.",
+        "A tool for managing Lambda function versions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A Lambda layer is a .zip file archive that can contain additional code or other content, such as libraries and dependencies."
+    },
+    {
+      "question": "How are extensions deployed in AWS Lambda?",
+      "options": [
+        "As a separate Lambda function.",
+        "As Lambda Layers.",
+        "As container images.",
+        "As part of the function code.",
+        "They can not be deployed."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Extensions are deployed as Lambda Layers, which are .zip file archives containing additional code and content."
+    },
+    {
+      "question": "What are the two main types of deployment packages for AWS Lambda?",
+      "options": [
+        "A .zip file and a container image.",
+        "A JAR file and a WAR file.",
+        "A Python script and a Node.js module.",
+        "A configuration file and an executable file.",
+        "A Lambda Layer and a Lambda Extension."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The two main types of deployment packages for AWS Lambda are a .zip file (up to 250 MB) and a container image (up to 10 GB)."
+    },
+    {
+      "question": "What is the maximum size of a .zip file deployment package for Lambda?",
+      "options": [
+        "100 MB",
+        "250 MB",
+        "500 MB",
+        "1 GB",
+        "10 GB"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A .zip file deployment package for Lambda can be up to 250 MB in size."
+    },
+    {
+      "question": "Where are container images stored for AWS Lambda?",
+      "options": [
+        "Amazon S3",
+        "Amazon ECR",
+        "Amazon EBS",
+        "Amazon Glacier",
+        "Locally on the user's machine"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The container image is stored in the Amazon Elastic Container Registry (Amazon ECR). To deploy the image, the user must specify the Amazon ECR image URL."
+    },
+    {
+      "question": "What is a 'qualifier' in the context of AWS Lambda functions?",
+      "options": [
+        "A metric used to measure function performance.",
+        "A tag used to categorize Lambda functions.",
+        "A specification of a version or alias of a function.",
+        "A permission setting that controls access to the function.",
+        "A type of deployment package."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A qualifier is included when invoking or viewing a function to specify a version or alias."
+    },
+    {
+      "question": "What is the difference between a version and an alias in AWS Lambda?",
+      "options": [
+        "A version is mutable, while an alias is immutable.",
+        "A version is immutable, while an alias is a pointer that can be updated.",
+        "A version is used for development, while an alias is used for production.",
+        "A version is automatically created, while an alias must be manually created.",
+        "Versions and aliases can't be used together."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A version is an immutable snapshot of a function's code and configuration, while an alias is a pointer to a version that can be updated to map to a different version."
+    },
+    {
+      "question": "What is a 'destination' in the context of AWS Lambda?",
+      "options": [
+        "The location where the Lambda function code is stored.",
+        "An AWS resource where Lambda can send events from an asynchronous invocation.",
+        "The maximum amount of memory allocated to the Lambda function.",
+        "The network endpoint that triggers the Lambda function.",
+        "A service for debugging Lambda function errors."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A destination is an AWS resource where Lambda can send events from an asynchronous invocation. Destinations can be configured for both successful and failed event processing."
+    },
+    {
+      "question": "What can you configure a destination for?",
+      "options": [
+        "Events that successfully processed",
+        "Events that fail processing",
+        "All events, regardless of processing status",
+        "Only synchronous invocations",
+        "Both successful and failed event processing"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Destinations can be configured for events that fail processing, and some services support destinations for events that are successfully processed."
+    },
+    {
+      "question": "What does 'concurrency' refer to in the context of AWS Lambda?",
+      "options": [
+        "The number of AWS accounts that can access the Lambda function.",
+        "The number of requests that a function is serving at any given time.",
+        "The geographic region where the Lambda function is deployed.",
+        "The programming languages supported by the Lambda function.",
+        "The types of events that can trigger the Lambda function."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Concurrency refers to the number of requests that a Lambda function is serving at any given time."
+    },
+    {
+      "question": "What are the two types of concurrency controls available in AWS Lambda?",
+      "options": [
+        "Automatic concurrency and manual concurrency.",
+        "Reserved concurrency and provisioned concurrency.",
+        "Global concurrency and regional concurrency.",
+        "Synchronous concurrency and asynchronous concurrency.",
+        "Basic Concurrency and Advanced Concurrency"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The two types of concurrency controls in AWS Lambda are reserved concurrency and provisioned concurrency."
+    },
+    {
+      "question": "What is 'reserved concurrency' in AWS Lambda?",
+      "options": [
+        "A guaranteed minimum execution time for the function.",
+        "A guarantee of the maximum number of concurrent instances for the function.",
+        "A reservation of specific IP addresses for the function.",
+        "A reserved amount of storage space for the function's code.",
+        "A pricing plan with reserved compute capacity."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Reserved concurrency guarantees the maximum number of concurrent instances for the function. When a function has reserved concurrency, no other function can use that concurrency."
+    },
+    {
+      "question": "What is 'provisioned concurrency' in AWS Lambda and what is a key characteristic?",
+      "options": [
+        "It initializes a requested number of execution environments, incurring charges to the AWS account",
+        "It dynamically adjusts concurrency based on real-time traffic patterns, avoiding any charges.",
+        "It's a free service guaranteeing a minimum number of concurrent instances for the function",
+        "It isolates the Lambda function within a secure, provisioned network environment.",
+        "It provisions storage space."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Provisioned concurrency initializes a requested number of execution environments so that they are prepared to respond immediately to your function's invocations. This incurs charges to the AWS account."
+    },
+    {
+      "question": "What is the 'cold start' problem in the context of AWS Lambda?",
+      "options": [
+        "A security vulnerability related to outdated function code.",
+        "The delay between the execution of a function after someone invokes it and when it starts running.",
+        "A network connectivity issue that prevents the function from being invoked.",
+        "A resource contention problem that causes the function to fail.",
+        "A delay caused by the function being invoked in a cold geographic region."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Cold start refers to the delay between the execution of a function after someone invokes it, and the time it takes to bring up a new container instance when there are no warm containers available for the request."
+    },
+    {
+      "question": "What are the typical components of a FaaS pricing model?",
+      "options": [
+        "Billing by storage consumed and network bandwidth.",
+        "Billing by resources consumed (execution time x memory) and billing by number of invocations.",
+        "Billing by the number of functions deployed and the number of users accessing the functions.",
+        "Billing by the number of API calls and the complexity of the function code.",
+        "Billing by execution time and the number of function versions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Typical FaaS pricing models have two components: billing by resources consumed (execution time x memory) and billing by the number of invocations. Ingress/egress network traffic is usually billed separately."
+    },
+    {
+      "question": "How does FaaS pricing differ from IaaS or PaaS pricing?",
+      "options": [
+        "FaaS bills for actual resource consumption and the number of invocations, while IaaS/PaaS bills for VM/instance allocation time.",
+        "FaaS is more expensive than IaaS/PaaS.",
+        "IaaS/PaaS bills for actual resource consumption and the number of invocations, while FaaS bills for VM/instance allocation time.",
+        "There's no difference",
+        "FaaS pricing includes all bandwidth costs whereas IaaS and PaaS do not."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "FaaS pricing bills for actual resource consumption and the number of invocations, while IaaS or PaaS pricing typically bills for VM/instance allocation time."
+    }
+  ],
+  "Session (31-45) (p.31)": [
+    {
+      "question": "Which of the following statements accurately describe AWS Step Functions?",
+      "options": [
+        "It is only compatible with Python.",
+        "It is a visual workflow service.",
+        "It can automate processes and orchestrate microservices.",
+        "It is identical to AWS Lambda.",
+        "It can only be used for simple applications."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "AWS Step Functions is indeed a visual workflow service designed to help developers automate processes and orchestrate microservices. It's not limited to Python and is distinct from AWS Lambda."
+    },
+    {
+      "question": "According to the provided material, which services are considered similar to AWS Step Functions?",
+      "options": [
+        "Google Cloud Workflows",
+        "Azure Logic Apps",
+        "AWS Lambda",
+        "Google Compute Engine",
+        "Azure Functions"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "The document explicitly mentions that Google Cloud Workflows and Azure Logic Apps are similar to AWS Step Functions in functionality."
+    },
+    {
+      "question": "In the context of the store checkout process example, what is the role of Lambda functions in AWS Step Functions?",
+      "options": [
+        "To manage the entire workflow from start to finish.",
+        "To perform individual tasks in each step of the process.",
+        "To replace the need for databases.",
+        "To solely handle billing operations.",
+        "To provide a graphical interface for users."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In the example, Lambda functions are used to execute specific tasks within each step of the store checkout process, such as checking inventory, billing customers, and shipping products."
+    },
+    {
+      "question": "In the store checkout example, what happens if billing fails multiple times?",
+      "options": [
+        "The workflow immediately stops.",
+        "The product is automatically shipped anyway.",
+        "The system retries billing with exponential backoff.",
+        "The customer's account is immediately flagged for fraud.",
+        "The task is delegated to another Lambda function."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The billing process in the example includes a retry mechanism with exponential backoff, meaning the system will attempt to bill the customer multiple times before failing, with the delay between attempts increasing each time."
+    },
+    {
+      "question": "What is the purpose of the 'Remove hold' step in the store checkout process example?",
+      "options": [
+        "To permanently reserve the product for the customer.",
+        "To remove the hold on the product if the billing fails.",
+        "To apply a discount to the customer's order.",
+        "To add an additional security check before shipping.",
+        "To confirm the customer's shipping address."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The 'Remove hold' step is an example of exception handling. If the billing process fails (e.g., credit card decline), the system releases the product back into inventory to prevent it from being indefinitely reserved for a failed transaction."
+    },
+    {
+      "question": "According to the document, which of the following are Open Source software for FaaS platforms?",
+      "options": [
+        "OpenFaaS",
+        "Fn Project",
+        "Kubeless",
+        "AWS Lambda",
+        "Azure Functions"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The document lists OpenFaaS, Fn Project, Kubeless and as open-source software options for building Function-as-a-Service platforms. AWS Lambda and Azure Functions are proprietary services offered by AWS and Microsoft, respectively."
+    },
+    {
+      "question": "What role do Docker containers play in many FaaS platforms?",
+      "options": [
+        "They serve as sandboxes for function execution.",
+        "They are used for user authentication.",
+        "They manage network traffic.",
+        "They are used for data storage.",
+        "They provide a graphical user interface."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Many Function-as-a-Service platforms utilize Docker containers to provide isolated environments (sandboxes) for executing functions, ensuring security and portability."
+    },
+    {
+      "question": "What is the core functionality of OpenWhisk?",
+      "options": [
+        "Providing a visual workflow editor.",
+        "Executing functions in response to events.",
+        "Managing server infrastructure.",
+        "Orchestrating microservices.",
+        "Analyzing network traffic."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "OpenWhisk is a serverless platform designed to execute functions in response to events, automating server infrastructure management and scaling tasks."
+    },
+    {
+      "question": "In OpenWhisk's programming model, what are 'Actions'?",
+      "options": [
+        "Visual representations of workflows.",
+        "Stateless functions that run on the OpenWhisk platform.",
+        "Configuration files for server settings.",
+        "Event sources that trigger function executions.",
+        "Rules that define the interaction between triggers and actions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In OpenWhisk, Actions are stateless functions (code snippets) that are designed to be executed in response to events. They encapsulate functional logic and run on the OpenWhisk platform."
+    },
+    {
+      "question": "In OpenWhisk, what is the purpose of 'Rules'?",
+      "options": [
+        "To define the programming language for actions.",
+        "To control access permissions for functions.",
+        "To associate one trigger with one action.",
+        "To create custom APIs.",
+        "To manage network traffic."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Rules in OpenWhisk serve to connect a trigger to an action. When a trigger event occurs, the associated rule ensures that the linked action is invoked. "
+    },
+    {
+      "question": "Which of the following best describes a 'Trigger' in OpenWhisk?",
+      "options": [
+        "A graphical representation of a function.",
+        "A named channel for events sent from Event Sources.",
+        "A data storage mechanism.",
+        "A type of programming language supported by OpenWhisk.",
+        "A tool for monitoring function performance."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A Trigger in OpenWhisk is a named channel for events, acting as a mechanism for event sources to initiate function executions. When an event is sent to a trigger, it can activate associated Actions via Rules."
+    },
+    {
+      "question": "According to the document, what is Dnext?",
+      "options": [
+        "A new programming language.",
+        "A type of database management system.",
+        "A commodity data platform.",
+        "A serverless computing framework.",
+        "A cloud storage solution."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dnext is identified as a commodity data platform designed to collect and utilize data from public and private sources."
+    },
+    {
+      "question": "What is one of the main goals of Project MODIS?",
+      "options": [
+        "Developing new programming languages.",
+        "Creating a new operating system.",
+        "Providing data and using data science for analytical features.",
+        "Building a social media platform.",
+        "Developing new hardware components."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Project MODIS aims to supply data and leverage data science to create unique analytical capabilities, enhancing forecasting abilities and data sharing."
+    },
+    {
+      "question": "Which of the following can be considered a technical goal of Project MODIS?",
+      "options": [
+        "Predicting weather patterns.",
+        "Comparing historical graphs of crop growth.",
+        "Downloading and extracting data from satellite files.",
+        "Determining optimal crop planting times.",
+        "Analyzing market trends for agricultural products."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Project MODIS includes the technical goal of downloading and extracting data from satellite files. This data is then processed to achieve its business objectives."
+    },
+    {
+      "question": "Which platforms can Openwhisk be deployed on?",
+      "options": [
+        "Local",
+        "Cloud",
+        "Docker-compose",
+        "Kubernetes",
+        "All of the above"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Openwhisk can be deployed on local, cloud, docker-compose, ansible, vagrant and kubernetes platforms."
+    }
+  ],
+  "Session (46-60) (p.46)": [
+    {
+      "question": "In the MODIS project context, what initial steps are required to effectively compare crop growth across specific states each year?",
+      "options": [
+        "Directly apply statistical models to satellite images.",
+        "Retrieve pictures from a satellite.",
+        "Extract data pertaining to a specific crop.",
+        "Apply a filter for retrieving data for a state.",
+        "Develop a GUI for end-users without data processing."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "To compare crop growth effectively, you need to start by retrieving satellite imagery, extracting relevant crop data, and filtering the data to focus on specific states. The other options are either too advanced or not directly related to the initial comparison process."
+    },
+    {
+      "question": "What is NDVI (Normalized Difference Vegetation Index) and how does it relate to the MODIS project?",
+      "options": [
+        "A measure of atmospheric pressure, crucial for weather prediction.",
+        "A metric for assessing the healthiness or 'greenness' of vegetation.",
+        "A technique for compressing large image files.",
+        "A satellite positioning system used for accurate data collection.",
+        "It is unrelated to the MODIS project."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "NDVI is a key metric used in the MODIS project to determine the health and density of vegetation, providing essential data for agricultural and environmental monitoring. It serves as a measure for the well being of the plantation."
+    },
+    {
+      "question": "Why are satellite images in the MODIS project divided into 'tiles'?",
+      "options": [
+        "To simplify the process of aligning images from different satellites.",
+        "Because the resolution is too low otherwise.",
+        "Due to the large size of pictures taken by satellites.",
+        "To reduce the amount of storage space needed for each image.",
+        "To make the pictures look better."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Satellite images are split into tiles because their large size makes them unwieldy to process and store as a single unit. This division allows for more efficient data management and processing. The other options are not the primary reasons for tiling."
+    },
+    {
+      "question": "What file format is primarily used for downloading data tiles in the MODIS project, and why is it significant?",
+      "options": [
+        "JPEG, chosen for its small file size and ease of use.",
+        "CSV, used for storing tabular data efficiently.",
+        "HDF (Hierarchical Data Format), a format suitable for storing and organizing large amounts of data.",
+        "TXT, a simple format for storing text-based data.",
+        "XML, a format for encoding documents in a format that is both human-readable and machine-readable."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "HDF is used because it's designed for managing and storing large, complex datasets in a structured manner, which is crucial for the MODIS project's data handling needs. The other options are not designed for handling the scale and complexity of data in MODIS."
+    },
+    {
+      "question": "In the MODIS project's data processing workflow, what is the purpose of applying a 'mask'?",
+      "options": [
+        "To obscure areas of the image that contain sensitive information.",
+        "To keep only the areas where the specific crop is planted.",
+        "To improve the visual clarity of the satellite images.",
+        "To compress the image file size.",
+        "To change the color of the picture."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Applying a mask allows for focusing only on the relevant areas where the crop is planted, eliminating irrelevant data and streamlining subsequent analysis. The irrelevant data is often discarded."
+    },
+    {
+      "question": "What is the key objective when using the 'trust Noise application' with approximately 600 sensors deployed in Carouge?",
+      "options": [
+        "To monitor traffic flow and optimize routes.",
+        "To improve the aesthetic appeal of the area through noise reduction.",
+        "To track individual movements and enhance personal security.",
+        "To assess the trustworthiness of the retrieved data in order to deduce its reliability.",
+        "To study weather patterns."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The main goal is to determine the reliability of the noise data collected by the sensors, ensuring the accuracy and usefulness of the information for further analysis or decision-making. The application serves to asses the quality of data."
+    },
+    {
+      "question": "According to the presentation, what are some of the challenges that must be addressed when working with the Orbiwise noise sensors?",
+      "options": [
+        "Sensor malfunctions.",
+        "Network connectivity problems.",
+        "The need to filter data.",
+        "The need for real-time processing of noise levels in order to filter the data.",
+        "Lack of funding"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Working with Orbiwise noise sensors requires addressing issues such as sensor malfunctions, network connectivity problems, and the need to filter the data. The real time processing isn't something that needs to be considered, but rather the need to filter the data itself."
+    },
+    {
+      "question": "In the context of the Orbiwise noise sensors, what constitutes a 'signature'?",
+      "options": [
+        "The unique serial number of each sensor.",
+        "The context of a sensor (environmental setting, road configuration...).",
+        "A visual representation of the sensor's location on a map.",
+        "A cryptographic key used for secure data transmission.",
+        "The context of a sensor."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A signature represents the context of a sensor, encompassing various factors such as environmental conditions, road layout, and acoustic characteristics, which are important for interpreting the noise data accurately. The data should then match the sensor's \"context\", hence it's important to filter data."
+    },
+    {
+      "question": "What factors define the 'context' of a noise sensor, as described in the presentation?",
+      "options": [
+        "Sensor model and manufacturing date.",
+        "Environmental setting and road configuration.",
+        "Battery level and signal strength.",
+        "Acoustic configurations of the streets, height placement, rush hours.",
+        "Network bandwidth and data latency."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "The context of a noise sensor is determined by factors such as the environmental setting, road configuration, acoustic characteristics of the streets, sensor height, and time-related aspects like rush hours. These elements influence the noise levels recorded by the sensor. Others factors are Weekends vs. working days and Summer vs. Winter."
+    },
+    {
+      "question": "What role does the 'Filtering Interface' play in the Orbiwise noise sensor project?",
+      "options": [
+        "It directly controls the physical calibration of the noise sensors.",
+        "It supports the user in the filtering phase by allowing to choose the data to be used for clustering.",
+        "It provides a real-time display of noise levels across the sensor network.",
+        "It manages the network connectivity of the sensors.",
+        "It is responsible to filter the data that sensors collect."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Filtering Interface helps the user decide which data should be considered for clustering, a key step in identifying and analyzing noise patterns. It is assumed to be a Design Support System."
+    },
+    {
+      "question": "According to the presentation, the filtering interface is assumed to be:",
+      "options": [
+        "A complex AI algorithm.",
+        "A Design Support System.",
+        "A real time system.",
+        "A simple database query.",
+        "A graphical user interface."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The presentation stated that the interface is assumed to be a Design Support System."
+    },
+    {
+      "question": "What are some of the advantages of using Function-as-a-Service (FaaS) for the filtering interface deployment?",
+      "options": [
+        "Low development cost.",
+        "Cost-effectiveness due to only paying for the processing time used.",
+        "Real-time data processing capabilities.",
+        "Automatic scaling to handle varying workloads.",
+        "Simplicity."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Using FaaS offers cost-effectiveness and scalability, as resources are only consumed when the functions are running. This is particularly beneficial for handling fluctuating workloads efficiently and only using large instances when needed."
+    },
+    {
+      "question": "In the context of FaaS deployment for the filtering interface, which step involves reading the CSV file?",
+      "options": [
+        "init",
+        "calculate_references",
+        "calculate_temporal_param",
+        "filter",
+        "merge"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The 'init' step is responsible for reading the CSV file, which likely contains the initial configuration or data needed for subsequent processing by the filtering interface."
+    },
+    {
+      "question": "In the described FaaS deployment for the filtering interface, what does the parameter \"concurrency\" refer to in steps (2) and (3)?",
+      "options": [
+        "The number of sensors that the function can interact with simultaneously.",
+        "The number of instances of the function that can run in parallel.",
+        "The data transfer rate between the filtering interface and the database.",
+        "The time interval between successive function executions.",
+        "The number of users using the filtering interface at the same time."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "\"Concurrency\" in steps (2) and (3) refers to the number of function instances running in parallel. This allows for faster and more efficient processing of the data, especially when dealing with large datasets or complex calculations."
+    }
+  ]
+}
