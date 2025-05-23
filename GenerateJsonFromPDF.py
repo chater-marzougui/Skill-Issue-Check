@@ -224,61 +224,50 @@ def get_gemini_response_from_page(pages, page_number=None, end_pages_number=None
     pdf_buffer.close()
         
     prompt = f"""
-Analyze the provided cryptography course document in detail and extract the key concepts, definitions, and critical points. Based on this analysis, create realistic scenario-based exam questions for a cryptanalyst that demonstrate deep understanding of cryptographic principles.
-
-Focus primarily on these core concepts from the course material:
-1. Basic security properties (confidentiality, integrity, authentication, and non-repudiation)
-2. Differences between ECB and CBC modes in symmetric cryptosystems
-3. Brute force attacks against symmetric cryptosystems (key size n requires 2^n operations)
-
-Generate challenging real-world scenarios where students must evaluate security requirements and recommend optimal cryptographic solutions. Each scenario should present a realistic situation that a cryptanalyst might encounter in practice.
-
+Analyze the provided document in detail and extract the key concepts, definitions, and critical points necessary for a deep understanding of the course. Then, generate multiple-choice questions (MCQs), following the format below:
+Questions should be clear, precise, and relevant to the document's content.
+The answer can have single or multiple answers.
+The correct answer should be indicated with its index in the list.
+Provide a brief yet informative explanation for each answer to reinforce understanding.
+Ensure the questions are hard.
+You will be provided with a PDF file for a single session.
 Use the following JSON format:
 {{
-    "{session_name} cryptography_scenarios": [
+    {session_name}: [
         {{
-            "scenario": "A detailed real-world situation requiring cryptographic analysis based on the document content",
+            "question": "question 1",
             "options": [
-                "solution option 1",
-                "solution option 2", 
-                "solution option 3",
-                "solution option 4",
-                "solution option 5"
+                "option  1",
+                "option  2",
+                "option  3",
+                "option  4",
+                "option  5"
             ],
             "answer": [1, 2],
-            "explanation": "Detailed explanation of why this solution is optimal, covering the cryptographic principles from the document"
         }},
         {{
-            "scenario": "Another challenging scenario derived from the course material",
+            "question": "question 2",
             "options": [
-                "solution option 1",
-                "solution option 2",
-                "solution option 3", 
-                "solution option 4",
-                "solution option 5"
+                "option  1",
+                "option  2",
+                "option  3",
+                "option  4",
+                "option  5"
             ],
             "answer": [0, 3],
-            "explanation": "Comprehensive explanation reinforcing key cryptographic concepts from the document"
-        }}
+        }},
     ]
 }}
-
-Requirements:
-- Base all scenarios on concepts and examples from the provided document
-- Scenarios must be realistic and applicable to real-world cryptographic challenges
-- Solutions should demonstrate deep understanding of the document's core concepts
-- Answer indexes are zero-based and should vary in position across questions
-- Explanations must provide technical reasoning based on the document content
-- Include scenarios covering attack vectors, mode selection, and security property analysis
-- Generate 15-25 scenarios covering all major concepts from the document
-- Focus on practical decision-making a cryptanalyst would face
-- Avoid phrases like "the document states" or "according to the material"
-- Ensure scenarios test understanding of theoretical concepts through practical application
-
-The response should be in JSON format only, without additional text or comments.
-The response should be in the same language as the document.
-
-Here's the cryptography course document to analyze:
+Make sure that:
+The answers are zero-indexed.
+The questions cover different sections of the document comprehensively.
+The explanations reinforce key learnings and not just repeat the correct answer.
+And be sure to put the answer indexes in different places (Don't repeat the position of the correct answer).
+Don't use phrases like "The document says" or "The text states" in the questions or explanations.
+The reply should be in JSON format only, without any additional text or comments.
+The reply should be in the same language as the document.
+Try to make 10-30 questions cover all concepts in the document.
+Here's the document to analyze:
 """
     
     model = genai.GenerativeModel(model_name=model_name)
