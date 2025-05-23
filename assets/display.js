@@ -252,12 +252,14 @@ function handleKeydown(e) {
     let questions = document.getElementById('quiz-container').querySelectorAll('.question-container');
     switch(e.key) {
         case 'ArrowLeft':
+            e.preventDefault();
             currentElement -= currentElement - 1 < 0 ? 0 : 1;
-            scrollToElement(questions[currentElement - 1]);
+            scrollToElement(questions[currentElement]);
             break;
         case 'ArrowRight':
+            e.preventDefault();
             currentElement += currentElement + 1 >= questions.length ? 0 : 1;
-            scrollToElement(questions[currentElement + 1]);
+            scrollToElement(questions[currentElement]);
             break;
     }
 }
