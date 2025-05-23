@@ -1,6 +1,16 @@
 {
   "courses": [
     {
+      "id": "19",
+      "filename": "crypto_supcom_ch1.json",
+      "name": "Crypto Supcom"
+    },
+    {
+      "id": "20",
+      "filename": "crypto_supcom_situations.json",
+      "name": "Crypto Supcom Situations"
+    },
+    {
       "id": "9",
       "filename": "3_cloud_cours.json",
       "name": "3 Cloud Cours"
@@ -74,11 +84,6 @@
       "id": "8",
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
-    },
-    {
-      "id": "19",
-      "filename": "crypto_supcom_ch1.json",
-      "name": "Crypto Supcom"
     }
   ]
 }

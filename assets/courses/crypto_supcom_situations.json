@@ -1,0 +1,1551 @@
+{
+  "Session (1-15) cryptography_scenarios (p.1)": [
+    {
+      "scenario": "A hospital stores patient records on a server. Due to a configuration error, records are now accessible to anyone on the local network. Which security property is most critically violated?",
+      "options": [
+        "Integrity",
+        "Authentication",
+        "Confidentiality",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Confidentiality is the primary security property violated when data is accessed by unauthorized parties. While integrity might also be a concern, unauthorized access directly breaks confidentiality."
+    },
+    {
+      "scenario": "An online retailer uses a block cipher in ECB mode to encrypt customer credit card numbers stored in their database. An attacker discovers that many customers have identical prefixes in their credit card numbers (e.g., same bank). What vulnerability is introduced by this implementation?",
+      "options": [
+        "Initialization Vector reuse allows for predictable patterns.",
+        "Identical plaintext blocks will result in identical ciphertext blocks, revealing information about the data.",
+        "Key exhaustion becomes significantly easier due to repetitive encryption.",
+        "The algorithm is susceptible to known-plaintext attacks.",
+        "There is no vulnerability because block ciphers provide sufficient security."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ECB mode encrypts identical plaintext blocks to identical ciphertext blocks. Repeated prefixes in credit card numbers lead to repeating patterns in the ciphertext, allowing an attacker to potentially identify and decrypt other credit card numbers with the same prefix without knowing the key."
+    },
+    {
+      "scenario": "A company uses a symmetric encryption algorithm with a 56-bit key to protect sensitive internal documents. Considering the current computing power available, what is the most likely attack vector against this system?",
+      "options": [
+        "Differential Cryptanalysis",
+        "Linear Cryptanalysis",
+        "Brute-force attack",
+        "Man-in-the-middle attack",
+        "Known-plaintext attack"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A 56-bit key is vulnerable to a brute-force attack. With modern computing resources, 2^56 possible keys can be tested relatively quickly, making this the most probable attack vector."
+    },
+    {
+      "scenario": "A messaging app developer is choosing between ECB and CBC mode for encrypting messages. The messages are variable in length, and some contain repeating patterns. Which mode of operation is more suitable to prevent pattern analysis in the ciphertext and why?",
+      "options": [
+        "ECB mode, as it is simpler to implement.",
+        "CBC mode, as it XORs each plaintext block with the previous ciphertext block.",
+        "ECB mode, as it encrypts each block independently.",
+        "Both modes are equally secure against pattern analysis.",
+        "Neither mode is suitable, and a stream cipher should be used."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "CBC mode is more suitable. By XORing each plaintext block with the previous ciphertext block, CBC mode introduces dependency between blocks. This prevents identical plaintext blocks from producing identical ciphertext blocks, thus hindering pattern analysis."
+    },
+    {
+      "scenario": "A government agency needs to ensure that digitally signed documents are authentic and cannot be altered without detection. Which security property is most important in this scenario?",
+      "options": [
+        "Confidentiality",
+        "Authentication",
+        "Integrity",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Integrity ensures the document hasn't been tampered with, and non-repudiation prevents the sender from denying they signed the document. Authentication is also important to confirm the identity of the signer, but primarily, maintaining integrity and accountability (non-repudiation) of the document is paramount."
+    },
+    {
+      "scenario": "An attacker intercepts a ciphertext encrypted with AES using CBC mode. They know the initialization vector (IV) and a segment of the plaintext. Can this information be used to decrypt other parts of the ciphertext without the key?",
+      "options": [
+        "Yes, the IV directly decrypts the first block.",
+        "No, the key is still required to decrypt any part of the ciphertext.",
+        "Yes, the known plaintext can be used to derive the key.",
+        "Yes, knowing the IV and a segment of the plaintext allows direct decryption of subsequent blocks.",
+        "No, CBC mode guarantees perfect secrecy."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "No, the key is essential for decryption in CBC mode. Knowing the IV and a portion of plaintext might facilitate certain attacks, such as padding oracle attacks (which are outside of this document's scope), but direct decryption without the key is not possible."
+    },
+    {
+      "scenario": "A company decides to increase security by doubling the key size of their current symmetric encryption algorithm from 64 bits to 128 bits. How does this affect the complexity of a brute-force attack?",
+      "options": [
+        "It doubles the number of operations required.",
+        "It increases the number of operations by a factor of 2^64.",
+        "It halves the number of operations required.",
+        "It reduces the number of operations to 1/2^64.",
+        "It makes a brute-force attack infeasible."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A brute-force attack against a symmetric encryption algorithm with a key size of *n* requires 2^*n* operations. Increasing the key size from 64 bits to 128 bits increases the attack complexity from 2^64 operations to 2^128 operations, a factor of 2^(128-64) = 2^64."
+    },
+    {
+      "scenario": "A secure email system uses encryption. An attacker is able to read encrypted email messages, but cannot determine the sender or receiver. Which security property is maintained in this scenario?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Confidentiality is maintained because the content of the email messages remains unreadable to the attacker. Other properties such as authentication (sender/receiver) are compromised."
+    },
+    {
+      "scenario": "A company uses a password hashing algorithm to store user passwords. An attacker gains access to the password database. Which security property is most critical to protect against password disclosure?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Non-repudiation",
+        "Authentication"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Confidentiality of the passwords themselves is paramount. The hashing algorithm aims to make it computationally infeasible for the attacker to derive the original passwords from the stored hashes."
+    },
+    {
+      "scenario": "A file-sharing service uses symmetric encryption to protect user files. They choose ECB mode for its simplicity. What potential security risk does this choice introduce?",
+      "options": [
+        "Increased vulnerability to differential cryptanalysis.",
+        "Susceptibility to bit-flipping attacks.",
+        "Vulnerability to chosen-ciphertext attacks.",
+        "Exposure of patterns in the plaintext due to identical block encryption.",
+        "Reduced performance compared to other modes."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "ECB mode encrypts each block independently. If a file contains repeating blocks of data (e.g., large areas of the same color in an image), these blocks will be encrypted to the same ciphertext, revealing patterns in the original file. This can provide significant information to an attacker."
+    },
+    {
+      "scenario": "A bank is implementing a system for securely transferring money between accounts. They need to ensure that the transaction cannot be altered in transit. Which security property is the most critical for this requirement?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Integrity ensures that the transaction data remains unchanged during transit. If the data is altered, the system should be able to detect this and reject the transaction."
+    },
+    {
+      "scenario": "A secure communication channel is being established. An attacker wants to impersonate one of the parties. What security property is most important to prevent this?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Authentication is essential to verify the identity of each party involved in the communication. This ensures that the attacker cannot successfully impersonate anyone."
+    },
+    {
+      "scenario": "An e-commerce platform requires customers to acknowledge their purchases to avoid disputes. Which security property is most important for this requirement?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Non-repudiation ensures that a customer cannot deny having made a purchase. This is typically achieved using digital signatures, which bind the customer's identity to the transaction in a way that they cannot later credibly deny."
+    },
+    {
+      "scenario": "An embedded system uses a symmetric cipher with a 40-bit key due to resource constraints. What is the primary concern regarding the security of this system?",
+      "options": [
+        "Vulnerability to side-channel attacks.",
+        "Susceptibility to brute-force attacks given the key size.",
+        "Lack of authenticated encryption.",
+        "Limited computational performance.",
+        "Inability to support CBC mode."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A 40-bit key is extremely vulnerable to brute-force attacks, even with limited computing power. An attacker can test all possible keys in a relatively short amount of time, rendering the encryption ineffective."
+    },
+    {
+      "scenario": "A database containing health records is encrypted using a symmetric cipher. An attacker successfully recovers the decryption key. Which security property has been directly violated?",
+      "options": [
+        "Integrity",
+        "Authentication",
+        "Confidentiality",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The primary security property compromised is confidentiality. With the decryption key, the attacker can access the sensitive health records, violating the intended secrecy of the data."
+    },
+    {
+      "scenario": "A company uses a block cipher in CBC mode to encrypt data stored on hard drives. However, they reuse the same initialization vector (IV) for multiple encryption operations. What potential security issue arises from this practice?",
+      "options": [
+        "It weakens the encryption and can lead to plaintext recovery if two ciphertexts are encrypted using the same key and IV.",
+        "It doesn't matter if the IV is reused if the key is strong enough.",
+        "It increases the risk of dictionary attacks.",
+        "It improves encryption performance.",
+        "It makes the system more resistant to brute-force attacks."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Reusing the same IV with the same key in CBC mode compromises confidentiality. If two plaintexts are encrypted with the same key and IV, the XORing of the IV with the first plaintext block becomes predictable, potentially allowing an attacker to derive information about the plaintext."
+    },
+    {
+      "scenario": "An employee sends digitally signed documents but later claims their private key was stolen and they didn't send the documents. Which security property is challenged in this scenario?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Non-repudiation",
+        "Authentication"
+      ],
+      "answer": [
+        3,
+        4
+      ],
+      "explanation": "This scenario challenges non-repudiation and authentication. If the private key was indeed stolen, the sender can convincingly deny sending the documents. Authentication comes into play in determining if the key usage was authorized or the result of a compromise."
+    },
+    {
+      "scenario": "A web application encrypts session cookies using a block cipher in ECB mode. Usernames are embedded in the cookies. What is the most critical vulnerability introduced by using ECB mode here?",
+      "options": [
+        "Cookies will be larger in size compared to CBC mode.",
+        "An attacker can potentially swap cookies between users if they have the same username prefix.",
+        "It makes the system vulnerable to replay attacks.",
+        "It increases computational overhead on the server.",
+        "It reduces the entropy of the encryption."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "If usernames have common prefixes, the corresponding blocks in the ECB-encrypted cookies will be identical. An attacker can then potentially swap cookies between users with the same username prefix, gaining unauthorized access to other accounts."
+    },
+    {
+      "scenario": "A system uses AES-128 for encryption. An attacker discovers a vulnerability that allows them to test 2^40 keys per second. How long would it theoretically take the attacker to brute-force the key?",
+      "options": [
+        "Approximately 5.4 years",
+        "Approximately 3.8 x 10^-12 years",
+        "Approximately 1,079,028,341 years",
+        "Approximately 1 second",
+        "Brute-force is impossible"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "AES-128 has a keyspace of 2^128. If the attacker can test 2^40 keys per second, it would take 2^(128-40) = 2^88 seconds. Calculating: 2^88 seconds / (60 seconds/minute * 60 minutes/hour * 24 hours/day * 365 days/year) ≈ 5.4 years"
+    }
+  ],
+  "Session (16-30) cryptography_scenarios (p.16)": [
+    {
+      "scenario": "A hospital uses Electronic Health Records (EHRs) stored on a centralized server. They need to ensure that only authorized doctors and nurses can access patient data, and that the data cannot be tampered with during transmission or storage. Which security properties are most critical in this scenario?",
+      "options": [
+        "Confidentiality and Availability",
+        "Integrity and Availability",
+        "Confidentiality and Integrity",
+        "Authenticity and Non-Repudiation",
+        "Availability and Non-Repudiation"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Confidentiality is crucial to prevent unauthorized access to patient data. Integrity is also vital to ensure that the EHRs are not altered or corrupted, which could lead to misdiagnosis or incorrect treatment. Authenticity would also play a role ensuring the user accessing the EHR is legitimate."
+    },
+    {
+      "scenario": "An online banking system encrypts customer account data using a symmetric block cipher. However, they are experiencing performance issues during peak hours. Which encryption mode would provide a faster encryption speed while still providing an acceptable level of security assuming all blocks are independent?",
+      "options": [
+        "Electronic Codebook (ECB)",
+        "Cipher Block Chaining (CBC)",
+        "Counter (CTR)",
+        "Galois/Counter Mode (GCM)",
+        "Cipher Feedback (CFB)"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "ECB mode encrypts each block independently, allowing for parallel processing and faster encryption speeds. While ECB is susceptible to certain attacks if patterns exist in the data, its speed is advantageous when performance is paramount, and patterns are controlled. CBC introduces dependencies between blocks, slowing down the encryption process."
+    },
+    {
+      "scenario": "A company uses a symmetric cipher with a 64-bit key to protect sensitive internal documents. An attacker has gained access to a large amount of ciphertext and has the computational resources to perform brute-force attacks. How many operations are required to break this cipher by trying all possible keys?",
+      "options": [
+        "2^32",
+        "2^56",
+        "2^64",
+        "2^128",
+        "2^256"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "With a 64-bit key, a brute-force attack would require trying all possible key combinations.  This means the attacker would need to perform approximately 2^64 operations to exhaustively search the key space."
+    },
+    {
+      "scenario": "A small business is using ECB mode encryption with a symmetric key algorithm to store images of product designs. They are concerned about potential security vulnerabilities. What is the primary risk associated with using ECB mode in this scenario?",
+      "options": [
+        "ECB mode is computationally expensive.",
+        "ECB mode does not provide confidentiality.",
+        "ECB mode is vulnerable to chosen-ciphertext attacks.",
+        "Identical plaintext blocks will produce identical ciphertext blocks, revealing patterns in the images.",
+        "ECB mode is susceptible to bit-flipping attacks."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "ECB mode encrypts each block independently, which means identical plaintext blocks will result in identical ciphertext blocks. This can reveal patterns in the encrypted images, making them vulnerable to analysis and potential decryption. Other modes like CBC introduce dependencies between blocks, mitigating this risk."
+    },
+    {
+      "scenario": "A messaging application aims to provide end-to-end encryption for its users.  They want to ensure that messages cannot be read by anyone other than the intended recipient, and that the sender cannot deny having sent the message. Which of the following security properties must be implemented?",
+      "options": [
+        "Confidentiality and Integrity",
+        "Authenticity and Availability",
+        "Confidentiality and Non-Repudiation",
+        "Integrity and Non-Repudiation",
+        "Authenticity and Integrity"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Confidentiality ensures that the message content is protected from unauthorized access. Non-repudiation ensures that the sender cannot deny sending the message, which may require the use of digital signatures. Authentication ensures the identity of the sender."
+    },
+    {
+      "scenario": "An attacker discovers that a system is using DES (Data Encryption Standard) with a 56-bit key. Considering modern computing power, what is the most likely outcome if the attacker attempts a brute-force attack?",
+      "options": [
+        "The attacker will be unable to crack the encryption due to the complexity of DES.",
+        "The attacker can crack the encryption in a reasonable amount of time using readily available computing resources.",
+        "The attacker will need specialized hardware and years of computation to crack the encryption.",
+        "The attacker can crack the encryption in seconds.",
+        "The attacker can only crack the encryption with insider knowledge."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "DES uses a 56-bit key, which is considered too short for modern security standards. Given the available computing power, a brute-force attack on DES can be completed in a reasonable amount of time, making it insecure. As the course content specified, DES has been broken."
+    },
+    {
+      "scenario": "A database containing customer credit card information is encrypted using a symmetric block cipher in ECB mode. An attacker manages to obtain a copy of the encrypted database. What specific vulnerability of ECB mode poses the greatest risk in this scenario?",
+      "options": [
+        "The lack of error propagation.",
+        "The susceptibility to padding oracle attacks.",
+        "The identical encryption of identical plaintext blocks.",
+        "The requirement for initialization vectors.",
+        "The vulnerability to timing attacks."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "ECB mode's most significant vulnerability is that identical plaintext blocks are encrypted into identical ciphertext blocks. This allows an attacker to identify repeating patterns in the encrypted credit card data, potentially revealing sensitive information even without knowing the encryption key."
+    },
+    {
+      "scenario": "A secure messaging app implements forward secrecy using Diffie-Hellman key exchange to generate a new symmetric key for each session. An attacker records all encrypted messages. If the attacker later compromises the server's private key (used for authentication but not for encrypting the messages themselves), can they decrypt the previously recorded messages?",
+      "options": [
+        "Yes, compromising the server's private key allows decryption of all past messages.",
+        "No, forward secrecy ensures that past messages remain secure even if the server's private key is compromised.",
+        "Only messages sent after the key compromise can be decrypted.",
+        "Only messages sent before the key compromise can be decrypted.",
+        "It depends on whether the app uses perfect forward secrecy."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Forward secrecy, as implemented by Diffie-Hellman key exchange in this scenario, ensures that the compromise of a key (in this case, the server's private key) does not compromise past session keys. Since a new symmetric key is generated for each session using Diffie-Hellman, compromising the server's key, which is only used for authentication, will not allow decryption of previously recorded messages."
+    },
+    {
+      "scenario": "A company decides to switch from DES to AES (Advanced Encryption Standard) with a 128-bit key to improve security. How does the key space of AES compared to DES affect the feasibility of a brute-force attack?",
+      "options": [
+        "AES is slightly harder to break by brute force than DES.",
+        "AES is equally as difficult to break by brute force as DES.",
+        "AES is significantly easier to break by brute force than DES.",
+        "AES is significantly harder to break by brute force than DES.",
+        "AES is impossible to break by brute force."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "DES uses a 56-bit key, while AES with a 128-bit key uses a key that is 2^(128-56) = 2^72 times larger. This means that a brute-force attack on AES with a 128-bit key would require approximately 2^72 times more computational power than a brute-force attack on DES, making AES significantly harder to break."
+    },
+    {
+      "scenario": "A file server uses a symmetric cipher in CBC mode to encrypt files. A user reports that a single bit error occurred in a ciphertext block during transmission. How will this error affect the decrypted plaintext?",
+      "options": [
+        "Only the corresponding bit in the plaintext block will be corrupted.",
+        "The entire plaintext file will be unreadable.",
+        "Only the corresponding plaintext block will be unreadable.",
+        "The corresponding bit in the current plaintext block and the entire subsequent plaintext block will be corrupted.",
+        "The current plaintext block and all subsequent plaintext blocks will be corrupted."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "In CBC mode, each ciphertext block depends on the previous one. A single bit error in a ciphertext block will corrupt the corresponding bit in the decrypted plaintext block. Additionally, due to the XOR operation in CBC decryption, the error will propagate to the entire subsequent plaintext block."
+    },
+    {
+      "scenario": "A government agency needs to securely transmit classified documents. They require both confidentiality and non-repudiation. Which of the following cryptographic solutions would best meet these requirements?",
+      "options": [
+        "Encrypting the documents with AES and transmitting them over a secure channel (TLS).",
+        "Hashing the documents with SHA-256 and transmitting the hash alongside the original document.",
+        "Encrypting the documents with AES and digitally signing them using the sender's private key.",
+        "Encrypting the documents with RSA using the recipient's public key.",
+        "Using a one-time pad for encryption."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Encrypting the documents with AES ensures confidentiality. Digitally signing them with the sender's private key provides non-repudiation, as only the sender possesses the private key necessary to create the signature. RSA Encryption does provide confidentiality, but it does not ensure non-repudiation from the sender's perspective."
+    },
+    {
+      "scenario": "A network administrator discovers that an attacker is attempting to brute-force the key of a symmetric cipher being used to protect network traffic. They need to quickly increase the difficulty of the attack. Which of the following actions would be most effective?",
+      "options": [
+        "Switching to a different symmetric cipher with the same key length.",
+        "Increasing the key length of the symmetric cipher.",
+        "Implementing a stronger password policy.",
+        "Implementing multi-factor authentication.",
+        "Enabling intrusion detection systems."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Increasing the key length significantly increases the key space, making a brute-force attack exponentially more difficult. Switching to a different cipher with the same key length does not change the number of possible keys and therefore does not directly impact the brute-force attack's feasibility. The rest of the options are good security hygiene, but they don't directly make the key harder to guess or brute-force."
+    },
+    {
+      "scenario": "An e-commerce website stores customer payment information encrypted with a symmetric cipher. They are using ECB mode because it's easier to implement. A security audit reveals that an attacker could potentially insert modified ciphertext blocks into the encrypted data. What security property is most directly compromised by this vulnerability?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Authenticity",
+        "Non-Repudiation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The ability to insert modified ciphertext blocks directly compromises the integrity of the data. Integrity ensures that the data remains unaltered and correct. ECB mode's lack of diffusion allows an attacker to manipulate individual blocks without necessarily being able to decrypt them, thus violating integrity. Confidentiality is still technically maintained because the attacker is not necessarily able to decrypt the data."
+    },
+    {
+      "scenario": "A secure messaging system uses a symmetric cipher for message encryption. The developers are debating between CBC and ECB modes. They prioritize security over performance. Which mode should they choose and why?",
+      "options": [
+        "ECB, because it allows for parallel processing and is faster.",
+        "CBC, because it introduces dependencies between blocks, making it more resistant to certain attacks.",
+        "ECB, because it is simpler to implement.",
+        "CBC, because it does not require an initialization vector.",
+        "Both are equally secure."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "CBC mode is generally more secure than ECB mode because it introduces dependencies between blocks using an initialization vector (IV) and XORing the previous ciphertext block with the current plaintext block before encryption. This makes CBC more resistant to attacks that exploit patterns in the plaintext. ECB encrypts identical plaintext blocks to identical ciphertext blocks, which leaks information. While ECB might be faster, the security risks outweigh the performance benefits in this scenario."
+    },
+    {
+      "scenario": "A company uses a home-grown encryption algorithm with a 40-bit key for encrypting database backups. They believe this provides sufficient security because accessing the backups requires physical access to the server room. As a cryptanalyst, what is your assessment of the security of this system?",
+      "options": [
+        "The system is secure because physical access is required.",
+        "The system is reasonably secure because the algorithm is home-grown and not widely known.",
+        "The system is insecure because a 40-bit key is easily brute-forced with modern computing power.",
+        "The system is secure because database backups are rarely targeted by attackers.",
+        "The system's security depends on the complexity of the home-grown algorithm."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Despite requiring physical access to the server room, the encryption is insecure because a 40-bit key can be brute-forced relatively quickly with modern computing power. The key space is only 2^40, which is easily searchable. The fact that the algorithm is home-grown doesn't necessarily enhance security, as it may contain undiscovered vulnerabilities and hasn't been thoroughly tested or vetted by the security community. Relying on obscurity rather than proven cryptographic strength is a bad security practice."
+    }
+  ],
+  "Session (31-45) cryptography_scenarios (p.31)": [
+    {
+      "scenario": "A legacy system uses DES to encrypt sensitive patient data. You are tasked with assessing its vulnerability to brute-force attacks. Assuming an attacker has intercepted a ciphertext message and knows the plaintext format, how would you estimate the time needed for a successful brute-force attack using modern computing resources?",
+      "options": [
+        "A few minutes or less due to DES's short effective key length",
+        "Several years even with dedicated hardware due to DES's complex algorithm",
+        "A few days with access to a large cluster of computers",
+        "Millennia with access to a supercomputer",
+        "Weeks with average computing resources"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "DES has an effective key length of 56 bits. A brute-force attack would require testing up to 2^56 keys. Given the capabilities of modern computing resources, this can be achieved within minutes or less, making DES highly vulnerable. AES with its larger key sizes should be used instead."
+    },
+    {
+      "scenario": "An online banking application uses DES encryption in ECB mode to protect account numbers. An attacker intercepts several encrypted account numbers and notices a pattern: some ciphertext blocks are identical. What security property is most directly compromised by the use of ECB mode in this scenario?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "ECB mode encrypts identical plaintext blocks into identical ciphertext blocks. This directly compromises confidentiality because the attacker can identify repeated account numbers without needing to decrypt the messages. Using CBC mode would alleviate this, as the encryption of each block depends on the previous ciphertext block."
+    },
+    {
+      "scenario": "Your company stores encrypted backups of sensitive financial data. You need to ensure the integrity of these backups. Which cryptographic property is most critical for verifying that the backups have not been tampered with or corrupted?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Integrity ensures that data remains unaltered from its original state. This is essential for verifying that the encrypted backups have not been tampered with or corrupted. Message Authentication Codes (MACs) or digital signatures can be used to ensure the integrity of the backup data."
+    },
+    {
+      "scenario": "An attacker is attempting to impersonate a legitimate user in a network communication. What security property must be enforced to prevent this type of attack?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Authentication is the process of verifying the identity of a user or device. By enforcing authentication, the system can ensure that only legitimate users are granted access, thus preventing impersonation attacks. Methods like password verification, multi-factor authentication, or digital certificates can be used."
+    },
+    {
+      "scenario": "A software company distributes updates to its customers via a network. It's crucial that customers can verify that the updates are genuinely from the company and haven't been modified during transit. Which combination of security properties would best achieve this?",
+      "options": [
+        "Confidentiality and Authentication",
+        "Integrity and Non-repudiation",
+        "Authentication and Integrity",
+        "Non-repudiation and Confidentiality",
+        "Availability and Authentication"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Authentication confirms the source of the update (the company), and integrity ensures that the update hasn't been altered during transmission. Digital signatures applied by the company and verified by customers address both requirements. Non-repudiation is less relevant in this case, as the primary concern is not denying having sent the update, but ensuring its authenticity and integrity."
+    },
+    {
+      "scenario": "A company wants to encrypt sensitive data stored on hard drives. They choose to use DES in ECB mode for simplicity. What is a significant drawback of using ECB mode, especially if the data contains repeating patterns?",
+      "options": [
+        "ECB is computationally expensive.",
+        "ECB is prone to padding oracle attacks.",
+        "ECB encrypts identical plaintext blocks to identical ciphertext blocks, revealing patterns.",
+        "ECB does not provide integrity protection.",
+        "ECB is incompatible with modern hardware."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "ECB's primary weakness is that it encrypts identical plaintext blocks into identical ciphertext blocks. This reveals patterns in the data, making it easier to analyze and potentially decrypt, even without knowing the key. Other modes like CBC avoid this by chaining the encryption of each block to the previous one."
+    },
+    {
+      "scenario": "An e-commerce website stores customer credit card numbers encrypted using a symmetric cipher. An attacker manages to steal the ciphertext database. Which of the following best describes the attacker's next step if they want to recover the original credit card numbers, assuming they do not know the encryption key?",
+      "options": [
+        "Perform a brute-force attack on the cipher.",
+        "Analyze the ciphertext for statistical patterns.",
+        "Exploit a side-channel attack on the server.",
+        "Use social engineering to obtain the encryption key.",
+        "Attempt a known-plaintext attack."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Without the encryption key, the most direct approach is a brute-force attack, systematically trying every possible key until the correct one is found. Analyzing the ciphertext for patterns can provide hints or reduce the search space, but it is unlikely to directly reveal the key without attempting decryption with potential keys. Other attacks may work, but brute-force is the general first approach."
+    },
+    {
+      "scenario": "A military communication system uses DES for encrypting messages. Knowing that DES is susceptible to brute-force attacks, what key length would you recommend when replacing DES with AES to significantly increase security against such attacks?",
+      "options": [
+        "64 bits",
+        "128 bits",
+        "56 bits",
+        "80 bits",
+        "48 bits"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "AES supports key lengths of 128, 192, and 256 bits. A 128-bit key provides a significantly higher level of security against brute-force attacks compared to DES's 56-bit key. The computational effort required for a brute-force attack increases exponentially with key length (2^n operations), making a 128-bit AES key a far more secure choice."
+    },
+    {
+      "scenario": "A company implements a system for digitally signing documents. What security property does the digital signature primarily provide to ensure the authenticity and integrity of the signed document?",
+      "options": [
+        "Confidentiality",
+        "Integrity and Authentication",
+        "Availability",
+        "Non-repudiation and Confidentiality",
+        "Authentication and Availability"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A digital signature ensures that the document hasn't been altered (integrity) and that the signer is who they claim to be (authentication). It does not provide confidentiality (the document is not necessarily encrypted), but it ensures that the document is authentic and untampered with."
+    },
+    {
+      "scenario": "A hospital uses DES in ECB mode to encrypt patient medical records. A junior cryptanalyst in an audit team discovers this. What is the most critical immediate recommendation you would give them regarding the encryption scheme?",
+      "options": [
+        "Immediately switch to AES with a 256-bit key in CBC mode.",
+        "Increase the DES key length to 128 bits.",
+        "Implement a stronger password policy.",
+        "Add a firewall to the network.",
+        "Switch to using a hardware security module (HSM)."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "DES is vulnerable to brute-force attacks due to its small key size. Using ECB mode exposes repeating patterns in the data, which can lead to partial or complete decryption. The immediate and most critical recommendation is to switch to a more secure cipher (AES) with a larger key size and a more secure mode of operation (CBC or a similar mode that provides confidentiality without pattern exposure)."
+    },
+    {
+      "scenario": "You are tasked with choosing a symmetric encryption mode for a system that encrypts large blocks of data, such as disk partitions. The system requires that each block can be encrypted independently of others. Which mode would be LEAST suitable for this requirement, considering the need for confidentiality?",
+      "options": [
+        "ECB",
+        "CTR",
+        "CFB",
+        "OFB",
+        "CBC"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "CBC (Cipher Block Chaining) relies on the previous ciphertext block to encrypt the current block. Therefore, it cannot encrypt blocks independently without losing confidentiality. ECB can, but has pattern exposure issues. CTR, CFB, and OFB are stream cipher modes that can encrypt independently and offer more security than ECB. OFB is less preferrable."
+    },
+    {
+      "scenario": "A government agency needs to store highly classified data. They decide to use a symmetric encryption algorithm. Considering the current threat landscape and computational capabilities, what is the most crucial factor they should prioritize when selecting the algorithm?",
+      "options": [
+        "Cipher complexity",
+        "Key length",
+        "Block size",
+        "Algorithm age",
+        "Implementation simplicity"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "While all options are important, key length is the most crucial factor in protecting against brute-force attacks. Given the availability of powerful computing resources, a longer key length provides a significantly higher level of security, making it exponentially more difficult for an attacker to recover the original data. The algorithm MUST still be considered safe and widely analyzed to ensure no algorithm-specific weaknesses are present."
+    },
+    {
+      "scenario": "A secure messaging application uses symmetric encryption. Users report that when sending messages with repeated phrases, the ciphertext also shows some recognizable patterns. What is the most likely cause of this issue?",
+      "options": [
+        "Use of a weak encryption algorithm",
+        "Use of ECB mode",
+        "Use of a short key length",
+        "Lack of proper padding",
+        "Improper key management"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The most probable cause is the use of ECB (Electronic Codebook) mode. ECB encrypts identical plaintext blocks to identical ciphertext blocks, making repeating patterns visible. Other modes like CBC, CTR, or GCM would prevent this pattern exposure."
+    },
+    {
+      "scenario": "An attacker intercepts an encrypted email. Knowing that the email was encrypted using DES, how would the attacker realistically estimate the time needed for a successful brute-force attack?",
+      "options": [
+        "Check the size of the email attachment",
+        "Estimate the number of possible key combinations (2^56) and divide by the attacker's computing power",
+        "Analyze the frequency of letters in the ciphertext",
+        "Determine the sender's password complexity",
+        "Analyze the email headers for encryption mode"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A brute-force attack requires trying all possible keys until the correct one is found. The attacker would estimate the time by calculating the total number of keys (2^56 for DES) and dividing it by the number of keys their computing resources can test per unit of time. Email size and header info are not directly related to a brute force attack complexity."
+    },
+    {
+      "scenario": "A bank uses DES to encrypt customer PINs. A cryptanalyst discovers that the system stores the encrypted PINs directly, without any salting or hashing. What is the MOST immediate and critical security risk associated with this practice?",
+      "options": [
+        "Increased risk of rainbow table attacks on the encrypted PINs",
+        "Compromised availability of customer accounts",
+        "Violation of data privacy regulations",
+        "Increased risk of denial-of-service attacks",
+        "Increased risk of man-in-the-middle attacks"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Because there is no salting and the system directly stores the encrypted PINs, the biggest threat is the risk of an adversary utilizing a rainbow table. These pre-computed tables can be very effective against DES given its short key length. This is even more dangerous because there is no hashing step before the DES process."
+    }
+  ],
+  "Session (46-60) cryptography_scenarios (p.46)": [
+    {
+      "scenario": "A company stores sensitive customer data on encrypted hard drives. They are using AES with a 128-bit key in ECB mode. An attacker steals one of these drives. What is the most significant risk associated with this setup?",
+      "options": [
+        "The attacker can easily perform a brute-force attack to recover the key.",
+        "If there are repeating blocks of data, the attacker can identify these patterns in the ciphertext due to the deterministic nature of ECB.",
+        "The attacker can modify the ciphertext without being detected.",
+        "AES with a 128-bit key is unbreakable.",
+        "The attacker can use the key to decrypt other drives."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ECB mode encrypts each block independently. Therefore, identical plaintext blocks will result in identical ciphertext blocks. This pattern is visible to an attacker, revealing information about the plaintext, even without knowing the key. While a 128-bit key requires 2^128 operations for a brute-force attack, the information leakage from ECB greatly reduces the difficulty for an attacker to extract meaningful information without a full key recovery."
+    },
+    {
+      "scenario": "An online banking system needs to ensure the confidentiality and integrity of transaction data transmitted between the user's computer and the bank's server. Which of the following cryptographic approaches provides both confidentiality and integrity?",
+      "options": [
+        "Encrypting the transaction data with a symmetric cipher (e.g., AES) in CBC mode.",
+        "Hashing the transaction data using SHA-256.",
+        "Encrypting the transaction data with RSA using the bank's public key.",
+        "Using a Message Authentication Code (MAC) generated using HMAC-SHA256 with a shared secret key.",
+        "Encrypting the transaction data with a symmetric cipher (e.g., AES) in CBC mode and generating a Message Authentication Code (MAC) using HMAC-SHA256 with a shared secret key."
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Confidentiality is achieved through symmetric encryption (AES in CBC mode protects against pattern leakage) and integrity and authentication are provided by the HMAC. Encryption alone does not guarantee integrity; the MAC ensures that the data has not been tampered with during transit. Using RSA only provides encryption, hashing only ensures integrity but no confidentiality, and using only a MAC ensures integrity/authentication but no confidentiality."
+    },
+    {
+      "scenario": "A software company distributes digitally signed software updates to its users. An attacker manages to modify the software package after it has been signed. Which security property is violated?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Integrity is violated because the software package has been altered since it was signed. The digital signature is meant to ensure that the software hasn't been modified since the signing process. Confidentiality refers to keeping information secret, authentication verifies the identity of the sender, non-repudiation prevents the sender from denying having sent the message, and availability ensures that the system is accessible."
+    },
+    {
+      "scenario": "A secure messaging application uses AES-256 in CBC mode to encrypt messages. To further enhance security, they implemented a key rotation policy where the encryption key is changed weekly. However, the Initialization Vector (IV) for CBC is reused across different messages encrypted with the same key during that week. What security risk does this present?",
+      "options": [
+        "Reusing the IV has no impact on security as long as the key is rotated weekly.",
+        "Reusing the IV with the same key can compromise confidentiality, as identical plaintext blocks encrypted with the same key and IV will produce identical ciphertext blocks.",
+        "Reusing the IV allows for easier brute-force attacks against the key.",
+        "Reusing the IV only affects the integrity of the messages, not confidentiality.",
+        "The CBC mode is inherently insecure and should not be used."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "CBC mode relies on the IV to ensure that identical plaintext messages produce different ciphertext outputs. If the IV is reused with the same key, an attacker can compare ciphertexts and infer information about the corresponding plaintexts if portions are identical. Although the key is rotated weekly, this only limits the vulnerability window. A unique IV must be used for each message encrypted with the same key to ensure proper confidentiality."
+    },
+    {
+      "scenario": "A company uses a password hashing scheme to store user passwords. They use SHA-256 to hash the passwords directly. An attacker gains access to the database containing the password hashes. What is the primary vulnerability in this approach?",
+      "options": [
+        "SHA-256 is not a strong enough hash function.",
+        "Without salting, identical passwords will result in identical hashes, making them vulnerable to rainbow table attacks.",
+        "The attacker can easily reverse the SHA-256 hash to recover the original passwords.",
+        "Password hashing is not necessary; encryption is sufficient.",
+        "SHA-256 is vulnerable to brute-force attacks."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Hashing passwords with SHA-256 alone, without a salt, is vulnerable to rainbow table attacks. A rainbow table is a precomputed table of hashes that can be used to quickly find the original password corresponding to a given hash. Salting, which involves adding a random string to each password before hashing, ensures that even identical passwords have different hashes, making rainbow table attacks ineffective. The primary issue is not the strength of SHA-256 itself, but the lack of salt."
+    },
+    {
+      "scenario": "An application uses AES-128 in ECB mode to encrypt image files. The application transmits these images over a network. An attacker intercepts the encrypted image data. What would be the most obvious indication that ECB mode is in use if the original images contain large areas of uniform color?",
+      "options": [
+        "The ciphertext will be completely random and indistinguishable from noise.",
+        "The ciphertext will exhibit repeating patterns that correspond to the areas of uniform color in the original image.",
+        "The ciphertext will be smaller in size than the plaintext due to compression.",
+        "The ciphertext will be larger in size than the plaintext due to padding.",
+        "There will be no noticeable pattern in the ciphertext."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ECB mode encrypts each block independently. If an image contains large areas of the same color, those areas will result in identical plaintext blocks. Because ECB encrypts identical plaintext blocks to identical ciphertext blocks, the resulting ciphertext will show repeating patterns that mirror the uniform areas in the original image, thus revealing information without actually decrypting. This is a major weakness of ECB mode."
+    },
+    {
+      "scenario": "A company is implementing a secure boot process for its embedded devices. They need to ensure that the bootloader and operating system haven't been tampered with before execution. What cryptographic mechanism is most appropriate for this purpose?",
+      "options": [
+        "Encrypting the bootloader and OS with AES.",
+        "Hashing the bootloader and OS and comparing the hash to a known good value stored in a secure location.",
+        "Using a random number generator to create a unique identifier for each device.",
+        "Implementing a firewall to prevent unauthorized access to the device.",
+        "Using ECB mode for its performance advantages."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Hashing is appropriate for verifying the integrity of the bootloader and OS. By comparing the calculated hash of the current bootloader/OS with a known good hash, the system can determine if any unauthorized modifications have been made. Encryption alone does not guarantee integrity, and a random number generator or firewall do not protect against tampering with the bootloader or OS files. ECB mode has known security vulnerabilities and is unsuitable for secure boot."
+    },
+    {
+      "scenario": "A web application stores user session IDs as cookies on the user's computer. An attacker gains access to a large number of these session IDs. Which of the following security properties is most directly threatened?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Access to valid session IDs allows an attacker to impersonate legitimate users, thereby violating authentication. The attacker can use the stolen session IDs to gain access to the user's account without needing their username or password. Confidentiality, integrity, non-repudiation, and availability are not directly threatened by simply having session IDs. The attacker has not yet performed any actions violating these properties, but is instead about to perform an impersonation."
+    },
+    {
+      "scenario": "A company wants to protect its internal communication from eavesdropping. They choose to use symmetric encryption. Which of the following is a critical challenge they must address to ensure the security of their communications?",
+      "options": [
+        "Ensuring the encryption algorithm is publicly known.",
+        "Securely distributing the symmetric key to all communicating parties.",
+        "Using a different encryption key for each message.",
+        "Encrypting only the header of the message.",
+        "Using ECB mode for faster encryption."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The secure distribution of the symmetric key is a fundamental challenge in symmetric cryptography. If the key is compromised, all communications encrypted with that key are also compromised. The encryption algorithm being publicly known is not a security risk (Kerckhoffs's principle). Using a different key for each message is not strictly necessary with proper use of modes like CBC with unique IVs. Encrypting only the header is insufficient, and ECB mode is prone to attacks due to its deterministic nature."
+    },
+    {
+      "scenario": "A government agency needs to store highly sensitive data that must remain confidential for at least 50 years. They choose to use a symmetric encryption algorithm. Considering potential advancements in computing power, what is the MOST important factor to consider when selecting the key size for the encryption algorithm?",
+      "options": [
+        "The processing speed of the encryption algorithm.",
+        "The key size should be as small as possible for efficiency.",
+        "The key size should be large enough to withstand brute-force attacks for the next 50 years.",
+        "The key size should match the size of the data being encrypted.",
+        "The encryption algorithm used (e.g. AES vs. DES)"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The key size is directly related to the security against brute-force attacks. As computing power increases over time, smaller key sizes become more vulnerable. To ensure confidentiality for 50 years, the key size must be sufficiently large to account for anticipated advancements in computing power. While processing speed is a consideration, security takes precedence. The algorithm used is also important, but a strong algorithm with a weak key is easily broken."
+    },
+    {
+      "scenario": "A system administrator discovers that an attacker has successfully performed a brute-force attack against a database protected with a 64-bit symmetric encryption key. Which of the following actions should the administrator take immediately?",
+      "options": [
+        "Increase the complexity of user passwords.",
+        "Switch to a public-key encryption algorithm.",
+        "Increase the symmetric key size to at least 128 bits and re-encrypt the data.",
+        "Implement multi-factor authentication.",
+        "Disable the database server."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A successful brute-force attack against a 64-bit key indicates that the key is too short to provide adequate security. Increasing the key size to at least 128 bits significantly increases the computational effort required for a brute-force attack (2^128 operations instead of 2^64). While the other options improve security overall, they do not directly address the vulnerability exposed by the successful brute-force attack on the encryption key."
+    },
+    {
+      "scenario": "A company develops a mobile application that stores sensitive user data locally on the device. They encrypt this data using AES. An attacker reverse engineers the application and discovers the encryption key embedded in the code. What security property is primarily compromised?",
+      "options": [
+        "Availability",
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-repudiation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "If the attacker has the encryption key, they can decrypt the user data, compromising confidentiality. Availability, integrity, authentication, and non-repudiation are not directly affected by the key being exposed, although other attacks on those properties may become easier as a result. The primary impact is the loss of secrecy of the user data."
+    },
+    {
+      "scenario": "A large financial institution is implementing a Message Authentication Code (MAC) to ensure data integrity for financial transactions. They have a very high transaction volume and require a MAC algorithm with strong security and high performance. Which of the following options represents a suitable MAC algorithm?",
+      "options": [
+        "A simple checksum algorithm.",
+        "HMAC-SHA256 with a strong secret key.",
+        "MD5.",
+        "A hash function without a secret key.",
+        "Encrypting the entire message with AES in ECB mode."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "HMAC-SHA256 is a strong and widely used MAC algorithm that provides both integrity and authenticity. It combines a cryptographic hash function (SHA-256) with a secret key, making it resistant to various attacks. Simple checksum algorithms are not cryptographically secure. MD5 is considered insecure due to collision vulnerabilities. A hash function without a secret key only provides integrity, not authenticity. ECB mode has known security vulnerabilities and should not be used for MAC functionality."
+    },
+    {
+      "scenario": "A messaging application transmits encrypted messages. You observe that when identical messages are sent repeatedly, the ciphertext remains the same. Which encryption mode is most likely in use?",
+      "options": [
+        "CBC",
+        "CTR",
+        "ECB",
+        "CFB",
+        "OFB"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "ECB (Electronic Codebook) mode is the only mode listed that encrypts each block independently and deterministically. This means that identical plaintext blocks will always result in identical ciphertext blocks when encrypted with the same key. The other modes (CBC, CTR, CFB, OFB) use feedback or counters to ensure that identical plaintext messages result in different ciphertext outputs."
+    },
+    {
+      "scenario": "An e-commerce website uses SHA-256 to hash customer passwords before storing them in a database. An attacker gains access to the database and attempts to crack the passwords. Which of the following techniques is MOST likely to be effective in cracking the password hashes?",
+      "options": [
+        "Reversing the SHA-256 hash function.",
+        "Using a rainbow table attack or dictionary attack.",
+        "Exploiting a buffer overflow vulnerability in the SHA-256 algorithm.",
+        "Performing a man-in-the-middle attack.",
+        "Exploiting the birthday paradox."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Rainbow table attacks and dictionary attacks are effective against password hashes, especially when salts are not used. These attacks involve precomputed tables or lists of common passwords and their corresponding hashes. Reversing SHA-256 is computationally infeasible due to its one-way property. Exploiting vulnerabilities in SHA-256 or performing other types of attacks are less likely to be successful than simply using precomputed tables or common password lists against unsalted hashes. The birthday paradox is more relevant to collision resistance, not password cracking."
+    }
+  ],
+  "Session (61-75) cryptography_scenarios (p.61)": [
+    {
+      "scenario": "A company, 'SecureDocs,' uses symmetric encryption for storing sensitive customer documents. They currently use a 64-bit key. Considering the increasing computational power available to attackers, what are the best practices in terms of key size?",
+      "options": [
+        "Maintain the 64-bit key as it is sufficient for current security needs.",
+        "Increase the key size to at least 128 bits to mitigate brute-force attacks.",
+        "Switch to asymmetric encryption for enhanced security.",
+        "Implement key rotation every week to reduce the window of opportunity for attackers.",
+        "Implement multi-factor authentication on document access."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A 64-bit key is highly vulnerable to brute-force attacks with modern computing capabilities. Increasing the key size to 128 bits or more significantly increases the computational effort required for a successful brute-force attack, making it a more secure option. According to basic cryptanalysis principles, an n-bit key requires 2^n operations to break via brute force."
+    },
+    {
+      "scenario": "An online medical database is implementing encryption for patient records. The system needs to ensure confidentiality and integrity. Data is stored in blocks. Which encryption mode is more secure when multiple identical blocks of data may be present in the patient records and why?",
+      "options": [
+        "ECB mode, as it encrypts each block independently.",
+        "CBC mode, as it XORs each plaintext block with the previous ciphertext block before encryption.",
+        "CTR mode, as it uses a counter to generate unique keys for each block.",
+        "CFB mode, as it encrypts the previous ciphertext block to produce a key stream for the current block.",
+        "OFB mode, as it generates a key stream independently of both the plaintext and ciphertext."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "CBC mode is preferred in this scenario. ECB mode encrypts identical plaintext blocks into identical ciphertext blocks, revealing patterns in the data. CBC mode, by XORing each plaintext block with the previous ciphertext block, ensures that identical plaintext blocks are encrypted differently, thereby preserving confidentiality and enhancing security. The document demonstrates block cipher modes are critical for security."
+    },
+    {
+      "scenario": "A financial institution is implementing digital signatures for transactions. They need to ensure that once a transaction is signed, it cannot be altered without detection (integrity) and that the sender cannot deny having signed the transaction (non-repudiation). Which elements should be included in the signature process to satisfy these requirements?",
+      "options": [
+        "Hashing the transaction data before signing with the private key.",
+        "Encrypting the transaction data with the recipient's public key.",
+        "Using a timestamp to indicate when the transaction was signed.",
+        "Including the signer's public key certificate in the signed transaction.",
+        "Adding a digital watermark to the transaction data."
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "Hashing the transaction data ensures integrity: any alteration to the data will result in a different hash, invalidating the signature. Signing the hash with the private key provides authentication and non-repudiation: only the holder of the private key could have created the signature, and they cannot deny having done so. Including the signer's public key certificate allows the recipient to verify the signer's identity and the validity of the signature. Public Key Certificates shown in the document are a crucial element for authentication."
+    },
+    {
+      "scenario": "An e-commerce website stores customer credit card information. They need to encrypt this data at rest. They are debating between using AES with a 128-bit key and AES with a 256-bit key. Considering the trade-offs between security and performance, which option is the more appropriate one?",
+      "options": [
+        "AES with a 128-bit key, as it provides sufficient security with better performance.",
+        "AES with a 256-bit key, as it offers significantly higher security at the cost of slightly reduced performance.",
+        "Triple DES, as it provides a good balance between security and performance.",
+        "Blowfish, as it is known for its speed and efficiency.",
+        "Twofish, as it is considered a strong and versatile algorithm."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "AES with a 256-bit key offers a significantly higher level of security against brute-force attacks compared to AES with a 128-bit key. While the performance impact may be slightly higher, the increased security is generally worth the trade-off, especially when protecting sensitive data like credit card information. The relative computation complexity of 2^n for each key size becomes a major factor."
+    },
+    {
+      "scenario": "A government agency uses digital certificates for employee authentication. An employee's private key is compromised. What immediate steps must be taken to prevent unauthorized access and maintain system security?",
+      "options": [
+        "Issue a new certificate to the employee and continue operation.",
+        "Revoke the compromised certificate and issue a new one to the employee.",
+        "Increase the key size of all existing certificates.",
+        "Switch to a different digital signature algorithm.",
+        "Temporarily disable the employee's account."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The compromised certificate must be immediately revoked to prevent anyone from using it for unauthorized access. Issuing a new certificate to the employee is also necessary so they can continue to access the system securely. Revoking the certificate ensures that even if someone possesses the compromised private key, they cannot use it to impersonate the employee. As seen in the example on the provided pages, certificate revocation is essential."
+    },
+    {
+      "scenario": "A software company distributes digitally signed software updates. After a recent update, some users report that their systems flag the update as untrusted, even though it was signed with the company's valid certificate. What could be the possible reasons for this issue?",
+      "options": [
+        "The certificate used to sign the update has expired.",
+        "The update file was corrupted during download.",
+        "The user's system does not trust the Certificate Authority (CA) that issued the company's certificate.",
+        "The user's system clock is set incorrectly, causing it to misinterpret the certificate's validity period.",
+        "The software company's private key has been compromised."
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "An expired certificate will cause the signature to be invalid. File corruption would also invalidate the signature. If the user's system doesn't trust the CA, it cannot verify the certificate's authenticity. An incorrect system clock can cause issues with the certificate's validity period. All of these possibilities would lead to the described situation and should be investigated. Examples in the document demonstrate the usage of certificate validation by checking various fields."
+    },
+    {
+      "scenario": "An online bank uses SSL/TLS (based on X.509 certificates as discussed in the document) to secure its website. A user reports that they received a warning message indicating that the website's certificate is not trusted. What are some potential reasons for this warning?",
+      "options": [
+        "The website is using an outdated version of SSL/TLS.",
+        "The website's certificate is self-signed and not issued by a trusted Certificate Authority (CA).",
+        "The website's certificate has been revoked by the issuing CA.",
+        "The user's browser does not support the encryption algorithm used by the website.",
+        "The user's computer has been infected with malware."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Self-signed certificates are not inherently trusted by browsers, as they lack verification from a trusted CA. A revoked certificate indicates that the CA has deemed the certificate invalid, usually due to compromise or other security concerns. Both situations would cause the browser to display a warning message to the user. The explanation of how to verify the public key certificates on the first pages of the document directly relates to this."
+    },
+    {
+      "scenario": "A data center stores encrypted backups of customer data. The encryption keys are stored separately. An attacker gains access to the storage system containing the encrypted backups but does not have access to the encryption keys. Has confidentiality been breached?",
+      "options": [
+        "Yes, because the attacker has access to the data, even if it is encrypted.",
+        "No, because the data is encrypted and the attacker does not have the keys to decrypt it.",
+        "Potentially, if the encryption algorithm used is weak.",
+        "Potentially, if the attacker can perform a known-plaintext attack.",
+        "Yes, because the integrity of the backups has been compromised."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Confidentiality is not immediately breached, because the data is encrypted. However, the strength of the encryption algorithm plays a crucial role; a weak algorithm might be susceptible to cryptanalysis. If the attacker has access to any plaintext-ciphertext pairs (known-plaintext attack), they might be able to derive the key. Therefore, a strong algorithm and proper key management are essential for maintaining confidentiality. If the adversary finds or gains some plaintext-ciphertext pairs the system could be compromised."
+    },
+    {
+      "scenario": "An organization is implementing digital envelopes to securely transmit symmetric keys. They need to ensure that only the intended recipient can decrypt the symmetric key. What cryptographic techniques are necessary to achieve this?",
+      "options": [
+        "Encrypt the symmetric key with the recipient's public key.",
+        "Encrypt the symmetric key with the sender's private key.",
+        "Hash the symmetric key and send it along with the encrypted data.",
+        "Use a key exchange protocol like Diffie-Hellman to establish a shared secret.",
+        "Apply a digital signature to the symmetric key."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Encrypting the symmetric key with the recipient's public key ensures that only the recipient, possessing the corresponding private key, can decrypt and access the symmetric key. This is the fundamental principle behind digital envelopes. Digital envelopes are described in detail in the slides, ensuring confidential key exchange."
+    },
+    {
+      "scenario": "A company uses a cloud storage provider to store sensitive documents. The cloud provider uses server-side encryption with AES-256. The company is concerned about the possibility of the cloud provider being compromised. What additional measure can the company take to enhance confidentiality of their data?",
+      "options": [
+        "Use client-side encryption before uploading data to the cloud.",
+        "Implement multi-factor authentication for all cloud accounts.",
+        "Regularly back up data to an offsite location.",
+        "Use a strong password policy for all cloud accounts.",
+        "Monitor cloud storage access logs for suspicious activity."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Client-side encryption provides an additional layer of security by encrypting the data before it is uploaded to the cloud. This ensures that even if the cloud provider's systems are compromised, the data remains confidential because the attacker would also need the company's encryption keys to decrypt it. Server-side encryption only protects data from external access to the server itself."
+    },
+    {
+      "scenario": "An online auction site requires users to digitally sign their bids to prevent repudiation. What type of electronic signature, as defined by ETSI, is most suitable for this purpose?",
+      "options": [
+        "Simple electronic signature.",
+        "Advanced electronic signature.",
+        "Qualified electronic signature.",
+        "Scanned signature.",
+        "Electronic watermark."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "An advanced electronic signature (or qualified electronic signature) is the most suitable option. It uniquely identifies the user, is under their sole control, and is linked to the bid in such a way that any subsequent change is detectable. This ensures non-repudiation and integrity. Simple signatures lack these crucial security properties. The ETSI definitions on the slides explain the properties of each type in detail."
+    },
+    {
+      "scenario": "A government is using XAdES for the long-term archiving of legal documents. Considering the need to ensure the validity of the signatures for decades, which XAdES profile is most appropriate?",
+      "options": [
+        "XAdES-BASELINE-B.",
+        "XAdES-BASELINE-T.",
+        "XAdES-BASELINE-LT.",
+        "XAdES-BASELINE-LTA.",
+        "XAdES-BASELINE-XL."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "XAdES-BASELINE-LTA (Long Term with Archive timestamp) is the most appropriate profile. It includes periodical timestamping to prevent compromising caused by weakening previous signatures during a long-time storage period. This ensures that the signature remains valid even if the underlying cryptographic algorithms become obsolete. The slides explain the purpose of each profile and the relevant elements for each."
+    },
+    {
+      "scenario": "Your company is implementing a system for sending digitally signed contracts electronically. The contracts must be legally binding and verifiable for at least 10 years. What must be included within the digitally signed contract to ensure the long-term validity of the signature?",
+      "options": [
+        "The contract data and the signature value.",
+        "The contract data, the signature value, and the signer's certificate.",
+        "The contract data, the signature value, the signer's certificate, and a timestamp.",
+        "The contract data, the signature value, the signer's certificate, a timestamp, and revocation information for the certificate.",
+        "The contract data, the signature value, the signer's certificate, a timestamp, revocation information for the certificate, and archive timestamps."
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "To ensure long-term validity, the digitally signed contract should include the contract data, the signature value, the signer's certificate, a timestamp, revocation information for the certificate, and archive timestamps. The archive timestamp protects against weakening signatures during long storage periods and all data required to validate the digital signature needs to be included."
+    },
+    {
+      "scenario": "An engineer is developing a secure communication channel using symmetric encryption. The data being transmitted includes structured log data that often contains repeating blocks. Which block cipher mode of operation should the engineer avoid to prevent potential security vulnerabilities?",
+      "options": [
+        "Cipher Block Chaining (CBC)",
+        "Counter (CTR)",
+        "Cipher Feedback (CFB)",
+        "Output Feedback (OFB)",
+        "Electronic Codebook (ECB)"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "ECB should be avoided. Because ECB encrypts each block independently, identical plaintext blocks will result in identical ciphertext blocks. This can expose patterns in the data, particularly if there's a high degree of repetition. The document explains in detail why ECB should be avoided."
+    },
+    {
+      "scenario": "An attacker intercepts a ciphertext message encrypted with AES-128. They have access to powerful computing resources. Approximately how many attempts would the attacker need to make to brute-force the key?",
+      "options": [
+        "2^64",
+        "128",
+        "2^128",
+        "256",
+        "2^256"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "With a 128-bit key, the attacker would need to make approximately 2^128 attempts to brute-force the key. This is because brute-forcing involves trying every possible key combination until the correct one is found. The slides clarify that brute force attacks require 2^n attempts where n is the number of bits in the key."
+    }
+  ],
+  "Session (76-90) cryptography_scenarios (p.76)": [
+    {
+      "scenario": "A hospital uses electronic signatures on patient records stored as PDF documents. They need to ensure these records are legally binding and maintain long-term validity. Which type of signature format is most suitable?",
+      "options": [
+        "Basic Electronic Signature",
+        "CMS Advanced Electronic Signatures (CAdES) with detached signature.",
+        "PDF Advanced Electronic Signatures (PAdES)",
+        "WEP Electronic Signature",
+        "Temporal Key Integrity Protocol (TKIP) Electronic Signature"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "PAdES is most suitable because it encapsulates the signature within the PDF document, ensuring long-term validity and compliance with standards such as ISO 32000-1. This ensures the signature remains valid even if the signing certificate expires. CAdES could also be used but needs external support to ensure the long term integrity of the signature."
+    },
+    {
+      "scenario": "An organization's internal communication system uses Kerberos for authentication. A vulnerability assessment reveals that the Kerberos Key Distribution Center (KDC) is accessible from the internal network. Which security property is most directly compromised?",
+      "options": [
+        "Data Confidentiality",
+        "Non-Repudiation",
+        "Authentication",
+        "Data Integrity",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Compromising the KDC directly compromises authentication. Kerberos relies on the KDC to issue tickets that prove the identity of users and services. Access to the KDC would allow an attacker to forge tickets, effectively impersonating legitimate users or services. While this could indirectly affect confidentiality and integrity, the primary impact is on authentication."
+    },
+    {
+      "scenario": "A web application uses symmetric encryption with a 64-bit key to protect sensitive user data. An attacker wants to decrypt this data. What is the approximate number of operations required for a brute-force attack?",
+      "options": [
+        "2^32",
+        "2^64",
+        "2^128",
+        "2^256",
+        "2^52"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A brute-force attack against a symmetric cryptosystem with an n-bit key requires approximately 2^n operations. In this case, with a 64-bit key, the attacker would need to perform approximately 2^64 operations to try all possible keys."
+    },
+    {
+      "scenario": "An engineer is designing a system to encrypt sensitive log files. The log files are append-only and processed sequentially. The data volume makes using an authenticated encryption scheme preferable. Which symmetric encryption mode should they choose for maximizing performance on an append-only sequential data stream?",
+      "options": [
+        "Electronic Codebook (ECB)",
+        "Cipher Block Chaining (CBC)",
+        "Counter (CTR)",
+        "Galois/Counter Mode (GCM)",
+        "Cipher Feedback (CFB)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "GCM (Galois/Counter Mode) provides authenticated encryption with good performance. CTR Mode is also performant, but does not provide integrity without external authentification. ECB is unsuitable due to its deterministic nature. CBC, CFB, and OFB depend on previous blocks, making them harder to parallelize than CTR/GCM and unsuitable for stream processing."
+    },
+    {
+      "scenario": "A financial institution is implementing electronic signatures for wire transfer approvals. They require assurance that the sender cannot deny having signed the transaction. Which security property is most important in this scenario?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-Repudiation",
+        "Availability"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Non-repudiation is crucial for wire transfer approvals. It ensures that the sender cannot deny having signed the transaction, providing legal and financial accountability. The digital signature creates a unique link between the sender and the transaction, preventing denial."
+    },
+    {
+      "scenario": "A company uses symmetric encryption with a short key length. They understand that the primary threat is a brute-force attack. How can the company best mitigate this risk?",
+      "options": [
+        "Implement multi-factor authentication",
+        "Increase the key length",
+        "Use a more complex encryption algorithm",
+        "Implement strict access controls",
+        "Use steganography"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The most effective way to mitigate brute-force attacks is to increase the key length. Increasing the key length exponentially increases the number of operations required for a brute-force attack, making it computationally infeasible."
+    },
+    {
+      "scenario": "You are analyzing a system that uses AES in ECB mode to encrypt medical images. You notice that certain patterns in the original images are still visible in the encrypted images. What is the primary cause of this issue?",
+      "options": [
+        "Insufficient key length",
+        "The block cipher is weak",
+        "ECB mode's deterministic nature",
+        "The IV is not random",
+        "The key exchange protocol is broken"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "ECB (Electronic Codebook) mode encrypts each block of data independently. If the same block of plaintext appears multiple times, it will be encrypted to the same ciphertext each time. This deterministic nature of ECB mode makes patterns in the plaintext visible in the ciphertext, especially in image data."
+    },
+    {
+      "scenario": "A security analyst discovers that a system using WPA for Wi-Fi security is vulnerable to an attack. Considering the vulnerabilities inherent in WPA, which of the following steps would be most effective to remediate the risk?",
+      "options": [
+        "Enforce stronger password policies",
+        "Upgrade to WPA2 or WPA3",
+        "Implement MAC address filtering",
+        "Disable SSID broadcasting",
+        "Switch to WEP"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "WPA has known vulnerabilities. The most effective solution is to upgrade to WPA2 or WPA3, which offer stronger security protocols and encryption algorithms. WEP is not more secure than WPA. Enforcing password policies, MAC address filtering, and disabling SSID broadcasting provide minimal security improvements compared to upgrading the protocol."
+    },
+    {
+      "scenario": "A company stores sensitive data in a database. They want to implement electronic signatures to ensure the integrity of each record and provide data origin authentication. Which signing method should be considered that allows the data to be separate from the signature?",
+      "options": [
+        "PAdES",
+        "CAdES with Encapsulated signature",
+        "CAdES with Detached signature",
+        "Basic Electronic Signature with embedded XML",
+        "Signature Augmentation application (SAA)"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "CAdES with Detached signature is appropriate when the data being signed is separate from the signature itself. This can be useful for databases where you want to store the signature separately from the data record. PAdES embeds the signature within the document, which isn't suitable for a database structure."
+    },
+    {
+      "scenario": "An online voting system uses digital signatures to ensure that votes are not altered after submission. Which security property is most directly enforced by this use of digital signatures?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-Repudiation",
+        "Availability"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Digital signatures directly enforce integrity by ensuring that the vote has not been altered after submission. Any modification to the signed vote would invalidate the signature, indicating tampering. Authentication and Non-repudiation are also enforced by a digital signature. However, this scenario is explicitly about data alteration."
+    },
+    {
+      "scenario": "A government agency needs to digitally sign official documents to ensure authenticity and prevent tampering. They require a signature format that can be easily verified by anyone using standard PDF software without requiring additional plugins or custom software. Which digital signature format is most suitable?",
+      "options": [
+        "Raw RSA Signature",
+        "CAdES",
+        "PAdES",
+        "PGP",
+        "S/MIME"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "PAdES (PDF Advanced Electronic Signatures) is most suitable because it is integrated into PDF software, allowing anyone with standard PDF viewing software to verify the signature without needing specialized plugins or custom software."
+    },
+    {
+      "scenario": "An attacker has intercepted a large number of ciphertexts encrypted with AES using a fixed key. They have no information about the plaintext. Which type of cryptanalysis attack is this?",
+      "options": [
+        "Chosen-Plaintext Attack",
+        "Known-Plaintext Attack",
+        "Ciphertext-Only Attack",
+        "Related-Key Attack",
+        "Man-in-the-Middle Attack"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "In a Ciphertext-Only Attack, the attacker only has access to a collection of ciphertexts and no information about the corresponding plaintexts or the key used for encryption."
+    },
+    {
+      "scenario": "A secure messaging app uses symmetric encryption to protect user communications. The developers are debating between ECB and CBC mode. Considering the nature of text-based messages, which mode is generally less secure and why?",
+      "options": [
+        "CBC, because it requires an Initialization Vector (IV)",
+        "ECB, because it encrypts identical plaintext blocks to identical ciphertext blocks",
+        "CBC, because it is more computationally intensive",
+        "ECB, because it is susceptible to padding oracle attacks",
+        "Both are equally secure"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ECB (Electronic Codebook) mode is generally less secure for text-based messages because it encrypts identical plaintext blocks to identical ciphertext blocks. This can reveal patterns in the plaintext, especially if the messages contain repetitive phrases or common structures. CBC (Cipher Block Chaining) uses an Initialization Vector (IV) to randomize the encryption of each block, making it more resistant to pattern analysis."
+    },
+    {
+      "scenario": "An IoT device manufacturer wants to ensure the integrity and authenticity of firmware updates downloaded to their devices. The updates are delivered over a public network. Which cryptographic mechanism is most appropriate to achieve this?",
+      "options": [
+        "Symmetric Encryption with a pre-shared key",
+        "Hashing the update file",
+        "Digital signatures",
+        "Using a simple checksum",
+        "Obfuscating the code"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Digital signatures provide both integrity and authenticity. The manufacturer signs the update with their private key, and the device verifies the signature using the manufacturer's public key. This ensures that the update has not been tampered with and that it originates from a trusted source."
+    },
+    {
+      "scenario": "A system uses symmetric encryption with a 56-bit key. An attacker can test approximately 1 million keys per second. How long would it take, on average, to crack the encryption using a brute-force attack?",
+      "options": [
+        "Approximately 2 seconds",
+        "Approximately 10 seconds",
+        "Approximately 10 minutes",
+        "Approximately 10 hours",
+        "Several months"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "A 56-bit key requires 2^56 operations. If the attacker can test 1 million (10^6) keys per second, it would take (2^56) / (10^6) seconds.  This roughly calculates to a few hours to crack the encryption."
+    }
+  ],
+  "Session (91-105) cryptography_scenarios (p.91)": [
+    {
+      "scenario": "A medical device manufacturer is using a symmetric cipher in ECB mode to encrypt patient data stored on the device. An attacker gains access to a series of encrypted patient records. What risks are most pronounced in this scenario?",
+      "options": [
+        "Risk of successful differential cryptanalysis.",
+        "Risk of plaintext recovery through frequency analysis due to repeating patterns in the data.",
+        "Risk of key recovery through a related-key attack.",
+        "Risk of increased processing overhead compared to stream ciphers.",
+        "Minimal risk, as ECB mode is inherently secure."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ECB mode encrypts identical plaintext blocks to identical ciphertext blocks. In medical data, repeating patterns like date formats or standard measurement values are likely. This allows an attacker to recognize these patterns in the ciphertext and deduce information about the plaintext without breaking the encryption key. The other options are less relevant; differential cryptanalysis requires specific cipher properties, related-key attacks involve multiple related keys, processing overhead is a general concern, and ECB is demonstrably *not* inherently secure."
+    },
+    {
+      "scenario": "A secure messaging application uses a 64-bit key symmetric cipher.  Given current computing capabilities, what is the primary threat to the confidentiality of messages encrypted with this system?",
+      "options": [
+        "Brute-force attack.",
+        "Chosen-plaintext attack.",
+        "Man-in-the-middle attack.",
+        "Replay attack.",
+        "Differential cryptanalysis."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "A 64-bit key provides a keyspace of 2^64. While significant, modern computing resources can perform a brute-force attack across this entire keyspace in a reasonable timeframe. Chosen-plaintext attacks are mitigated by well-designed ciphers, and man-in-the-middle and replay attacks are network-level threats addressed by other mechanisms. Differential cryptanalysis is specific to cipher structure."
+    },
+    {
+      "scenario": "An organization needs to encrypt highly sensitive financial records. They are considering using AES with a 128-bit key. A security audit reveals that the encryption key is being stored in plaintext on the same server as the encrypted data. What security property is most directly compromised?",
+      "options": [
+        "Integrity.",
+        "Confidentiality.",
+        "Authentication.",
+        "Non-repudiation.",
+        "Availability."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Confidentiality is directly compromised because the encryption key, the secret needed to decrypt the data, is exposed. Integrity ensures the data hasn't been altered, authentication verifies the identity of users, and non-repudiation prevents a sender from denying they sent a message. Availability relates to the system's uptime."
+    },
+    {
+      "scenario": "A company is using a block cipher in CBC mode to encrypt data before storing it on a cloud server. An attacker manages to flip a single bit in one of the ciphertext blocks. What is the most likely impact when the data is decrypted?",
+      "options": [
+        "Only the corresponding bit in the corresponding plaintext block will be flipped.",
+        "The entire plaintext will be corrupted.",
+        "The entire subsequent plaintext block will be corrupted after that bit and only that.",
+        "The entire subsequent plaintext block will be corrupted and all bits of the plaintext corresponding to the flipped bit of the ciphertext.",
+        "Only the corresponding plaintext block and the subsequent block will be affected; the bit flipped in the ciphertext will affect the corresponding bit in its plaintext and the entire following block will be corrupted."
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "In CBC mode, each ciphertext block is XORed with the *previous* ciphertext block before decryption. Thus, changing a bit in a ciphertext block affects the corresponding bit in the *current* plaintext block due to XORing. Since the ciphertext block is also used for the next decryption, that entire following block will then get garbled."
+    },
+    {
+      "scenario": "A system transmits encrypted messages. An attacker captures several ciphertext messages and also manages to obtain the corresponding plaintext for a subset of these messages. What type of attack is the attacker primarily positioned to launch?",
+      "options": [
+        "Chosen-ciphertext attack.",
+        "Known-plaintext attack.",
+        "Ciphertext-only attack.",
+        "Related-key attack.",
+        "Brute-force attack."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The attacker having both ciphertext and corresponding plaintext defines a Known-Plaintext Attack (KPA). The goal is to find out how a particular plaintext is transformed into ciphertext in order to be able to decrypt future messages using the same key.  A chosen-ciphertext attack requires the ability to obtain the plaintext of chosen ciphertexts.  A ciphertext-only attack only has access to ciphertext. A related-key attack exploits relationships between multiple keys, and a brute-force attack tries all possible keys without using known plaintext."
+    },
+    {
+      "scenario": "A web application uses symmetric encryption to protect user passwords stored in a database. The encryption key is derived using a weak key derivation function from a master password. What is the most significant risk associated with this approach?",
+      "options": [
+        "Compromised integrity of the password data.",
+        "Successful replay attacks.",
+        "Vulnerability to brute-force or dictionary attacks against the master password, compromising all user passwords.",
+        "Loss of non-repudiation.",
+        "Exposure to traffic analysis."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "If the key derivation function is weak, an attacker can efficiently guess the master password, and from it, derive the encryption key. This allows the attacker to decrypt all the user passwords. Weak key derivation bypasses the strength of the symmetric encryption algorithm. The other options are less directly related to the weak key derivation function."
+    },
+    {
+      "scenario": "A sensor network is deployed to monitor environmental conditions. Due to resource constraints, the sensors use a lightweight symmetric encryption algorithm with a relatively short key length. How does the key length affect the security of the data transmitted by the sensors?",
+      "options": [
+        "Longer key lengths always guarantee perfect security.",
+        "Shorter key lengths make the system vulnerable to denial-of-service attacks.",
+        "Shorter key lengths reduce the computational cost of encryption and decryption.",
+        "Shorter key lengths increase the complexity of key management.",
+        "Shorter key lengths make the system more resilient to side-channel attacks."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Shorter key lengths directly reduce the computational cost (i.e., time and energy) of encryption and decryption, which is crucial for resource-constrained devices. However, this comes at the cost of reduced security since brute-force attacks become more feasible. While longer keys improve security against brute-force, they are computationally more expensive. The other options are generally incorrect or less directly relevant."
+    },
+    {
+      "scenario": "An application uses a symmetric cipher in CBC mode. During an audit, it's discovered that the Initialization Vector (IV) is consistently set to zero. What potential security vulnerability does this introduce?",
+      "options": [
+        "Increased vulnerability to differential cryptanalysis.",
+        "Increased vulnerability to chosen-ciphertext attacks.",
+        "Identical plaintexts encrypted with the same key will produce identical ciphertexts, especially if the initial plaintext blocks are also the same.",
+        "Increased vulnerability to replay attacks.",
+        "Compromised authentication."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Using a constant IV in CBC mode defeats the purpose of the IV. CBC relies on the IV to ensure that the encryption of the same plaintext results in different ciphertexts each time. If the IV is constant, and the key doesn't change, identical plaintexts will produce identical ciphertexts. This is especially dangerous if the first few blocks contain predictable data. The other options are not the primary vulnerabilities introduced by a constant IV in CBC."
+    },
+    {
+      "scenario": "A company stores encrypted backups on external hard drives. The company uses a 192-bit key symmetric encryption algorithm. An employee loses one of the hard drives. What factor primarily determines the feasibility of an attacker recovering the data on the lost drive?",
+      "options": [
+        "The specific encryption algorithm used.",
+        "The physical security of the hard drive itself.",
+        "The time and resources the attacker is willing to invest in a brute-force attack.",
+        "Whether the hard drive was encrypted in ECB or CBC mode.",
+        "The number of backups stored on the drive."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "With a 192-bit key, the primary barrier to decryption is the computational effort required for a brute-force attack (trying all possible keys). The success depends on the attacker's available resources (computing power, time, budget). While the algorithm and mode of operation influence security in general, the 192-bit key's large keyspace makes brute-force the dominant factor here, as cryptanalytic weaknesses are unlikely to be exploitable practically."
+    },
+    {
+      "scenario": "A secure vault system uses a symmetric key to encrypt its access logs. The engineers want to add a feature to redact certain entries. What aspect is key to consider when designing the redaction?",
+      "options": [
+        "If the logs are encrypted in CBC mode the whole block the entry is in should be removed to preserve the integrity of the following block.",
+        "If the logs are encrypted in ECB mode, redacting an encrypted block is simple and efficient, but the redaction will be visually noticeable because ciphertext is deterministic.",
+        "Redaction should be performed on the ciphertext directly.",
+        "Hashing the redacted log entry with SHA-256 is a viable approach to integrity protection.",
+        "Redactions do not affect decryption process."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In ECB mode, each block is encrypted independently. Thus, redacting a block (replacing it with, for example, all zeros) doesn't affect the other blocks' integrity. However, because ECB is deterministic, the repeated ciphertext pattern resulting from the redaction *is* noticeable. Redaction in CBC is more complicated because each block depends on the previous one. Hashing the redacted entry doesn't prevent someone from knowing the log entry was redacted, nor does that serve to maintain integrity. Redactions will affect decryption process, unless carefully designed with an understanding of the operation mode."
+    },
+    {
+      "scenario": "An organization is implementing a secure file storage system. They decide to use AES-256 in CBC mode with a randomly generated IV for each file. Which security property is primarily guaranteed by using AES-256?",
+      "options": [
+        "Authentication.",
+        "Integrity.",
+        "Confidentiality.",
+        "Non-repudiation.",
+        "Availability."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "AES-256, as a symmetric encryption algorithm, directly guarantees *confidentiality* by making the file content unreadable to unauthorized parties. Authentication is about verifying identity, integrity ensures data hasn't been modified, and non-repudiation prevents denial of sending/receiving a message. Availability concerns system uptime."
+    },
+    {
+      "scenario": "A company utilizes symmetric encryption to protect data transmitted over a public network. An attacker intercepts the encrypted data and knows the encryption algorithm being used, but does not know the key. The attacker can also observe significant amounts of encrypted data being transmitted. What type of attack is most likely the attacker's initial strategy?",
+      "options": [
+        "Brute-force attack.",
+        "Chosen-plaintext attack.",
+        "Known-plaintext attack.",
+        "Dictionary attack.",
+        "Birthday attack."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Since the attacker only has ciphertext and knowledge of the encryption algorithm, a brute-force attack against the key is the most direct initial strategy. The feasibility depends on the key length. A dictionary attack works for passwords; chosen-plaintext requires influence on the input, known-plaintext requires plaintext-ciphertext pairs, and a birthday attack is usually applied to hash functions."
+    },
+    {
+      "scenario": "A hardware security module (HSM) stores cryptographic keys. A vulnerability is discovered that allows an attacker to observe the power consumption of the HSM during encryption operations. What type of attack is this vulnerability relevant to?",
+      "options": [
+        "Replay attack.",
+        "Side-channel attack.",
+        "Man-in-the-middle attack.",
+        "Brute-force attack.",
+        "Dictionary attack."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Observing power consumption during cryptographic operations is a characteristic of *side-channel attacks*. These attacks exploit physical characteristics of the implementation rather than mathematical weaknesses of the algorithm. The other attacks are not directly relevant to power consumption analysis."
+    },
+    {
+      "scenario": "A system stores encrypted data and uses a 112-bit key symmetric encryption algorithm. An upgrade is planned which would change that to a 256-bit key. What primarily improves from this upgrade?",
+      "options": [
+        "Resistance against side-channel attacks.",
+        "Computational resources required for a brute-force attack.",
+        "Throughput (encryption/decryption speed).",
+        "Key generation complexity.",
+        "Protection from replay attacks."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Increasing the key length from 112 bits to 256 bits dramatically *increases* the computational resources needed to perform a brute-force attack, since the keyspace grows exponentially (from 2^112 to 2^256). This increase makes brute-force attacks significantly less feasible. It doesn't directly impact side-channel resistance, throughput, or key generation complexity."
+    },
+    {
+      "scenario": "An application uses symmetric encryption in CBC mode to protect communication. However, an attacker discovers a way to manipulate the initialization vector (IV) before encryption takes place. What type of attack is the attacker most likely going to attempt?",
+      "options": [
+        "Chosen-plaintext attack.",
+        "Known-plaintext attack.",
+        "Brute-force attack.",
+        "IV Manipulation Attack.",
+        "Replay attack."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The vulnerability of manipulating the IV enables an IV Manipulation Attack. A known-plaintext or brute force attack could benefit, but a direct manipulation of the IV can directly reveal the difference in plaintexts to the attacker. A chosen-plaintext attack involves generating arbitrary plaintexts for a ciphertext."
+    }
+  ]
+}
