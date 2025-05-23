@@ -472,6 +472,9 @@ h1 {
     outline: none;
     transition: border-color 0.3s ease;
     background: white;
+    width: 90%;
+    max-width: 340px;
+    align-self: center;
 }
 
 #course-select:focus {
