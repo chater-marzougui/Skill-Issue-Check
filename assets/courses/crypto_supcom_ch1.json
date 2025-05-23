@@ -1,0 +1,1756 @@
+{
+  "Session 1 (p.1)": [
+    {
+      "question": "Which of the following best describes cryptography?",
+      "options": [
+        "The art of writing in code to secure data.",
+        "The science of analyzing and breaking secure communication.",
+        "The science of using mathematics to encrypt and decrypt data.",
+        "A method of securing physical locations from intrusion."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Cryptography involves using mathematical algorithms to transform data into an unreadable format (encryption) and back (decryption), thus securing it."
+    },
+    {
+      "question": "What is the primary function of cryptanalysis?",
+      "options": [
+        "To encrypt sensitive information.",
+        "To develop new cryptographic algorithms.",
+        "To analyze and break secure communication.",
+        "To ensure the privacy of communications by legal means."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Cryptanalysis is the art and science of deciphering encrypted messages without knowing the key. It aims to break the security of cryptographic systems."
+    },
+    {
+      "question": "Which of the following elements are involved in classical cryptanalysis?",
+      "options": [
+        "Analytical reasoning",
+        "Application of mathematical tools",
+        "Patience",
+        "Luck",
+        "Quantum computing"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Classical cryptanalysis combines analytical thinking, mathematical techniques, perseverance, and sometimes good fortune to break codes."
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of the Caesar cipher?",
+      "options": [
+        "It is a type of substitution cipher.",
+        "It involves shifting letters by a fixed number of positions.",
+        "It is one of the most complex encryption techniques.",
+        "It is also known as the shift cipher."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The Caesar cipher is known for its simplicity. It's a basic substitution cipher where each letter is replaced by a letter a fixed number of positions down the alphabet."
+    },
+    {
+      "question": "What is the shift parameter in the Caesar cipher used for?",
+      "options": [
+        "Determining the language of the plaintext.",
+        "Defining the direction and distance of the letter shift.",
+        "Identifying the sender of the message.",
+        "Verifying the integrity of the message."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The shift parameter in a Caesar cipher acts as the key, specifying how many positions each letter in the plaintext should be shifted to encrypt or decrypt the message."
+    },
+    {
+      "question": "What makes ROT13 unique compared to other Caesar ciphers?",
+      "options": [
+        "It's unbreakable.",
+        "It is used only for encoding, not decoding.",
+        "It shifts the alphabet by 13 places, making it its own inverse.",
+        "It was used by Julius Caesar."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "ROT13's shift of 13 positions means applying the algorithm again decrypts the message, as there are 26 letters in the alphabet. Thus, encoding and decoding use the same process."
+    },
+    {
+      "question": "Why is ROT13 considered a weak form of encryption?",
+      "options": [
+        "It's too computationally intensive.",
+        "It has a limited key space (only one key).",
+        "It requires specialized hardware to implement.",
+        "It is vulnerable to frequency analysis."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "ROT13 is weak because it uses a fixed shift of 13, making it easily breakable with a single attempt. The key space consists of only one possibility."
+    },
+    {
+      "question": "What type of cipher is the Scytale?",
+      "options": [
+        "Substitution cipher",
+        "Transposition cipher",
+        "Polyalphabetic cipher",
+        "Stream cipher"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Scytale is a transposition cipher that rearranges the order of characters rather than substituting them with different characters."
+    },
+    {
+      "question": "What is the key in a Scytale cipher?",
+      "options": [
+        "The length of the parchment strip.",
+        "The diameter of the cylinder.",
+        "The number of lines written on the parchment.",
+        "The material of the cylinder."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The diameter of the cylinder is crucial; only a cylinder of the same diameter as the one used for encryption can properly decrypt the message. It is the secret shared between the sender and receiver."
+    },
+    {
+      "question": "Which characteristics apply to the Vigenère cipher?",
+      "options": [
+        "It uses a single Caesar cipher for the entire message.",
+        "Each letter of the plaintext is encrypted with a different Caesar cipher based on a key.",
+        "It uses a complex mathematical formula for encryption.",
+        "It encrypts alphabetic text.",
+        "It is named after Julius Caesar."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "The Vigenère cipher is a polyalphabetic substitution cipher where each letter in the plaintext is encrypted using a different Caesar cipher, determined by a keyword. This keyword is used to encode alphabetic text."
+    },
+    {
+      "question": "What is a tabula recta in the context of the Vigenère cipher?",
+      "options": [
+        "A mathematical formula used for encryption.",
+        "A table of alphabets used for encryption and decryption.",
+        "A list of common keywords used in Vigenère ciphers.",
+        "A device for automating the Vigenère cipher."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A tabula recta, also known as the Vigenère square, is a grid containing the alphabet shifted cyclically, used for looking up the ciphertext letter corresponding to the plaintext letter and the key letter in the Vigenère cipher."
+    },
+    {
+      "question": "What was Friedrich Kasiski's contribution to cryptanalysis?",
+      "options": [
+        "He created the Vigenère cipher.",
+        "He published the first successful general attack on the Vigenère cipher.",
+        "He invented the ADFGVX cipher.",
+        "He broke the Enigma code during World War II."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Friedrich Kasiski developed a method to break the Vigenère cipher, which was a significant advancement because it did not rely on prior knowledge of the plaintext or predictable keywords."
+    },
+    {
+      "question": "The ADFGVX cipher was used by which military during World War I?",
+      "options": [
+        "British Army",
+        "French Army",
+        "Imperial German Army",
+        "United States Army"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The ADFGVX cipher was employed by the Imperial German Army to secure wireless telegraphic communications during World War I."
+    },
+    {
+      "question": "Which of the following are characteristics of the ADFGVX cipher?",
+      "options": [
+        "It's named after letters used in its ciphertext.",
+        "It combines a modified Polybius square with a columnar transposition.",
+        "It was easy to break due to its simplicity.",
+        "It could be computed by hand.",
+        "It's a substitution cipher."
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "The ADFGVX cipher uses only the letters A, D, F, G, V, and X in its ciphertext. It combines a Polybius square and a columnar transposition. It was designed for manual application and was initially considered secure."
+    },
+    {
+      "question": "What is the primary function of the Enigma machine?",
+      "options": [
+        "To transmit Morse code signals.",
+        "To encrypt and decrypt messages.",
+        "To perform complex mathematical calculations.",
+        "To store sensitive data."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Enigma machine was designed to encrypt and decrypt messages, providing secure communication, primarily for military purposes."
+    },
+    {
+      "question": "Which describes how the Enigma machine works?",
+      "options": [
+        "It uses a series of lenses and mirrors to scramble the text.",
+        "It uses electromechanical rotors to scramble the letters of the alphabet.",
+        "It relies on a complex network of vacuum tubes to encrypt the message.",
+        "It rearranges the order of letters based on a key."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Enigma machine's core mechanism is a series of rotors that scramble the input letter based on their position and wiring, creating a complex substitution cipher."
+    },
+    {
+      "question": "What is the main difference between transposition and substitution ciphers?",
+      "options": [
+        "Transposition ciphers are stronger than substitution ciphers.",
+        "Transposition ciphers change the characters, while substitution ciphers change the positions of the characters.",
+        "Transposition ciphers change the positions of the characters, while substitution ciphers change the characters.",
+        "Substitution ciphers are used only for encrypting numbers, while transposition ciphers are used for encrypting text."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Transposition ciphers work by rearranging the order of the characters in the plaintext. Substitution ciphers, on the other hand, replace each character with a different character."
+    },
+    {
+      "question": "What does a monoalphabetic substitution cipher entail?",
+      "options": [
+        "Using a different substitution for each letter in the plaintext.",
+        "Using a fixed substitution over the entire message.",
+        "Using a combination of transposition and substitution.",
+        "Using a key that changes with each character encrypted."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A monoalphabetic cipher uses a single, fixed substitution table throughout the entire encryption process, mapping each plaintext character to a specific ciphertext character consistently."
+    },
+    {
+      "question": "What is a key characteristic of a polyalphabetic substitution cipher?",
+      "options": [
+        "It uses only one alphabet for substitution.",
+        "It uses multiple substitutions at different positions in the message.",
+        "It is unbreakable.",
+        "It relies on complex mathematical algorithms."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Polyalphabetic ciphers use multiple substitution alphabets throughout the encryption process, making them more resistant to frequency analysis than monoalphabetic ciphers."
+    },
+    {
+      "question": "What is the core principle of Kerckhoffs's principle?",
+      "options": [
+        "A cryptosystem's security should depend on the secrecy of the algorithm.",
+        "A cryptosystem's security should depend on the secrecy of the key, even if everything else about the system is public.",
+        "A cryptosystem should be kept secret to maintain its security.",
+        "A cryptosystem should be easy to use and understand."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Kerckhoffs's principle emphasizes that the security of a cryptosystem should rely on the secrecy of the key alone, not on the secrecy of the algorithm itself. It is safer to assume that the adversary knows the algorithm."
+    },
+    {
+      "question": "What is another term for Kerckhoff's principle, as phrased by Claude Shannon?",
+      "options": [
+        "Shannon's law",
+        "Shannon's limit",
+        "Shannon's maxim",
+        "Shannon's bound"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Claude Shannon summarized Kerckhoffs's principle as 'the enemy knows the system'. This is commonly called Shannon's maxim."
+    },
+    {
+      "question": "What does perfect secrecy imply in cryptography?",
+      "options": [
+        "The ciphertext reveals some information about the plaintext.",
+        "The ciphertext reveals absolutely no additional information about the plaintext.",
+        "The key is unbreakable.",
+        "The algorithm is unknown."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Perfect secrecy means that observing the ciphertext gives the attacker no additional information about the original plaintext message. This is achieved when the a priori and a posteriori probabilities of the plaintext are equal."
+    },
+    {
+      "question": "What is the main requirement for achieving perfect secrecy?",
+      "options": [
+        "A complex encryption algorithm.",
+        "A short key.",
+        "A truly random key used only once.",
+        "A well-known encryption standard."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Perfect secrecy is achieved using a one-time pad, which requires a truly random key that is as long as the message and used only once."
+    },
+    {
+      "question": "Which of the following conditions must be met for a one-time pad to provide perfect secrecy?",
+      "options": [
+        "The key must be at least as long as the plaintext.",
+        "The key must be truly random.",
+        "The key can be reused as long as it is encrypted first.",
+        "The key must never be reused in whole or in part.",
+        "The key must be kept completely secret by the communicating parties."
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "For a one-time pad to provide perfect secrecy, the key must be as long as the plaintext, truly random, never reused, and kept completely secret."
+    }
+  ],
+  "Session (16-30) (p.16)": [
+    {
+      "question": "Which of the following are practical drawbacks of using a one-time pad?",
+      "options": [
+        "The algorithm is computationally complex.",
+        "Generating truly random one-time pad values is a non-trivial requirement.",
+        "The one-time pad values must be securely generated and exchanged, and must be at least as long as the message.",
+        "The key size is limited to 128 bits.",
+        "Ensuring the one-time pad values remain secret and are properly disposed of to prevent reuse is crucial."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "One-time pads require truly random keys as long as the message, secure exchange, and careful handling to prevent reuse. These are practical challenges."
+    },
+    {
+      "question": "What is 'confusion' in the context of cryptography?",
+      "options": [
+        "The process of making the encryption algorithm difficult to understand.",
+        "The process of making the decryption algorithm difficult to understand.",
+        "A property where each bit of the ciphertext depends on multiple parts of the key.",
+        "A property where changing one bit of the plaintext only affects one bit of the ciphertext.",
+        "The ambiguity in ciphertext that increases when using public key cryptography."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Confusion ensures that each bit of the ciphertext depends on several parts of the key, thus obscuring the connections between them."
+    },
+    {
+      "question": "What is 'diffusion' in the context of cryptography?",
+      "options": [
+        "A technique to reduce the size of the ciphertext.",
+        "The process of making the key exchange more efficient.",
+        "A property where changing one bit of the plaintext results in about half of the ciphertext bits changing.",
+        "A technique used only in stream ciphers to maximize security.",
+        "The statistical relationship between the ciphertext and the key."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Diffusion ensures that if a single bit of the plaintext is changed, roughly half of the bits in the ciphertext will change, and vice-versa (avalanche effect). This hides statistical relationships."
+    },
+    {
+      "question": "Which of the following statements are true about symmetric-key cryptography?",
+      "options": [
+        "It uses two related keys: a public key and a private key.",
+        "The same key is used for both encryption and decryption.",
+        "The keys may be identical or a simple transformation of each other.",
+        "Only the sender needs to know the secret key.",
+        "It inherently provides non-repudiation."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "In symmetric-key cryptography, the same key (or a simply derived key) is used for both encryption and decryption.  It's a shared secret."
+    },
+    {
+      "question": "What is a primary drawback of symmetric-key cryptography compared to public-key cryptography?",
+      "options": [
+        "Symmetric key algorithms are computationally more complex.",
+        "Symmetric key algorithms are inherently less secure.",
+        "It requires both parties to have access to the secret key, which can be difficult to establish securely.",
+        "Symmetric key algorithms cannot be used for digital signatures.",
+        "Symmetric key algorithms do not offer confidentiality."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The need to securely share the secret key between sender and receiver is a major challenge in symmetric cryptography."
+    },
+    {
+      "question": "Which of the following best describes the requirements for key establishment in early cryptographic systems using symmetric keys?",
+      "options": [
+        "Publicly distribute the key to everyone involved.",
+        "Derive the key using a publicly known algorithm.",
+        "Sender and recipient must receive a copy of the secret key over a physically secure channel.",
+        "Use a pseudorandom number generator to derive the key.",
+        "Use one-time pad to encrypt the key exchange."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Early symmetric-key systems relied on a physically secure channel for key distribution, a significant logistical challenge."
+    },
+    {
+      "question": "How do modern cryptographic systems typically overcome the need for a physically secure channel for symmetric key establishment?",
+      "options": [
+        "By using shorter key lengths.",
+        "By using asymmetric key exchange protocols like Diffie-Hellman.",
+        "By using weaker encryption algorithms.",
+        "By manually exchanging keys in person.",
+        "By broadcasting the keys over a secure network."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Modern systems use public-key protocols such as Diffie-Hellman to securely agree on a new secret key for each session, eliminating the need for a physical secure channel (forward secrecy)."
+    },
+    {
+      "question": "Why is the use of a high entropy source essential for key generation, especially when used with asymmetric ciphers for key transfer?",
+      "options": [
+        "To speed up the encryption process.",
+        "To reduce the size of the ciphertext.",
+        "Lack of randomness can lead to cryptanalytic breaks.",
+        "To simplify the key exchange protocol.",
+        "To ensure the key is easily memorable."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Insufficient randomness in key generators or initialization vectors can create exploitable patterns, leading to cryptanalytic attacks."
+    },
+    {
+      "question": "Which of the following statements are true about asymmetric cryptography?",
+      "options": [
+        "It uses the same key for encryption and decryption.",
+        "It uses pairs of related keys: a public key and a private key.",
+        "The private key can be openly distributed without compromising security.",
+        "Anyone with the public key can decrypt the ciphertext.",
+        "The keys can be changed after a specific amount of encryptions"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Asymmetric cryptography (public-key cryptography) uses two related keys: a public key and a private key."
+    },
+    {
+      "question": "In asymmetric cryptography, what is the primary reason for keeping the private key secret?",
+      "options": [
+        "To prevent others from encrypting messages.",
+        "To allow anyone to decrypt messages.",
+        "To prevent others from decrypting messages intended only for the key holder.",
+        "To reduce the computational complexity of encryption.",
+        "To decrease the key exchange overhead."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The security of public-key cryptography relies on the secrecy of the private key, as it is needed to decrypt messages and create digital signatures."
+    },
+    {
+      "question": "What is a digital signature used for?",
+      "options": [
+        "Encrypting messages for confidentiality.",
+        "Verifying the authenticity of digital messages or documents.",
+        "Hiding the sender's identity.",
+        "Compressing the size of digital messages.",
+        "Accelerating message transfer."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A digital signature provides assurance to the recipient that the message originated from a known sender and that the message has not been altered in transit."
+    },
+    {
+      "question": "A digital signature scheme typically consists of which three algorithms?",
+      "options": [
+        "Encryption, decryption, and key exchange.",
+        "Key generation, signing, and signature verification.",
+        "Hashing, salting, and stretching.",
+        "Compression, encryption, and authentication.",
+        "Obfuscation, randomness, and initialization."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A digital signature scheme includes a key generation algorithm, a signing algorithm, and a signature verification algorithm."
+    },
+    {
+      "question": "Which security property ensures that information is not disclosed to unauthorized parties?",
+      "options": [
+        "Integrity",
+        "Authenticity",
+        "Confidentiality",
+        "Non-Repudiation",
+        "Availability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Confidentiality guarantees that only authorized individuals can access sensitive information."
+    },
+    {
+      "question": "Which security property ensures the accuracy and completeness of information and prevents unauthorized alteration?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authenticity",
+        "Non-Repudiation",
+        "Authorization"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Integrity safeguards data from unauthorized modification or destruction, ensuring its accuracy and reliability."
+    },
+    {
+      "question": "Which security property provides proof of the sender's identity and delivery of data, preventing either party from denying their actions?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authenticity",
+        "Non-Repudiation",
+        "Anonymity"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Non-Repudiation provides verifiable proof that a message was sent and received, preventing denial by either party."
+    },
+    {
+      "question": "Which of the following statements are true regarding the Data Encryption Standard (DES)?",
+      "options": [
+        "DES is an asymmetric-key algorithm.",
+        "DES is a symmetric-key algorithm.",
+        "DES uses a 128-bit key length.",
+        "DES uses a 56-bit key length.",
+        "DES is considered highly secure for modern applications."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "DES is a symmetric-key algorithm that uses a relatively short 56-bit key, which makes it too insecure for modern applications."
+    },
+    {
+      "question": "What is a Feistel cipher?",
+      "options": [
+        "An asymmetric encryption algorithm.",
+        "A hashing algorithm.",
+        "A symmetric structure used in the construction of block ciphers.",
+        "A key exchange protocol.",
+        "A digital signature standard."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A Feistel cipher is a symmetric structure that's used to construct many block ciphers. Encryption and decryption are similar processes running a 'round function'."
+    },
+    {
+      "question": "Which of the following ciphers are based on the Feistel structure?",
+      "options": [
+        "AES",
+        "RSA",
+        "DES",
+        "Blowfish",
+        "SHA-256"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "DES and Blowfish are two examples of block ciphers that are constructed based on the Feistel structure."
+    },
+    {
+      "question": "What makes DES insecure for modern applications?",
+      "options": [
+        "Its complex key exchange protocol.",
+        "Its relatively short 56-bit key size.",
+        "The lack of mathematical proof for it's security",
+        "Its vulnerability to quantum computing attacks.",
+        "Its reliance on pseudorandom number generators."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The relatively short 56-bit key size makes DES vulnerable to brute-force attacks, rendering it insecure for modern applications."
+    }
+  ],
+  "Session (31-45) (p.31)": [
+    {
+      "question": "What is the block size of the Data Encryption Standard (DES)?",
+      "options": [
+        "128 bits",
+        "64 bits",
+        "56 bits",
+        "32 bits",
+        "256 bits"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "DES operates on 64-bit blocks of plaintext. The algorithm transforms these blocks into ciphertext of the same size."
+    },
+    {
+      "question": "What is the effective key length of DES, considering parity bits?",
+      "options": [
+        "48 bits",
+        "64 bits",
+        "56 bits",
+        "128 bits",
+        "32 bits"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Although the key ostensibly consists of 64 bits, 8 bits are used for parity checking and are discarded, resulting in an effective key length of 56 bits."
+    },
+    {
+      "question": "Which of the following best describes the F-function in DES?",
+      "options": [
+        "Operates on the entire 64-bit block at once",
+        "Operates on half a block (32 bits) at a time",
+        "Generates subkeys",
+        "Performs initial permutation",
+        "Performs final permutation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The F-function is a central component of DES, operating on half of the data block (32 bits) during each round of the algorithm."
+    },
+    {
+      "question": "What are the stages involved in the F-function of DES?",
+      "options": [
+        "Initial Permutation",
+        "Expansion",
+        "Key mixing",
+        "Substitution",
+        "Permutation"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "The F-function consists of expansion, key mixing, substitution (using S-boxes), and permutation (using the P-box). These steps contribute to the confusion and diffusion properties of the cipher."
+    },
+    {
+      "question": "What is the purpose of the S-boxes in DES?",
+      "options": [
+        "Linear Transformation",
+        "Non-linear Transformation",
+        "Bit expansion",
+        "Key mixing",
+        "Bit permutation"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The S-boxes perform a non-linear substitution, replacing 6 input bits with 4 output bits. This non-linearity is crucial for the security of DES, preventing it from being easily broken by linear cryptanalysis."
+    },
+    {
+      "question": "What is the purpose of the P-box in DES?",
+      "options": [
+        "To provide Non-linearity",
+        "To provide confusion",
+        "To provide Diffusion",
+        "To provide key mixing",
+        "To provide substitution"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The P-box permutes the output bits from the S-boxes to spread the influence of each S-box across multiple S-boxes in the next round, thus enhancing diffusion."
+    },
+    {
+      "question": "How many subkeys are derived from the main key in DES, and what is the size of each subkey?",
+      "options": [
+        "8 subkeys, 64 bits each",
+        "16 subkeys, 48 bits each",
+        "32 subkeys, 32 bits each",
+        "64 subkeys, 16 bits each",
+        "1 subkey, 56 bits"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "DES uses a key schedule to generate 16 subkeys, each of which is 48 bits long. These subkeys are used in each of the 16 rounds of the DES algorithm."
+    },
+    {
+      "question": "Which of the following operations are part of the key schedule in DES?",
+      "options": [
+        "Initial Permutation (IP)",
+        "Permuted Choice 1 (PC-1)",
+        "Rotation of 28-bit halves",
+        "Permuted Choice 2 (PC-2)",
+        "Final Permutation (FP)"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "The DES key schedule involves selecting 56 bits from the 64-bit key using PC-1, dividing the 56 bits into two 28-bit halves, rotating these halves, and then selecting 48 bits from the rotated halves using PC-2 to form the subkey for each round."
+    },
+    {
+      "question": "In the context of the DES key schedule, what is the purpose of the rotations (denoted by '<<<')?",
+      "options": [
+        "To shift the bits to the right",
+        "To shift the bits to the left",
+        "To ensure a different set of bits is used in each subkey",
+        "To perform parity checking",
+        "To discard parity bits"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The rotations in the DES key schedule ensure that a different set of key bits is used to generate each of the 16 subkeys, contributing to the security of the algorithm."
+    },
+    {
+      "question": "Which of the following are true about AES?",
+      "options": [
+        "It is also known as Rijndael",
+        "It always has a block size of 64 bits",
+        "It was established as a standard by NIST",
+        "It always has a key size of 56 bits",
+        "It uses S-boxes"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "AES, also known as Rijndael, was established as a standard by NIST. It uses S-boxes as part of the SubBytes step."
+    },
+    {
+      "question": "What key lengths are supported by AES?",
+      "options": [
+        "56 bits",
+        "64 bits",
+        "128 bits",
+        "192 bits",
+        "256 bits"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "explanation": "AES supports three different key lengths: 128, 192, and 256 bits."
+    },
+    {
+      "question": "Which of the following are round transformations in AES?",
+      "options": [
+        "Initial Permutation",
+        "SubBytes",
+        "ShiftRows",
+        "MixColumns",
+        "AddRoundKey"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "AES round transformations include SubBytes, ShiftRows, MixColumns, and AddRoundKey."
+    },
+    {
+      "question": "What is the purpose of the SubBytes step in AES?",
+      "options": [
+        "Linear mixing of bytes",
+        "Non-linear substitution of bytes",
+        "Shifting bytes in rows",
+        "Combining state with round key",
+        "Swapping bytes"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The SubBytes step in AES performs a non-linear substitution of each byte in the state using a lookup table."
+    },
+    {
+      "question": "What is the purpose of the ShiftRows step in AES?",
+      "options": [
+        "To perform byte substitution",
+        "To shift bytes cyclically in each row",
+        "To combine columns linearly",
+        "To add the round key",
+        "To permute rows"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The ShiftRows step cyclically shifts the bytes in each row of the state by a certain offset. The first row is unchanged, the second row is shifted by one byte, the third row by two bytes, and the fourth row by three bytes."
+    },
+    {
+      "question": "What is the purpose of the MixColumns step in AES?",
+      "options": [
+        "Non-linear byte substitution",
+        "Cyclic row shifting",
+        "Linear mixing of bytes in each column",
+        "Round key addition",
+        "Column Permutation"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The MixColumns step performs a linear mixing operation on the bytes in each column of the state, providing diffusion in the cipher."
+    },
+    {
+      "question": "What operation is performed in the AddRoundKey step of AES?",
+      "options": [
+        "Byte substitution",
+        "Row shifting",
+        "Column mixing",
+        "Bitwise XOR with the round key",
+        "Key Expansion"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "In the AddRoundKey step, each byte of the state is combined with a byte of the round key using a bitwise XOR operation."
+    },
+    {
+      "question": "What are the block and maximum key sizes of the Twofish algorithm?",
+      "options": [
+        "Block size: 64 bits, Key size: 128 bits",
+        "Block size: 128 bits, Key size: 256 bits",
+        "Block size: 256 bits, Key size: 128 bits",
+        "Block size: 128 bits, Key size: 128 bits",
+        "Block size: 64 bits, Key size: 256 bits"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Twofish has a block size of 128 bits and supports key sizes up to 256 bits."
+    },
+    {
+      "question": "What is one of the distinctive features of the Twofish algorithm?",
+      "options": [
+        "Use of only linear transformations",
+        "Simple key schedule",
+        "Use of pre-computed key-dependent S-boxes",
+        "Fixed S-boxes",
+        "No Key Schedule"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Twofish's uses pre-computed, key-dependent S-boxes which is a distinguishing feature. One half of the n-bit key is used as the actual encryption key, while the other half is used to modify the encryption algorithm (key-dependent S-boxes)."
+    },
+    {
+      "question": "What is the recommended alternative to Blowfish for encrypting files larger than 4GB?",
+      "options": [
+        "DES",
+        "AES",
+        "Twofish",
+        "Triple DES",
+        "RSA"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Twofish is recommended instead of Blowfish for encrypting files larger than 4GB."
+    },
+    {
+      "question": "Which of the following does message authentication protect against?",
+      "options": [
+        "Snooping",
+        "Falsification of data",
+        "Passive Attack",
+        "Brute-force attack",
+        "Replay attacks"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Message authentication protects against active attacks, such as falsification of data and transactions, by ensuring that received messages are authentic."
+    }
+  ],
+  "Session (46-60) (p.46)": [
+    {
+      "question": "Which of the following is/are true regarding Message Authentication Codes (MACs)?",
+      "options": [
+        "Source and destination share a public key.",
+        "The MAC is of variable length.",
+        "The source calculates the MAC as a function of the message and a shared key.",
+        "The recipient calculates a MAC and compares it to the received MAC.",
+        "If the two MACs match, and the key is secret, the recipient accepts the message as authentic."
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "explanation": "The source calculates the MAC using a function with the message and a shared key. The recipient calculates a MAC using the same function with received message and compares it with received MAC. If these match, the message is considered authentic, provided the key is secret."
+    },
+    {
+      "question": "Which of the following is/are true about secure hash functions?",
+      "options": [
+        "They accept a variable-size input message.",
+        "They produce a fixed-size message digest.",
+        "They take a secret key as input, similar to MACs.",
+        "They are used to authenticate a message by sending the authenticated hash value with the message.",
+        "The hash value is also known as a MAC."
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Secure hash functions accept variable-size input and produce fixed-size output. They are used for message authentication without a secret key, unlike MACs. The hash value is not a MAC; it's a message digest."
+    },
+    {
+      "question": "What is a critical characteristic of a cryptographic hash function related to changes in the input message?",
+      "options": [
+        "A small change in the input message results in a predictable change in the hash value.",
+        "Any change in the input message results in the same hash value.",
+        "A change in any bit of the input message results in a different hash value.",
+        "The hash value remains the same even if the message is encrypted.",
+        "The function always returns zero."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A core security property is that even a tiny alteration to the message will lead to a drastically different hash value.  This is crucial for detecting tampering."
+    },
+    {
+      "question": "What properties are generally desired in a cryptographic hash function?",
+      "options": [
+        "Variable output size",
+        "One-way property",
+        "Easy to compute hash value",
+        "Strong-collision resistance",
+        "Use of key"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Cryptographic hash functions should be one-way (difficult to invert), easy to compute, and collision-resistant (hard to find two different inputs with the same hash)."
+    },
+    {
+      "question": "Which of the following are true regarding collision resistance in hash functions?",
+      "options": [
+        "Weak collision resistance means it's easy to find a different message with the same hash as a given message.",
+        "Strong collision resistance implies weak collision resistance.",
+        "Strong collision resistance means it's practically impossible to find any two different messages with the same hash value.",
+        "Collision resistance is not important for integrity.",
+        "Hash functions do not have collision"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Strong collision resistance implies it is hard to find any two different messages that hash to the same value. Strong collision resistance does implies Weak collision resistance."
+    },
+    {
+      "question": "Which statements are true about SHA-1?",
+      "options": [
+        "SHA-1 produces a 256-bit hash value.",
+        "SHA-1 produces a 160-bit hash value.",
+        "SHA-1's strength is currently considered very secure.",
+        "SHA-1's strength is less than initially thought.",
+        "SHA-1 is not a hash function."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "SHA-1 produces a 160-bit hash value. Its strength is no longer considered as strong due to discovered vulnerabilities."
+    },
+    {
+      "question": "Which of the following are applications of hash functions?",
+      "options": [
+        "Password hashing",
+        "Ensuring integrity of software",
+        "Public key distribution",
+        "Commitment schemes",
+        "Key generation"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Hash functions are used for password storage (storing hashes instead of passwords), verifying software integrity, and commitment schemes (committing to a value without revealing it)."
+    },
+    {
+      "question": "In the context of cryptography, what is the critical difference between symmetric and public-key encryption?",
+      "options": [
+        "Symmetric encryption uses two different keys, while public-key uses the same key for both encryption and decryption.",
+        "Symmetric encryption uses the same key for encryption and decryption, while public-key encryption uses two different keys.",
+        "Symmetric encryption is more secure than public-key encryption.",
+        "Public-key encryption is faster than symmetric encryption.",
+        "Public-key encryption is not usefull."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Symmetric encryption employs a single secret key for both encryption and decryption. Public-key cryptography, on the other hand, uses a pair of keys: a public key for encryption and a private key for decryption."
+    },
+    {
+      "question": "Which of the following statements are true about public-key encryption?",
+      "options": [
+        "It was first publicly proposed by Diffie and Hellman in 1976.",
+        "It involves the use of a single key for both encryption and decryption.",
+        "The public key must be kept secret.",
+        "The private key is known to everyone.",
+        "It has no consequences in key distribution."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Public-key encryption was introduced by Diffie and Hellman in 1976. It employs two separate keys. The public key is available to everyone, and the private key is kept secret."
+    },
+    {
+      "question": "In public-key cryptography for confidentiality, what key does the sender use to encrypt the message, and what key does the receiver use to decrypt it?",
+      "options": [
+        "Sender encrypts with their private key, receiver decrypts with their public key.",
+        "Sender encrypts with the receiver's public key, receiver decrypts with their private key.",
+        "Sender encrypts with their public key, receiver decrypts with their private key.",
+        "Sender encrypts with the receiver's private key, receiver decrypts with the sender's public key.",
+        "Both sender and receiver use the public key."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "For confidentiality, the sender encrypts the message using the recipient's public key. Only the recipient possesses the corresponding private key to decrypt the message."
+    },
+    {
+      "question": "In public-key cryptography for integrity/authentication, what key does the sender use to encrypt the message, and what key does the receiver use to decrypt it?",
+      "options": [
+        "Sender encrypts with their private key, receiver decrypts with their public key.",
+        "Sender encrypts with the receiver's public key, receiver decrypts with their private key.",
+        "Sender encrypts with their public key, receiver decrypts with their private key.",
+        "Sender encrypts with the receiver's private key, receiver decrypts with the sender's public key.",
+        "Only public key is used."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "For integrity and authentication, the sender encrypts the message using their private key (creating a digital signature), and the receiver decrypts it using the sender's public key to verify the sender's identity."
+    },
+    {
+      "question": "How can both confidentiality and authentication/integrity be achieved using public-key cryptography?",
+      "options": [
+        "By encrypting the message twice with the same key.",
+        "By first encrypting with the sender's private key and then encrypting the result with the receiver's public key.",
+        "By first encrypting with the receiver's public key and then encrypting the result with the sender's private key.",
+        "Authentication can not be combined with confidentiality",
+        "Confidentiality can not be combined with authentication"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Confidentiality and integrity can be achieved by first encrypting the message with the sender's private key (for authentication), and then encrypting the result with the receiver's public key (for confidentiality)."
+    },
+    {
+      "question": "Which of the following are examples of public-key algorithms?",
+      "options": [
+        "AES",
+        "RSA",
+        "Diffie-Hellman",
+        "SHA-256",
+        "Elliptic Curve Cryptography (ECC)"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "RSA, Diffie-Hellman, and ECC are public-key algorithms. AES is a symmetric encryption algorithm, and SHA-256 is a hash function."
+    },
+    {
+      "question": "What is the primary purpose of public-key certificates?",
+      "options": [
+        "To encrypt messages more efficiently.",
+        "To address the problem of public key distribution and ensure the public key belongs to the specified user.",
+        "To generate random keys.",
+        "To provide confidentiality only.",
+        "To distribute the secret key."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Public-key certificates primarily solve the problem of securely distributing public keys and verifying that a public key genuinely belongs to the claimed owner."
+    }
+  ],
+  "Session (61-75) (p.61)": [
+    {
+      "question": "Which of the following are components of a certificate structure?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Certificate issuer",
+        "Hash function",
+        "Encryption algorithm"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "A certificate structure includes components such as the public key and the certificate issuer. The certificate does not contain the private key."
+    },
+    {
+      "question": "What is the main function of a Certification Authority (CA) related to public-key certificates?",
+      "options": [
+        "Encrypting data using the recipient's public key.",
+        "Generating hash functions for data integrity.",
+        "Creating and signing digital certificates.",
+        "Decrypting the certificate using a private key.",
+        "Creating symmetric keys."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The main function of a CA is to create and digitally sign certificates, attesting to the binding between a public key and an identity."
+    },
+    {
+      "question": "What does the recipient use to verify a signature on a signed certificate?",
+      "options": [
+        "The sender's private key",
+        "The CA's private key",
+        "The CA's public key",
+        "The recipient's private key",
+        "The recipient's public key"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The recipient uses the CA's public key to verify the signature on a signed certificate, confirming that the CA vouches for the certificate's validity."
+    },
+    {
+      "question": "In the process of verifying a public-key certificate, what is compared after decrypting the signature with the CA's public key?",
+      "options": [
+        "The original message",
+        "The recipient's private key",
+        "The hash value of the unsigned certificate",
+        "The CA's private key",
+        "The encrypted signature"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "After decrypting the signature with the CA's public key, the resulting hash value is compared to the independently generated hash value of the unsigned certificate."
+    },
+    {
+      "question": "What is the purpose of using public-key encryption in digital envelopes?",
+      "options": [
+        "To encrypt the entire message directly for confidentiality.",
+        "To distribute secret keys used for symmetric encryption.",
+        "To verify the integrity of the message.",
+        "To generate the hash value of the message.",
+        "To hide the sender's identity."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Public-key encryption in digital envelopes is primarily used to securely distribute the symmetric key, which is then used to encrypt the actual message for efficiency."
+    },
+    {
+      "question": "Which encryption method is typically used to encrypt the actual message content in a digital envelope?",
+      "options": [
+        "Asymmetric encryption",
+        "Symmetric encryption",
+        "Hashing",
+        "Digital signature",
+        "MAC algorithm"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Symmetric encryption is used to encrypt the message in a digital envelope because it is faster and more efficient than asymmetric encryption for large amounts of data."
+    },
+    {
+      "question": "In the context of digital envelopes, what does Env = (cm, ck) represent?",
+      "options": [
+        "The encrypted message and the recipient's public key.",
+        "The digital signature and the certificate.",
+        "The encrypted message (ciphertext) and the encrypted session key.",
+        "The hash of the message and the encryption key.",
+        "The private key and public key."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Env = (cm, ck) represents the digital envelope, where cm is the encrypted message (ciphertext) and ck is the encrypted session key, which only the recipient with the corresponding private key can decrypt."
+    },
+    {
+      "question": "Which of the following are electronic signature standards?",
+      "options": [
+        "AES",
+        "PADES",
+        "RSA",
+        "CADES",
+        "XADES"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "PADES, CADES, and XADES are all standards that dominate the e-signature market. AES and RSA are encryption algorithms."
+    },
+    {
+      "question": "What is the main difference between simple, advanced, and qualified electronic signatures?",
+      "options": [
+        "Simple signatures include scanned signatures, advanced signatures rely on encryption, and qualified signatures require notarization.",
+        "Simple signatures do not provide user identification, advanced signatures require unique identification, and qualified signatures require secure creation device.",
+        "Simple signatures are not legally binding, advanced signatures are legally binding, and qualified signatures are internationally recognized.",
+        "Simple signatures are only for personal use, advanced signatures are for business use, and qualified signatures are for government use.",
+        "Simple signatures do not rely on any technology, advanced signatures rely on PKI, and qualified signatures rely on blockchain."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Simple signatures are basic forms without strong identification; advanced signatures uniquely identify the user and are under their sole control; qualified signatures build on advanced signatures with the addition of a digital certificate encrypted by a secure signature creation device (e.g., smart card)."
+    },
+    {
+      "question": "Which is the simplest version of XAdES?",
+      "options": [
+        "XAdES-BASELINE-T",
+        "XAdES-BASELINE-LTA",
+        "XAdES-BASELINE-LT",
+        "XAdES-BASELINE-B",
+        "XAdES-BASELINE-A"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "XAdES-BASELINE-B is the lowest and simplest version, containing the SignedInfo, SignatureValue, KeyInfo and SignedProperties."
+    },
+    {
+      "question": "What is the purpose of XAdES-BASELINE-T?",
+      "options": [
+        "To allow verification in the future even if their original source is not available",
+        "To protect against repudiation",
+        "To prevent compromising signatures during a long-time storage period",
+        "To conform to the identified signature policy",
+        "To embedding Certificates and revocation data"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "XAdES-BASELINE-T adds a signature timestamp to protect against repudiation, indicating the time of signing."
+    },
+    {
+      "question": "Which XAdES level is equivalent to the old -XL level?",
+      "options": [
+        "XAdES-BASELINE-B",
+        "XAdES-BASELINE-T",
+        "XAdES-BASELINE-LT",
+        "XAdES-BASELINE-LTA",
+        "XAdES-BASELINE-A"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "XAdES-BASELINE-LT is equivalent to the old -XL level, embedding certificates and revocation data to allow future verification."
+    },
+    {
+      "question": "What feature is introduced in XAdES-BASELINE-LTA to prevent compromising previous signatures over time?",
+      "options": [
+        "SignatureTimeStamp",
+        "CompleteCertificateRefs",
+        "Periodical timestamping",
+        "SigAndRefsTimeStamp",
+        "CertificateValues"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "XAdES-BASELINE-LTA uses periodical timestamping to prevent weakening previous signatures over a long-time storage period."
+    },
+    {
+      "question": "Which of the following environments are XAdES signatures being deployed in European countries?",
+      "options": [
+        "Electronic invoicing",
+        "Digital accounting",
+        "Cryptocurrency trading",
+        "Registered Electronic e-mail",
+        "Video streaming"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "XAdES signatures are deployed in electronic invoicing, digital accounting, and registered electronic email in European countries."
+    },
+    {
+      "question": "According to the document, what properties define an advanced electronic signature?",
+      "options": [
+        "Are uniquely linked to the signatory",
+        "Are not capable of identifying the signatory",
+        "Are created using means that the signatory may maintain under his sole control",
+        "Are not linked to the data to which it relates",
+        "Are capable of identifying the signatory"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "An advanced electronic signature is uniquely linked to the signatory, created using means that the signatory maintains under their sole control, and capable of identifying the signatory."
+    }
+  ],
+  "Session (76-90) (p.76)": [
+    {
+      "question": "Which of the following are characteristics of PAdES?",
+      "options": [
+        "Signatures contained within the PDF",
+        "Signing and verifying require specific customization/programming",
+        "Signatures may include a visual appearance within the PDF content",
+        "Does not support XML data",
+        "Short-term validity"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "PAdES features signatures embedded in the PDF, may have visual representations within the PDF content. It does not require specific customization and support XML data and has long-term validity."
+    },
+    {
+      "question": "Which of the following statements are true regarding CAdES?",
+      "options": [
+        "Signatures are contained within the PDF",
+        "Extends CMS (an extension of PKCS#7)",
+        "Oriented toward binary data",
+        "It supports only one signing method",
+        "Long-term validity"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "CAdES extends CMS, is oriented towards binary data, and provides long-term validity. Signatures are separate from data and uses two signing methods."
+    },
+    {
+      "question": "In CAdES, which of the following describes the 'detached' signing method?",
+      "options": [
+        "The signature is wrapped within the data structure.",
+        "The data being signed is separate from the signature.",
+        "Customization of the application is not required.",
+        "It requires generic signing outside of the application",
+        "The appearance is up to the application to provide."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In the detached signing method of CAdES, the data being signed is kept separate from the actual signature."
+    },
+    {
+      "question": "Which of the following components are typically part of a Signature Creation Environment (ETSI)?",
+      "options": [
+        "Signature verification application (SVA)",
+        "Signature creation device (SCDev)",
+        "Driving application (DA)",
+        "Signature augmentation application (SAA)",
+        "Signature creation application (SCA)"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "The Signature Creation Environment includes a Driving Application (DA), a Signature Creation Device (SCDev), and a Signature Creation Application (SCA). The SVA is for verification and the SAA for augmentation."
+    },
+    {
+      "question": "Which cryptographic protocol uses tickets to allow nodes communicating over a non-secure network to prove their identity?",
+      "options": [
+        "WEP",
+        "WPA",
+        "Kerberos",
+        "TKIP",
+        "WPA2"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Kerberos is a computer-network authentication protocol that uses tickets for authentication over non-secure networks."
+    },
+    {
+      "question": "Which of the following statements are accurate about Kerberos?",
+      "options": [
+        "It primarily aimed at a client-server model.",
+        "It is designed to allow nodes communicating over a secure network.",
+        "It provides one-way authentication.",
+        "It uses symmetric-key cryptography and requires a trusted third party.",
+        "It uses TCP port 88 by default."
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "Kerberos is designed for client-server models, utilizing symmetric-key cryptography and a trusted third party for authentication. It actually communicates through a non-secure network and provides mutual authentication and UDP port 88 is used."
+    },
+    {
+      "question": "What is the default UDP port used by Kerberos?",
+      "options": [
+        "21",
+        "23",
+        "80",
+        "88",
+        "443"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Kerberos by default uses UDP port 88."
+    },
+    {
+      "question": "Which security algorithm is considered severely flawed and was part of the original IEEE 802.11 standard?",
+      "options": [
+        "WPA2",
+        "WEP",
+        "TKIP",
+        "AES",
+        "WPA3"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Wired Equivalent Privacy (WEP) is a flawed security algorithm that was initially introduced as part of the IEEE 802.11 standard."
+    },
+    {
+      "question": "Which of the following is a characteristic of WEP (Wired Equivalent Privacy)?",
+      "options": [
+        "It's a highly secure protocol still recommended for use today.",
+        "It was designed to provide data confidentiality comparable to that of a traditional wired network.",
+        "Its key is recognizable by its length of 128 hexadecimal digits.",
+        "It was introduced as a replacement for TKIP",
+        "Wi-Fi hardware devices relying on WEP security could be upgraded to secure operation."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "WEP aimed to provide data confidentiality similar to wired networks, but is now considered insecure. It's key is 10 or 26 hexadecimal and was replaced by TKIP. Also Wi-Fi devices cannot be upgraded to a secure operation."
+    },
+    {
+      "question": "Which of the following is an intermediate security measure that was intended to replace WEP without requiring hardware replacement?",
+      "options": [
+        "WPA2",
+        "AES",
+        "WEP2",
+        "TKIP",
+        "WPA3"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Temporal Key Integrity Protocol (TKIP) served as an interim security protocol meant to replace WEP without necessitating new hardware."
+    },
+    {
+      "question": "Which security certification program replaced WPA and implements the mandatory elements of IEEE 802.11i, including support for CCMP?",
+      "options": [
+        "WEP",
+        "TKIP",
+        "WPA2",
+        "WPA3",
+        "WPA"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "WPA3 replaced WPA and implements IEEE 802.11i elements, including support for CCMP and AES encryption."
+    },
+    {
+      "question": "Which of the following is a characteristic of WPA2?",
+      "options": [
+        "It was designed to replace WPA3.",
+        "It does not requires testing and certification by the Wi-Fi Alliance.",
+        "It implements the mandatory elements of IEEE 802.11i.",
+        "It uses UDP port 88.",
+        "It is a severely flawed security algorithm"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "WPA2 implements the mandatory elements of IEEE 802.11i. Actually WPA2 replaces WPA, it requires Wi-Fi Alliance certification and it's not flawed as WEP."
+    },
+    {
+      "question": "In WPA2-protected WLANs, what process ensures that both the client and Access Point (AP) possess the correct Pre-Shared Key (PSK) without transmitting it?",
+      "options": [
+        "Association request",
+        "Four-way handshake",
+        "Key exchange algorithm",
+        "Pairwise Master Key (PMK) generation",
+        "Temporal Key Integrity Protocol (TKIP)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In WPA2, a 4-way handshake ensures that the client and AP share the correct PSK without transmitting it directly."
+    },
+    {
+      "question": "Which protocol is no longer considered secure and was deprecated in the 2012 revision of the 802.11 standard?",
+      "options": [
+        "WPA2",
+        "AES",
+        "WEP2",
+        "TKIP",
+        "WPA3"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "TKIP is not considered secure anymore and was deprecated in the 2012 revision of the 802.11 standard."
+    },
+    {
+      "question": "What is the goal of cryptanalysis?",
+      "options": [
+        "To encrypt messages securely.",
+        "To breach cryptographic security systems and gain access to encrypted messages.",
+        "To generate random keys for encryption.",
+        "To verify digital signatures.",
+        "To implement firewalls."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Cryptanalysis aims to break cryptographic systems to access encrypted content, even without knowing the cryptographic key."
+    },
+    {
+      "question": "In which cryptanalysis category does the cryptanalyst only have access to a collection of ciphertexts?",
+      "options": [
+        "Known-plaintext",
+        "Chosen-plaintext",
+        "Ciphertext-only",
+        "Adaptive chosen-plaintext",
+        "Related-key attack"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "In a ciphertext-only attack, the attacker's sole resource is a collection of ciphertexts."
+    },
+    {
+      "question": "Which cryptanalysis attack model allows the attacker to obtain ciphertexts corresponding to an arbitrary set of plaintexts of their own choosing?",
+      "options": [
+        "Ciphertext-only",
+        "Known-plaintext",
+        "Chosen-plaintext",
+        "Adaptive chosen-plaintext",
+        "Related-key attack"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "In a chosen-plaintext attack, the attacker can choose plaintexts and obtain their corresponding ciphertexts."
+    },
+    {
+      "question": "Which cryptanalysis attack model is similar to a chosen-plaintext attack, but the attacker can choose subsequent plaintexts based on information learned from previous encryptions?",
+      "options": [
+        "Ciphertext-only",
+        "Known-plaintext",
+        "Chosen-plaintext",
+        "Adaptive chosen-plaintext",
+        "Related-key attack"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Adaptive chosen-plaintext attack is like chosen-plaintext attack except the attacker can choose subsequent plaintexts based on information learned from previous encryptions"
+    },
+    {
+      "question": "Which type of cryptanalysis attack involves obtaining ciphertexts encrypted under two different keys, where the relationship between the keys is known?",
+      "options": [
+        "Ciphertext-only",
+        "Known-plaintext",
+        "Chosen-plaintext",
+        "Adaptive chosen-plaintext",
+        "Related-key attack"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "In a related-key attack, the attacker obtains ciphertexts encrypted with different keys where the relationship between those keys is known."
+    },
+    {
+      "question": "Which of the following is a key assumption in a ciphertext-only attack?",
+      "options": [
+        "The attacker knows the encryption key.",
+        "The attacker has access to the plaintext.",
+        "The attacker has access only to a set of ciphertexts.",
+        "The attacker can choose arbitrary plaintexts.",
+        "The attacker knows the decryption key."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A defining characteristic of a ciphertext-only attack is that the attacker only has access to a set of ciphertexts, with no access to plaintext or the encryption key."
+    }
+  ],
+  "Session (91-105) (p.91)": [
+    {
+      "question": "Which of the following is true regarding a Known-plaintext attack (KPA)?",
+      "options": [
+        "The attacker only has access to the ciphertext.",
+        "The attacker has access to both plaintext and its corresponding ciphertext.",
+        "The attacker can choose the plaintext to be encrypted.",
+        "The attacker has no knowledge of the plaintext.",
+        "It is synonymous with a brute-force attack."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In a KPA, the attacker knows both the plaintext and the ciphertext, allowing for analysis to deduce the key or break the cipher."
+    },
+    {
+      "question": "What is the term 'crib' in the context of cryptanalysis, as it originated in Bletchley Park?",
+      "options": [
+        "A secret key used for encryption.",
+        "A decryption algorithm.",
+        "A plain language passage obtained by solving one or more cipher messages and likely occurring in another.",
+        "A type of hardware used for breaking codes.",
+        "The location where encryption keys are stored."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A 'crib' refers to a piece of plaintext that is suspected to appear in a ciphertext, which can be used to deduce the key or other parts of the message."
+    },
+    {
+      "question": "What is the primary goal of an attacker in a Chosen-plaintext attack (CPA)?",
+      "options": [
+        "To obtain a copy of the encryption algorithm.",
+        "To trick the legitimate user into revealing their password.",
+        "To gain information that reduces the security of the encryption scheme.",
+        "To prevent legitimate users from accessing encrypted data.",
+        "To only see ciphertexts generated by valid users."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "In a CPA, the attacker's main objective is to learn something about the secret key or underlying encryption scheme by analyzing ciphertexts generated from chosen plaintexts."
+    },
+    {
+      "question": "Which type of modern ciphers are generally considered immune to chosen-plaintext attacks (CPAs) if implemented correctly?",
+      "options": [
+        "Ciphers providing semantic security.",
+        "Stream ciphers without proper initialization vectors.",
+        "Ciphers using short keys.",
+        "Block ciphers without chaining modes.",
+        "Ciphers with publicly known source code."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Modern ciphers are designed to be semantically secure (also known as ciphertext indistinguishability under chosen-plaintext attack), which means that an attacker cannot distinguish between two ciphertexts even if they know the corresponding plaintexts."
+    },
+    {
+      "question": "In an adaptive chosen-plaintext attack, what makes it 'adaptive'?",
+      "options": [
+        "The attacker chooses plaintexts randomly.",
+        "The attacker's choice of plaintexts can depend on the ciphertexts received from previous queries.",
+        "The encryption oracle adapts to the attacker's plaintexts.",
+        "The attacker only gets one chance to choose a plaintext.",
+        "The plaintexts are pre-defined."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The 'adaptive' nature of the attack means the attacker can modify their choice of plaintexts based on the ciphertexts obtained in previous interactions with the encryption oracle."
+    },
+    {
+      "question": "In an adaptive chosen-plaintext attack, what role does the encryption oracle play?",
+      "options": [
+        "It provides the attacker with the secret key.",
+        "It encrypts the attacker's chosen plaintexts and returns the ciphertexts.",
+        "It decrypts the attacker's ciphertexts.",
+        "It allows the attacker to see the source code of the cipher.",
+        "It analyzes the plaintexts."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The encryption oracle acts as a black box that encrypts the plaintexts submitted by the attacker and returns the corresponding ciphertexts, enabling the attacker to analyze the relationship between plaintexts and ciphertexts."
+    },
+    {
+      "question": "In a related-key attack, what information does the attacker possess?",
+      "options": [
+        "The exact values of all the keys used by the cipher.",
+        "A mathematical relationship between several different keys used by the cipher, whose values are initially unknown.",
+        "A list of potential plaintext messages.",
+        "The source code of the encryption algorithm.",
+        "The hardware configuration of the encryption device."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A related-key attack focuses on exploiting mathematical relationships between multiple keys, even if the specific values of those keys are initially unknown to the attacker. The relationship is the key to the attack."
+    },
+    {
+      "question": "Which of the following best describes semantic security?",
+      "options": [
+        "The ciphertext reveals information about the plaintext.",
+        "The ciphertext reveals no additional information about the plaintext beyond its length.",
+        "The attacker can easily recover the plaintext from the ciphertext.",
+        "Encryption and decryption are identical operations.",
+        "It is the same as perfect secrecy."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Semantic security (or ciphertext indistinguishability) ensures that an attacker cannot derive any meaningful information about the plaintext from the ciphertext, apart from potentially its length. It implies that the same message encrypted twice produces different ciphertexts."
+    },
+    {
+      "question": "Which attacks does the attacker have access to both the plaintext and its encrypted version?",
+      "options": [
+        "Known-plaintext attack (KPA)",
+        "Chosen-plaintext attack (CPA)",
+        "Related key attack",
+        "Ciphertext-only attack",
+        "Meet-in-the-middle attack"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "In a KPA, the attacker knows both the plaintext and the ciphertext, allowing for analysis to deduce the key or break the cipher. In CPA, the attacker can obtain ciphertext for arbitrary plaintexts."
+    },
+    {
+      "question": "Which of the following attack model(s) allow the adversary to interact with an encryption oracle?",
+      "options": [
+        "Known-plaintext attack (KPA)",
+        "Chosen-plaintext attack (CPA)",
+        "Adaptive chosen-plaintext attack",
+        "Related key attack",
+        "Ciphertext-only attack"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Chosen-plaintext attack (CPA) and Adaptive chosen-plaintext attack both rely on the adversary interacting with an encryption oracle to obtain ciphertexts for chosen plaintexts. The 'adaptive' aspect means the choice of plaintexts can depend on previous ciphertexts received."
+    }
+  ]
+}

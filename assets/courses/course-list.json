@@ -74,6 +74,11 @@
       "id": "8",
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
+    },
+    {
+      "id": "19",
+      "filename": "crypto_supcom_ch1.json",
+      "name": "Crypto Supcom"
     }
   ]
 }
