@@ -378,51 +378,56 @@ function showNextQuestion() {
     }
 }
 
-function submitQuiz() {
-    // Calculate score
+function isCorrectAnswer(answer, correctAnswer) {
+    if (Array.isArray(answer) && Array.isArray(correctAnswer)) {
+        return answer.length === correctAnswer.length && 
+                correctAnswer.every(val => answer.includes(val));
+    } else {
+        return answer === correctAnswer;
+    }
+}
+
+function getUserAnswerDisplay(answer, question) {
+    if (Array.isArray(answer)) {
+        return answer.map(idx => question.options[idx]).join("<br>- ");
+    } else {
+        return (answer !== -1) ? question.options[answer] : "Aucune réponse";
+    }
+}
+
+function getCorrectAnswerDisplay(correctAnswer, question) {
+    if (Array.isArray(correctAnswer)) {
+        return correctAnswer.map(idx => question.options[idx]).join("<br>- ");
+    }
+    return question.options[correctAnswer];
+}
+
+function calculateScore() {
     score = 0;
     const wrongAnswers = [];
-    
+
     userAnswers.forEach((answer, index) => {
         const question = currentQuestions[index];
-        const isMultiAnswer = Array.isArray(question.answer);
-        
-        let isCorrect = false;
-        
-        if (isMultiAnswer) {
-            // For multiple answers, check if arrays match exactly
-            if (Array.isArray(answer) && 
-                answer.length === question.answer.length && 
-                question.answer.every(val => answer.includes(val))) {
-                isCorrect = true;
-            }
-        } else if (answer === question.answer) {
-            isCorrect = true;
-        }
+        let isCorrect = isCorrectAnswer(answer, question.answer);
         
         if (isCorrect) {
             score++;
         } else {
-            // Store wrong answers for display
-            let userAnswerDisplay;
-            if (isMultiAnswer && Array.isArray(answer)) {
-                userAnswerDisplay = answer.map(idx => question.options[idx]).join("<br>");
-            } else {
-                userAnswerDisplay = (answer !== -1) ? question.options[answer] : "Aucune réponse";
-            }
-
-            const correctAnswerDisplay = isMultiAnswer ? 
-                                       question.answer.map(idx => question.options[idx]).join("<br>") : 
-                                       question.options[question.answer];
-            
             wrongAnswers.push({
                 question: question.question,
-                userAnswer: userAnswerDisplay,
-                correctAnswer: correctAnswerDisplay,
+                userAnswer: '- ' + getUserAnswerDisplay(answer, question),
+                correctAnswer: '- ' + getCorrectAnswerDisplay(question.answer, question),
                 explanation: question.explanation || "Aucune explication disponible."
             });
         }
     });
+
+    return wrongAnswers;
+}
+
+function submitQuiz() {
+    // Calculate score
+    const wrongAnswers = calculateScore();
     
     // Update score text
     scoreText.textContent = `Vous avez obtenu ${score}/${currentQuestions.length} points`;
