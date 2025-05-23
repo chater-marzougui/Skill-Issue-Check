@@ -31,7 +31,6 @@ fetch('assets/courses/course-list.json')
 
 function populateCourseSelector() {
     const select = document.getElementById('course-select');
-    select.innerHTML = '<option value="">Select a course...</option>';
     
     courseList.forEach(course => {
         const option = document.createElement('option');
