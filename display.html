@@ -20,7 +20,7 @@
      <header>
         <img src="./assets/logo.png" alt="SupCom Logo" class="logo" id="logo">
         <h1 id="title">📚 Quiz Questions</h1>
-        <div>
+        <div class="header-actions">
             <div id="visitor-counter">Visitors: <span id="count">Loading...</span></div>
             <a href="index.html" class="btn-answers">Quizes Page</a>
         </div>
@@ -30,12 +30,14 @@
         <div class="search-container">
             <div class="search-box">
                 <input type="text" id="search-input" placeholder="🔍 Search questions..." />
-                <div class="search-navigation" id="search-nav" style="display: none;">
-                    <button id="prev-result">↑</button>
-                    <span id="search-counter">0/0</span>
-                    <button id="next-result">↓</button>
+                <div class="search-actions">
+                    <div class="search-navigation" id="search-nav" style="display: none;">
+                        <button id="prev-result">↑</button>
+                        <span id="search-counter">0/0</span>
+                        <button id="next-result">↓</button>
+                    </div>
+                    <button id="close-search" class="btn close-search">🔍</button>
                 </div>
-                <button id="close-search" class="btn close-search">🔍</button>
             </div>
         </div>
 

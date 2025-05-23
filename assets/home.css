@@ -44,16 +44,19 @@ html {
     margin: 0 auto;
     padding: 20px;
     flex: 1;
+    width: 90%;
 }
 
 header {
     background-color: var(--primary);
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     color: white;
     text-align: center;
-    padding: 10px 3rem;
+    padding: 4px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .logo {
@@ -247,6 +250,33 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    header, footer {
+        padding: 0 !important;
+    }
+
+    .seance-info {
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .header-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        scale: 0.8;
+    }
+
+    .btn-answers {
+        padding: 8px 16px;
+    }
+
     .main-content {
         flex-direction: column;
     }
@@ -310,8 +340,9 @@ footer {
     background-color: var(--dark);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: auto;
     margin-top: 20px;
+    width: 100%;
 }
 
 .gemini-prompt-container {
@@ -452,12 +483,12 @@ footer {
     font-size: 1.1rem;
 }
 
-.user-answer .incorrect {
+.user-answer .incorrect, .user-answer ul .incorrect {
     color: var(--error);
     font-weight: bold;
 }
 
-.correct-answer .correct {
+.correct-answer .correct, .user-answer ul .correct {
     color: var(--success);
     font-weight: bold;
 }

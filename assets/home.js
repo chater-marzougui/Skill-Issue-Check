@@ -406,13 +406,13 @@ function submitQuiz() {
             // Store wrong answers for display
             let userAnswerDisplay;
             if (isMultiAnswer && Array.isArray(answer)) {
-                userAnswerDisplay = answer.map(idx => question.options[idx]).join("<=====>, ");
+                userAnswerDisplay = answer.map(idx => question.options[idx]).join("<br>");
             } else {
                 userAnswerDisplay = (answer !== -1) ? question.options[answer] : "Aucune réponse";
             }
 
             const correctAnswerDisplay = isMultiAnswer ? 
-                                       question.answer.map(idx => question.options[idx]).join("<=====>, ") : 
+                                       question.answer.map(idx => question.options[idx]).join("<br>") : 
                                        question.options[question.answer];
             
             wrongAnswers.push({

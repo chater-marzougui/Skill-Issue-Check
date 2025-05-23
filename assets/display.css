@@ -32,6 +32,11 @@ html {
     justify-content: center;
     padding: 15px 0;
     max-width: 900px;
+    width: 100%;
+}
+
+#quiz-container {
+    width: 90%;
 }
 
 ::-webkit-scrollbar {
@@ -279,6 +284,7 @@ h1 {
 .search-navigation {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 8px;
     background: #f8f9fa;
     border-radius: 8px;
@@ -379,13 +385,34 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
+    h1 {
+        font-size: 20px;
     }
-    
+
+    .logo {
+        height: 50px;
+    }
+
+    .header-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        scale: 0.8;
+    }
+
+    .btn-answers {
+        padding: 8px 16px;
+    }
+
     .search-box {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .search-actions {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
     }
     
     #search-input {
@@ -427,6 +454,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 15px;
+    width: 100%;
 }
 
 .selector-box label {
@@ -457,9 +485,10 @@ h1 {
         align-items: stretch;
         gap: 10px;
     }
-    
+
     .course-selector {
-        margin-top: 140px;
+        padding: 0;
+        width: 80%;
     }
 }
 
