@@ -95,6 +95,7 @@ header h1:hover {
     text-decoration: none;
     padding: 0;
     border: none;
+    cursor: pointer;
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -261,7 +262,7 @@ h1 {
 
 #search-input {
     flex: 1;
-    display: block;
+    display: none;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     padding: 12px 15px;

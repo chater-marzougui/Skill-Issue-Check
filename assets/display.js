@@ -3,7 +3,8 @@ let searchResults = [];
 let currentSearchIndex = -1;
 let allQuestions = [];
 let courseList = [];
-let isSearchClosed = false;
+let isSearchClosed = true;
+let currentElement = 0;
 
 fetch('assets/courses/course-list.json')
 .then(response => {
@@ -228,6 +229,39 @@ function scrollToCurrentResult() {
     }
 }
 
+function scrollToElement(element) {
+    let parent = element.closest('.page-section');
+    let pageContent = parent.querySelector('.page-content');
+    let pageHeader = parent.querySelector('.page-header');
+
+    // Expand the section if it's collapsed
+    if (!pageContent.classList.contains('expanded')) {
+        pageHeader.classList.remove('collapsed');
+        pageContent.classList.add('expanded');
+    }
+    
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+    }
+}
+
+function handleKeydown(e) {
+    let questions = document.getElementById('quiz-container').querySelectorAll('.question-container');
+    switch(e.key) {
+        case 'ArrowLeft':
+            currentElement -= currentElement - 1 < 0 ? 0 : 1;
+            scrollToElement(questions[currentElement - 1]);
+            break;
+        case 'ArrowRight':
+            currentElement += currentElement + 1 >= questions.length ? 0 : 1;
+            scrollToElement(questions[currentElement + 1]);
+            break;
+    }
+}
+
 function updateSearchUI() {
     const searchNav = document.getElementById('search-nav');
     const counter = document.getElementById('search-counter');
@@ -340,7 +374,7 @@ function displayQuiz(quizData) {
                         let isCorrect;
 
                         if (isMultiAnswer) {
-                            isCorrect = questionData.answer && questionData.answer.includes(optionIndex);
+                            isCorrect = questionData.answer?.includes(optionIndex);
                         } else if (optionIndex === questionData.answer) {
                             isCorrect = true;
                         }
@@ -441,6 +475,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         }
     }
+    
+    document.addEventListener('keydown', handleKeydown);
     
     // Call the function to handle the visitor count
     handleVisitorCount();
