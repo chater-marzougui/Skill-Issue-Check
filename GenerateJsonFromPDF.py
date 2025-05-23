@@ -96,8 +96,8 @@ def manage_courses(courses_file_path, new_course_name=None, new_course_filename=
     # Add new course if name and filename are provided
     if new_course_name and new_course_filename:
         # Find the highest existing ID to generate a new one
-        existing_ids = [int(course["id"]) for course in courses_data.get("courses", [])]
-        new_id = str(max(existing_ids, default=0) + 1)
+        existing_ids = [course["id"] for course in courses_data.get("courses", [])]
+        new_id = max(existing_ids, default=0) + 1
         
         # Create new course entry
         new_course = {

@@ -5,6 +5,7 @@ let allQuestions = [];
 let courseList = [];
 let isSearchClosed = true;
 let currentElement = 0;
+let selectedCourse;
 
 fetch('assets/courses/course-list.json')
 .then(response => {
@@ -15,8 +16,12 @@ fetch('assets/courses/course-list.json')
 })
 .then(data => {
     courseList = data.courses;
+    // Find course with highest id
+    const highestIdCourse = courseList.reduce((max, course) => 
+        (course.id > (max?.id ?? -Infinity)) ? course : max, null);
+    selectedCourse = highestIdCourse.filename; 
     populateCourseSelector();
-    loadCourse('3_cloud_cours.json');
+    loadCourse(highestIdCourse.filename);
 })
 .catch(error => {
     console.error('Error loading course list:', error);
@@ -32,7 +37,7 @@ function populateCourseSelector() {
         const option = document.createElement('option');
         option.value = course.filename;
         option.textContent = course.name;
-        if (course.filename === '3_cloud_cours.json') {
+        if (course.filename === selectedCourse) {
             option.selected = true;
         }
         select.appendChild(option);
