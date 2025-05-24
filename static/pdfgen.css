@@ -1,0 +1,226 @@
+:root {
+    --primary: #3498db;
+    --dark: #2c3e50;
+    --light: #ecf0f1;
+    --success: #2ecc71;
+    --error: #e74c3c;
+    --neutral: #95a5a6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 12px;
+    position: sticky;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f100; /* Background of the scrollbar track */
+}
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+    width: 90%;
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+header h1:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.upload-area {
+    border: 2px dashed #007bff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.upload-area:hover {
+    border-color: #0056b3;
+    background: #e3f2fd;
+}
+.upload-area.dragover {
+    border-color: #28a745;
+    background: #d4edda;
+}
+input[type="file"] {
+    display: none;
+}
+.upload-text {
+    color: #666;
+    font-size: 16px;
+}
+.options {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+.option-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+input, select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.checkbox-group input {
+    width: auto;
+}
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #0056b3;
+}
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+.preview {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.question-preview {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.question-preview strong {
+    color: #007bff;
+}
+.status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.status.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.status.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.btn-answers {
+  display: inline-block;
+  background-color: #4A90E2;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-answers:hover,
+.btn-answers:focus {
+  background-color: #357ABD;
+  box-shadow: 0 6px 18px rgba(53, 122, 189, 0.5);
+}
+
+.btn-answers:active {
+  background-color: #2C5AA0;
+  box-shadow: 0 2px 6px rgba(44, 90, 160, 0.7);
+  transform: translateY(1px);
+}
+
+.btn-answers:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.6);
+}
+
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: auto;
+    margin-top: 20px;
+    width: 100%;
+}
