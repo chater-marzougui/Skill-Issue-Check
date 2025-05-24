@@ -1,0 +1,746 @@
+{
+  "Session 1 (p.1)": [
+    {
+      "question": "Wi-Fi 6 is the latest generation of the 802.11 standard launched by the Wi-Fi Alliance. It has advantages such as high bandwidth and low latency. What is the maximum theoretical rate of a Wi-Fi 6 AP on the 2.4 GHz frequency band?",
+      "options": [
+        "768 Mbps",
+        "1.15 Gbps",
+        "6.9 Gbps",
+        "9.6 Gbps"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Three APs deployed on the first floor of a building work on channels 1, 6, and 11. In the same direction, which of the following channel plans is recommended for three APs on the second floor?",
+      "options": [
+        "Channels 1, 6, and 11",
+        "Channels 2, 7, and 12",
+        "Channels 6, 11, 1",
+        "Channels 11, 6, 1"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Which of the following statements about splitters and couplers is true?",
+      "options": [
+        "They both split power equally.",
+        "splitter splits power equally, whereas a coupler splits power unequally.",
+        "splitter splits power unequally, whereas a coupler splits power equally.",
+        "They both split power unequally."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following statements about the antenna azimuth and downtilt is false?",
+      "options": [
+        "The azimuth refers to the coverage direction of an antenna.",
+        "The azimuth can be considered as the angle measured clockwise from the north plane to the antenna plane.",
+        "The downtilt affects the vertical coverage area of an antenna.",
+        "The downtilt refers to the angle between an antenna and the vertical plane."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Which of the following is the basic network architecture consisting of multiple APs and distribution systems connecting the APs?",
+      "options": [
+        "BSS",
+        "BSA",
+        "ESS",
+        "ESA"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "On a small WLAN, two Fit APs (AP1 and AP2) are deployed. AP1 has two SSIDs (huawei and HUAWEI) and AP2 also has two SSIDs (huawei and admin). How many different SSIDs and BSSIDs are available on the WLAN?",
+      "options": [
+        "4 SSIDs and 4 BSSIDs",
+        "3 SSIDs and 4 BSSIDs",
+        "3 SSIDs and 3 BSSIDS",
+        "4 SSIDs and 3 BSSIDS"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following channels overlap on the 2.4 GHz frequency band?",
+      "options": [
+        "Channels 6 and 11",
+        "Channels 3 and 8",
+        "Channels 4 and 8",
+        "Channels 4 and 10"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "How many APs can be connected to a Huawei AC with no licenses?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Which of the following statements about wireless communications systems is false?",
+      "options": [
+        "Channel coding brings about no increase in the transmission rate of effective information; rather, it reduces transmission efficiency.",
+        "Source coding reduces redundant information in raw information by compressing the information as much as possible without distorting it.",
+        "Source coding is a process of converting raw information into digital signals by using a coding scheme.",
+        "Channel coding increases the transmission success rate of valid information."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "A large-scale WLAN project plans to deploy 1 AirEngine 9700-M AC, 100 AirEngine 8760-X1-PRO APs, 200 AirEngine 5760-51 APs, and 20 AD9430DN-24 APs (each AD9430DN-24 has 20 R250D RUs connected). In this case, how many AP licenses must you apply for so that all APs can work properly?",
+      "options": [
+        "300",
+        "320",
+        "700",
+        "720"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following statements about CAPWAP tunnel establishment is true when Option 43 is correctly configured in a WLAN Layer 2 networking scenario?",
+      "options": [
+        "During CAPWAP tunnel establishment, an AP broadcasts Discovery Request messages to find the optimal AC.",
+        "During CAPWAP tunnel establishment, an AP directly sends a unicast message to the AC specified in Option 43. It does not broadcast the Discovery Request.",
+        "An AP skips the discover phase.",
+        "If an AC receives no Discovery Response message from the AC with the IP address carried in Option 43, the AP determines a failure to discover the AC."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "If a STA is associated with an SSID that is the same on two APs, which of the following is used to identify the AP to which a STA is connected?",
+      "options": [
+        "SSID",
+        "ESSID",
+        "BSSID",
+        "BSA"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Given that the gain of antenna A is 11 dBi and that of antenna B is 8 dBi, what is the difference between the gains of the two antennas?",
+      "options": [
+        "3 dB",
+        "3 dBi",
+        "3 dBd",
+        "Unknown"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Which of the following makes CCMP encryption more secure than TKIP encryption?",
+      "options": [
+        "Longer IV",
+        "Key distribution mechanism, rather than a single key",
+        "More complex encryption algorithm",
+        "Message integrity check mechanism"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Portal authentication is a commonly used authentication mode. Which of the following statements about Portal authentication is true?",
+      "options": [
+        "Portal authentication can be performed without using a browser.",
+        "Generally, users are automatically redirected to a portal page when they access a network requiring Portal authentication.",
+        "The real-time accounting interval of Portal authentication is adjusted based on the number of APs.",
+        "Portal authentication does not involve RADIUS servers."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following statements about 2.4 GHz channels is true?",
+      "options": [
+        "There is a total of 13 available channels on the 2.4 GHz frequency band.",
+        "single 2.4 GHz channel provides 20 MHz frequency bandwidth.",
+        "There is a 5 GHz spacing in the center frequency between each two adjacent 2.4 GHz channels.",
+        "Channels 1, 5, 9, and 13 do not overlap if the 802.11b standard is not considered."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "What is the maximum length of power cables used when constructing WLANS?",
+      "options": [
+        "50 m",
+        "70 m",
+        "90 m",
+        "120 m"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following commands is used to display information about online users on a Huawei AC?",
+      "options": [
+        "display users all",
+        "display user-interface console 0",
+        "display local-user",
+        "display access-user"
+      ],
+      "answer": [
+        3
+      ]
+    }
+  ],
+  "Session (7-12) (p.7)": [
+    {
+      "question": "The AP goes online through the following phases. 1. The AP determines whether an upgrade is needed. 2. The AP and AC establish a CAPWAP tunnel. 3. The AP goes online, and the AC delivers services to the AP. 4. The AP obtains an IP address. Which of the following sequences is correct?",
+      "options": [
+        "2 -> 4 -> 1 -> 3",
+        "4 -> 1 -> 2 -> 3",
+        "4 -> 2 -> 1 -> 3",
+        "2 -> 1 -> 4 -> 3"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "In dual-AC cold backup networking, which of the following items does an AP compare first to determine the active AC if the two ACs have the same priority?",
+      "options": [
+        "Number of APs associated with the two ACs (The AC with fewer associated APs is selected as the active AC.)",
+        "Source IP addresses of the two ACs (The AC with a smaller source IP address is selected as the active AC.)",
+        "Traffic volumes on the two ACs (The AC with a lower traffic volume is selected as the AC.)",
+        "Number of STAs associated with the two ACS (The AC with fewer associated STAs is selected as the active AC.)"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Beamwidth is an important parameter for directional antennas. It refers to the angular width of the radiation pattern between the beam peak and the half-power points. How much lower are half-power points from the beam peak?",
+      "options": [
+        "3 dB",
+        "4 dB",
+        "5 dB",
+        "6 dB"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Which type of frames does a STA send to obtain surrounding wireless network information during active scanning?",
+      "options": [
+        "Beacon frame",
+        "Probe Request frame",
+        "Authentication Request frame",
+        "Association Request frame"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following statements about 802.1X and RADIUS is true?",
+      "options": [
+        "802.1X is also known as RADIUS.",
+        "802.1X is an authentication architecture, in which RADIUS is included.",
+        "802.1X and RADIUS are different technologies, but they are often used together for user access control.",
+        "802.1X and RADIUS are different and are seldom used together."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Assuming that there are four STAs that want to use a channel, which of the following backoff time settings enables a STA to preferentially occupy the channel?",
+      "options": [
+        "5",
+        "7",
+        "4",
+        "6"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "If an AP cannot go online due to version mismatch, which of the following commands can be used to locate this fault?",
+      "options": [
+        "display ap global configuration",
+        "display ap all",
+        "display ac all",
+        "display current-configuration"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "Which of the following 802.11 frames is used when STAs join or leave a WLAN and roam between APs?",
+      "options": [
+        "Data frame",
+        "Control frame",
+        "Management frame",
+        "All of the above"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "There are 300 STAs with a concurrency of 70% on a small WLAN. These STAs support both the 2.4 GHz and 5 GHz frequency bands. Assuming that each AP connects to 40 STAs on dual radios, what is the minimum number of APs required?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "What is the attenuation at the main lobe width of a directional antenna?",
+      "options": [
+        "3 dB",
+        "4 dB",
+        "5 dB",
+        "6 dB"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "An AC has only one interface connected to an aggregation switch through which user traffic reaches the Internet without passing through the AC. Which of the following networking + data forwarding modes can meet this requirement?",
+      "options": [
+        "Off-path networking + tunnel forwarding",
+        "Off-path networking + direct forwarding",
+        "In-path networking + tunnel forwarding",
+        "In-path networking + direct forwarding"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "What is the angle (degrees) between an omnidirectional antenna and the horizontal radiation pattern?",
+      "options": [
+        "90",
+        "180",
+        "360",
+        "0"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "VLAN pool technology is used on a large-scale WLAN to provide address services for a large number of STAs. If a STA roams to a new AP, which of the following statements about roaming is true?",
+      "options": [
+        "This is Layer 2 roaming.",
+        "This is Layer 3 roaming.",
+        "This may be Layer 2 or Layer 3 roaming.",
+        "This is Layer 3 roaming if the direct forwarding mode is used."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Which of the following is not displayed after the display ap all command is executed on a Huawei AC?",
+      "options": [
+        "MAC addresses of APs",
+        "Types of APs",
+        "Channels of APs",
+        "Running states of APs"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "Which of the following statements about passive neighbor probe is true?",
+      "options": [
+        "An AP passively receives neighbor information to detect neighboring APs.",
+        "Passive neighbor probe is used by authorized APs to collect interference information from neighboring APs.",
+        "Passive probe is used by authorized APs to collect interference information from rogue APs.",
+        "Passive probe is used to establish neighbor relationships between authorized APs."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "Which of the following statements about directional antennas is false?",
+      "options": [
+        "Directional antennas radiate signals within a certain angle.",
+        "Directional antennas can concentrate energy and transmit signals in a specified direction.",
+        "Directional antennas are recommended when a few linked devices exist or the linked devices are concentrated within a certain angle.",
+        "Only the main lobe of a directional antenna is useful, and side lobes can be ignored."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "Which of the following is reflected by the antenna gain?",
+      "options": [
+        "Antenna's capability to amplify high-frequency electrical signals",
+        "Antenna's capability to collect or transmit electromagnetic waves in a certain direction",
+        "Antenna's capability to amplify electromagnetic waves",
+        "Antenna's capability to collect or transmit electromagnetic waves in all directions"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "In a WLAN HSB scenario, which of the following data synchronization mode is not supported between the active and standby ACS?",
+      "options": [
+        "Batch backup",
+        "Real-time backup",
+        "Periodic synchronization",
+        "Incremental backup"
+      ],
+      "answer": [
+        1
+      ]
+    }
+  ],
+  "Session (13-18) (p.13)": [
+    {
+      "question": "The 5 GHz frequency band has abundant spectrum resources and a large number of non-overlapping channels. When planning an outdoor WLAN that requires neighboring APs to operate on non-overlapping channels, which of the following channels are applicable?",
+      "options": [
+        "Channels 32, 36, 40, 44, and 48",
+        "Channels 56, 60, 64, 68, and 72",
+        "Channels 92, 96, 100, 104, and 108",
+        "Channels 149, 153, 157, 161, and 165"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "The following configurations are required to deploy a WLAN. 1. Bring an AP online. 2. Configure a security profile, an SSID profile, and a VAP profile. 3. Configure the source interface. 4. Create an AP group. 5. Associate the STA with the AP to verify the configuration result. 6. Bind the security profile, SSID profile, and VAP profile to the AP group. 7. Configure the country code. Which of the following sequences is correct?",
+      "options": [
+        "4 -> 1 -> 3-> 7 -> 2 -> 6 -> 5",
+        "7 -> 1 -> 3 -> 4 -> 2 -> 6 -> 5",
+        "7 -> 4-3 -> 1 -> 2 -> 6 -> 5",
+        "4-3 -> 1 -> 7 -> 2 -> 6 -> 5"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "question": "What is the maximum number of source IP addresses that can be specified for an AC to establish CAPWAP tunnels with APs?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "question": "In most cases, which of the following cannot be detected by a signal scanning tool?",
+      "options": [
+        "RSSI",
+        "Power",
+        "Channel",
+        "Encryption mode"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "question": "A STA is 20 meters away from a dual-radio AP, and there are no obstacles between them. If the AP uses the default radio configuration, which of the following statements about the RSSI of the STA are true?",
+      "options": [
+        "The RSSI on the 2.4 GHz frequency band is the same as that on the 5 GHz frequency band.",
+        "The RSSI on the 2.4 GHz frequency band is higher than that on the 5 GHz frequency band.",
+        "The STA preferentially accesses the 5 GHz frequency band.",
+        "The RSSI on the 5 GHz frequency band is higher than that on the 2.4 GHz frequency band."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Which of the following methods can be used to avoid co-channel interference?",
+      "options": [
+        "Increasing the AP transmit power and adjusting the antenna system",
+        "Multiplexing frequencies to prevent channel overlapping in the same or neighboring coverage areas",
+        "Using omnidirectional antennas for coverage",
+        "Separating coverage areas using obstacles"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "The home agent role is involved in Layer 3 networking between ACs. Which of the following statements about the home agent are true?",
+      "options": [
+        "The home agent is a device that can communicate with the gateway on a STAs' home network at Layer 2.",
+        "The HAC or HAP serves as the home agent.",
+        "The FAC or FAP serves as the home agent.",
+        "The home agent exists only on a WLAN involving inter-AC roaming."
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "question": "An AP fails to go online after WLAN Layer 3 networking is configured. Which of the following are possible causes?",
+      "options": [
+        "The source interface is not configured.",
+        "The network route is unreachable.",
+        "Option 43 is not configured.",
+        "The VLAN pool is not configured."
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Which of the following phases are involved when a STA accesses a WLAN?",
+      "options": [
+        "Wi-Fi network scanning",
+        "Security check",
+        "Authentication",
+        "Association"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "question": "Which of the following statements about service holding upon CAPWAP link disconnection are true?",
+      "options": [
+        "This function takes effect only in the AC in-path deployment.",
+        "This function takes effect only in the AC off-path deployment.",
+        "This function takes effect only when the direct forwarding mode is used.",
+        "This function allows new STAs to connect to the network after the CAPWAP link is disconnected, regardless of the authentication methods of the STAs."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Which of the following factors need to be considered during WLAN planning to determine the number of APs to be deployed in a single area?",
+      "options": [
+        "Number of access users in the area",
+        "Area size",
+        "Field strength and bandwidth requirements",
+        "Number of network interfaces"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Which of the following statements about CSMA/CA are true?",
+      "options": [
+        "When detecting that the channel is idle, a STA with the data transmission requirement immediately sends an RTS frame to the AP.",
+        "When detecting that the channel is idle, the STA with the data transmission requirement needs to wait for a DIFS first. In addition, the STA needs to send the high-priority frame first, if it has one.",
+        "Before sending data, the STA and AP exchange RTS and CTS frames to avoid transmission conflicts.",
+        "STA needs to wait for a DIFS both before and after sending or receiving frames."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "A STA is connected to an AP but cannot obtain an IP address. Which of the following are possible causes?",
+      "options": [
+        "No DHCP server is configured in the VLAN to which the STA belongs.",
+        "The forwarding mode or service VLAN is incorrectly configured.",
+        "The authentication password entered by the user is incorrect.",
+        "The MAC address of the STA is blacklisted."
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "question": "Which of the following modulation modes are supported based on signal parameters?",
+      "options": [
+        "Amplitude modulation",
+        "Frequency modulation",
+        "Phase modulation",
+        "Wave modulation"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "question": "Which of the following parameters directly impact the theoretical rate calculation in 802.11?",
+      "options": [
+        "Number of AP antennas",
+        "Maximum number of valid subcarriers",
+        "Coding rate",
+        "Maximum number of spatial streams"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "question": "Which of the following statements about OFDM and OFDMA are true?",
+      "options": [
+        "With OFDMA, only one user occupies subcarriers in each symbol duration, greatly improving transmission efficiency.",
+        "With OFDM, an AP determines how to allocate channels based on communication requirements of multiple users, and always allocates all available resource units in the downlink direction. The AP may allocate the entire channel to one user at a time or partition the channel that serves multiple users at the same time.",
+        "With OFDMA, a channel with 80 MHz frequency bandwidth can be divided into a maximum of 37 RUs to support 37 concurrent users.",
+        "OFDMA technology enables multiple users to simultaneously transmit data without queuing or contending for resources, improving efficiency and reducing queuing latency."
+      ],
+      "answer": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": "Which of the following modes can be used to upgrade Huawei APs?",
+      "options": [
+        "Single AP upgrade",
+        "AP type-based upgrade",
+        "AP region-based upgrade",
+        "AP group-based upgrade"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Which of the following statements about the default WLAN HSB configurations are true?",
+      "options": [
+        "By default, HSB is enabled.",
+        "By default, the number of times HSB detection packets are retransmitted is 5.",
+        "By default, the interval for retransmitting HSB detection packets is 5 seconds.",
+        "By default, HSB is disabled."
+      ],
+      "answer": [
+        1,
+        3
+      ]
+    }
+  ],
+  "Session (19-24) (p.19)": [
+    {
+      "question": "Which of the following methods can be used to control the coverage area of an AP?",
+      "options": [
+        "Adjusting the antenna angle of the AP",
+        "Adjusting the transmit power of the AP",
+        "Adjusting the power supply of the AP",
+        "Adjusting the access bandwidth of the AP"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "question": "Which of the following factors affect the coverage range of an AP?",
+      "options": [
+        "AP transmit power",
+        "Antenna gain",
+        "AP size",
+        "Transmission Loss"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "If a WLAN is deployed in AC + Fit AP networking, the APs work in full-duplex mode.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "In an area with roaming requirements, two neighboring APs need to have more than 50% signal coverage overlapping for STAs to roam seamlessly between them.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "A WLAN built with 802.11ax APs allows access for only 802.11ax STAS.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "question": "OFDM can use overlapping channels by defining subcarriers. The wave peak of each subcarrier is used for data encoding. When a subcarrier reaches its wave peak, the amplitude of the other subcarrier is 0. That is, the two subcarriers are orthogonal and have no interference.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": [
+        0
+      ]
+    }
+  ]
+}
