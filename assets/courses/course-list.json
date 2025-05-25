@@ -2,8 +2,8 @@
   "courses": [
     {
       "id": 21,
-      "filename": "questions_slides.json",
-      "name": "Huawei WLAN"
+      "filename": "Wlan_option.json",
+      "name": "Huawei WLAN Option"
     },
     {
       "id": 19,

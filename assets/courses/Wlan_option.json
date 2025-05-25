@@ -395,7 +395,7 @@
         "Passive probe is used to establish neighbor relationships between authorized APs."
       ],
       "answer": [
-        0
+        3
       ]
     },
     {
@@ -431,7 +431,7 @@
         "Incremental backup"
       ],
       "answer": [
-        1
+        3
       ]
     }
   ],
@@ -481,7 +481,7 @@
         "Encryption mode"
       ],
       "answer": [
-        3
+        1
       ]
     },
     {
