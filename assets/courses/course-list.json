@@ -89,6 +89,11 @@
       "id": 8,
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
+    },
+    {
+      "id": 22,
+      "filename": "barcelone_planning.json",
+      "name": "barcelone_planning"
     }
   ]
 }
