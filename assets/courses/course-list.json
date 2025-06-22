@@ -1,6 +1,11 @@
 {
   "courses": [
     {
+      "id": 22,
+      "filename": "cyber_sec_funds_exam2025.json",
+      "name": "Cyber Security Fundementals Control 2025"
+    },
+    {
       "id": 21,
       "filename": "Wlan_option.json",
       "name": "Huawei WLAN Option"

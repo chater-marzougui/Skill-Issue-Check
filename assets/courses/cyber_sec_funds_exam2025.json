@@ -1,0 +1,542 @@
+{
+ "cyber_sec": [
+{
+   "question": "1. What is the primary consequence of a \"default deny\" policy in a stateful firewall configuration?",
+   "options": [
+    "All outbound traffic is always permitted ",
+    "All Inbound and outbound traffic is dropped unless explicitly allowed",
+    "Only traffic from the DMZ is blocked ",
+    "The firewall will automatically allow traffic from known IPs"
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "2. Refer to question 1 above, Which of the following best explains why Internet users must access the web server through the reverse proxy (192.168.100.1) rather than directly accessing it at 190.160.100.10?",
+   "options": [
+    "To reduce load on the web server by caching HTTP responses ",
+    "To allow inspection of application-layer traffic",
+    "To mask the internal server's real IP, Improving security. ",
+    "To enable the web server to initiate outbound connections via the proxy "
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "question": "3. Refer to question 1 above, which of the following set(s) of filtering rules correctly implements the above policy using a stateful packet filtering firewall?",
+   "options": [
+    "a. Deny | External -> Any | * | 170.16.0.0/18 |*|*      Deny | Internal ⋅|*| 100.100.5.5|*|* Allow External DMZ TCP 192.168.100.1 | 80 Allow Internal External | TCP | 100.100.0.0/16|*|80 Allow Internal External | UDP | 100.100.0.0/1653 DENY |*|*|*|*|* ",
+    "b. Allow External DMZ | TCP || 192.168.100.1 | 80 Allow Internal External TCP | 100.100.0.0/16 ||80 Allow Internal External | UDP | 100.100.0.0/16 | 53 Deny Internal 100.100.5.5 *|* Deny External Any||170.16.0.0/18|*|* DENY |*|*|*|*|* ",
+    "c. Deny External Any||170.16.0.0/18|*|* Allow | External → DMZ | TCP |*| 192.168.100.10 | 80 Deny | Internal * *| 100.100.5.5|*|* Allow Internal External | TCP | 100.100.0.0/16 |*| 80 Allow | Internal External | UDP | 100.100.0.0/16 || 53 DENY |*|*|*|*|*  ",
+    "d. Deny External Any | TCP | 170.16.0.0/18||80 Allow External DMZ | TCP | * | 192.168.100.1 | 80 Deny | Internal 100.100.5.5|*|* Allow Internal External | TCP | 100.100.0.0/16||80 Allow Internal External | UDP | 100.100.0.0/16 | * 53 DENY |*|*|*|*|* "
+   ],
+   "answer": [
+    0
+   ]
+  },
+  {
+   "question": "4. Given the following stateful packet filtering firewall configuration:",
+   "options": [
+    "A user from 192.168.10.20 can access http://www.server.com ",
+    "Host 192.168.10.10 can browse websites on the Internet.",
+    "The firewall allows DNS responses from external servers to internal clients if the DNS request was initiated by an internal host. ",
+    "The IP address 192.168.10.10 can ping a public server "
+   ],
+   "answer": [
+    0,
+    2
+   ]
+  },
+  {
+   "question": "5. Refer to question 4 above, If an internal host other than 192.168.10.10 tries to access a website using HTTPS, what will the firewall do?",
+   "options": [
+    "Allow it because it's from the internal network ",
+    "Allow it because HTTPS is a secure protocol",
+    "Deny it because that protocol is not permitted by any rule",
+    "Allow it if DNS resolution was successful beforehand"
+   ],
+   "answer": [
+    2
+   ]
+  },
+  {
+   "question": "6. Which of the following statements correctly describe key cybersecurity concepts and practices? (Select all that apply)",
+   "options": [
+    "Integrity ensures that sensitive data is only accessible to authorized users ",
+    "Availability ensures that systems and services are accessible to authorized users when needed",
+    "Confidentiality is the assurance that data and systems are not modified by unauthorized entities ",
+    "Accountability means actions can be uniquely traced to individuals or systems",
+    "Authenticity confirms the validity and trustworthiness of data or users "
+   ],
+   "answer": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "question": "7. Which of the following are fundamental security principles that help build robust systems?",
+   "options": [
+    "Separation of Privilege ",
+    "Security through obscurity",
+    "Least Privilege",
+    "Open Design",
+    "Unified Trust Model"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "question": "8. Which scenarios represent an active attack?",
+   "options": [
+    "Sniffing network traffic to collect credentials ",
+    "Modifying a DNS response to redirect users",
+    "Gaining unauthorized access and Installing ransomware",
+    "Injecting malicious code into a database "
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "question": "9. Which of the following is considered a passive attack?",
+   "options": [
+    "Traffic analysis",
+    "Release of message content ",
+    "Denial of Service",
+    "Message modification"
+   ],
+   "answer": [
+    0,
+    1
+   ]
+  },
+  {
+   "question": "10. What defines a vulnerability in cybersecurity?",
+   "options": [
+    "A potential danger ",
+    "A weakness that may be exploited",
+    "A flaw that can cause loss or harm ",
+    "A tool used to monitor threats "
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "11. What are common attack vectors?",
+   "options": [
+    "Malware and phishing emails ",
+    "Social engineering ",
+    "Intrusion Detection Systems ",
+    "Security patches"
+   ],
+   "answer": [
+    0,
+    1
+   ]
+  },
+  {
+   "question": "12. What was significant about the BlackEnergy attack?",
+   "options": [
+    "It targeted a national power grid",
+    "It was a banking trojan. ",
+    "It disrupted electricity for thousands",
+    "It used biometric spoofing "
+   ],
+   "answer": [
+    0,
+    2
+   ]
+  },
+  {
+   "question": "13. Which of the following are human-related vulnerabilities?",
+   "options": [
+    "Weak password protection",
+    "Misconfiguration of routers ",
+    "Malware injection",
+    "Confidentiality violations"
+   ],
+   "answer": [
+    0,
+    3
+   ]
+  },
+  {
+   "question": "14. Key security components of information security Include:",
+   "options": [
+    "Data Security",
+    "Application Security",
+    "Cloud Security",
+    "Information Theory "
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "question": "15. What is the attack surface of a system?",
+   "options": [
+    "Reachable and exploitable vulnerabilities",
+    "The user interface",
+    "Open ports and services",
+    "User credentials "
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "question": "16. Which of the following techniques is used in active sniffing?",
+   "options": [
+    "Promiscuous mode",
+    "ARP poisoning ",
+    "Flooding the CAM table",
+    "VLAN tagging"
+   ],
+   "answer": [
+    1,
+    2
+   ]
+  },
+  {
+   "question": "17. Which of the following is a type of DoS attack that exploits protocol implementation?",
+   "options": [
+    "UDP Flood",
+    "SYN Flood",
+    "Ping of Death ",
+    "DNS Reflection"
+   ],
+   "answer": [
+    2
+   ]
+  },
+  {
+   "question": "18. Double-tagging VLAN attacks rely on:",
+   "options": [
+    "Trunk negotiation via DTP",
+    "BPDU flooding ",
+    "Native VLAN misconfiguration",
+    "STP priority inversion"
+   ],
+   "answer": [
+    0,
+    2
+   ]
+  },
+  {
+   "question": "19. A DHCP starvation attack aims to:",
+   "options": [
+    "Inject rogue DNS responses ",
+    "Deplete the pool of available IP addresses",
+    "Change the MAC address",
+    "Hijack the ARP cache "
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "20. What makes DNS tunneling particularly dangerous?",
+   "options": [
+    "It uses ICMP",
+    "It uses legitimate DNS traffic to exfiltrate data ",
+    "It floods DNS servers",
+    "It overflows DNS caches "
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "21. Which of the following are characteristics of a SYN spoofed DDoS attack?",
+   "options": [
+    "Exploits the TCP handshake process",
+    "Overwhelms the server by sending ACK packets",
+    "Uses forged IP addresses to send SYN packets",
+    "Completes the three-way handshake with legitimate responses"
+   ],
+   "answer": [
+    0,
+    2
+   ]
+  },
+  {
+   "question": "22. What is the purpose of using a nonce in secure communications?",
+   "options": [
+    "To identify the source IP of the sender",
+    "To ensure message freshness and uniqueness",
+    "To prevent the reuse of old messages",
+    "To encrypt session data end-to-end"
+   ],
+   "answer": [
+    1,
+    2
+   ]
+  },
+  {
+   "question": "23. What differentiates a TCP Connect scan from a SYN scan?",
+   "options": [
+    "It completes the full three-way handshake",
+    "It drops the connection after receiving SYN-ACK",
+    "A SYN scan sends a SYN packet but does not complete the connection handshake",
+    "A TCP Connect scan is less detectable than a SYN scan because it does not finalize the handshake"
+   ],
+   "answer": [
+    0,
+    2
+   ]
+  },
+  {
+   "question": "24. In an XMAS scan, if no response is received from a port, what does that usually indicate?",
+   "options": [
+    "The port is open",
+    "The port is closed",
+    "The packet was filtered by a firewall",
+    "The port is open or filtered"
+   ],
+   "answer": [
+    3
+   ]
+  },
+  {
+   "question": "25. What characterizes a TCP Null scan?",
+   "options": [
+    "It sends packets with no TCP flags set",
+    "It is easily detected by modern intrusion detection systems",
+    "It expects RST from closed ports and no response from open ports",
+    "It causes a port to send a SYN-ACK if it is open."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "question": "26. A user logged into a secure web application over unencrypted HTTP while on public Wi-Fi. An attacker on the same network used a packet sniffer to observe the TCP session and found that the server's initial TCP sequence numbers were predictable (starting at 1000 and increasing by 1 every 10 milliseconds). What attack technique becomes feasible in this situation?",
+   "options": [
+    "ARP spoofing",
+    "Session hijacking",
+    "DNS tunneling",
+    "SQL injection"
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "27. Why does using predictable TCP ISNS (Initial Sequence Numbers) compromise TCP's reliability guarantees?",
+   "options": [
+    "It allows attackers to force a TCP three-way handshake to fail",
+    "It enables attackers to bypass the SYN backlog and send RESET packets",
+    "It allows attackers to inject data or hijack connections without needing the handshake",
+    "It corrupts the TCP checksum field, making packets invalid"
+   ],
+   "answer": [
+    2
+   ]
+  },
+  {
+   "question": "28. What distinguishes stateful packet filtering from stateless packet filtering?",
+   "options": [
+    "Stateful filtering tracks active sessions and connection states",
+    "Stateless filtering examines packets Independently without context",
+    "Stateful filtering only checks filtering rules for the first packet of a session",
+    "Stateless filtering can automatically allow return traffic for established connections"
+   ],
+   "answer": [
+    0,
+    1
+   ]
+  },
+  {
+   "question": "29. What is the main difference between a forward proxy and a reverse proxy?",
+   "options": [
+    "A forward proxy sits in front of clients, controlling their outbound requests",
+    "A reverse proxy sits in front of servers, protecting them from direct client access",
+    "A forward proxy is used primarily for load balancing of servers",
+    "A reverse proxy can provide anonymity and DDoS protection for backend servers"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "question": "30. A company wants to allow only HTTP/HTTPS traffic to their public web server and restrict large file downloads internally. Which firewall type and policy best fits?",
+   "options": [
+    "Stateless packet filtering allowing all traffic",
+    "Application-level proxy firewall with HTTP content filtering rules",
+    "Circuit-level gateway allowing FTP \"put\" commands",
+    "No firewall is needed for this requirement"
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "31. A packet-filtering firewall typically inspects the header information of incoming packets. How does tiny IP fragmentation exploit this behavior for evasion?",
+   "options": [
+    "It modifies the source and destination IP addresses in each fragment to confuse the firewall.",
+    "It places the critical part of the malicious payload in later fragments, ensuring the initial fragments contain only harmless information that passes the firewall's rules.",
+    "It uses a different protocol for each fragment, making it difficult for the firewall to identify the true application.",
+    "It intentionally corrupts the checksum of the initial fragments to force the firewall to reassemble them before inspection."
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "32. What challenge does application Identification (by Next Generation Firewalls) face when dealing with TCP traffic?",
+   "options": [
+    "TCP applications uses static ports that NGFW can easily identify",
+    "Multiple packets, sometimes up to the fifth packet, need to be inspected to Identify the application",
+    "TCP applications never shift during a session",
+    "NGFW cannot inspect TCP traffic"
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "33. What is an application shift?",
+   "options": [
+    "Changing from one firewall to another",
+    "When network traffic changes from one application to another during a session",
+    "Rebooting the firewall",
+    "When an application is blocked by the firewall"
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "34. Which applications might NOT work properly with TLS Forward Proxy decryption (also known as TLS inspection)?",
+   "options": [
+    "Applications relying on client-side certificates for identity verification.",
+    "Applications that use only HTTP",
+    "Applications that do not use encryption",
+    "Applications that only use UDP"
+   ],
+   "answer": [
+    0
+   ]
+  },
+  {
+   "question": "35. Which keys or certificates must be stored on a next-generation firewall to successfully perform inbound TLS inspection when a remote client connects to a protected server?",
+   "options": [
+    "The firewall only needs to store the client's public key to inspect inbound traffic.",
+    "The firewall stores the client's private key to decrypt inbound traffic.",
+    "The firewall does not require any keys or certificates to perform Inbound TLS inspection.",
+    "The firewall must store the server's private key and its corresponding digital certificate to decrypt and inspect inbound TLS traffic."
+   ],
+   "answer": [
+    3
+   ]
+  },
+  {
+   "question": "36. Your company has deployed a Next-Generation Firewall (NGFW) to secure outbound Internet traffic from internal employees. One employee, Alice, tries to access a secure banking website (https://www.bank.com). The NGFW is configured with SSL/TLS Forward Proxy to inspect encrypted traffic for threats. When Alice attempts to connect to the site, her browser doesn't show any certificate errors, and the traffic is inspected successfully. What kind of certificate does Alice's browser recelve when it successfully connects to the banking site?",
+   "options": [
+    "The original certificate from bank.com",
+    "A self-signed certificate with no extensions",
+    "An impersonation certificate signed by a trusted internal CA",
+    "A signed certificate received directly from the bank's server"
+   ],
+   "answer": [
+    2
+   ]
+  },
+  {
+   "question": "37. What is the primary purpose of a DMZ network?",
+   "options": [
+    "To replace the Internal LAN with a public network",
+    "To isolate public-facing services from the internal network",
+    "To allow unrestricted access to internal servers",
+    "To prevent direct access to sensitive internal systems from the internet",
+    "To create a backup for LAN traffic"
+   ],
+   "answer": [
+    1,
+    3
+   ]
+  },
+  {
+   "question": "38. What are potential capabilities or objectives an attacker can achieve using ARP spoofing?",
+   "options": [
+    "Performing a Man-in-the-Middle (MitM) attack by intercepting data between a host and its gateway.",
+    "Manipulating network traffic flow by falsely associating an IP address with the attacker's MAC.",
+    "Evading network intrusion detection systems by encrypting ARP packets.",
+    "Disabling a target machine by sending an excessive number of ARP reply packets to it."
+   ],
+   "answer": [
+    0,
+    1
+   ]
+  },
+  {
+   "question": "39. What is the primary reason for the \"Covering Tracks\" step in the penetration testing methodology?",
+   "options": [
+    "To patch the explolted vulnerability",
+    "To hide attacker activity and avoid detection",
+    "To automate future attacks",
+    "To create backup files"
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "40. In the command nc -vv-l-p 1234, what does the -I option specify?",
+   "options": [
+    "Launch a web server ",
+    "Listen for incoming connections",
+    "Loop through the port list",
+    "List all active ports "
+   ],
+   "answer": [
+    1
+   ]
+  },
+  {
+   "question": "41. What is the main purpose of privilege escalation in a penetration test?",
+   "options": [
+    "To get access to shared folders ",
+    "To run exploits without detection",
+    "To gain full administrative control over the system.",
+    "To brute-force additional users "
+   ],
+   "answer": [
+    2
+   ]
+  },
+  {
+   "question": "42. Consider the authentication protocol described below. Which of the following statements is/are correct?",
+   "options": [
+    "Alice verifies the identity of Bob ",
+    "Bob verifies the identity of Alice",
+    "The protocol is susceptible to a replay attack",
+    "The protocol is resistant to replay attacks "
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ]
+  }
+ ]
+}
