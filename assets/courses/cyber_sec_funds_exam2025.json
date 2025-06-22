@@ -184,7 +184,9 @@
     1,
     2
    ]
-  },
+  }
+],
+"cyber_sec 2": [
   {
    "question": "15. What is the attack surface of a system?",
    "options": [
@@ -362,7 +364,9 @@
     0,
     1
    ]
-  },
+  }
+],
+"cyber_sec 3": [
   {
    "question": "29. What is the main difference between a forward proxy and a reverse proxy?",
    "options": [
