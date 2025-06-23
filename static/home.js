@@ -21,6 +21,7 @@ const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const prevBtn = document.getElementById('prev-btn');
 const skipBtn = document.getElementById('skip-btn');
+const skipAllBtn = document.getElementById('skip-all-btn');
 const nextBtn = document.getElementById('next-btn');
 const submitBtn = document.getElementById('submit-btn');
 const scoreText = document.getElementById('score-text');
@@ -34,7 +35,16 @@ startQuizBtn.addEventListener('click', startQuiz);
 prevBtn.addEventListener('click', showPrevQuestion);
 skipBtn.addEventListener('click', () => {
     userAnswers[currentQuestionIndex] = -1; // Mark as skipped
-    showNextQuestion();
+    showNextQuestion(true);
+});
+
+skipAllBtn.addEventListener('click', () => {
+    userAnswers[currentQuestionIndex] = -1; // Mark current as skipped
+    while (currentQuestionIndex < currentQuestions.length - 1) {
+        currentQuestionIndex++;
+        userAnswers[currentQuestionIndex] = -1; // Mark all subsequent as skipped
+    }
+    submitQuiz();
 });
 nextBtn.addEventListener('click', showNextQuestion);
 submitBtn.addEventListener('click', submitQuiz);
@@ -255,7 +265,7 @@ function handleDrop(e) {
     }
 }
 
-function loadQuestion() {
+function loadQuestion() {   
     const question = currentQuestions[currentQuestionIndex];
 
     if (!question.hasOwnProperty('explanation')) {
@@ -371,10 +381,12 @@ function showPrevQuestion() {
     }
 }
 
-function showNextQuestion() {
+function showNextQuestion(isSkip = false) {
     if (currentQuestionIndex < currentQuestions.length - 1) {
         currentQuestionIndex++;
         loadQuestion();
+    } else if (isSkip) {
+        submitQuiz();
     }
 }
 
@@ -453,8 +465,6 @@ function submitQuiz() {
                     <p><strong>Explication:</strong> ${item.explanation}</p>
                 </div>
             `;
-            console.log(item.correctAnswer);
-            
             wrongAnswersContainer.appendChild(container);
         });
     } else {
@@ -556,8 +566,6 @@ function loadCourseJSON(filename) {
             return response.json();
         })
         .then(data => {
-            console.log(`Successfully loaded course: ${filename}`);
-            
             // Process the JSON data using your existing function
             loadQuizData(data);
             

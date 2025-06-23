@@ -192,6 +192,22 @@ h1 {
     margin-top: 20px;
 }
 
+.skip-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.btnAll {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: end;
+    height: fit-content;
+    background: none;
+}
 /* Add these styles to your home.css file */
 
 .main-content {
