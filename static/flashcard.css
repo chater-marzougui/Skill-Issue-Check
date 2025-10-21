@@ -214,12 +214,21 @@ footer {
 /* Grid View */
 .grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
 #flashcard-grid {
-    display: contents;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #flashcard-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .grid-card {
@@ -229,7 +238,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     cursor: default;
-    width: 95%;
+    /* width: 50%; */
 }
 
 .grid-card:hover {
@@ -376,4 +385,14 @@ footer {
     color: white;
     margin-top: 15px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-view {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .grid-card {
+        width: 100%;
+    }
 }
