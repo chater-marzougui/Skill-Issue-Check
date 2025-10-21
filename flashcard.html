@@ -11,6 +11,12 @@
     <header>
       <h1 id="title">📚 Flashcards</h1>
       <div class="header-actions">
+        <div class="course-selector-wrapper">
+          <button id="course-btn" class="course-btn">📚 Select Course</button>
+          <select id="course-select" class="course-select" style="display: none;">
+            <option value="">Loading courses...</option>
+          </select>
+        </div>
         <a href="index.html" class="btn-home">Home</a>
       </div>
     </header>
@@ -29,8 +35,8 @@
       </div>
 
       <div class="view-toggle">
-        <button class="toggle-btn active" id="toggle-grid" onclick="toggleView('grid')">📊 Grid View</button>
-        <button class="toggle-btn" id="toggle-cards" onclick="toggleView('cards')">🎴 Card View</button>
+        <button class="toggle-btn" id="toggle-grid" onclick="toggleView('grid')">📊 Grid View</button>
+        <button class="toggle-btn active" id="toggle-cards" onclick="toggleView('cards')">🎴 Card View</button>
       </div>
 
       <!-- Grid View -->

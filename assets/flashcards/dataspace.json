@@ -1,0 +1,194 @@
+[
+  {
+    "question": "Qu'est-ce qu'un Data Space et quels sont ses principaux objectifs ?",
+    "answer": "Un Data Space est une infrastructure décentralisée permettant un partage de données sécurisé et souverain. Ses objectifs principaux sont : assurer l'interopérabilité des données, garantir un accès contrôlé, utiliser des métadonnées structurées, établir une gouvernance claire, et faciliter l'échange sécurisé de données entre tous les producteurs et consommateurs de données."
+  },
+  {
+    "question": "Définissez la souveraineté numérique (Digital Sovereignty) dans le contexte des Data Spaces.",
+    "answer": "La souveraineté numérique désigne le contrôle organisationnel sur les données, les algorithmes et l'infrastructure numérique. Elle permet l'autonomie des données, réduit la dépendance aux plateformes externes, renforce le pouvoir de négociation dans les partenariats, et assure des architectures conformes aux réglementations."
+  },
+  {
+    "question": "Qu'est-ce qu'un Digital Twin et quel est son rôle ?",
+    "answer": "Un Digital Twin est une représentation virtuelle d'un objet ou système physique conçue pour refléter fidèlement l'objet physique. Il permet de modéliser le contexte réel à travers la manipulation des données mesurées en temps réel et est défini par les règles du Context Broker."
+  },
+  {
+    "question": "Qu'est-ce que le Context Broker et quel est son rôle ?",
+    "answer": "Le Context Broker est l'entité qui contrôle le flux de données en temps réel. Il gère la gestion des informations contextuelles, facilite l'intégration des données IoT, et sert d'intermédiaire central pour la distribution des données entre les différents participants du Data Space."
+  },
+  {
+    "question": "Qu'est-ce que NGSI-LD et pourquoi est-il important ?",
+    "answer": "NGSI-LD est un standard pour la gestion et l'échange d'informations contextuelles. C'est une normalisation d'API développée dans le cadre de FIWARE qui permet l'interopérabilité des données entre différents systèmes et organisations, facilitant ainsi la communication standardisée dans les Data Spaces."
+  },
+  {
+    "question": "Quels sont les quatre piliers fondamentaux de la 'Soft Infrastructure' d'un Data Space ?",
+    "answer": "Les quatre piliers sont : 1) Interopérabilité (modèles de données, APIs d'échange, provenance), 2) Trust/Confiance (gestion d'identité, contrôle d'accès, échanges sécurisés), 3) Data Value/Valorisation (métadonnées, comptabilité d'utilisation, services marketplace), 4) Gouvernance (accords de coopération, SLA, modèle de continuité)."
+  },
+  {
+    "question": "Quelles sont les briques technologiques nécessaires pour l'interopérabilité dans un Data Space ?",
+    "answer": "Les briques d'interopérabilité incluent : les modèles de données et formats standardisés (ex: JSON-LD), les API d'échanges de données (ex: NGSI-LD), et les mécanismes de provenance et traçabilité (ex: blockchain pour l'auditabilité)."
+  },
+  {
+    "question": "Qu'est-ce que l'IDSA et quel est son rôle ?",
+    "answer": "L'IDSA (International Data Spaces Association) fournit une architecture de référence pour la souveraineté des données. Elle définit les standards techniques et organisationnels pour créer des espaces de données sécurisés, interopérables et conformes aux principes de souveraineté numérique."
+  },
+  {
+    "question": "Qu'est-ce que GAIA-X ?",
+    "answer": "GAIA-X est une fédération européenne d'infrastructures et de services de données. Elle vise à créer un écosystème de données souverain, transparent et interopérable au niveau européen, réduisant la dépendance aux plateformes cloud non-européennes."
+  },
+  {
+    "question": "Qu'est-ce que FIWARE et quelle est sa contribution aux Data Spaces ?",
+    "answer": "FIWARE est une plateforme open-source pour le développement de solutions intelligentes. Elle fournit des composants technologiques incluant le Context Broker pour la gestion de données en temps réel, le framework IoT Agent, les systèmes de sécurité et gestion d'identité, et des plateformes d'analytique."
+  },
+  {
+    "question": "Quelles sont les principales réglementations européennes impactant les Data Spaces ?",
+    "answer": "Les principales réglementations sont : le RGPD (protection des données personnelles), le DGA (Data Governance Act sur la gouvernance des données), eIDAS 2.0 (identification électronique et services de confiance), et l'AI Act (cadre réglementaire pour l'intelligence artificielle)."
+  },
+  {
+    "question": "Quels sont les rôles principaux des participants dans un écosystème de Data Space ?",
+    "answer": "Les rôles principaux sont : les consommateurs de données (data consumers), les fournisseurs de données (data providers), les fournisseurs de services (service providers), les services d'autorité de confiance (trust authority), les services de découverte et courtage, les fournisseurs d'identité (Identity Provider), le registre d'autorisation (Authorization Registry), et les processus de gouvernance automatisés."
+  },
+  {
+    "question": "Qu'est-ce que le projet Prometheus-X et quelle est sa vision ?",
+    "answer": "Prometheus-X est un projet visant à créer un écosystème de données centré sur l'humain avec contrôle individuel. Sa vision inclut une infrastructure de partage de données ouverte et décentralisée, des échanges de données fiables sans contrôle d'une entité unique, la conformité IDSA et GAIA-X, et un focus sur l'éducation et les compétences avec une applicabilité transversale."
+  },
+  {
+    "question": "Quels sont les trois 'Building Blocks' principaux (services cœur) de Prometheus-X ?",
+    "answer": "Les trois building blocks principaux sont : 1) Catalog (Registry & API) pour l'onboarding des participants et la gestion de l'écosystème, 2) Contract Manager pour la gestion centralisée des contrats et vérification des politiques, 3) Consent Manager (PDI) pour permettre aux individus de gérer leur consentement RGPD."
+  },
+  {
+    "question": "Qu'est-ce que le Catalog Registry & Catalog API dans Prometheus-X ?",
+    "answer": "Le Catalog Registry agit comme une couche de gouvernance pour les templates de politiques, les rôles et les catégories d'actifs. Le Catalog API est un service de catalogue centralisé qui facilite l'onboarding des participants, l'enregistrement des actifs, la gestion des offres de services, la gestion de l'écosystème, et les négociations entre participants."
+  },
+  {
+    "question": "Qu'est-ce que le Contract Manager et quel est son rôle ?",
+    "answer": "Le Contract Manager est un service centralisé de gestion des contrats qui gère la vérification des politiques (policies), la génération automatique des contrats et leur signature. Il assure que tous les échanges de données respectent les accords établis entre les parties."
+  },
+  {
+    "question": "Qu'est-ce que le Consent Manager (PDI) et pourquoi est-il crucial ?",
+    "answer": "Le Consent Manager, aussi appelé Personal Data Intermediary (PDI), est un composant crucial qui permet aux individus de gérer leur consentement et leurs autorisations pour le partage de données personnelles au sein du dataspace. Il assure la conformité avec le RGPD et met en œuvre le principe 'Human-centric Data'."
+  },
+  {
+    "question": "Qu'est-ce que le Dataspace Connector et quelles sont ses fonctions ?",
+    "answer": "Le Dataspace Connector permet les vérifications du plan de contrôle avec les intermédiaires de données, la gestion du consentement pour les échanges de données personnelles, et les échanges de données basés sur des contrats multipartites. Il vérifie la conformité IDS et implémente le protocole IDSA Data Space Protocol (DSP)."
+  },
+  {
+    "question": "Qu'est-ce que le Service Chain Protocol ?",
+    "answer": "Le Service Chain Protocol est un protocole basé sur un contrat multipartite unique qui permet des configurations plus complexes de séquences d'échange de données. Ces séquences sont automatisées par les PDC (Personal Data Connectors) des participants, permettant des workflows de données sophistiqués."
+  },
+  {
+    "question": "Décrivez le flux général d'un échange de données B2B non-personnelles dans Prometheus-X.",
+    "answer": "Le flux B2B non-personnelles implique : 1) Le Data Consumer envoie une requête de données avec contrat au Contract Service, 2) Vérification des politiques et du contrat, 3) Le Provider Data Space Connector vérifie les politiques et le contrôle d'accès, 4) GET Data à l'URL de représentation de ressource, 5) Les données sont transmises, 6) POST Contract & Data au Data Consumer Connector, 7) Vérification finale des politiques, 8) POST Data à l'URL de ressource du consommateur."
+  },
+  {
+    "question": "Quelle est la particularité d'un échange de données B2B personnelles dans Prometheus-X ?",
+    "answer": "La particularité est que l'initiateur est l'individu propriétaire des données. Le partage effectif est déclenché par l'octroi d'un consentement via le Personal Data Intermediary (PDI). Le flux inclut une étape de consentement par l'individu, puis le Consent Service vérifie le contrat et génère un access token pour le consommateur avant l'échange de données."
+  },
+  {
+    "question": "Quels sont les défis de l'économie des données que les Data Spaces tentent de résoudre ?",
+    "answer": "Les défis incluent : les limitations des approches traditionnelles de partage de données, les risques de dépendance aux fournisseurs (vendor lock-in), les restrictions de flux de données transfrontaliers et les défis de conformité, ainsi que la fragmentation du marché et les lacunes d'interopérabilité."
+  },
+  {
+    "question": "Comment la souveraineté numérique crée-t-elle un avantage concurrentiel ?",
+    "answer": "Elle crée un avantage par : l'autonomie et le contrôle des données, la réduction de la dépendance aux plateformes externes, un pouvoir de négociation renforcé dans les partenariats, des architectures prêtes pour la conformité, de nouveaux flux de revenus via la monétisation des données, l'accélération de l'innovation par la collaboration écosystémique, et l'expansion du marché via des solutions interopérables."
+  },
+  {
+    "question": "Qu'est-ce que DCAT v3 ?",
+    "answer": "DCAT v3 (Data Catalog Vocabulary) est un vocabulaire W3C pour la description des ressources de données. Il standardise la manière dont les métadonnées des catalogues de données sont structurées et partagées, facilitant la découverte et l'utilisation des ressources de données."
+  },
+  {
+    "question": "Quels sont les composants de la stack technologique FIWARE ?",
+    "answer": "Les composants incluent : le Context Broker pour la gestion de données en temps réel, le framework IoT Agent pour l'intégration d'appareils, les systèmes de sécurité et gestion d'identité, les plateformes de persistance et d'analytique des données, l'intégration de standards comme NGSI-LD, les Smart Data Models pour l'interopérabilité sémantique, JSON-LD pour la représentation de données liées, et OAuth 2.0/OpenID Connect pour la sécurité."
+  },
+  {
+    "question": "Quelles sont les catégories de 'Building Blocks' dans Prometheus-X ?",
+    "answer": "Les Building Blocks sont classés en quatre catégories : 1) Services cœur (core) - composants essentiels obligatoires, 2) Partage de données fiable (trusted data sharing), 3) Transformation de données (data transformation), 4) Utilité (utility) - services complémentaires pour améliorer les fonctionnalités."
+  },
+  {
+    "question": "Qu'est-ce que l'interopérabilité dans le contexte des Data Spaces ?",
+    "answer": "L'interopérabilité désigne la compatibilité technique et sémantique entre systèmes et organisations. Elle inclut la standardisation des modèles de données (formats communs), des APIs d'échange (comme NGSI-LD), et des mécanismes de traçabilité pour assurer que différents systèmes peuvent communiquer et échanger des données de manière cohérente."
+  },
+  {
+    "question": "Qu'est-ce qu'un Data Ecosystem ?",
+    "answer": "Un Data Ecosystem est un réseau de participants collaborant à travers des échanges de données standardisés. Il comprend des fournisseurs et consommateurs de données, des fournisseurs de services, des autorités de confiance, et des mécanismes de gouvernance qui permettent une collaboration efficace et sécurisée."
+  },
+  {
+    "question": "Quels sont les éléments de gouvernance nécessaires dans un Data Space ?",
+    "answer": "Les éléments de gouvernance incluent : les accords commerciaux entre participants, les accords opérationnels (comme les SLA - Service Level Agreements), les accords organisationnels définissant les rôles et responsabilités, et les processus automatisés pour faire respecter ces règles de gouvernance."
+  },
+  {
+    "question": "Comment les smart contracts sont-ils utilisés dans un Data Space ?",
+    "answer": "Les smart contracts définissent et automatisent les règles d'accès aux données entre participants. Ils spécifient qui peut accéder à quelles données, dans quelles conditions, et assurent l'exécution automatique des accords. Par exemple, un laboratoire peut autoriser une pharmacie centrale à accéder aux références des médicaments disponibles, leur famille et le stock via un smart contract."
+  },
+  {
+    "question": "Quelles données un laboratoire pharmaceutique pourrait-il produire dans un écosystème Data Space de distribution de médicaments ?",
+    "answer": "Un laboratoire produit des données relatives aux médicaments qu'il fabrique, incluant : la composition chimique, la famille de médicaments, les matières premières utilisées, les prix, les niveaux de stock, les références des médicaments, et potentiellement les informations de conformité réglementaire."
+  },
+  {
+    "question": "Comment fonctionne le 'dataflow' dans un Data Space avec gestion du consentement ?",
+    "answer": "Le dataflow implique : 1) Le data owner (propriétaire des données) donne son consentement, 2) Le Data Provider ou Data into communique avec l'Authorization Registry, 3) Les data consumers multiples peuvent accéder aux données selon les autorisations définies, 4) Toutes les interactions passent par des vérifications d'autorisation pour assurer la conformité avec le consentement donné."
+  },
+  {
+    "question": "Qu'est-ce que la 'Human-centric Data' et comment est-elle mise en œuvre ?",
+    "answer": "La 'Human-centric Data' signifie que les individus ont le contrôle et donnent leur consentement sur l'utilisation de leurs données personnelles. Elle est mise en œuvre via le Consent Manager (PDI) qui permet aux individus de gérer leurs autorisations, et via des protocoles d'échange où l'individu est l'initiateur du partage de ses données personnelles."
+  },
+  {
+    "question": "Quels sont les services de 'Trust Authority' dans un Data Space ?",
+    "answer": "Les services de Trust Authority incluent : la gestion d'identité (Identity Provider) pour authentifier les participants, le registre d'autorisation (Authorization Registry) pour vérifier les permissions, les services de découverte et courtage pour trouver des ressources, les services de logging pour l'auditabilité, et les services de trading pour les marchés de données."
+  },
+  {
+    "question": "Quel est le rôle du JSON-LD dans l'écosystème Data Space ?",
+    "answer": "JSON-LD (JSON for Linked Data) permet la représentation de données liées. Il ajoute un contexte sémantique aux données JSON, facilitant l'interopérabilité sémantique entre différents systèmes et permettant aux machines de comprendre la signification des données échangées, pas seulement leur structure."
+  },
+  {
+    "question": "Comment OAuth 2.0 et OpenID Connect sont-ils utilisés dans FIWARE ?",
+    "answer": "OAuth 2.0 et OpenID Connect sont utilisés pour la sécurité et la gestion d'identité dans l'écosystème FIWARE. OAuth 2.0 gère l'autorisation et l'accès aux ressources, tandis qu'OpenID Connect ajoute une couche d'authentification permettant de vérifier l'identité des utilisateurs et des services."
+  },
+  {
+    "question": "Qu'est-ce que le RGPD et comment impacte-t-il les Data Spaces ?",
+    "answer": "Le RGPD (Règlement Général sur la Protection des Données) est la réglementation européenne sur la protection des données personnelles. Il impacte les Data Spaces en exigeant : le consentement explicite pour le traitement des données personnelles, le droit à l'effacement, la portabilité des données, la transparence sur l'utilisation des données, et des mécanismes de contrôle individuel comme le Consent Manager."
+  },
+  {
+    "question": "Qu'est-ce que le Data Governance Act (DGA) ?",
+    "answer": "Le Data Governance Act est une réglementation européenne qui établit les exigences pour la gouvernance des données. Il régule la réutilisation de certaines catégories de données du secteur public, les services d'intermédiaires de données, et promeut l'altruisme en matière de données, créant ainsi un cadre pour des échanges de données sécurisés et fiables."
+  },
+  {
+    "question": "Pourquoi Prometheus-X se concentre-t-il sur l'éducation et les compétences ?",
+    "answer": "Prometheus-X se concentre sur l'éducation et les compétences car c'est un domaine prioritaire, mais avec une applicabilité transversale. L'objectif est de démontrer comment un partage de données responsable peut améliorer les résultats éducatifs et la formation professionnelle, tout en créant un modèle réplicable pour d'autres secteurs."
+  },
+  {
+    "question": "Quels sont les cas d'usage concrets de Prometheus-X ?",
+    "answer": "Prometheus-X présente une trentaine de cas d'utilisation montrant comment les données peuvent être partagées de manière responsable et efficace. Ces cas se concentrent notamment sur l'éducation et les compétences, démontrant l'impact significatif dans la vie quotidienne et comment les solutions basées sur les données peuvent améliorer les résultats dans divers domaines."
+  },
+  {
+    "question": "Comment un Data Space peut-il remplacer les applications GAFAM ?",
+    "answer": "Un Data Space vise à 'révolutionner le partage de données' en créant une infrastructure cloud-to-edge décentralisée qui rend l'écosystème accessible avec une approche centrée sur l'humain. Contrairement aux GAFAM, il offre : le contrôle individuel des données, pas de dépendance à une seule plateforme, une infrastructure ouverte et interopérable, et le respect de la souveraineté numérique européenne."
+  },
+  {
+    "question": "Quels sont les smart contracts typiques dans un écosystème de distribution pharmaceutique ?",
+    "answer": "Dans un écosystème pharmaceutique, les smart contracts typiques incluent : 1) Laboratoires → Pharmacie centrale : autorisation d'accès aux références des médicaments, leur famille et le stock disponible, 2) Pharmacies → Pharmacie centrale : autorisation d'accès aux bases de données de gestion de stock, 3) Pharmacie centrale → Pharmacies : autorisation de consulter la liste des médicaments disponibles."
+  },
+  {
+    "question": "Quelle est la différence entre le protocole DSP et le protocole Prometheus-X ?",
+    "answer": "Le Data Space Protocol (DSP) de l'IDSA est un protocole standard mais ne couvre pas les interactions avec les intermédiaires de données, la gestion du consentement, et les contrats multipartites. Prometheus-X implémente le DSP comme protocole secondaire et ajoute son propre protocole d'échange basé sur l'utilisation de services d'intermédiaires (Contract Manager, PDI) pour faire respecter le partage de données et gérer les aspects non couverts par DSP."
+  },
+  {
+    "question": "Comment la traçabilité des données est-elle assurée dans un Data Space ?",
+    "answer": "La traçabilité est assurée par : des mécanismes de provenance et traçabilité (comme la blockchain), des services de logging qui enregistrent toutes les transactions de données, des mécanismes de comptabilité de l'utilisation des données (Data Usage Accounting), et des registres d'autorisation qui conservent l'historique des accès et permissions."
+  },
+  {
+    "question": "Qu'est-ce que la valorisation des données dans un Data Space ?",
+    "answer": "La valorisation des données se fait à travers : les services de métadonnées et découverte qui facilitent la recherche de ressources pertinentes, les services de marketplace qui permettent l'échange commercial de données, la comptabilité de l'utilisation des données pour facturer ou mesurer la valeur, et les mécanismes de monétisation créant de nouveaux flux de revenus."
+  },
+  {
+    "question": "Quels sont les composants d'un Dataspace Connector conforme IDS ?",
+    "answer": "Un Dataspace Connector conforme IDS doit inclure : la vérification du plan de contrôle avec les intermédiaires de données, la gestion du consentement pour les échanges de données personnelles, le support des échanges basés sur des contrats multipartites, l'implémentation du protocole DSP, et la conformité avec l'architecture de référence IDSA."
+  },
+  {
+    "question": "Comment MongoDB est-il utilisé dans l'architecture d'un Data Space ?",
+    "answer": "MongoDB sert de base de données pour la persistance des données dans l'écosystème. Dans le contexte du Context Broker, MongoDB stocke les entités et leurs attributs, l'historique des données contextuelles, et permet des requêtes efficaces sur les données en temps réel et historiques pour alimenter les Digital Twins et les applications."
+  },
+  {
+    "question": "Quelle est la relation entre le Digital Twin et le Context Broker ?",
+    "answer": "Le Digital Twin est défini par les règles du Context Broker. Le Context Broker gère le flux de données en temps réel qui alimente le Digital Twin, permettant à la représentation virtuelle de refléter fidèlement l'état actuel de l'objet ou système physique. Le Context Broker fournit l'infrastructure de données tandis que le Digital Twin utilise ces données pour la modélisation."
+  }
+]

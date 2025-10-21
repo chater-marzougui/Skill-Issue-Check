@@ -6,24 +6,113 @@ let currentView = "grid";
 let searchResults = [];
 let currentSearchIndex = -1;
 let allFlashcards = [];
+let courseList = [];
+let selectedCourse = null;
 
 // Load flashcards on page load
 async function loadData() {
   try {
-    const response = await fetch(`assets/courses/iot_fatma.json`);
+    // Load course list
+    const response = await fetch(`assets/flashcards/flashcards_list.json`);
     if (!response.ok) {
-      throw new Error(`Failed to load course file: ${response.statusText}`);
+      throw new Error(`Failed to load course list: ${response.statusText}`);
     }
     const data = await response.json();
-    loadFlashcards(data);
+    courseList = data;
+    
+    // Find course with highest id
+    const highestIdCourse = courseList.reduce((max, course) => 
+      (course.id > (max?.id ?? -Infinity)) ? course : max, null);
+    
+    if (highestIdCourse) {
+      selectedCourse = highestIdCourse;
+      populateCourseSelector();
+      loadCourse(highestIdCourse);
+    }
   } catch (error) {
-    console.error("Failed to load flashcards:", error);
+    console.error("Failed to load course list:", error);
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   loadData();
 });
+
+function populateCourseSelector() {
+  const select = document.getElementById("course-select");
+  const btn = document.getElementById("course-btn");
+  
+  select.innerHTML = "";
+  
+  for (const course of courseList) {
+    const option = document.createElement("option");
+    const courseKey = Object.keys(course).find(k => k !== "id");
+    option.value = course[courseKey];
+    option.textContent = courseKey;
+    if (course === selectedCourse) {
+      option.selected = true;
+    }
+    select.appendChild(option);
+  }
+  
+  // Update button text
+  const courseKey = Object.keys(selectedCourse).find(k => k !== "id");
+  btn.textContent = `📚 ${courseKey}`;
+  
+  // Add change event listener
+  select.addEventListener("change", (e) => {
+    const selectedFile = e.target.value;
+    if (selectedFile) {
+      const course = courseList.find(c => Object.values(c).includes(selectedFile));
+      if (course) {
+        selectedCourse = course;
+        populateCourseSelector();
+        loadCourse(course);
+      }
+    }
+    select.style.display = "none";
+  });
+}
+
+function setupCourseButton() {
+  const btn = document.getElementById("course-btn");
+  const select = document.getElementById("course-select");
+  
+  btn.addEventListener("click", () => {
+    if (select.style.display === "none") {
+      select.style.display = "block";
+      select.focus();
+    } else {
+      select.style.display = "none";
+    }
+  });
+  
+  // Close select when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".course-selector-wrapper")) {
+      select.style.display = "none";
+    }
+  });
+}
+
+function loadCourse(course) {
+  const courseKey = Object.keys(course).find(k => k !== "id");
+  const filename = course[courseKey];
+  
+  fetch(`assets/flashcards/${filename}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Could not load course: ${filename}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      loadFlashcards(data);
+    })
+    .catch(error => {
+      console.error("Error loading course:", error);
+    });
+}
 
 function loadFlashcards(data) {
   if (!Array.isArray(data)) {
@@ -51,6 +140,7 @@ function loadFlashcards(data) {
 
   displayGridView();
   setupSearch();
+  setupCourseButton();
 }
 
 // Toggle between grid and card view
@@ -69,6 +159,11 @@ function toggleView(view) {
     document.getElementById("gridView").style.display = "none";
     document.getElementById("flashcardSection").style.display = "block";
     document.getElementById("flashcardSection").classList.add("active");
+    
+    // If search is active, navigate to first search result
+    if (searchResults.length > 0) {
+      currentIndex = searchResults[0].index;
+    }
     displayCard();
   }
 }
@@ -111,9 +206,15 @@ function displayCard() {
     cardElement.classList.remove("showing-answer");
   }
 
-  document.getElementById("counter").textContent = `${currentIndex + 1} / ${
-    flashcards.length
-  }`;
+  // Update counter based on search results
+  let counterText;
+  if (searchResults.length > 0) {
+    const currentResultIndex = searchResults.findIndex(r => r.index === currentIndex);
+    counterText = `${currentResultIndex + 1} / ${searchResults.length}`;
+  } else {
+    counterText = `${currentIndex + 1} / ${flashcards.length}`;
+  }
+  document.getElementById("counter").textContent = counterText;
 }
 
 // Toggle card flip
@@ -124,20 +225,54 @@ function toggleCard() {
 
 // Navigate to next card
 function nextCard() {
-  if (currentIndex < flashcards.length - 1) {
-    currentIndex++;
-    showingAnswer = false;
-    displayCard();
+  let nextIndex;
+  
+  if (searchResults.length > 0) {
+    // Navigate through search results
+    const currentResultIndex = searchResults.findIndex(r => r.index === currentIndex);
+    if (currentResultIndex < searchResults.length - 1) {
+      nextIndex = searchResults[currentResultIndex + 1].index;
+    } else {
+      return;
+    }
+  } else {
+    // Navigate through all cards
+    if (currentIndex < flashcards.length - 1) {
+      nextIndex = currentIndex + 1;
+    } else {
+      return;
+    }
   }
+  
+  currentIndex = nextIndex;
+  showingAnswer = false;
+  displayCard();
 }
 
 // Navigate to previous card
 function prevCard() {
-  if (currentIndex > 0) {
-    currentIndex--;
-    showingAnswer = false;
-    displayCard();
+  let prevIndex;
+  
+  if (searchResults.length > 0) {
+    // Navigate through search results
+    const currentResultIndex = searchResults.findIndex(r => r.index === currentIndex);
+    if (currentResultIndex > 0) {
+      prevIndex = searchResults[currentResultIndex - 1].index;
+    } else {
+      return;
+    }
+  } else {
+    // Navigate through all cards
+    if (currentIndex > 0) {
+      prevIndex = currentIndex - 1;
+    } else {
+      return;
+    }
   }
+  
+  currentIndex = prevIndex;
+  showingAnswer = false;
+  displayCard();
 }
 
 // Keyboard navigation for card view

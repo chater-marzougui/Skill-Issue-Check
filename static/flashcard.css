@@ -34,6 +34,44 @@ header h1 {
     display: flex;
     justify-content: center;
     gap: 10px;
+    align-items: center;
+}
+
+.course-selector-wrapper {
+    position: relative;
+}
+
+.course-btn {
+    padding: 8px 16px;
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.course-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.course-select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    padding: 8px 12px;
+    background: white;
+    border: 2px solid #667eea;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
 }
 
 .btn-home {
