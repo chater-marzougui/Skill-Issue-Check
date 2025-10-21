@@ -1,0 +1,254 @@
+[
+  {
+    "question": "What is the purpose of the MATLAB function 'envspectrum()' and how is it used to detect bearing faults?",
+    "answer": "The 'envspectrum()' function is used to compute the envelope of a raw signal to extract modulated amplitude information. It helps detect bearing faults by analyzing the power spectrum of the envelope signal at specific fault frequencies (BPFI, BPFO) and their harmonics, making fault detection clearer than analyzing the raw signal alone."
+  },
+  {
+    "question": "What is a more powerful MATLAB tool for time-spectral signal analysis that can be used to identify the fault type if the first method fails?",
+    "answer": "The kurtogram and spectral kurtosis analysis. The 'kurtogram()' function locates the frequency band with the highest kurtosis, and 'pkurtosis()' computes the spectral kurtosis to identify impulsive signals characteristic of bearing faults."
+  },
+  {
+    "question": "What is the purpose of the 'faultBands()' function in MATLAB's Predictive Maintenance Toolbox, and how can it be used to identify specific frequency ranges associated with machinery faults?",
+    "answer": "The 'faultBands()' function constructs frequency bands around specific fault frequencies and their harmonics, including sidebands. It is used to define regions of interest in the frequency spectrum where fault signals are expected to appear, enabling focused spectral metric computation for fault detection."
+  },
+  {
+    "question": "What is the primary objective of using the function 'phased.ReceiverPreamp()' in the Phased Array Toolbox of MATLAB?",
+    "answer": "The primary objective is to amplify a received radar signal while adding Gaussian noise to simulate realistic receiver conditions. It models the receiver gain and noise figure to create more realistic radar return signals."
+  },
+  {
+    "question": "Which MATLAB function gives as output an object representing a radar target that is used to compute the corresponding reflected signal?",
+    "answer": "The 'phased.RadarTarget()' function creates a radar target model with specified properties such as mean radar cross section (RCS), which is used to simulate the reflection of radar signals from targets."
+  },
+  {
+    "question": "What are the four critical frequencies used to analyze faults in rolling element bearings?",
+    "answer": "The four critical frequencies are: BPFO (Ball Pass Frequency Outer race), BPFI (Ball Pass Frequency Inner race), FTF (Fundamental Train Frequency or cage speed), and BSF (Ball Spin Frequency)."
+  },
+  {
+    "question": "What is the sampling frequency used for collecting servo motor current data in Lab 3?",
+    "answer": "The Arduino Uno sampled the current signal at 1.5 kHz (1500 Hz) through an analog-to-digital converter (ADC)."
+  },
+  {
+    "question": "What is the gear reduction ratio of the Futaba S3003 servo motor from the DC motor to the output spline?",
+    "answer": "The Futaba S3003 servo has a gear reduction ratio of 278:1, reducing the motor speed from approximately 13901 rpm to about 50 rpm at the output spline."
+  },
+  {
+    "question": "What is the purpose of computing spectral metrics in Motor Current Signature Analysis (MCSA)?",
+    "answer": "Spectral metrics are computed to detect faults in drive gears by analyzing frequency-domain features of the motor current signal at specific frequency bands associated with gear mesh frequencies and their harmonics."
+  },
+  {
+    "question": "What MATLAB function is used to compute the nominal RPM from tachometer pulses?",
+    "answer": "The 'tachorpm()' function is used to compute the nominal speed (rpm) from tachometer signals, requiring the sampling frequency and pulses per revolution as inputs."
+  },
+  {
+    "question": "What is the purpose of the 'faultBandMetrics()' function in MATLAB's Predictive Maintenance Toolbox?",
+    "answer": "The 'faultBandMetrics()' function computes spectral metrics (up to 49 different metrics) at specified frequency bands of interest, including peak amplitudes, band power, and other statistical measures used for fault detection and classification."
+  },
+  {
+    "question": "What is a Health Indicator (HI) in the context of RUL estimation?",
+    "answer": "A Health Indicator is a constructed metric that combines multiple features to represent the overall health state of a system. It is used in degradation models to predict when the system will cross a failure threshold, enabling RUL estimation."
+  },
+  {
+    "question": "What type of degradation model is commonly used for RUL estimation in MATLAB?",
+    "answer": "The 'exponentialDegradationModel' is commonly used, which models component degradation as an exponential process and predicts when a monitored signal will cross a predefined threshold."
+  },
+  {
+    "question": "What is the purpose of the 'update()' and 'predict()' functions in the RUL estimation workflow?",
+    "answer": "The 'update()' function updates the degradation model with new observed data, while the 'predict()' function uses the updated model to estimate the remaining useful life based on the current health state and predicted degradation trajectory."
+  },
+  {
+    "question": "What is the definition of Kurtosis in signal processing?",
+    "answer": "Kurtosis is the fourth standardized moment of a random variable. It characterizes the impulsiveness of a signal or the heaviness of the random variable's tail, making it useful for detecting impulsive events like bearing faults."
+  },
+  {
+    "question": "What is the purpose of bandpass filtering a signal after kurtogram analysis?",
+    "answer": "Bandpass filtering using the optimal center frequency and bandwidth identified by the kurtogram enhances the signal's kurtosis and helps retrieve the modulated amplitude of fault signals, making fault detection more effective."
+  },
+  {
+    "question": "What is the micro-Doppler signature in radar signal processing?",
+    "answer": "The micro-Doppler signature refers to small frequency shifts in radar returns caused by the motion of parts of a target (e.g., swinging arms, rotating blades). It provides detailed information about target movement and is obtained using time-frequency analysis techniques like STFT."
+  },
+  {
+    "question": "What is an FMCW radar and how does it determine target range and velocity?",
+    "answer": "FMCW (Frequency Modulated Continuous Wave) radar continuously transmits a frequency-modulated signal and measures the beat frequency between transmitted and received signals to calculate both distance (range) and speed (velocity) of targets."
+  },
+  {
+    "question": "What are the three dimensions of the Radar Data Cube?",
+    "answer": "The three dimensions are: range (fast time), Doppler/velocity (slow time), and frame (spatial sampling). Each point corresponds to a target's range, speed, and measurement time."
+  },
+  {
+    "question": "What is the purpose of the 'phased.FMCWWaveform()' function?",
+    "answer": "The 'phased.FMCWWaveform()' function creates the baseband signal of an FMCW waveform with specified parameters such as sweep bandwidth, sweep time, and sample rate for radar signal simulation."
+  },
+  {
+    "question": "What does the 'dechirp()' function do in radar signal processing?",
+    "answer": "The 'dechirp()' function converts the received reflected radar signal to its baseband version (beat frequency signal), making range extraction straightforward by removing the transmitted frequency sweep."
+  },
+  {
+    "question": "What is the purpose of the 'backscatterPedestrian()' function?",
+    "answer": "The 'backscatterPedestrian()' function creates an object that models radar signals reflected from a moving pedestrian, including the micro-Doppler effects from limb movements."
+  },
+  {
+    "question": "What is the purpose of the 'backscatterBicyclist()' function?",
+    "answer": "The 'backscatterBicyclist()' function creates an object representing radar signals reflected from a moving bicyclist, capturing the unique micro-Doppler signature from pedaling motion and wheel rotation."
+  },
+  {
+    "question": "What preprocessing steps are applied to micro-Doppler signatures before feeding them to a CNN classifier?",
+    "answer": "The spectrograms are expressed in decibels using logarithmic scaling (to make return strengths comparable) and normalized to the range [0, 1] to help the CNN converge faster."
+  },
+  {
+    "question": "What are the five scene categories in the radar classification dataset for Lab 4?",
+    "answer": "The five categories are: 1) One pedestrian, 2) One bicyclist, 3) One pedestrian and one bicyclist, 4) Two pedestrians, and 5) Two bicyclists."
+  },
+  {
+    "question": "What is the typical train-test split ratio used in the radar classification dataset?",
+    "answer": "The dataset uses an 80-20 split, with 80% (4000 signatures per category) used for training and 20% (1000 signatures per category) reserved for testing."
+  },
+  {
+    "question": "What optimization algorithm is used to train the CNN in Lab 4?",
+    "answer": "The ADAM optimizer is used with a mini-batch size of 128, maximum of 30 epochs, learning rate drop factor of 0.1, and learning rate drop period of 10."
+  },
+  {
+    "question": "What is the purpose of ThingSpeak platform in IoT applications?",
+    "answer": "ThingSpeak is a cloud-based IoT platform used to collect, store, analyze, and visualize sensor data in real-time. It provides APIs for reading and writing data, as well as apps for data analysis and visualization."
+  },
+  {
+    "question": "What are the key API keys needed to interact with a ThingSpeak channel?",
+    "answer": "Two API keys are needed: a Write API Key for sending data to the channel, and a Read API Key for retrieving data from the channel."
+  },
+  {
+    "question": "What is the baud rate used for serial communication between Arduino Uno and computer in Lab 3?",
+    "answer": "The serial data is streamed at a baud rate of 115200."
+  },
+  {
+    "question": "How many pulses per rotation does the servo wheel generate in the tachometer setup?",
+    "answer": "The servo wheel has 8 equally spaced holes, generating exactly 8 pulses per rotation of the servo wheel horn."
+  },
+  {
+    "question": "What is the purpose of anti-aliasing low-pass filtering in the servo motor current signal acquisition?",
+    "answer": "The anti-aliasing low-pass filter is used to smooth the amplified current signal and eliminate noise before sending it to the Arduino Uno's ADC, preventing aliasing effects during sampling."
+  },
+  {
+    "question": "What features are used to construct the Health Indicator for servo motor RUL estimation?",
+    "answer": "The features include: peak amplitude of the first harmonic (PeakAmplitude2), peak amplitude of the second harmonic (PeakAmplitude5), total band power (sum of individual band powers), average motor current, and average speed in rpm."
+  },
+  {
+    "question": "What is the purpose of the 'React' App in ThingSpeak?",
+    "answer": "The React App is used to send alerts and status updates to the channel based on specified conditions, such as sending an RUL status alert when the remaining useful life falls below a certain threshold."
+  },
+  {
+    "question": "What threshold value is used for RUL estimation in the servo motor lab?",
+    "answer": "The RUL degradation threshold is set to 10, and an alert is triggered when the RUL estimate falls below 8 hours."
+  },
+  {
+    "question": "What is the purpose of the 'pspectrum()' function in MATLAB?",
+    "answer": "The 'pspectrum()' function computes the power spectral density (PSD) and frequency grid of a signal, enabling frequency-domain analysis to identify fault frequencies and their harmonics."
+  },
+  {
+    "question": "What is the difference between fast time and slow time in radar data processing?",
+    "answer": "Fast time refers to sampling within a single ramp at rate Fs and corresponds to the range dimension. Slow time refers to sampling across multiple ramps at intervals of TPRI and is used for Doppler (velocity) estimation."
+  },
+  {
+    "question": "What processing techniques are applied in the digital processing block of FMCW radar?",
+    "answer": "The digital processing block performs: 1) FFT on fast-time (range FFT), 2) FFT on slow-time (range-Doppler), and 3) STFT across frames to obtain micro-Doppler signatures."
+  },
+  {
+    "question": "What is the purpose of the 'phased.FreeSpace()' function?",
+    "answer": "The 'phased.FreeSpace()' function creates a free-space propagation channel model that simulates how radar signals propagate through free space to and from targets, including path loss effects."
+  },
+  {
+    "question": "What is the purpose of the 'phased.Platform()' function?",
+    "answer": "The 'phased.Platform()' function creates a platform object that simulates the motion of radar or target platforms, tracking their position and velocity over time."
+  },
+  {
+    "question": "What is the typical accuracy achieved by the CNN after 30 epochs in classifying radar signatures without car noise?",
+    "answer": "The network typically achieves about 95% accuracy in 30 epochs when trained on data without car noise."
+  },
+  {
+    "question": "What thermistor calibration equation is used in Lab 1 to calculate temperature?",
+    "answer": "Temperature in Kelvin is calculated using: T = 1/(aConst + bConst*ln(R) + cConst*ln(R)^3), where R is the thermistor resistance and a, b, c are calibration constants."
+  },
+  {
+    "question": "What are the calibration constant values used for the MF52A2103J3470 thermistor?",
+    "answer": "The calibration constants are: a = 0.002039, b = 6.72×10^-5, and c = 8.929×10^-8."
+  },
+  {
+    "question": "What is the recommended data posting period for ThingSpeak in Lab 1?",
+    "answer": "The data is posted to ThingSpeak every 2 minutes (120 seconds)."
+  },
+  {
+    "question": "What function is used to write multiple field values simultaneously to ThingSpeak?",
+    "answer": "The 'thingSpeakWrite()' function can write multiple field values by passing them as a vector, enabling simultaneous updates of multiple channel fields."
+  },
+  {
+    "question": "What is the purpose of using logarithmic scaling in the classification of radar signatures?",
+    "answer": "Logarithmic scaling (expressing spectrograms in decibels) makes return strengths from different objects comparable, augmenting features by preventing stronger returns from obscuring weaker ones."
+  },
+  {
+    "question": "What is the main advantage of Motor Current Signature Analysis (MCSA) over traditional vibration-based methods?",
+    "answer": "MCSA is simpler and more practical than using vibration instruments, especially when the gear train is not easily accessible for instrumentation with accelerometers, such as in nuclear power plants."
+  },
+  {
+    "question": "What does the 'Classification Learner' tool in MATLAB do?",
+    "answer": "The Classification Learner tool allows users to train and compare different classification models using extracted features, helping to identify the best classifier for distinguishing between healthy and faulty data."
+  },
+  {
+    "question": "What is the purpose of constructing a scatter plot using spectral metrics in Lab 3?",
+    "answer": "The scatter plot visualizes the separation between healthy and faulty data based on spectral metric features, enabling visual classification and identification of distinguishing features."
+  },
+  {
+    "question": "What is the purpose of the 'confusionchart()' function in MATLAB?",
+    "answer": "The 'confusionchart()' function creates a confusion matrix that provides detailed information about classification performance, showing true positives, false positives, true negatives, and false negatives for each category."
+  },
+  {
+    "question": "What is the role of sidebands in fault frequency analysis?",
+    "answer": "Sidebands (typically ±1 times another frequency) appear around main fault frequencies due to modulation effects and provide additional diagnostic information about gear mesh interactions and fault conditions."
+  },
+  {
+    "question": "What is the 'trainNetwork()' function used for in MATLAB?",
+    "answer": "The 'trainNetwork()' function trains a neural network using specified training data, network architecture, and training options, returning a trained network object that can be used for predictions."
+  },
+  {
+    "question": "What is the purpose of the 'classify()' function in MATLAB's deep learning workflow?",
+    "answer": "The 'classify()' function uses a trained neural network to predict class labels for new input data, enabling classification of test samples."
+  },
+  {
+    "question": "What does a high kurtosis value indicate in vibration signal analysis?",
+    "answer": "A high kurtosis value indicates the presence of impulsive events or transients in the signal, which are characteristic of bearing faults such as impacts when rolling elements strike defects."
+  },
+  {
+    "question": "Why is the ESP32 chosen for IoT applications in Lab 1?",
+    "answer": "The ESP32 is chosen because it has built-in WiFi capability, sufficient GPIO pins for sensor interfacing, and is compatible with the Arduino IDE, making it suitable for IoT data collection and transmission."
+  },
+  {
+    "question": "What is the purpose of the 'helperPlotCombs()' function in bearing fault analysis?",
+    "answer": "The 'helperPlotCombs()' function highlights specific fault frequencies (BPFI, BPFO) and their harmonics on spectrum plots, making it easier to visually identify whether fault-related peaks are present at expected frequencies."
+  },
+  {
+    "question": "What is the difference between the envelope spectrum analysis and raw signal spectrum analysis for bearing fault detection?",
+    "answer": "Raw signal spectrum often doesn't clearly show fault frequencies because they are modulated at high frequencies. Envelope spectrum analysis demodulates these high-frequency components, revealing the fault frequencies and their harmonics more clearly."
+  },
+  {
+    "question": "What is the purpose of computing the log ratio of BPFI to BPFO amplitudes in bearing fault classification?",
+    "answer": "The log ratio log(BPFI Amplitude/BPFO Amplitude) provides a single feature that clearly separates the three bearing conditions (normal, inner race fault, outer race fault), enabling effective classification."
+  },
+  {
+    "question": "What is the typical frequency range of interest when analyzing gear mesh frequencies in the servo motor?",
+    "answer": "The frequency bands include FS1 at 231 Hz, FS2 at 37.3 Hz, FS3 at 7.5 Hz, and FS4 at 2.1 Hz, along with their harmonics and sidebands."
+  },
+  {
+    "question": "What is the purpose of the 'move()' function in the Phased Array System Toolbox?",
+    "answer": "The 'move()' function updates the position and velocity of a platform object based on its initial state and elapsed time, simulating motion during radar signal processing."
+  },
+  {
+    "question": "What is the purpose of the 'rangeangle()' function in radar simulation?",
+    "answer": "The 'rangeangle()' function computes the range and angle between the radar platform and target, which are needed to calculate signal propagation and reflection characteristics."
+  },
+  {
+    "question": "What does the 'reflect()' function do in radar target simulation?",
+    "answer": "The 'reflect()' function simulates the reflection of radar signals from a target based on its backscatter characteristics, returning the reflected signal that would be received by the radar."
+  },
+  {
+    "question": "What is the advantage of using STFT over regular FFT for micro-Doppler analysis?",
+    "answer": "STFT provides time-frequency representation, capturing how frequency content changes over time. This is essential for micro-Doppler analysis as it reveals time-varying movements of target parts that regular FFT would miss."
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard App</title>
+
+    <link rel="stylesheet" href="./static/flashcard.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">📚 Flashcards</h1>
+      <div class="header-actions">
+        <a href="index.html" class="btn-home">Home</a>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="🔍 Search flashcards..." />
+          <div class="search-actions">
+            <div class="search-navigation" id="search-nav" style="display: none;">
+              <span id="search-counter">0/0</span>
+            </div>
+            <button id="close-search" class="btn close-search">🔍</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-toggle">
+        <button class="toggle-btn active" id="toggle-grid" onclick="toggleView('grid')">📊 Grid View</button>
+        <button class="toggle-btn" id="toggle-cards" onclick="toggleView('cards')">🎴 Card View</button>
+      </div>
+
+      <!-- Grid View -->
+      <div class="grid-view" id="gridView">
+        <div id="flashcard-grid"></div>
+      </div>
+
+      <!-- Card View -->
+      <div class="flashcard-section" id="flashcardSection" style="display: none;">
+        <div class="card-container">
+          <div class="card" id="flashcard" onclick="toggleCard()">
+            <div class="card-label" id="cardLabel">Question</div>
+            <div class="card-content" id="cardContent"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <button class="nav-btn" id="prevBtn" onclick="prevCard()">←</button>
+          <div class="counter" id="counter">1 / 1</div>
+          <button class="nav-btn" id="nextBtn" onclick="nextCard()">→</button>
+        </div>
+        <div class="instruction">
+          Click card to flip • Use ← → arrow keys to navigate
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Application par Chater Marzougui</p>
+    </footer>
+
+    <script src="./static/flashcard.js"></script>
+
+  </body>
+</html>
