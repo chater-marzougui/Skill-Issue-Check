@@ -2,7 +2,7 @@
 let flashcards = [];
 let currentIndex = 0;
 let showingAnswer = false;
-let currentView = "grid";
+let currentView = "cards";
 let searchResults = [];
 let currentSearchIndex = -1;
 let allFlashcards = [];
@@ -138,7 +138,7 @@ function loadFlashcards(data) {
   currentIndex = 0;
   showingAnswer = false;
 
-  displayGridView();
+  displayCard();
   setupSearch();
   setupCourseButton();
 }

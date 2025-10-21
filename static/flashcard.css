@@ -279,7 +279,7 @@ footer {
 }
 
 .flashcard-section {
-    display: none;
+    display: block;
 }
 
 .flashcard-section.active {
