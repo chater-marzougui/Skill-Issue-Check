@@ -1,0 +1,17 @@
+i got a website that gives flashcards with a json like this:
+
+[
+  {
+    "question": "The first question?",
+    "answer": "the answer"
+  },
+  {
+    "question": "example of a question: What is a more powerful MATLAB tool for time-spectral signal analysis that can be used to identify the fault type if the first method fails?",
+    "answer": "example of an answer: The kurtogram and spectral kurtosis analysis. The 'kurtogram()' function locates the frequency band with the highest kurtosis, and 'pkurtosis()' computes the spectral kurtosis to identify impulsive signals characteristic of bearing faults."
+  },
+...
+]
+
+i want you to follow that format and extract all questions that can come from my course, i'll give you the slides the prof sent us, last years exam and some screenshot of systems in the presentation
+
+extract all possible questions and definitions into the json format provided

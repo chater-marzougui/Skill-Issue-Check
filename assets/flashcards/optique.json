@@ -1,0 +1,234 @@
+[
+  {
+    "question": "What is the basic principle of optical fiber sensing?",
+    "answer": "Amplitude, polarization, phase, and wavelength of the optical signal are affected by physical quantities like temperature, strain and pressure, vibrations, rotations and bending, magnetic field, and chemical and biological agents."
+  },
+  {
+    "question": "What are the main advantages of Fiber Optic Sensors (FOS)?",
+    "answer": "Small size, lightweight, robust and easy to manage, made of dielectric material (immune to electromagnetic interference and corrosion), high melting temperature, low cost, can be easily embedded in composite materials, and can be distributed over several kilometers."
+  },
+  {
+    "question": "What is the difference between intrinsic and extrinsic FOS?",
+    "answer": "Intrinsic FOS: the fiber itself is the sensor and communication channel, distributed along the fiber. Extrinsic FOS: reliable, lump sensors that can be realized separately from the fiber."
+  },
+  {
+    "question": "What is the Bragg condition for a Fiber Bragg Grating (FBG)?",
+    "answer": "λ_B = 2n_eff Λ, where λ_B is the Bragg wavelength, n_eff is the effective refractive index, and Λ is the grating period."
+  },
+  {
+    "question": "What physical parameters affect the Bragg wavelength of an FBG?",
+    "answer": "Temperature and strain. Temperature changes affect the refractive index and cause thermal expansion of the glass material. Strain causes changes in the grating period."
+  },
+  {
+    "question": "Give the FBG sensitivity coefficients for strain and temperature at 1550 nm.",
+    "answer": "At λ_B = 1561 nm (close to 1550 nm): Strain coefficient = 1.2 pm/με, Temperature coefficient = 11.9 pm/°C."
+  },
+  {
+    "question": "What is the general FBG sensitivity equation?",
+    "answer": "Δλ_B/λ_B = [(1 - n²_eff/2)(∂n_eff/∂ε_z) + (n_eff/Λ)(∂Λ/∂ε_z)]ε_z + [(1/n_eff)(∂n_eff/∂T) + (1/Λ)(∂Λ/∂T)]ΔT"
+  },
+  {
+    "question": "How are multiple FBG sensors addressed in a quasi-distributed sensing system?",
+    "answer": "By wavelength selection. Tens of sensors can be concatenated along a single cable, with each FBG reflecting a different wavelength."
+  },
+  {
+    "question": "What are the three main types of scattering effects used in distributed fiber optic sensors?",
+    "answer": "1) Rayleigh scattering (linear, same frequency), 2) Brillouin scattering (nonlinear, ~10 GHz frequency shift, generates acoustic wave), 3) Raman scattering (nonlinear, ~10 THz frequency shift, molecular vibrational/rotational energy)."
+  },
+  {
+    "question": "What is Rayleigh scattering and its characteristics?",
+    "answer": "Rayleigh scattering is elastic scattering where light scatters at the same frequency as the incident light. It is caused by inhomogeneities in the refractive index of silica and forms the basis of OTDR measurements."
+  },
+  {
+    "question": "What is Brillouin scattering and its frequency shift in silica fibers?",
+    "answer": "Brillouin scattering is inelastic scattering where light at a smaller frequency is scattered and an acoustic wave is generated and propagates in the medium. The frequency shift is about 10 GHz in silica fibers."
+  },
+  {
+    "question": "What is Raman scattering and its frequency shift in silica fibers?",
+    "answer": "Raman scattering is inelastic scattering where light at a smaller frequency is scattered, and the energy difference is converted into molecular vibrational/rotational energy. The frequency shift is about 10 THz in silica fibers."
+  },
+  {
+    "question": "What is the typical spatial resolution for distributed fiber optic sensors?",
+    "answer": "Around 1 meter."
+  },
+  {
+    "question": "What is the typical temperature resolution for distributed fiber optic sensors?",
+    "answer": "In the range of 0-10 K."
+  },
+  {
+    "question": "What is the typical strain resolution for distributed fiber optic sensors?",
+    "answer": "20 με (microstrain)."
+  },
+  {
+    "question": "How does Raman scattering enable temperature sensing?",
+    "answer": "The ratio of anti-Stokes to Stokes power depends only on temperature: P_aS/P_S = Ce^(-E/KT), allowing direct temperature derivation: T = E/K / [log(P_S/P_aS) - log C]."
+  },
+  {
+    "question": "List 5 applications of distributed fiber optic sensors.",
+    "answer": "1) Fire detection, 2) Gas and liquid leakage detection, 3) Power cable monitoring, 4) Geothermal monitoring, 5) Oil pit monitoring."
+  },
+  {
+    "question": "What civil engineering applications use FBG sensors?",
+    "answer": "Structural monitoring of bridges, buildings, dams, and cultural heritage sites. FBGs can be embedded in concrete or composite materials to monitor strain and detect structural changes."
+  },
+  {
+    "question": "What is the difference between FBG and Rayleigh scattering sensors?",
+    "answer": "FBG: periodic refractive index modulation causes selective frequency response; variations induce frequency shift. Rayleigh: inhomogeneous refractive index causes random frequency response; variations of randomness pitch induce frequency shift."
+  },
+  {
+    "question": "What is the principle of OTDR (Optical Time Domain Reflectometry)?",
+    "answer": "A brief and powerful light pulse is injected into the fiber. It is backscattered by discontinuities (ends, inhomogeneities). The time delay allows distance calculation: D = T×c/(2n), where T is round-trip time, c is speed of light, and n is core refractive index."
+  },
+  {
+    "question": "What are the main purposes of OTDR measurements?",
+    "answer": "1) Measure fiber length, 2) Locate events/faults, 3) Determine attenuation, 4) Visualize variations and incidents along the fiber."
+  },
+  {
+    "question": "What are the two types of events in OTDR measurements?",
+    "answer": "1) Reflective events (mechanical splices, broken fiber, connectors), 2) Non-reflective events (fusion splices, bends, mechanical stress)."
+  },
+  {
+    "question": "What is a launch cable (bobine amorce) and why is it needed in OTDR?",
+    "answer": "A launch cable is essential for measuring insertion loss and reflectivity of connectors on the tested fiber link. Typical length: 100-500m for multimode, 500-2500m for single-mode. It must have the same characteristics as the tested fiber."
+  },
+  {
+    "question": "What is the dead zone in OTDR measurements?",
+    "answer": "The period after a reflective event when the photodiode is saturated and cannot detect other events. During this time, events may not be perceived by the OTDR."
+  },
+  {
+    "question": "How can the dead zone in OTDR be avoided?",
+    "answer": "By using a launch cable (bobine amorce) before the tested fiber, which allows the OTDR to recover from saturation before reaching the first connector of the test link."
+  },
+  {
+    "question": "What is Insertion Loss (IL) and how is it measured?",
+    "answer": "IL is the total attenuation in a fiber link: A (dB) = P₁(dBm) - P₂(dBm), where P₁ is input power and P₂ is output power. It requires a calibrated source, power meter, and two reference jumpers."
+  },
+  {
+    "question": "What is Optical Return Loss (ORL)?",
+    "answer": "ORL is the ratio of incident power to reflected power: ORL (dB) = 10 log₁₀(P_incident/P_reflected). Higher ORL values indicate better performance (less reflection). Low ORL can cause high BER due to transmitter instability and multi-path interference."
+  },
+  {
+    "question": "What are typical ORL values for UPC and APC connectors?",
+    "answer": "UPC (Ultra Physical Contact): typically -55 dB. APC (Angled Physical Contact): typically -65 dB."
+  },
+  {
+    "question": "What are the main causes of fiber optic link failures?",
+    "answer": "Component aging, environmental changes (construction work, cable paths, sealing issues), cable degradation (protective sheath damage by rodents or work, mechanical/chemical stress, humidity), humidity penetration, poor splices or connectors."
+  },
+  {
+    "question": "What are the characteristics of mechanical vs fusion splices?",
+    "answer": "Mechanical splices: use index-matching gels/liquids that can degrade over time; higher loss and reflection. Fusion splices: theoretically cannot degrade from aging; defective splices may not be detected during acceptance testing; lower loss and minimal reflection."
+  },
+  {
+    "question": "What can cause connector degradation?",
+    "answer": "Pollution/contamination of connector endfaces (especially connectors in storage), use of defective jumpers (non-polished connectors), incompatible connector mating (PC with APC)."
+  },
+  {
+    "question": "What are the most commonly used fiber optic connectors?",
+    "answer": "SC (Subscriber Connector, 2.5 mm), ST (Straight Tip, 2.5 mm), FC (Ferrule Connector, 2.5 mm), LC (Lucent Connector, 1.25 mm)."
+  },
+  {
+    "question": "What is the grating diffraction equation (angular form)?",
+    "answer": "n sin θ₂ = n sin θ₁ + m(λ/Λ), where n is refractive index, θ₁ is incident angle, θ₂ is diffraction angle, m is diffraction order, λ is wavelength, and Λ is grating period."
+  },
+  {
+    "question": "What is the wave vector form of the grating equation?",
+    "answer": "β₂ = β₁ + m(2π/Λ), which represents the phase-matching condition for diffraction."
+  },
+  {
+    "question": "How do you calculate the maximum number of FBGs on a single fiber arm with guard bands?",
+    "answer": "N_max = (Δλ_total)/(Δλ_FBG + Δλ_guard), where Δλ_total is the available wavelength range, Δλ_FBG is the FBG bandwidth, and Δλ_guard is the guard band between FBGs."
+  },
+  {
+    "question": "How do you calculate the FBG grating period from the Bragg wavelength?",
+    "answer": "Λ = λ_B/(2n_eff), where Λ is the grating period, λ_B is the Bragg wavelength, and n_eff is the effective refractive index."
+  },
+  {
+    "question": "What is the effect of pulse width on OTDR measurements?",
+    "answer": "Wider pulses: better signal-to-noise ratio, longer range, but lower spatial resolution (cannot distinguish closely spaced events). Narrower pulses: better spatial resolution but lower SNR and shorter range."
+  },
+  {
+    "question": "What is the effect of refractive index variation on OTDR distance measurements?",
+    "answer": "Distance is calculated as D = T×c/(2n). If the actual refractive index differs from the assumed value, the calculated distance will be incorrect. Higher n gives shorter calculated distance; lower n gives longer calculated distance."
+  },
+  {
+    "question": "What cleaning methods should be used for fiber optic connectors?",
+    "answer": "Non-flammable gas canisters, cleaning sticks soaked in isopropyl alcohol, and cleaning-tape dispensers. No dust or contaminants should be present on optical ports."
+  },
+  {
+    "question": "What is OLTS (Optical Loss Test Set)?",
+    "answer": "A device that combines a power meter and light source in the same instrument for precise determination of link budget or component attenuation. Tests are performed bidirectionally and averaged for better accuracy."
+  },
+  {
+    "question": "What is Dynamic Range in optical testing?",
+    "answer": "The range of optical powers that can be measured by the test equipment, from minimum detectable signal to maximum power before saturation."
+  },
+  {
+    "question": "What are typical optical cable section lengths in networks?",
+    "answer": "2 to 6 km, depending on manufacturing and installation methods. Sections are connected via splice enclosures containing fusion-spliced fibers."
+  },
+  {
+    "question": "What are the three main cable installation methods?",
+    "answer": "1) Air blowing (soufflage), 2) Water floating (flottage), 3) Pulling (tirage)."
+  },
+  {
+    "question": "Why must FBG operating wavelengths be separated by guard bands?",
+    "answer": "To prevent spectral overlap between adjacent FBGs, which would make it impossible to distinguish their individual responses to strain or temperature changes."
+  },
+  {
+    "question": "How would you monitor a structure requiring more arms than can be addressed by a single wavelength range?",
+    "answer": "Use multiple interrogation systems with different wavelength ranges, use time-division multiplexing (TDM) in addition to wavelength-division multiplexing (WDM), or use spatial multiplexing with multiple fiber lines."
+  },
+  {
+    "question": "What is the constructive interference condition in FBG?",
+    "answer": "λ = 2nΛ_G, where λ is the wavelength, n is the refractive index, and Λ_G is the grating period."
+  },
+  {
+    "question": "How are FBGs fabricated?",
+    "answer": "UV beam interference causes slight changes in the refractive index of the fiber core. Phase masks can be used to modify the UV beam interference pattern, providing flexibility in FBG design."
+  },
+  {
+    "question": "What is the refractive index modulation equation for FBG?",
+    "answer": "n_eff(z) = n̄_eff + Δn_eff[1 + ν cos(2πz/Λ)], where n̄_eff is the average effective index, Δn_eff is the modulation amplitude, ν is the fringe visibility, and Λ is the period."
+  },
+  {
+    "question": "What is the Brillouin gain bandwidth used for?",
+    "answer": "It is used in Brillouin-based sensing systems to measure strain and temperature by analyzing the frequency shift of the scattered light."
+  },
+  {
+    "question": "What is the relationship between Stokes and anti-Stokes Raman powers?",
+    "answer": "P_aS = Ce^(-E/KT) and P_S = C'e^(E/KT)/(e^(E/KT) - 1), where their ratio depends only on temperature T and can be used for temperature sensing independent of strain."
+  },
+  {
+    "question": "What are the steps for preparing an optical fiber splice?",
+    "answer": "1) Strip the fiber coating, 2) Clean the bare fiber with isopropyl alcohol, 3) Cleave the fiber to create a flat end face perpendicular to the axis, 4) Align the two fibers, 5) Apply fusion or mechanical splice, 6) Protect the splice with a sleeve."
+  },
+  {
+    "question": "How can you reduce coupling losses between an optical source and fiber?",
+    "answer": "Use proper alignment (lateral, angular, longitudinal), match the numerical aperture, use index-matching gel or fluid, ensure clean and well-polished end faces, use lensed fibers or coupling optics."
+  },
+  {
+    "question": "How do you measure the numerical aperture of a fiber?",
+    "answer": "Launch light into the fiber and measure the far-field radiation pattern at the output. The half-angle of the cone of light θ_max gives NA = sin(θ_max). Alternatively, measure core and cladding refractive indices: NA = √(n₁² - n₂²)."
+  },
+  {
+    "question": "How do you measure propagation delay in an optical fiber?",
+    "answer": "Send a short optical pulse through the fiber and measure the time difference between input and output using fast photodetectors and oscilloscope. Delay = time difference. Can also use OTDR to measure group delay."
+  },
+  {
+    "question": "What are the differences between plastic and silica optical fibers?",
+    "answer": "Plastic (POF): higher attenuation (~0.5 dB/m), larger core diameter (1 mm), easier handling and connection, lower cost, limited temperature range, shorter distances. Silica: lower attenuation (~0.2 dB/km), smaller core, requires precision splicing/connectors, higher cost, wider temperature range, longer distances."
+  },
+  {
+    "question": "What is the principle of operation for Nd:YAG laser?",
+    "answer": "Nd:YAG (neodymium-doped yttrium aluminum garnet) is a solid-state laser. Nd³⁺ ions in the YAG crystal are optically pumped (typically at 808 nm), exciting electrons to higher energy levels. Population inversion occurs, and stimulated emission produces laser light at 1064 nm (fundamental) or can be frequency-doubled to 532 nm."
+  },
+  {
+    "question": "What is the difference between an LED and a laser diode?",
+    "answer": "LED: spontaneous emission, broad spectrum, low coherence, Lambertian radiation pattern, lower power, no optical feedback. Laser diode: stimulated emission, narrow spectrum, high coherence, directional beam, higher power, requires optical cavity/feedback."
+  },
+  {
+    "question": "What is the effect of temperature variation on laser power and spectrum?",
+    "answer": "Temperature increase typically causes: decreased output power (reduced gain), wavelength shift (typically ~0.3 nm/°C for semiconductor lasers due to bandgap change), spectral broadening, threshold current increase, and potential mode hopping in multi-mode lasers."
+  }
+]

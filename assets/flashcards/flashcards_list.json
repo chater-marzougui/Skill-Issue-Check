@@ -4,7 +4,11 @@
     "IoT Fatma": "iot_fatma.json"
   },
   {
-    "id": 2,
+    "id": 3,
     "Data Space": "dataspace.json"
+  },
+  {
+    "id": 2,
+    "Optique": "optique.json"
   }
 ]
