@@ -1,266 +1,274 @@
 [
   {
-    "question": "What is the basic principle of optical fiber sensing?",
-    "answer": "Amplitude, polarization, phase, and wavelength of the optical signal are affected by physical quantities like temperature, strain and pressure, vibrations, rotations and bending, magnetic field, and chemical and biological agents."
+    "question": "Quel est le principe de base de la détection par fibre optique?",
+    "answer": "L'amplitude, la polarisation, la phase et la longueur d'onde du signal optique sont affectées par des grandeurs physiques telles que la température, la contrainte et la pression, les vibrations, rotations et courbures, le champ magnétique, et les agents chimiques et biologiques."
   },
   {
-    "question": "What are the main advantages of Fiber Optic Sensors (FOS)?",
-    "answer": "Small size, lightweight, robust and easy to manage, made of dielectric material (immune to electromagnetic interference and corrosion), high melting temperature, low cost, can be easily embedded in composite materials, and can be distributed over several kilometers."
+    "question": "Quels sont les principaux avantages des capteurs à fibres optiques (FOS)?",
+    "answer": "Petite taille, légers, robustes et faciles à gérer, faits de matériau diélectrique (immunité aux interférences électromagnétiques et à la corrosion), température de fusion élevée, faible coût, peuvent être facilement intégrés dans des matériaux composites, et peuvent être distribués sur plusieurs kilomètres."
   },
   {
-    "question": "What is the difference between intrinsic and extrinsic FOS?",
-    "answer": "Intrinsic FOS: the fiber itself is the sensor and communication channel, distributed along the fiber. Extrinsic FOS: reliable, lump sensors that can be realized separately from the fiber."
+    "question": "Quelle est la différence entre les FOS intrinsèques et extrinsèques?",
+    "answer": "FOS intrinsèques: la fibre elle-même est à la fois le capteur et le canal de communication, distribué le long de la fibre. FOS extrinsèques: capteurs ponctuels fiables qui peuvent être réalisés séparément de la fibre."
   },
   {
-    "question": "What is the Bragg condition for a Fiber Bragg Grating (FBG)?",
-    "answer": "λ_B = 2n_eff Λ, where λ_B is the Bragg wavelength, n_eff is the effective refractive index, and Λ is the grating period."
+    "question": "Quelle est la condition de Bragg pour un réseau de Bragg (FBG)?",
+    "answer": "λ_B = 2n_eff Λ, où λ_B est la longueur d'onde de Bragg, n_eff est l'indice de réfraction effectif, et Λ est la période du réseau."
   },
   {
-    "question": "What physical parameters affect the Bragg wavelength of an FBG?",
-    "answer": "Temperature and strain. Temperature changes affect the refractive index and cause thermal expansion of the glass material. Strain causes changes in the grating period."
+    "question": "Quels paramètres physiques affectent la longueur d'onde de Bragg d'un FBG?",
+    "answer": "La température et la contrainte mécanique (strain). Les changements de température affectent l'indice de réfraction et provoquent l'expansion thermique du matériau de verre. La contrainte provoque des changements dans la période du réseau."
   },
   {
-    "question": "Give the FBG sensitivity coefficients for strain and temperature at 1550 nm.",
-    "answer": "At λ_B = 1561 nm (close to 1550 nm): Strain coefficient = 1.2 pm/με, Temperature coefficient = 11.9 pm/°C."
+    "question": "Donnez les coefficients de sensibilité du FBG pour la contrainte et la température à 1550 nm.",
+    "answer": "À λ_B = 1561 nm (proche de 1550 nm): Coefficient de contrainte = 1.2 pm/με, Coefficient de température = 11.9 pm/°C."
   },
   {
-    "question": "What is the general FBG sensitivity equation?",
-    "answer": "Δλ_B/λ_B = [(1 - n²_eff/2)(∂n_eff/∂ε_z) + (n_eff/Λ)(∂Λ/∂ε_z)]ε_z + [(1/n_eff)(∂n_eff/∂T) + (1/Λ)(∂Λ/∂T)]ΔT"
+    "question": "Quelle est l'équation générale de sensibilité d'un FBG?",
+    "answer": "Δλ_B/λ_B = κ_ε ε_z + κ_T ΔT, où κ_ε et κ_T sont les coefficients de sensibilité de contrainte mécanique et thermique du réseau de Bragg exprimés en pm/με et pm/°C respectivement."
   },
   {
-    "question": "How are multiple FBG sensors addressed in a quasi-distributed sensing system?",
-    "answer": "By wavelength selection. Tens of sensors can be concatenated along a single cable, with each FBG reflecting a different wavelength."
+    "question": "Comment sont adressés plusieurs capteurs FBG dans un système de détection quasi-distribué?",
+    "answer": "Par sélection de longueur d'onde. Des dizaines de capteurs peuvent être concaténés le long d'un seul câble, chaque FBG réfléchissant une longueur d'onde différente."
   },
   {
-    "question": "What are the three main types of scattering effects used in distributed fiber optic sensors?",
-    "answer": "1) Rayleigh scattering (linear, same frequency), 2) Brillouin scattering (nonlinear, ~10 GHz frequency shift, generates acoustic wave), 3) Raman scattering (nonlinear, ~10 THz frequency shift, molecular vibrational/rotational energy)."
+    "question": "Quels sont les trois principaux types d'effets de diffusion utilisés dans les capteurs à fibres optiques distribués?",
+    "answer": "1) Diffusion Rayleigh (linéaire, même fréquence), 2) Diffusion Brillouin (non-linéaire, décalage de fréquence ~10 GHz, génère une onde acoustique), 3) Diffusion Raman (non-linéaire, décalage de fréquence ~10 THz, énergie vibrationnelle/rotationnelle moléculaire)."
   },
   {
-    "question": "What is Rayleigh scattering and its characteristics?",
-    "answer": "Rayleigh scattering is elastic scattering where light scatters at the same frequency as the incident light. It is caused by inhomogeneities in the refractive index of silica and forms the basis of OTDR measurements."
+    "question": "Qu'est-ce que la diffusion Rayleigh et quelles sont ses caractéristiques?",
+    "answer": "La diffusion Rayleigh est une diffusion élastique où la lumière se diffuse à la même fréquence que la lumière incidente. Elle est causée par les inhomogénéités de l'indice de réfraction de la silice et constitue la base des mesures OTDR."
   },
   {
-    "question": "What is Brillouin scattering and its frequency shift in silica fibers?",
-    "answer": "Brillouin scattering is inelastic scattering where light at a smaller frequency is scattered and an acoustic wave is generated and propagates in the medium. The frequency shift is about 10 GHz in silica fibers."
+    "question": "Qu'est-ce que la diffusion Brillouin et quel est son décalage de fréquence dans les fibres en silice?",
+    "answer": "La diffusion Brillouin est une diffusion inélastique où la lumière à fréquence plus petite est diffusée et une onde acoustique est générée et se propage dans le milieu. Le décalage de fréquence est d'environ 10 GHz dans les fibres en silice."
   },
   {
-    "question": "What is Raman scattering and its frequency shift in silica fibers?",
-    "answer": "Raman scattering is inelastic scattering where light at a smaller frequency is scattered, and the energy difference is converted into molecular vibrational/rotational energy. The frequency shift is about 10 THz in silica fibers."
+    "question": "Qu'est-ce que la diffusion Raman et quel est son décalage de fréquence dans les fibres en silice?",
+    "answer": "La diffusion Raman est une diffusion inélastique où la lumière à fréquence plus petite est diffusée, et la différence d'énergie est convertie en énergie vibrationnelle/rotationnelle moléculaire. Le décalage de fréquence est d'environ 10 THz dans les fibres en silice."
   },
   {
-    "question": "What is the typical spatial resolution for distributed fiber optic sensors?",
-    "answer": "Around 1 meter."
+    "question": "Quelle est la résolution spatiale typique pour les capteurs à fibres optiques distribués?",
+    "answer": "Autour de 1 mètre."
   },
   {
-    "question": "What is the typical temperature resolution for distributed fiber optic sensors?",
-    "answer": "In the range of 0-10 K."
+    "question": "Quelle est la résolution en température typique pour les capteurs à fibres optiques distribués?",
+    "answer": "Dans la gamme de 0 à 10 K."
   },
   {
-    "question": "What is the typical strain resolution for distributed fiber optic sensors?",
+    "question": "Quelle est la résolution en contrainte typique pour les capteurs à fibres optiques distribués?",
     "answer": "20 με (microstrain)."
   },
   {
-    "question": "How does Raman scattering enable temperature sensing?",
-    "answer": "The ratio of anti-Stokes to Stokes power depends only on temperature: P_aS/P_S = Ce^(-E/KT), allowing direct temperature derivation: T = E/K / [log(P_S/P_aS) - log C]."
+    "question": "Comment la diffusion Raman permet-elle la détection de température?",
+    "answer": "Le rapport entre les puissances anti-Stokes et Stokes dépend uniquement de la température: P_aS/P_S = Ce^(-E/KT), permettant une dérivation directe de la température: T = E/K / [log(P_S/P_aS) - log C]."
   },
   {
-    "question": "List 5 applications of distributed fiber optic sensors.",
-    "answer": "1) Fire detection, 2) Gas and liquid leakage detection, 3) Power cable monitoring, 4) Geothermal monitoring, 5) Oil pit monitoring."
+    "question": "Citez 5 applications des capteurs à fibres optiques distribués.",
+    "answer": "1) Détection d'incendie, 2) Détection de fuite de gaz et de liquides, 3) Surveillance de câbles électriques, 4) Surveillance géothermique, 5) Surveillance de puits de pétrole."
   },
   {
-    "question": "What civil engineering applications use FBG sensors?",
-    "answer": "Structural monitoring of bridges, buildings, dams, and cultural heritage sites. FBGs can be embedded in concrete or composite materials to monitor strain and detect structural changes."
+    "question": "Quelles applications de génie civil utilisent les capteurs FBG?",
+    "answer": "Surveillance structurelle des ponts, bâtiments, barrages et sites du patrimoine culturel. Les FBGs peuvent être intégrés dans le béton ou les matériaux composites pour surveiller la contrainte et détecter les changements structurels."
   },
   {
-    "question": "What is the difference between FBG and Rayleigh scattering sensors?",
-    "answer": "FBG: periodic refractive index modulation causes selective frequency response; variations induce frequency shift. Rayleigh: inhomogeneous refractive index causes random frequency response; variations of randomness pitch induce frequency shift."
+    "question": "Quelle est la différence entre les capteurs FBG et les capteurs à diffusion Rayleigh?",
+    "answer": "FBG: la modulation périodique de l'indice de réfraction provoque une réponse fréquentielle sélective; les variations induisent un décalage de fréquence. Rayleigh: l'indice de réfraction inhomogène provoque une réponse fréquentielle aléatoire; les variations du pas aléatoire induisent un décalage de fréquence."
   },
   {
-    "question": "What is the principle of OTDR (Optical Time Domain Reflectometry)?",
-    "answer": "A brief and powerful light pulse is injected into the fiber. It is backscattered by discontinuities (ends, inhomogeneities). The time delay allows distance calculation: D = T×c/(2n), where T is round-trip time, c is speed of light, and n is core refractive index."
+    "question": "Rappeler le principe de fonctionnement d'un OTDR.",
+    "answer": "On injecte dans la fibre une impulsion lumineuse suffisamment brève et puissante. Elle est rétrodiffusée sur les discontinuités dans la fibre (extrémités, inhomogénéités). Le délai temporel permet le calcul de la distance: D = T×c/(2n), où T est le temps de trajet aller-retour, c est la célérité, et n est l'indice du cœur."
   },
   {
-    "question": "What are the main purposes of OTDR measurements?",
-    "answer": "1) Measure fiber length, 2) Locate events/faults, 3) Determine attenuation, 4) Visualize variations and incidents along the fiber."
+    "question": "Quel est le but de la réflectométrie?",
+    "answer": "1) Mesurer la longueur de la liaison, 2) Localiser les événements/défauts, 3) Connaître l'atténuation, 4) Visualiser les variations et incidents le long de la fibre."
   },
   {
-    "question": "What are the two types of events in OTDR measurements?",
-    "answer": "1) Reflective events (mechanical splices, broken fiber, connectors), 2) Non-reflective events (fusion splices, bends, mechanical stress)."
+    "question": "Quels sont les deux types d'événements dans les mesures OTDR?",
+    "answer": "1) Événements réfléchissants (épissures mécaniques, fibre cassée, connecteurs), 2) Événements non réfléchissants (épissures par fusion, courbures, contraintes mécaniques)."
   },
   {
-    "question": "What is a launch cable (bobine amorce) and why is it needed in OTDR?",
-    "answer": "A launch cable is essential for measuring insertion loss and reflectivity of connectors on the tested fiber link. Typical length: 100-500m for multimode, 500-2500m for single-mode. It must have the same characteristics as the tested fiber."
+    "question": "Qu'est-ce qu'une bobine amorce et pourquoi est-elle nécessaire en réflectométrie?",
+    "answer": "Des bobines amorces sont indispensables pour mesurer la perte d'insertion et la réflectivité des connecteurs sur la liaison testée. Longueur typique: 100-500m pour multimode, 500-2500m pour monomode. La fibre utilisée doit être de mêmes caractéristiques que la fibre testée."
   },
   {
-    "question": "What is the dead zone in OTDR measurements?",
-    "answer": "The period after a reflective event when the photodiode is saturated and cannot detect other events. During this time, events may not be perceived by the OTDR."
+    "question": "Qu'est-ce que la zone morte dans les mesures OTDR?",
+    "answer": "La période après un événement réflectif où la photodiode est saturée et ne peut pas détecter d'autres événements. Durant cette période, des événements peuvent ne pas être perçus par l'OTDR."
   },
   {
-    "question": "How can the dead zone in OTDR be avoided?",
-    "answer": "By using a launch cable (bobine amorce) before the tested fiber, which allows the OTDR to recover from saturation before reaching the first connector of the test link."
+    "question": "Comment peut-on éviter la zone morte dans une mesure de réflectométrie?",
+    "answer": "En utilisant une bobine amorce (câble de lancement) avant la fibre testée, ce qui permet à l'OTDR de sortir de la saturation avant d'atteindre le premier connecteur de la liaison de test."
   },
   {
-    "question": "What is Insertion Loss (IL) and how is it measured?",
-    "answer": "IL is the total attenuation in a fiber link: A (dB) = P₁(dBm) - P₂(dBm), where P₁ is input power and P₂ is output power. It requires a calibrated source, power meter, and two reference jumpers."
+    "question": "Qu'est-ce que la perte d'insertion (IL) et comment est-elle mesurée?",
+    "answer": "L'IL est l'atténuation totale dans une liaison fibre: A (dB) = P₁(dBm) - P₂(dBm), où P₁ est la puissance d'entrée et P₂ est la puissance de sortie. Elle nécessite une source calibrée, un Powermeter et 2 jarretières de références."
   },
   {
-    "question": "What is Optical Return Loss (ORL)?",
-    "answer": "ORL is the ratio of incident power to reflected power: ORL (dB) = 10 log₁₀(P_incident/P_reflected). Higher ORL values indicate better performance (less reflection). Low ORL can cause high BER due to transmitter instability and multi-path interference."
+    "question": "Qu'est-ce que l'Optical Return Loss (ORL)?",
+    "answer": "L'ORL est le ratio de la puissance incidente par rapport à la puissance réfléchie: ORL (dB) = 10 log₁₀(P_incidente/P_réfléchie). Plus est grande la valeur du ORL (en dB), moins la puissance est rétrodiffusée. Des valeurs faibles d'ORL peuvent provoquer un BER élevé."
   },
   {
-    "question": "What are typical ORL values for UPC and APC connectors?",
-    "answer": "UPC (Ultra Physical Contact): typically -55 dB. APC (Angled Physical Contact): typically -65 dB."
+    "question": "Quelles sont les valeurs typiques d'ORL pour les connecteurs UPC et APC?",
+    "answer": "UPC (Ultra Physical Contact): la réflexion est typiquement -55 dB. APC (Angled Physical Contact): -65 dB (selon UIT)."
   },
   {
-    "question": "What are the main causes of fiber optic link failures?",
-    "answer": "Component aging, environmental changes (construction work, cable paths, sealing issues), cable degradation (protective sheath damage by rodents or work, mechanical/chemical stress, humidity), humidity penetration, poor splices or connectors."
+    "question": "Quelles sont les principales causes de défaillances des liaisons optiques?",
+    "answer": "Vieillissement d'un composant, modifications de l'environnement (VRD, chemin de câble, étanchéité, travaux divers, pelleteuse), dégradations du câble (détérioration de la gaine protectrice par rongeurs ou travaux, contraintes mécaniques/chimiques, humidité), pénétration d'humidité, épissures ou connecteurs défectueux."
   },
   {
-    "question": "What are the characteristics of mechanical vs fusion splices?",
-    "answer": "Mechanical splices: use index-matching gels/liquids that can degrade over time; higher loss and reflection. Fusion splices: theoretically cannot degrade from aging; defective splices may not be detected during acceptance testing; lower loss and minimal reflection."
+    "question": "Quelles sont les caractéristiques des épissures mécaniques vs soudées?",
+    "answer": "Épissures mécaniques: utilisent des gels ou liquides d'indice pouvant voir leur indice de réfraction évoluer; perte et réflexion plus élevées. Épissures soudées: ne peuvent théoriquement pas subir de dégradation de vieillissement; les risques éventuels proviennent de soudures défectueuses non détectées à la recette."
   },
   {
-    "question": "What can cause connector degradation?",
-    "answer": "Pollution/contamination of connector endfaces (especially connectors in storage), use of defective jumpers (non-polished connectors), incompatible connector mating (PC with APC)."
+    "question": "Qu'est-ce qui peut causer la dégradation des connecteurs?",
+    "answer": "Les pollutions au niveau des embouts de connecteurs (surtout les connecteurs en attente), l'utilisation d'une jarretière défectueuse (connecteur non poli), le mariage de deux connecteurs non compatibles (polissages PC et APC)."
   },
   {
-    "question": "What are the most commonly used fiber optic connectors?",
+    "question": "Quels sont les connecteurs fibre optique les plus utilisés?",
     "answer": "SC (Subscriber Connector, 2.5 mm), ST (Straight Tip, 2.5 mm), FC (Ferrule Connector, 2.5 mm), LC (Lucent Connector, 1.25 mm)."
   },
   {
-    "question": "What is the grating diffraction equation (angular form)?",
-    "answer": "n sin θ₂ = n sin θ₁ + m(λ/Λ), where n is refractive index, θ₁ is incident angle, θ₂ is diffraction angle, m is diffraction order, λ is wavelength, and Λ is grating period."
+    "question": "Quelle est l'équation de diffraction d'un réseau (forme angulaire)?",
+    "answer": "n sin θ₂ = n sin θ₁ + m(λ/Λ), où n est l'indice de réfraction, θ₁ est l'angle incident, θ₂ est l'angle de diffraction, m est l'ordre de diffraction, λ est la longueur d'onde, et Λ est la période du réseau."
   },
   {
-    "question": "What is the wave vector form of the grating equation?",
-    "answer": "β₂ = β₁ + m(2π/Λ), which represents the phase-matching condition for diffraction."
+    "question": "Quelle est la forme vectorielle de l'équation de réseau?",
+    "answer": "β₂ = β₁ + m(2π/Λ), qui représente la condition d'accord de phase pour la diffraction."
   },
   {
-    "question": "How do you calculate the maximum number of FBGs on a single fiber arm with guard bands?",
-    "answer": "N_max = (Δλ_total)/(Δλ_FBG + Δλ_guard), where Δλ_total is the available wavelength range, Δλ_FBG is the FBG bandwidth, and Δλ_guard is the guard band between FBGs."
+    "question": "Comment calculer le nombre maximal de FBGs sur un seul bras de fibre avec des bandes de garde?",
+    "answer": "N_max = (Δλ_total)/(Δλ_FBG + Δλ_garde), où Δλ_total est la plage de longueur d'onde disponible, Δλ_FBG est la bande passante du FBG, et Δλ_garde est la bande de garde entre les FBGs."
   },
   {
-    "question": "How do you calculate the FBG grating period from the Bragg wavelength?",
-    "answer": "Λ = λ_B/(2n_eff), where Λ is the grating period, λ_B is the Bragg wavelength, and n_eff is the effective refractive index."
+    "question": "Comment calculer le pas de réseau Λ d'un FBG à partir de la longueur d'onde de Bragg?",
+    "answer": "Λ = λ_B/(2n_eff), où Λ est le pas du réseau, λ_B est la longueur d'onde de Bragg, et n_eff est l'indice de réfraction effectif."
   },
   {
-    "question": "What is the effect of pulse width on OTDR measurements?",
-    "answer": "Wider pulses: better signal-to-noise ratio, longer range, but lower spatial resolution (cannot distinguish closely spaced events). Narrower pulses: better spatial resolution but lower SNR and shorter range."
+    "question": "Quel est l'effet de la largeur de l'impulsion sur une mesure de réflectométrie?",
+    "answer": "Impulsions plus larges: meilleur rapport signal/bruit, portée plus longue, mais résolution spatiale plus faible (ne peut pas distinguer les événements rapprochés). Impulsions plus étroites: meilleure résolution spatiale mais SNR plus faible et portée plus courte."
   },
   {
-    "question": "What is the effect of refractive index variation on OTDR distance measurements?",
-    "answer": "Distance is calculated as D = T×c/(2n). If the actual refractive index differs from the assumed value, the calculated distance will be incorrect. Higher n gives shorter calculated distance; lower n gives longer calculated distance."
+    "question": "Quel est l'effet de la variation de l'indice de réfraction de la fibre sous test sur une mesure de réflectométrie?",
+    "answer": "La distance est calculée comme D = T×c/(2n). Si l'indice de réfraction réel diffère de la valeur supposée, la distance calculée sera incorrecte. Un indice n plus élevé donne une distance calculée plus courte; un n plus faible donne une distance plus longue."
   },
   {
-    "question": "What cleaning methods should be used for fiber optic connectors?",
-    "answer": "Non-flammable gas canisters, cleaning sticks soaked in isopropyl alcohol, and cleaning-tape dispensers. No dust or contaminants should be present on optical ports."
+    "question": "Quelles méthodes de nettoyage doivent être utilisées pour les connecteurs fibre optique?",
+    "answer": "Bombonne de gaz ininflammable, bâtonnets de nettoyage (tremper dans l'alcool isopropylique), et cleaning-tape dispenser. Il ne doit y avoir aucune poussière ou aucun contaminant sur les ports optiques."
   },
   {
-    "question": "What is OLTS (Optical Loss Test Set)?",
-    "answer": "A device that combines a power meter and light source in the same instrument for precise determination of link budget or component attenuation. Tests are performed bidirectionally and averaged for better accuracy."
+    "question": "Qu'est-ce qu'un OLTS (Optical Loss Test Set)?",
+    "answer": "Un OLTS combine un powermeter et une source lumineuse dans le même instrument. C'est un outil extrêmement précis utilisé pour déterminer le bilan d'une liaison ou l'atténuation d'un composant. Les tests sont généralement effectués dans les deux sens et les moyennes sont calculées."
   },
   {
-    "question": "What is Dynamic Range in optical testing?",
-    "answer": "The range of optical powers that can be measured by the test equipment, from minimum detectable signal to maximum power before saturation."
+    "question": "Qu'est-ce que le Dynamic Range dans les tests optiques?",
+    "answer": "L'étendue des puissances optiques qui peuvent être mesurées par l'équipement de test, du signal minimal détectable à la puissance maximale avant saturation."
   },
   {
-    "question": "What are typical optical cable section lengths in networks?",
-    "answer": "2 to 6 km, depending on manufacturing and installation methods. Sections are connected via splice enclosures containing fusion-spliced fibers."
+    "question": "Quelles sont les longueurs typiques des tronçons de câbles optiques dans les réseaux?",
+    "answer": "2 à 6 km, selon le mode de fabrication et de pose. Les tronçons sont généralement limités à cette longueur pour des raisons techniques. Ils sont connectés via des boîtiers d'épissurage contenant des fibres soudées deux à deux."
   },
   {
-    "question": "What are the three main cable installation methods?",
-    "answer": "1) Air blowing (soufflage), 2) Water floating (flottage), 3) Pulling (tirage)."
+    "question": "Quelles sont les trois principales méthodes d'installation des câbles optiques?",
+    "answer": "1) Le portage à l'air (soufflage), 2) Le portage à l'eau (flottage), 3) Le tirage."
   },
   {
-    "question": "Why must FBG operating wavelengths be separated by guard bands?",
-    "answer": "To prevent spectral overlap between adjacent FBGs, which would make it impossible to distinguish their individual responses to strain or temperature changes."
+    "question": "Pourquoi les longueurs d'onde de fonctionnement des FBG doivent-elles être séparées par des bandes de garde?",
+    "answer": "Pour éviter le chevauchement spectral entre les FBGs adjacents, ce qui rendrait impossible la distinction de leurs réponses individuelles aux changements de contrainte ou de température."
   },
   {
-    "question": "How would you monitor a structure requiring more arms than can be addressed by a single wavelength range?",
-    "answer": "Use multiple interrogation systems with different wavelength ranges, use time-division multiplexing (TDM) in addition to wavelength-division multiplexing (WDM), or use spatial multiplexing with multiple fiber lines."
+    "question": "Comment surveiller une structure nécessitant plus de bras que ce qui peut être adressé par une seule plage de longueurs d'onde?",
+    "answer": "Utiliser plusieurs systèmes d'interrogation avec différentes plages de longueurs d'onde, utiliser le multiplexage temporel (TDM) en plus du multiplexage en longueur d'onde (WDM), ou utiliser le multiplexage spatial avec plusieurs lignes de fibres."
   },
   {
-    "question": "What is the constructive interference condition in FBG?",
-    "answer": "λ = 2nΛ_G, where λ is the wavelength, n is the refractive index, and Λ_G is the grating period."
+    "question": "Quelle est la condition d'interférence constructive dans un FBG?",
+    "answer": "L'interférence constructive se produit quand λ = 2nΛ_G dans la fibre, où λ est la longueur d'onde, n est l'indice de réfraction, et Λ_G est la période du réseau de Bragg."
   },
   {
-    "question": "How are FBGs fabricated?",
-    "answer": "UV beam interference causes slight changes in the refractive index of the fiber core. Phase masks can be used to modify the UV beam interference pattern, providing flexibility in FBG design."
+    "question": "Comment sont fabriqués les FBGs?",
+    "answer": "L'interférence d'un faisceau UV provoque de légers changements dans l'indice de réfraction du cœur de la fibre. Des masques de phase peuvent être utilisés pour modifier l'interférence du faisceau UV dans la fibre, offrant une flexibilité de conception du FBG."
   },
   {
-    "question": "What is the refractive index modulation equation for FBG?",
-    "answer": "n_eff(z) = n̄_eff + Δn_eff[1 + ν cos(2πz/Λ)], where n̄_eff is the average effective index, Δn_eff is the modulation amplitude, ν is the fringe visibility, and Λ is the period."
+    "question": "Quelle est l'équation de modulation de l'indice de réfraction pour un FBG?",
+    "answer": "n_eff(z) = n̄_eff + Δn_eff[1 + ν cos(2πz/Λ)], où n̄_eff est l'indice effectif moyen, Δn_eff est l'amplitude de modulation, ν est la visibilité des franges, et Λ est la période."
   },
   {
-    "question": "What is the Brillouin gain bandwidth used for?",
-    "answer": "It is used in Brillouin-based sensing systems to measure strain and temperature by analyzing the frequency shift of the scattered light."
+    "question": "À quoi sert la bande passante du gain Brillouin?",
+    "answer": "Elle est utilisée dans les systèmes de détection basés sur Brillouin pour mesurer la contrainte et la température en analysant le décalage de fréquence de la lumière diffusée."
   },
   {
-    "question": "What is the relationship between Stokes and anti-Stokes Raman powers?",
-    "answer": "P_aS = Ce^(-E/KT) and P_S = C'e^(E/KT)/(e^(E/KT) - 1), where their ratio depends only on temperature T and can be used for temperature sensing independent of strain."
+    "question": "Quelle est la relation entre les puissances Stokes et anti-Stokes Raman?",
+    "answer": "P_aS/P_S = Ce^(-E/KT) et P_S = C'e^(E/KT)/(e^(E/KT) - 1), où leur rapport dépend uniquement de la température T et peut être utilisé pour la détection de température indépendamment de la contrainte."
   },
   {
-    "question": "What are the steps for preparing an optical fiber splice?",
-    "answer": "1) Strip the fiber coating, 2) Clean the bare fiber with isopropyl alcohol, 3) Cleave the fiber to create a flat end face perpendicular to the axis, 4) Align the two fibers, 5) Apply fusion or mechanical splice, 6) Protect the splice with a sleeve."
+    "question": "Rappeler les étapes d'une préparation d'une soudure de fibres optiques.",
+    "answer": "1) Dénuder le revêtement de la fibre, 2) Nettoyer la fibre nue avec de l'alcool isopropylique, 3) Cliver la fibre pour créer une face d'extrémité plate perpendiculaire à l'axe, 4) Aligner les deux fibres, 5) Appliquer la soudure par fusion ou mécanique, 6) Protéger l'épissure avec un manchon."
   },
   {
-    "question": "How can you reduce coupling losses between an optical source and fiber?",
-    "answer": "Use proper alignment (lateral, angular, longitudinal), match the numerical aperture, use index-matching gel or fluid, ensure clean and well-polished end faces, use lensed fibers or coupling optics."
+    "question": "Comment peut-on diminuer les pertes dues au couplage entre une source optique et une fibre optique?",
+    "answer": "Utiliser un alignement approprié (latéral, angulaire, longitudinal), adapter l'ouverture numérique, utiliser un gel ou liquide d'adaptation d'indice, assurer des faces d'extrémité propres et bien polies, utiliser des fibres lentillées ou des optiques de couplage."
   },
   {
-    "question": "How do you measure the numerical aperture of a fiber?",
-    "answer": "Launch light into the fiber and measure the far-field radiation pattern at the output. The half-angle of the cone of light θ_max gives NA = sin(θ_max). Alternatively, measure core and cladding refractive indices: NA = √(n₁² - n₂²)."
+    "question": "Comment mesurer l'ouverture numérique d'une fibre optique?",
+    "answer": "Lancer de la lumière dans la fibre et mesurer le diagramme de rayonnement en champ lointain à la sortie. Le demi-angle du cône de lumière θ_max donne ON = sin(θ_max). Alternativement, mesurer les indices de réfraction du cœur et de la gaine: ON = √(n₁² - n₂²)."
   },
   {
-    "question": "How do you measure propagation delay in an optical fiber?",
-    "answer": "Send a short optical pulse through the fiber and measure the time difference between input and output using fast photodetectors and oscilloscope. Delay = time difference. Can also use OTDR to measure group delay."
+    "question": "Comment mesurer le délai de propagation dans une fibre optique?",
+    "answer": "Envoyer une impulsion optique courte à travers la fibre et mesurer la différence de temps entre l'entrée et la sortie en utilisant des photodétecteurs rapides et un oscilloscope. Délai = différence de temps. On peut aussi utiliser un OTDR pour mesurer le délai de groupe."
   },
   {
-    "question": "What are the differences between plastic and silica optical fibers?",
-    "answer": "Plastic (POF): higher attenuation (~0.5 dB/m), larger core diameter (1 mm), easier handling and connection, lower cost, limited temperature range, shorter distances. Silica: lower attenuation (~0.2 dB/km), smaller core, requires precision splicing/connectors, higher cost, wider temperature range, longer distances."
+    "question": "Quelles sont les différences entre une fibre en plastique et une fibre en silice?",
+    "answer": "Plastique (POF): atténuation plus élevée (~0.5 dB/m), diamètre de cœur plus grand (1 mm), manipulation et connexion plus faciles, coût plus faible, plage de température limitée, distances plus courtes. Silice: atténuation plus faible (~0.2 dB/km), cœur plus petit, nécessite des épissures/connecteurs de précision, coût plus élevé, plage de température plus large, distances plus longues."
   },
   {
-    "question": "What is the principle of operation for Nd:YAG laser?",
-    "answer": "Nd:YAG (neodymium-doped yttrium aluminum garnet) is a solid-state laser. Nd³⁺ ions in the YAG crystal are optically pumped (typically at 808 nm), exciting electrons to higher energy levels. Population inversion occurs, and stimulated emission produces laser light at 1064 nm (fundamental) or can be frequency-doubled to 532 nm."
+    "question": "Expliquer le principe de fonctionnement du laser Nd:YAG.",
+    "answer": "Nd:YAG (grenat d'yttrium-aluminium dopé au néodyme) est un laser à état solide. Les ions Nd³⁺ dans le cristal YAG sont pompés optiquement (typiquement à 808 nm), excitant les électrons vers des niveaux d'énergie supérieurs. L'inversion de population se produit, et l'émission stimulée produit une lumière laser à 1064 nm (fondamental) ou peut être doublée en fréquence à 532 nm."
   },
   {
-    "question": "What is the difference between an LED and a laser diode?",
-    "answer": "LED: spontaneous emission, broad spectrum, low coherence, Lambertian radiation pattern, lower power, no optical feedback. Laser diode: stimulated emission, narrow spectrum, high coherence, directional beam, higher power, requires optical cavity/feedback."
+    "question": "Quelle est la différence entre une diode électroluminescente et une diode laser?",
+    "answer": "LED: émission spontanée, spectre large, faible cohérence, diagramme de rayonnement Lambertien, puissance plus faible, pas de rétroaction optique. Diode laser: émission stimulée, spectre étroit, cohérence élevée, faisceau directionnel, puissance plus élevée, nécessite une cavité optique/rétroaction."
   },
   {
-    "question": "What is the effect of temperature variation on laser power and spectrum?",
-    "answer": "Temperature increase typically causes: decreased output power (reduced gain), wavelength shift (typically ~0.3 nm/°C for semiconductor lasers due to bandgap change), spectral broadening, threshold current increase, and potential mode hopping in multi-mode lasers."
+    "question": "Décrire l'effet de la variation de la température sur la puissance et le spectre du laser.",
+    "answer": "L'augmentation de température provoque typiquement: diminution de la puissance de sortie (gain réduit), décalage de longueur d'onde (typiquement ~0.3 nm/°C pour les lasers à semi-conducteurs dû au changement de gap), élargissement spectral, augmentation du courant de seuil, et saut de mode potentiel dans les lasers multimodes."
   },
   {
-    "question": "How do you calculate the linear attenuation coefficient of an optical fiber?",
-    "answer": "The linear attenuation coefficient α (in dB/km) is given by α = A_total / L, where A_total is the total attenuation (in dB) and L is the fiber length (in km). Example: 0.8 dB over 4 km gives α = 0.2 dB/km."
+    "question": "Comment calculer l'affaiblissement linéique d'une fibre optique?",
+    "answer": "Le coefficient d'affaiblissement linéique α (en dB/km) est donné par α = A_total / L, où A_total est l'atténuation totale (en dB) et L est la longueur de la fibre (en km). Exemple: 0.8 dB sur 4 km donne α = 0.2 dB/km."
   },
   {
-    "question": "What is the difference between reflective and non-reflective events on an OTDR trace?",
-    "answer": "Reflective events produce sharp spikes and occur at connectors or fiber breaks (Fresnel reflections). Non-reflective events appear as small downward steps and correspond to splices, bends, or microbends with no reflection."
+    "question": "Quels sont les différents types et nature d'événement pouvant s'afficher dans une trace de réflectométrie?",
+    "answer": "Événements réfléchissants: produisent des pics aigus et se produisent aux connecteurs ou fibres cassées (réflexions de Fresnel). Événements non réfléchissants: apparaissent comme de petites marches descendantes et correspondent aux épissures par fusion, courbures ou microcourbures sans réflexion."
   },
   {
-    "question": "What are the two types of dead zones in OTDR measurements?",
-    "answer": "1) Event dead zone: region after a strong reflection where the detector saturates and cannot see nearby events. 2) Attenuation dead zone: region where the OTDR signal recovers to the baseline slope. Both can be reduced using a launch cable (bobine amorce)."
+    "question": "Quels sont les deux types de zones mortes dans les mesures OTDR?",
+    "answer": "1) Zone morte d'événement: région après une forte réflexion où le détecteur sature et ne peut pas voir les événements proches. 2) Zone morte d'atténuation: région où le signal OTDR récupère jusqu'à la pente de base. Les deux peuvent être réduites en utilisant une bobine amorce."
   },
   {
-    "question": "What is the difference between quasi-distributed and fully distributed fiber optic sensors?",
-    "answer": "Quasi-distributed sensors (like FBGs) have discrete sensing points, each reflecting a specific wavelength. Fully distributed sensors (Rayleigh, Brillouin, Raman) measure physical parameters continuously along the entire fiber length."
+    "question": "Quelle est la différence entre les capteurs quasi-distribués et totalement distribués?",
+    "answer": "Les capteurs quasi-distribués (comme les FBGs) ont des points de détection discrets, chacun réfléchissant une longueur d'onde spécifique. Les capteurs totalement distribués (Rayleigh, Brillouin, Raman) mesurent les paramètres physiques de manière continue sur toute la longueur de la fibre."
   },
   {
-    "question": "What are the typical frequency shifts for Brillouin and Raman scattering in silica fibers?",
-    "answer": "Brillouin shift ≈ 10 GHz (corresponding to ~0.08 nm wavelength shift), caused by acoustic phonons. Raman shift ≈ 10 THz (≈80 nm), caused by molecular vibrational/rotational energy transitions."
+    "question": "Quels sont les décalages de fréquence typiques pour les diffusions Brillouin et Raman dans les fibres en silice?",
+    "answer": "Décalage Brillouin ≈ 10 GHz (correspondant à ~0.08 nm de décalage en longueur d'onde), causé par les phonons acoustiques. Décalage Raman ≈ 10 THz (≈80 nm), causé par les transitions d'énergie vibrationnelles/rotationnelles moléculaires."
   },
   {
-    "question": "What is the typical range of FBG grating periods (Λ) for operation between 1510 and 1590 nm?",
-    "answer": "For n_eff = 1.45, Λ ranges from about 0.521 µm (for 1510 nm) to 0.548 µm (for 1590 nm)."
+    "question": "Quelle est la plage typique de pas de réseau (Λ) des FBG pour un fonctionnement entre 1510 et 1590 nm?",
+    "answer": "Pour n_eff = 1.45, Λ varie d'environ 0.521 µm (pour 1510 nm) à 0.548 µm (pour 1590 nm)."
   },
   {
-    "question": "How do you calculate the wavelength shift in an FBG due to strain and temperature?",
-    "answer": "Δλ = κ_ε ε + κ_T ΔT, where κ_ε ≈ 1.26 pm/µε and κ_T ≈ 9.6 pm/°C at 1550 nm. Example: ε = 500 µε and ΔT = 10°C → Δλ = (1.26×500 + 9.6×10) pm = 0.726 nm."
+    "question": "Comment calculer le décalage de longueur d'onde dans un FBG dû à la contrainte et à la température?",
+    "answer": "Δλ/λ = κ_ε ε + κ_T ΔT, où κ_ε et κ_T sont les coefficients de sensibilité. Exemple: pour ε = 500 µε et ΔT = 10°C avec κ_ε ≈ 1.2 pm/µε et κ_T ≈ 11.9 pm/°C à 1550 nm."
   },
   {
-    "question": "What are typical Optical Return Loss (ORL) values for fiber connectors?",
-    "answer": "UPC (Ultra Physical Contact): around -55 dB; APC (Angled Physical Contact): around -65 dB. Higher (more negative) values indicate less reflection and better connector performance."
+    "question": "Qu'est-ce que la rétrodiffusion de Rayleigh dans une fibre optique?",
+    "answer": "La rétrodiffusion de Rayleigh est causée par les inhomogénéités de l'indice de réfraction de la silice. C'est une diffusion élastique qui se produit à la même longueur d'onde que le signal incident et constitue la base du principe de l'OTDR."
+  },
+  {
+    "question": "Déterminer le nombre maximal de FBG sur chaque bras sachant qu'on place une bande de garde entre les FBGs de 3 nm pour une bande 1510-1590 nm.",
+    "answer": "Si chaque FBG a une largeur spectrale d'environ 0.2-0.5 nm et une bande de garde de 3 nm, alors N_max = (1590-1510)/(largeur_FBG + 3). Par exemple, avec une largeur de 0.5 nm: N_max = 80/(0.5+3) ≈ 22-23 FBGs maximum."
+  },
+  {
+    "question": "Comment déduire les valeurs des coefficients κ_ε et κ_T à partir d'un graphe de sensibilité FBG?",
+    "answer": "κ_ε est la pente de la courbe Δλ/λ en fonction de la contrainte (strain). κ_T est la pente de la courbe Δλ/λ en fonction de la température. On calcule: κ_ε = (Δλ/λ)/ε et κ_T = (Δλ/λ)/ΔT à partir des données du graphe."
   }
 ]
