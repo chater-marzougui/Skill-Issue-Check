@@ -1,0 +1,374 @@
+[
+  {
+    "question": "Quelle est la définition complète du marketing digital selon le cours?",
+    "answer": "Le marketing digital est la somme des activités réalisées par une entreprise dans le but de trouver, d'attirer, gagner et fidéliser les clients en utilisant les NTIC (Internet, courriel, bases de données, téléphone portable, etc.). Il se concentre sur les communications en ligne (dialogue direct), la co-création (participation du client), et la fidélisation."
+  },
+  {
+    "question": "Quelle est la définition du marketing selon Le Mercator (2014)?",
+    "answer": "Le marketing est la stratégie d'adaptation des organisations à des marchés concurrentiels, pour influencer en leur faveur le comportement des publics dont elles dépendent, par une offre dont la valeur perçue est durablement supérieure à celle des concurrents. Dans le secteur marchand, le rôle du marketing est de créer de la valeur économique pour l'entreprise en créant de la valeur perçue par les clients."
+  },
+  {
+    "question": "Quelles sont les différences clés entre Marketing 1.0, 2.0, 3.0 et 4.0?",
+    "answer": "Marketing 1.0 (orienté produit): vendre des produits, révolution industrielle, valeur fonctionnelle. Marketing 2.0 (orienté client): satisfaire et fidéliser, technologie de l'information, valeurs fonctionnelles et émotionnelles. Marketing 3.0 (orienté valeurs): améliorer la société, nouvelle vague technologique, valeurs fonctionnelles, émotionnelles et spirituelles. Marketing 4.0 (orienté réseaux): écouter la société, Web 2.0 et big data, personnalisation et prédiction des besoins."
+  },
+  {
+    "question": "Qu'est-ce que le Marketing 4.0 et sur quoi repose-t-il?",
+    "answer": "Le Marketing 4.0 repose sur une exploitation systématique et automatique de grandes quantités de données (Big Data). Le but n'est plus de vendre l'offre (1.0), d'engager les clients (2.0) ou d'exposer des valeurs (3.0), mais d'optimiser les performances et de chercher à anticiper les besoins. Il a un effet cumulatif de synergie avec les autres versions (1.0 + 2.0 + 3.0 + 4.0 = 10.0)."
+  },
+  {
+    "question": "Qu'est-ce que le SEO (Search Engine Optimization)?",
+    "answer": "Le SEO est l'ensemble des techniques mises en œuvre pour améliorer la position d'un site web sur les pages de résultats des moteurs de recherche (référencement naturel). C'est une des principales sources de trafic d'un site et la visibilité obtenue est 'gratuite'. Le SEO travaille sur trois axes: la technique, la popularité (liens externes), et le contenu/sémantique."
+  },
+  {
+    "question": "Qu'est-ce que le SEM (Search Engine Marketing)?",
+    "answer": "Le SEM correspond à l'ensemble des actions visant à enchérir sur certains mots-clés ou expressions clés pour apparaître sur les premières pages des résultats de recherche sur les moteurs (liens sponsorisés). C'est du référencement payant où l'on paie pour chaque clic (CPC - Coût Par Clic)."
+  },
+  {
+    "question": "Quels sont les trois axes principaux pour améliorer un site web en SEO?",
+    "answer": "1) La technique: le site doit être accessible et lisible par les robots des moteurs de recherche. 2) La popularité: nombre de liens externes (backlinks), nombre de domaines référents, % de liens profonds, diversité des ancres. 3) Le contenu/sémantique: contenu unique et pertinent, bien renseigner la balise title, la balise méta description et les attributs Alt des images."
+  },
+  {
+    "question": "Qu'est-ce que le Brand Content?",
+    "answer": "Le Brand Content est la mise en avant d'un produit ou d'une marque par le biais d'un 'storytelling' et de la création d'un univers à part entière. C'est une forme de contenu qui crée une narration autour de la marque plutôt qu'une simple publicité produit."
+  },
+  {
+    "question": "Qu'est-ce que la Brand Utility?",
+    "answer": "La Brand Utility est la proposition d'un objet, d'un service, d'un packaging ou d'une application rendant un service réellement utile au consommateur. L'objectif est d'apporter une valeur fonctionnelle concrète au-delà de la simple communication de marque."
+  },
+  {
+    "question": "Qu'est-ce que le Design Thinking?",
+    "answer": "Le Design Thinking consiste à concevoir des produits ou des offres à partir des besoins réels des clients. C'est une approche centrée sur l'utilisateur qui vise à résoudre des problèmes de manière créative en partant de l'empathie avec les utilisateurs. Apple l'utilise pour innover dans ses produits."
+  },
+  {
+    "question": "Qu'est-ce que le LEAN ads?",
+    "answer": "Le LEAN ads vise à limiter les nuisances et le nombre d'expositions publicitaires. L'objectif est d'éviter les publicités intrusives pour améliorer l'expérience utilisateur et rendre la communication plus respectueuse et moins agressive."
+  },
+  {
+    "question": "Qu'est-ce que le marketing programmatique?",
+    "answer": "Le marketing programmatique est l'achat d'emplacements publicitaires de façon automatisée en y intégrant des critères de ciblage très fins. Par exemple, Google affiche des publicités pertinentes aux internautes selon leurs recherches et leur comportement de navigation, avec négociation du prix en temps réel."
+  },
+  {
+    "question": "Qu'est-ce que le marketing automation?",
+    "answer": "Le marketing automation est l'automatisation de campagnes marketing, notamment l'envoi de mails automatiques selon des déclencheurs spécifiques (inscription, abandon de panier, anniversaire, etc.). Cela permet de personnaliser la communication à grande échelle."
+  },
+  {
+    "question": "Quelles sont les trois familles de participation par les TIC?",
+    "answer": "1) Participation auto-dirigée: le consommateur accomplit des tâches par lui-même (ex: concevoir sa cuisine IKEA, self-scanning). 2) Marketing participatif: personnalisation, remontée d'améliorations, co-innovation, customisation de masse, création de publicités. 3) Évolution du service client: forums d'entraide, SAV collaboratif."
+  },
+  {
+    "question": "Qu'est-ce que la participation auto-dirigée? Donnez des exemples.",
+    "answer": "La participation auto-dirigée se produit quand le consommateur accomplit des tâches par lui-même. Exemples: concevoir le plan de sa cuisine (IKEA), assemblage de meubles en kit, actes d'achat automatisés (e-commerce par abonnement, Dash Buttons d'Amazon, SmartScan de Carrefour), DAB."
+  },
+  {
+    "question": "Qu'est-ce que le marketing participatif? Donnez des exemples d'applications.",
+    "answer": "Le marketing participatif implique le consommateur dans différentes phases: Pré-conception (personnalisation, remontée d'améliorations comme Idea Storm de Dell, co-innovation comme LEGO Ideas), Produit (customisation de masse comme Nutella), Prix (Pay What You Want, benchmark de prix), Promotion (création/jugement de publicités comme Nescafé), Distribution (affiliation, parrainage Tesla), SAV (forums d'entraide comme Darty)."
+  },
+  {
+    "question": "Quels sont les trois types de crowdsourcing selon Burger-Helmchen et Pénin (2011)?",
+    "answer": "1) Crowdsourcing d'activités routinières: tâches ne demandant pas de compétences particulières mais du temps (ex: reCAPTCHA). 2) Crowdsourcing de contenu: alimenter un stock de données et d'informations (ex: Internet of eyes, panneaux publicitaires avec caméras). 3) Crowdsourcing d'activités inventives: lancer un défi pour résoudre des problèmes ou générer des idées innovantes (ex: plateformes d'innovation ouverte)."
+  },
+  {
+    "question": "Quels sont les domaines de co-création par les TIC selon Cova (2008)?",
+    "answer": "Les domaines de co-création incluent: la conception/innovation de produits, la personnalisation/customisation, la création de contenu (Consumer Made), la participation aux campagnes publicitaires, la contribution au service client et SAV, la fixation des prix (PWYW), et la distribution collaborative."
+  },
+  {
+    "question": "Quelles sont les deux phases de mise en place d'une stratégie de marketing digital?",
+    "answer": "1) Phase stratégique: définition de la cible, des objectifs et du budget, diagnostic stratégique (SWOT, PESTEL), analyse concurrentielle et benchmarking digital. 2) Phase opérationnelle: choix des moyens technologiques de communication média et mise en place d'une stratégie 360° (intégrant les 4P: produit, prix, distribution, communication)."
+  },
+  {
+    "question": "Que comprend la phase stratégique d'une stratégie de marketing digital?",
+    "answer": "La phase stratégique comprend: 1) Définition de la cible (acheteurs, utilisateurs, prescripteurs, leaders d'opinion), 2) Choix des objectifs (notoriété/image, trafic, vente, constitution de BDD), 3) Niveau de communication (entreprise/marque), 4) Budget (coût de création + prix support), 5) Diagnostic stratégique (PESTEL, 5 forces de Porter, SWOT), 6) Analyse concurrentielle et benchmarking digital."
+  },
+  {
+    "question": "Qu'est-ce que le benchmarking? Donnez la définition de Costa (2008).",
+    "answer": "Le Benchmarking est un processus continu d'évaluation des produits, des services et des méthodes par rapport à ceux des concurrents ou des partenaires les plus sérieux ou des organisations reconnues comme leaders ou chefs de file. L'objectif est d'identifier les meilleures pratiques pour améliorer les performances de sa propre organisation."
+  },
+  {
+    "question": "Quels sont les types de benchmarking?",
+    "answer": "1) Benchmarking interne: comparer au sein de la même organisation (entre filiales, services, départements). 2) Benchmarking concurrentiel: comparer aux concurrents directs du marché. 3) Benchmarking fonctionnel: comparer aux meilleurs du même secteur (concurrents ou non). 4) Benchmarking générique/horizontal: comparer à des entreprises de secteurs différents ayant des processus similaires."
+  },
+  {
+    "question": "Qu'est-ce que le benchmarking digital et quels sont ses 4 types?",
+    "answer": "Le benchmarking digital consiste à observer les meilleures pratiques marketing sur le web d'autres entreprises pour s'en inspirer. Les 4 types sont: 1) Benchmark graphique et éditorial (design, navigation, contenu), 2) Benchmark média (présence sur réseaux sociaux, engagement), 3) Benchmark relationnel (interaction client, SAV), 4) Benchmark technologique (fonctionnalités, performance, sécurité)."
+  },
+  {
+    "question": "Quels sont les critères d'analyse d'un site web?",
+    "answer": "1) SEO: positionnement dans les moteurs de recherche. 2) Qualité du contenu: quantité/répétition de mots-clés, ratio texte/code. 3) Conception: organisation des pages, navigation, sécurité, configuration serveur. 4) Performance: taille fichier, temps d'exécution, taux de compression (scores A à F). 5) Accessibilité: longueur du domaine, URL rewriting."
+  },
+  {
+    "question": "Qu'est-ce que l'analyse PESTEL?",
+    "answer": "L'analyse PESTEL examine l'environnement macro-économique de l'entreprise à travers 6 dimensions: Politique (stabilité, réglementations), Économique (croissance, inflation, taux), Socioculturel (démographie, modes de vie), Technologique (innovations, R&D), Écologique (environnement, durabilité), Légal (lois, normes)."
+  },
+  {
+    "question": "Qu'est-ce que l'analyse des 5 forces de Porter?",
+    "answer": "L'analyse des 5 forces de Porter étudie l'environnement micro-économique: 1) Pouvoir de négociation des fournisseurs, 2) Pouvoir de négociation des clients, 3) Menace des nouveaux entrants, 4) Menace des produits de substitution, 5) Intensité de la rivalité concurrentielle. Cela permet d'évaluer l'attractivité d'un secteur."
+  },
+  {
+    "question": "Quelle est la différence entre Business Intelligence (BI) et Intelligence Artificielle (IA)?",
+    "answer": "La Business Intelligence (BI) s'intéresse au passé et fournit un état de ce qui existe ou a existé en exploitant les Big Data. L'Intelligence Artificielle (IA) est axée sur la prospective: elle utilise le Machine Learning pour explorer les données et faire de la prédiction en trouvant des corrélations non encore mises en évidence, aidant à la prise de décisions stratégiques."
+  },
+  {
+    "question": "Comment le digital peut-il être intégré dans la politique de produit?",
+    "answer": "Le digital peut intervenir de la création jusqu'au produit final: 1) Phase de création/innovation: crowdsourcing créatif, co-innovation (LEGO Ideas, Idea Storm de Dell), 2) Customisation de masse (MyM&M's, Nutella personnalisé), 3) Communautés de marques, 4) Digitalisation du service/expérience (QR codes, NFC, réalité augmentée, SAV en ligne, chatbots), 5) Digitalisation des points de vente (Rebecca Minkoff, LV Club)."
+  },
+  {
+    "question": "Qu'est-ce que le crowdsourcing créatif? Donnez un exemple.",
+    "answer": "Le crowdsourcing créatif consiste à faire appel au grand public pour proposer et créer des éléments de la politique marketing (choix de marque, création de slogan, création de vidéo). Exemple: Haribo a créé 'Le laboratoire Dragibus' sur Facebook invitant les fans à inventer le nouveau parfum, obtenant 2 millions de votes, 150 000 idées, et 277 idées déployées, donnant naissance au Dragibus bicolore."
+  },
+  {
+    "question": "Qu'est-ce que la customisation de masse?",
+    "answer": "La customisation de masse permet aux clients de personnaliser des produits (couleurs, messages, configurations) tout en maintenant une production de masse pour bénéficier d'économies d'échelle. Exemples: MyM&M's (personnalisation de chocolats), Nutella (pots personnalisés avec prénoms), Nike ID (personnalisation de chaussures)."
+  },
+  {
+    "question": "Qu'est-ce qu'un QR Code et comment est-il utilisé en marketing?",
+    "answer": "Un QR Code (Quick Response) est un code-barres en 2D qui est flashé par les mobiles pour accéder à un contenu interactif sur Internet (informations sur un produit, formulaire d'inscription, vidéo publicitaire, coupon de réduction). Il crée un pont entre le monde physique et digital."
+  },
+  {
+    "question": "Qu'est-ce que la technologie NFC et comment est-elle utilisée?",
+    "answer": "Le NFC (Near Field Communication) est une technologie de communication sans fil à courte portée (environ 10 cm) et haute fréquence, permettant l'échange d'informations entre périphériques. Utilisations: paiement mobile, accès à des informations produit, billetterie digitale, identification."
+  },
+  {
+    "question": "Qu'est-ce que la réalité augmentée en retail?",
+    "answer": "La réalité augmentée permet d'acheter des produits en les essayant virtuellement de chez soi par simulation. Exemples: essayer des vêtements virtuellement, visualiser des meubles IKEA dans son intérieur via smartphone, tester des cosmétiques virtuellement (Sephora Color Match), essayer des lunettes en ligne."
+  },
+  {
+    "question": "Qu'est-ce que le Yield Management?",
+    "answer": "Le Yield Management (Tarification en Temps Réel ou Tarification Flexible) consiste à optimiser le prix du service en temps réel. Le prix évolue selon la demande et des critères comme: l'historique de l'entreprise, les événements extérieurs, la météo, la période de l'année, le moment de la réservation. Utilisé par les hôtels et compagnies aériennes, avec des logiciels comme BOOKING SUITE utilisant l'intelligence prédicative."
+  },
+  {
+    "question": "Qu'est-ce que le Pay What You Want (PWYW)?",
+    "answer": "Le Pay What You Want est un modèle de tarification où le consommateur décide lui-même du montant qu'il souhaite payer pour un produit ou service. Exemple: PAST Magazine offre un abonnement annuel en PWYW. C'est une forme de participation du consommateur à la politique de prix."
+  },
+  {
+    "question": "Qu'est-ce que le e-commerce?",
+    "answer": "Le e-commerce ou commerce électronique regroupe l'ensemble des transactions commerciales qui s'opérent à distance par le biais d'interfaces électroniques et digitales (Internet, applications mobiles). Exemples: Amazon, Jumia, sites de marques avec boutique en ligne."
+  },
+  {
+    "question": "Qu'est-ce qu'un modèle Click & Mortar?",
+    "answer": "Un modèle Click & Mortar désigne une entreprise traditionnelle avec des magasins physiques (mortar = brique et mortier) qui a ajouté des activités en ligne (click) à son modèle d'affaires classique. Exemple: La Fnac en France, qui combine boutiques physiques et site e-commerce."
+  },
+  {
+    "question": "Qu'est-ce que le Click and Collect?",
+    "answer": "Le Click and Collect est un service permettant aux consommateurs de réserver ou commander des produits en ligne avant de les retirer directement dans une boutique physique. Avantages: éviter les frais de livraison, voir le produit avant achat final, flexibilité des horaires de retrait."
+  },
+  {
+    "question": "Qu'est-ce qu'une marketplace? Donnez la définition et des exemples.",
+    "answer": "Une marketplace est un site e-commerce sur lequel acheteurs et fournisseurs se retrouvent pour exercer leurs métiers de vente et d'achat. La plateforme consacre un espace aux vendeurs pour exposer leurs produits et prélève une commission sur chaque vente. Exemples: Amazon (B2C), eBay (C2C créé en 1998), Alibaba (B2B), Le Bon Coin, Vinted."
+  },
+  {
+    "question": "Quels sont les trois types de marketplace selon les acteurs?",
+    "answer": "1) B2C (Business to Consumer): un marchand vend à un particulier (ex: Amazon, Jumia). 2) B2B (Business to Business): un marchand vend à un professionnel (ex: Amazon Business, Alibaba). 3) C2C (Consumer to Consumer): un particulier vend à un particulier (ex: Le Bon Coin, Vinted, Tayara.tn)."
+  },
+  {
+    "question": "Qu'est-ce que la consommation collaborative?",
+    "answer": "La consommation collaborative est la redistribution de ressources entre individus à travers des activités consommateur à consommateur coordonnées par des plateformes en ligne. Elle inclut: le partage, le don, l'échange, la revente, le troc et l'accès aux biens et services. Elle se matérialise par trois systèmes: product service systems, marchés de redistribution, et styles de vie collaboratifs."
+  },
+  {
+    "question": "Quels sont les trois systèmes principaux de la consommation collaborative?",
+    "answer": "1) Product service systems: valorise l'usage sur la possession, accès au service plutôt qu'achat du bien (ex: Uber, co-voiturage). 2) Marchés de redistribution: recirculation de biens d'occasion entre individus (ex: Vinted, Le Bon Coin, Vestiaire Collective). 3) Styles de vie collaboratifs: échange de biens intangibles, compétences, espaces, capitaux (ex: Couchsurfing, Crowdfunding, forums d'entraide)."
+  },
+  {
+    "question": "Qu'est-ce que Vinted?",
+    "answer": "Vinted est un marché en ligne communautaire C2C fondé en 2008 (site web) et 2013 (app mobile), implanté dans 11 pays. Il permet aux utilisateurs de vendre, acheter et échanger des vêtements et accessoires d'occasion. L'application est gratuite pour iOS et Android. Slogan: 'Tu ne le portes pas ? Vends-le !'"
+  },
+  {
+    "question": "Qu'est-ce que Jumia?",
+    "answer": "Jumia est une marketplace africaine (qualifiée d'Alibaba ou Amazon africain) proposant une large gamme de produits (appareils électroménagers, électroniques, mode, jouets) et services (réservations d'hôtels/avion, livraison de repas). C'est une plateforme B2C majeure en Afrique."
+  },
+  {
+    "question": "Qu'est-ce que l'Inbound Marketing selon Truphème (2016)?",
+    "answer": "L'Inbound Marketing est une approche marketing qui vise à attirer les consommateurs en gagnant leur attention grâce à la diffusion de contenus de qualité: un contenu qui informe, éduque, voire même inspire. C'est une stratégie de pull marketing (attirer) plutôt que push marketing (pousser)."
+  },
+  {
+    "question": "Quels sont les trois piliers de l'Inbound Marketing selon Toucheboeuf (2017)?",
+    "answer": "1) Un contenu de qualité qui attire et engage naturellement les clients. 2) Les actions classiques du SEO (référencement naturel) pour assurer la visibilité et permettre aux prospects de trouver les contenus. 3) Les réseaux sociaux pour promouvoir et diffuser le contenu efficacement."
+  },
+  {
+    "question": "Quelle est la différence entre Outbound Marketing et Inbound Marketing?",
+    "answer": "Outbound Marketing (push): technique traditionnelle qui pousse le produit vers le client (campagnes emailing, prospection téléphonique, démarchage, affichage, pubs TV/radio, liens sponsorisés). Inbound Marketing (pull): attire le client en mettant à disposition du contenu informatif via SEO, contenus de qualité, Call to Action adaptés, promotion sur médias sociaux. L'Inbound accompagne le parcours d'achat plutôt que d'interrompre."
+  },
+  {
+    "question": "Qu'est-ce que le marketing de contenu selon Kotler (2017)?",
+    "answer": "Le marketing de contenu est une stratégie marketing qui implique la création et la diffusion, par une entreprise, de contenus médias afin d'acquérir de nouveaux clients. Elle consiste à créer, proposer, distribuer et encourager la large diffusion d'une thématique intéressante, pertinente et utile à un public clairement défini afin de créer des conversations sur celle-ci."
+  },
+  {
+    "question": "Quelles sont les trois grandes catégories de canaux médiatiques en marketing de contenu?",
+    "answer": "1) Médias détenus (owned): publications d'entreprise, événements, sites web, blogs, communautés en ligne gérées, newsletters, comptes réseaux sociaux, apps mobiles. 2) Médias payés (paid): bannières, réseaux affiliés, listes moteurs de recherche, espaces payants réseaux sociaux, publicité mobile. 3) Médias gagnés (earned): contenu devenant viral via réseaux sociaux et communautés, bouche-à-oreille naturel."
+  },
+  {
+    "question": "Quelles sont les mesures de visibilité en marketing de contenu?",
+    "answer": "Les mesures de visibilité évaluent la portée et la sensibilisation: 1) Impressions: combien de fois le contenu est affiché. 2) Téléspectateurs uniques: combien de personnes voient le contenu. 3) Rappel de la marque: quel pourcentage est capable de se rappeler le nom de la marque."
+  },
+  {
+    "question": "Quelles sont les mesures d'exposition en marketing de contenu?",
+    "answer": "Les mesures d'exposition évaluent comment le contenu attire l'intérêt: nombre de pages vues par visiteur, taux de rebond (% qui partent après une page), temps passé sur le site, durée de la visite, indicateurs de recherche (position dans moteurs, références liées aux moteurs de recherche)."
+  },
+  {
+    "question": "Quelles sont les mesures d'activités en marketing de contenu?",
+    "answer": "Les mesures d'activités évaluent si le contenu conduit à l'achat: 1) Taux de clics (CTR): ratio clics/impressions. 2) Taux de conversion: % du public effectuant des actions (enregistrement, achat). 3) Partage de contenu: indicateur d'engagement. 4) Statistiques achats: ratio achats/impressions. 5) Taux de participation: actions comme retweets, favoris, réponses, mentions."
+  },
+  {
+    "question": "Qu'est-ce que le référencement naturel (SEO) et quels sont ses enjeux?",
+    "answer": "Le SEO (Search Engine Optimization) consiste à inscrire les sites internet/applications mobiles dans les moteurs de recherche et améliorer leur positionnement dans les résultats. Enjeux: le référencement est l'une des principales sources de trafic d'un site, et la visibilité obtenue est 'gratuite' (pas de coût par clic). Il faut optimiser pour que les robots puissent accéder, lire et comprendre le site."
+  },
+  {
+    "question": "Qu'est-ce que les liens sponsorisés (SEM)?",
+    "answer": "Les liens sponsorisés (SEM - Search Engine Marketing) correspondent à l'ensemble des actions visant à enchérir sur certains mots-clés ou expressions pour apparaître sur les premières pages de résultats de recherche. C'est du référencement payant où l'on paie pour chaque clic. Important: bien placer les mots-clés dans la Balise Title et Meta Description."
+  },
+  {
+    "question": "Quels sont les trois axes d'optimisation du référencement naturel?",
+    "answer": "1) Technique: le site doit être accessible, lisible et compréhensible par les robots (structure, vitesse, sécurité). 2) Popularité: nombre de liens externes (backlinks), nombre de domaines référents, % de liens profonds, diversité des ancres. 3) Contenu/Sémantique: contenu unique et pertinent répondant à la requête, bien renseigner balises title, meta description, attributs Alt des images."
+  },
+  {
+    "question": "Qu'est-ce que l'analyse sémantique en SEO?",
+    "answer": "L'analyse sémantique est l'étape la plus importante du SEO: trouver et analyser les mots-clés les plus recherchés sur les moteurs pour les intégrer et les mettre en valeur dans le site. Outils: Google Adwords Keyword Planner, Keywordtool, Yooda, Semrush. L'objectif est de répondre aux requêtes des utilisateurs avec un contenu pertinent."
+  },
+  {
+    "question": "Qu'est-ce que le CPC (Coût Par Clic) max et le CPC moyen?",
+    "answer": "CPC max: l'enchère maximum que vous fixez à votre mot-clé, le montant maximal que vous êtes prêts à payer pour un clic. CPC moyen: le coût réel d'un clic sur votre mot-clé. Google vous fait payer seulement un centime de plus que l'enchérisseur juste en dessous de vous. CPC moyen × nombre de clics = coût total du mot-clé."
+  },
+  {
+    "question": "Qu'est-ce que le Machine Learning dans le référencement payant?",
+    "answer": "Le Machine Learning permet d'optimiser les campagnes search: optimise les listes de remarketing, structures et paramétrages de campagnes, les enchères. Il permet de: 1) Ré-engager les utilisateurs à fort potentiel via ciblage comportemental. 2) Augmenter le ROI avec enchères multidimensionnelles. 3) Atteindre les consommateurs cibles avec campagnes adaptatives automatiques. Utilisé dans Google Discovery Ads."
+  },
+  {
+    "question": "Qu'est-ce que Google Discovery Ads?",
+    "answer": "Google Discovery Ads est un format d'annonces publicitaires utilisant le Machine Learning. Diffusé sur Google Discover, Gmail et YouTube, il ne cible pas des mots-clés mais des audiences. Les algorithmes identifient ce que les utilisateurs veulent. L'annonceur fournit URL, images, logo, 5 titres et 5 descriptions, et Google compose automatiquement l'annonce parfaite pour chaque internaute selon la data disponible."
+  },
+  {
+    "question": "Qu'est-ce que le SMO (Social Media Optimization)?",
+    "answer": "Le SMO désigne les différentes techniques et actions destinées à développer l'image, l'offre, la visibilité d'une plateforme via les réseaux sociaux (Facebook, LinkedIn, Twitter, Instagram, YouTube). C'est une technique complémentaire au SEM, indispensable pour développer la notoriété, la popularité et le référencement du site grâce aux réseaux sociaux."
+  },
+  {
+    "question": "Comment promouvoir une entreprise sur les réseaux sociaux?",
+    "answer": "Pour promouvoir sur les réseaux sociaux: 1) Augmenter la visibilité de la marque. 2) Construire vos réseaux personnels et professionnels. 3) Développer les relations avec clients et influenceurs. 4) Engager une interaction en temps réel. 5) Publier du contenu original démontrant votre expertise. 6) Communiquer avec votre communauté et followers. Moyens: choisir les bons réseaux, utiliser des hashtags, cibler une audience, introduire des Call to Action, optimiser la taille des images, investir dans la vidéo, utiliser des chatbots."
+  },
+  {
+    "question": "Quels sont les types de ciblage disponibles sur Meta (Facebook)?",
+    "answer": "Meta propose plusieurs catégories de ciblage: 1) Géographique (localisation). 2) Démographique (âge, sexe, langues). 3) Par intérêts (centres d'intérêts déclarés et engagements). 4) Données personnalisées (fichier clients, personnes ayant interagi avec le contenu). 5) Lookalike (ciblage d'individus ayant caractéristiques et usages communs à d'autres, via scraping de données communes)."
+  },
+  {
+    "question": "Qu'est-ce qu'un chatbot et quels sont les deux types?",
+    "answer": "Un chatbot est un agent conversationnel (programme informatique) capable de discuter avec les utilisateurs et répondre à leurs requêtes en se basant sur un corpus de questions/réponses. Types: 1) Bot programmé: discussion guidée par scénario préétabli, réponses prédéfinies, interactions limitées. 2) Bot intelligent: intègre NLP (compréhension langage naturel), utilise l'IA, fait des analyses sémantiques et recherches basées sur mots-clés."
+  },
+  {
+    "question": "Qu'est-ce que l'affiliation en marketing digital?",
+    "answer": "L'affiliation caractérise l'ensemble des échanges entre annonceurs (entreprises vendant produits/services) et éditeurs publicitaires (sites support de pub qui assurent la promotion). Les éditeurs sont des acteurs indépendants qui promeuvent les produits/services d'un annonceur en échange d'une commission pour les leads ou ventes générés. Exemples d'éditeurs: moteurs de recherche, sites éditoriaux, portails, fournisseurs d'accès Internet."
+  },
+  {
+    "question": "Qu'est-ce que le native advertising (publicité native)?",
+    "answer": "Le native advertising est un contenu en ligne sponsorisé d'apparence éditoriale qui s'intègre à la forme du support en abordant des thèmes proches de ceux traités par le texte informatif. Bien que le caractère publicitaire puisse être identifié, il est moins intrusif que les bannières traditionnelles. Apparu en 2012 comme réponse à la perte d'efficacité des formats classiques. La mesure inclut le temps passé sur la page de redirection et le nombre de partages. Exemple: Jumia propose un format native advertising intégré aux pages de catégories."
+  },
+  {
+    "question": "Qu'est-ce que l'e-mailing et quels sont ses avantages?",
+    "answer": "L'e-mailing désigne l'envoi massif d'informations et prospectus publicitaires par voie électronique. Outil du marketing direct pour informer, inviter, vendre, fidéliser, renforcer la relation client ou recueillir des avis. Avantages: coût très faible (quelques centimes), réactivité (simple clic), rapidité d'envoi, faible délai de retour (pic dans 24h), personnalisation/ciblage possible, tracking possible. En moyenne: 90% des emails arrivent à destination avec taux de clic moyen de 8%."
+  },
+  {
+    "question": "Quels sont les types d'e-mailing?",
+    "answer": "1) Email de prospection: obtenir nouveaux clients, faire connaître les produits. 2) Email de fidélisation: s'adresse à clients connus dans la BDD, personnalisé. 3) Email viral: partage d'infos (envoyez ce bon plan à 3 amis). 4) Email transactionnel: envoyé automatiquement suite à un événement (ouverture compte, inscription). 5) Email relationnel: newsletter, suivi de commande, email de bienvenue. 6) Email questionnaire: enquête de satisfaction."
+  },
+  {
+    "question": "Quelles sont les stratégies d'e-mailing?",
+    "answer": "1) Stratégie de cross-selling (ventes croisées): proposer des produits complémentaires basés sur l'achat précédent. 2) Stratégie de up-selling (montée en gamme): suggérer d'acheter un produit similaire plus performant et donc plus cher. Ces stratégies permettent d'augmenter le panier moyen et la valeur client."
+  },
+  {
+    "question": "Qu'est-ce que le buzz marketing et le marketing viral?",
+    "answer": "Le buzz marketing est l'ensemble des techniques pour injecter un message viral à une cible donnée en faveur d'une marque/produit/service. Objectif: créer, propager un 'bruit'. Il émane de l'entreprise, est peu coûteux (s'appuie sur couverture médiatique gratuite). Acteurs: adopteurs précoces → leaders d'opinion → public visé. Le marketing viral désigne le BAO (bouche-à-oreille) naturel sur Internet, phénomène naturel entre consommateurs (pas à l'initiative de l'entreprise)."
+  },
+  {
+    "question": "Quels sont les avantages et dangers du buzz marketing?",
+    "answer": "Avantages: faible coût de transmission, qualité de campagne (clé de réussite), facteurs de motivation (aspect ludique, nouveau, gratifiant, valeur utilitaire, appât du gain, plaisir, motivations sociales), qualité des modules viraux (rapidité, facilité), potentiel viral des internautes (effet boule de neige). Dangers: logo/message commercial trop présent, vidéos trop longues, aller dans les extrêmes (choquant, trash), ignorer les commentaires de la communauté, différence trop grande entre cible et message/acteurs (freine le partage)."
+  },
+  {
+    "question": "Qu'est-ce qu'un influenceur selon Kotler (2017)?",
+    "answer": "Un influenceur est un individu qui par son statut, sa position ou son exposition médiatique dispose d'un capital social élevé qui fait de lui un prescripteur auprès de sa communauté. Les marques cherchent à toucher ou collaborer avec les influenceurs dans le cadre d'actions marketing. L'influenceur dispose d'un compte sur un média social (blog, Twitter, Facebook, Instagram) et diffuse régulièrement des contenus à une communauté large et fidèle."
+  },
+  {
+    "question": "Quels sont les quatre groupes d'influenceurs selon leur taille?",
+    "answer": "1) Méga influenceurs: +1M followers, faible taux d'engagement. 2) Macro influenceurs: 100K-1M followers, taux d'engagement plus important que les mégas. 3) Micro influenceurs: 10K-100K followers, taux d'engagement 3× plus important, taux de conversion 2× plus élevé que les mégas. 4) Nano influenceurs: -10K followers, taux d'engagement 3× plus important que mégas, taux de conversion 4× plus important que mégas. Plus la communauté est petite, plus l'engagement et la conversion sont élevés grâce à la proximité."
+  },
+  {
+    "question": "Quels critères considérer pour choisir un influenceur?",
+    "answer": "1) Concordance avec l'image de marque de l'entreprise. 2) Convenance de sa communauté à la cible de l'entreprise. 3) Sa motivation (doit déjà utiliser/admirer la marque, sinon manque de motivation se ressent). 4) Authenticité de l'influenceur et lien de proximité avec followers (exposer vie privée, no filter). 5) Nombre de followers. 6) Taux d'engagement. 7) Taux de conversion. Attention aux faux influenceurs!"
+  },
+  {
+    "question": "Comment détecter les faux influenceurs?",
+    "answer": "Plusieurs techniques: 1) Évolution des followers sur derniers mois: montée doit être progressive pour être crédible. 2) Autorité du compte: l'influenceur doit être suivi par d'autres influenceurs. 3) Taux d'engagement: si 300K followers mais seulement 10 likes par publication, c'est suspect. 4) Utiliser des outils comme Social Blade, Hype Auditor pour vérifier l'authenticité, détecter les fake followers, faux likes et faux commentaires."
+  },
+  {
+    "question": "Qu'est-ce que le taux d'engagement et comment le calculer?",
+    "answer": "Le taux d'engagement détermine la proportion des followers 'actifs' qui interagissent avec l'influenceur. Formule: Taux d'engagement = Nombre d'interactions / Nombre total d'abonnés × 100. Un bon taux d'engagement est > 4%. L'engagement est plus important: entre 8h-9h ou 14h-17h, le lundi et jeudi pour Instagram. L'engagement est plus important chez les comptes avec peu d'abonnés (plus de proximité, échange, accessibilité)."
+  },
+  {
+    "question": "Comment mesurer le ROI d'une campagne d'influence? Quelles sont les 3 catégories?",
+    "answer": "1) Reach (portée): taux d'engagement, followers, trafic, impressions. 2) Engagement: clics, likes, réactions, commentaires, mentions, partages. 3) Ventes: performance, tracking, taux de transformation/conversion. Ces trois niveaux permettent d'évaluer l'impact complet de la campagne, de la visibilité jusqu'aux ventes générées."
+  },
+  {
+    "question": "Qu'est-ce que le taux de conversion et comment le calculer?",
+    "answer": "Le taux de conversion est la proportion d'achats, inscriptions, prises de rendez-vous par rapport au nombre total de visiteurs. Formule: Taux de conversion = (Nombre de clients / Nombre de visiteurs) × 100. Si l'internaute a confiance envers l'influenceur, le taux de conversion augmente. Les micro influenceurs peuvent doubler les taux de conversion car ils gagnent plus facilement la confiance (plus transparents avec leur communauté)."
+  },
+  {
+    "question": "Comment tracker les ventes d'une campagne d'influence?",
+    "answer": "1) Sur tous réseaux: associer un code promotionnel à un influenceur pour observer les leads générés. 2) Sur Facebook: placer des liens trackés pour suivre l'origine du trafic. 3) Sur Instagram: suivre la popularité des hashtags, visites des points de vente, visites du site par rapport à la cible (car pas de liens trackés directs). 4) Stories Instagram: permettent d'inclure un lien tracké direct vers le site. Utiliser Google Analytics et les statistiques natives des plateformes."
+  },
+  {
+    "question": "Comment créer des liens trackés (URLs trackés)?",
+    "answer": "Utiliser les variables UTM dans l'URL pour tracker les campagnes: utm_source (provenance: Google, Bing, LinkedIn, Twitter), utm_medium (canal: email, social, recherche organique), utm_campaign (nom campagne marketing), utm_term (mots-clés utilisés), utm_content (décrire la campagne, pour tests A/B). Exemple: https://www.exemple.com/?utm_source=instagram&utm_medium=social&utm_campaign=promo_hiver_2020&utm_term=influenceurX. Analyser ensuite via Google Analytics."
+  },
+  {
+    "question": "Quels outils utiliser pour trouver et analyser des influenceurs?",
+    "answer": "1) Influenceurs.tn: classe les influenceurs tunisiens par nombre de followers et domaines (Top 500). 2) Social Blade: fournit données et statistiques (abonnés, vues, likes, commentaires, classement) sur Instagram, Facebook, YouTube, Twitter, TikTok. 3) Heepsy: recherche par catégories, hashtags, mots-clés, localisation avec filtres (gratuit pour 3 premières recherches). 4) Hype Auditor (payant): analyse audience (démographie), engagement, authenticité (détecte fake followers), croissance."
+  },
+  {
+    "question": "Quels outils de gestion des réseaux sociaux existent?",
+    "answer": "1) Hootsuite: 18M utilisateurs, 175 pays, gère 35 réseaux sociaux. Activités: planification, analyse/rapports, contrôle activité, engagement clients, intégration réseaux. 2) Buffer: planification et programmation, collaboration/gestion d'équipes, analyse/rapports. 3) Sprout Social: 25K clients dans 100+ pays, 500M messages/jour. Activités: générer engagement, publication/planification, analyse statistiques, sens de l'écoute, employee advocacy."
+  },
+  {
+    "question": "Qu'est-ce que la publicité mobile et ses caractéristiques?",
+    "answer": "La publicité mobile cible les utilisateurs sur leurs smartphones/tablettes. Caractéristiques: 1) Média personnel (propriété d'une seule personne). 2) Adaptation contextuelle et situationnelle du message (adaptation selon lieu et moment via géolocalisation). 3) Data mining: extraction de connaissances à partir de données (ex: utilisation de Nike+ running = réception de pubs pour chaussures de sport, ciblage basé sur comportement)."
+  },
+  {
+    "question": "Qu'est-ce que l'advergame?",
+    "answer": "L'advergame est un jeu vidéo, souvent gratuit, financé par une marque et servant uniquement à promouvoir la marque. Objectifs: créer une animation autour de la marque/produit, créer une base de clients/prospects impliqués, donner une image plus jeune de la marque. C'est une forme de publicité ludique et immersive qui engage le consommateur."
+  },
+  {
+    "question": "Qu'est-ce que la puce RFID et comment est-elle utilisée en marketing?",
+    "answer": "RFID (Radio Frequency Identification): technologie permettant de stocker des infos numériques dans une puce. Exemple marketing: achat d'une Mini Cooper avec questionnaire d'usage. En roulant sur l'autoroute, un panneau équipé détecte la puce RFID et affiche un message personnalisé type 'Bonjour Kate, belle journée pour votre cabriolet'. Permet une personnalisation extrême de la communication. On trouve aussi le RFID au péage avec le télépéage."
+  },
+  {
+    "question": "Qu'est-ce qu'une communauté virtuelle selon Kozinets (1999)?",
+    "answer": "Une communauté virtuelle est un espace composé de personnes partageant des intérêts communs sans contraintes géographiques, d'interactions physiques ou d'origines ethniques. Ses membres participent activement et de manière répétée au sein de la communauté et entretiennent des liens émotionnels forts. Le niveau de participation varie: like, commentaire, création de contenu, actions de militantisme et soutien."
+  },
+  {
+    "question": "Quels sont les types de communautés virtuelles selon Jang et al. (2008) et Mathwick et al. (2008)?",
+    "answer": "Selon Jang: 1) Communauté initiée par les consommateurs: fondée volontairement par individus sans intervention des enseignes. 2) Communauté initiée par l'entreprise: plateforme fondée par l'enseigne pour interaction avec consommateurs. Selon Mathwick: 1) Communauté de marque: activité autour de la marque. 2) Communauté P3 (peer-to-peer problem solving): formation non liée à une marque, activité de résolution de problèmes par échange d'expériences de consommation."
+  },
+  {
+    "question": "Qu'est-ce que le cas LV Club et quelles valeurs/sacrifices ont été identifiés?",
+    "answer": "LV Club est un cas de digitalisation d'un lieu de vente (bar à salade avec commande via iPad). Valeurs intrinsèques orientées vers soi: récréative, esthétique, émotionnelle, évasion, appropriation. Sacrifices: psychologique, sensoriel. Valeurs extrinsèques orientées vers soi: commodité, économique, informationnelle, optimisation, apprentissage. Sacrifice: réassurance. Valeurs/sacrifices extrinsèques orientés vers les autres: valeur du lien social avec autres clients, sacrifice du lien social avec entreprise, sacrifice spirituel."
+  },
+  {
+    "question": "Quelles solutions pour limiter les sacrifices de la technologie dans le cas LV Club?",
+    "answer": "1) Sacrifice spirituel: inscrire l'usage de la technologie dans une expérience gratifiante permettant de prendre son temps. 2) Sacrifice psychologique: donner liberté au client de renouer contact avec personnel, encadrer et assister le client, personnel qualifié avec compétences interactionnelles, attribuer chaleur humaine à la relation homme-machine. 3) Sacrifice sensoriel et réassurance: exposer un échantillon de produits pour stimuler les sens et rassurer sur fraîcheur et qualité. 4) Sacrifice lien social: ne pas éradiquer complètement le contact humain."
+  },
+  {
+    "question": "Qu'est-ce que le cas Founa et quels sont les déterminants de son acceptabilité?",
+    "answer": "Founa est le 1er supermarché en ligne en Tunisie (click and collect/livraison). Déterminants d'acceptabilité: tout au long de l'expérience, les acheteurs font leurs courses sans consentir les sacrifices habituels (effort, temps perdu, irritation) tout en bénéficiant d'une offre irréprochable (qualité produits, délai livraison à la carte, livreur aimable, contact possible à tout moment). Le système de parrainage donne plus de crédibilité. CA multiplié par 9 entre 1ère et 2ème année. Passage de 1200 à 17000 références."
+  },
+  {
+    "question": "Quels étaient les freins à l'acceptabilité de Founa?",
+    "answer": "Freins identifiés: 1) Variables liées à l'offre: risque de qualité des produits, diversité, prix, conditions de retour, frais et délai de livraison. 2) Variables personnelles: désir d'apprécier physiquement les produits (toucher, sentir, voir). 3) Variables sociales: expérience humaine (interaction avec vendeurs, conseil), rôle de mère de famille (tradition de faire les courses soi-même)."
+  },
+  {
+    "question": "Qu'est-ce que le processus d'acceptabilité d'une technologie?",
+    "answer": "Le processus d'acceptabilité comprend trois étapes: 1) Acceptabilité a priori: la valeur que l'individu accorde aux objets/utilisateurs en fonction du rapport qu'il entretient avec eux (Lefeuvre et al., 2008). 2) Acceptation: adoption initiale de la technologie. 3) Appropriation: 'un ensemble de pratiques, une façon particulière d'utiliser quelque chose, un ensemble de règles partagées socialement par un groupe de référence et construites dans le temps' (Docq et Daele, 2001). L'usage final représente la dimension sociale."
+  },
+  {
+    "question": "Qu'est-ce que la stratégie 360° en marketing digital?",
+    "answer": "Une stratégie 360° (ou cross-canal) intègre tous les canaux de communication (online et offline) de manière cohérente pour créer une expérience unifiée. Elle combine: publicité TV/radio/affichage, digital (SEO, SEA, réseaux sociaux, emailing), mobile, points de vente physiques, événements. Objectif: toucher le consommateur à tous les points de contact de son parcours d'achat avec un message cohérent et des synergies entre canaux. Exemples: cas Milka, Trésor Kellogg's."
+  },
+  {
+    "question": "Décrivez le cas Trésor de Kellogg's et sa stratégie cross-média.",
+    "answer": "Contexte: Trésor leader des céréales fourrées au chocolat, objectif d'approfondir relation avec cible jeune et augmenter ventes. Actions: 1) Diffusion trailer TV: enlèvement du Totem Chocovore. 2) Invitation à télécharger app mobile pour partir à la poursuite du Totem. 3) Jeu vidéo d'aventure exclusif sur app mobile. 4) 1 cadeau high-tech/jour à gagner pour acheteurs (codes sur paquets). 5) 4 participants ayant fini le jeu partent en vraie chasse au trésor à Malte avec MTV. 6) 1 voyage de 10000€ pour le gagnant. Intègre: pub TV, app mobile, site dédié, site marque, Facebook pour interaction."
+  }
+]

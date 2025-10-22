@@ -1,104 +1,109 @@
 {
   "courses": [
     {
-      "id": 22,
+      "id": 1,
+      "filename": "marketing_digital_cours.json",
+      "name": "Marketing Digital Cours"
+    },
+    {
+      "id": 2,
+      "filename": "marketing_digital_exam_2024.json",
+      "name": "Marketing Digital Exam 2024"
+    },
+    {
+      "id": 3,
       "filename": "cyber_sec_funds_exam2025.json",
       "name": "Cyber Security Fundementals Control 2025"
     },
     {
-      "id": 21,
+      "id": 4,
       "filename": "Wlan_option.json",
       "name": "Huawei WLAN Option"
     },
     {
-      "id": 19,
+      "id": 5,
       "filename": "crypto_supcom_ch1.json",
       "name": "Crypto Supcom"
     },
     {
-      "id": 20,
+      "id": 6,
       "filename": "crypto_supcom_situations.json",
       "name": "Crypto Supcom Situations"
     },
     {
-      "id": 9,
+      "id": 7,
       "filename": "3_cloud_cours.json",
       "name": "3 Cloud Cours"
     },
     {
-      "id": 10,
+      "id": 8,
       "filename": "4_aws_modules_00_01_02_03.json",
       "name": "4 AWS Modules 00 01 02 03"
     },
     {
-      "id": 11,
+      "id": 9,
       "filename": "5_cloud_modules_05_06.json",
       "name": "5 Cloud Modules 05 06"
     },
     {
-      "id": 12,
+      "id": 10,
       "filename": "6_cloud_modules_07_08.json",
       "name": "6 Cloud Modules 07 08"
     },
     {
-      "id": 14,
+      "id": 11,
       "filename": "si_nabil_chatbot_lab.json",
       "name": "Si Nabil Chatbot Lab"
     },
     {
-      "id": 16,
+      "id": 12,
       "filename": "si_nabil_introduction_to_cloud.json",
       "name": "Si Nabil Introduction To Cloud"
     },
     {
-      "id": 17,
+      "id": 13,
       "filename": "si_nabil_it_automation.json",
       "name": "Si Nabil IT Automation"
     },
     {
-      "id": 18,
+      "id": 14,
       "filename": "si_nabil_function_as_a_service.json",
       "name": "Si Nabil Function as a Service"
     },
     {
-      "id": 1,
+      "id": 15,
       "filename": "Cloud.json",
       "name": "Cloud Hackathon from INDP2C"
     },
     {
-      "id": 3,
+      "id": 16,
       "filename": "Ch2-Common-Cyber-Security-Attacks.json",
       "name": "Common Cyber Security Attacks"
     },
     {
-      "id": 4,
+      "id": 17,
       "filename": "Ch3_Firewalls_and_traffic_filtering.json",
       "name": "Firewalls and Traffic Filtering"
     },
     {
-      "id": 5,
+      "id": 18,
       "filename": "Chapter_4-Next_Generation_Firewalls_and_Applications_Identification.json",
       "name": "Next Generation Firewalls and Applications Identification"
     },
     {
-      "id": 6,
+      "id": 19,
       "filename": "Reseaux-5G.json",
       "name": "Reseaux 5G"
     },
     {
-      "id": 7,
+      "id": 20,
       "filename": "MBK.json",
       "name": "MBK"
     },
     {
-      "id": 8,
+      "id": 21,
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
-    },
-    {
-      "id": 22,
-      "filename": "barcelone_planning.json",
-      "name": "barcelone_planning"
     }
   ]
 }

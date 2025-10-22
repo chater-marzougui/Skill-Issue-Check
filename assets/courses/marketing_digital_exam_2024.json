@@ -1,0 +1,213 @@
+{
+  "Digital Marketing": [
+    {
+      "question": "What is the main objective of the awareness stage in the growth marketing funnel?",
+      "options": [
+        "To turn visitors into paying customers",
+        "To make potential customers aware of your product or brand",
+        "To retain existing customers",
+        "To increase customer lifetime value"
+      ],
+      "answer": 1,
+      "explanation": "The awareness stage is the top of the funnel (TOFU). Its primary goal is to introduce the brand to a new audience that was not previously familiar with it, building brand recognition."
+    },
+    {
+      "question": "Which of the following tactics is most commonly used in the awareness stage?",
+      "options": [
+        "Upselling existing customers",
+        "Ads campaigns to reach new audiences",
+        "Onboarding new users after signup",
+        "Sending loyalty emails to customers"
+      ],
+      "answer": 1,
+      "explanation": "To build awareness, marketers must reach people who don't know the brand. Broad ad campaigns (social, display, search) are a key tactic for reaching these new, "
+    },
+    {
+      "question": "What is an example of \"acquisition\" in growth marketing?",
+      "options": [
+        "A user creating an account on the website after seeing a Facebook ad",
+        "A customer making their second purchase",
+        "A user upgrading from a free to a premium plan",
+        "A customer posting a review online"
+      ],
+      "answer": 0,
+      "explanation": "Acquisition is the act of converting an anonymous visitor into a known contact or user. Creating an account is a primary acquisition event, as it captures user data (like an email) for the first time."
+    },
+    {
+      "question": "In the activation stage, what would typically indicate success?",
+      "options": [
+        "Users returning to the website",
+        "Users completing their first core action, such as sending their first message on a chat app",
+        "Users visiting the blog section",
+        "Users purchasing a product or a service"
+      ],
+      "answer": 1,
+      "explanation": "Activation is about the user experiencing the product's value (the 'Aha!' moment) for the first time. Completing a core action (like sending a message, playing a song, or making a purchase) signifies they have been successfully activated."
+    },
+    {
+      "question": "What marketing channel would be most effective for the acquisition stage?",
+      "options": [
+        "Display advertising targeting past customers",
+        "Email campaigns aimed at newsletter subscribers",
+        "Paid social media ads targeting a specific audience",
+        "Loyalty programs for long-term customers"
+      ],
+      "answer": 2,
+      "explanation": "Paid social media ads are highly effective for acquisition because they can precisely target users based on demographics and interests, and then drive them to a specific acquisition action (like signing up or downloading)."
+    },
+    {
+      "question": "Which of the following is an example of successful activation?",
+      "options": [
+        "A visitor clicks on a website's homepage",
+        "A user who signed up completes their first purchase",
+        "A user likes a post on social media",
+        "A customer shares a blog post with friends"
+      ],
+      "answer": 1,
+      "explanation": "Similar to question 4, activation is about experiencing core value. For an e-commerce or subscription service, the first purchase is a critical activation event that turns a 'user' into a 'customer'."
+    },
+    {
+      "question": "What is a key goal during the acquisition stage?",
+      "options": [
+        "Generating as much traffic as possible, regardless of conversions",
+        "Encouraging users to take their first action, such as signing up or downloading an app",
+        "Increasing the amount spent by existing customers",
+        "Gathering feedback from customers"
+      ],
+      "answer": 1,
+      "explanation": "The acquisition stage's goal is to convert the traffic generated during awareness into leads or users. This is achieved by capturing their information, typically through a sign-up, subscription, or downloa."
+    },
+    {
+      "question": "What would best define the concept of \"awareness\" in growth marketing?",
+      "options": [
+        "Improving the user onboarding process",
+        "Building knowledge of the brand among new potential customers",
+        "Offering discounts to current users",
+        "Reducing retums among current customers"
+      ],
+      "answer": 1,
+      "explanation": "Awareness is the top-of-funnel (TOFU) stage focused entirely on making a target audience conscious of the brand's existence and its value propositio."
+    },
+    {
+      "question": "Which of the following is NOT a common marketing tactic for the acquisition stage?",
+      "options": [
+        "Offering a free trial or demo of the product",
+        "Sending cart abandonment emails",
+        "Running paid ads to bring in new users",
+        "Creating educational content to capture leads"
+      ],
+      "answer": 1,
+      "explanation": "Cart abandonment emails are a *retention* or *revenue* tactic, as they target users who have already been acquired (i.e., provided an email and started checkout). The other options are all focused on attracting *new* users."
+    },
+    {
+      "question": "Which action would indicate that a user has been successfully acquired?",
+      "options": [
+        "A user views a product page on a website",
+        "A user subscribes to an email newsletter",
+        "A user signs up for a free trial or account",
+        "A user shares a post from your social media account"
+      ],
+      "answer": 1,
+      "explanation": "Acquisition happens when an anonymous visitor becomes a known contact. Subscribing to a newsletter (or signing up for a trial) achieves this by capturing their email, officially acquiring them as a lead."
+    },
+    {
+      "question": "How can content marketing contribute to the awareness stage?",
+      "options": [
+        "By providing educational resources that attract potential customers",
+        "By sending personalised offers to customers who have abandoned their carts",
+        "By optimising the user journey during onboarding",
+        "By encouraging customers to leave reviews after purchasing"
+      ],
+      "answer": 0,
+      "explanation": "In the awareness stage, content (like blogs, videos, or social posts) should be educational and broa, aiming to attract users who are searching for answers or solutions, thereby introducing them to the brand."
+    },
+    {
+      "question": "Which of the following is an example of acquisition through organic channels?",
+      "options": [
+        "Paying for social media ads to attract new customers",
+        "Creating high-quality SEO content that ranks on Google and drives traffic",
+        "Sending direct mail to potential customers",
+        "Partnering with influencers for a paid campaign"
+      ],
+      "answer": 1,
+      "explanation": "Organic channels are 'free' (earned, not paid) sources of traffic. SEO (Search Engine Optimization) is a primary organic channel, attracting visitors from search results without paying for ad placement."
+    },
+    {
+      "question": "What is an example of successful awareness through social media marketing?",
+      "options": [
+        "Users clicking through to a landing page from an Instagram ad",
+        "Existing customers following the company on social media",
+        "Gaining followers who engage with brand content on a regular basis",
+        "Sending private messages to existing customers for feedback"
+      ],
+      "answer": 2,
+      "explanation": "The goal of awareness on social media is to build an audience. Gaining followers who actively engage with your content indicates you are successfully building a community that is aware of and interested in your brand."
+    },
+    {
+      "question": "What kind of content would you create in the awareness stage to attract new users?",
+      "options": [
+        "Content that answers common questions or educates potential users about your product or service",
+        "Loyalty discounts for returning customers",
+        "A video tutorial on using your product",
+        "Retargeting ads for visitors who haven't converted yet"
+      ],
+      "answer": 0,
+      "explanation": "Awareness content (TOFU) should be high-level and educationa. It targets users who are identifying a problem, not those who are ready to buy. Product tutorials are for the *activation* stage."
+    },
+    {
+      "question": "In growth marketing, what is a core objective of the activation stage?",
+      "options": [
+        "To drive website traffic through paid ads",
+        "To retain users who have already completed purchases",
+        "To get users to take meaningful actions such as purchasing or using a feature",
+        "To get new users to recommend the product to their friends"
+      ],
+      "answer": 2,
+      "explanation": "Activation is the bridge between acquisition (signing up) and retention. Its goal is to guide the new user to experience the product's value (the 'Aha!' moment) by completing a core action."
+    },
+    {
+      "question": "Which of the following describes an optimised \"acquisition\" strategy?",
+      "options": [
+        "Launching a referral program for existing customers",
+        "Implementing a simple and clear sign-up process with minimal friction",
+        "Creating content for existing users on how to use advanced product features",
+        "Offering rewards to long-term customers for their loyalty"
+      ],
+      "answer": 1,
+      "explanation": "Acquisition isn't just about driving traffic; it's about converting that traffic. Optimizing the sign-up process by reducing friction (e.g., fewer fields, social login)] directly increases the acquisition conversion rate."
+    },
+    {
+      "question": "What is a core function of acquisition marketing?",
+      "options": [
+        "Building long-term relationships with customers",
+        "Bringing in new users and encouraging them to engage with the product for the first time",
+        "Optimizing the onboarding process",
+        "Increasing user retention by offering discounts to current customers"
+      ],
+      "answer": 1,
+      "explanation": "The core function of acquisition is to attract *new users* and get them into your ecosystem (e.g., sign up). This is the first step before they can be activated (onboarding) or retained (building long-term relationships)."
+    },
+    {
+      "question": "What is a \"call to action\" (CTA) in growth marketing?",
+      "options": [
+        "A promotional offer sent to loyal customers",
+        "A prompt that encourages users to take a specific action, like signing up or downloading",
+        "A feedback form for users to fill out after purchase",
+        "A survey that evaluates customer satisfaction"
+      ],
+      "answer": 1,
+      "explanation": "A CTA is a specific directive (e.g., a button, link, or phrase) designed to provoke an immediate response and guide the user to the next step in the marketing funnel, such as 'Sign Up Now' or 'Download Today'."
+    },
+    {
+      "question": "Which of the following is an example of an effective call to action for the acquisition stage?",
+      "options": [
+        "\"Subscribe now to receive our latest blog posts\"",
+        "\"Complete your profile to unlock more features\"",
+        "\"Start your free trial today\"",
+        "\"Leave a review for a 10% discount\""
+      ],
+      "answer": 0,
+      "explanation": "An acquisition CTA aims to convert an anonymous visitor into a known lead. 'Subscribe now' and 'Start your free trial' are both perfect examples, as they capture user information for the first time."
+    }
+  ]
+}

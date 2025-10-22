@@ -1,0 +1,890 @@
+{
+  "Introduction au Marketing Digital et Évolution": [
+    {
+      "question": "Quelle est la définition correcte du marketing digital selon le cours?",
+      "options": [
+        "La somme des activités réalisées par une entreprise pour trouver, attirer, gagner et fidéliser les clients en utilisant les NTIC",
+        "Un ensemble de techniques uniquement centrées sur les réseaux sociaux",
+        "Une stratégie de vente exclusivement en ligne",
+        "Une discipline limitée au cybermarketing et webmarketing"
+      ],
+      "answer": [0],
+      "explanation": "Le marketing digital englobe toutes les activités utilisant les NTIC pour trouver, attirer, gagner et fidéliser les clients, ce qui est plus large que le simple cybermarketing."
+    },
+    {
+      "question": "Quelle est la principale différence entre le marketing classique (1.0) et le marketing digital (2.0)?",
+      "options": [
+        "Le marketing 1.0 est centré sur le client, le 2.0 sur l'offre",
+        "Le marketing 1.0 est centré sur l'offre, le 2.0 sur le client",
+        "Le marketing 2.0 ignore complètement le produit",
+        "Il n'y a pas de différence significative"
+      ],
+      "answer": [1],
+      "explanation": "Le marketing classique (1.0) était centré sur l'offre et le produit, tandis que le marketing digital (2.0) place le client au centre de la stratégie."
+    },
+    {
+      "question": "Quel est l'objectif principal du Marketing 1.0?",
+      "options": [
+        "Satisfaire et fidéliser les clients",
+        "Vendre des services et des produits",
+        "Écouter la société",
+        "Améliorer la société"
+      ],
+      "answer": [1],
+      "explanation": "Le Marketing 1.0, orienté produit, avait comme objectif principal de vendre des services et des produits suite à la révolution industrielle."
+    },
+    {
+      "question": "Quelles sont les forces utilisées par le Marketing 2.0?",
+      "options": [
+        "Technologie de l'information",
+        "Web 2.0 et big data",
+        "Révolution industrielle",
+        "Nouvelle vague technologique"
+      ],
+      "answer": [0],
+      "explanation": "Le Marketing 2.0, orienté client, s'appuie sur la technologie de l'information pour mieux comprendre et servir les clients."
+    },
+    {
+      "question": "Quel type de valeurs le Marketing 3.0 propose-t-il?",
+      "options": [
+        "Fonctionnelles, émotionnelles et spirituelles",
+        "Uniquement fonctionnelles",
+        "Fonctionnelles et émotionnelles",
+        "Uniquement spirituelles"
+      ],
+      "answer": [0],
+      "explanation": "Le Marketing 3.0, orienté valeurs, propose des valeurs fonctionnelles, émotionnelles et spirituelles pour placer l'humain au centre des préoccupations."
+    },
+    {
+      "question": "Quelle est la caractéristique principale du Marketing 4.0?",
+      "options": [
+        "Il ignore les besoins des clients",
+        "Il remplace complètement les autres versions du marketing",
+        "Il se concentre uniquement sur la vente",
+        "Il est orienté réseaux et exploite les Big Data"
+      ],
+      "answer": [3],
+      "explanation": "Le Marketing 4.0 est orienté réseaux et repose sur l'exploitation systématique des Big Data pour optimiser les performances et anticiper les besoins."
+    },
+    {
+      "question": "Le Marketing 4.0 a un effet cumulatif. Que signifie cette affirmation?",
+      "options": [
+        "Il est moins efficace que le Marketing 3.0",
+        "Il remplace les versions précédentes",
+        "Il crée une synergie avec les versions 1.0, 2.0 et 3.0",
+        "Il fonctionne indépendamment des autres versions"
+      ],
+      "answer": [2],
+      "explanation": "Le Marketing 4.0 crée un effet de synergie (1.0 + 2.0 + 3.0 + 4.0 = 10.0) en optimisant toutes les dimensions précédentes du marketing."
+    },
+    {
+      "question": "Qu'est-ce que le SEO (Search Engine Optimization)?",
+      "options": [
+        "L'envoi d'emails marketing",
+        "L'ensemble des techniques pour améliorer la position d'un site dans les résultats de recherche",
+        "La publicité sur les réseaux sociaux",
+        "L'achat de liens sponsorisés"
+      ],
+      "answer": [1],
+      "explanation": "Le SEO regroupe les techniques pour améliorer le positionnement naturel d'un site dans les moteurs de recherche, aussi appelé référencement naturel."
+    },
+    {
+      "question": "Qu'est-ce que le Brand Content?",
+      "options": [
+        "La mise en avant d'un produit ou marque par le storytelling et la création d'un univers",
+        "La gestion des réseaux sociaux",
+        "La publicité traditionnelle",
+        "L'achat d'espace publicitaire"
+      ],
+      "answer": [0],
+      "explanation": "Le Brand Content consiste à mettre en avant un produit ou une marque à travers un storytelling et la création d'un univers à part entière."
+    },
+    {
+      "question": "Qu'est-ce que l'UGC (User Generated Content)?",
+      "options": [
+        "Du contenu créé par les utilisateurs",
+        "Du contenu sponsorisé",
+        "Du contenu publicitaire",
+        "Du contenu créé par l'entreprise"
+      ],
+      "answer": [0],
+      "explanation": "L'UGC désigne le contenu créé par les utilisateurs eux-mêmes, représentant une forme de participation active des consommateurs."
+    },
+    {
+      "question": "Qu'est-ce que le Design Thinking dans le contexte du Marketing 4.0?",
+      "options": [
+        "La conception de logos et d'identités visuelles",
+        "La création de sites web esthétiques",
+        "La conception de produits ou d'offres à partir des besoins réels des clients",
+        "La décoration des points de vente"
+      ],
+      "answer": [2],
+      "explanation": "Le Design Thinking consiste à concevoir des produits ou des offres en partant des besoins réels des clients, comme le pratique Apple pour innover."
+    },
+    {
+      "question": "Que signifie 'LEAN ads' dans le Marketing 4.0?",
+      "options": [
+        "Créer des publicités plus longues",
+        "Limiter les nuisances et le nombre d'expositions publicitaires",
+        "Utiliser uniquement des publicités vidéo",
+        "Augmenter le nombre de publicités"
+      ],
+      "answer": [1],
+      "explanation": "LEAN ads vise à limiter les nuisances publicitaires et à éviter les publicités intrusives pour améliorer l'expérience utilisateur."
+    },
+    {
+      "question": "Qu'est-ce que le marketing programmatique?",
+      "options": [
+        "La création de programmes de fidélité",
+        "L'envoi automatique d'emails",
+        "La programmation de posts sur les réseaux sociaux",
+        "L'achat automatisé d'emplacements publicitaires avec ciblage très fin"
+      ],
+      "answer": [3],
+      "explanation": "Le marketing programmatique permet d'acheter des emplacements publicitaires de façon automatisée avec des critères de ciblage très fins et une négociation du prix en temps réel."
+    },
+    {
+      "question": "Quel est le rôle du consommateur dans le marketing participatif?",
+      "options": [
+        "Il devient acteur et participe à la création de valeur",
+        "Il n'a aucun rôle spécifique",
+        "Il est uniquement une source de données",
+        "Il reste passif et se contente d'acheter"
+      ],
+      "answer": [0],
+      "explanation": "Dans le marketing participatif, le consommateur devient acteur et participe activement à la création de valeur à travers différentes formes de co-création."
+    },
+    {
+      "question": "Quelle est la définition du marketing selon Le Mercator (2014)?",
+      "options": [
+        "Satisfaire les besoins des consommateurs uniquement",
+        "La stratégie d'adaptation des organisations à des marchés concurrentiels pour influencer le comportement des publics",
+        "Créer de la publicité attractive",
+        "Vendre des produits à tout prix"
+      ],
+      "answer": [1],
+      "explanation": "Le Mercator définit le marketing comme une stratégie d'adaptation aux marchés concurrentiels pour créer de la valeur économique en créant de la valeur perçue par les clients."
+    },
+    {
+      "question": "Dans l'évolution du rôle du consommateur, quelle phase représente le 'consommateur acteur'?",
+      "options": [
+        "Le consommateur est uniquement un acheteur passif",
+        "Le consommateur participe à la co-création et devient producteur",
+        "Le consommateur n'a aucun pouvoir",
+        "Le consommateur est seulement un destinataire de publicités"
+      ],
+      "answer": [1],
+      "explanation": "Le consommateur acteur participe activement à la co-création, devenant co-producteur et contribuant à la chaîne de valeur de l'entreprise grâce aux TIC."
+    },
+    {
+      "question": "Qu'est-ce que la participation auto-dirigée?",
+      "options": [
+        "Quand l'entreprise dirige toutes les actions du consommateur",
+        "Quand le consommateur fixe les prix",
+        "Quand le consommateur crée du contenu publicitaire",
+        "Quand le consommateur accomplit des tâches par lui-même (ex: assemblage de meubles IKEA)"
+      ],
+      "answer": [3],
+      "explanation": "La participation auto-dirigée se produit lorsque le consommateur accomplit des tâches par lui-même, comme concevoir sa cuisine ou assembler des meubles en kit."
+    },
+    {
+      "question": "Qu'est-ce que le marketing participatif inclut?",
+      "options": [
+        "Seulement la publicité traditionnelle",
+        "Uniquement la vente en ligne",
+        "La personnalisation, la remontée d'améliorations, la co-innovation, la customisation de masse",
+        "La distribution en magasin physique uniquement"
+      ],
+      "answer": [2],
+      "explanation": "Le marketing participatif englobe diverses formes de participation: personnalisation, remontée d'améliorations (Idea Storm de Dell), co-innovation, customisation de masse, etc."
+    },
+    {
+      "question": "Quel exemple illustre le mieux la co-innovation dans le marketing participatif?",
+      "options": [
+        "Acheter un produit en ligne",
+        "La plateforme d'Open Innovation de LEGO où les utilisateurs développent de nouveaux produits",
+        "Recevoir une newsletter",
+        "Visiter un magasin physique"
+      ],
+      "answer": [1],
+      "explanation": "La plateforme d'Open Innovation de LEGO permet aux utilisateurs de participer au développement de nouveaux produits, illustrant parfaitement la co-innovation."
+    },
+    {
+      "question": "Quelles sont les trois familles principales de participation par les TIC?",
+      "options": [
+        "Production, stockage, livraison",
+        "Publicité, promotion, communication",
+        "Achat, vente, distribution",
+        "Participation auto-dirigée, marketing participatif, service client"
+      ],
+      "answer": [3],
+      "explanation": "Les trois familles de participation par les TIC sont: la participation auto-dirigée, le marketing participatif, et l'évolution du service client."
+    }
+  ],
+  "Stratégie et Diagnostic Digital": [
+    {
+      "question": "Quelles sont les deux phases principales de mise en place d'une stratégie de marketing digital?",
+      "options": [
+        "Phase de conception et phase de vente",
+        "Phase de test et phase de lancement",
+        "Phase créative et phase analytique",
+        "Phase stratégique et phase opérationnelle"
+      ],
+      "answer": [3],
+      "explanation": "La mise en place d'une stratégie de marketing digital se compose de deux phases: la phase stratégique (diagnostic, objectifs, cible) et la phase opérationnelle (moyens technologiques, stratégie 360°)."
+    },
+    {
+      "question": "Que comprend la phase stratégique d'une stratégie de marketing digital?",
+      "options": [
+        "Uniquement la création de contenu",
+        "Seulement la publicité en ligne",
+        "La gestion des réseaux sociaux uniquement",
+        "Cible, objectif, budget, diagnostic stratégique, analyse concurrentielle"
+      ],
+      "answer": [3],
+      "explanation": "La phase stratégique inclut la définition de la cible, des objectifs et du budget, ainsi que le diagnostic stratégique et l'analyse concurrentielle et de benchmarking digital."
+    },
+    {
+      "question": "Quelle est la définition du benchmarking selon Costa (2008)?",
+      "options": [
+        "Se concentrer uniquement sur ses propres produits",
+        "Copier exactement les concurrents",
+        "Ignorer la concurrence",
+        "Un processus continu d'évaluation des produits, services et méthodes par rapport aux concurrents ou leaders"
+      ],
+      "answer": [3],
+      "explanation": "Le benchmarking est un processus continu d'évaluation par rapport aux concurrents les plus sérieux ou aux organisations reconnues comme leaders pour améliorer ses performances."
+    },
+    {
+      "question": "Quels sont les types de benchmarking externe?",
+      "options": [
+        "Concurrentiel, fonctionnel, générique (horizontal)",
+        "Interne uniquement",
+        "Local et international",
+        "Financier et commercial"
+      ],
+      "answer": [0],
+      "explanation": "Le benchmarking externe se divise en trois types: concurrentiel (comparer aux concurrents), fonctionnel (meilleurs du secteur), et générique/horizontal (secteurs différents, processus similaires)."
+    },
+    {
+      "question": "Que comprend le benchmarking digital?",
+      "options": [
+        "La comptabilité digitale",
+        "Seulement les réseaux sociaux",
+        "Uniquement l'analyse des prix",
+        "Le benchmark graphique/éditorial, média, relationnel, technologique"
+      ],
+      "answer": [3],
+      "explanation": "Le benchmarking digital observe les meilleures pratiques web et comprend quatre types: graphique/éditorial, média, relationnel, et technologique."
+    },
+    {
+      "question": "Qu'analyse-t-on dans un benchmark média sur les réseaux sociaux?",
+      "options": [
+        "La présence, l'engagement, le type de contenu, la fréquence de publication",
+        "Le design du profil uniquement",
+        "Uniquement le nombre de likes",
+        "Seulement les followers"
+      ],
+      "answer": [0],
+      "explanation": "Un benchmark média analyse la présence sur les réseaux, le niveau d'engagement, les types de contenu publiés, la fréquence et l'efficacité des publications."
+    },
+    {
+      "question": "Quels sont les principaux critères d'analyse d'un site web?",
+      "options": [
+        "Seulement le prix",
+        "SEO, qualité du contenu, conception, performance, accessibilité",
+        "La couleur du site",
+        "Uniquement le design"
+      ],
+      "answer": [1],
+      "explanation": "L'analyse d'un site web comprend le SEO (référencement naturel), la qualité du contenu, la conception (organisation, navigation, sécurité), la performance et l'accessibilité."
+    },
+    {
+      "question": "Que signifie l'analyse PESTEL?",
+      "options": [
+        "Analyse des produits et services",
+        "Analyse de l'environnement macro-économique (Politique, Économique, Socioculturel, Technologique, Écologique, Légal)",
+        "Analyse financière",
+        "Analyse des concurrents uniquement"
+      ],
+      "answer": [1],
+      "explanation": "L'analyse PESTEL examine l'environnement macro-économique en étudiant les facteurs Politiques, Économiques, Socioculturels, Technologiques, Écologiques et Légaux."
+    },
+    {
+      "question": "Quelle analyse étudie l'environnement micro-économique?",
+      "options": [
+        "PESTEL",
+        "Les 5 forces de Porter",
+        "SWOT uniquement",
+        "Analyse financière"
+      ],
+      "answer": [1],
+      "explanation": "L'analyse des 5 forces de Porter étudie l'environnement micro-économique: pouvoir des fournisseurs/clients, menace des nouveaux entrants/produits de substitution, intensité concurrentielle."
+    },
+    {
+      "question": "Que doit inclure la définition de la cible en marketing digital?",
+      "options": [
+        "Acheteurs, utilisateurs, prescripteurs et leaders d'opinion",
+        "Seulement les clients fidèles",
+        "Uniquement les jeunes",
+        "Uniquement les acheteurs"
+      ],
+      "answer": [0],
+      "explanation": "La cible en marketing digital est plus large que la cible marketing traditionnelle et inclut acheteurs, utilisateurs, prescripteurs et leaders d'opinion capables d'influencer."
+    },
+    {
+      "question": "Quels peuvent être les objectifs d'une stratégie de marketing digital?",
+      "options": [
+        "Uniquement augmenter les ventes",
+        "Seulement la communication",
+        "Réduire les coûts uniquement",
+        "Notoriété et image, création de trafic, vente, constitution d'une base de données"
+      ],
+      "answer": [3],
+      "explanation": "Les objectifs peuvent être multiples: améliorer la notoriété et l'image, créer du trafic sur le site, générer des ventes, constituer une base de données clients."
+    },
+    {
+      "question": "Qu'est-ce que la Business Intelligence (BI)?",
+      "options": [
+        "L'exploitation de données pour fournir un état de ce qui existe ou a existé (focus sur le passé)",
+        "La gestion des réseaux sociaux",
+        "La création de robots",
+        "L'intelligence artificielle uniquement"
+      ],
+      "answer": [0],
+      "explanation": "La Business Intelligence s'intéresse au passé et fournit un état de ce qui existe ou a existé, en exploitant des quantités de données (Big Data) pour l'analyse."
+    },
+    {
+      "question": "Quelle est la différence entre la BI et l'Intelligence Artificielle (IA)?",
+      "options": [
+        "La BI est plus récente",
+        "Il n'y a pas de différence",
+        "La BI analyse le passé, l'IA est axée sur la prospective et la prédiction",
+        "L'IA est moins performante"
+      ],
+      "answer": [2],
+      "explanation": "La BI analyse le passé, tandis que l'IA est axée sur la prospective, utilisant le Machine Learning pour explorer les données et faire des prédictions à partir de corrélations."
+    },
+    {
+      "question": "Quels outils peuvent être utilisés pour l'analyse SEO d'un site?",
+      "options": [
+        "Uniquement Google",
+        "Google Search Console, Semrush, Ubersuggest, Seobility",
+        "Seulement les réseaux sociaux",
+        "Microsoft Word"
+      ],
+      "answer": [1],
+      "explanation": "Plusieurs outils permettent l'analyse SEO: Google Search Console, Semrush, Ubersuggest, Seobility, ainsi que PageSpeed Insights pour la performance."
+    },
+    {
+      "question": "Que mesure le taux de rebond d'un site web?",
+      "options": [
+        "Le pourcentage de personnes qui partent après avoir visité une seule page",
+        "Le temps de chargement",
+        "Le nombre de visiteurs total",
+        "Le nombre de pages créées"
+      ],
+      "answer": [0],
+      "explanation": "Le taux de rebond mesure le pourcentage de visiteurs qui quittent le site après avoir consulté une seule page, indiquant l'intérêt pour le contenu."
+    },
+    {
+      "question": "Pourquoi l'analyse concurrentielle est-elle importante?",
+      "options": [
+        "Pour comprendre le positionnement des concurrents et identifier des opportunités de différenciation",
+        "Pour ignorer le marché",
+        "Pour copier exactement les concurrents",
+        "Pour réduire la qualité"
+      ],
+      "answer": [0],
+      "explanation": "L'analyse concurrentielle permet de comprendre le positionnement des concurrents, identifier leurs forces/faiblesses, et trouver des opportunités de différenciation pour l'entreprise."
+    },
+    {
+      "question": "Que signifie l'acronyme SWOT?",
+      "options": [
+        "Strategy, Work, Organization, Target",
+        "Social, Web, Online, Traffic",
+        "Strengths, Weaknesses, Opportunities, Threats",
+        "Sales, Web, Optimization, Technology"
+      ],
+      "answer": [2],
+      "explanation": "SWOT signifie Strengths (Forces), Weaknesses (Faiblesses), Opportunities (Opportunités), Threats (Menaces), pour analyser la position stratégique de l'entreprise."
+    },
+    {
+      "question": "Quelle est l'utilité de la bibliothèque publicitaire de Facebook?",
+      "options": [
+        "Gérer son profil personnel",
+        "Créer des publicités gratuitement",
+        "Acheter des espaces publicitaires",
+        "Consulter toutes les publicités actives d'une page pour analyser les stratégies concurrentes"
+      ],
+      "answer": [3],
+      "explanation": "La bibliothèque publicitaire de Facebook permet de consulter toutes les publicités actives d'une page, outil précieux pour l'analyse concurrentielle des stratégies publicitaires."
+    },
+    {
+      "question": "Qu'est-ce que le benchmarking interne?",
+      "options": [
+        "Analyser uniquement les clients",
+        "Étudier le marché global",
+        "Comparer avec les concurrents externes",
+        "Comparer des processus similaires au sein de la même organisation (entre filiales, services, départements)"
+      ],
+      "answer": [3],
+      "explanation": "Le benchmarking interne consiste à comparer des processus, produits ou services similaires au sein de la même organisation, entre différentes filiales, services ou départements."
+    },
+    {
+      "question": "Quel outil permet de créer facilement un site web selon le cours?",
+      "options": [
+        "Uniquement le codage manuel",
+        "Wix.com",
+        "Google Maps",
+        "Microsoft Excel"
+      ],
+      "answer": [1],
+      "explanation": "Wix.com est mentionné dans le cours comme un outil permettant de créer facilement des sites web sans nécessiter de compétences avancées en programmation."
+    }
+  ],
+  "Les 4P du Marketing Digital": [
+    {
+      "question": "Comment le digital peut-il intervenir dans la politique de produit?",
+      "options": [
+        "De la phase de création/conception (crowdsourcing, customisation) jusqu'au produit/service final",
+        "Seulement pour la publicité",
+        "Uniquement pour la vente",
+        "Pour la distribution uniquement"
+      ],
+      "answer": [0],
+      "explanation": "Le digital intervient dans toute la chaîne de valeur du produit: création via crowdsourcing, customisation de masse, digitalisation de services, jusqu'à l'expérience client finale."
+    },
+    {
+      "question": "Qu'est-ce que le crowdsourcing créatif?",
+      "options": [
+        "Recruter des employés",
+        "Faire appel à la foule pour générer des idées innovantes (ex: Haribo 'Laboratoire Dragibus')",
+        "Vendre des produits en ligne",
+        "Créer des publicités traditionnelles"
+      ],
+      "answer": [1],
+      "explanation": "Le crowdsourcing créatif consiste à lancer un défi à la foule pour résoudre des problèmes ou générer des idées innovantes, comme Haribo avec son 'Laboratoire Dragibus' sur Facebook."
+    },
+    {
+      "question": "Quels sont les trois types principaux de crowdsourcing selon Burger-Helmchen et Pénin (2011)?",
+      "options": [
+        "Production, stockage, livraison",
+        "Vente, achat, distribution",
+        "Publicité, promotion, communication",
+        "Activités routinières, contenu, activités inventives"
+      ],
+      "answer": [3],
+      "explanation": "Les trois types de crowdsourcing sont: les activités routinières (tâches simples), le contenu (alimenter des données), et les activités inventives (résoudre des problèmes complexes)."
+    },
+    {
+      "question": "Qu'est-ce que la customisation de masse?",
+      "options": [
+        "Produire en grande quantité des produits identiques",
+        "Vendre uniquement des produits de luxe",
+        "Permettre aux clients de personnaliser des produits tout en maintenant une production de masse (ex: MyM&M's)",
+        "Réduire la variété des produits"
+      ],
+      "answer": [2],
+      "explanation": "La customisation de masse permet aux clients de personnaliser des produits (couleurs, messages) tout en bénéficiant des avantages de la production de masse, comme MyM&M's."
+    },
+    {
+      "question": "Qu'est-ce qu'un QR Code?",
+      "options": [
+        "Un logo d'entreprise",
+        "Un mot de passe",
+        "Un code de réduction",
+        "Un code-barres 2D flashé par mobile pour accéder à du contenu interactif en ligne"
+      ],
+      "answer": [3],
+      "explanation": "Un QR Code est un code-barres en 2D qui, une fois flashé par un mobile, permet d'accéder à du contenu interactif sur Internet (infos produit, vidéo, formulaire)."
+    },
+    {
+      "question": "Qu'est-ce que la technologie NFC (Near Field Communication)?",
+      "options": [
+        "Un réseau social",
+        "Un type de publicité",
+        "Un logiciel de gestion",
+        "Une technologie de communication sans fil à courte portée (environ 10 cm) permettant l'échange d'informations"
+      ],
+      "answer": [3],
+      "explanation": "Le NFC est une technologie de communication sans fil à courte portée (environ 10 cm) et haute fréquence, permettant l'échange d'informations entre périphériques."
+    },
+    {
+      "question": "Qu'est-ce que le Yield Management?",
+      "options": [
+        "Une stratégie de production",
+        "Un outil de référencement",
+        "Une technique de marketing viral",
+        "La tarification en temps réel qui optimise le prix du service selon la demande (utilisé par hôtels, compagnies aériennes)"
+      ],
+      "answer": [3],
+      "explanation": "Le Yield Management (tarification flexible) optimise le prix en temps réel selon la demande, l'historique, la météo, les événements, utilisé notamment par les hôtels et compagnies aériennes."
+    },
+    {
+      "question": "Qu'est-ce que le e-commerce ou commerce électronique?",
+      "options": [
+        "L'ensemble des transactions commerciales s'opérant à distance via des interfaces électroniques et digitales",
+        "La publicité en ligne",
+        "Uniquement les magasins physiques",
+        "Les réseaux sociaux"
+      ],
+      "answer": [0],
+      "explanation": "Le e-commerce regroupe toutes les transactions commerciales effectuées à distance via des interfaces électroniques et digitales, comme Amazon ou Jumia."
+    },
+    {
+      "question": "Qu'est-ce qu'un modèle 'Click & Mortar'?",
+      "options": [
+        "Une entreprise uniquement en ligne",
+        "Une entreprise traditionnelle qui a ajouté des activités en ligne à son modèle classique (ex: La Fnac)",
+        "Une entreprise sans présence digitale",
+        "Un type de publicité"
+      ],
+      "answer": [1],
+      "explanation": "Click & Mortar désigne une entreprise traditionnelle (mortar = brique et mortier) qui a ajouté des activités en ligne (click) à son modèle d'affaires classique, comme La Fnac."
+    },
+    {
+      "question": "Qu'est-ce que le 'Click and Collect'?",
+      "options": [
+        "Livraison à domicile uniquement",
+        "Payer en magasin uniquement",
+        "Réserver/commander en ligne et retirer en boutique",
+        "Acheter uniquement en magasin"
+      ],
+      "answer": [2],
+      "explanation": "Le Click and Collect est un service permettant aux consommateurs de réserver ou commander des produits en ligne avant de les retirer directement en boutique."
+    },
+    {
+      "question": "Qu'est-ce qu'une marketplace?",
+      "options": [
+        "Une publicité en ligne",
+        "Un réseau social",
+        "Un site e-commerce où acheteurs et vendeurs se retrouvent, la plateforme prenant une commission (ex: Amazon, eBay)",
+        "Un magasin physique traditionnel"
+      ],
+      "answer": [2],
+      "explanation": "Une marketplace est un site e-commerce où acheteurs et fournisseurs se rencontrent pour faire des transactions, la plateforme prenant une commission sur chaque vente."
+    },
+    {
+      "question": "Quels sont les types de marketplace selon les acteurs?",
+      "options": [
+        "Locale et internationale uniquement",
+        "B2C (marchand vers consommateur), C2C (consommateur vers consommateur), B2B (marchand vers marchand) B2B (marchand vers professionnel), C2C (particulier vers particulier)",
+        "Petite, moyenne, grande",
+        "Physique et digitale"
+      ],
+      "answer": [1],
+      "explanation": "Les marketplaces se classent en trois types: B2C (Business to Consumer), B2B (Business to Business), et C2C (Consumer to Consumer) comme Le Bon Coin ou Vinted."
+    },
+    {
+      "question": "Qu'est-ce que la consommation collaborative?",
+      "options": [
+        "Vendre uniquement en magasin",
+        "La redistribution de ressources entre individus via des plateformes en ligne (partage, don, échange, revente)",
+        "Ignorer les autres consommateurs",
+        "Acheter des produits neufs uniquement"
+      ],
+      "answer": [1],
+      "explanation": "La consommation collaborative est la redistribution de ressources entre individus coordonnée par des plateformes en ligne, incluant partage, don, échange, revente et troc."
+    },
+    {
+      "question": "Quels sont les trois systèmes principaux de la consommation collaborative?",
+      "options": [
+        "Online, offline, hybride",
+        "Product service systems, marchés de redistribution, styles de vie collaboratifs",
+        "Gratuit, payant, freemium",
+        "Vente, achat, location"
+      ],
+      "answer": [1],
+      "explanation": "Les trois systèmes sont: les product service systems (accès vs possession), les marchés de redistribution (recirculation de biens d'occasion), et les styles de vie collaboratifs (partage de compétences/espaces)."
+    },
+    {
+      "question": "Qu'est-ce que Vinted?",
+      "options": [
+        "Un réseau social général",
+        "Une plateforme de streaming",
+        "Une marketplace C2C permettant de vendre, acheter et échanger des vêtements et accessoires d'occasion",
+        "Un site de vente de produits neufs uniquement"
+      ],
+      "answer": [2],
+      "explanation": "Vinted est un marché en ligne communautaire (C2C) fondé en 2008, permettant aux utilisateurs de vendre, acheter et échanger des vêtements et accessoires d'occasion."
+    },
+    {
+      "question": "Quel est l'avantage principal d'Amazon Business pour les entreprises?",
+      "options": [
+        "Seulement la livraison gratuite",
+        "Gestion simplifiée des achats, amélioration de la trésorerie, multi-utilisateurs, analytics",
+        "Accès aux produits grand public uniquement",
+        "Uniquement des prix plus bas"
+      ],
+      "answer": [1],
+      "explanation": "Amazon Business (B2B) offre une gestion simplifiée des factures et achats, amélioration de la trésorerie, gestion multi-utilisateurs, business analytics et réconciliation simplifiée."
+    },
+    {
+      "question": "Qu'est-ce que la réalité augmentée dans le contexte du retail digital?",
+      "options": [
+        "Une publicité animée",
+        "Un jeu vidéo",
+        "Une technologie permettant d'essayer virtuellement des produits (vêtements, meubles) depuis chez soi",
+        "Un réseau social"
+      ],
+      "answer": [2],
+      "explanation": "La réalité augmentée permet aux consommateurs d'essayer virtuellement des produits (vêtements, meubles IKEA) depuis chez eux par simulation, améliorant l'expérience d'achat."
+    },
+    {
+      "question": "Qu'est-ce que Jumia?",
+      "options": [
+        "Un réseau social",
+        "Une marketplace africaine (l'Amazon africain) proposant produits, services, réservations, livraison de repas",
+        "Une application de messagerie",
+        "Une banque en ligne"
+      ],
+      "answer": [1],
+      "explanation": "Jumia, qualifié d'Amazon africain, est une marketplace proposant une large gamme de produits (électroménager, mode, jouets) et services (réservations, livraison de repas)."
+    },
+    {
+      "question": "Qu'est-ce que le Pay What You Want (PWYW)?",
+      "options": [
+        "Un modèle de prix où le consommateur décide du montant qu'il veut payer (ex: PAST Magazine)",
+        "Un prix fixe imposé",
+        "Un abonnement mensuel",
+        "Une réduction automatique"
+      ],
+      "answer": [0],
+      "explanation": "Le Pay What You Want est un modèle de tarification où le consommateur décide lui-même du montant qu'il souhaite payer, comme PAST Magazine pour son abonnement annuel."
+    },
+    {
+      "question": "Quels critères le Yield Management prend-il en compte pour optimiser les prix?",
+      "options": [
+        "Seulement les coûts de production",
+        "Historique de l'entreprise, événements extérieurs, météo, période de l'année, moment de réservation",
+        "Uniquement la concurrence",
+        "Uniquement la demande actuelle"
+      ],
+      "answer": [1],
+      "explanation": "Le Yield Management analyse en temps réel plusieurs critères: historique annuel, événements extérieurs, météo, période de l'année, moment de réservation pour optimiser les prix."
+    }
+  ],
+  "Communication Digitale et Leviers": [
+    {
+      "question": "Qu'est-ce que l'Inbound Marketing?",
+      "options": [
+        "Pousser agressivement les produits vers les clients",
+        "Envoyer des emails en masse",
+        "Faire uniquement de la publicité TV",
+        "Attirer les consommateurs en gagnant leur attention grâce à des contenus de qualité qui informent et éduquent"
+      ],
+      "answer": [3],
+      "explanation": "L'Inbound Marketing vise à attirer les consommateurs en gagnant leur attention par la diffusion de contenus de qualité qui informent, éduquent, voire inspirent, plutôt que d'interrompre."
+    },
+    {
+      "question": "Quels sont les trois piliers de l'Inbound Marketing selon Toucheboeuf (2017)?",
+      "options": [
+        "Publicité, vente, distribution",
+        "Prix, produit, promotion",
+        "Design, technologie, innovation",
+        "Contenu de qualité, SEO, réseaux sociaux"
+      ],
+      "answer": [3],
+      "explanation": "L'Inbound Marketing repose sur trois piliers: un contenu de qualité qui attire, les actions classiques du SEO pour la visibilité, et les réseaux sociaux pour la diffusion."
+    },
+    {
+      "question": "Quelle est la différence entre Outbound et Inbound Marketing?",
+      "options": [
+        "Outbound est gratuit, Inbound est payant",
+        "Outbound est digital, Inbound est traditionnel",
+        "Il n'y a pas de différence",
+        "Outbound pousse le produit (push), Inbound attire le client avec du contenu (pull)"
+      ],
+      "answer": [3],
+      "explanation": "L'Outbound Marketing pousse le produit vers le client (push: pubs TV, emailing de masse), tandis que l'Inbound Marketing attire le client avec du contenu pertinent (pull: SEO, contenus éducatifs)."
+    },
+    {
+      "question": "Qu'est-ce que le marketing de contenu?",
+      "options": [
+        "Envoyer des newsletters",
+        "Créer uniquement des publicités",
+        "Vendre directement des produits",
+        "Créer et diffuser des contenus médias pour acquérir de nouveaux clients et créer des conversations"
+      ],
+      "answer": [3],
+      "explanation": "Le marketing de contenu consiste à créer, proposer et distribuer du contenu intéressant, pertinent et utile pour acquérir des clients et créer des conversations autour d'une thématique."
+    },
+    {
+      "question": "Quelles sont les trois grandes catégories de canaux médiatiques selon Kotler (2017)?",
+      "options": [
+        "Online, offline, mobile",
+        "Local, national, international",
+        "Médias détenus (owned), médias payés (paid), médias gagnés (earned)",
+        "Gratuit, payant, freemium"
+      ],
+      "answer": [2],
+      "explanation": "Les trois catégories sont: les médias détenus (owned: site, blog, réseaux propres), les médias payés (paid: publicité), et les médias gagnés (earned: viralité, bouche-à-oreille)."
+    },
+    {
+      "question": "Que sont les médias gagnés (earned media)?",
+      "options": [
+        "Le contenu qui devient viral via les médias sociaux et le bouche-à-oreille naturel",
+        "La publicité payante",
+        "Le site web de l'entreprise",
+        "Les newsletters envoyées"
+      ],
+      "answer": [0],
+      "explanation": "Les médias gagnés (earned media) désignent le contenu qui devient viral à travers les médias sociaux et les communautés, généré par le bouche-à-oreille naturel sans paiement direct."
+    },
+    {
+      "question": "Quelles sont les mesures de visibilité en marketing de contenu?",
+      "options": [
+        "Uniquement le trafic web",
+        "Impressions, téléspectateurs uniques, rappel de la marque",
+        "Uniquement les ventes",
+        "Seulement les coûts"
+      ],
+      "answer": [1],
+      "explanation": "Les mesures de visibilité incluent: les impressions (combien de fois le contenu est affiché), les téléspectateurs uniques (combien de personnes voient le contenu), et le rappel de la marque."
+    },
+    {
+      "question": "Que mesurent les indicateurs d'exposition en marketing de contenu?",
+      "options": [
+        "Uniquement les commentaires",
+        "Uniquement les ventes",
+        "Pages vues par visiteur, taux de rebond, temps passé sur le site, indicateurs de recherche",
+        "Seulement le nombre de followers"
+      ],
+      "answer": [2],
+      "explanation": "Les mesures d'exposition évaluent l'intérêt: pages vues par visiteur, taux de rebond, temps passé sur le site, position dans les moteurs de recherche, et références depuis les moteurs."
+    },
+    {
+      "question": "Qu'est-ce que le taux de clics (CTR - Click Through Rate)?",
+      "options": [
+        "Le nombre total de visiteurs",
+        "Le ratio entre le nombre de clics et le nombre d'impressions (affichages)",
+        "Le nombre de pages vues",
+        "Le temps passé sur une page"
+      ],
+      "answer": [1],
+      "explanation": "Le taux de clics (CTR) est le ratio entre le nombre de clics sur une annonce et le nombre d'impressions (affichages), mesurant l'efficacité d'une campagne publicitaire."
+    },
+    {
+      "question": "Que signifie SEO?",
+      "options": [
+        "Search Engine Optimization (optimisation pour les moteurs de recherche)",
+        "Sales Execution Online",
+        "Social Engine Optimization",
+        "Strategic Email Outreach"
+      ],
+      "answer": [0],
+      "explanation": "SEO signifie Search Engine Optimization, c'est le référencement naturel visant à améliorer la position d'un site dans les résultats de recherche des moteurs comme Google."
+    },
+    {
+      "question": "Que signifie SEM?",
+      "options": [
+        "Search Engine Marketing (marketing sur les moteurs de recherche, incluant SEO et SEA)",
+        "Social Email Marketing",
+        "Sales Enhancement Method",
+        "Strategic Engagement Management"
+      ],
+      "answer": [0],
+      "explanation": "SEM signifie Search Engine Marketing, englobant l'ensemble des actions sur les moteurs de recherche, incluant le SEO (naturel) et le SEA (publicité payante/liens sponsorisés)."
+    },
+    {
+      "question": "Quels sont les trois axes principaux du référencement naturel (SEO)?",
+      "options": [
+        "Email, social, display",
+        "Design, vitesse, sécurité",
+        "Prix, produit, promotion",
+        "Technique, popularité, contenu (sémantique)"
+      ],
+      "answer": [3],
+      "explanation": "Les trois axes du SEO sont: la technique (accessibilité par les robots), la popularité (liens externes, domaines référents), et le contenu/sémantique (pertinence, mots-clés)."
+    },
+    {
+      "question": "Qu'est-ce que le taux de rebond (bounce rate)?",
+      "options": [
+        "Le pourcentage de visiteurs qui quittent le site après avoir consulté une seule page",
+        "Le temps de chargement moyen",
+        "Le nombre de pages créées",
+        "Le nombre de visiteurs total"
+      ],
+      "answer": [0],
+      "explanation": "Le taux de rebond est le pourcentage de personnes qui partent du site après avoir visité une seule page, indiquant si le contenu capte suffisamment l'attention."
+    },
+    {
+      "question": "Qu'est-ce que la balise Title en SEO?",
+      "options": [
+        "Le footer du site",
+        "Le logo du site",
+        "Le menu de navigation",
+        "Le titre de la page qui apparaît dans les résultats de recherche et l'onglet du navigateur"
+      ],
+      "answer": [3],
+      "explanation": "La balise Title est le titre de la page qui s'affiche dans les résultats de recherche et l'onglet du navigateur, crucial pour le SEO et doit contenir les mots-clés principaux."
+    },
+    {
+      "question": "Qu'est-ce que la balise Meta Description?",
+      "options": [
+        "Le contenu principal de la page",
+        "Une description du contenu de la page qui s'affiche dans les résultats de recherche Google",
+        "Le pied de page",
+        "Le titre principal de la page"
+      ],
+      "answer": [1],
+      "explanation": "La balise Meta Description décrit le contenu de la page et s'affiche dans les résultats de recherche Google sous le titre, incitant l'internaute à cliquer."
+    },
+    {
+      "question": "Qu'est-ce que le CPC (Coût Par Clic)?",
+      "options": [
+        "Le taux de conversion",
+        "Le montant payé pour chaque clic sur une annonce publicitaire",
+        "Le coût total d'une campagne",
+        "Le nombre de clics total"
+      ],
+      "answer": [1],
+      "explanation": "Le CPC (Coût Par Clic) est le montant payé par l'annonceur pour chaque clic sur son annonce publicitaire, utilisé notamment dans Google Ads."
+    },
+    {
+      "question": "Comment fonctionne le système d'enchères Google Ads?",
+      "options": [
+        "Tout le monde paie le même prix",
+        "Le prix est fixe",
+        "On paie seulement un centime de plus que l'enchérisseur juste en dessous",
+        "Le plus offrant paie son prix maximum"
+      ],
+      "answer": [2],
+      "explanation": "Dans Google Ads, vous ne payez qu'un centime de plus que l'enchère du concurrent juste en dessous de vous, même si votre CPC max est plus élevé, optimisant ainsi les coûts."
+    },
+    {
+      "question": "Qu'est-ce que le SMO (Social Media Optimization)?",
+      "options": [
+        "L'optimisation des emails",
+        "La création de sites web",
+        "L'analyse financière",
+        "Les techniques pour développer la visibilité d'une plateforme via les réseaux sociaux"
+      ],
+      "answer": [3],
+      "explanation": "Le SMO (Social Media Optimization) désigne les techniques destinées à développer l'image, l'offre et la visibilité d'une plateforme via les réseaux sociaux (Facebook, LinkedIn, Instagram, etc.)."
+    },
+    {
+      "question": "Qu'est-ce que l'affiliation en marketing digital?",
+      "options": [
+        "Créer des partenariats stratégiques uniquement",
+        "Les échanges entre annonceurs et éditeurs publicitaires, où l'éditeur promeut des produits contre commission",
+        "Acheter des actions d'entreprises",
+        "Créer des filiales d'entreprise"
+      ],
+      "answer": [1],
+      "explanation": "L'affiliation caractérise les échanges entre annonceurs et éditeurs publicitaires, où les éditeurs assurent la promotion de produits/services contre une commission sur les ventes/leads générés."
+    },
+    {
+      "question": "Qu'est-ce que le native advertising (publicité native)?",
+      "options": [
+        "Un email marketing",
+        "Une publicité pop-up",
+        "Une publicité traditionnelle en bannière",
+        "Un contenu sponsorisé d'apparence éditoriale qui s'intègre à la forme du support de manière moins intrusive"
+      ],
+      "answer": [3],
+      "explanation": "Le native advertising est un contenu sponsorisé d'apparence éditoriale qui s'intègre à la forme du support, abordant des thèmes proches du contenu informatif, de manière moins intrusive que les bannières."
+    }
+  ]
+}
