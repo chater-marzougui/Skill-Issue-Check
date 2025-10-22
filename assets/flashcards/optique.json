@@ -230,5 +230,37 @@
   {
     "question": "What is the effect of temperature variation on laser power and spectrum?",
     "answer": "Temperature increase typically causes: decreased output power (reduced gain), wavelength shift (typically ~0.3 nm/°C for semiconductor lasers due to bandgap change), spectral broadening, threshold current increase, and potential mode hopping in multi-mode lasers."
+  },
+  {
+    "question": "How do you calculate the linear attenuation coefficient of an optical fiber?",
+    "answer": "The linear attenuation coefficient α (in dB/km) is given by α = A_total / L, where A_total is the total attenuation (in dB) and L is the fiber length (in km). Example: 0.8 dB over 4 km gives α = 0.2 dB/km."
+  },
+  {
+    "question": "What is the difference between reflective and non-reflective events on an OTDR trace?",
+    "answer": "Reflective events produce sharp spikes and occur at connectors or fiber breaks (Fresnel reflections). Non-reflective events appear as small downward steps and correspond to splices, bends, or microbends with no reflection."
+  },
+  {
+    "question": "What are the two types of dead zones in OTDR measurements?",
+    "answer": "1) Event dead zone: region after a strong reflection where the detector saturates and cannot see nearby events. 2) Attenuation dead zone: region where the OTDR signal recovers to the baseline slope. Both can be reduced using a launch cable (bobine amorce)."
+  },
+  {
+    "question": "What is the difference between quasi-distributed and fully distributed fiber optic sensors?",
+    "answer": "Quasi-distributed sensors (like FBGs) have discrete sensing points, each reflecting a specific wavelength. Fully distributed sensors (Rayleigh, Brillouin, Raman) measure physical parameters continuously along the entire fiber length."
+  },
+  {
+    "question": "What are the typical frequency shifts for Brillouin and Raman scattering in silica fibers?",
+    "answer": "Brillouin shift ≈ 10 GHz (corresponding to ~0.08 nm wavelength shift), caused by acoustic phonons. Raman shift ≈ 10 THz (≈80 nm), caused by molecular vibrational/rotational energy transitions."
+  },
+  {
+    "question": "What is the typical range of FBG grating periods (Λ) for operation between 1510 and 1590 nm?",
+    "answer": "For n_eff = 1.45, Λ ranges from about 0.521 µm (for 1510 nm) to 0.548 µm (for 1590 nm)."
+  },
+  {
+    "question": "How do you calculate the wavelength shift in an FBG due to strain and temperature?",
+    "answer": "Δλ = κ_ε ε + κ_T ΔT, where κ_ε ≈ 1.26 pm/µε and κ_T ≈ 9.6 pm/°C at 1550 nm. Example: ε = 500 µε and ΔT = 10°C → Δλ = (1.26×500 + 9.6×10) pm = 0.726 nm."
+  },
+  {
+    "question": "What are typical Optical Return Loss (ORL) values for fiber connectors?",
+    "answer": "UPC (Ultra Physical Contact): around -55 dB; APC (Angled Physical Contact): around -65 dB. Higher (more negative) values indicate less reflection and better connector performance."
   }
 ]
