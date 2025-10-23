@@ -14,5 +14,9 @@
   {
     "id": 4,
     "Digital Marketing": "marketing.json"
+  },
+  {
+    "id": 5,
+    "CEM": "CEM.json"
   }
 ]

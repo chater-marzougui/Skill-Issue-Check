@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What does EMC (Electromagnetic Compatibility) mean?",
+    "answer": "The ability of equipment or a system to function satisfactorily in its electromagnetic environment without producing intolerable electromagnetic disturbances to anything in that environment. It encompasses both emission control and immunity/susceptibility requirements."
+  },
+  {
+    "question": "What are the three essential elements of every EMC problem?",
+    "answer": "1) Source (the culprit generating interference), 2) Coupling path (the mechanism by which interference transfers - can be conducted, radiated, capacitive, or inductive), and 3) Victim (the system being interfered with)."
+  },
+  {
+    "question": "What is the difference between EMI and EMS?",
+    "answer": "EMI (Electromagnetic Interference) refers to unwanted electromagnetic disturbances that degrade equipment performance. EMS (Electromagnetic Susceptibility) is the vulnerability of equipment to electromagnetic interference - essentially the victim's perspective in an EMC problem."
+  },
+  {
+    "question": "What are the four fundamental types of electromagnetic coupling?",
+    "answer": "1) Conducted coupling (through wires/connections), 2) Capacitive coupling (electric field coupling through mutual capacitance), 3) Inductive coupling (magnetic field coupling through mutual inductance), and 4) Radiated coupling (electromagnetic wave propagation)."
+  },
+  {
+    "question": "What is the intrinsic impedance of free space and what does it represent?",
+    "answer": "Approximately 377 Ω (or 120π Ω). It represents the ratio E/H for electromagnetic plane waves in free space or air, calculated as η₀ = √(μ₀/ε₀). This is fundamental for far-field calculations and understanding wave propagation."
+  },
+  {
+    "question": "How do you convert between dB(V/m) and V/m for electric field measurements?",
+    "answer": "E(V/m) = 10^(E(dB(V/m))/20). For example, 40 dB(V/m) = 10^(40/20) = 100 V/m. This is the inverse: E(dB(V/m)) = 20·log₁₀(E(V/m))."
+  },
+  {
+    "question": "What is the formula to convert power in dBm to voltage across an impedance Z?",
+    "answer": "First convert dBm to watts: P(W) = 10^(P(dBm)/10) × 10⁻³. Then use P = V²/Z, so V = √(P·Z). For example, 0 dBm = 1 mW; across 50Ω: V = √(0.001 × 50) = 0.224V = 224 mV."
+  },
+  {
+    "question": "What is the relationship between attenuation in dB and voltage/power ratios?",
+    "answer": "For voltage: Attenuation(dB) = 20·log₁₀(V₁/V₂). For power: Attenuation(dB) = 10·log₁₀(P₁/P₂). A 30 dB attenuator reduces voltage by factor of 10^(30/20) ≈ 31.6 and power by 10^(30/10) = 1000."
+  },
+  {
+    "question": "What is Faraday's Law and how does it explain inductive coupling to a loop?",
+    "answer": "V = -dΦ/dt = -d(B·S)/dt, where Φ is magnetic flux, B is magnetic flux density, and S is loop area. For sinusoidal fields: V_induced = 2πf·μ₀·S·H_peak. This explains how changing magnetic fields couple voltage into victim circuits forming loops."
+  },
+  {
+    "question": "What is the formula for induced voltage in a loop from a time-varying magnetic field at frequency f?",
+    "answer": "V_peak = 2πf·μ₀·S·H_peak, where f is frequency (Hz), μ₀ = 4π×10⁻⁷ H/m, S is loop area (m²), and H is magnetic field strength (A/m). For 60 Hz, 2 A/m field, 1 m² loop: V ≈ 1V."
+  },
+  {
+    "question": "What is the period T of a signal with fundamental frequency f, and apply it to a 50 MHz signal?",
+    "answer": "T = 1/f. For a 50 MHz signal: T = 1/(50×10⁶) = 20×10⁻⁹ seconds = 20 nanoseconds. Understanding this relationship is crucial for analyzing digital signal spectra and timing."
+  },
+  {
+    "question": "What is the maximum power transfer theorem and how does it apply to EMC measurements?",
+    "answer": "Maximum power transfer occurs when the load impedance is the complex conjugate of the source impedance. For a source Z_s = R + jX, the load should be Z_L = R - jX. This principle is essential for proper antenna matching and receiver configurations."
+  },
+  {
+    "question": "What is near field vs far field, and what is the boundary distance?",
+    "answer": "Near field (r < λ/2π): reactive energy dominates, E and H are independent, impedance varies with source type. Far field (r > λ/2π): radiation dominates, E/H = 377Ω for plane waves. Boundary is approximately at λ/2π or for extended sources at 2D²/λ where D is largest dimension."
+  },
+  {
+    "question": "In near field, what distinguishes electric field sources from magnetic field sources?",
+    "answer": "Electric field sources (high impedance, like dipoles/wires): E >> H, wave impedance >> 377Ω. Magnetic field sources (low impedance, like loops/currents): H >> E, wave impedance << 377Ω. This determines proper probe selection and shielding strategies."
+  },
+  {
+    "question": "What is skin depth and what is its formula?",
+    "answer": "Skin depth δ is the depth at which current density falls to 1/e (37%) of surface value in a conductor at high frequency. Formula: δ = √(2/(ωμσ)) = √(1/(πfμσ)) = 1/√(πfμ₀μᵣσ). At 100 MHz in copper: δ ≈ 6.6 μm. This increases AC resistance significantly."
+  },
+  {
+    "question": "What is a LISN (or RSIL) and what is its purpose?",
+    "answer": "Line Impedance Stabilization Network (LISN) or Réseau Stabilisateur d'Impédance en Ligne (RSIL). It provides: 1) defined impedance (typically 50Ω) for conducted emission measurements, 2) isolation between EUT and mains variations, 3) coupling point to measure conducted emissions from 150 kHz to 30 MHz."
+  },
+  {
+    "question": "What is the antenna factor and how is it used in field strength measurements?",
+    "answer": "Antenna factor K relates incident electric field E to voltage V at antenna terminals: E(V/m) = K(1/m) × V(V). In dB: E(dBμV/m) = K(dB/m) + V(dBμV). Provided by manufacturers or measured through calibration. Essential for converting receiver readings to field strength."
+  },
+  {
+    "question": "What frequency ranges and antenna types are typically used in EMC radiated emissions testing?",
+    "answer": "30-300 MHz: Biconical or tuned dipoles; 200 MHz-1 GHz: Log-periodic antennas; 1-18 GHz: Horn antennas (double-ridge or standard). For H-field: small loops 10 kHz-30 MHz. For diagnostics: near-field probes (E-probes, H-probes, search coils)."
+  },
+  {
+    "question": "What is the difference between OATS and a semi-anechoic chamber for radiated emissions testing?",
+    "answer": "OATS (Open Area Test Site): outdoor or large indoor space with minimal reflections, conductive ground plane, used for 30 MHz+ testing. Semi-anechoic chamber: indoor facility with absorbers on walls/ceiling but conductive ground plane. Both comply with CISPR standards; chamber provides weather independence and reduced ambient noise."
+  },
+  {
+    "question": "What is a GTEM cell and what are its advantages?",
+    "answer": "GTEM (Gigahertz Transverse ElectroMagnetic) cell: an asymmetric TEM cell effective from very low frequencies (DC) to several GHz. Advantages: compact size vs anechoic chambers, cost-effective, good for low frequencies, defined field distribution. Used for emissions and immunity testing of small equipment."
+  },
+  {
+    "question": "What are the two methods for ESD testing and how do they differ?",
+    "answer": "1) Contact discharge: electrode touches EUT before discharge trigger - more repeatable, preferred method. 2) Air discharge: charged electrode approaches EUT until breakdown occurs - less repeatable but simulates real-world scenarios. Testing per IEC 61000-4-2 at levels typically 2-8 kV contact, 2-15 kV air."
+  },
+  {
+    "question": "What is crosstalk (Xtalk) and what are NEXT and FEXT?",
+    "answer": "Crosstalk: unwanted coupling between adjacent signal lines via capacitive (electric field) and inductive (magnetic field) coupling. NEXT (Near-End Crosstalk): interference measured at same end as aggressor signal source. FEXT (Far-End Crosstalk): interference at opposite end. NEXT is typically worse due to stronger coupling near the source."
+  },
+  {
+    "question": "What is common mode (CM) vs differential mode (DM) current/noise?",
+    "answer": "Differential Mode (DM): currents flow in opposite directions on signal and return paths (intended signals). Common Mode (CM): currents flow in same direction on all conductors relative to ground (unwanted, causes radiation). CM currents are primary EMC concern as they create large loop areas and radiate efficiently."
+  },
+  {
+    "question": "How do you suppress common mode interference?",
+    "answer": "1) Common mode chokes: high impedance to CM (same direction currents), low to DM (opposite currents). 2) Y-capacitors (line-to-ground): shunt CM currents to ground. 3) Balanced circuits: minimize CM generation. 4) Proper grounding and shielding. 5) Twisted pairs: cancel CM fields."
+  },
+  {
+    "question": "What is shielding effectiveness (SE) and what are its three components?",
+    "answer": "SE (dB) = Reflection loss (R) + Absorption loss (A) + Multiple reflection correction (B). Reflection: due to impedance mismatch at boundaries. Absorption: exponential decay inside shield material (depends on thickness, frequency, σ, μ). Multiple reflections: usually negligible if A > 10 dB. SE = 20log(E₁/E₂) or 20log(H₁/H₂)."
+  },
+  {
+    "question": "What materials and mechanisms work best for low-frequency (<100 kHz) magnetic field shielding?",
+    "answer": "High permeability (μᵣ) materials like mu-metal, permalloy, or steel. Mechanism: magnetic flux shunting - the high-μᵣ material provides low reluctance path that diverts flux around sensitive circuits. Conductivity is less important at low frequencies; thickness and permeability dominate."
+  },
+  {
+    "question": "What materials and mechanisms work best for high-frequency (>1 MHz) magnetic field shielding?",
+    "answer": "High conductivity materials like copper or aluminum. Mechanism: eddy currents induced in the shield create opposing magnetic fields, providing absorption loss. Skin effect concentrates currents near surface. SE increases with √f. Multiple thin layers can be more effective than one thick layer."
+  },
+  {
+    "question": "What materials work best for electric field shielding and why?",
+    "answer": "Any good conductor (copper, aluminum, steel). Electric field shielding relies primarily on reflection at the boundary due to large impedance mismatch (377Ω air vs <1Ω metal). Even thin conductive coatings provide significant SE (>60 dB). Gaps and seams are critical - not material thickness."
+  },
+  {
+    "question": "What is the EMC Directive 2014/30/UE and what are its two essential requirements?",
+    "answer": "EU law governing electromagnetic compatibility of equipment to ensure internal market function. Two requirements: 1) Emission: equipment must not generate EM disturbances exceeding levels that prevent other equipment from functioning. 2) Immunity: equipment must have adequate immunity to function without unacceptable degradation in its intended environment."
+  },
+  {
+    "question": "What is a harmonized standard and what presumption does it provide?",
+    "answer": "A European standard developed by CENELEC/ETSI under EC mandate, referenced in Official Journal. Conformity with harmonized standards gives presumption of conformity with essential requirements of applicable EU Directives. Not mandatory, but provides recognized compliance path. Examples: EN 55032, EN 61000-6-x series."
+  },
+  {
+    "question": "What is the difference between product standards, generic standards, and basic standards in EMC?",
+    "answer": "Basic (Fundamental): describe measurement methods, test setups, typical levels (e.g., IEC 61000-4-x series). Product: specific equipment types with defined limits and tests (e.g., EN 55032 for IT equipment). Generic: apply when no product standard exists, define limits for environments (EN 61000-6-1/-2 immunity, -3/-4 emission for residential/industrial)."
+  },
+  {
+    "question": "What does CISPR stand for and what standards does it produce?",
+    "answer": "Comité International Spécial des Perturbations Radioélectriques (International Special Committee on Radio Interference). Develops international EMC standards forming basis for national/regional standards. Key standards: CISPR 11 (ISM), CISPR 14 (household appliances), CISPR 15 (lighting), CISPR 32 (multimedia), CISPR 16 (measurement)."
+  },
+  {
+    "question": "What does EN 61000-3-2 cover and why is it important?",
+    "answer": "Limits for harmonic current emissions for equipment drawing ≤16A per phase (class A/B/C/D). Addresses power quality degradation from nonlinear loads (rectifiers, switching supplies). Limits on harmonics up to 40th order. Critical for power supply design compliance in EU market."
+  },
+  {
+    "question": "What is the role of decoupling capacitors and where should they be placed?",
+    "answer": "Provide local energy storage for fast IC current transients, prevent high-frequency noise propagation through power networks, reduce voltage droop during switching. Must be placed immediately adjacent to IC power pins to minimize loop inductance. Typical: 0.1 μF ceramic plus 10-100 μF bulk at board input."
+  },
+  {
+    "question": "What is a ground plane and why is it critical for EMC in PCB design?",
+    "answer": "Continuous conductive layer (typically entire PCB layer) providing: 1) Low-impedance return path for high-frequency currents. 2) Minimized loop areas (reduces emission and susceptibility). 3) Controlled impedance for transmission lines. 4) Shielding between layers. 5) Heat dissipation. Essential for multilayer boards operating >10 MHz."
+  },
+  {
+    "question": "What are the key EMC considerations for PCB trace routing?",
+    "answer": "1) Minimize loop areas (route signal close to return path). 2) Avoid routing under/near noisy components. 3) Separate analog/digital/power sections. 4) Use guard traces for sensitive signals. 5) Avoid slots in ground plane under high-speed traces. 6) Control impedance for high-speed signals (50-100Ω). 7) Minimize stub lengths."
+  },
+  {
+    "question": "What is the purpose of ferrite beads/cores in EMC applications and where are they used?",
+    "answer": "Act as lossy inductors suppressing high-frequency conducted interference through impedance increase and absorption losses. Applications: common-mode suppression on cables (ferrite clamp-on), filtering power lines, isolating circuit sections. Effective 1 MHz-1 GHz. Don't affect DC or low-frequency differential signals."
+  },
+  {
+    "question": "What are the three grounding configurations and when is each used?",
+    "answer": "1) Single-point: all grounds connect at one point - good for low frequencies (<1 MHz), avoids ground loops. 2) Multi-point: each circuit grounds locally - good for high frequencies (>10 MHz), minimizes impedance. 3) Hybrid: single-point at low f, multi-point at high f using capacitors - practical compromise for broadband systems."
+  },
+  {
+    "question": "What protection devices are used against ESD and transients, and what are their characteristics?",
+    "answer": "1) TVS diodes (Transient Voltage Suppression): fast (<1ns), moderate energy (100-1000W). 2) MOVs/Varistors: medium speed (10-100ns), high energy (100-1000J). 3) Gas discharge tubes: slow (>100ns), very high energy (>10kJ). 4) Spark gaps: high voltage, outdoor use. Often use staged protection: GDT → MOV → TVS."
+  },
+  {
+    "question": "What is the formula for characteristic impedance of a transmission line and typical values?",
+    "answer": "Z₀ = √(L/C) where L is inductance per unit length, C is capacitance per unit length. Common values: coax (50Ω, 75Ω), twisted pair (100-120Ω), PCB microstrip (50-75Ω), PCB stripline (50Ω). Maintaining Z₀ constant along length prevents reflections."
+  },
+  {
+    "question": "What causes reflections on transmission lines and how are they quantified?",
+    "answer": "Impedance mismatch between line Z₀ and termination Z_L. Reflection coefficient: Γ = (Z_L - Z₀)/(Z_L + Z₀). Return loss: RL(dB) = -20log|Γ|. For perfect match (Z_L = Z₀): Γ = 0, no reflection. Open (Z_L = ∞): Γ = +1. Short (Z_L = 0): Γ = -1. Reflections cause ringing, overshoot, EMI."
+  },
+  {
+    "question": "What is the relationship between rise time and bandwidth for digital signals, and why is it important for EMC?",
+    "answer": "Bandwidth ≈ 0.35/t_r where t_r is 10%-90% rise time. A 1 ns rise time signal has ~350 MHz bandwidth. Spectrum has harmonics at significant amplitude up to ~1/πt_r. This explains why fast digital signals (short rise times) create broadband EMI. Slowing edges reduces high-frequency emissions."
+  },
+  {
+    "question": "What is spread spectrum clocking and how does it reduce EMI?",
+    "answer": "Technique that modulates clock frequency over small range (±0.5-2%) instead of fixed frequency. Effect: distributes spectral energy across bandwidth rather than concentrated at harmonics. Measured emission reduction in narrow RBW: ~5 dB for 3:1 spreading. Doesn't reduce total energy but reduces peak amplitude, helping pass radiated emission limits."
+  },
+  {
+    "question": "What are the key EMC engineering rules to follow from the design phase?",
+    "answer": "1) Minimize loop areas everywhere. 2) Use ground planes. 3) Separate noisy/sensitive circuits. 4) Filter at boundaries (I/O, power). 5) Shield properly with attention to seams. 6) Control impedances and match terminations. 7) Slow edges where possible. 8) Decouple power pins locally. 9) Route high-speed signals carefully. 10) Consider cable placement and routing. Prevention cheaper than cure!"
+  },
+  {
+    "question": "Why does the principle 'prevention is better than cure' apply strongly to EMC?",
+    "answer": "EMC problem resolution cost/effort increases exponentially through development: Design phase (1x cost) → Prototype/qualification (10x) → Production (100x) → Field/market (1000x). Good EMC design practices from start (layout, grounding, filtering, shielding) prevent costly redesigns, schedule delays, and potential product recalls."
+  },
+  {
+    "question": "What are the primary sources of natural and human-made electromagnetic interference?",
+    "answer": "Natural: lightning (broadband, high energy), solar radiation, cosmic noise, ESD. Human-made: communications (intentional radiators: broadcast, cellular, WiFi, radar), ISM equipment (microwave ovens, RF heaters), motors/switches (arcing), power lines (50/60 Hz harmonics), digital circuits (clock harmonics), lighting (switching transients)."
+  },
+  {
+    "question": "What test setup parameters are critical for repeatable conducted emission measurements?",
+    "answer": "1) LISN (50Ω impedance, specified frequency range). 2) EUT placement on non-conductive table 80cm above ground plane, 80cm from walls. 3) Cable routing (parallel to ground plane, 5-10cm height, specific lengths). 4) Receiver settings (RBW, detector type: QP/average). 5) Load conditions specified in standard."
+  },
+  {
+    "question": "What are typical radiated emission test distances and frequency ranges for commercial equipment?",
+    "answer": "CISPR 32 (commercial IT/multimedia): 30-1000 MHz (some up to 6 GHz). Class A (industrial): 30 MHz-1 GHz at 10m or 3m with correction. Class B (residential): same frequencies at 10m or 3m. Antenna height scanned 1-4m. Background noise must be >6 dB below limits."
+  },
+  {
+    "question": "What is the purpose of using different detection modes (peak, quasi-peak, average) in EMC measurements?",
+    "answer": "Peak: maximum instantaneous value, worst case, fast. Quasi-peak (QP): weighted by repetition rate (charges/discharges RC circuit), correlates with interference annoyance to AM radio. Average: true average power, used for digital signals and higher frequencies (>1 GHz). Different limits apply to each detector type."
+  },
+  {
+    "question": "Calculate the inductance and capacitance per unit length for a parallel wire transmission line with conductor diameter d and spacing D.",
+    "answer": "For D >> d: L = (μ₀/π)·ln(D/d) ≈ 0.4·ln(D/d) μH/m. C = πε₀εᵣ/ln(D/d) ≈ 27.78εᵣ/ln(D/d) pF/m. For D=20mm, d=1mm: L≈0.4·ln(20)≈1.2 μH/m, C≈28/3≈9.3 pF/m. Characteristic impedance Z₀ = √(L/C) ≈ 360Ω for this example."
+  }
+]

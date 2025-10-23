@@ -1,6 +1,11 @@
 {
   "courses": [
     {
+      "id": 0,
+      "filename": "CEM.json",
+      "name": "CEM"
+    },
+    {
       "id": 1,
       "filename": "marketing_digital_cours.json",
       "name": "Marketing Digital Cours"
