@@ -1,0 +1,163 @@
+{
+  "Session 2 (p.1)": [
+    {
+      "question": "Quels sont les objectifs fondamentaux du processus de sélection (screening) des idées de produits ?",
+      "options": [
+        "Transformer toutes les idées collectées en prototypes fonctionnels",
+        "Examiner, hiérarchiser et évaluer les idées viables",
+        "Sélectionner une seule idée pour la développer en concept de produit",
+        "Augmenter immédiatement les dépenses de R&D pour chaque idée",
+        "Éliminer les idées qui ne proviennent pas des clients clés"
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Le screening consiste à filtrer l'ensemble des idées collectées par l'examen et l'évaluation pour n'en retenir qu'une seule, laquelle sera ensuite approfondie en tant que concept de produit."
+    },
+    {
+      "question": "Lors de la sélection basée sur les stratégies marketing de l’entreprise, quels éléments doivent impérativement être inclus ?",
+      "options": [
+        "Le positionnement sur le marché",
+        "La définition de la clientèle cible",
+        "La prévision des flux de trésorerie sur 10 ans",
+        "La qualité du produit",
+        "Les dépenses marketing et R&D"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "Une stratégie marketing cohérente pour la sélection intègre la cible, le positionnement, le niveau de qualité visé ainsi que les ressources financières allouées au marketing et à la recherche et développement."
+    },
+    {
+      "question": "Quelles questions sont considérées comme essentielles pour valider le réalisme et la pertinence d'une idée lors du criblage ?",
+      "options": [
+        "Cela en vaut-il la peine ?",
+        "Le produit peut-il s'imposer sur le marché ?",
+        "Est-ce réaliste ?",
+        "Combien de brevets peuvent être déposés ?",
+        "Le design est-il esthétiquement parfait ?"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Le processus de sélection doit répondre à la viabilité économique (en vaut la peine), à la compétitivité (s'imposer sur le marché) et à la faisabilité technique et opérationnelle (réalisme)."
+    },
+    {
+      "question": "Concernant la recherche qualitative, quelles sont ses caractéristiques distinctives par rapport aux méthodes statistiques ?",
+      "options": [
+        "Elle s'appuie exclusivement sur des mesures quantitatives",
+        "Elle vise une perception approfondie du sujet",
+        "Elle utilise des focus groups avec des utilisateurs potentiels",
+        "Elle ne peut se faire qu'en face à face",
+        "Elle permet de trier les idées pour produire des concepts réalistes"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "La recherche qualitative privilégie la profondeur de compréhension sans statistiques, utilisant des entretiens (individuels ou groupes) qui peuvent désormais se faire en ligne pour valider le réalisme des concepts."
+    },
+    {
+      "question": "Dans le cadre de l'Analyse des Modes de Défaillance et de leurs Effets (AMDE), sur quoi se concentre l'approche structurée ?",
+      "options": [
+        "L'estimation de la gravité de l'impact des défaillances",
+        "L'analyse des causes potentielles de défaillance",
+        "Le calcul du prix de vente final",
+        "L'évaluation de l'efficacité des stratégies de prévention",
+        "La création de campagnes publicitaires"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "L'AMDE est un outil de fiabilité qui identifie les causes d'échec, mesure leur impact (gravité) et teste la robustesse des mesures de prévention avant d'investir davantage."
+    },
+    {
+      "question": "Dans l'exemple de la cafetière, pourquoi l'Idée A (Rapide) a-t-elle été rejetée au profit de l'Idée B (Intelligente) malgré son innovation ?",
+      "options": [
+        "L'Idée A présentait des risques critiques pour la sécurité de l'utilisateur",
+        "L'Idée B n'avait aucun mode de défaillance",
+        "Les plans d'action pour sécuriser l'Idée A rendraient le produit trop coûteux",
+        "Les défaillances de l'Idée B n'affectent pas la fonction principale du produit",
+        "L'Idée B utilisait des matériaux de qualité aérospatiale"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "L'Idée A a été rejetée car ses défaillances (brûlures, surchauffe) étaient trop graves et coûteuses à corriger, alors que l'Idée B offrait des risques gérables n'empêchant pas l'utilisation manuelle."
+    },
+    {
+      "question": "Quelles affirmations sont vraies concernant la méthode des pastilles (Dot Sticking) ?",
+      "options": [
+        "Elle fournit des informations détaillées sur les motivations psychologiques des participants",
+        "C'est un outil simple impliquant un grand nombre de participants",
+        "Chaque participant reçoit généralement 3 à 5 pastilles colorées",
+        "Elle nécessite que toutes les idées soient présentées avec le même niveau de détail",
+        "L'idée ayant le moins de pastilles est retenue pour un examen plus approfondi"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le Dot Sticking est efficace pour la participation de masse et nécessite une présentation équitable des idées, bien qu'il soit limité dans l'explication des motivations profondes des votes."
+    },
+    {
+      "question": "Dans une analyse SWOT (FFOM), quels éléments relèvent de l'analyse externe de l'entreprise ?",
+      "options": [
+        "Les forces (Strengths)",
+        "Les faiblesses (Weaknesses)",
+        "Les opportunités (Opportunities)",
+        "Les menaces (Threats)",
+        "Les avantages concurrentiels actuels"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Les opportunités et les menaces sont des facteurs externes liés au marché, à la technologie ou à la concurrence, tandis que les forces et faiblesses sont internes à l'organisation."
+    },
+    {
+      "question": "Quelle est la valeur ajoutée de la troisième colonne 'Implications' dans la méthode PMI (Plus, Moins, Implications) ?",
+      "options": [
+        "Elle remplace la liste des points négatifs",
+        "Elle permet d'analyser les conséquences et les effets à long terme",
+        "Elle se concentre sur les changements sociétaux ou éthiques potentiels",
+        "Elle sert uniquement à calculer la rentabilité financière",
+        "Elle améliore l'approche traditionnelle des avantages/inconvénients"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "La colonne 'Implications' enrichit l'analyse en allant au-delà du simple positif/négatif pour explorer les transformations futures, comme les impacts éthiques ou sociétaux d'une technologie."
+    },
+    {
+      "question": "Pourquoi la sélection des idées est-elle qualifiée d'étape cruciale du cycle de vie produit (PLM) ?",
+      "options": [
+        "C'est le moment où l'on détermine si une idée vaut l'investissement pour devenir un concept concret",
+        "Elle permet de combiner méthodes analytiques, outils de recherche et jugement stratégique",
+        "Elle garantit que 100% des produits sélectionnés réussiront commercialement",
+        "Elle clôture définitivement le processus d'innovation",
+        "Elle évite de s'attacher émotionnellement à une idée sans données clients"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Le screening en PLM est le filtre stratégique qui utilise des données objectives et le jugement pour transformer des intuitions en concepts concrets, évitant ainsi les biais émotionnels des décideurs."
+    }
+  ]
+}

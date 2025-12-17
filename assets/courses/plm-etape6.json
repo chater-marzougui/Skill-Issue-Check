@@ -1,0 +1,734 @@
+{
+  "Session 6 (p.1)": [
+    {
+      "question": "Quelle est la finalité principale de la phase d'implémentation technique suite aux tests bêta ?",
+      "options": [
+        "La validation finale du concept théorique auprès des investisseurs.",
+        "La production en grande quantité pour assurer le lancement commercial.",
+        "La réalisation de tests de marché supplémentaires pour affiner le prix.",
+        "L'optimisation des prototypes de laboratoire uniquement.",
+        "La gestion des défis liés à la fabrication, la production et la qualité."
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "La phase d'implémentation transforme un produit validé en un produit fabriqué à grande échelle. Elle doit impérativement répondre aux défis industriels de fabrication et de gestion de la qualité pour le marché."
+    },
+    {
+      "question": "Dans le cadre du « Design for X », quel est l'impact direct de la réduction du nombre de pièces d'un produit (ex: de 12 à 5 pièces) ?",
+      "options": [
+        "Une augmentation de la complexité de la maintenance.",
+        "Une accélération significative du processus d'assemblage.",
+        "Une réduction du temps de production, potentiellement de moitié.",
+        "Une amélioration systématique de l'esthétique visuelle.",
+        "Une diminution de la robustesse globale du produit."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Le Design for X vise à optimiser la conception pour faciliter la fabrication. Réduire le nombre de composants simplifie l'assemblage (Design for Assembly) et réduit drastiquement les temps de cycle de production."
+    },
+    {
+      "question": "Parmi les méthodologies « Design for X », lesquelles se concentrent spécifiquement sur la fin de vie ou la durabilité du produit ?",
+      "options": [
+        "Design for manufacture",
+        "Design for disassembly",
+        "Design for life cycle",
+        "Design for reuse",
+        "Design for installation"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le démontage (disassembly), le cycle de vie (life cycle) et la réutilisation (reuse) sont des approches DfX orientées vers la durabilité et la gestion de l'impact environnemental à long terme."
+    },
+    {
+      "question": "Concernant le design industriel, qu'entend-on par « l'Attraction Subtile » d'un produit ?",
+      "options": [
+        "Le respect strict des spécifications techniques et du prix.",
+        "L'évaluation de la performance garantie par le fabricant.",
+        "L'intervention des sens tels que le son, l'odeur et le toucher.",
+        "La création d'un lien émotionnel durable avec l'utilisateur.",
+        "L'esthétique purement visuelle définie avant les critères subjectifs."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "L'attraction subtile dépasse l'aspect visuel pour engager les sens subjectifs du client, ce qui génère une satisfaction profonde et un attachement émotionnel au produit."
+    },
+    {
+      "question": "Pourquoi le Lean Manufacturing considère-t-il que la conception initiale est une étape critique pour la réduction des coûts ?",
+      "options": [
+        "Parce que la majorité des coûts de fabrication est fixée dès cette étape.",
+        "Parce qu'elle permet d'augmenter les stocks de sécurité.",
+        "Parce qu'un design initial trop fiable est toujours moins coûteux.",
+        "Parce que les processus onéreux sont souvent verrouillés lors du design.",
+        "Parce qu'elle utilise exclusivement des solutions matérielles au lieu de logicielles."
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "Les décisions prises lors de la conception (matériaux, tolérances, processus) déterminent l'essentiel du coût de revient. Le Lean cherche à réviser ces choix à la source via des checklists pour éviter des coûts de production excessifs."
+    },
+    {
+      "question": "Quelle tactique de niveau 'Ingénierie des Systèmes' est préconisée pour réduire les coûts selon les principes Lean ?",
+      "options": [
+        "Augmenter le nombre d'ajustements mécaniques pour plus de précision.",
+        "Éliminer les exigences client les moins coûteuses en priorité.",
+        "Remplacer les ajustements mécaniques ou électriques coûteux par des solutions logicielles.",
+        "Réviser les exigences marketing pour supprimer les fonctions à forte valeur ajoutée.",
+        "Décentraliser totalement le contrôle de la production."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Transférer la complexité du matériel (hardware) vers le logiciel (software) permet souvent de réduire les coûts de fabrication et de faciliter les ajustements sans intervention physique coûteuse."
+    },
+    {
+      "question": "Le Juste-À-Temps (JIT) se base sur un « Système Pull ». Quelles sont les caractéristiques de cette approche par rapport au « Système Push » ?",
+      "options": [
+        "Elle génère plus d'en-cours (WIP) pour sécuriser la production.",
+        "Elle permet d'avoir un délai de livraison (leadtime) plus court.",
+        "La production est déclenchée uniquement par les commandes disponibles.",
+        "Elle repose sur une planification basée sur des prévisions de stocks massifs.",
+        "Elle facilite des cycles d'apprentissage et de feedback plus rapides."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Le système 'Pull' (JIT) limite les en-cours, ce qui réduit le temps de traversée (leadtime). En produisant uniquement à la demande, les erreurs sont détectées plus vite, améliorant ainsi la qualité et l'apprentissage."
+    },
+    {
+      "question": "Parmi les 8 types de gaspillages (Muda) identifiés, lesquels concernent directement l'inefficacité des processus ou du personnel ?",
+      "options": [
+        "Overprocessing (processus trop complexe, fonctions inutiles).",
+        "Skills (sous-exploitation du talent ou des compétences).",
+        "Waiting (temps d'attente).",
+        "Design for speed.",
+        "L'attraction subtile."
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "L'overprocessing, la sous-exploitation des compétences (Skills) et l'attente sont des formes de gaspillage qui n'ajoutent aucune valeur pour le client final tout en consommant des ressources."
+    },
+    {
+      "question": "Quel est l'objectif premier de la technique du Juste-À-Temps (JIT) concernant les ressources financières ?",
+      "options": [
+        "Augmenter l'inventaire pour parer aux imprévus du marché.",
+        "Optimiser le besoin en fonds de roulement en éliminant les stocks de pièces.",
+        "Maximiser la main-d'œuvre disponible sans tenir compte des commandes.",
+        "Réduire les coûts de marketing par une production centralisée.",
+        "Favoriser le stockage de produits finis (PF) pour une livraison immédiate."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le JIT vise à minimiser les stocks (matières premières, composants, produits finis). En réduisant l'argent immobilisé dans l'inventaire, l'entreprise optimise son besoin en fonds de roulement."
+    },
+    {
+      "question": "Dans le processus de design industriel, quand l'esthétique (aspect visuel) doit-elle être affinée ?",
+      "options": [
+        "Dès le début, avant même de définir les critères de performance.",
+        "Uniquement si le coût de production le permet.",
+        "Après avoir défini et évalué les qualités subjectives (son, odeur, toucher).",
+        "En remplacement des spécifications techniques initiales.",
+        "Juste avant le passage au Reverse Engineering."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le design industriel intervient pour harmoniser l'esthétique visuelle une fois que les caractéristiques sensorielles et émotionnelles (qualités subjectives) ont été identifiées, afin de renforcer le lien avec le client."
+    }
+  ],
+  "Session 12 (p.12)": [
+    {
+      "question": "Quelle est la caractéristique fondamentale de la méthode Lean telle qu'illustrée dans le schéma de flux de production ?",
+      "options": [
+        "Une centralisation stricte des décisions par le management",
+        "Un contrôle décentralisé de la production utilisant des systèmes de type Kanban (KB)",
+        "L'élimination totale des supermarchés de matières premières",
+        "Une communication unidirectionnelle du management vers les unités de production",
+        "La suppression des boucles de rétroaction entre les postes de travail"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La méthode Lean repose sur un contrôle décentralisé où les flux sont régulés de manière autonome entre les étapes (souvent via des cartes Kanban), permettant une réactivité accrue sans intervention constante de la direction centrale."
+    },
+    {
+      "question": "Concernant l'évolution technologique des systèmes de CAO, quels éléments sont historiquement exacts ?",
+      "options": [
+        "Le passage des ordinateurs centraux (mainframe) vers des postes de travail en réseau",
+        "L'apparition de la modélisation solide dès le début des années 1970 sur PC",
+        "Autodesk (AutoCAD) a été le pionnier de la CAO sur PC au début des années 1980",
+        "Le dessin 2D a été totalement remplacé par la modélisation 3D en termes de volume d'applications",
+        "Windows est actuellement l'OS dominant pour ces systèmes"
+      ],
+      "answer": [
+        0,
+        2,
+        5
+      ],
+      "explanation": "L'évolution a vu la transition du mainframe vers le réseau. AutoCAD a effectivement démocratisé la CAO sur PC dans les années 80. Bien que la 3D soit cruciale, le dessin 2D reste dominant en volume, et Windows s'est imposé comme plateforme standard."
+    },
+    {
+      "question": "Pourquoi la modélisation 'solide' est-elle privilégiée par rapport aux autres types de modélisation 3D dans des logiciels comme CATIA ?",
+      "options": [
+        "Elle est moins gourmande en ressources matérielles que la modélisation surfacique",
+        "Elle permet d'obtenir une représentation non ambiguë de l'objet",
+        "Elle facilite uniquement la création de pièces aux formes organiques complexes",
+        "Elle est la seule capable de générer automatiquement des plans 2D",
+        "Elle permet de garantir l'intégrité volumique lors des phases d'assemblage"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "La modélisation solide fournit une définition complète et mathématiquement cohérente du volume, éliminant les ambiguïtés d'interprétation et permettant des vérifications d'assemblage (interférences) précises."
+    },
+    {
+      "question": "Lors de la conception d'un moteur, quelle est l'utilité principale de la phase d'Analyse et Simulation (IAO) ?",
+      "options": [
+        "Remplacer définitivement le besoin de documentation technique",
+        "Vérifier les interférences géométriques simples entre les pièces",
+        "Prédire la réaction du moteur aux contraintes mécaniques et thermiques avant le prototype physique",
+        "Réduire les coûts et les erreurs de conception en amont de la fabrication",
+        "Générer la nomenclature des pièces nécessaires à la production"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "L'Ingénierie Assistée par Ordinateur (IAO) simule les comportements physiques réels, ce qui permet de valider la viabilité du concept et d'optimiser les performances sans multiplier les prototypes physiques coûteux."
+    },
+    {
+      "question": "Quelle est la 'Règle d'Or' impérative avant d'entamer tout processus de réingénierie ?",
+      "options": [
+        "Automatiser immédiatement toutes les tâches manuelles identifiées",
+        "Réduire le personnel de R&D pour diminuer les coûts fixes",
+        "Avoir une compréhension complète et approfondie du processus actuel",
+        "Changer radicalement l'ensemble des logiciels utilisés par l'entreprise",
+        "Externaliser le processus à un consultant tiers"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Tenter de réorganiser un processus sans le comprendre parfaitement mène souvent à l'échec. La réingénierie exige une analyse fine de l'existant pour identifier les réels leviers d'amélioration."
+    },
+    {
+      "question": "Dans le cadre de la réingénierie, comment s'articulent le Benchmarking et le Brainstorming ?",
+      "options": [
+        "Le Benchmarking sert à identifier les écarts par rapport aux leaders du secteur",
+        "Le Brainstorming est utilisé pour copier servilement les méthodes des concurrents",
+        "Le Benchmarking permet de cibler les opportunités d'amélioration",
+        "Le Brainstorming est essentiel pour générer des idées et de nouvelles opportunités",
+        "Ces deux méthodes sont mutuellement exclusives dans un projet de R&D"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Le benchmarking fournit une base de comparaison externe (étalonnage) pour voir où l'entreprise se situe, tandis que le brainstorming stimule la créativité interne pour trouver des solutions adaptées aux opportunités identifiées."
+    },
+    {
+      "question": "Pourquoi la réingénierie doit-elle privilégier un 'changement évolutif' plutôt qu'un 'changement radical' ?",
+      "options": [
+        "Le changement radical est techniquement impossible dans l'industrie",
+        "Le changement évolutif stimule le moral et l'imagination des équipes",
+        "Cela permet de maintenir la production en cours tout en s'améliorant graduellement",
+        "Le changement évolutif coûte toujours plus cher à long terme",
+        "L'évolution graduelle favorise l'engagement et la coopération imaginative des employés"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Une approche graduelle (évolutive) évite la rupture brutale qui pourrait paralyser l'entreprise. Elle valorise l'humain en favorisant l'adhésion et l'innovation continue au lieu de générer de la résistance au changement."
+    },
+    {
+      "question": "Dans l'exemple de la mise à jour logicielle, quel était le principal 'goulot d'étranglement' identifié ?",
+      "options": [
+        "Le manque de développeurs qualifiés pour les nouvelles fonctionnalités",
+        "Le temps excessif (80%) passé sur des tests de non-régression manuels",
+        "Le coût élevé des licences du logiciel de CAO",
+        "La lenteur du processus de téléchargement par les utilisateurs finaux",
+        "L'absence de benchmarking avec les leaders comme Google ou Meta"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le blocage venait du caractère répétitif et manuel des tests sur l'ancien code, ce qui consommait la majorité du temps de développement et empêchait des cycles de livraison rapides."
+    },
+    {
+      "question": "Quelle action illustre l'application de la règle du changement évolutif dans le cas de l'automatisation des tests ?",
+      "options": [
+        "Arrêter tout développement pendant 3 mois pour tout automatiser",
+        "Automatiser uniquement les 20% de tests les plus critiques le premier mois",
+        "Remplacer tous les testeurs humains par une intelligence artificielle immédiatement",
+        "Augmenter progressivement le taux d'automatisation au fil du temps",
+        "Continuer les tests manuels à 100% tout en achetant le logiciel sans l'utiliser"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "L'équipe a choisi de ne pas tout changer d'un coup (ce qui serait radical). En commençant par les 20% les plus critiques (Loi de Pareto), ils sécurisent l'essentiel tout en permettant aux testeurs de monter en compétence sur des tâches plus créatives."
+    },
+    {
+      "question": "Comment définit-on la rétro-ingénierie et quels sont ses buts principaux ?",
+      "options": [
+        "C'est la fabrication à l'identique d'un produit sans en comprendre le fonctionnement",
+        "C'est l'analyse d'un système pour identifier ses composants et leurs interrelations",
+        "Elle vise à créer une nouvelle représentation de l'objet à un niveau d'abstraction plus élevé",
+        "Elle sert exclusivement à contourner les brevets de manière illégale",
+        "Elle permet de passer d'un objet physique à un modèle CAO numérique"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "La rétro-ingénierie est une démarche analytique. Elle déconstruit pour comprendre la logique de conception (interrelations) et permet de remonter vers des modèles abstraits (modèles CAO) exploitables pour l'innovation."
+    },
+    {
+      "question": "Concernant la rétro-ingénierie appliquée à la compétitivité, quelle mise en garde est soulignée ?",
+      "options": [
+        "Il faut copier le produit du concurrent le plus rapidement possible",
+        "Il faut éviter de copier directement le produit pour des raisons légales",
+        "L'objectif est de comprendre les choix techniques du concurrent",
+        "La rétro-ingénierie est inutile si l'on possède déjà une équipe R&D performante",
+        "Il faut privilégier l'innovation plutôt que la simple reproduction"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Bien que l'analyse du concurrent soit vitale pour comprendre ses forces et faiblesses, la copie directe est risquée (propriété intellectuelle) et n'apporte pas de réelle valeur ajoutée en termes d'innovation propre."
+    },
+    {
+      "question": "Pour quels types d'acteurs la rétro-ingénierie constitue-t-elle un 'tremplin' stratégique ?",
+      "options": [
+        "Les leaders du marché qui dominent déjà toutes les technologies",
+        "Les entreprises ayant peu d'expérience en développement mais possédant des ressources",
+        "Les entreprises souhaitant lancer un produit sans partir de zéro",
+        "Les gouvernements cherchant à réguler les normes de sécurité",
+        "Les nouveaux entrants cherchant un moyen peu coûteux de concevoir une offre améliorée"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "C'est un accélérateur pour ceux qui n'ont pas l'historique de R&D nécessaire. Elle permet d'apprendre des standards du marché pour proposer rapidement un produit compétitif, voire amélioré, à moindre coût."
+    },
+    {
+      "question": "Dans l'exemple de l'industrie automobile, quelle est la finalité du désassemblage d'un véhicule concurrent ?",
+      "options": [
+        "Revendre les pièces détachées sur le marché de l'occasion",
+        "Identifier des solutions innovantes chez le concurrent",
+        "Détecter les points faibles du concurrent pour améliorer ses propres composants",
+        "Vérifier si le concurrent utilise les mêmes fournisseurs",
+        "Améliorer les composants similaires dans sa propre gamme de véhicules"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "L'examen détaillé (moteur, châssis) sert à faire du 'reverse engineering' fonctionnel : on apprend de ce que les autres font de bien pour l'intégrer, et on évite de reproduire leurs erreurs identifiées lors du démontage."
+    }
+  ],
+  "Session (23-33) (p.23)": [
+    {
+      "question": "Dans le contexte de la production de masse, quel indicateur financier est déterminant pour décider du maintien ou de l'externalisation d'une ligne de production ?",
+      "options": [
+        "Le Chiffre d'Affaires (CA)",
+        "Le Retour sur Investissement (RSI)",
+        "La Marge Brute",
+        "Le Coût de Revient Unitaire",
+        "Le Seuil de Rentabilité"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le Retour sur Investissement (RSI) est la clé du succès mentionnée car il dicte les décisions stratégiques concernant la pérennité ou l'externalisation des infrastructures de production."
+    },
+    {
+      "question": "L'Assurance Qualité (AQ) intervient à quel moment du cycle de vie du produit ?",
+      "options": [
+        "Uniquement lors de la phase de production",
+        "De la conception jusqu'à l'inspection finale",
+        "De la gestion des matières premières à l'assemblage",
+        "Sur l'intégralité du cycle, de la conception à l'entretien",
+        "Seulement lors de l'installation et de la maintenance"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L'AQ couvre l'intégralité du cycle de vie, incluant l'amont (conception, documentation), la production (matières premières, inspection) et l'aval (installation, entretien)."
+    },
+    {
+      "question": "Quelles activités sont spécifiquement rattachées à la phase 'PLAN' (Planifier) du cycle PDCA ?",
+      "options": [
+        "Cartographie client/fournisseur",
+        "Analyse de Pareto",
+        "Formation en cours d'emploi",
+        "Analyse des causes profondes",
+        "Collecte des données"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "La phase 'PLAN' implique la définition d'objectifs, l'analyse des causes (Pareto, arbres de défaillance) et la cartographie des relations clients/fournisseurs avant toute exécution."
+    },
+    {
+      "question": "Parmi les outils suivants, lesquels appartiennent à la phase 'CHECK' (Vérifier) du cycle de Shewhart-Deming ?",
+      "options": [
+        "Cartes de contrôle",
+        "Indicateurs de performance clés (KPI)",
+        "Standardisation des processus",
+        "Analyse graphique",
+        "Résolution de conflits"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "La phase 'CHECK' se concentre sur l'analyse des données recueillies via des cartes de contrôle, des graphiques et l'évaluation des performances par rapport aux KPIs."
+    },
+    {
+      "question": "Quelle est la définition correcte de l'Ingénierie de la Valeur (Value Engineering) ?",
+      "options": [
+        "Réduire les coûts de fabrication au détriment de la qualité",
+        "Optimiser la valeur d'un système en équilibrant performances et coûts",
+        "Augmenter le prix de vente d'un produit en y ajoutant des fonctions décoratives",
+        "Remplacer systématiquement tous les matériaux par des options moins chères",
+        "Une branche du génie civil dédiée à la solidité des structures"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'ingénierie de la valeur vise l'optimisation des performances et des coûts sans sacrifier la qualité, souvent en éliminant des fonctions non utiles."
+    },
+    {
+      "question": "Dans le cadre de l'ingénierie de la valeur, l'utilisation d'un même moteur électrique pour plusieurs modèles d'appareils ménagers illustre quel concept ?",
+      "options": [
+        "La substitution des matériaux",
+        "L'efficacité énergétique",
+        "L'amélioration des procédés",
+        "La modularité",
+        "La standardisation esthétique"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La modularité consiste à concevoir des modules réutilisables dans plusieurs produits pour réduire les coûts de développement et de fabrication."
+    },
+    {
+      "question": "Quelles sont les caractéristiques de l'étape 'Génération d'alternatives' dans le processus d'ingénierie de la valeur ?",
+      "options": [
+        "Identifier les fonctions nécessaires comme 'supporter le poids'",
+        "Rechercher toutes les solutions possibles pour réaliser une fonction",
+        "Comparer le coût du bois par rapport au plastique renforcé",
+        "Choisir la solution qui optimise le coût et la performance",
+        "Proposer différents matériaux pour une assise (métal, composite, etc.)"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "Cette deuxième étape consiste à explorer librement toutes les options matérielles ou techniques capables de remplir les fonctions identifiées lors de la phase d'information."
+    },
+    {
+      "question": "Dans la phase 'ACT' (Agir) du cycle PDCA, quelles actions permettent de pérenniser les améliorations ?",
+      "options": [
+        "Standardiser les processus",
+        "Partager les résultats",
+        "Conception d'expériences",
+        "Formation formelle pour les processus standards",
+        "Surveillance des résultats initiaux"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "La phase 'ACT' sert à ancrer le succès par la standardisation, la formation aux nouveaux standards et le partage d'informations pour clôturer le cycle."
+    },
+    {
+      "question": "Pourquoi l'efficacité énergétique est-elle considérée comme un levier de l'ingénierie de la valeur, même si elle ne réduit pas le coût de production ?",
+      "options": [
+        "Elle réduit obligatoirement le coût des matières premières",
+        "Elle apporte de la valeur ajoutée perçue par le client",
+        "Elle simplifie la chaîne d'assemblage",
+        "Elle peut générer plus de ventes grâce à l'attrait du produit",
+        "Elle élimine le besoin d'inspection qualité"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "L'efficacité énergétique augmente l'attractivité du produit, créant ainsi de la valeur pour l'utilisateur final et stimulant les ventes, même si le coût de fabrication reste identique."
+    },
+    {
+      "question": "Lors de l'évaluation technique (Stage 6), quels outils de fabrication avancés sont mentionnés pour réduire les coûts ou augmenter la fiabilité ?",
+      "options": [
+        "CAO/FAO (CAD/CAM)",
+        "Lean manufacturing",
+        "Ingénierie inverse (Reverse engineering)",
+        "Analyse de Pareto uniquement",
+        "Prototypage rapide"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "L'évaluation de la mise en œuvre technique examine l'usage de techniques variées telles que la CAO/FAO, le Lean, l'ingénierie inverse et le prototypage rapide pour optimiser la production."
+    },
+    {
+      "question": "L'exemple de la suppression d'une barre métallique décorative sur une chaise démontre que :",
+      "options": [
+        "L'esthétique est plus importante que la fonction",
+        "L'analyse des fonctions peut révéler des coûts inutiles",
+        "Réduire les coûts impacte toujours la solidité",
+        "Une économie de 15% peut être réalisée sans perte de fonction utile",
+        "Le métal doit toujours être remplacé par du plastique"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "L'ingénierie de la valeur permet d'identifier des composants qui n'ajoutent aucune fonction utile (comme une décoration coûteuse) et de les supprimer pour réduire les coûts sans dégrader la qualité structurelle."
+    },
+    {
+      "question": "Quels éléments font partie des compétences de leadership sollicitées spécifiquement durant la phase 'DO' (Faire) ?",
+      "options": [
+        "Gestion de petits groupes",
+        "Élaboration d'un plan d'action",
+        "Résolution de conflits",
+        "Analyse des lacunes",
+        "Formation sur le tas (On-Job training)"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "La phase d'exécution (DO) nécessite des compétences humaines et opérationnelles pour diriger les équipes, résoudre les problèmes immédiats et former le personnel en situation réelle."
+    },
+    {
+      "question": "Quelle étape de l'ingénierie de la valeur correspond à l'évaluation détaillée du coût, de la performance et de la faisabilité des options ?",
+      "options": [
+        "Phase d'information",
+        "Génération d'alternatives",
+        "Analyse",
+        "Décision",
+        "Externalisation"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'étape d'Analyse est celle où l'on compare rigoureusement les différentes alternatives générées précédemment en fonction de critères comme le coût, la qualité et la faisabilité."
+    },
+    {
+      "question": "La production de masse vise principalement à :",
+      "options": [
+        "Maximiser les efforts non productifs pour garantir la qualité",
+        "Minimiser les coûts via la fabrication de produits uniques",
+        "Maximiser la production via des chaînes standardisées",
+        "Minimiser les coûts et les efforts non productifs",
+        "Éviter toute forme de standardisation"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "Le but de la production de masse est de produire en grandes séries des produits standardisés pour maximiser le volume tout en minimisant les coûts et les gaspillages (efforts non productifs)."
+    },
+    {
+      "question": "Dans le cycle PDCA, à quoi sert l'utilisation d'un 'Arbre de défaillance' ?",
+      "options": [
+        "À vérifier si le plan a été bien exécuté",
+        "À analyser les causes profondes lors de la planification",
+        "À standardiser le succès final",
+        "À collecter les données sur la ligne de production",
+        "À former les opérateurs aux nouveaux standards"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "L'arbre de défaillance (fault tree) est un outil d'analyse utilisé dans la phase 'PLAN' pour comprendre les causes potentielles des problèmes avant d'agir."
+    }
+  ],
+  "Session (34-44) (p.34)": [
+    {
+      "question": "Quelles sont les caractéristiques distinctives de la Phase 7 dans le cycle de développement de nouveaux produits (NPD) ?",
+      "options": [
+        "Elle constitue l'étape initiale de recherche et développement.",
+        "Elle représente l'étape finale du processus de développement.",
+        "Elle se concentre exclusivement sur la création de prototypes.",
+        "Elle englobe à la fois le lancement et le maintien du produit sur le marché.",
+        "Elle fait abstraction des outils de marketing pour se focaliser sur la logistique."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "La Phase 7 est l'aboutissement du processus NPD. Son rôle n'est pas seulement de lancer le produit, mais aussi d'assurer son maintien opérationnel sur le marché via des stratégies dédiées."
+    },
+    {
+      "question": "Quel est l'objectif primordial de la phase de commercialisation ?",
+      "options": [
+        "Finaliser les tests techniques du produit.",
+        "Réduire les coûts de fabrication à grande échelle.",
+        "Garantir une entrée réussie sur le marché.",
+        "Identifier de nouvelles idées de concepts.",
+        "Recruter l'ensemble du personnel de l'entreprise."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L'objectif principal est d'assurer une introduction efficace et réussie du produit sur le marché, marquant la transition entre le développement interne et la disponibilité commerciale."
+    },
+    {
+      "question": "Quels éléments sont indispensables pour lier la stratégie de l'entreprise à la planification marketing lors de cette phase ?",
+      "options": [
+        "L'analyse de l'environnement.",
+        "La segmentation du marché.",
+        "Le positionnement du produit.",
+        "L'audit des brevets technologiques.",
+        "La conception graphique du logo uniquement."
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Pour que le marketing soit cohérent avec la stratégie globale, il faut passer par une analyse contextuelle (environnement), définir à qui l'on s'adresse (segmentation) et comment le produit est perçu par rapport à la concurrence (positionnement)."
+    },
+    {
+      "question": "Quelles composantes forment le « marketing mix » mentionné pour la mise en œuvre du programme ?",
+      "options": [
+        "Le produit et le prix.",
+        "La promotion et la distribution.",
+        "Le personnel et les processus.",
+        "La planification et la performance.",
+        "La production et le partenariat."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "Le marketing mix, tel que défini dans ce contexte, repose sur les quatre piliers classiques : le produit, le prix, la promotion et la distribution."
+    },
+    {
+      "question": "Outre la planification marketing, quelles décisions opérationnelles et financières doivent être prises ?",
+      "options": [
+        "La sélection des fournisseurs de matières premières.",
+        "La détermination de l'équipe de vente.",
+        "Le choix des méthodes de design industriel.",
+        "La budgétisation du programme.",
+        "L'établissement des protocoles de sécurité en usine."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "La commercialisation nécessite une structure humaine (l'équipe de vente) et une structure financière (le budget) pour soutenir le déploiement des stratégies marketing."
+    },
+    {
+      "question": "Sur quoi repose l'ensemble des outils et stratégies utilisés lors de la Phase 7 ?",
+      "options": [
+        "Un ensemble complet d'outils marketing.",
+        "Uniquement sur des outils de publicité digitale.",
+        "Sur des méthodes de production 'Lean'.",
+        "Sur des stratégies de planification marketing intégrées.",
+        "Sur des techniques d'ingénierie inverse."
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "La phase finale mobilise un arsenal complet d'outils marketing et de planification stratégique pour transformer un produit fini en succès commercial."
+    },
+    {
+      "question": "Quel rôle joue la segmentation du marché dans le processus de commercialisation ?",
+      "options": [
+        "Elle permet de diviser le budget de manière égale entre tous les produits.",
+        "Elle sert à identifier des groupes spécifiques au sein du marché pour cibler les efforts.",
+        "Elle remplace la nécessité d'un positionnement produit.",
+        "Elle intervient après la distribution pour analyser les ventes.",
+        "Elle aide à définir les caractéristiques techniques du prototype."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La segmentation est une étape clé de la planification marketing qui permet de cibler précisément les segments de clientèle les plus pertinents pour le nouveau produit."
+    },
+    {
+      "question": "Parmi les propositions suivantes, lesquelles sont explicitement incluses dans la formation du marketing mix selon le document ?",
+      "options": [
+        "Distribution",
+        "Promotion",
+        "Profit",
+        "Prix",
+        "Produit"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "Le document liste explicitement les 4P traditionnels : produit, prix, promotion et distribution comme les éléments fondamentaux du marketing mix à former."
+    },
+    {
+      "question": "Pourquoi la budgétisation est-elle mentionnée dans cette phase finale ?",
+      "options": [
+        "Pour financer la recherche fondamentale.",
+        "Pour allouer les ressources nécessaires au programme de lancement et de maintien.",
+        "Pour calculer les dividendes des actionnaires.",
+        "Pour déterminer le prix de vente final uniquement.",
+        "Parce qu'elle fait partie intégrante de la planification du programme de commercialisation."
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "La budgétisation assure que le programme de commercialisation dispose des fonds nécessaires pour exécuter les stratégies de promotion, de vente et de distribution prévues."
+    },
+    {
+      "question": "Quelle affirmation décrit le mieux la relation entre la stratégie d'entreprise et la planification marketing en Phase 7 ?",
+      "options": [
+        "La planification marketing est indépendante de la stratégie de l'entreprise.",
+        "Il est crucial de lier la stratégie de l'entreprise à la planification marketing.",
+        "La stratégie d'entreprise ne s'applique qu'au début du processus NPD.",
+        "La planification marketing dicte la stratégie globale de l'entreprise.",
+        "Le lien entre les deux est facultatif si le produit est innovant."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La cohérence stratégique est fondamentale : les actions marketing doivent être l'expression opérationnelle des orientations stratégiques de l'entreprise pour garantir le succès du lancement."
+    }
+  ]
+}

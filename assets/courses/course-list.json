@@ -109,6 +109,36 @@
       "id": 21,
       "filename": "exams-kaaniche-nour.json",
       "name": "2023 MBK"
+    },
+    {
+      "id": 27,
+      "filename": "cours_plm-p1.json",
+      "name": "Cours PLM-P1"
+    },
+    {
+      "id": 26,
+      "filename": "cours_plm-p2-_selection_des_idées.json",
+      "name": "Cours PLM-P2- Selection des idées"
+    },
+    {
+      "id": 25,
+      "filename": "cours_plm-p3-developpement_et_test.json",
+      "name": "Cours PLM-P3-Developpement et Test"
+    },
+    {
+      "id": 24,
+      "filename": "cours_plm-p4_analyse_de_l'affaire.json",
+      "name": "Cours PLM-P4 Analyse de l'affaire"
+    },
+    {
+      "id": 23,
+      "filename": "cours_plm-p5-_test_beta.json",
+      "name": "Cours PLM-P5- Test Beta"
+    },
+    {
+      "id": 22,
+      "filename": "plm-etape6.json",
+      "name": "PLM-Etape6"
     }
   ]
 }

@@ -1,0 +1,239 @@
+{
+  "Session 4 (p.1)": [
+    {
+      "question": "Quels sont les éléments spécifiques examinés lors de l'Analyse de l'Affaire pour déterminer la viabilité d'un projet ?",
+      "options": [
+        "La structure juridique et l'actionnariat de l'entreprise.",
+        "Le flux de trésorerie potentiel généré par le produit.",
+        "La part de marché que le produit pourrait atteindre.",
+        "Le développement de l'idée originale du produit.",
+        "La situation commerciale globale entourant le projet."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "L'étape 4 se concentre sur une évaluation approfondie de la rentabilité et de la faisabilité commerciale, incluant spécifiquement les flux de trésorerie, les coûts, la part de marché, la durée de vie du produit et le contexte commercial."
+    },
+    {
+      "question": "Dans le cadre de l'Analyse Coûts-Avantages (ACA), quels éléments constituent la structure fondamentale d'un Plan d'Affaires ?",
+      "options": [
+        "Le plan marketing et le plan de production.",
+        "L'analyse du chemin critique (CPA).",
+        "Le résumé exécutif et la présentation de l'entreprise.",
+        "Le diagramme de Gantt détaillé.",
+        "Le plan organisationnel."
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "L'ACA est intrinsèquement liée à la création du Plan d'Affaires, qui doit obligatoirement comprendre le résumé exécutif, la description de l'entreprise, ainsi que les plans marketing, organisationnel et de production."
+    },
+    {
+      "question": "Quels sont les objectifs principaux du découpage d'un projet dans la gestion de projet complexe ?",
+      "options": [
+        "Augmenter immédiatement les profits de l'entreprise.",
+        "Faciliter la compréhension en divisant un ensemble complexe en sous-ensembles plus simples.",
+        "Classer et hiérarchiser les éléments du projet.",
+        "Éliminer totalement les risques liés aux parties prenantes.",
+        "Permettre un suivi efficace lors de l'exécution grâce aux structures établies."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Le découpage vise à simplifier la manipulation d'un projet complexe, à organiser les tâches de manière hiérarchique et à fournir un cadre structuré pour le suivi opérationnel."
+    },
+    {
+      "question": "Parmi les critères suivants, lesquels peuvent être utilisés pour effectuer le découpage d'un projet ?",
+      "options": [
+        "Les responsabilités industrielles (sous-traitants, services).",
+        "Les spécialités techniques (mécanique, logiciel).",
+        "Le flux de trésorerie actualisé.",
+        "La documentation (spécifications, procédures).",
+        "Les types de tâches (étude, réalisation)."
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "Le découpage peut s'appuyer sur des critères physiques, de responsabilité, de types de tâches, de spécialités techniques, de ressources, de maintenance ou de documentation. Le flux de trésorerie est un indicateur de performance, pas un critère de découpage structurel."
+    },
+    {
+      "question": "Quelle est la distinction majeure entre le CPA (Critical Path Analysis) et le diagramme de Gantt ?",
+      "options": [
+        "Le CPA ne permet pas de planifier des projets complexes.",
+        "Le CPA peut identifier précisément la raison du retard d'une tâche.",
+        "Le CPA facilite la réallocation des ressources pour rattraper un retard.",
+        "Le diagramme de Gantt est le seul outil permettant de connaître le temps minimum requis.",
+        "Le CPA est spécifiquement utile pour les projets dont le calendrier doit être accéléré."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Bien que similaires, le CPA offre une analyse plus dynamique en identifiant les causes des retards, en permettant une réallocation stratégique des ressources et en déterminant le temps minimum nécessaire pour l'achèvement, ce qui est crucial pour les projets accélérés."
+    },
+    {
+      "question": "Selon la méthodologie PERT, comment calcule-t-on le temps à utiliser pour une tâche donnée ?",
+      "options": [
+        "(Temps court + Temps probable + Temps long) / 3",
+        "(Temps court + 4 * Temps probable + Temps long) / 6",
+        "(2 * Temps court + 2 * Temps probable + 2 * Temps long) / 6",
+        "La moyenne arithmétique simple des trois estimations.",
+        "Le temps le plus long est toujours privilégié par sécurité."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La formule PERT utilise une moyenne pondérée qui accorde une importance quatre fois supérieure à la durée la plus probable, divisée par six, pour obtenir une estimation statistique plus fiable."
+    },
+    {
+      "question": "Dans l'analyse des parties prenantes, quelles entités sont classées comme 'Business Externe' ?",
+      "options": [
+        "Les actionnaires et les prêteurs.",
+        "L'équipe de projet et les collègues.",
+        "Les fournisseurs et les partenaires commerciaux.",
+        "La presse et les associations professionnelles.",
+        "Les analystes et les futures recrues."
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Le 'Business Externe' comprend les acteurs directement liés aux transactions ou au financement de l'entreprise mais ne faisant pas partie de son effectif interne, tels que les actionnaires, partenaires, fournisseurs, prêteurs, analystes et recrues potentielles."
+    },
+    {
+      "question": "Selon la matrice Pouvoir/Intérêt, quelle stratégie doit être adoptée pour une partie prenante ayant un 'Pouvoir élevé' mais un 'Intérêt faible' ?",
+      "options": [
+        "Collaborer activement avec elle.",
+        "La surveiller périodiquement.",
+        "La satisfaire en négociant des arrangements mutuels.",
+        "Communiquer régulièrement via une stratégie dédiée.",
+        "Gérer les risques potentiels qui lui sont associés."
+      ],
+      "answer": [
+        2,
+        4
+      ],
+      "explanation": "Les parties prenantes à pouvoir élevé et intérêt faible doivent être maintenues satisfaites par la négociation et la satisfaction de leurs exigences afin d'éviter qu'elles n'utilisent leur pouvoir de manière négative."
+    },
+    {
+      "question": "Quelle est la caractéristique principale de la phase de 'Maturité' dans le Cycle de Vie du Produit (CVP) ?",
+      "options": [
+        "C'est la phase où les ventes commencent à peine à décoller.",
+        "Les ventes atteignent leur point culminant avant de stagner ou de décliner.",
+        "L'objectif principal est de minimiser les pertes avant le retrait.",
+        "C'est généralement la phase où la gestion est la plus critique pour maximiser les profits.",
+        "Elle suit immédiatement la phase de lancement."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "La maturité représente le sommet de la courbe des ventes. C'est une période stable où l'entreprise cherche à maximiser les profits accumulés avant l'arrivée inévitable de la phase de déclin."
+    },
+    {
+      "question": "Lors de la planification de la communication avec les parties prenantes, quels éléments doivent figurer dans le tableau de bord stratégique ?",
+      "options": [
+        "Le statut actuel et le soutien souhaité.",
+        "Le rôle souhaité dans le projet.",
+        "Le diagramme PERT mis à jour.",
+        "Les messages nécessaires et les actions de communication.",
+        "Les intérêts et enjeux clés."
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "Un plan de communication complet doit détailler l'identité des parties prenantes, leur pouvoir/intérêt, leurs enjeux, leur statut actuel, le niveau de soutien et le rôle visés, ainsi que les messages et actions spécifiques à entreprendre."
+    },
+    {
+      "question": "Que signifie l'acronyme WBS dans le contexte du découpage de projet ?",
+      "options": [
+        "Work Breakdown Structure (Organigramme des tâches).",
+        "Weekly Business Summary.",
+        "Workforce Binary System.",
+        "Waste Breakdown System.",
+        "Wealth Building Strategy."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le WBS (Work Breakdown Structure) est l'outil fondamental pour décomposer hiérarchiquement l'ensemble des travaux à réaliser pour atteindre les objectifs du projet."
+    },
+    {
+      "question": "Dans la matrice Pouvoir/Intérêt, que signifie la stratégie 'Collaborer' ?",
+      "options": [
+        "Appliquer un besoin de surveillance périodique uniquement.",
+        "Utiliser des stratégies de partenariat pour les clients ou demandeurs.",
+        "Mettre en œuvre du team-building pour l'équipe de projet.",
+        "Ignorer les parties prenantes à faible pouvoir.",
+        "Résoudre les conflits avec les syndicats ou groupes de pression."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "La collaboration s'adresse aux parties prenantes ayant à la fois un pouvoir et un intérêt élevés. Elle nécessite des stratégies actives comme le partenariat, le renforcement d'équipe et la résolution proactive de conflits."
+    },
+    {
+      "question": "Pourquoi la gestion du cycle de vie du produit (CVP) est-elle jugée très importante pour une entreprise ?",
+      "options": [
+        "Parce que les produits ont une durée de vie infinie si bien gérés.",
+        "Parce que les ventes subissent des changements importants durant cette période.",
+        "Pour garantir l'augmentation des profits, qui est l'objectif principal.",
+        "Pour éviter d'avoir à faire une analyse des parties prenantes.",
+        "Parce qu'elle permet de déterminer le moment exact du retrait final."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Le CVP est crucial car il permet d'anticiper les fluctuations de ventes et d'ajuster les stratégies pour maximiser les profits sur toute la durée de vie du produit, de son lancement à son retrait."
+    },
+    {
+      "question": "Quelles sont les estimations temporelles nécessaires pour utiliser l'outil PERT ?",
+      "options": [
+        "Le temps moyen historique des projets similaires.",
+        "Le temps le plus court possible (optimiste).",
+        "La durée la plus probable.",
+        "La durée la plus longue possible (pessimiste).",
+        "Le temps imposé par le client uniquement."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le PERT repose sur trois estimations : optimiste (le plus court), probable (réaliste) et pessimiste (le plus long) afin de calculer une durée attendue statistiquement."
+    },
+    {
+      "question": "Quel est le but premier de l'Analyse Coûts-Avantages (ACA) à l'étape 4 ?",
+      "options": [
+        "Recruter de nouveaux ingénieurs pour la production.",
+        "Déterminer s'il est financièrement possible de transformer le concept en produit physique.",
+        "Concevoir le design visuel du nouveau produit.",
+        "Vérifier si les ressources financières sont suffisantes pour soutenir le projet.",
+        "Choisir l'idée de produit la plus créative parmi plusieurs options."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "L'ACA intervient après le choix de l'idée pour valider la faisabilité financière et s'assurer que l'entreprise dispose des ressources nécessaires pour passer du concept au développement physique."
+    }
+  ]
+}

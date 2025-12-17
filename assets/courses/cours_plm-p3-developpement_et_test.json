@@ -1,0 +1,469 @@
+{
+  "Session 3 (p.1)": [
+    {
+      "question": "Dans le cadre de l'Étape 3 du développement de produit, quelles sont les affirmations exactes concernant la distinction entre les deux phases du processus ?",
+      "options": [
+        "Le développement du concept vise principalement à mesurer l'intention d'achat des clients.",
+        "La phase de test du concept utilise des outils comme le Déploiement de la Fonction Qualité (QFD).",
+        "Le développement du concept a pour but de réduire le nombre d'options et d'affiner l'idée initiale.",
+        "L'analyse par arbre de décision est un outil exclusif à la phase de sélection.",
+        "La recherche quantitative est une méthode clé pour la validation du concept."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Le processus se divise en deux phases : la Sélection (Développement) qui réduit les options via des outils comme la convergence contrôlée, et la Validation (Test) qui mesure la réponse client via le QFD, la recherche quantitative ou le modèle KANO."
+    },
+    {
+      "question": "Lors de l'utilisation de la méthode de la Matrice d'Évaluation (Pugh Matrix), comment le 'Score Net' est-il déterminé ?",
+      "options": [
+        "En faisant la somme pondérée de tous les critères multipliée par l'indice DATUM.",
+        "En soustrayant le nombre total de signes '-' du nombre total de signes '+' pour chaque concept.",
+        "En additionnant tous les symboles 'S' et en les divisant par le nombre de critères.",
+        "En calculant la moyenne arithmétique des performances par rapport à la référence.",
+        "Il s'agit de l'équation : Σ+ - Σ-."
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "Le Score Net dans une convergence contrôlée est calculé en soustrayant les points négatifs (Pire/Plus Difficile) des points positifs (Meilleur/Plus Facile) par rapport au concept de référence nommé DATUM."
+    },
+    {
+      "question": "Quelles actions sont recommandées à l'étape 4 et 5 du processus de Convergence Contrôlée ?",
+      "options": [
+        "Abandonner immédiatement tous les concepts ayant un score net négatif.",
+        "Fusionner les points forts de plusieurs concepts pour créer une option améliorée.",
+        "Répéter le cycle de sélection en utilisant le concept le plus performant comme nouveau DATUM.",
+        "Éliminer les critères de sélection internes pour ne garder que les besoins clients.",
+        "Obtenir l'accord de l'équipe sur l'issue après avoir examiné les résultats."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "L'étape 4 consiste à combiner et améliorer les concepts. L'étape 5 est itérative : on utilise le meilleur concept comme nouvelle référence. L'étape 6 conclut par un consensus d'équipe sur les résultats."
+    },
+    {
+      "question": "Concernant la gestion des risques dans le développement de nouveaux produits, que représente la variable 'Le' dans la formule Le = Pe * Pi * Lt ?",
+      "options": [
+        "La limite d'exposition financière maximale autorisée pour le projet.",
+        "La probabilité cumulée d'échec technique du produit.",
+        "La perte moyenne prévisible, également appelée perte attendue.",
+        "Le ratio entre l'investissement initial et la perte totale potentielle.",
+        "L'indicateur 'Expected Loss' utilisé pour prioriser les risques."
+      ],
+      "answer": [
+        2,
+        4
+      ],
+      "explanation": "Le est la perte attendue (Expected Loss). Elle est calculée en multipliant la probabilité d'occurrence (Pe), la probabilité d'un impact significatif (Pi) et la perte totale monétaire (Lt)."
+    },
+    {
+      "question": "Selon l'échelle de description de l'impact des risques, un impact de niveau 4 ('Important') se caractérise par :",
+      "options": [
+        "Une annulation pure et simple du financement du projet.",
+        "Des retards de financement susceptibles d'influencer plus d'une composante.",
+        "L'exigence d'une intervention urgente de tierces parties.",
+        "Un impact limité à une seule composante avec un coût modique.",
+        "La nécessité de mesures correctives coûteuses."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Le niveau 4 (Important) implique des retards touchant plusieurs composantes, nécessite des tiers et engendre des coûts élevés, tandis que le niveau 5 (Majeur) peut mener à l'annulation du financement."
+    },
+    {
+      "question": "Dans une Analyse du Champ de Force, quelles conditions doivent être remplies pour qu'un projet puisse avancer plus facilement ?",
+      "options": [
+        "Le poids total des forces de retenue doit être strictement supérieur à celui des forces motrices.",
+        "Les forces motrices et de retenue doivent s'équilibrer parfaitement à un score de 3.",
+        "Le score attribué à chaque force doit obligatoirement être compris entre 1 et 10.",
+        "Le total des forces motrices doit être supérieur au total des forces de retenue.",
+        "L'analyse doit permettre de clarifier les obstacles et de construire un consensus."
+      ],
+      "answer": [
+        3,
+        4
+      ],
+      "explanation": "Le changement est facilité si les forces motrices l'emportent sur les forces de retenue (obstacles). Les poids sont attribués sur une échelle de 1 à 5."
+    },
+    {
+      "question": "Quelles sont les caractéristiques spécifiques de l'étape 5 ('Surveiller les risques') dans le processus de gestion des risques ?",
+      "options": [
+        "Elle ne concerne que les risques identifiés comme 'Majeurs' (niveau 5).",
+        "Elle sert à évaluer si un plan d'action spécifique a réussi à prévenir un risque.",
+        "Un plan d'action qui a réussi doit être maintenu indéfiniment par précaution.",
+        "Si un plan d'action échoue, un nouveau plan doit être mis en œuvre.",
+        "Si un plan d'action réussit, il doit être retiré."
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "La surveillance permet de valider l'efficacité des solutions. Un plan réussi est retiré pour ne pas surcharger les processus, tandis qu'un échec nécessite une nouvelle stratégie."
+    },
+    {
+      "question": "Sur la matrice d'indice et de magnitude du risque, une situation avec une Gravité de 5 et une Probabilité de 3 est classée comme :",
+      "options": [
+        "Faible",
+        "Moyen",
+        "Élevé",
+        "Très élevé",
+        "Modéré"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "En croisant une gravité de 5 (axe horizontal) et une probabilité de 3 (axe vertical) sur la matrice fournie, on tombe dans la zone rouge marquée 'Elevé'."
+    },
+    {
+      "question": "Quels outils sont spécifiquement listés pour la phase de 'Test du Concept (Validation)' ?",
+      "options": [
+        "Analyse du Champ de Forces",
+        "Modèle KANO",
+        "Pondération et Notation",
+        "Gestion des Risques",
+        "Analyse par Arbre de Décision"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "La phase de validation inclut la recherche quantitative, le QFD, l'arbre de décision, le modèle KANO et la pondération/notation. L'analyse du champ de forces et la gestion des risques appartiennent à la phase de sélection."
+    },
+    {
+      "question": "À l'étape 4 de la gestion des risques ('Plans d'action spécifiques'), quelle est la priorité définie pour l'élaboration des solutions ?",
+      "options": [
+        "Traiter tous les risques simultanément pour garantir une sécurité totale.",
+        "S'attaquer d'abord aux problèmes futurs les plus graves.",
+        "Privilégier les actions correctives a posteriori plutôt que préventives.",
+        "Se concentrer sur les risques ayant un coût financier nul (Négligeable).",
+        "Mettre en œuvre des actions préventives s'attaquant aux problèmes avant qu'ils ne surviennent."
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "explanation": "La stratégie consiste à prioriser les risques graves et à agir de manière préventive pour neutraliser les problèmes potentiels avant leur apparition."
+    }
+  ],
+  "Session 8 (p.8)": [
+    {
+      "question": "Dans le cadre de l'analyse du champ de forces pour la modernisation de l'usine, quelles forces motrices (Driving Forces) sont identifiées avec un poids supérieur ou égal à 3 ?",
+      "options": [
+        "Maîtriser l’augmentation des coûts de maintenance",
+        "Augmenter le volume de production",
+        "Améliorer la rapidité de production",
+        "Les clients veulent de nouveaux produits"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Le volume de production a un poids de 3 et la demande des clients pour de nouveaux produits a un poids de 4. La rapidité de production (2) et les coûts de maintenance (1) ont des poids inférieurs."
+    },
+    {
+      "question": "Pourquoi l'approche « Critiquer, pas Créer » est-elle préconisée lors de la commercialisation de technologies de rupture ?",
+      "options": [
+        "Parce que les clients ont une expertise technique trop limitée pour aider.",
+        "Parce que les consommateurs ne peuvent pas imaginer l'inconnu ou des produits jamais vus.",
+        "Pour éviter que l'équipe de conception ne soit biaisée par son propre enthousiasme.",
+        "Pour réduire les coûts liés au développement de prototypes complexes.",
+        "Parce que le rôle du client doit se limiter à l'évaluation de la fonctionnalité et des applications commerciales."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "L'innovation de rupture rend la création par le client difficile car il manque de points de comparaison. L'équipe utilise le client comme critique pour affiner le concept sans biais, en se concentrant sur l'utilité réelle plutôt que sur la nouveauté technologique pure."
+    },
+    {
+      "question": "Quels sont les critères statistiques nécessaires pour qu'une recherche quantitative soit considérée comme précise et généralisable selon les standards présentés ?",
+      "options": [
+        "Un échantillon d'au moins 50 personnes pour une précision de 90%.",
+        "Un échantillon de 100 personnes pour une précision de 95%.",
+        "Un échantillon de plus de 400 personnes pour une précision accrue.",
+        "Un échantillon sélectionné de manière aléatoire.",
+        "L'utilisation exclusive d'entretiens personnels qualitatifs."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "La validité statistique repose sur la taille de l'échantillon (100 pour 95% de confiance, 400+ pour plus de précision) et sur le caractère aléatoire de la sélection pour représenter fidèlement la population cible."
+    },
+    {
+      "question": "Dans la méthodologie du Déploiement de la Fonction Qualité (QFD), que représente la « Maison de la Qualité » ?",
+      "options": [
+        "Un organigramme de l'équipe interfonctionnelle.",
+        "Un outil structuré utilisant des matrices pour traduire la « Voix du Client » en exigences techniques.",
+        "Un plan de fabrication pour les pièces critiques du produit.",
+        "Un test de concept basé uniquement sur des méthodes qualitatives.",
+        "Un système de gestion des coûts de production."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La Maison de la Qualité est le cœur du QFD ; elle permet de faire le pont entre les besoins exprimés par les clients et les spécifications techniques mesurables nécessaires à la fabrication."
+    },
+    {
+      "question": "Identifiez l'ordre correct des 4 étapes de la matrice QFD lors du passage du « Quoi » au « Comment » :",
+      "options": [
+        "Spécifications produit -> Exigences client -> Processus critiques -> Spécifications conception",
+        "Exigences client -> Spécifications produit -> Spécifications de conception -> Processus critiques",
+        "Exigences client -> Processus critiques -> Spécifications de conception -> Spécifications produit",
+        "Spécifications de conception -> Spécifications produit -> Exigences client -> Processus critiques"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le flux logique commence par les besoins clients (Quoi), définit les caractéristiques techniques (Comment), identifie les modules critiques pour ces caractéristiques, et se termine par les contrôles de fabrication associés."
+    },
+    {
+      "question": "Dans l'exemple du développement d'une brosse à dents, quelle solution technique a été associée au besoin client « Nettoyage efficace » ?",
+      "options": [
+        "Forme ergonomique du manche",
+        "Matériau durable et antibactérien",
+        "Densité et angle des poils",
+        "Type de poils (souples, moyens, durs)",
+        "Utilisation de fibres résistantes et flexibles"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans la matrice QFD de cet exemple, l'efficacité du nettoyage est directement liée à la configuration technique des poils (densité et angle), tandis que l'ergonomie concerne la prise en main."
+    },
+    {
+      "question": "Concernant l'Analyse par Arbre de Décision, quelles affirmations sont correctes à propos des symboles utilisés ?",
+      "options": [
+        "Le carré (☐) représente un point où l'équipe doit faire un choix.",
+        "Le cercle (◯) représente un événement dont l'issue dépend du hasard ou de probabilités.",
+        "Le carré (☐) est utilisé pour calculer la somme des probabilités.",
+        "Le cercle (◯) représente le bénéfice net final après soustraction des coûts.",
+        "Le cercle (◯) est appelé 'Nœud de Résultat Incertain'."
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "L'arbre utilise des carrés pour les décisions contrôlées par l'entreprise et des cercles pour les incertitudes du marché. La somme des probabilités (P=1) s'applique aux branches partant des cercles."
+    },
+    {
+      "question": "Comment calcule-t-on la valeur d'un Nœud de Décision (☐) dans une évaluation par arbre de décision ?",
+      "options": [
+        "En multipliant la valeur monétaire par la probabilité de succès.",
+        "En additionnant toutes les valeurs des branches incertaines.",
+        "En soustrayant le coût de l'option de la valeur calculée au Nœud Incertain (◯).",
+        "En divisant la valeur totale par le nombre d'options disponibles.",
+        "En choisissant simplement la branche avec la probabilité la plus élevée."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La valeur d'une décision est le gain espéré (valeur du nœud incertain) moins l'investissement nécessaire (coût de l'option) pour atteindre ce résultat."
+    },
+    {
+      "question": "Quels types de données sont spécifiquement collectés dans la section « Évaluation du concept » d'un questionnaire de recherche quantitative ?",
+      "options": [
+        "Le revenu et la localité du répondant.",
+        "Le classement des produits concurrents.",
+        "L'intention d'achat du nouveau concept.",
+        "La fréquence d'achat actuelle.",
+        "L'évaluation des caractéristiques spécifiques du produit."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "L'évaluation du concept se concentre sur la réaction du client face à l'idée nouvelle : comment il la compare à l'existant, ce qu'il pense des attributs et s'il est prêt à l'acheter."
+    },
+    {
+      "question": "Dans l'analyse du champ de forces, quels éléments constituent des forces restrictives (Restraining Forces) pour le projet de modernisation ?",
+      "options": [
+        "Impact environnemental de la nouvelle technologie",
+        "Skepticism re. management initiatives",
+        "Existing workload pressures",
+        "Améliorer la rapidité de production",
+        "Perturbation"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Les forces restrictives sont les obstacles ou résistances au changement. L'amélioration de la rapidité est une force motrice (positive). Les autres points mentionnent des freins organisationnels, techniques ou humains."
+    }
+  ],
+  "Session (15-21) (p.15)": [
+    {
+      "question": "Lors de l'évaluation d'un arbre de décision, comment calcule-t-on précisément la valeur d'un nœud représentant des résultats incertains ?",
+      "options": [
+        "En soustrayant le coût de chaque option de la valeur totale estimée.",
+        "En additionnant simplement les valeurs monétaires de tous les résultats possibles.",
+        "En multipliant la valeur de chaque issue par sa probabilité respective, puis en sommant ces produits.",
+        "En choisissant le résultat ayant la probabilité la plus élevée et en ignorant les autres.",
+        "En calculant la moyenne arithmétique simple de tous les scores monétaires attribués."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La valeur d'un nœud d'incertitude (souvent représenté par un cercle) est la valeur attendue (EMV). Elle s'obtient par la somme pondérée des résultats par leurs probabilités de réalisation."
+    },
+    {
+      "question": "Concernant le calcul de la valeur au niveau des nœuds de décision (carrés), quelles affirmations sont correctes ?",
+      "options": [
+        "Le coût de chaque option doit être soustrait de la valeur calculée du résultat pour obtenir le bénéfice net.",
+        "On doit systématiquement choisir l'option dont le coût de développement est le plus bas.",
+        "La valeur attribuée au nœud de décision correspond au bénéfice le plus élevé parmi les options disponibles.",
+        "Le bénéfice net est calculé avant de prendre en compte les probabilités des issues.",
+        "Une fois le bénéfice calculé, l'option retenue devient la valeur de référence pour le nœud de décision."
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Pour un nœud de décision, on évalue le bénéfice net de chaque branche (Valeur - Coût). L'option offrant le bénéfice le plus élevé est choisie, et cette valeur maximale est alors attribuée au nœud de décision."
+    },
+    {
+      "question": "Dans le modèle KANO, quelles sont les caractéristiques fondamentales des attributs dits 'De Base' (Must-be) ?",
+      "options": [
+        "Leur présence augmente linéairement la satisfaction du client.",
+        "Leur absence provoque une insatisfaction majeure chez le client.",
+        "S'ils sont présents, le client ne ressent pas de satisfaction supplémentaire (état neutre).",
+        "Ils sont considérés comme des bonus inattendus par le consommateur.",
+        "Ils correspondent à des fonctions que le client considère comme allant de soi."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Les attributs 'Must-be' sont les prérequis minimaux. Leur absence est rédhibitoire, mais leur présence est simplement attendue et ne génère donc qu'un sentiment de neutralité."
+    },
+    {
+      "question": "Comment se comportent les attributs 'Attrayants' (Exciter/Latent) selon la méthodologie KANO ?",
+      "options": [
+        "Leur absence n'entraîne aucune insatisfaction car ils sont inattendus.",
+        "Leur présence enchante le client et crée un effet de surprise positif.",
+        "Il existe une relation strictement linéaire entre leur performance et la satisfaction.",
+        "Le client les mentionne systématiquement lors des entretiens préliminaires.",
+        "Ils représentent un levier puissant pour se différencier de la concurrence."
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Les attributs attrayants sont des facteurs de différenciation. Comme le client ne s'y attend pas, il ne se plaint pas s'ils manquent, mais il est 'enchanté' s'ils sont inclus."
+    },
+    {
+      "question": "La méthodologie du questionnaire KANO repose sur deux formes de questions. Lesquelles ?",
+      "options": [
+        "La forme quantitative (combien ?) et qualitative (pourquoi ?).",
+        "La forme fonctionnelle (si le produit a cette caractéristique).",
+        "La forme monétaire (quel prix paieriez-vous ?).",
+        "La forme dysfonctionnelle (si le produit n'a pas cette caractéristique).",
+        "La forme comparative (par rapport à la concurrence)."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Le modèle KANO utilise une paire de questions pour chaque caractéristique : une question sur le ressenti en présence de l'attribut (fonctionnelle) et une autre en son absence (dysfonctionnelle)."
+    },
+    {
+      "question": "Dans la matrice d'évaluation KANO, que signifient les catégories 'I', 'R' et 'Q' ?",
+      "options": [
+        "I (Indifférent) : La présence ou l'absence de l'attribut n'impacte pas la satisfaction.",
+        "R (Reverse) : La présence de l'attribut réduit la satisfaction globale.",
+        "Q (Questionable) : Indique une réponse incohérente ou une mauvaise compréhension de la question.",
+        "I (Indispensable) : L'attribut doit être présent pour que le produit soit viable.",
+        "R (Recommandé) : L'attribut est suggéré par l'équipe de développement."
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Ces catégories traitent des cas atypiques : l'indifférence (I), l'effet inverse où le client préfère l'absence de la fonction (R), et les erreurs de saisie ou d'incompréhension (Q)."
+    },
+    {
+      "question": "Quelles sont les étapes cruciales de la méthode de 'Pondération et Notation' (Weighting & Rating) ?",
+      "options": [
+        "Lister les critères importants pour le concept.",
+        "Attribuer un poids égal à tous les critères pour éviter le favoritisme.",
+        "Attribuer un poids à chaque critère selon son importance relative.",
+        "Faire noter chaque concept sur chaque critère par le client pour limiter les biais.",
+        "Multiplier le poids par la note et calculer le total pondéré."
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "explanation": "Cette méthode numérique permet de comparer objectivement des concepts. On pondère les critères par importance et on utilise les notes clients pour obtenir un score global permettant de désigner un vainqueur (le score le plus élevé)."
+    },
+    {
+      "question": "À la fin de la phase 3 (Gate 3 du NPD), quelles sont les trois recommandations possibles pour un concept ?",
+      "options": [
+        "GO : Passer au développement réel du produit (Niveau 4).",
+        "DELAY : Attendre que le marché soit plus favorable.",
+        "HOLD : Garder le concept mais répéter ou améliorer la phase actuelle.",
+        "KILL : Arrêter définitivement le processus pour ce concept.",
+        "REVISE : Changer entièrement la stratégie de l'entreprise."
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Le processus Stage-Gate prévoit trois issues : l'avancement (GO), la révision/amélioration du stade actuel (HOLD), ou l'abandon définitif du projet (KILL)."
+    },
+    {
+      "question": "Parmi les questions d'évaluation cruciales pour franchir le 'Gate 3', lesquelles sont mentionnées ?",
+      "options": [
+        "Le concept est-il techniquement faisable ?",
+        "Le concept possède-t-il un avantage concurrentiel ?",
+        "Le concept est-il déjà breveté par une autre entreprise ?",
+        "Le marché est-il suffisamment vaste pour garantir des bénéfices ?",
+        "Le concept est-il en adéquation avec la stratégie de l'entreprise ?"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": "L'évaluation Gate 3 porte sur l'attractivité pour le consommateur, l'avantage compétitif, la faisabilité technique, le potentiel du marché et l'alignement stratégique global."
+    },
+    {
+      "question": "Dans l'exemple de sélection d'une voiture par pondération, pourquoi la VW Passat est-elle désignée gagnante ?",
+      "options": [
+        "Elle possède le score de sécurité le plus élevé du tableau.",
+        "Elle a obtenu la meilleure note brute sur tous les critères confondus.",
+        "Elle présente le score total pondéré le plus élevé (599).",
+        "Elle est l'option la moins chère parmi les cinq modèles testés.",
+        "Elle domine largement dans la catégorie 'Performance'."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Selon la méthode de pondération et notation, le concept gagnant est celui qui obtient le score total pondéré (somme des notes multipliées par les poids) le plus élevé, ce qui est le cas de la VW Passat avec 599 points."
+    }
+  ]
+}

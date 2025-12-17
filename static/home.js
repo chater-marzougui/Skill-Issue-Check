@@ -333,19 +333,6 @@ function loadQuestion() {
     nextBtn.classList.remove("hide");
     submitBtn.classList.add("hide");
   }
-
-  // Add visual indicator if question requires multiple answers
-  const isMultiAnswer = Array.isArray(question.answer);
-  const multiSelectIndicator = document.getElementById(
-    "multi-select-indicator"
-  );
-
-  if (isMultiAnswer) {
-    multiSelectIndicator.textContent = `(Sélectionnez ${question.answer.length} réponses)`;
-    multiSelectIndicator.classList.remove("hide");
-  } else {
-    multiSelectIndicator.classList.add("hide");
-  }
 }
 
 function selectOption(e) {
@@ -622,6 +609,8 @@ function loadCoursesFromJSON() {
     .then((data) => {
       // Replace the hardcoded course list with data from JSON
       const courses = data.courses || [];
+      // sort courses descending by id
+      courses.sort((a, b) => b.id - a.id);
       renderCourseList(courses);
     })
     .catch((error) => {

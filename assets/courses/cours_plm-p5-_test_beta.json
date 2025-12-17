@@ -1,0 +1,232 @@
+{
+  "Session 5 (p.1)": [
+    {
+      "question": "Quelles sont les trois composantes fondamentales du processus de test de produit, quel que soit le niveau de développement (NPD) ?",
+      "options": [
+        "La conception du prototype, le test bêta et le lancement commercial.",
+        "La création d'une stratégie de test, d'un plan de test, et des procédures d'exécution.",
+        "L'analyse de marché, la segmentation et le positionnement du produit.",
+        "Le test unitaire, le test fonctionnel et le test d'utilisabilité.",
+        "La vérification ISO 9000, la validation client et le prototypage rapide."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le processus de test s'articule systématiquement autour de la stratégie (approche globale), du plan (cas et conditions spécifiques) et des procédures (exécution méthodique)."
+    },
+    {
+      "question": "Quels éléments font spécifiquement partie de la création d'un 'plan de test' selon les standards de développement ?",
+      "options": [
+        "La description formelle de la manière dont le produit sera testé.",
+        "Les critères de réussite ou d'échec.",
+        "L'évaluation des risques liés aux tests.",
+        "La liste des tâches connexes et l'environnement de test.",
+        "La correction immédiate des bugs avant la fabrication."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le plan de test est un document opérationnel détaillant les conditions, les cas de test, l'environnement, les critères de succès et la gestion des risques, contrairement à la stratégie qui est une description plus conceptuelle."
+    },
+    {
+      "question": "En quoi le test d'utilisabilité diffère-t-il fondamentalement du test fonctionnel ?",
+      "options": [
+        "Le test d'utilisabilité est effectué par des ingénieurs spécialisés, contrairement au test fonctionnel.",
+        "Le test d'utilisabilité est une procédure de 'boîte noire' alors que le test fonctionnel est une 'boîte blanche'.",
+        "L'utilisabilité est subjective et dépend de l'utilisateur final, tandis que le fonctionnel examine la fonctionnalité pure.",
+        "Le test fonctionnel utilise des sondages et des entretiens, contrairement à l'utilisabilité.",
+        "Le test d'utilisabilité vérifie le processus complet (panier -> paiement) tandis que le fonctionnel vérifie un seul bouton."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le test fonctionnel est une vérification technique de la conformité du produit, tandis que l'utilisabilité (convivialité) est une mesure subjective de l'expérience de l'utilisateur final."
+    },
+    {
+      "question": "Quelles sont les caractéristiques distinctives du 'Test de Système' ?",
+      "options": [
+        "Il est effectué par les programmeurs lors de l'ajout de nouvelles fonctionnalités.",
+        "Il s'agit d'un test en boîte noire effectué par l'équipe de test.",
+        "Il vise à valider l'exactitude du produit dans un environnement contrôlé.",
+        "Il simule des scénarios réels pour vérifier si le produit exécute les tâches prévues.",
+        "Il se concentre exclusivement sur les temps de réponse et les volumes de données."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le test système vérifie l'intégrité du produit complet dans un environnement simulé proche de la production, utilisant une approche boîte noire pour valider les objectifs de conception."
+    },
+    {
+      "question": "Quelle est la nuance majeure entre un Test Alpha et un Test Bêta ?",
+      "options": [
+        "Le test Alpha est réalisé par des ingénieurs R&D internes, alors que le test Bêta est réalisé par des clients potentiels.",
+        "Les résultats du test Alpha servent à apporter des changements mineurs à la conception.",
+        "Le test Bêta se déroule pendant le développement du prototype, tandis que le test Alpha a lieu après l'implémentation technique.",
+        "Le test Bêta est effectué juste avant le lancement sur le marché, une fois le développement terminé.",
+        "Le test Alpha est plus efficace si les clients testeurs sont hétérogènes."
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "L'Alpha est interne et permet encore quelques ajustements de conception, tandis que le Bêta est externe, terminal, et sert de validation finale avant la mise en marché."
+    },
+    {
+      "question": "Concernant le Prototypage Rapide (PR), quelles affirmations sont correctes ?",
+      "options": [
+        "Il permet de construire automatiquement des modèles à partir de données de Conception Assistée par Ordinateur (CAO).",
+        "Il est utilisé uniquement dans l'industrie aérospatiale.",
+        "Il peut réduire les temps de développement de produit jusqu'à 75%.",
+        "L'outillage rapide direct utilise les données CAO pour créer des modèles d'outils de la même manière que le PR.",
+        "L'outillage rapide indirect utilise une imprimante 3D pour créer le moule d'injection final."
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Le PR est polyvalent (médical, consommation, etc.), s'appuie sur la CAO, et offre des gains de temps et de coûts massifs via l'outillage direct ou indirect."
+    },
+    {
+      "question": "Dans le cadre des Tests de Développement de Produit, à quoi servent les 'Tests Exploratoires' ?",
+      "options": [
+        "À vérifier si le produit sortant de la ligne de production fonctionne pleinement.",
+        "À examiner et explorer les concepts de conception préliminaires tôt dans le processus.",
+        "À collecter des données quantitatives de performance par rapport à la concurrence.",
+        "À évaluer l'utilité et la convivialité de l'interface via des méthodes qualitatives.",
+        "À confirmer que les extrants répondent aux spécifications initiales."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Les tests exploratoires interviennent au début (niveaux 1 et 2) pour valider la valeur de base et la convivialité des concepts envisagés via des observations ou discussions qualitatives."
+    },
+    {
+      "question": "Selon les normes ISO 9000, quelle est la différence entre la 'Vérification de Conception' et la 'Validation de Conception' ?",
+      "options": [
+        "La vérification compare le produit à la concurrence, la validation le compare aux spécifications.",
+        "La vérification confirme que les extrants répondent aux spécifications initiales.",
+        "La validation examine si le produit résultant répond à tous les besoins des utilisateurs (validation externe).",
+        "La vérification est qualitative, tandis que la validation est quantitative.",
+        "La validation est effectuée par les ingénieurs, la vérification par les clients."
+      ],
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "La vérification est une conformité interne aux plans (specs), tandis que la validation est une confirmation externe que le produit satisfait l'usage attendu par le client."
+    },
+    {
+      "question": "Quelles sont les exigences critiques pour une segmentation de marché efficace lors des tests ?",
+      "options": [
+        "Le segment doit être difficilement accessible pour garantir l'exclusivité.",
+        "Le segment doit permettre l'identification des caractéristiques et de sa taille (Mesures du Marché).",
+        "Le segment doit représenter une opportunité économique suffisante (rentabilité).",
+        "Le segment doit être facilement gérable et approchable (Accès au Marché).",
+        "Le segment doit être uniquement composé de clients fidèles à la marque."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Pour qu'une segmentation soit utile au ciblage, elle doit répondre aux critères de mesurabilité, de rentabilité et d'accessibilité opérationnelle."
+    },
+    {
+      "question": "Rangez ces méthodes de test de marché de la moins coûteuse à la plus coûteuse :",
+      "options": [
+        "Marchés Tests < Marketing Test Contrôlé < Recherche par Vagues de Vente.",
+        "Recherche par Vagues de Vente < Marketing Test Simulé < Marketing Test Contrôlé < Marchés Tests.",
+        "Marketing Test Simulé < Recherche par Vagues de Vente < Marchés Tests.",
+        "Marchés Tests < Marketing Test Simulé < Recherche par Vagues de Vente.",
+        "Marketing Test Contrôlé < Marchés Tests < Marketing Test Simulé."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le coût augmente avec le réalisme et l'échelle : de la simple offre de rachat (vagues de vente) au lancement réel dans plusieurs villes (marchés tests)."
+    },
+    {
+      "question": "Quelles étapes constituent le processus de segmentation pour un test de marché ?",
+      "options": [
+        "Définir le prix, choisir le canal de distribution, créer la publicité.",
+        "Créer un profil démographique.",
+        "Identifier de fortes concentrations de clients potentiels (placement).",
+        "Déterminer les habitudes de consommation.",
+        "Mesurer le temps de réponse du serveur."
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "La segmentation repose sur la définition du profil (qui), de la concentration (où) et des habitudes (comment ils achètent/utilisent)."
+    },
+    {
+      "question": "Qu'est-ce qui caractérise le 'Test de bout en bout' (End-to-End testing) ?",
+      "options": [
+        "Il teste uniquement un composant isolé du produit.",
+        "Il met le produit en interaction avec d'autres composants externes ou réels auxquels il sera connecté.",
+        "Il simule un flux complet, comme la connexion, l'achat et l'envoi d'un email de confirmation.",
+        "Il est identique au test unitaire mais réalisé par le client.",
+        "Il utilise des situations qui imitent la vie réelle."
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "Le test E2E simule un parcours utilisateur complet en conditions réelles, incluant les dépendances avec des systèmes tiers ou d'autres couches applicatives."
+    },
+    {
+      "question": "Dans le 'Test de Prototypage', pourquoi recherche-t-on spécifiquement des clients 'hétérogènes' pour le Test Bêta ?",
+      "options": [
+        "Pour réduire les coûts de recrutement des testeurs.",
+        "Pour s'assurer que le produit fonctionne uniquement pour un groupe spécifique.",
+        "Pour obtenir l'opinion des premiers adoptants provenant de divers horizons (ex: marques concurrentes).",
+        "Pour valider que l'interface est comprise par des profils variés.",
+        "Parce que les clients homogènes ne rapportent jamais de défauts."
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "explanation": "L'hétérogénéité des testeurs permet de confronter le produit à des habitudes et attentes différentes, ce qui est crucial pour identifier des défauts d'interface ou d'usage non prévus par la R&D."
+    },
+    {
+      "question": "Qu'est-ce qu'un 'Marketing Test Simulé' ?",
+      "options": [
+        "Lancer le produit dans 2 ou 3 villes sélectionnées avec une promotion complète.",
+        "Offrir le produit gratuitement puis noter les rachats à prix réduit.",
+        "Inviter des acheteurs à regarder des publicités puis à acheter en magasin avec de l'argent donné pour évaluer l'efficacité publicitaire.",
+        "Gérer un panel de points de vente pour distribuer le produit et enregistrer les ventes.",
+        "Vérifier si 10 000 utilisateurs peuvent se connecter simultanément."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le marketing test simulé recrée un environnement d'achat artificiel pour mesurer l'impact de la communication sur l'intention d'achat réelle."
+    },
+    {
+      "question": "Quelle est la condition principale d'un 'Test de Validation' en phase finale de développement ?",
+      "options": [
+        "Le produit doit être testé sous forme de maquette en carton.",
+        "Le produit doit être examiné comme s'il sortait de la ligne de production (censé fonctionner pleinement).",
+        "Il doit être effectué exclusivement par des clients externes.",
+        "Il vise à vérifier que tous les objectifs de conception ont été atteints.",
+        "Il doit comparer le produit à au moins trois alternatives existantes."
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Le test de validation intervient à la fin pour confirmer que le produit final (et non un prototype dégradé) remplit toutes ses promesses techniques et fonctionnelles."
+    }
+  ]
+}

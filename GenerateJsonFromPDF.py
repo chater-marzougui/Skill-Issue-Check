@@ -10,7 +10,11 @@ load_dotenv()
 
 # Configuration
 API_KEY = os.getenv("API_KEY")
-model_name = "gemini-2.0-flash"
+if not API_KEY:
+    raise ValueError("API_KEY not found in environment variables")
+else:
+    print("API_KEY loaded successfully")
+model_name = "gemini-3-flash-preview"
 
 # Initialize Gemini
 genai.configure(api_key=API_KEY)
@@ -372,7 +376,7 @@ def process_pdf_by_page_with_gemini(pdf_path, base_folder, courses_path):
     print(f"Created {total_pages} pages")
     chunk_size = total_pages // 3 if total_pages < 100 else total_pages // 8
     chunk_size = min(chunk_size, 15)
-    chunk_size = total_pages if total_pages < 15 else chunk_size
+    chunk_size = total_pages if total_pages <= 15 else chunk_size
     
     all_questions = {}
     
