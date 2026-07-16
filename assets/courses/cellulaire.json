@@ -1,0 +1,199 @@
+{
+  "cellulaire2024": [
+    {
+      "question": "L'UMTS FDD utilise les bandes :",
+      "options": [
+        "1920- 2170MHz en UL et 2110- 2200 en DL",
+        "1920- 2170MHz en DL et 2110- 2200 en UL",
+        "1920 -1980 MHz en UL et 2110-2170 en DL",
+        "1920 -1980 MHz en DL et 2110-2170 en UL"
+      ],
+      "answer": [2],
+      "explanation": "La bande I de l'UMTS FDD utilise 1920-1980 MHz pour la liaison montante (Uplink) et 2110-2170 MHz pour la liaison descendante (Downlink)."
+    },
+    {
+      "question": "Les objectifs de l'UMTS sont :",
+      "options": [
+        "Assurer une mobilité universelle",
+        "Supporter les applications multimédia",
+        "Assurer un temps de latence inférieur à 100ms",
+        "Permet d'atteindre un débit de 42 Mbs/s"
+      ],
+      "answer": [0,1],
+      "explanation": "L'un des objectifs principaux de la 3G (UMTS) était d'introduire le support des applications multimédia et des débits plus élevés que la 2G."
+    },
+    {
+      "question": "La classe de service C est caractérisée par :",
+      "options": [
+        "Un temps de transfert entre 100 et 200ms",
+        "Un débit d'information minimal garanti",
+        "N'exige aucune altération de l'information",
+        "Pas de performances temps réel exigées"
+      ],
+      "answer": [2, 3],
+      "explanation": "Dans la qualité de service UMTS, la classe C correspond généralement à la classe 'Interactive' (ex: navigation web), qui n'est pas temps réel mais demande une intégrité des données."
+    },
+    {
+      "question": "Un mobile passe d'une cellule dépendant du MSC/VLR1 à une cellule dépendant du MSC/VLR2, son profil",
+      "options": [
+        "se trouve dans tous les VLR et par conséquent dans le MSC/VLR2.",
+        "est transmis directement du MSC/VLR1 au MSC/VLR2",
+        "est transmis du HLR vers le MSC/VLR2"
+      ],
+      "answer": [2],
+      "explanation": "Lors d'un changement de VLR, le nouveau VLR (VLR2) demande les données de l'abonné au HLR (via un Update Location), qui lui fournit le profil (Insert Subscriber Data)."
+    },
+    {
+      "question": "Le handover intercellulaire désigne :",
+      "options": [
+        "le changement de cellule d'un terminal en état de veille",
+        "le changement de cellule d'un terminal en communication",
+        "le changement de cellule d'un terminal en état de veille et en communication"
+      ],
+      "answer": [1],
+      "explanation": "Le handover est le processus de transfert d'un appel ou d'une session de données en cours d'une cellule à une autre sans interruption (mode connecté)."
+    },
+    {
+      "question": "Dans un système cellulaire, le concept de réutilisation de fréquence permet :",
+      "options": [
+        "le changement dynamique de fréquences",
+        "l'augmentation du nombre de communications simultanées dans le réseau",
+        "l'optimisation de l'utilisation des ressources radio",
+        "de minimiser l'interférence"
+      ],
+      "answer": [1,2],
+      "explanation": "La réutilisation des fréquences permet d'augmenter la capacité du réseau (plus d'utilisateurs) en réutilisant le même spectre dans des cellules éloignées."
+    },
+    {
+      "question": "La procédure de handover peut avoir un impact au niveau :",
+      "options": [
+        "répartition du trafic entre cellules",
+        "niveau d'interférence global",
+        "qualité du lien radio",
+        "capacité de stockage des bases de données"
+      ],
+      "answer": [0, 1, 2],
+      "explanation": "Le handover permet d'équilibrer la charge (trafic), d'améliorer la qualité du signal perçu et de réduire les interférences en connectant le mobile à la meilleure station de base."
+    },
+    {
+      "question": "Parmi les objectifs des systèmes 3G est d'offrir :",
+      "options": [
+        "le trafic de voix, données, vidéo et objets connectés",
+        "l'accès circuit et paquet",
+        "le multimédia haut débit",
+        "le tout IP"
+      ],
+      "answer": [1, 2],
+      "explanation": "La 3G offre à la fois la commutation de circuits (pour la voix) et la commutation de paquets (pour les données), permettant le multimédia haut débit."
+    },
+    {
+      "question": "Dans un réseau cellulaire, le modèle hexagonal :",
+      "options": [
+        "est peu pratique",
+        "permet de minimiser le coût en termes de sites radio",
+        "permet un pavage facile et un recouvrement régulier",
+        "est la forme idéale"
+      ],
+      "answer": [1, 2],
+      "explanation": "Le modèle hexagonal est une approximation théorique idéale qui permet un pavage sans trou ni chevauchement pour modéliser la couverture cellulaire."
+    },
+    {
+      "question": "Dans un réseau cellulaire, une BTS équipée d'une antenne directive permet :",
+      "options": [
+        "l'allocation de fréquences",
+        "l'amélioration de la capacité du réseau",
+        "l'amélioration de la portée sans faire recours à l'augmentation de la puissance d'émission",
+        "la décision et l'exécution du handover"
+      ],
+      "answer": [1,2],
+      "explanation": "Les antennes directives concentrent l'énergie dans une direction, augmentant la portée et réduisant les interférences (sectorisation), ce qui améliore indirectement la capacité."
+    },
+    {
+      "question": "Pourquoi un système cellulaire permet-il de couvrir le monde entier malgré la limitation des ressources fréquentielles ?",
+      "options": [
+        "le découpage en cellules permet de recouvrir un territoire",
+        "un même canal fréquentiel ne peut pas être utilisé dans deux cellules voisines",
+        "un même canal fréquentiel peut être réutilisé dans deux cellules suffisamment éloignées"
+      ],
+      "answer": [0, 2],
+      "explanation": "Le principe fondamental est la réutilisation des fréquences : une même fréquence peut être utilisée dans des cellules différentes tant qu'elles sont assez éloignées pour éviter les interférences."
+    },
+    {
+      "question": "La mise à jour de localisation périodique :",
+      "options": [
+        "permet de minimiser le coût de mise à jour de localisation",
+        "exige au mobile de mettre à jour sa localisation à chaque visite d'une nouvelle zone de localisation",
+        "provoque une consommation de ressources indépendante de la mobilité de l'usager",
+        "est une technique simple"
+      ],
+      "answer": [ 2, 3],
+      "explanation": "Elle force le mobile à se signaler périodiquement même s'il ne bouge pas, consommant des ressources radio, pour confirmer sa présence au réseau."
+    },
+    {
+      "question": "Dans un réseau cellulaire, la sélection/resélection de cellules permet au mobile :",
+      "options": [
+        "d'enregistrer les informations diffusées par le réseau",
+        "de signaler ses mouvements au réseau",
+        "le changement dynamique du canal fréquentiel",
+        "d'être prêt à se connecter au réseau en cas de communication"
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "En mode veille (idle), le mobile choisit la meilleure cellule (sélection/resélection) pour écouter le canal de paging et être prêt à établir un appel."
+    },
+    {
+      "question": "La mise à jour de localisation sur changement de zone de localisation",
+      "options": [
+        "est une technique de mise à jour de localisation périodique",
+        "permet de minimiser le coût de paging",
+        "exige au mobile de mettre à jour sa localisation à chaque visite d'une nouvelle zone de localisation",
+        "provoque une consommation de ressources indépendante de la mobilité de l'usager"
+      ],
+      "answer": [1, 2],
+      "explanation": "En connaissant la zone de localisation (LA) précise, le réseau n'a besoin de diffuser l'appel (paging) que dans cette zone, réduisant la charge de paging."
+    },
+    {
+      "question": "Dans le système GSM, le HLR permet :",
+      "options": [
+        "le contrôle d'homologation des équipements",
+        "de stocker l'identité internationale de l'abonné utilisée par le réseau, IMSI",
+        "de mémoriser pour chaque abonné le numéro du VLR où il est enregistré",
+        "de stocker l'identité temporaire TMSI"
+      ],
+      "answer": [1, 2],
+      "explanation": "Le HLR est la base de données principale contenant l'IMSI et la position grossière actuelle de l'abonné (adresse du VLR)."
+    },
+    {
+      "question": "Le concept cellulaire repose sur :",
+      "options": [
+        "le changement dynamique de fréquences",
+        "une organisation anarchique du réseau",
+        "le découpage d'un territoire en plusieurs zones géographiques",
+        "la réutilisation de fréquences"
+      ],
+      "answer": [0, 2, 3],
+      "explanation": "Il repose sur la division du territoire en cellules et la réutilisation des fréquences pour augmenter la capacité."
+    },
+    {
+      "question": "La gestion de la localisation :",
+      "options": [
+        "permet au système de connaître à tout moment la position du mobile avec plus ou moins de précision",
+        "exige au mobile d'être à l'état dédié",
+        "repose sur la localisation et la recherche d'abonné",
+        "permet à un mobile de changer de cellule tout en maintenant sa communication"
+      ],
+      "answer": [0, 2],
+      "explanation": "Elle permet de suivre l'abonné (Location Update) pour pouvoir l'appeler (Paging/Recherche) dans sa zone actuelle."
+    },
+    {
+      "question": "En GSM, un des motifs de déclenchement d'un handover peut être :",
+      "options": [
+        "le changement de TMSI en cours d'appel",
+        "le niveau de champ du signal du lien dédié",
+        "la qualité du signal du lien dédié",
+        "la charge en trafic de la cellule de service"
+      ],
+      "answer": [1, 2, 3],
+      "explanation": "Le handover peut être déclenché par une baisse de puissance (niveau), une mauvaise qualité (BER) ou pour délester une cellule surchargée (trafic)."
+    }
+  ]
+}

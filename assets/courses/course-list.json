@@ -133,28 +133,10 @@
       "name": "2023 MBK"
     },
     {
-      "id": 27,
-      "INDP": 2,
-      "filename": "cours_plm-p1.json",
-      "name": "Cours PLM-P1"
-    },
-    {
-      "id": 26,
+      "id": 22,
       "INDP": 3,
-      "filename": "cours_plm-p2-_selection_des_idées.json",
-      "name": "Cours PLM-P2- Selection des idées"
-    },
-    {
-      "id": 25,
-      "INDP": 3,
-      "filename": "cours_plm-p3-developpement_et_test.json",
-      "name": "Cours PLM-P3-Developpement et Test"
-    },
-    {
-      "id": 24,
-      "INDP": 3,
-      "filename": "cours_plm-p4_analyse_de_l'affaire.json",
-      "name": "Cours PLM-P4 Analyse de l'affaire"
+      "filename": "plm-etape6.json",
+      "name": "PLM-Etape6"
     },
     {
       "id": 23,
@@ -163,10 +145,28 @@
       "name": "Cours PLM-P5- Test Beta"
     },
     {
-      "id": 22,
+      "id": 24,
       "INDP": 3,
-      "filename": "plm-etape6.json",
-      "name": "PLM-Etape6"
+      "filename": "cours_plm-p4_analyse_de_l'affaire.json",
+      "name": "Cours PLM-P4 Analyse de l'affaire"
+    },
+    {
+      "id": 25,
+      "INDP": 3,
+      "filename": "cours_plm-p3-developpement_et_test.json",
+      "name": "Cours PLM-P3-Developpement et Test"
+    },
+    {
+      "id": 26,
+      "INDP": 3,
+      "filename": "cours_plm-p2-_selection_des_idées.json",
+      "name": "Cours PLM-P2- Selection des idées"
+    },
+    {
+      "id": 27,
+      "INDP": 2,
+      "filename": "cours_plm-p1.json",
+      "name": "Cours PLM-P1"
     },
     {
       "id": 28,
@@ -203,6 +203,18 @@
       "INDP": 2,
       "filename": "LTE.json",
       "name": "LTE"
+    },
+    {
+      "id": 34,
+      "INDP": 3,
+      "filename": "Data_eng.json",
+      "name": "Data Engineering"
+    },
+    {
+      "id": 35,
+      "INDP": 3,
+      "filename": "cellulaire.json",
+      "name": "Réseaux Cellulaires"
     }
   ]
 }

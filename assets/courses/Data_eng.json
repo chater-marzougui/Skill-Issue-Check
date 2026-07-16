@@ -1,0 +1,670 @@
+{
+  "Introduction à la Science des Données": [
+    {
+      "question": "Le Data Mining est aussi appelé en français :",
+      "options": [
+        "Extraction de connaissances à partir de données",
+        "Minage de crypto-monnaie",
+        "Stockage de données",
+        "Visualisation de données"
+      ],
+      "answer": [0],
+      "explanation": "Le cours indique que le Data Mining porte aussi le nom de 'Fouille de données' ou 'Extraction de connaissances à partir de données'."
+    },
+    {
+      "question": "Que signifie l'acronyme CRISP-DM ?",
+      "options": [
+        "Computer Research In Science Projects - Data Mining",
+        "Cross-Industry Standard Process for Data Mining",
+        "Critical Review of Information Systems Process",
+        "Creative Research In Statistics and Programming"    
+      ],
+      "answer": [1],
+      "explanation": "CRISP-DM signifie Cross-Industry Standard Process for Data Mining."
+    },
+    {
+      "question": "Combien de phases principales comporte la méthodologie CRISP-DM ?",
+      "options": ["4", "5", "6", "8"],
+      "answer": [2],
+      "explanation": "Il y a 6 phases : Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, Deployment."
+    },
+    {
+      "question": "Quelle est la première étape du processus CRISP-DM ?",
+      "options": [
+        "Data Understanding",
+        "Modeling",
+        "Business Understanding",
+        "Deployment"
+      ],
+      "answer": [2],
+      "explanation": "La première phase est 'Business Understanding' (Compréhension du métier)."
+    },
+    {
+      "question": "Dans quelle phase du CRISP-DM effectue-t-on le nettoyage des données ?",
+      "options": [
+        "Data Preparation",
+        "Modeling",
+        "Evaluation",
+        "Business Understanding"
+      ],
+      "answer": [0],
+      "explanation": "Le nettoyage des données (Data Cleaning) fait partie de la phase 'Data Preparation'."
+    },
+    {
+      "question": "Si l'évaluation du modèle n'est pas satisfaisante, vers quelle phase retourne-t-on généralement ?",
+      "options": [
+        "Deployment",
+        "Business Understanding",
+        "Data Preparation",
+        "Modeling"
+      ],
+      "answer": [1],
+      "explanation": "Le diagramme montre un lien de retour de l'Evaluation vers le Business Understanding si les objectifs ne sont pas atteints."
+    },
+    {
+      "question": "Quelle phase inclut la sélection de la technique de modélisation ?",
+      "options": ["Data Preparation", "Modeling", "Evaluation", "Deployment"],
+      "answer": [1],
+      "explanation": "La phase 'Modeling' inclut la sélection des techniques de modélisation (Select Modeling Techniques)."
+    },
+    {
+      "question": "L'étape 'Deployment' peut consister simplement en :",
+      "options": [
+        "L'écriture d'un rapport",
+        "L'achat d'un ordinateur",
+        "L'installation de Windows",
+        "La suppression des données"
+      ],
+      "answer": [0],
+      "explanation": "Le déploiement peut correspondre à la simple écriture d'un rapport ou à la mise en place d'un système complexe."
+    },
+    {
+      "question": "La phase 'Data Understanding' inclut quelle activité ?",
+      "options": [
+        "Déploiement du modèle",
+        "Collecte initiale des données",
+        "Optimisation des hyperparamètres",
+        "Définition des objectifs commerciaux"
+      ],
+      "answer": [1],
+      "explanation": "La compréhension des données débute par la collecte initiale des données (Collect Initial Data)."
+    },
+    {
+      "question": "Quel est l'objectif de la phase 'Evaluation' ?",
+      "options": [
+        "Nettoyer les données",
+        "Vérifier si le modèle répond aux objectifs métiers",
+        "Construire l'entrepôt de données",
+        "Former les utilisateurs"
+      ],
+      "answer": [1],
+      "explanation": "L'évaluation permet de vérifier la validité de la réponse apportée au problème métier et l'adéquation du modèle."
+    },
+    {
+      "question": "En quelle année la version finale 1.0 de CRISP-DM a-t-elle été publiée ?",
+      "options": ["1990", "1996", "2000", "2010"],
+      "answer": [2],
+      "explanation": "Le modèle a été publié en version finale 1.0 en 2000."
+    },
+    {
+      "question": "Quels sont les deux grands types de données selon leurs valeurs ?",
+      "options": [
+        "Numériques et Catégorielles",
+        "Positives et Négatives",
+        "Textuelles et Images",
+        "Internes et Externes"
+      ],
+      "answer": [0],
+      "explanation": "Les données sont classées en Données numériques (Numerical) et Données catégorielles (Categorical)."
+    },
+    {
+      "question": "Les données discrètes (Discrete data) font partie de quelle catégorie ?",
+      "options": [
+        "Données catégorielles",
+        "Données numériques",
+        "Données nominales",
+        "Données ordinales"
+      ],
+      "answer": [1],
+      "explanation": "Les données numériques se divisent en données discrètes et données continues."
+    },
+    {
+      "question": "Quel type de donnée représente le nombre d'élèves dans une classe ?",
+      "options": [
+        "Numérique continue",
+        "Numérique discrète",
+        "Catégorielle nominale",
+        "Catégorielle ordinale"
+      ],
+      "answer": [1],
+      "explanation": "C'est une valeur qu'on peut compter (1, 2, 3...) et qui ne peut pas être fractionnée logiquement dans ce contexte, donc discrète."
+    },
+    {
+      "question": "Quel type de donnée représente la taille d'une personne (ex: 1.75m) ?",
+      "options": [
+        "Numérique discrète",
+        "Numérique continue",
+        "Nominale",
+        "Ordinale"
+      ],
+      "answer": [1],
+      "explanation": "La taille est une mesure qui peut prendre n'importe quelle valeur dans un intervalle, c'est donc une donnée continue."
+    },
+    {
+      "question": "La couleur des yeux (Bleu, Marron, Vert) est un exemple de donnée :",
+      "options": ["Numérique", "Ordinale", "Nominale", "Discrète"],
+      "answer": [2],
+      "explanation": "C'est une catégorie sans ordre intrinsèque, donc une donnée nominale."
+    },
+    {
+      "question": "Les notes sous forme de lettres (A, B, C, D, F) sont des données :",
+      "options": ["Nominales", "Ordinales", "Discrètes", "Continues"],
+      "answer": [1],
+      "explanation": "Il y a un ordre logique (A est meilleur que B), donc ce sont des données ordinales."
+    },
+    {
+      "question": "Quelle est la caractéristique principale des données ordinales par rapport aux nominales ?",
+      "options": [
+        "Elles sont numériques",
+        "L'ordre des valeurs est connu",
+        "Elles ont un zéro absolu",
+        "Elles ne peuvent pas être classées"
+      ],
+      "answer": [1],
+      "explanation": "Pour les données ordinales, l'ordre des valeurs est connu (The 'order' of values is known), contrairement aux nominales."
+    },
+    {
+      "question": "John collectionne trois modèles de voitures différents. Les modèles de voitures sont des données :",
+      "options": ["Numériques", "Catégorielles", "Continues", "Temporelles"],
+      "answer": [1],
+      "explanation": "Les modèles de voitures sont des catégories (noms), donc des données catégorielles."
+    },
+    {
+      "question": "Le risque d'infection (Élevé, Moyen, Faible) est un exemple de donnée :",
+      "options": ["Nominale", "Ordinale", "Numérique", "Binaire"],
+      "answer": [1],
+      "explanation": "Il existe un ordre hiérarchique entre Élevé, Moyen et Faible, c'est donc ordinal."
+    },
+    {
+      "question": "Les données binaires (Vrai/Faux) sont souvent considérées comme un cas particulier de données :",
+      "options": ["Continues", "Nominales", "Ratio", "Intervalles"],
+      "answer": [1],
+      "explanation": "Les réponses binaires sont des catégories sans ordre de grandeur mathématique (sauf si codées 0/1, mais par nature ce sont des étiquettes), souvent classées sous nominal."
+    },
+    {
+      "question": "Quelle échelle de mesure possède un 'zéro absolu' (true zero) ?",
+      "options": ["Nominale", "Ordinale", "Intervalle", "Ratio (Rapport)"],
+      "answer": [3],
+      "explanation": "L'échelle de Ratio possède un vrai zéro (zéro absolu), ce qui permet la multiplication et la division."
+    },
+    {
+      "question": "La température en degrés Celsius est un exemple d'échelle :",
+      "options": ["Nominale", "Ordinale", "Intervalle", "Ratio"],
+      "answer": [2],
+      "explanation": "Le zéro en Celsius est arbitraire (point de congélation de l'eau), il n'indique pas une absence de température. C'est donc une échelle d'intervalle."
+    },
+    {
+      "question": "La température en degrés Kelvin est un exemple d'échelle :",
+      "options": ["Nominale", "Ordinale", "Intervalle", "Ratio"],
+      "answer": [3],
+      "explanation": "Le Kelvin a un zéro absolu (absence d'agitation thermique), c'est donc une échelle de Ratio."
+    },
+    {
+      "question": "Sur quelle échelle peut-on calculer la moyenne (Mean) ?",
+      "options": [
+        "Nominale uniquement",
+        "Ordinale et Nominale",
+        "Intervalle et Ratio",
+        "Aucune"
+      ],
+      "answer": [2],
+      "explanation": "Le calcul de la moyenne est pertinent pour les échelles d'Intervalle et de Ratio, mais pas pour les données Nominales ou Ordinales (où la médiane est préférée)."
+    },
+    {
+      "question": "Quelle opération est possible avec des données de type Ratio mais pas Intervalle ?",
+      "options": [
+        "Addition/Soustraction",
+        "Multiplication/Division",
+        "Classement (Ordre)",
+        "Comptage"
+      ],
+      "answer": [1],
+      "explanation": "On peut dire que 20kg est le double de 10kg (Ratio), mais on ne peut pas dire que 20°C est deux fois plus chaud que 10°C (Intervalle). La multiplication/division nécessite un vrai zéro."
+    },
+    {
+      "question": "Le poids d'un oiseau est une donnée de type :",
+      "options": ["Nominal", "Ordinal", "Intervalle", "Ratio"],
+      "answer": [3],
+      "explanation": "Le poids a un zéro absolu et permet les rapports, c'est une échelle de Ratio."
+    },
+    {
+      "question": "L'année scolaire (Freshman, Sophomore, Junior, Senior) est une donnée de type :",
+      "options": ["Nominal", "Ordinal", "Intervalle", "Ratio"],
+      "answer": [1],
+      "explanation": "Il y a un ordre clair, mais l'écart entre les années n'est pas nécessairement une quantité mathématique uniforme mesurable comme un intervalle physique, c'est Ordinal."
+    },
+    {
+      "question": "Le genre d'une personne (Homme, Femme) est une donnée de type :",
+      "options": ["Nominal", "Ordinal", "Intervalle", "Ratio"],
+      "answer": [0],
+      "explanation": "Ce sont des catégories sans ordre inhérent, donc Nominal."
+    },
+    {
+      "question": "Si un chercheur code des répondants avec un 'Respondent_ID' numérique, quel est le type de donnée ?",
+      "options": ["Ratio", "Intervalle", "Nominal", "Ordinal"],
+      "answer": [2],
+      "explanation": "L'ID est juste une étiquette (un nom) sous forme de nombre. L'ordre ou la grandeur n'a pas de sens. C'est Nominal."
+    },
+    {
+      "question": "Quelle propriété s'applique aux données d'intervalle ?",
+      "options": [
+        "Zéro absolu",
+        "On peut quantifier la différence entre chaque valeur",
+        "L'ordre est inconnu",
+        "On ne peut pas additionner ou soustraire"
+      ],
+      "answer": [1],
+      "explanation": "Pour les données d'intervalle, la différence entre les valeurs a un sens et peut être quantifiée (ex: différence de température)."
+    },
+    {
+      "question": "Que sont les données primaires (Primary Data) ?",
+      "options": [
+        "Des données collectées par quelqu'un d'autre",
+        "Des données que vous créez ou collectez vous-même pour vos besoins",
+        "Des données anciennes",
+        "Des données publiques"
+      ],
+      "answer": [1],
+      "explanation": "Les données primaires sont celles que vous créez ou collectez vous-même pour répondre à votre propre besoin."
+    },
+    {
+      "question": "Que sont les données secondaires (Secondary Data) ?",
+      "options": [
+        "Des données collectées à partir de sources appartenant à quelqu'un d'autre",
+        "Des données de mauvaise qualité",
+        "Des données générées par l'entreprise elle-même",
+        "Des données confidentielles"
+      ],
+      "answer": [0],
+      "explanation": "Les données secondaires sont collectées à partir de sources tierces (quelqu'un d'autre)."
+    },
+    {
+      "question": "Une donnée est dite 'interne' si :",
+      "options": [
+        "Elle provient d'Internet",
+        "L'entreprise la génère, la possède et la contrôle",
+        "Elle est accessible au public",
+        "Elle est achetée à un fournisseur"
+      ],
+      "answer": [1],
+      "explanation": "Les données sont internes si une entreprise les génère, les possède et les contrôle."
+    },
+    {
+      "question": "Les données provenant de 'Google Analytics' sur les visiteurs de votre site web sont un exemple de :",
+      "options": [
+        "Données primaires internes",
+        "Données secondaires externes",
+        "Données secondaires (collectées via un outil tiers sur votre activité)",
+        "Données non structurées"
+      ],
+      "answer": [2],
+      "explanation": "Le tableau classe 'Google Analytics report' comme exemple de Secondary Data (car collecté par l'outil de Google) mais sur votre trafic (Internal/External nuance dépend du contrôle, le slide 14 le met en Secondary/External ou Internal selon la propriété, mais le slide 13 le met en Secondary)."
+    },
+    {
+      "question": "Les données structurées (Structured Data) :",
+      "options": [
+        "N'ont pas de format prédéfini",
+        "Sont généralement stockées dans des bases de données relationnelles (tableaux)",
+        "Incluent les vidéos et les images",
+        "Sont impossibles à interroger avec SQL"
+      ],
+      "answer": [1],
+      "explanation": "Les données structurées sont organisées (lignes/colonnes) et facilement gérables par des bases de données standards."
+    },
+    {
+      "question": "Les données non structurées (Unstructured Data) peuvent provenir de :",
+      "options": [
+        "Facebook, Twitter, Présentations",
+        "Fichiers Excel uniquement",
+        "Bases de données SQL",
+        "Capteurs de température uniquement"
+      ],
+      "answer": [0],
+      "explanation": "Le quiz mentionne Facebook, Twitter et les présentations comme sources de données non structurées."
+    },
+    {
+      "question": "Quel format de données est considéré comme 'Semi-structuré' ?",
+      "options": [
+        "Une base de données SQL",
+        "Un fichier CSV",
+        "Un fichier XML ou JSON",
+        "Une image JPEG"
+      ],
+      "answer": [2],
+      "explanation": "Les données semi-structurées (comme XML, JSON, ou certains logs) ont des balises ou des marqueurs mais pas une structure tabulaire rigide."
+    },
+    {
+      "question": "Dans l'attribut de forme (Shape), 'Wide' signifie :",
+      "options": [
+        "Beaucoup de lignes, peu de colonnes",
+        "Beaucoup de colonnes (attributs) pour chaque observation",
+        "Des données très lourdes",
+        "Des données géographiques"
+      ],
+      "answer": [1],
+      "explanation": "Le format 'Wide' (large) implique de nombreuses colonnes (variables) pour chaque ligne."
+    },
+    {
+      "question": "Les données provenant de 'OpenStreetMap' sont considérées comme :",
+      "options": [
+        "Données internes",
+        "Données externes",
+        "Données privées",
+        "Données payantes"
+      ],
+      "answer": [1],
+      "explanation": "OpenStreetMap est une source de données publique et externe à l'entreprise."
+    },
+    {
+      "question": "Les images satellitaires Sentinel 1 utilisées dans le projet sont des données :",
+      "options": ["Primaires", "Secondaires", "Textuelles", "Structurées"],
+      "answer": [1],
+      "explanation": "Ce sont des données secondaires (produites par le programme Copernicus/ESA) utilisées pour le projet."
+    },
+    {
+      "question": "Quel était l'objectif métier du projet 'Air quality in Oakland' ?",
+      "options": [
+        "Vendre des capteurs",
+        "Prédire la qualité de l'air à n'importe quel endroit d'Oakland",
+        "Interdire les voitures",
+        "Construire de nouvelles routes"
+      ],
+      "answer": [1],
+      "explanation": "L'objectif métier est de prédire la qualité de l'air à n'importe quel endroit d'Oakland en fonction des conditions locales."
+    },
+    {
+      "question": "Comment les données brutes de pollution ont-elles été collectées dans ce projet ?",
+      "options": [
+        "Par des satellites uniquement",
+        "Par des voitures Google Street View équipées de capteurs",
+        "Par des sondages téléphoniques",
+        "Par des stations météo fixes uniquement"
+      ],
+      "answer": [1],
+      "explanation": "Les données ont été collectées par les voitures Google Street View équipées de capteurs mobiles."
+    },
+    {
+      "question": "Quelle était la variable cible (Target) pour la prédiction ?",
+      "options": [
+        "La température",
+        "Le nombre de voitures",
+        "La concentration de NO2",
+        "La vitesse du vent"
+      ],
+      "answer": [2],
+      "explanation": "La variable cible mentionnée est la concentration de NO2 en différents points."
+    },
+    {
+      "question": "Combien de caractéristiques (features) l'ensemble de données final contenait-il après préparation ?",
+      "options": ["10", "50", "324", "1000"],
+      "answer": [2],
+      "explanation": "L'ensemble final de caractéristiques contenait 324 caractéristiques."
+    },
+    {
+      "question": "Quelle source de données externe a été utilisée pour les 'Sources ponctuelles d'émissions' ?",
+      "options": [
+        "Facebook",
+        "La base de données de l'US EPA",
+        "Wikipedia",
+        "Twitter"
+      ],
+      "answer": [1],
+      "explanation": "La BD de l'US EPA (2014) contenant les emplacements des sources ponctuelles a été utilisée."
+    },
+    {
+      "question": "Quel type d'algorithme a donné le meilleur résultat (R2 = 0.925) dans l'étude de cas ?",
+      "options": [
+        "Régression linéaire simple",
+        "Régression XGBoost",
+        "K-Means",
+        "Arbre de décision simple"
+      ],
+      "answer": [1],
+      "explanation": "Le graphique montre 'Predicted vs Actual' avec un R2 = 0.925 pour la régression XGBoost."
+    },
+    {
+      "question": "Quelle technique de validation a été utilisée pour l'entraînement du modèle ?",
+      "options": [
+        "Validation croisée en quatre volets (4-fold cross-validation)",
+        "Aucune validation",
+        "Test sur les données d'entraînement",
+        "Validation manuelle"
+      ],
+      "answer": [0],
+      "explanation": "Une approche de validation croisée en quatre volets a été appliquée à l'ensemble de données d'entraînement."
+    },
+    {
+      "question": "Dans la phase de préparation, les données ont été agrégées sur quelle période ?",
+      "options": ["Une semaine", "Un mois", "Un an", "Dix ans"],
+      "answer": [2],
+      "explanation": "L'ensemble de données a été agrégé sur une période d'un an."
+    },
+    {
+      "question": "Pour les données de trafic, quelle information a été utilisée ?",
+      "options": [
+        "La couleur des voitures",
+        "Le nombre d'intersections et la distance aux autoroutes",
+        "La marque des voitures",
+        "Le prix de l'essence"
+      ],
+      "answer": [1],
+      "explanation": "Les données de trafic incluaient le nombre d'intersections dans un rayon de 300m et la proximité des autoroutes."
+    },
+    {
+      "question": "L'application Web finale permet aux utilisateurs de :",
+      "options": [
+        "Acheter des purificateurs d'air",
+        "Voir un aperçu des concentrations de polluants dans leur quartier",
+        "Porter plainte contre la ville",
+        "Conduire les voitures Google"
+      ],
+      "answer": [1],
+      "explanation": "L'application fournit aux utilisateurs un aperçu des concentrations de polluants atmosphériques dans leur quartier."
+    },
+    {
+      "question": "Lequel des énoncés suivants décrit le mieux l'objectif principal de la science des données ?",
+      "options": [
+        "Collecter et archiver des ensembles de données exhaustifs à des fins d'archivage d'entreprise.",
+        "Explorer et analyser de grandes quantités de données afin de découvrir des informations pouvant être utilisées pour des améliorations opérationnelles et des gains commerciaux.",
+        "Collecter et préparer des données pour une utilisation dans des applications d'analyse."
+      ],
+      "answer": [1],
+      "explanation": "L'objectif principal est de transformer les données en valeur (informations, améliorations, gains), et pas seulement de les stocker (archivage) ou de les préparer."
+    },
+    {
+      "question": "Quelle est la première étape du processus de science des données ?",
+      "options": [
+        "Collecter des données et les préparer pour l'analyse",
+        "Expérimenter et ajuster différents modèles analytiques",
+        "Définir une hypothèse analytique pouvant apporter une valeur commerciale"
+      ],
+      "answer": [2],
+      "explanation": "Selon la méthodologie CRISP-DM vue en cours, la première phase est la 'Compréhension du métier' (Business Understanding), qui consiste à définir les objectifs et les hypothèses."
+    },
+    {
+      "question": "Quelle est la principale différence entre un data scientist et un data engineer ?",
+      "options": [
+        "Un ingénieur de données collecte et prépare les données, et un scientifique de données les analyse ensuite.",
+        "Un ingénieur de données analyse les données après qu'un scientifique de données les a collectées et préparées.",
+        "Un ingénieur de données construit des pipelines de données et aide à la préparation, tandis qu'un scientifique de données est responsable de la collecte, de la préparation et de l'analyse."
+      ],
+      "answer": [0],
+      "explanation": "Le cours (Slide 44) précise que l'ingénieur prépare et gère les données (pipelines, nettoyage) pour qu'elles soient ensuite analysées par le scientifique."
+    },
+    {
+      "question": "Vrai ou faux ? Les data scientists ont généralement besoin d'une combinaison de compétences techniques, non techniques et de traits de personnalité appropriés pour réussir.",
+      "options": ["Vrai", "Faux"],
+      "answer": [0],
+      "explanation": "Le métier exige des compétences techniques (programmation, stats) mais aussi des 'soft skills' comme la communication (storytelling) et la curiosité."
+    },
+    {
+      "question": "Quels langages de programmation sont les plus largement utilisés par les data scientists ?",
+      "options": ["C et C++", "Python, R et SQL"],
+      "answer": [1],
+      "explanation": "Python et R sont les standards de l'industrie pour l'analyse de données, et SQL est essentiel pour l'extraction de données."
+    },
+    {
+      "question": "Quelles techniques analytiques et statistiques les data scientists utilisent-ils couramment ?",
+      "options": [
+        "Classification",
+        "Régression",
+        "Clustering",
+        "Toutes les réponses ci-dessus"
+      ],
+      "answer": [3],
+      "explanation": "La classification, la régression et le clustering sont des techniques fondamentales du Machine Learning utilisées en science des données."
+    },
+    {
+      "question": "En apprentissage automatique (Machine Learning), quelle est la principale différence entre l'apprentissage supervisé et non supervisé ?",
+      "options": [
+        "L'apprentissage supervisé implique des données qui ont été étiquetées et classées, tandis que les données d'apprentissage non supervisé sont non étiquetées.",
+        "L'apprentissage supervisé est surveillé de près par des scientifiques, tandis qu'ils ne jouent aucun rôle dans l'apprentissage non supervisé.",
+        "L'apprentissage supervisé est uniquement utilisé pour la reconnaissance d'images."
+      ],
+      "answer": [0],
+      "explanation": "La distinction fondamentale réside dans la présence (supervisé) ou l'absence (non supervisé) d'étiquettes (labels) ou de variable cible dans les données d'entraînement."
+    },
+    {
+      "question": "Vrai ou faux ? Le biais est un problème courant dans les applications de science des données.",
+      "options": ["Vrai", "Faux"],
+      "answer": [0],
+      "explanation": "Le biais (dans les données ou les algorithmes) est un défi majeur qui peut fausser les résultats et les prédictions."
+    },
+    {
+      "question": "Pourquoi l'échantillonnage de données (data sampling) est-il utile pour les data scientists ?",
+      "options": [
+        "Il permet d'analyser des ensembles de données par petits lots pour réduire l'utilisation des ressources système.",
+        "Il réduit la quantité d'espace de stockage de données requise.",
+        "Il leur permet d'utiliser un sous-ensemble représentatif de données pour construire des modèles analytiques précis plus rapidement."
+      ],
+      "answer": [2],
+      "explanation": "L'échantillonnage permet de travailler efficacement et d'itérer rapidement sur la modélisation sans avoir à traiter la totalité des Big Data à chaque essai, tout en gardant une précision statistique."
+    },
+    {
+      "question": "Quelle est une maxime courante concernant les data scientists ?",
+      "options": [
+        "Ils passent 80 % de leur temps à trouver et préparer les données et 20 % à les analyser.",
+        "Ils passent 80 % de leur temps à analyser les données et 20 % à les trouver et les préparer.",
+        "Ils passent 80 % de leur temps sur des projets analytiques échoués."
+      ],
+      "answer": [0],
+      "explanation": "C'est la règle des 80/20 bien connue en science des données : la majorité du temps est consacrée au nettoyage et à la préparation des données (Data Munging/Wrangling)."
+    },
+    {
+      "Quiz Chapitre 2": [
+        {
+          "question": "Les données qui sont collectées en groupes sont appelées données :",
+          "options": [
+            "données numériques",
+            "données quantitatives",
+            "données catégorielles",
+            "données nominales"
+          ],
+          "answer": [2],
+          "explanation": "Les données catégorielles (ou qualitatives) représentent des caractéristiques qui divisent les données en groupes ou catégories, par opposition aux données numériques qui représentent des quantités."
+        },
+        {
+          "question": "John collectionne trois modèles de voitures différents, chaque voiture peut aller à des vitesses différentes. Quelle partie de cette information peut être considérée comme une donnée catégorielle ?",
+          "options": [
+            "Les modèles de voitures",
+            "Les vitesses des voitures",
+            "À la fois les modèles et les vitesses",
+            "Aucune de ces informations"
+          ],
+          "answer": [0],
+          "explanation": "Les modèles de voitures sont des étiquettes ou des noms (catégories) sans valeur numérique intrinsèque, contrairement à la vitesse qui est une donnée quantitative."
+        },
+        {
+          "question": "Le risque de contracter une infection nosocomiale classé en catégories comme 'Élevé', 'Moyen' et 'Faible' correspond à quel type de données ?",
+          "options": [
+            "données numériques",
+            "données quantitatives",
+            "données ordinales",
+            "données nominales"
+          ],
+          "answer": [2],
+          "explanation": "Bien que ce soient des catégories, il existe un ordre logique et hiérarchique entre elles (Élevé > Moyen > Faible), ce qui en fait des données ordinales."
+        },
+        {
+          "question": "En quoi les données ordinales diffèrent-elles des données nominales ?",
+          "options": [
+            "Les données nominales sont des noms, tandis que les ordinales sont des nombres",
+            "Les données nominales ne font que distinguer, les données ordinales offrent aussi une information d'ordre (grandeur relative)",
+            "Les données nominales peuvent être un nom ou un nombre, tandis que les ordinales ne peuvent être que des nombres",
+            "Les données nominales ne peuvent être qu'un nom, tandis que les ordinales peuvent être un nom ou un nombre"
+          ],
+          "answer": [1],
+          "explanation": "La différence fondamentale est l'ordre : les données nominales servent uniquement à étiqueter/distinguer des éléments, tandis que les données ordinales permettent de les classer selon un rang ou un ordre."
+        },
+        {
+          "question": "Un chercheur menant une expérience en aveugle a codé les répondants avec des nombres dans une colonne nommée « Respondent_ID ». De quel type de données s'agit-il ?",
+          "options": ["Ordinal", "Continu", "Intervalle", "Nominal"],
+          "answer": [3],
+          "explanation": "Un identifiant (ID), même s'il est numérique, sert uniquement d'étiquette pour identifier un individu unique. Il n'a pas de valeur mathématique ni d'ordre significatif pour l'analyse, c'est donc une donnée nominale."
+        }
+      ]
+    },
+    {
+      "Quiz Chapitre 3": [
+        {
+          "question": "Les données ouvertes brutes, ou ‘non nettoyées’, posent un problème parce qu’elles ...",
+          "options": [
+            "ne peuvent pas être reportées sur un graphique",
+            "peuvent donner lieu à des conclusions erronées",
+            "ne peuvent pas être publiées"
+          ],
+          "answer": [1],
+          "explanation": "La mauvaise qualité des données ('Garbage In, Garbage Out') fausse les analyses et entraîne des décisions ou des conclusions incorrectes, même si les données peuvent techniquement être publiées ou graphiquées."
+        },
+        {
+          "question": "Quels sont les deux outils les plus utiles pour nettoyer l’open data ?",
+          "options": [
+            "Microsoft Excel et Open Refine",
+            "Apple Notes et Microsoft Word",
+            "Microsoft Access et Adobe Photoshop"
+          ],
+          "answer": [0],
+          "explanation": "Microsoft Excel est couramment utilisé pour la manipulation de base, et OpenRefine (anciennement Google Refine) est un outil puissant spécifiquement conçu pour nettoyer et transformer des données désordonnées."
+        },
+        {
+          "question": "Lesquels des points suivants sont des erreurs des données qu’il faut nettoyer ?",
+          "options": [
+            "Des données redondantes",
+            "Aucune licence",
+            "Un manque de granularité",
+            "Des échelles numériques mixtes",
+            "Des représentations multiples"
+          ],
+          "answer": [0, 3, 4],
+          "explanation": "Le nettoyage des données vise à corriger les doublons (redondance), harmoniser les unités (échelles mixtes) et standardiser les formats (représentations multiples). L'absence de licence est un problème juridique et le manque de granularité est un problème de complétude/collecte."
+        },
+        {
+          "question": "Combien de temps devrait-on consacrer au nettoyage et à la préparation des données pour tout projet centré sur des données ?",
+          "options": [
+            "Entre 40% et 60%",
+            "Entre 60% et 80%",
+            "Entre 20% et 40%"
+          ],
+          "answer": [1],
+          "explanation": "Il est communément admis dans le domaine de la science des données que la préparation et le nettoyage des données occupent la majeure partie du temps (souvent cité autour de 80%) par rapport à la modélisation."
+        },
+        {
+          "question": "Un chercheur menant une expérience en aveugle a codé les données des répondants avec des nombres dans une colonne nommée « Respondent_ID ». De quel type de données s'agit-il ?",
+          "options": ["Ordinal", "Continu", "Intervalle", "Nominal"],
+          "answer": [3],
+          "explanation": "Un identifiant (ID) est une étiquette utilisée pour distinguer les éléments. Même s'il est numérique, il ne possède pas de grandeur ni d'ordre significatif (le répondant #2 n'est pas 'supérieur' au #1), c'est donc une donnée nominale."
+        }
+      ]
+    }
+  ]
+}

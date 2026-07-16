@@ -67,9 +67,6 @@
                 <div id="seance-cards-container" class="seance-cards-container">
                     <!-- Seance cards will be added dynamically -->
                 </div>
-                <div class="button-group">
-                    <button id="start-quiz" class="btn" disabled>Commencer le quiz</button>
-                </div>
             </div>
             
             <div id="quiz-container" class="quiz-container hide">
@@ -94,13 +91,19 @@
                 </div>
                 
                 <div class="button-group">
-                    <button id="prev-btn" class="btn" disabled>Précédent</button>
+                    <button id="prev-btn" class="btn" disabled>
+                        <span class="keyboard-hint">←</span> Précédent
+                    </button>
                     <div class="skip-buttons">
                         <button id="skip-btn" class="btn pass">Passer</button>
                         <button id="skip-all-btn" class="btnAll">⏭️</button>
                     </div>
-                    <button id="next-btn" class="btn" disabled>Suivant</button>
-                    <button id="submit-btn" class="btn hide">Soumettre</button>
+                    <button id="next-btn" class="btn" disabled>
+                        Suivant <span class="keyboard-hint">→</span>
+                    </button>
+                    <button id="submit-btn" class="btn hide">
+                        Soumettre <span class="keyboard-hint">→</span>
+                    </button>
                 </div>
             </div>
             
